@@ -1,0 +1,205 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/DBGC；覆盖系列：HC32A4A8, HC32F4A8。
+block/DBGC:
+  description: desc DBGC.
+  items:
+  - name: CHIPID
+    description: desc CHIPID.
+    byte_offset: 12
+    access: Read
+  - name: MCUDBGCSTAT
+    description: desc MCUDBGCSTAT.
+    byte_offset: 28
+    fieldset: MCUDBGCSTAT
+  - name: MCUSTPCTL
+    description: desc MCUSTPCTL.
+    byte_offset: 32
+    fieldset: MCUSTPCTL
+  - name: MCUTRACECTL
+    description: desc MCUTRACECTL.
+    byte_offset: 36
+    fieldset: MCUTRACECTL
+  - name: MCUSTPCTL2
+    description: desc MCUSTPCTL2.
+    byte_offset: 40
+    fieldset: MCUSTPCTL2
+fieldset/MCUDBGCSTAT:
+  description: desc MCUDBGCSTAT.
+  fields:
+  - name: CDBGPWRUPREQ
+    description: desc CDBGPWRUPREQ.
+    bit_offset: 0
+    bit_size: 1
+  - name: CDBGPWRUPACK
+    description: desc CDBGPWRUPACK.
+    bit_offset: 1
+    bit_size: 1
+fieldset/MCUSTPCTL:
+  description: desc MCUSTPCTL.
+  fields:
+  - name: SWDTSTP
+    description: desc SWDTSTP.
+    bit_offset: 0
+    bit_size: 1
+  - name: WDTSTP
+    description: desc WDTSTP.
+    bit_offset: 1
+    bit_size: 1
+  - name: RTCSTP
+    description: desc RTCSTP.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD0STP
+    description: desc PVD0STP.
+    bit_offset: 3
+    bit_size: 1
+  - name: PVD1STP
+    description: desc PVD1STP.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2STP
+    description: desc PVD2STP.
+    bit_offset: 5
+    bit_size: 1
+  - name: M06STP
+    description: desc M06STP.
+    bit_offset: 6
+    bit_size: 1
+  - name: M07STP
+    description: desc M07STP.
+    bit_offset: 7
+    bit_size: 1
+  - name: M08STP
+    description: desc M08STP.
+    bit_offset: 8
+    bit_size: 1
+  - name: M09STP
+    description: desc M09STP.
+    bit_offset: 9
+    bit_size: 1
+  - name: M10STP
+    description: desc M10STP.
+    bit_offset: 10
+    bit_size: 1
+  - name: M11STP
+    description: desc M11STP.
+    bit_offset: 11
+    bit_size: 1
+  - name: M12STP
+    description: desc M12STP.
+    bit_offset: 12
+    bit_size: 1
+  - name: M13STP
+    description: desc M13STP.
+    bit_offset: 13
+    bit_size: 1
+  - name: M14STP
+    description: desc M14STP.
+    bit_offset: 14
+    bit_size: 1
+  - name: M15STP
+    description: desc M15STP.
+    bit_offset: 15
+    bit_size: 1
+  - name: M16STP
+    description: desc M16STP.
+    bit_offset: 16
+    bit_size: 1
+  - name: M17STP
+    description: desc M17STP.
+    bit_offset: 17
+    bit_size: 1
+  - name: M18STP
+    description: desc M18STP.
+    bit_offset: 18
+    bit_size: 1
+  - name: M19STP
+    description: desc M19STP.
+    bit_offset: 19
+    bit_size: 1
+  - name: M20STP
+    description: desc M20STP.
+    bit_offset: 20
+    bit_size: 1
+  - name: M21STP
+    description: desc M21STP.
+    bit_offset: 21
+    bit_size: 1
+  - name: M22STP
+    description: desc M22STP.
+    bit_offset: 22
+    bit_size: 1
+  - name: M23STP
+    description: desc M23STP.
+    bit_offset: 23
+    bit_size: 1
+  - name: M24STP
+    description: desc M24STP.
+    bit_offset: 24
+    bit_size: 1
+  - name: M25STP
+    description: desc M25STP.
+    bit_offset: 25
+    bit_size: 1
+fieldset/MCUSTPCTL2:
+  description: desc MCUSTPCTL2.
+  fields:
+  - name: M32STP
+    description: desc M32STP.
+    bit_offset: 0
+    bit_size: 1
+  - name: M33STP
+    description: desc M33STP.
+    bit_offset: 1
+    bit_size: 1
+  - name: M34STP
+    description: desc M34STP.
+    bit_offset: 2
+    bit_size: 1
+  - name: M35STP
+    description: desc M35STP.
+    bit_offset: 3
+    bit_size: 1
+  - name: M36STP
+    description: desc M36STP.
+    bit_offset: 4
+    bit_size: 1
+  - name: M37STP
+    description: desc M37STP.
+    bit_offset: 5
+    bit_size: 1
+  - name: M38STP
+    description: desc M38STP.
+    bit_offset: 6
+    bit_size: 1
+  - name: M39STP
+    description: desc M39STP.
+    bit_offset: 7
+    bit_size: 1
+  - name: M40STP
+    description: desc M40STP.
+    bit_offset: 8
+    bit_size: 1
+  - name: M41STP
+    description: desc M41STP.
+    bit_offset: 9
+    bit_size: 1
+  - name: M42STP
+    description: desc M42STP.
+    bit_offset: 10
+    bit_size: 1
+  - name: M43STP
+    description: desc M43STP.
+    bit_offset: 11
+    bit_size: 1
+fieldset/MCUTRACECTL:
+  description: desc MCUTRACECTL.
+  fields:
+  - name: TRACEMODE
+    description: desc TRACEMODE.
+    bit_offset: 0
+    bit_size: 2
+  - name: TRACEIOEN
+    description: desc TRACEIOEN.
+    bit_offset: 2
+    bit_size: 1

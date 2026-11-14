@@ -1,0 +1,202 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A0/DVP；覆盖系列：HC32A4A0, HC32A4A8, HC32F467, HC32F4A0, HC32F4A2, HC32F4A8。
+block/DVP:
+  description: desc DVP.
+  items:
+  - name: CTR
+    description: desc CTR.
+    byte_offset: 0
+    fieldset: CTR
+  - name: DTR
+    description: desc DTR.
+    byte_offset: 4
+    access: Read
+  - name: STR
+    description: desc STR.
+    byte_offset: 8
+    fieldset: STR
+  - name: IER
+    description: desc IER.
+    byte_offset: 12
+    fieldset: IER
+  - name: DMR
+    description: desc DMR.
+    byte_offset: 16
+    access: Read
+  - name: SSYNDR
+    description: desc SSYNDR.
+    byte_offset: 32
+    fieldset: SSYNDR
+  - name: SSYNMR
+    description: desc SSYNMR.
+    byte_offset: 36
+    fieldset: SSYNMR
+  - name: CPSFTR
+    description: desc CPSFTR.
+    byte_offset: 40
+    fieldset: CPSFTR
+  - name: CPSZER
+    description: desc CPSZER.
+    byte_offset: 44
+    fieldset: CPSZER
+fieldset/CPSFTR:
+  description: desc CPSFTR.
+  fields:
+  - name: RSHIFT
+    description: desc RSHIFT.
+    bit_offset: 0
+    bit_size: 14
+  - name: CSHIFT
+    description: desc CSHIFT.
+    bit_offset: 16
+    bit_size: 14
+fieldset/CPSZER:
+  description: desc CPSZER.
+  fields:
+  - name: RSIZE
+    description: desc RSIZE.
+    bit_offset: 0
+    bit_size: 14
+  - name: CSIZE
+    description: desc CSIZE.
+    bit_offset: 16
+    bit_size: 14
+fieldset/CTR:
+  description: desc CTR.
+  fields:
+  - name: CAPEN
+    description: desc CAPEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: CAPMD
+    description: desc CAPMD.
+    bit_offset: 1
+    bit_size: 1
+  - name: CROPEN
+    description: desc CROPEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: JPEGEN
+    description: desc JPEGEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: SWSYNC
+    description: desc SWSYNC.
+    bit_offset: 4
+    bit_size: 1
+  - name: PIXCKSEL
+    description: desc PIXCKSEL.
+    bit_offset: 5
+    bit_size: 1
+  - name: HSYNCSEL
+    description: desc HSYNCSEL.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSYNCSEL
+    description: desc VSYNCSEL.
+    bit_offset: 7
+    bit_size: 1
+  - name: CAPFRC
+    description: desc CAPFRC.
+    bit_offset: 8
+    bit_size: 2
+  - name: BITSEL
+    description: desc BITSEL.
+    bit_offset: 10
+    bit_size: 2
+  - name: DVPEN
+    description: desc DVPEN.
+    bit_offset: 14
+    bit_size: 1
+fieldset/IER:
+  description: desc IER.
+  fields:
+  - name: FSIEN
+    description: desc FSIEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: LSIEN
+    description: desc LSIEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: LEIEN
+    description: desc LEIEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: FEIEN
+    description: desc FEIEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: SQUERIEN
+    description: desc SQUERIEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: FIFOERIEN
+    description: desc FIFOERIEN.
+    bit_offset: 5
+    bit_size: 1
+fieldset/SSYNDR:
+  description: desc SSYNDR.
+  fields:
+  - name: FSDAT
+    description: desc FSDAT.
+    bit_offset: 0
+    bit_size: 8
+  - name: LSDAT
+    description: desc LSDAT.
+    bit_offset: 8
+    bit_size: 8
+  - name: LEDAT
+    description: desc LEDAT.
+    bit_offset: 16
+    bit_size: 8
+  - name: FEDAT
+    description: desc FEDAT.
+    bit_offset: 24
+    bit_size: 8
+fieldset/SSYNMR:
+  description: desc SSYNMR.
+  fields:
+  - name: FSMSK
+    description: desc FSMSK.
+    bit_offset: 0
+    bit_size: 8
+  - name: LSMSK
+    description: desc LSMSK.
+    bit_offset: 8
+    bit_size: 8
+  - name: LEMSK
+    description: desc LEMSK.
+    bit_offset: 16
+    bit_size: 8
+  - name: FEMSK
+    description: desc FEMSK.
+    bit_offset: 24
+    bit_size: 8
+fieldset/STR:
+  description: desc STR.
+  fields:
+  - name: FSF
+    description: desc FSF.
+    bit_offset: 0
+    bit_size: 1
+  - name: LSF
+    description: desc LSF.
+    bit_offset: 1
+    bit_size: 1
+  - name: LEF
+    description: desc LEF.
+    bit_offset: 2
+    bit_size: 1
+  - name: FEF
+    description: desc FEF.
+    bit_offset: 3
+    bit_size: 1
+  - name: SQUERF
+    description: desc SQUERF.
+    bit_offset: 4
+    bit_size: 1
+  - name: FIFOERF
+    description: desc FIFOERF.
+    bit_offset: 5
+    bit_size: 1

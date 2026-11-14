@@ -1,0 +1,111 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/CMP1；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/CMP:
+  description: desc CMP.
+  items:
+  - name: CTRL
+    description: desc CTRL.
+    byte_offset: 0
+    bit_size: 16
+    fieldset: CTRL
+  - name: VLTSEL
+    description: desc VLTSEL.
+    byte_offset: 2
+    bit_size: 16
+    fieldset: VLTSEL
+  - name: OUTMON
+    description: desc OUTMON.
+    byte_offset: 4
+    access: Read
+    bit_size: 16
+    fieldset: OUTMON
+  - name: CVSSTB
+    description: desc CVSSTB.
+    byte_offset: 6
+    bit_size: 16
+    fieldset: CVSSTB
+  - name: CVSPRD
+    description: desc CVSPRD.
+    byte_offset: 8
+    bit_size: 16
+    fieldset: CVSPRD
+fieldset/CTRL:
+  description: desc CTRL.
+  bit_size: 16
+  fields:
+  - name: FLTSL
+    description: desc FLTSL.
+    bit_offset: 0
+    bit_size: 3
+  - name: EDGSL
+    description: desc EDGSL.
+    bit_offset: 5
+    bit_size: 2
+  - name: IEN
+    description: desc IEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: CVSEN
+    description: desc CVSEN.
+    bit_offset: 8
+    bit_size: 1
+  - name: OUTEN
+    description: desc OUTEN.
+    bit_offset: 12
+    bit_size: 1
+  - name: INV
+    description: desc INV.
+    bit_offset: 13
+    bit_size: 1
+  - name: CMPOE
+    description: desc CMPOE.
+    bit_offset: 14
+    bit_size: 1
+  - name: CMPON
+    description: desc CMPON.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CVSPRD:
+  description: desc CVSPRD.
+  bit_size: 16
+  fields:
+  - name: PRD
+    description: desc PRD.
+    bit_offset: 0
+    bit_size: 8
+fieldset/CVSSTB:
+  description: desc CVSSTB.
+  bit_size: 16
+  fields:
+  - name: STB
+    description: desc STB.
+    bit_offset: 0
+    bit_size: 4
+fieldset/OUTMON:
+  description: desc OUTMON.
+  bit_size: 16
+  fields:
+  - name: OMON
+    description: desc OMON.
+    bit_offset: 0
+    bit_size: 1
+  - name: CVST
+    description: desc CVST.
+    bit_offset: 8
+    bit_size: 4
+fieldset/VLTSEL:
+  description: desc VLTSEL.
+  bit_size: 16
+  fields:
+  - name: RVSL
+    description: desc RVSL.
+    bit_offset: 0
+    bit_size: 4
+  - name: CVSL
+    description: desc CVSL.
+    bit_offset: 8
+    bit_size: 4
+  - name: C4SL
+    description: desc C4SL.
+    bit_offset: 12
+    bit_size: 3

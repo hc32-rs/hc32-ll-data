@@ -1,0 +1,147 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/DCU1；覆盖系列：HC32A472, HC32F472。
+block/DCU:
+  description: desc DCU.
+  items:
+  - name: CTL
+    description: desc CTL.
+    byte_offset: 0
+    fieldset: CTL
+  - name: FLAG
+    description: desc FLAG.
+    byte_offset: 4
+    access: Read
+    fieldset: FLAG
+  - name: DATA0
+    description: desc DATA0.
+    byte_offset: 8
+  - name: DATA1
+    description: desc DATA1.
+    byte_offset: 12
+  - name: DATA2
+    description: desc DATA2.
+    byte_offset: 16
+  - name: FLAGCLR
+    description: desc FLAGCLR.
+    byte_offset: 20
+    fieldset: FLAGCLR
+  - name: INTEVTSEL
+    description: desc INTEVTSEL.
+    byte_offset: 24
+    fieldset: INTEVTSEL
+fieldset/CTL:
+  description: desc CTL.
+  fields:
+  - name: MODE
+    description: desc MODE.
+    bit_offset: 0
+    bit_size: 4
+  - name: DATASIZE
+    description: desc DATASIZE.
+    bit_offset: 4
+    bit_size: 2
+  - name: COMPTRG
+    description: desc COMPTRG.
+    bit_offset: 8
+    bit_size: 1
+  - name: INTEN
+    description: desc INTEN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/FLAG:
+  description: desc FLAG.
+  fields:
+  - name: FLAG_OP
+    description: desc FLAG_OP.
+    bit_offset: 0
+    bit_size: 1
+  - name: FLAG_LS2
+    description: desc FLAG_LS2.
+    bit_offset: 1
+    bit_size: 1
+  - name: FLAG_EQ2
+    description: desc FLAG_EQ2.
+    bit_offset: 2
+    bit_size: 1
+  - name: FLAG_GT2
+    description: desc FLAG_GT2.
+    bit_offset: 3
+    bit_size: 1
+  - name: FLAG_LS1
+    description: desc FLAG_LS1.
+    bit_offset: 4
+    bit_size: 1
+  - name: FLAG_EQ1
+    description: desc FLAG_EQ1.
+    bit_offset: 5
+    bit_size: 1
+  - name: FLAG_GT1
+    description: desc FLAG_GT1.
+    bit_offset: 6
+    bit_size: 1
+fieldset/FLAGCLR:
+  description: desc FLAGCLR.
+  fields:
+  - name: CLR_OP
+    description: desc CLR_OP.
+    bit_offset: 0
+    bit_size: 1
+  - name: CLR_LS2
+    description: desc CLR_LS2.
+    bit_offset: 1
+    bit_size: 1
+  - name: CLR_EQ2
+    description: desc CLR_EQ2.
+    bit_offset: 2
+    bit_size: 1
+  - name: CLR_GT2
+    description: desc CLR_GT2.
+    bit_offset: 3
+    bit_size: 1
+  - name: CLR_LS1
+    description: desc CLR_LS1.
+    bit_offset: 4
+    bit_size: 1
+  - name: CLR_EQ1
+    description: desc CLR_EQ1.
+    bit_offset: 5
+    bit_size: 1
+  - name: CLR_GT1
+    description: desc CLR_GT1.
+    bit_offset: 6
+    bit_size: 1
+fieldset/INTEVTSEL:
+  description: desc INTEVTSEL.
+  fields:
+  - name: SEL_OP
+    description: desc SEL_OP.
+    bit_offset: 0
+    bit_size: 1
+  - name: SEL_LS2
+    description: desc SEL_LS2.
+    bit_offset: 1
+    bit_size: 1
+  - name: SEL_EQ2
+    description: desc SEL_EQ2.
+    bit_offset: 2
+    bit_size: 1
+  - name: SEL_GT2
+    description: desc SEL_GT2.
+    bit_offset: 3
+    bit_size: 1
+  - name: SEL_LS1
+    description: desc SEL_LS1.
+    bit_offset: 4
+    bit_size: 1
+  - name: SEL_EQ1
+    description: desc SEL_EQ1.
+    bit_offset: 5
+    bit_size: 1
+  - name: SEL_GT1
+    description: desc SEL_GT1.
+    bit_offset: 6
+    bit_size: 1
+  - name: SEL_WIN
+    description: desc SEL_WIN.
+    bit_offset: 7
+    bit_size: 2

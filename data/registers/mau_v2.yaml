@@ -1,0 +1,56 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/MAU；覆盖系列：HC32A4A8, HC32F4A8。
+block/MAU:
+  description: desc MAU.
+  items:
+  - name: CSR
+    description: desc CSR.
+    byte_offset: 0
+    fieldset: CSR
+  - name: DTR0
+    description: desc DTR0.
+    byte_offset: 4
+  - name: RTR0
+    description: desc RTR0.
+    byte_offset: 12
+  - name: DTR1
+    description: desc DTR1.
+    byte_offset: 16
+    fieldset: DTR1
+  - name: RTR1
+    description: desc RTR1.
+    byte_offset: 20
+    fieldset: RTR1
+fieldset/CSR:
+  description: desc CSR.
+  fields:
+  - name: START
+    description: desc START.
+    bit_offset: 0
+    bit_size: 1
+  - name: INTEN
+    description: desc INTEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 3
+    bit_size: 1
+  - name: SHIFT
+    description: desc SHIFT.
+    bit_offset: 8
+    bit_size: 5
+fieldset/DTR1:
+  description: desc DTR1.
+  fields:
+  - name: SIN_DIN
+    description: desc SIN_DIN.
+    bit_offset: 0
+    bit_size: 12
+fieldset/RTR1:
+  description: desc RTR1.
+  fields:
+  - name: SIN_DOUT
+    description: desc SIN_DOUT.
+    bit_offset: 0
+    bit_size: 16

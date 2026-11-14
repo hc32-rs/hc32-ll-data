@@ -1,0 +1,120 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/SRAMC；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/SRAMC:
+  description: desc SRAMC.
+  items:
+  - name: WTCR
+    description: desc WTCR.
+    byte_offset: 0
+    fieldset: WTCR
+  - name: WTPR
+    description: desc WTPR.
+    byte_offset: 4
+    fieldset: WTPR
+  - name: CKCR
+    description: desc CKCR.
+    byte_offset: 8
+    fieldset: CKCR
+  - name: CKPR
+    description: desc CKPR.
+    byte_offset: 12
+    fieldset: CKPR
+  - name: CKSR
+    description: desc CKSR.
+    byte_offset: 16
+    fieldset: CKSR
+fieldset/CKCR:
+  description: desc CKCR.
+  fields:
+  - name: PYOAD
+    description: desc PYOAD.
+    bit_offset: 0
+    bit_size: 1
+  - name: ECCOAD
+    description: desc ECCOAD.
+    bit_offset: 16
+    bit_size: 1
+  - name: ECCMOD
+    description: desc ECCMOD.
+    bit_offset: 24
+    bit_size: 2
+fieldset/CKPR:
+  description: desc CKPR.
+  fields:
+  - name: CKPRC
+    description: desc CKPRC.
+    bit_offset: 0
+    bit_size: 1
+  - name: CKPRKW
+    description: desc CKPRKW.
+    bit_offset: 1
+    bit_size: 7
+fieldset/CKSR:
+  description: desc CKSR.
+  fields:
+  - name: SRAM3_1ERR
+    description: desc SRAM3_1ERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: SRAM3_2ERR
+    description: desc SRAM3_2ERR.
+    bit_offset: 1
+    bit_size: 1
+  - name: SRAM12_PYERR
+    description: desc SRAM12_PYERR.
+    bit_offset: 2
+    bit_size: 1
+  - name: SRAMH_PYERR
+    description: desc SRAMH_PYERR.
+    bit_offset: 3
+    bit_size: 1
+  - name: SRAMR_PYERR
+    description: desc SRAMR_PYERR.
+    bit_offset: 4
+    bit_size: 1
+fieldset/WTCR:
+  description: desc WTCR.
+  fields:
+  - name: SRAM12_RWT
+    description: desc SRAM12_RWT.
+    bit_offset: 0
+    bit_size: 3
+  - name: SRAM12_WWT
+    description: desc SRAM12_WWT.
+    bit_offset: 4
+    bit_size: 3
+  - name: SRAM3_RWT
+    description: desc SRAM3_RWT.
+    bit_offset: 8
+    bit_size: 3
+  - name: SRAM3_WWT
+    description: desc SRAM3_WWT.
+    bit_offset: 12
+    bit_size: 3
+  - name: SRAMH_RWT
+    description: desc SRAMH_RWT.
+    bit_offset: 16
+    bit_size: 3
+  - name: SRAMH_WWT
+    description: desc SRAMH_WWT.
+    bit_offset: 20
+    bit_size: 3
+  - name: SRAMR_RWT
+    description: desc SRAMR_RWT.
+    bit_offset: 24
+    bit_size: 3
+  - name: SRAMR_WWT
+    description: desc SRAMR_WWT.
+    bit_offset: 28
+    bit_size: 3
+fieldset/WTPR:
+  description: desc WTPR.
+  fields:
+  - name: WTPRC
+    description: desc WTPRC.
+    bit_offset: 0
+    bit_size: 1
+  - name: WTPRKW
+    description: desc WTPRKW.
+    bit_offset: 1
+    bit_size: 7

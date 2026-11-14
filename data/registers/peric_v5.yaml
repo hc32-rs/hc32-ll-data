@@ -1,0 +1,336 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/PERIC；覆盖系列：HC32A4A8, HC32F4A8。
+block/PERIC:
+  description: desc PERIC.
+  items:
+  - name: USB_SYCTLREG
+    description: desc USB_SYCTLREG.
+    byte_offset: 0
+    fieldset: USB_SYCTLREG
+  - name: SDIOC_SYCTLREG
+    description: desc SDIOC_SYCTLREG.
+    byte_offset: 4
+    fieldset: SDIOC_SYCTLREG
+  - name: NFC_STCR
+    description: desc NFC_STCR.
+    byte_offset: 8
+    fieldset: NFC_STCR
+  - name: EXMC_ENAR
+    description: desc EXMC_ENAR.
+    byte_offset: 12
+    fieldset: EXMC_ENAR
+  - name: ETH_MAC_IFCONFR
+    description: desc ETH_MAC_IFCONFR.
+    byte_offset: 16
+    fieldset: ETH_MAC_IFCONFR
+  - name: TMR_SYNENR1
+    description: desc TMR_SYNENR1.
+    byte_offset: 20
+    fieldset: TMR_SYNENR1
+  - name: CAN_SYCTLREG
+    description: desc CAN_SYCTLREG.
+    byte_offset: 24
+    fieldset: CAN_SYCTLREG
+  - name: USART1_NFC
+    description: desc USART1_NFC.
+    byte_offset: 28
+    fieldset: USART1_NFC
+  - name: NFC_STSR
+    description: desc NFC_STSR.
+    byte_offset: 40
+    access: Read
+    fieldset: NFC_STSR
+  - name: TMR_SYNENR2
+    description: desc TMR_SYNENR2.
+    byte_offset: 64
+    fieldset: TMR_SYNENR2
+fieldset/CAN_SYCTLREG:
+  description: desc CAN_SYCTLREG.
+  fields:
+  - name: CAN1FDE
+    description: desc CAN1FDE.
+    bit_offset: 0
+    bit_size: 1
+  - name: CAN2FDE
+    description: desc CAN2FDE.
+    bit_offset: 1
+    bit_size: 1
+fieldset/ETH_MAC_IFCONFR:
+  description: desc ETH_MAC_IFCONFR.
+  fields:
+  - name: IFSEL
+    description: desc IFSEL.
+    bit_offset: 0
+    bit_size: 1
+  - name: RCKINV
+    description: desc RCKINV.
+    bit_offset: 4
+    bit_size: 1
+  - name: TCKINV
+    description: desc TCKINV.
+    bit_offset: 5
+    bit_size: 1
+fieldset/EXMC_ENAR:
+  description: desc EXMC_ENAR.
+  fields:
+  - name: DMCEN
+    description: desc DMCEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: SMCEN
+    description: desc SMCEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: NFCEN
+    description: desc NFCEN.
+    bit_offset: 2
+    bit_size: 1
+fieldset/NFC_STCR:
+  description: desc NFC_STCR.
+  fields:
+  - name: OPENP
+    description: desc OPENP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/NFC_STSR:
+  description: desc NFC_STSR.
+  fields:
+  - name: CHIP_BUSY
+    description: desc CHIP_BUSY.
+    bit_offset: 0
+    bit_size: 8
+  - name: PECC
+    description: desc PECC.
+    bit_offset: 8
+    bit_size: 1
+fieldset/SDIOC_SYCTLREG:
+  description: desc SDIOC_SYCTLREG.
+  fields:
+  - name: SELMMC1
+    description: desc SELMMC1.
+    bit_offset: 1
+    bit_size: 1
+  - name: SELMMC2
+    description: desc SELMMC2.
+    bit_offset: 3
+    bit_size: 1
+fieldset/TMR_SYNENR1:
+  description: desc TMR_SYNENR1.
+  fields:
+  - name: TMR0_1_A
+    description: desc TMR0_1_A.
+    bit_offset: 0
+    bit_size: 1
+  - name: TMR0_1_B
+    description: desc TMR0_1_B.
+    bit_offset: 1
+    bit_size: 1
+  - name: TMR0_2_A
+    description: desc TMR0_2_A.
+    bit_offset: 2
+    bit_size: 1
+  - name: TMR0_2_B
+    description: desc TMR0_2_B.
+    bit_offset: 3
+    bit_size: 1
+  - name: TMR0_3_A
+    description: desc TMR0_3_A.
+    bit_offset: 4
+    bit_size: 1
+  - name: TMR0_3_B
+    description: desc TMR0_3_B.
+    bit_offset: 5
+    bit_size: 1
+  - name: TMR0_4_A
+    description: desc TMR0_4_A.
+    bit_offset: 6
+    bit_size: 1
+  - name: TMR0_4_B
+    description: desc TMR0_4_B.
+    bit_offset: 7
+    bit_size: 1
+  - name: TMR0_5_A
+    description: desc TMR0_5_A.
+    bit_offset: 8
+    bit_size: 1
+  - name: TMR0_5_B
+    description: desc TMR0_5_B.
+    bit_offset: 9
+    bit_size: 1
+  - name: TMR4_1
+    description: desc TMR4_1.
+    bit_offset: 16
+    bit_size: 1
+  - name: TMR4_2
+    description: desc TMR4_2.
+    bit_offset: 17
+    bit_size: 1
+  - name: TMR4_3
+    description: desc TMR4_3.
+    bit_offset: 18
+    bit_size: 1
+  - name: TMR6_1
+    description: desc TMR6_1.
+    bit_offset: 24
+    bit_size: 1
+  - name: TMR6_2
+    description: desc TMR6_2.
+    bit_offset: 25
+    bit_size: 1
+  - name: TMR6_3
+    description: desc TMR6_3.
+    bit_offset: 26
+    bit_size: 1
+  - name: TMR6_4
+    description: desc TMR6_4.
+    bit_offset: 27
+    bit_size: 1
+  - name: TMR6_5
+    description: desc TMR6_5.
+    bit_offset: 28
+    bit_size: 1
+  - name: TMR6_6
+    description: desc TMR6_6.
+    bit_offset: 29
+    bit_size: 1
+  - name: TMR6_7
+    description: desc TMR6_7.
+    bit_offset: 30
+    bit_size: 1
+  - name: TMR6_8
+    description: desc TMR6_8.
+    bit_offset: 31
+    bit_size: 1
+fieldset/TMR_SYNENR2:
+  description: desc TMR_SYNENR2.
+  fields:
+  - name: TMRA_1
+    description: desc TMRA_1.
+    bit_offset: 0
+    bit_size: 1
+  - name: TMRA_2
+    description: desc TMRA_2.
+    bit_offset: 1
+    bit_size: 1
+  - name: TMRA_3
+    description: desc TMRA_3.
+    bit_offset: 2
+    bit_size: 1
+  - name: TMRA_4
+    description: desc TMRA_4.
+    bit_offset: 3
+    bit_size: 1
+  - name: TMRA_5
+    description: desc TMRA_5.
+    bit_offset: 4
+    bit_size: 1
+  - name: TMRA_6
+    description: desc TMRA_6.
+    bit_offset: 5
+    bit_size: 1
+  - name: TMRA_7
+    description: desc TMRA_7.
+    bit_offset: 6
+    bit_size: 1
+  - name: TMRA_8
+    description: desc TMRA_8.
+    bit_offset: 7
+    bit_size: 1
+  - name: TMRA_9
+    description: desc TMRA_9.
+    bit_offset: 8
+    bit_size: 1
+  - name: TMRA_10
+    description: desc TMRA_10.
+    bit_offset: 9
+    bit_size: 1
+  - name: TMRA_11
+    description: desc TMRA_11.
+    bit_offset: 10
+    bit_size: 1
+  - name: TMRA_12
+    description: desc TMRA_12.
+    bit_offset: 11
+    bit_size: 1
+  - name: TMR2_1_A
+    description: desc TMR2_1_A.
+    bit_offset: 16
+    bit_size: 1
+  - name: TMR2_1_B
+    description: desc TMR2_1_B.
+    bit_offset: 17
+    bit_size: 1
+  - name: TMR2_2_A
+    description: desc TMR2_2_A.
+    bit_offset: 18
+    bit_size: 1
+  - name: TMR2_2_B
+    description: desc TMR2_2_B.
+    bit_offset: 19
+    bit_size: 1
+  - name: TMR2_3_A
+    description: desc TMR2_3_A.
+    bit_offset: 20
+    bit_size: 1
+  - name: TMR2_3_B
+    description: desc TMR2_3_B.
+    bit_offset: 21
+    bit_size: 1
+  - name: TMR2_4_A
+    description: desc TMR2_4_A.
+    bit_offset: 22
+    bit_size: 1
+  - name: TMR2_4_B
+    description: desc TMR2_4_B.
+    bit_offset: 23
+    bit_size: 1
+fieldset/USART1_NFC:
+  description: desc USART1_NFC.
+  fields:
+  - name: USASRT1_NFS
+    description: desc USASRT1_NFS.
+    bit_offset: 0
+    bit_size: 2
+  - name: USART1_NFE
+    description: desc USART1_NFE.
+    bit_offset: 2
+    bit_size: 1
+fieldset/USB_SYCTLREG:
+  description: desc USB_SYCTLREG.
+  fields:
+  - name: USBFS_DFB
+    description: desc USBFS_DFB.
+    bit_offset: 0
+    bit_size: 1
+  - name: USBFS_SOFEN
+    description: desc USBFS_SOFEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: USBHS_DFB
+    description: desc USBHS_DFB.
+    bit_offset: 8
+    bit_size: 1
+  - name: USBHS_SOFEN
+    description: desc USBHS_SOFEN.
+    bit_offset: 9
+    bit_size: 1
+  - name: USBHS_FSPHYE
+    description: desc USBHS_FSPHYE.
+    bit_offset: 10
+    bit_size: 1
+  - name: USBFS_NFS
+    description: desc USBFS_NFS.
+    bit_offset: 16
+    bit_size: 2
+  - name: USBFS_NFE
+    description: desc USBFS_NFE.
+    bit_offset: 18
+    bit_size: 1
+  - name: USBHS_NFS
+    description: desc USBHS_NFS.
+    bit_offset: 24
+    bit_size: 2
+  - name: USBHS_NFE
+    description: desc USBHS_NFE.
+    bit_offset: 26
+    bit_size: 1

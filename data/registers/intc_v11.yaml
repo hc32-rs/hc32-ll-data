@@ -1,0 +1,596 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/INTC；覆盖系列：HC32K116, HC32K118。
+block/INTC:
+  description: desc INTC.
+  items:
+  - name: NMICR
+    description: desc NMICR.
+    byte_offset: 0
+    fieldset: NMICR
+  - name: NMIER
+    description: desc NMIER.
+    byte_offset: 4
+    fieldset: NMIER
+  - name: NMIFR
+    description: desc NMIFR.
+    byte_offset: 8
+    access: Read
+    fieldset: NMIFR
+  - name: NMIFCR
+    description: desc NMIFCR.
+    byte_offset: 12
+    access: Write
+    fieldset: NMIFCR
+  - name: WKFR
+    description: desc WKFR.
+    byte_offset: 16
+    access: Read
+    fieldset: WKFR
+  - name: WKFCR
+    description: desc WKFCR.
+    byte_offset: 20
+    access: Write
+    fieldset: WKFCR
+  - name: EVTER
+    description: desc EVTER.
+    byte_offset: 32
+    fieldset: EVTER
+  - name: FPRCR
+    description: desc FPRCR.
+    byte_offset: 60
+    fieldset: FPRCR
+  - name: EIRQCR0
+    description: desc EIRQCR0.
+    byte_offset: 64
+    fieldset: EIRQCR0
+  - name: EIRQCR1
+    description: desc EIRQCR1.
+    byte_offset: 68
+    fieldset: EIRQCR1
+  - name: EIRQCR2
+    description: desc EIRQCR2.
+    byte_offset: 72
+    fieldset: EIRQCR2
+  - name: EIRQCR3
+    description: desc EIRQCR3.
+    byte_offset: 76
+    fieldset: EIRQCR3
+  - name: EIRQCR4
+    description: desc EIRQCR4.
+    byte_offset: 80
+    fieldset: EIRQCR4
+  - name: EIRQCR5
+    description: desc EIRQCR5.
+    byte_offset: 84
+    fieldset: EIRQCR5
+  - name: EIRQCR6
+    description: desc EIRQCR6.
+    byte_offset: 88
+    fieldset: EIRQCR6
+  - name: EIRQCR7
+    description: desc EIRQCR7.
+    byte_offset: 92
+    fieldset: EIRQCR7
+  - name: WKEN
+    description: desc WKEN.
+    byte_offset: 112
+    fieldset: WKEN
+  - name: EIFR
+    description: desc EIFR.
+    byte_offset: 116
+    access: Read
+    fieldset: EIFR
+  - name: EIFCR
+    description: desc EIFCR.
+    byte_offset: 120
+    access: Write
+    fieldset: EIFCR
+  - name: INTEN0
+    description: desc INTEN0.
+    byte_offset: 128
+    fieldset: INTEN0
+  - name: INTEN1
+    description: desc INTEN1.
+    byte_offset: 132
+    fieldset: INTEN1
+  - name: INTEN2
+    description: desc INTEN2.
+    byte_offset: 136
+    fieldset: INTEN2
+  - name: INTEN3
+    description: desc INTEN3.
+    byte_offset: 140
+    fieldset: INTEN3
+fieldset/EIFCR:
+  description: desc EIFCR.
+  fields:
+  - name: EIFCLR
+    description: desc EIFCLR.
+    bit_offset: 0
+    bit_size: 8
+fieldset/EIFR:
+  description: desc EIFR.
+  fields:
+  - name: EIF
+    description: desc EIF.
+    bit_offset: 0
+    bit_size: 8
+fieldset/EIRQCR0:
+  description: desc EIRQCR0.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EIRQFCLK
+    description: desc EIRQFCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EIRQFEN
+    description: desc EIRQFEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EIRQCR1:
+  description: desc EIRQCR1.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EIRQFCLK
+    description: desc EIRQFCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EIRQFEN
+    description: desc EIRQFEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EIRQCR2:
+  description: desc EIRQCR2.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EIRQFCLK
+    description: desc EIRQFCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EIRQFEN
+    description: desc EIRQFEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EIRQCR3:
+  description: desc EIRQCR3.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EIRQFCLK
+    description: desc EIRQFCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EIRQFEN
+    description: desc EIRQFEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EIRQCR4:
+  description: desc EIRQCR4.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EIRQFCLK
+    description: desc EIRQFCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EIRQFEN
+    description: desc EIRQFEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EIRQCR5:
+  description: desc EIRQCR5.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EIRQFCLK
+    description: desc EIRQFCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EIRQFEN
+    description: desc EIRQFEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EIRQCR6:
+  description: desc EIRQCR6.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EIRQFCLK
+    description: desc EIRQFCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EIRQFEN
+    description: desc EIRQFEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EIRQCR7:
+  description: desc EIRQCR7.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EIRQFCLK
+    description: desc EIRQFCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EIRQFEN
+    description: desc EIRQFEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EVTER:
+  description: desc EVTER.
+  fields:
+  - name: EVTE0
+    description: desc EVTE0.
+    bit_offset: 0
+    bit_size: 1
+  - name: EVTE1
+    description: desc EVTE1.
+    bit_offset: 1
+    bit_size: 1
+  - name: EVTE2
+    description: desc EVTE2.
+    bit_offset: 2
+    bit_size: 1
+  - name: EVTE3
+    description: desc EVTE3.
+    bit_offset: 3
+    bit_size: 1
+  - name: EVTE4
+    description: desc EVTE4.
+    bit_offset: 4
+    bit_size: 1
+  - name: EVTE5
+    description: desc EVTE5.
+    bit_offset: 5
+    bit_size: 1
+  - name: EVTE6
+    description: desc EVTE6.
+    bit_offset: 6
+    bit_size: 1
+  - name: EVTE7
+    description: desc EVTE7.
+    bit_offset: 7
+    bit_size: 1
+  - name: EVTE8
+    description: desc EVTE8.
+    bit_offset: 8
+    bit_size: 1
+  - name: EVTE9
+    description: desc EVTE9.
+    bit_offset: 9
+    bit_size: 1
+  - name: EVTE10
+    description: desc EVTE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: EVTE11
+    description: desc EVTE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: EVTE12
+    description: desc EVTE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: EVTE13
+    description: desc EVTE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: EVTE14
+    description: desc EVTE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: EVTE15
+    description: desc EVTE15.
+    bit_offset: 15
+    bit_size: 1
+  - name: EVTE16
+    description: desc EVTE16.
+    bit_offset: 16
+    bit_size: 1
+  - name: EVTE17
+    description: desc EVTE17.
+    bit_offset: 17
+    bit_size: 1
+  - name: EVTE18
+    description: desc EVTE18.
+    bit_offset: 18
+    bit_size: 1
+  - name: EVTE19
+    description: desc EVTE19.
+    bit_offset: 19
+    bit_size: 1
+  - name: EVTE20
+    description: desc EVTE20.
+    bit_offset: 20
+    bit_size: 1
+  - name: EVTE21
+    description: desc EVTE21.
+    bit_offset: 21
+    bit_size: 1
+  - name: EVTE22
+    description: desc EVTE22.
+    bit_offset: 22
+    bit_size: 1
+  - name: EVTE23
+    description: desc EVTE23.
+    bit_offset: 23
+    bit_size: 1
+  - name: EVTE24
+    description: desc EVTE24.
+    bit_offset: 24
+    bit_size: 1
+  - name: EVTE25
+    description: desc EVTE25.
+    bit_offset: 25
+    bit_size: 1
+  - name: EVTE26
+    description: desc EVTE26.
+    bit_offset: 26
+    bit_size: 1
+  - name: EVTE27
+    description: desc EVTE27.
+    bit_offset: 27
+    bit_size: 1
+  - name: EVTE28
+    description: desc EVTE28.
+    bit_offset: 28
+    bit_size: 1
+  - name: EVTE29
+    description: desc EVTE29.
+    bit_offset: 29
+    bit_size: 1
+  - name: EVTE30
+    description: desc EVTE30.
+    bit_offset: 30
+    bit_size: 1
+  - name: EVTE31
+    description: desc EVTE31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/FPRCR:
+  description: desc FPRCR.
+  fields:
+  - name: FPRC
+    description: desc FPRC.
+    bit_offset: 0
+    bit_size: 8
+fieldset/INTEN0:
+  description: desc INTEN0.
+  fields:
+  - name: INTEN
+    description: desc INTEN.
+    bit_offset: 0
+    bit_size: 32
+fieldset/INTEN1:
+  description: desc INTEN1.
+  fields:
+  - name: INTEN
+    description: desc INTEN.
+    bit_offset: 0
+    bit_size: 32
+fieldset/INTEN2:
+  description: desc INTEN2.
+  fields:
+  - name: INTEN
+    description: desc INTEN.
+    bit_offset: 0
+    bit_size: 32
+fieldset/INTEN3:
+  description: desc INTEN3.
+  fields:
+  - name: INTEN
+    description: desc INTEN.
+    bit_offset: 0
+    bit_size: 32
+fieldset/NMICR:
+  description: desc NMICR.
+  fields:
+  - name: NMITRG
+    description: desc NMITRG.
+    bit_offset: 0
+    bit_size: 1
+  - name: NMIFCLK
+    description: desc NMIFCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: NMIFEN
+    description: desc NMIFEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/NMIER:
+  description: desc NMIER.
+  fields:
+  - name: NMIEN
+    description: desc NMIEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: XTALSTPEN
+    description: desc XTALSTPEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: SWDTEN
+    description: desc SWDTEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVD1EN
+    description: desc LVD1EN.
+    bit_offset: 3
+    bit_size: 1
+  - name: LVD2EN
+    description: desc LVD2EN.
+    bit_offset: 4
+    bit_size: 1
+  - name: RECCERREN
+    description: desc RECCERREN.
+    bit_offset: 5
+    bit_size: 1
+  - name: FECCERREN
+    description: desc FECCERREN.
+    bit_offset: 6
+    bit_size: 1
+fieldset/NMIFCR:
+  description: desc NMIFCR.
+  fields:
+  - name: NMIFCLR
+    description: desc NMIFCLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: XTALSTPFCLR
+    description: desc XTALSTPFCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: SWDTFCLR
+    description: desc SWDTFCLR.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVD1FCLR
+    description: desc LVD1FCLR.
+    bit_offset: 3
+    bit_size: 1
+  - name: LVD2FCLR
+    description: desc LVD2FCLR.
+    bit_offset: 4
+    bit_size: 1
+  - name: RECCERRFCLR
+    description: desc RECCERRFCLR.
+    bit_offset: 5
+    bit_size: 1
+  - name: FECCERRFCLR
+    description: desc FECCERRFCLR.
+    bit_offset: 6
+    bit_size: 1
+fieldset/NMIFR:
+  description: desc NMIFR.
+  fields:
+  - name: NMIF
+    description: desc NMIF.
+    bit_offset: 0
+    bit_size: 1
+  - name: XTALSTPF
+    description: desc XTALSTPF.
+    bit_offset: 1
+    bit_size: 1
+  - name: SWDTF
+    description: desc SWDTF.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVD1F
+    description: desc LVD1F.
+    bit_offset: 3
+    bit_size: 1
+  - name: LVD2F
+    description: desc LVD2F.
+    bit_offset: 4
+    bit_size: 1
+  - name: RECCERRF
+    description: desc RECCERRF.
+    bit_offset: 5
+    bit_size: 1
+  - name: FECCERRF
+    description: desc FECCERRF.
+    bit_offset: 6
+    bit_size: 1
+fieldset/WKEN:
+  description: desc WKEN.
+  fields:
+  - name: EIRQWKEN
+    description: desc EIRQWKEN.
+    bit_offset: 0
+    bit_size: 8
+  - name: SWDTWKEN
+    description: desc SWDTWKEN.
+    bit_offset: 16
+    bit_size: 1
+  - name: LVD1WKEN
+    description: desc LVD1WKEN.
+    bit_offset: 17
+    bit_size: 1
+  - name: LVD2WKEN
+    description: desc LVD2WKEN.
+    bit_offset: 18
+    bit_size: 1
+  - name: CMP1WKEN
+    description: desc CMP1WKEN.
+    bit_offset: 19
+    bit_size: 1
+  - name: RTCALMWKEN
+    description: desc RTCALMWKEN.
+    bit_offset: 21
+    bit_size: 1
+  - name: RTCPRDWKEN
+    description: desc RTCPRDWKEN.
+    bit_offset: 22
+    bit_size: 1
+  - name: TMR0CMPWKEN
+    description: desc TMR0CMPWKEN.
+    bit_offset: 23
+    bit_size: 1
+  - name: TMR2GCMPWKEN
+    description: desc TMR2GCMPWKEN.
+    bit_offset: 24
+    bit_size: 1
+  - name: TMR2OVFAWKEN
+    description: desc TMR2OVFAWKEN.
+    bit_offset: 25
+    bit_size: 1
+  - name: SPI1WKEN
+    description: desc SPI1WKEN.
+    bit_offset: 27
+    bit_size: 1
+  - name: USART3WKEN
+    description: desc USART3WKEN.
+    bit_offset: 28
+    bit_size: 1
+  - name: USART4WKEN
+    description: desc USART4WKEN.
+    bit_offset: 29
+    bit_size: 1
+fieldset/WKFCR:
+  description: desc WKFCR.
+  fields:
+  - name: SPI1WKCLR
+    description: desc SPI1WKCLR.
+    bit_offset: 27
+    bit_size: 1
+  - name: USART3WKCLR
+    description: desc USART3WKCLR.
+    bit_offset: 28
+    bit_size: 1
+  - name: USART4WKCLR
+    description: desc USART4WKCLR.
+    bit_offset: 29
+    bit_size: 1
+fieldset/WKFR:
+  description: desc WKFR.
+  fields:
+  - name: SPI1WKF
+    description: desc SPI1WKF.
+    bit_offset: 27
+    bit_size: 1
+  - name: USART3WKF
+    description: desc USART3WKF.
+    bit_offset: 28
+    bit_size: 1
+  - name: USART4WKF
+    description: desc USART4WKF.
+    bit_offset: 29
+    bit_size: 1

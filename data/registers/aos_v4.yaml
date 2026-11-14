@@ -1,0 +1,1020 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A0/AOS；覆盖系列：HC32A4A0, HC32F467, HC32F4A0, HC32F4A2。
+block/AOS:
+  description: desc AOS.
+  items:
+  - name: INTSFTTRG
+    description: desc INTSFTTRG.
+    byte_offset: 0
+    access: Write
+    fieldset: INTSFTTRG
+  - name: DCU_TRGSEL1
+    description: desc DCU_TRGSEL1.
+    byte_offset: 4
+    fieldset: DCU_TRGSEL1
+  - name: DCU_TRGSEL2
+    description: desc DCU_TRGSEL2.
+    byte_offset: 8
+    fieldset: DCU_TRGSEL2
+  - name: DCU_TRGSEL3
+    description: desc DCU_TRGSEL3.
+    byte_offset: 12
+    fieldset: DCU_TRGSEL3
+  - name: DCU_TRGSEL4
+    description: desc DCU_TRGSEL4.
+    byte_offset: 16
+    fieldset: DCU_TRGSEL4
+  - name: DMA1_TRGSEL0
+    description: desc DMA1_TRGSEL0.
+    byte_offset: 20
+    fieldset: DMA1_TRGSEL0
+  - name: DMA1_TRGSEL1
+    description: desc DMA1_TRGSEL1.
+    byte_offset: 24
+    fieldset: DMA1_TRGSEL1
+  - name: DMA1_TRGSEL2
+    description: desc DMA1_TRGSEL2.
+    byte_offset: 28
+    fieldset: DMA1_TRGSEL2
+  - name: DMA1_TRGSEL3
+    description: desc DMA1_TRGSEL3.
+    byte_offset: 32
+    fieldset: DMA1_TRGSEL3
+  - name: DMA1_TRGSEL4
+    description: desc DMA1_TRGSEL4.
+    byte_offset: 36
+    fieldset: DMA1_TRGSEL4
+  - name: DMA1_TRGSEL5
+    description: desc DMA1_TRGSEL5.
+    byte_offset: 40
+    fieldset: DMA1_TRGSEL5
+  - name: DMA1_TRGSEL6
+    description: desc DMA1_TRGSEL6.
+    byte_offset: 44
+    fieldset: DMA1_TRGSEL6
+  - name: DMA1_TRGSEL7
+    description: desc DMA1_TRGSEL7.
+    byte_offset: 48
+    fieldset: DMA1_TRGSEL7
+  - name: DMA2_TRGSEL0
+    description: desc DMA2_TRGSEL0.
+    byte_offset: 52
+    fieldset: DMA2_TRGSEL0
+  - name: DMA2_TRGSEL1
+    description: desc DMA2_TRGSEL1.
+    byte_offset: 56
+    fieldset: DMA2_TRGSEL1
+  - name: DMA2_TRGSEL2
+    description: desc DMA2_TRGSEL2.
+    byte_offset: 60
+    fieldset: DMA2_TRGSEL2
+  - name: DMA2_TRGSEL3
+    description: desc DMA2_TRGSEL3.
+    byte_offset: 64
+    fieldset: DMA2_TRGSEL3
+  - name: DMA2_TRGSEL4
+    description: desc DMA2_TRGSEL4.
+    byte_offset: 68
+    fieldset: DMA2_TRGSEL4
+  - name: DMA2_TRGSEL5
+    description: desc DMA2_TRGSEL5.
+    byte_offset: 72
+    fieldset: DMA2_TRGSEL5
+  - name: DMA2_TRGSEL6
+    description: desc DMA2_TRGSEL6.
+    byte_offset: 76
+    fieldset: DMA2_TRGSEL6
+  - name: DMA2_TRGSEL7
+    description: desc DMA2_TRGSEL7.
+    byte_offset: 80
+    fieldset: DMA2_TRGSEL7
+  - name: DMA_RC_TRGSEL
+    description: desc DMA_RC_TRGSEL.
+    byte_offset: 84
+    fieldset: DMA_RC_TRGSEL
+  - name: TMR6_TRGSEL0
+    description: desc TMR6_TRGSEL0.
+    byte_offset: 88
+    fieldset: TMR6_TRGSEL0
+  - name: TMR6_TRGSEL1
+    description: desc TMR6_TRGSEL1.
+    byte_offset: 92
+    fieldset: TMR6_TRGSEL1
+  - name: TMR6_TRGSEL2
+    description: desc TMR6_TRGSEL2.
+    byte_offset: 96
+    fieldset: TMR6_TRGSEL2
+  - name: TMR6_TRGSEL3
+    description: desc TMR6_TRGSEL3.
+    byte_offset: 100
+    fieldset: TMR6_TRGSEL3
+  - name: PEVNT_TRGSEL12
+    description: desc PEVNT_TRGSEL12.
+    byte_offset: 104
+    fieldset: PEVNT_TRGSEL12
+  - name: PEVNT_TRGSEL34
+    description: desc PEVNT_TRGSEL34.
+    byte_offset: 108
+    fieldset: PEVNT_TRGSEL34
+  - name: TMR0_TRGSEL
+    description: desc TMR0_TRGSEL.
+    byte_offset: 112
+    fieldset: TMR0_TRGSEL
+  - name: TMR2_TRGSEL
+    description: desc TMR2_TRGSEL.
+    byte_offset: 116
+    fieldset: TMR2_TRGSEL
+  - name: HASH_TRGSELB
+    description: desc HASH_TRGSELB.
+    byte_offset: 120
+    fieldset: HASH_TRGSELB
+  - name: HASH_TRGSELA
+    description: desc HASH_TRGSELA.
+    byte_offset: 124
+    fieldset: HASH_TRGSELA
+  - name: TMRA_TRGSEL0
+    description: desc TMRA_TRGSEL0.
+    byte_offset: 128
+    fieldset: TMRA_TRGSEL0
+  - name: TMRA_TRGSEL1
+    description: desc TMRA_TRGSEL1.
+    byte_offset: 132
+    fieldset: TMRA_TRGSEL1
+  - name: TMRA_TRGSEL2
+    description: desc TMRA_TRGSEL2.
+    byte_offset: 136
+    fieldset: TMRA_TRGSEL2
+  - name: TMRA_TRGSEL3
+    description: desc TMRA_TRGSEL3.
+    byte_offset: 140
+    fieldset: TMRA_TRGSEL3
+  - name: OTS_TRGSEL
+    description: desc OTS_TRGSEL.
+    byte_offset: 144
+    fieldset: OTS_TRGSEL
+  - name: ADC1_TRGSEL0
+    description: desc ADC1_TRGSEL0.
+    byte_offset: 148
+    fieldset: ADC1_TRGSEL0
+  - name: ADC1_TRGSEL1
+    description: desc ADC1_TRGSEL1.
+    byte_offset: 152
+    fieldset: ADC1_TRGSEL1
+  - name: ADC2_TRGSEL0
+    description: desc ADC2_TRGSEL0.
+    byte_offset: 156
+    fieldset: ADC2_TRGSEL0
+  - name: ADC2_TRGSEL1
+    description: desc ADC2_TRGSEL1.
+    byte_offset: 160
+    fieldset: ADC2_TRGSEL1
+  - name: ADC3_TRGSEL0
+    description: desc ADC3_TRGSEL0.
+    byte_offset: 164
+    fieldset: ADC3_TRGSEL0
+  - name: ADC3_TRGSEL1
+    description: desc ADC3_TRGSEL1.
+    byte_offset: 168
+    fieldset: ADC3_TRGSEL1
+  - name: COMTRG1
+    description: desc COMTRG1.
+    byte_offset: 172
+    fieldset: COMTRG1
+  - name: COMTRG2
+    description: desc COMTRG2.
+    byte_offset: 176
+    fieldset: COMTRG2
+  - name: PEVNTDIRR1
+    description: desc PEVNTDIRR1.
+    byte_offset: 256
+    fieldset: PEVNTDIRR1
+  - name: PEVNTIDR1
+    description: desc PEVNTIDR1.
+    byte_offset: 260
+    access: Read
+    fieldset: PEVNTIDR1
+  - name: PEVNTODR1
+    description: desc PEVNTODR1.
+    byte_offset: 264
+    fieldset: PEVNTODR1
+  - name: PEVNTORR1
+    description: desc PEVNTORR1.
+    byte_offset: 268
+    fieldset: PEVNTORR1
+  - name: PEVNTOSR1
+    description: desc PEVNTOSR1.
+    byte_offset: 272
+    fieldset: PEVNTOSR1
+  - name: PEVNTRISR1
+    description: desc PEVNTRISR1.
+    byte_offset: 276
+    fieldset: PEVNTRISR1
+  - name: PEVNTFALR1
+    description: desc PEVNTFALR1.
+    byte_offset: 280
+    fieldset: PEVNTFALR1
+  - name: PEVNTDIRR2
+    description: desc PEVNTDIRR2.
+    byte_offset: 284
+    fieldset: PEVNTDIRR2
+  - name: PEVNTIDR2
+    description: desc PEVNTIDR2.
+    byte_offset: 288
+    access: Read
+    fieldset: PEVNTIDR2
+  - name: PEVNTODR2
+    description: desc PEVNTODR2.
+    byte_offset: 292
+    fieldset: PEVNTODR2
+  - name: PEVNTORR2
+    description: desc PEVNTORR2.
+    byte_offset: 296
+    fieldset: PEVNTORR2
+  - name: PEVNTOSR2
+    description: desc PEVNTOSR2.
+    byte_offset: 300
+    fieldset: PEVNTOSR2
+  - name: PEVNTRISR2
+    description: desc PEVNTRISR2.
+    byte_offset: 304
+    fieldset: PEVNTRISR2
+  - name: PEVNTFALR2
+    description: desc PEVNTFALR2.
+    byte_offset: 308
+    fieldset: PEVNTFALR2
+  - name: PEVNTDIRR3
+    description: desc PEVNTDIRR3.
+    byte_offset: 312
+    fieldset: PEVNTDIRR3
+  - name: PEVNTIDR3
+    description: desc PEVNTIDR3.
+    byte_offset: 316
+    access: Read
+    fieldset: PEVNTIDR3
+  - name: PEVNTODR3
+    description: desc PEVNTODR3.
+    byte_offset: 320
+    fieldset: PEVNTODR3
+  - name: PEVNTORR3
+    description: desc PEVNTORR3.
+    byte_offset: 324
+    fieldset: PEVNTORR3
+  - name: PEVNTOSR3
+    description: desc PEVNTOSR3.
+    byte_offset: 328
+    fieldset: PEVNTOSR3
+  - name: PEVNTRISR3
+    description: desc PEVNTRISR3.
+    byte_offset: 332
+    fieldset: PEVNTRISR3
+  - name: PEVNTFALR3
+    description: desc PEVNTFALR3.
+    byte_offset: 336
+    fieldset: PEVNTFALR3
+  - name: PEVNTDIRR4
+    description: desc PEVNTDIRR4.
+    byte_offset: 340
+    fieldset: PEVNTDIRR4
+  - name: PEVNTIDR4
+    description: desc PEVNTIDR4.
+    byte_offset: 344
+    access: Read
+    fieldset: PEVNTIDR4
+  - name: PEVNTODR4
+    description: desc PEVNTODR4.
+    byte_offset: 348
+    fieldset: PEVNTODR4
+  - name: PEVNTORR4
+    description: desc PEVNTORR4.
+    byte_offset: 352
+    fieldset: PEVNTORR4
+  - name: PEVNTOSR4
+    description: desc PEVNTOSR4.
+    byte_offset: 356
+    fieldset: PEVNTOSR4
+  - name: PEVNTRISR4
+    description: desc PEVNTRISR4.
+    byte_offset: 360
+    fieldset: PEVNTRISR4
+  - name: PEVNTFALR4
+    description: desc PEVNTFALR4.
+    byte_offset: 364
+    fieldset: PEVNTFALR4
+  - name: PEVNTNFCR
+    description: desc PEVNTNFCR.
+    byte_offset: 368
+    fieldset: PEVNTNFCR
+fieldset/ADC1_TRGSEL0:
+  description: desc ADC1_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC1_TRGSEL1:
+  description: desc ADC1_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC2_TRGSEL0:
+  description: desc ADC2_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC2_TRGSEL1:
+  description: desc ADC2_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC3_TRGSEL0:
+  description: desc ADC3_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC3_TRGSEL1:
+  description: desc ADC3_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/COMTRG1:
+  description: desc COMTRG1.
+  fields:
+  - name: COMTRG
+    description: desc COMTRG.
+    bit_offset: 0
+    bit_size: 9
+fieldset/COMTRG2:
+  description: desc COMTRG2.
+  fields:
+  - name: COMTRG
+    description: desc COMTRG.
+    bit_offset: 0
+    bit_size: 9
+fieldset/DCU_TRGSEL1:
+  description: desc DCU_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DCU_TRGSEL2:
+  description: desc DCU_TRGSEL2.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DCU_TRGSEL3:
+  description: desc DCU_TRGSEL3.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DCU_TRGSEL4:
+  description: desc DCU_TRGSEL4.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA1_TRGSEL0:
+  description: desc DMA1_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA1_TRGSEL1:
+  description: desc DMA1_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA1_TRGSEL2:
+  description: desc DMA1_TRGSEL2.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA1_TRGSEL3:
+  description: desc DMA1_TRGSEL3.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA1_TRGSEL4:
+  description: desc DMA1_TRGSEL4.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA1_TRGSEL5:
+  description: desc DMA1_TRGSEL5.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA1_TRGSEL6:
+  description: desc DMA1_TRGSEL6.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA1_TRGSEL7:
+  description: desc DMA1_TRGSEL7.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA2_TRGSEL0:
+  description: desc DMA2_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA2_TRGSEL1:
+  description: desc DMA2_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA2_TRGSEL2:
+  description: desc DMA2_TRGSEL2.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA2_TRGSEL3:
+  description: desc DMA2_TRGSEL3.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA2_TRGSEL4:
+  description: desc DMA2_TRGSEL4.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA2_TRGSEL5:
+  description: desc DMA2_TRGSEL5.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA2_TRGSEL6:
+  description: desc DMA2_TRGSEL6.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA2_TRGSEL7:
+  description: desc DMA2_TRGSEL7.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA_RC_TRGSEL:
+  description: desc DMA_RC_TRGSEL.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/HASH_TRGSELA:
+  description: desc HASH_TRGSELA.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/HASH_TRGSELB:
+  description: desc HASH_TRGSELB.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/INTSFTTRG:
+  description: desc INTSFTTRG.
+  fields:
+  - name: STRG
+    description: desc STRG.
+    bit_offset: 0
+    bit_size: 1
+fieldset/OTS_TRGSEL:
+  description: desc OTS_TRGSEL.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/PEVNTDIRR1:
+  description: desc PEVNTDIRR1.
+  fields:
+  - name: PDIR
+    description: desc PDIR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTDIRR2:
+  description: desc PEVNTDIRR2.
+  fields:
+  - name: PDIR
+    description: desc PDIR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTDIRR3:
+  description: desc PEVNTDIRR3.
+  fields:
+  - name: PDIR
+    description: desc PDIR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTDIRR4:
+  description: desc PEVNTDIRR4.
+  fields:
+  - name: PDIR
+    description: desc PDIR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTFALR1:
+  description: desc PEVNTFALR1.
+  fields:
+  - name: FAL
+    description: desc FAL.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTFALR2:
+  description: desc PEVNTFALR2.
+  fields:
+  - name: FAL
+    description: desc FAL.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTFALR3:
+  description: desc PEVNTFALR3.
+  fields:
+  - name: FAL
+    description: desc FAL.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTFALR4:
+  description: desc PEVNTFALR4.
+  fields:
+  - name: FAL
+    description: desc FAL.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTIDR1:
+  description: desc PEVNTIDR1.
+  fields:
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTIDR2:
+  description: desc PEVNTIDR2.
+  fields:
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTIDR3:
+  description: desc PEVNTIDR3.
+  fields:
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTIDR4:
+  description: desc PEVNTIDR4.
+  fields:
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTNFCR:
+  description: desc PEVNTNFCR.
+  fields:
+  - name: NFEN1
+    description: desc NFEN1.
+    bit_offset: 0
+    bit_size: 1
+  - name: DIVS1
+    description: desc DIVS1.
+    bit_offset: 1
+    bit_size: 2
+  - name: NFEN2
+    description: desc NFEN2.
+    bit_offset: 8
+    bit_size: 1
+  - name: DIVS2
+    description: desc DIVS2.
+    bit_offset: 9
+    bit_size: 2
+  - name: NFEN3
+    description: desc NFEN3.
+    bit_offset: 16
+    bit_size: 1
+  - name: DIVS3
+    description: desc DIVS3.
+    bit_offset: 17
+    bit_size: 2
+  - name: NFEN4
+    description: desc NFEN4.
+    bit_offset: 24
+    bit_size: 1
+  - name: DIVS4
+    description: desc DIVS4.
+    bit_offset: 25
+    bit_size: 2
+fieldset/PEVNTODR1:
+  description: desc PEVNTODR1.
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTODR2:
+  description: desc PEVNTODR2.
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTODR3:
+  description: desc PEVNTODR3.
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTODR4:
+  description: desc PEVNTODR4.
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTORR1:
+  description: desc PEVNTORR1.
+  fields:
+  - name: POR
+    description: desc POR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTORR2:
+  description: desc PEVNTORR2.
+  fields:
+  - name: POR
+    description: desc POR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTORR3:
+  description: desc PEVNTORR3.
+  fields:
+  - name: POR
+    description: desc POR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTORR4:
+  description: desc PEVNTORR4.
+  fields:
+  - name: POR
+    description: desc POR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTOSR1:
+  description: desc PEVNTOSR1.
+  fields:
+  - name: POS
+    description: desc POS.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTOSR2:
+  description: desc PEVNTOSR2.
+  fields:
+  - name: POS
+    description: desc POS.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTOSR3:
+  description: desc PEVNTOSR3.
+  fields:
+  - name: POS
+    description: desc POS.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTOSR4:
+  description: desc PEVNTOSR4.
+  fields:
+  - name: POS
+    description: desc POS.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTRISR1:
+  description: desc PEVNTRISR1.
+  fields:
+  - name: RIS
+    description: desc RIS.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTRISR2:
+  description: desc PEVNTRISR2.
+  fields:
+  - name: RIS
+    description: desc RIS.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTRISR3:
+  description: desc PEVNTRISR3.
+  fields:
+  - name: RIS
+    description: desc RIS.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNTRISR4:
+  description: desc PEVNTRISR4.
+  fields:
+  - name: RIS
+    description: desc RIS.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PEVNT_TRGSEL12:
+  description: desc PEVNT_TRGSEL12.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/PEVNT_TRGSEL34:
+  description: desc PEVNT_TRGSEL34.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMR0_TRGSEL:
+  description: desc TMR0_TRGSEL.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMR2_TRGSEL:
+  description: desc TMR2_TRGSEL.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMR6_TRGSEL0:
+  description: desc TMR6_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMR6_TRGSEL1:
+  description: desc TMR6_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMR6_TRGSEL2:
+  description: desc TMR6_TRGSEL2.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMR6_TRGSEL3:
+  description: desc TMR6_TRGSEL3.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMRA_TRGSEL0:
+  description: desc TMRA_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMRA_TRGSEL1:
+  description: desc TMRA_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMRA_TRGSEL2:
+  description: desc TMRA_TRGSEL2.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/TMRA_TRGSEL3:
+  description: desc TMRA_TRGSEL3.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2

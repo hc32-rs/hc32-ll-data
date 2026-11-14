@@ -1,0 +1,83 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M441/PERIC；覆盖系列：HC32M441。
+block/PERIC:
+  description: desc PERIC.
+  items:
+  - name: TMR_SYNENR
+    description: desc TMR_SYNENR.
+    byte_offset: 20
+    fieldset: TMR_SYNENR
+  - name: USART1_NFC
+    description: desc USART1_NFC.
+    byte_offset: 28
+    fieldset: USART1_NFC
+fieldset/TMR_SYNENR:
+  description: desc TMR_SYNENR.
+  fields:
+  - name: TMR0U1A
+    description: desc TMR0U1A.
+    bit_offset: 0
+    bit_size: 1
+  - name: TMR0U1B
+    description: desc TMR0U1B.
+    bit_offset: 1
+    bit_size: 1
+  - name: TMR0U2A
+    description: desc TMR0U2A.
+    bit_offset: 2
+    bit_size: 1
+  - name: TMR0U2B
+    description: desc TMR0U2B.
+    bit_offset: 3
+    bit_size: 1
+  - name: TMR4U1
+    description: desc TMR4U1.
+    bit_offset: 4
+    bit_size: 1
+  - name: TMR4U2
+    description: desc TMR4U2.
+    bit_offset: 5
+    bit_size: 1
+  - name: TMR4U3
+    description: desc TMR4U3.
+    bit_offset: 6
+    bit_size: 1
+  - name: TMR6U1
+    description: desc TMR6U1.
+    bit_offset: 8
+    bit_size: 1
+  - name: TMR6U2
+    description: desc TMR6U2.
+    bit_offset: 9
+    bit_size: 1
+  - name: TMRAU1
+    description: desc TMRAU1.
+    bit_offset: 10
+    bit_size: 1
+  - name: TMRAU2
+    description: desc TMRAU2.
+    bit_offset: 11
+    bit_size: 1
+  - name: TMRAU3
+    description: desc TMRAU3.
+    bit_offset: 12
+    bit_size: 1
+  - name: TMRAU4
+    description: desc TMRAU4.
+    bit_offset: 13
+    bit_size: 1
+  - name: TMRAU5
+    description: desc TMRAU5.
+    bit_offset: 14
+    bit_size: 1
+fieldset/USART1_NFC:
+  description: desc USART1_NFC.
+  fields:
+  - name: USASRT1_NFS
+    description: desc USASRT1_NFS.
+    bit_offset: 0
+    bit_size: 2
+  - name: USART1_NFE
+    description: desc USART1_NFE.
+    bit_offset: 2
+    bit_size: 1

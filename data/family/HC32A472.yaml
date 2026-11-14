@@ -1,0 +1,1316 @@
+# HC32A472 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
+# 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
+- name: ADC1
+  address: 0x40040000
+  registers:
+    kind: adc
+    block: ADC
+    version: v6
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_ADC1
+  interrupts:
+  - signal: ADC_1
+    interrupt: ADC_1
+- name: ADC2
+  address: 0x40040400
+  registers:
+    kind: adc
+    block: ADC
+    version: v7
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_ADC2
+  interrupts:
+  - signal: ADC_2
+    interrupt: ADC_2
+- name: ADC3
+  address: 0x40040800
+  registers:
+    kind: adc
+    block: ADC
+    version: v8
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_ADC3
+  interrupts:
+  - signal: ADC_3
+    interrupt: ADC_3
+- name: AES
+  address: 0x40008000
+  registers:
+    kind: aes
+    block: AES
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_AES
+- name: AOS
+  address: 0x40010800
+  registers:
+    kind: aos
+    block: AOS
+    version: v3
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_AOS
+- name: CAN1
+  address: 0x40078000
+  registers:
+    kind: can
+    block: CAN
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_CAN1
+  interrupts:
+  - signal: CAN_1
+    interrupt: CAN_1
+- name: CAN2
+  address: 0x40078000
+  registers:
+    kind: can
+    block: CAN
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_CAN2
+  interrupts:
+  - signal: CAN_2
+    interrupt: CAN_2
+- name: CAN3
+  address: 0x40078000
+  registers:
+    kind: can
+    block: CAN
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_CAN3
+  interrupts:
+  - signal: CAN_3
+    interrupt: CAN_3
+- name: CMP1
+  address: 0x40038400
+  registers:
+    kind: cmp
+    block: CMP
+    version: v7
+  interrupts:
+  - signal: CMP1
+    interrupt: CMP1
+- name: CMP2
+  address: 0x40038500
+  registers:
+    kind: cmp
+    block: CMP
+    version: v8
+  interrupts:
+  - signal: CMP2
+    interrupt: CMP2
+- name: CMP3
+  address: 0x40038400
+  registers:
+    kind: cmp
+    block: CMP
+    version: v7
+  interrupts:
+  - signal: CMP3
+    interrupt: CMP3
+- name: CMP4
+  address: 0x40038500
+  registers:
+    kind: cmp
+    block: CMP
+    version: v8
+  interrupts:
+  - signal: CMP4
+    interrupt: CMP4
+- name: CMU
+  address: 0x40048000
+  registers:
+    kind: cmu
+    block: CMU
+    version: v3
+  interrupts:
+  - signal: CMU_XTAL_STOP
+    interrupt: CMU_XTAL_STOP
+  - signal: CMU_FCM
+    interrupt: CMU_FCM
+- name: CRC
+  address: 0x40008C00
+  registers:
+    kind: crc
+    block: CRC
+    version: v3
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_CRC
+- name: CTC
+  address: 0x40049C00
+  registers:
+    kind: ctc
+    block: CTC
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_CTC
+  interrupts:
+  - signal: CTC
+    interrupt: CTC
+- name: DAC1
+  address: 0x40041000
+  registers:
+    kind: dac
+    block: DAC
+    version: v2
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_DAC1
+- name: DAC2
+  address: 0x40041000
+  registers:
+    kind: dac
+    block: DAC
+    version: v2
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_DAC2
+- name: DAC3
+  address: 0x40041000
+  registers:
+    kind: dac
+    block: DAC
+    version: v2
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_DAC3
+- name: DAC4
+  address: 0x40041000
+  registers:
+    kind: dac
+    block: DAC
+    version: v2
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_DAC4
+- name: DBGC
+  address: 0xE0042000
+  registers:
+    kind: dbgc
+    block: DBGC
+    version: v3
+- name: DCU1
+  address: 0x40056000
+  registers:
+    kind: dcu
+    block: DCU
+    version: v3
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DCU1
+  interrupts:
+  - signal: DCU_1
+    interrupt: DCU_1
+- name: DCU2
+  address: 0x40056000
+  registers:
+    kind: dcu
+    block: DCU
+    version: v3
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DCU2
+  interrupts:
+  - signal: DUC_2
+    interrupt: DUC_2
+- name: DCU3
+  address: 0x40056000
+  registers:
+    kind: dcu
+    block: DCU
+    version: v3
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DCU3
+  interrupts:
+  - signal: DCU_3
+    interrupt: DCU_3
+- name: DMA1
+  address: 0x40053000
+  registers:
+    kind: dma
+    block: DMA
+    version: v3
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DMA1
+  interrupts:
+  - signal: DMA1_Error
+    interrupt: DMA1_Error
+  - signal: DMA1_TC0_BTC0
+    interrupt: DMA1_TC0_BTC0
+  - signal: DMA1_TC1_BTC1
+    interrupt: DMA1_TC1_BTC1
+  - signal: DMA1_TC2_BTC2
+    interrupt: DMA1_TC2_BTC2
+  - signal: DMA1_TC3_BTC3
+    interrupt: DMA1_TC3_BTC3
+  - signal: DMA1_TC4_BTC4
+    interrupt: DMA1_TC4_BTC4
+  - signal: DMA1_TC5_BTC5
+    interrupt: DMA1_TC5_BTC5
+  - signal: DMA1_TC6_BTC6
+    interrupt: DMA1_TC6_BTC6
+  - signal: DMA1_TC7_BTC7
+    interrupt: DMA1_TC7_BTC7
+- name: DMA2
+  address: 0x40053000
+  registers:
+    kind: dma
+    block: DMA
+    version: v3
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DMA2
+  interrupts:
+  - signal: DMA2_Error
+    interrupt: DMA2_Error
+  - signal: DMA2_TC0_BTC0
+    interrupt: DMA2_TC0_BTC0
+  - signal: DMA2_TC1_BTC1
+    interrupt: DMA2_TC1_BTC1
+  - signal: DMA2_TC2_BTC2
+    interrupt: DMA2_TC2_BTC2
+  - signal: DMA2_TC3_BTC3
+    interrupt: DMA2_TC3_BTC3
+  - signal: DMA2_TC4_BTC4
+    interrupt: DMA2_TC4_BTC4
+  - signal: DMA2_TC5_BTC5
+    interrupt: DMA2_TC5_BTC5
+  - signal: DMA2_TC6_BTC6
+    interrupt: DMA2_TC6_BTC6
+  - signal: DMA2_TC7_BTC7
+    interrupt: DMA2_TC7_BTC7
+- name: EFM
+  address: 0x40010400
+  registers:
+    kind: efm
+    block: EFM
+    version: v3
+  interrupts:
+  - signal: EFM_PEERR_RDCOL
+    interrupt: EFM_PEERR_RDCOL
+  - signal: EFM_OPEND
+    interrupt: EFM_OPEND
+- name: EMB0
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v4
+  interrupts:
+  - signal: EMB_GR0
+    interrupt: EMB_GR0
+- name: EMB1
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v4
+  interrupts:
+  - signal: EMB_GR1
+    interrupt: EMB_GR1
+- name: EMB2
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v4
+  interrupts:
+  - signal: EMB_GR2
+    interrupt: EMB_GR2
+- name: EMB3
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v4
+  interrupts:
+  - signal: EMB_GR3
+    interrupt: EMB_GR3
+- name: EMB4
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v4
+  interrupts:
+  - signal: EMB_GR4
+    interrupt: EMB_GR4
+- name: EMB5
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v4
+  interrupts:
+  - signal: EMB_GR5
+    interrupt: EMB_GR5
+- name: EMB6
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v4
+  interrupts:
+  - signal: EMB_GR6
+    interrupt: EMB_GR6
+- name: EMB_CTL1
+  address: 0x0
+  registers:
+    kind: emb
+    block: EMB
+    version: v5
+- name: FCM
+  address: 0x40048400
+  registers:
+    kind: fcm
+    block: FCM
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_FCM
+- name: FMAC1
+  address: 0x40058000
+  registers:
+    kind: fmac
+    block: FMAC
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_FMAC1
+  interrupts:
+  - signal: FMAC_1
+    interrupt: FMAC_1
+- name: FMAC2
+  address: 0x40058000
+  registers:
+    kind: fmac
+    block: FMAC
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_FMAC2
+  interrupts:
+  - signal: FMAC_2
+    interrupt: FMAC_2
+- name: FMAC3
+  address: 0x40058000
+  registers:
+    kind: fmac
+    block: FMAC
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_FMAC3
+  interrupts:
+  - signal: FMAC_3
+    interrupt: FMAC_3
+- name: FMAC4
+  address: 0x40058000
+  registers:
+    kind: fmac
+    block: FMAC
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_FMAC4
+  interrupts:
+  - signal: FMAC_4
+    interrupt: FMAC_4
+- name: GPIO
+  address: 0x40053800
+  registers:
+    kind: gpio
+    block: GPIO
+    version: v3
+  interrupts:
+  - signal: EVENT_PORT1
+    interrupt: EVENT_PORT1
+  - signal: EVENT_PORT2
+    interrupt: EVENT_PORT2
+  - signal: EVENT_PORT3
+    interrupt: EVENT_PORT3
+  - signal: EVENT_PORT4
+    interrupt: EVENT_PORT4
+- name: HASH
+  address: 0x40008400
+  registers:
+    kind: hash
+    block: HASH
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_HASH
+  interrupts:
+  - signal: CPM
+    interrupt: CPM
+- name: I2C1
+  address: 0x4003B400
+  registers:
+    kind: i
+    block: I
+    version: v4
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2C1
+  interrupts:
+  - signal: I2C_1
+    interrupt: I2C_1
+- name: I2C2
+  address: 0x4003B400
+  registers:
+    kind: i
+    block: I
+    version: v4
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2C2
+  interrupts:
+  - signal: I2C_2
+    interrupt: I2C_2
+- name: I2C3
+  address: 0x4003B400
+  registers:
+    kind: i
+    block: I
+    version: v4
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2C3
+  interrupts:
+  - signal: I2C_3
+    interrupt: I2C_3
+- name: ICG
+  address: 0x400
+  registers:
+    kind: icg
+    block: ICG
+    version: v3
+- name: INTC
+  address: 0x40051000
+  registers:
+    kind: intc
+    block: INTC
+    version: v3
+  interrupts:
+  - signal: GLOBAL0_SWINT0
+    interrupt: GLOBAL0_SWINT0
+  - signal: GLOBAL1_SWINT1
+    interrupt: GLOBAL1_SWINT1
+  - signal: GLOBAL2_SWINT2
+    interrupt: GLOBAL2_SWINT2
+  - signal: GLOBAL3_SWINT3
+    interrupt: GLOBAL3_SWINT3
+  - signal: GLOBAL4_SWINT4
+    interrupt: GLOBAL4_SWINT4
+  - signal: GLOBAL5_SWINT5
+    interrupt: GLOBAL5_SWINT5
+  - signal: GLOBAL6_SWINT6
+    interrupt: GLOBAL6_SWINT6
+  - signal: GLOBAL7_SWINT7
+    interrupt: GLOBAL7_SWINT7
+  - signal: GLOBAL8_SWINT8
+    interrupt: GLOBAL8_SWINT8
+  - signal: GLOBAL9_SWINT9
+    interrupt: GLOBAL9_SWINT9
+  - signal: GLOBAL10_SWINT10
+    interrupt: GLOBAL10_SWINT10
+  - signal: GLOBAL11_SWINT11
+    interrupt: GLOBAL11_SWINT11
+  - signal: GLOBAL12_SWINT12
+    interrupt: GLOBAL12_SWINT12
+  - signal: GLOBAL13_SWINT13
+    interrupt: GLOBAL13_SWINT13
+  - signal: GLOBAL14_SWINT14
+    interrupt: GLOBAL14_SWINT14
+  - signal: GLOBAL15_SWINT15
+    interrupt: GLOBAL15_SWINT15
+  - signal: GLOBAL16_EXINT0
+    interrupt: GLOBAL16_EXINT0
+  - signal: GLOBAL17_EXINT1
+    interrupt: GLOBAL17_EXINT1
+  - signal: GLOBAL18_EXINT2
+    interrupt: GLOBAL18_EXINT2
+  - signal: GLOBAL19_EXINT3
+    interrupt: GLOBAL19_EXINT3
+  - signal: GLOBAL20_EXINT4
+    interrupt: GLOBAL20_EXINT4
+  - signal: GLOBAL21_EXINT5
+    interrupt: GLOBAL21_EXINT5
+  - signal: GLOBAL22_EXINT6
+    interrupt: GLOBAL22_EXINT6
+  - signal: GLOBAL23_EXINT7
+    interrupt: GLOBAL23_EXINT7
+  - signal: GLOBAL24_EXINT8
+    interrupt: GLOBAL24_EXINT8
+  - signal: GLOBAL25_EXINT9
+    interrupt: GLOBAL25_EXINT9
+  - signal: GLOBAL26_EXINT10
+    interrupt: GLOBAL26_EXINT10
+  - signal: GLOBAL27_EXINT11
+    interrupt: GLOBAL27_EXINT11
+  - signal: GLOBAL28_EXINT12
+    interrupt: GLOBAL28_EXINT12
+  - signal: GLOBAL29_EXINT13
+    interrupt: GLOBAL29_EXINT13
+  - signal: GLOBAL30_EXINT14
+    interrupt: GLOBAL30_EXINT14
+  - signal: GLOBAL31_EXINT15
+    interrupt: GLOBAL31_EXINT15
+- name: KEYSCAN
+  address: 0x40050C00
+  registers:
+    kind: keyscan
+    block: KEYSCAN
+    version: common
+- name: MAU
+  address: 0x40055000
+  registers:
+    kind: mau
+    block: MAU
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_MAU
+  interrupts:
+  - signal: MAU
+    interrupt: MAU
+- name: MDIO
+  address: 0x40028400
+  registers:
+    kind: mdio
+    block: MDIO
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_MDIO
+  interrupts:
+  - signal: MDIO
+    interrupt: MDIO
+- name: MPU
+  address: 0x40050000
+  registers:
+    kind: mpu
+    block: MPU
+    version: v3
+- name: OTS
+  address: 0x40010600
+  registers:
+    kind: ots
+    block: OTS
+    version: v2
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_OTS
+  interrupts:
+  - signal: OTS
+    interrupt: OTS
+- name: PERIC
+  address: 0x40055400
+  registers:
+    kind: peric
+    block: PERIC
+    version: v3
+- name: PLA
+  address: 0x4004FC00
+  registers:
+    kind: pla
+    block: PLA
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_PLA
+  interrupts:
+  - signal: PLA
+    interrupt: PLA
+- name: PWC
+  address: 0x40048000
+  registers:
+    kind: pwc
+    block: PWC
+    version: v3
+  interrupts:
+  - signal: PWC_WKTM
+    interrupt: PWC_WKTM
+  - signal: PWC_PVD1
+    interrupt: PWC_PVD1
+  - signal: PWC_PVD2
+    interrupt: PWC_PVD2
+- name: QSPI
+  address: 0x9C000000
+  registers:
+    kind: qspi
+    block: QSPI
+    version: v3
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_QSPI
+  interrupts:
+  - signal: QSPI
+    interrupt: QSPI
+- name: RMU
+  address: 0x4004CCE0
+  registers:
+    kind: rmu
+    block: RMU
+    version: v3
+- name: RTC
+  address: 0x4004C000
+  registers:
+    kind: rtc
+    block: RTC
+    version: v1
+  interrupts:
+  - signal: RTC
+    interrupt: RTC
+- name: SMC
+  address: 0x88000000
+  registers:
+    kind: smc
+    block: SMC
+    version: v2
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_SMC
+- name: SPI1
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v1
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SPI1
+  interrupts:
+  - signal: SPI_1
+    interrupt: SPI_1
+- name: SPI2
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v1
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SPI2
+  interrupts:
+  - signal: SPI_2
+    interrupt: SPI_2
+- name: SPI3
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v1
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SPI3
+  interrupts:
+  - signal: SPI_3
+    interrupt: SPI_3
+- name: SPI4
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v1
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SPI4
+  interrupts:
+  - signal: SPI_4
+    interrupt: SPI_4
+- name: SRAMC
+  address: 0x40050800
+  registers:
+    kind: sramc
+    block: SRAMC
+    version: v3
+- name: SWDT
+  address: 0x40049400
+  registers:
+    kind: swdt
+    block: SWDT
+    version: v1
+  interrupts:
+  - signal: SWDT
+    interrupt: SWDT
+- name: TMR01
+  address: 0x40024000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v12
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR0_1
+  interrupts:
+  - signal: TMR0_1
+    interrupt: TMR0_1
+- name: TMR02
+  address: 0x40024000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v12
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR0_2
+  interrupts:
+  - signal: TMR0_2
+    interrupt: TMR0_2
+- name: TMR21
+  address: 0x40024800
+  registers:
+    kind: tmr
+    block: TMR
+    version: v13
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR2_1
+  interrupts:
+  - signal: TMR2_1
+    interrupt: TMR2_1
+  - signal: TMR2_1
+    interrupt: TMR2_1
+- name: TMR22
+  address: 0x40024800
+  registers:
+    kind: tmr
+    block: TMR
+    version: v13
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR2_2
+  interrupts:
+  - signal: TMR2_2
+    interrupt: TMR2_2
+  - signal: TMR2_2
+    interrupt: TMR2_2
+- name: TMR23
+  address: 0x40024800
+  registers:
+    kind: tmr
+    block: TMR
+    version: v13
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR2_3
+  interrupts:
+  - signal: TMR2_3
+    interrupt: TMR2_3
+  - signal: TMR2_3
+    interrupt: TMR2_3
+- name: TMR24
+  address: 0x40024800
+  registers:
+    kind: tmr
+    block: TMR
+    version: v13
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR2_4
+  interrupts:
+  - signal: TMR2_4
+    interrupt: TMR2_4
+  - signal: TMR2_4
+    interrupt: TMR2_4
+- name: TMR4
+  address: 0x40038000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v14
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR4
+  interrupts:
+  - signal: TMR4_1_GCMP
+    interrupt: TMR4_1_GCMP
+  - signal: TMR4_1_OVF_UDF
+    interrupt: TMR4_1_OVF_UDF
+  - signal: TMR4_1_RELOAD
+    interrupt: TMR4_1_RELOAD
+  - signal: TMR4_1_SCM
+    interrupt: TMR4_1_SCM
+- name: TMR61
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_1
+  interrupts:
+  - signal: TMR6_1_GCMP
+    interrupt: TMR6_1_GCMP
+  - signal: TMR6_1_OVF_UDF
+    interrupt: TMR6_1_OVF_UDF
+  - signal: TMR6_1_GDTE
+    interrupt: TMR6_1_GDTE
+  - signal: TMR6_1_SCMP
+    interrupt: TMR6_1_SCMP
+- name: TMR610
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_10
+  interrupts:
+  - signal: TMR6_10_GCMP
+    interrupt: TMR6_10_GCMP
+  - signal: TMR6_10_OVF_UDF
+    interrupt: TMR6_10_OVF_UDF
+  - signal: TMR6_10_GDTE
+    interrupt: TMR6_10_GDTE
+  - signal: TMR6_1_SCMP
+    interrupt: TMR6_1_SCMP
+- name: TMR62
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_2
+  interrupts:
+  - signal: TMR6_2_GCMP
+    interrupt: TMR6_2_GCMP
+  - signal: TMR6_2_OVF_UDF
+    interrupt: TMR6_2_OVF_UDF
+  - signal: TMR6_2_GDTE
+    interrupt: TMR6_2_GDTE
+  - signal: TMR6_2_SCMP
+    interrupt: TMR6_2_SCMP
+- name: TMR63
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_3
+  interrupts:
+  - signal: TMR6_3_GCMP
+    interrupt: TMR6_3_GCMP
+  - signal: TMR6_3_OVF_UDF
+    interrupt: TMR6_3_OVF_UDF
+  - signal: TMR6_3_GDTE
+    interrupt: TMR6_3_GDTE
+  - signal: TMR6_3_SCMP
+    interrupt: TMR6_3_SCMP
+- name: TMR64
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_4
+  interrupts:
+  - signal: TMR6_4_GCMP
+    interrupt: TMR6_4_GCMP
+  - signal: TMR6_4_OVF_UDF
+    interrupt: TMR6_4_OVF_UDF
+  - signal: TMR6_4_GDTE
+    interrupt: TMR6_4_GDTE
+  - signal: TMR6_4_SCMP
+    interrupt: TMR6_4_SCMP
+- name: TMR65
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_5
+  interrupts:
+  - signal: TMR6_5_GCMP
+    interrupt: TMR6_5_GCMP
+  - signal: TMR6_5_OVF_UDF
+    interrupt: TMR6_5_OVF_UDF
+  - signal: TMR6_5_GDTE
+    interrupt: TMR6_5_GDTE
+  - signal: TMR6_5_SCMP
+    interrupt: TMR6_5_SCMP
+- name: TMR66
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_6
+  interrupts:
+  - signal: TMR6_6_GCMP
+    interrupt: TMR6_6_GCMP
+  - signal: TMR6_6_OVF_UDF
+    interrupt: TMR6_6_OVF_UDF
+  - signal: TMR6_6_GDTE
+    interrupt: TMR6_6_GDTE
+  - signal: TMR6_6_SCMP
+    interrupt: TMR6_6_SCMP
+- name: TMR67
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_7
+  interrupts:
+  - signal: TMR6_7_GCMP
+    interrupt: TMR6_7_GCMP
+  - signal: TMR6_7_OVF_UDF
+    interrupt: TMR6_7_OVF_UDF
+  - signal: TMR6_7_GDTE
+    interrupt: TMR6_7_GDTE
+  - signal: TMR6_7_SCMP
+    interrupt: TMR6_7_SCMP
+- name: TMR68
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_8
+  interrupts:
+  - signal: TMR6_8_GCMP
+    interrupt: TMR6_8_GCMP
+  - signal: TMR6_8_OVF_UDF
+    interrupt: TMR6_8_OVF_UDF
+  - signal: TMR6_8_GDTE
+    interrupt: TMR6_8_GDTE
+  - signal: TMR6_8_SCMP
+    interrupt: TMR6_8_SCMP
+- name: TMR69
+  address: 0x4003C000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v15
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMR6_9
+  interrupts:
+  - signal: TMR6_9_GCMP
+    interrupt: TMR6_9_GCMP
+  - signal: TMR6_9_OVF_UDF
+    interrupt: TMR6_9_OVF_UDF
+  - signal: TMR6_9_GDTE
+    interrupt: TMR6_9_GDTE
+  - signal: TMR6_9_SCMP
+    interrupt: TMR6_9_SCMP
+- name: TMR6_COMMON
+  address: 0x4003C300
+  registers:
+    kind: tmr
+    block: TMR
+    version: v16
+- name: TMRA1
+  address: 0x4003A000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v3
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMRA_1
+  interrupts:
+  - signal: TMRA_1_OVF_UDF
+    interrupt: TMRA_1_OVF_UDF
+  - signal: TMRA_1_CMP
+    interrupt: TMRA_1_CMP
+- name: TMRA2
+  address: 0x4003A400
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v4
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMRA_2
+  interrupts:
+  - signal: TMRA_2_OVF_UDF
+    interrupt: TMRA_2_OVF_UDF
+  - signal: TMRA_1_CMP
+    interrupt: TMRA_1_CMP
+- name: TMRA3
+  address: 0x4003A800
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v5
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMRA_3
+  interrupts:
+  - signal: TMRA_3_OVF_UDF
+    interrupt: TMRA_3_OVF_UDF
+  - signal: TMRA_2_CMP
+    interrupt: TMRA_2_CMP
+- name: TMRA4
+  address: 0x4003AC00
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v6
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMRA_4
+  interrupts:
+  - signal: TMRA_4_OVF_UDF
+    interrupt: TMRA_4_OVF_UDF
+  - signal: TMRA_3_CMP
+    interrupt: TMRA_3_CMP
+- name: TMRA5
+  address: 0x40026000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v7
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMRA_5
+  interrupts:
+  - signal: TMRA_5_OVF_UDF
+    interrupt: TMRA_5_OVF_UDF
+  - signal: TMRA_5_CMP
+    interrupt: TMRA_5_CMP
+- name: TMRA6
+  address: 0x40026400
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v8
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TMRA_6
+  interrupts:
+  - signal: TMRA_6_OVF_UDF
+    interrupt: TMRA_6_OVF_UDF
+  - signal: TMRA_6_CMP
+    interrupt: TMRA_6_CMP
+- name: TRNG
+  address: 0x40042000
+  registers:
+    kind: trng
+    block: TRNG
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_TRNG
+  interrupts:
+  - signal: CPM
+    interrupt: CPM
+- name: USART1
+  address: 0x4001CC00
+  registers:
+    kind: usart
+    block: USART
+    version: v4
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_USART1
+  interrupts:
+  - signal: USART1
+    interrupt: USART1
+  - signal: USART1_TC
+    interrupt: USART1_TC
+  - signal: USART1_WUPI
+    interrupt: USART1_WUPI
+- name: USART2
+  address: 0x4001D000
+  registers:
+    kind: usart
+    block: USART
+    version: v5
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_USART2
+  interrupts:
+  - signal: USART2
+    interrupt: USART2
+  - signal: USART2_TC
+    interrupt: USART2_TC
+- name: USART3
+  address: 0x4001D400
+  registers:
+    kind: usart
+    block: USART
+    version: v6
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_USART3
+  interrupts:
+  - signal: USART3
+    interrupt: USART3
+  - signal: USART3_TC
+    interrupt: USART3_TC
+- name: USART4
+  address: 0x40020C00
+  registers:
+    kind: usart
+    block: USART
+    version: v7
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_USART4
+  interrupts:
+  - signal: USART4
+    interrupt: USART4
+  - signal: USART4_TC
+    interrupt: USART4_TC
+- name: USART5
+  address: 0x40021000
+  registers:
+    kind: usart
+    block: USART
+    version: v8
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_USART5
+  interrupts:
+  - signal: USART5
+    interrupt: USART5
+  - signal: USART5_TC
+    interrupt: USART5_TC
+- name: USART6
+  address: 0x40021400
+  registers:
+    kind: usart
+    block: USART
+    version: v9
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_USART6
+  interrupts:
+  - signal: USART6
+    interrupt: USART6
+  - signal: USART6_TC
+    interrupt: USART6_TC
+- name: USBFS
+  address: 0x40080000
+  registers:
+    kind: usbfs
+    block: USBFS
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_USBFS
+  interrupts:
+  - signal: USBFS
+    interrupt: USBFS
+- name: VREF
+  address: 0x4004F800
+  registers:
+    kind: vref
+    block: VREF
+    version: common
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_VREF
+- name: WDT
+  address: 0x40049000
+  registers:
+    kind: wdt
+    block: WDT
+    version: common
+  interrupts:
+  - signal: WDT
+    interrupt: WDT

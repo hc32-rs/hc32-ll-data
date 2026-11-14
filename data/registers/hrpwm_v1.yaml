@@ -1,0 +1,475 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A0/HRPWM；覆盖系列：HC32A4A0, HC32F4A0, HC32F4A2。
+block/HRPWM:
+  description: desc HRPWM.
+  items:
+  - name: CR1
+    description: desc CR1.
+    byte_offset: 0
+    fieldset: CR1
+  - name: CR2
+    description: desc CR2.
+    byte_offset: 4
+    fieldset: CR2
+  - name: CR3
+    description: desc CR3.
+    byte_offset: 8
+    fieldset: CR3
+  - name: CR4
+    description: desc CR4.
+    byte_offset: 12
+    fieldset: CR4
+  - name: CR5
+    description: desc CR5.
+    byte_offset: 16
+    fieldset: CR5
+  - name: CR6
+    description: desc CR6.
+    byte_offset: 20
+    fieldset: CR6
+  - name: CR7
+    description: desc CR7.
+    byte_offset: 24
+    fieldset: CR7
+  - name: CR8
+    description: desc CR8.
+    byte_offset: 28
+    fieldset: CR8
+  - name: CR9
+    description: desc CR9.
+    byte_offset: 32
+    fieldset: CR9
+  - name: CR10
+    description: desc CR10.
+    byte_offset: 36
+    fieldset: CR10
+  - name: CR11
+    description: desc CR11.
+    byte_offset: 40
+    fieldset: CR11
+  - name: CR12
+    description: desc CR12.
+    byte_offset: 44
+    fieldset: CR12
+  - name: CR13
+    description: desc CR13.
+    byte_offset: 48
+    fieldset: CR13
+  - name: CR14
+    description: desc CR14.
+    byte_offset: 52
+    fieldset: CR14
+  - name: CR15
+    description: desc CR15.
+    byte_offset: 56
+    fieldset: CR15
+  - name: CR16
+    description: desc CR16.
+    byte_offset: 60
+    fieldset: CR16
+  - name: CALCR0
+    description: desc CALCR0.
+    byte_offset: 80
+    fieldset: CALCR0
+  - name: CALCR1
+    description: desc CALCR1.
+    byte_offset: 84
+    fieldset: CALCR1
+fieldset/CALCR0:
+  description: desc CALCR0.
+  fields:
+  - name: CALCODE
+    description: desc CALCODE.
+    bit_offset: 0
+    bit_size: 8
+  - name: ENDF
+    description: desc ENDF.
+    bit_offset: 12
+    bit_size: 1
+  - name: CALEN
+    description: desc CALEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CALCR1:
+  description: desc CALCR1.
+  fields:
+  - name: CALCODE
+    description: desc CALCODE.
+    bit_offset: 0
+    bit_size: 8
+  - name: ENDF
+    description: desc ENDF.
+    bit_offset: 12
+    bit_size: 1
+  - name: CALEN
+    description: desc CALEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CR1:
+  description: desc CR1.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR10:
+  description: desc CR10.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR11:
+  description: desc CR11.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR12:
+  description: desc CR12.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR13:
+  description: desc CR13.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR14:
+  description: desc CR14.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR15:
+  description: desc CR15.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR16:
+  description: desc CR16.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR2:
+  description: desc CR2.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR3:
+  description: desc CR3.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR4:
+  description: desc CR4.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR5:
+  description: desc CR5.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR6:
+  description: desc CR6.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR7:
+  description: desc CR7.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR8:
+  description: desc CR8.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR9:
+  description: desc CR9.
+  fields:
+  - name: NSEL
+    description: desc NSEL.
+    bit_offset: 0
+    bit_size: 8
+  - name: PSEL
+    description: desc PSEL.
+    bit_offset: 8
+    bit_size: 8
+  - name: NE
+    description: desc NE.
+    bit_offset: 29
+    bit_size: 1
+  - name: PE
+    description: desc PE.
+    bit_offset: 30
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1

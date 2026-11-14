@@ -1,0 +1,879 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M458/INTC；覆盖系列：HC32M458。
+block/INTC:
+  description: desc INTC.
+  items:
+  - name: NMIER
+    description: desc NMIER.
+    byte_offset: 4
+    fieldset: NMIER
+  - name: NMIFR
+    description: desc NMIFR.
+    byte_offset: 8
+    fieldset: NMIFR
+  - name: NMIFCR
+    description: desc NMIFCR.
+    byte_offset: 12
+    fieldset: NMIFCR
+  - name: EIRQCR0
+    description: desc EIRQCR0.
+    byte_offset: 16
+    fieldset: EIRQCR0
+  - name: EIRQCR1
+    description: desc EIRQCR1.
+    byte_offset: 20
+    fieldset: EIRQCR1
+  - name: EIRQCR2
+    description: desc EIRQCR2.
+    byte_offset: 24
+    fieldset: EIRQCR2
+  - name: EIRQCR3
+    description: desc EIRQCR3.
+    byte_offset: 28
+    fieldset: EIRQCR3
+  - name: EIRQCR4
+    description: desc EIRQCR4.
+    byte_offset: 32
+    fieldset: EIRQCR4
+  - name: EIRQCR5
+    description: desc EIRQCR5.
+    byte_offset: 36
+    fieldset: EIRQCR5
+  - name: EIRQCR6
+    description: desc EIRQCR6.
+    byte_offset: 40
+    fieldset: EIRQCR6
+  - name: EIRQCR7
+    description: desc EIRQCR7.
+    byte_offset: 44
+    fieldset: EIRQCR7
+  - name: EIFR
+    description: desc EIFR.
+    byte_offset: 80
+    fieldset: EIFR
+  - name: EIFCR
+    description: desc EIFCR.
+    byte_offset: 84
+    fieldset: EIFCR
+  - name: EVTER
+    description: desc EVTER.
+    byte_offset: 88
+    fieldset: EVTER
+  - name: WKEN
+    description: desc WKEN.
+    byte_offset: 92
+    fieldset: WKEN
+  - name: SWIER
+    description: desc SWIER.
+    byte_offset: 96
+    fieldset: SWIER
+  - name: IER
+    description: desc IER.
+    byte_offset: 100
+    fieldset: IER
+  - name: FPUIER
+    description: desc FPUIER.
+    byte_offset: 104
+    fieldset: FPUIER
+fieldset/EIFCR:
+  description: desc EIFCR.
+  fields:
+  - name: EIFCLR0
+    description: desc EIFCLR0.
+    bit_offset: 0
+    bit_size: 1
+  - name: EIFCLR1
+    description: desc EIFCLR1.
+    bit_offset: 1
+    bit_size: 1
+  - name: EIFCLR2
+    description: desc EIFCLR2.
+    bit_offset: 2
+    bit_size: 1
+  - name: EIFCLR3
+    description: desc EIFCLR3.
+    bit_offset: 3
+    bit_size: 1
+  - name: EIFCLR4
+    description: desc EIFCLR4.
+    bit_offset: 4
+    bit_size: 1
+  - name: EIFCLR5
+    description: desc EIFCLR5.
+    bit_offset: 5
+    bit_size: 1
+  - name: EIFCLR6
+    description: desc EIFCLR6.
+    bit_offset: 6
+    bit_size: 1
+  - name: EIFCLR7
+    description: desc EIFCLR7.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EIFR:
+  description: desc EIFR.
+  fields:
+  - name: EIF0
+    description: desc EIF0.
+    bit_offset: 0
+    bit_size: 1
+  - name: EIF1
+    description: desc EIF1.
+    bit_offset: 1
+    bit_size: 1
+  - name: EIF2
+    description: desc EIF2.
+    bit_offset: 2
+    bit_size: 1
+  - name: EIF3
+    description: desc EIF3.
+    bit_offset: 3
+    bit_size: 1
+  - name: EIF4
+    description: desc EIF4.
+    bit_offset: 4
+    bit_size: 1
+  - name: EIF5
+    description: desc EIF5.
+    bit_offset: 5
+    bit_size: 1
+  - name: EIF6
+    description: desc EIF6.
+    bit_offset: 6
+    bit_size: 1
+  - name: EIF7
+    description: desc EIF7.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EIRQCR0:
+  description: desc EIRQCR0.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCSEL
+    description: desc NOCSEL.
+    bit_offset: 12
+    bit_size: 2
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EIRQCR1:
+  description: desc EIRQCR1.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCSEL
+    description: desc NOCSEL.
+    bit_offset: 12
+    bit_size: 2
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EIRQCR2:
+  description: desc EIRQCR2.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCSEL
+    description: desc NOCSEL.
+    bit_offset: 12
+    bit_size: 2
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EIRQCR3:
+  description: desc EIRQCR3.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCSEL
+    description: desc NOCSEL.
+    bit_offset: 12
+    bit_size: 2
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EIRQCR4:
+  description: desc EIRQCR4.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCSEL
+    description: desc NOCSEL.
+    bit_offset: 12
+    bit_size: 2
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EIRQCR5:
+  description: desc EIRQCR5.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCSEL
+    description: desc NOCSEL.
+    bit_offset: 12
+    bit_size: 2
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EIRQCR6:
+  description: desc EIRQCR6.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCSEL
+    description: desc NOCSEL.
+    bit_offset: 12
+    bit_size: 2
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EIRQCR7:
+  description: desc EIRQCR7.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCSEL
+    description: desc NOCSEL.
+    bit_offset: 12
+    bit_size: 2
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EVTER:
+  description: desc EVTER.
+  fields:
+  - name: EVTE0
+    description: desc EVTE0.
+    bit_offset: 0
+    bit_size: 1
+  - name: EVTE1
+    description: desc EVTE1.
+    bit_offset: 1
+    bit_size: 1
+  - name: EVTE2
+    description: desc EVTE2.
+    bit_offset: 2
+    bit_size: 1
+  - name: EVTE3
+    description: desc EVTE3.
+    bit_offset: 3
+    bit_size: 1
+  - name: EVTE4
+    description: desc EVTE4.
+    bit_offset: 4
+    bit_size: 1
+  - name: EVTE5
+    description: desc EVTE5.
+    bit_offset: 5
+    bit_size: 1
+  - name: EVTE6
+    description: desc EVTE6.
+    bit_offset: 6
+    bit_size: 1
+  - name: EVTE7
+    description: desc EVTE7.
+    bit_offset: 7
+    bit_size: 1
+  - name: EVTE8
+    description: desc EVTE8.
+    bit_offset: 8
+    bit_size: 1
+  - name: EVTE9
+    description: desc EVTE9.
+    bit_offset: 9
+    bit_size: 1
+  - name: EVTE10
+    description: desc EVTE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: EVTE11
+    description: desc EVTE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: EVTE12
+    description: desc EVTE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: EVTE13
+    description: desc EVTE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: EVTE14
+    description: desc EVTE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: EVTE15
+    description: desc EVTE15.
+    bit_offset: 15
+    bit_size: 1
+  - name: EVTE16
+    description: desc EVTE16.
+    bit_offset: 16
+    bit_size: 1
+  - name: EVTE17
+    description: desc EVTE17.
+    bit_offset: 17
+    bit_size: 1
+  - name: EVTE18
+    description: desc EVTE18.
+    bit_offset: 18
+    bit_size: 1
+  - name: EVTE19
+    description: desc EVTE19.
+    bit_offset: 19
+    bit_size: 1
+  - name: EVTE20
+    description: desc EVTE20.
+    bit_offset: 20
+    bit_size: 1
+  - name: EVTE21
+    description: desc EVTE21.
+    bit_offset: 21
+    bit_size: 1
+  - name: EVTE22
+    description: desc EVTE22.
+    bit_offset: 22
+    bit_size: 1
+  - name: EVTE23
+    description: desc EVTE23.
+    bit_offset: 23
+    bit_size: 1
+  - name: EVTE24
+    description: desc EVTE24.
+    bit_offset: 24
+    bit_size: 1
+  - name: EVTE25
+    description: desc EVTE25.
+    bit_offset: 25
+    bit_size: 1
+  - name: EVTE26
+    description: desc EVTE26.
+    bit_offset: 26
+    bit_size: 1
+  - name: EVTE27
+    description: desc EVTE27.
+    bit_offset: 27
+    bit_size: 1
+  - name: EVTE28
+    description: desc EVTE28.
+    bit_offset: 28
+    bit_size: 1
+  - name: EVTE29
+    description: desc EVTE29.
+    bit_offset: 29
+    bit_size: 1
+  - name: EVTE30
+    description: desc EVTE30.
+    bit_offset: 30
+    bit_size: 1
+  - name: EVTE31
+    description: desc EVTE31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/FPUIER:
+  description: desc FPUIER.
+  fields:
+  - name: IOCIEN
+    description: desc IOCIEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: DZCIEN
+    description: desc DZCIEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: OFCIEN
+    description: desc OFCIEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: UFCIEN
+    description: desc UFCIEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: IXCIEN
+    description: desc IXCIEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: IDCIEN
+    description: desc IDCIEN.
+    bit_offset: 5
+    bit_size: 1
+fieldset/IER:
+  description: desc IER.
+  fields:
+  - name: IEN0
+    description: desc IEN0.
+    bit_offset: 0
+    bit_size: 1
+  - name: IEN1
+    description: desc IEN1.
+    bit_offset: 1
+    bit_size: 1
+  - name: IEN2
+    description: desc IEN2.
+    bit_offset: 2
+    bit_size: 1
+  - name: IEN3
+    description: desc IEN3.
+    bit_offset: 3
+    bit_size: 1
+  - name: IEN4
+    description: desc IEN4.
+    bit_offset: 4
+    bit_size: 1
+  - name: IEN5
+    description: desc IEN5.
+    bit_offset: 5
+    bit_size: 1
+  - name: IEN6
+    description: desc IEN6.
+    bit_offset: 6
+    bit_size: 1
+  - name: IEN7
+    description: desc IEN7.
+    bit_offset: 7
+    bit_size: 1
+  - name: IEN8
+    description: desc IEN8.
+    bit_offset: 8
+    bit_size: 1
+  - name: IEN9
+    description: desc IEN9.
+    bit_offset: 9
+    bit_size: 1
+  - name: IEN10
+    description: desc IEN10.
+    bit_offset: 10
+    bit_size: 1
+  - name: IEN11
+    description: desc IEN11.
+    bit_offset: 11
+    bit_size: 1
+  - name: IEN12
+    description: desc IEN12.
+    bit_offset: 12
+    bit_size: 1
+  - name: IEN13
+    description: desc IEN13.
+    bit_offset: 13
+    bit_size: 1
+  - name: IEN14
+    description: desc IEN14.
+    bit_offset: 14
+    bit_size: 1
+  - name: IEN15
+    description: desc IEN15.
+    bit_offset: 15
+    bit_size: 1
+  - name: IEN16
+    description: desc IEN16.
+    bit_offset: 16
+    bit_size: 1
+  - name: IEN17
+    description: desc IEN17.
+    bit_offset: 17
+    bit_size: 1
+  - name: IEN18
+    description: desc IEN18.
+    bit_offset: 18
+    bit_size: 1
+  - name: IEN19
+    description: desc IEN19.
+    bit_offset: 19
+    bit_size: 1
+  - name: IEN20
+    description: desc IEN20.
+    bit_offset: 20
+    bit_size: 1
+  - name: IEN21
+    description: desc IEN21.
+    bit_offset: 21
+    bit_size: 1
+  - name: IEN22
+    description: desc IEN22.
+    bit_offset: 22
+    bit_size: 1
+  - name: IEN23
+    description: desc IEN23.
+    bit_offset: 23
+    bit_size: 1
+  - name: IEN24
+    description: desc IEN24.
+    bit_offset: 24
+    bit_size: 1
+  - name: IEN25
+    description: desc IEN25.
+    bit_offset: 25
+    bit_size: 1
+  - name: IEN26
+    description: desc IEN26.
+    bit_offset: 26
+    bit_size: 1
+  - name: IEN27
+    description: desc IEN27.
+    bit_offset: 27
+    bit_size: 1
+  - name: IEN28
+    description: desc IEN28.
+    bit_offset: 28
+    bit_size: 1
+  - name: IEN29
+    description: desc IEN29.
+    bit_offset: 29
+    bit_size: 1
+  - name: IEN30
+    description: desc IEN30.
+    bit_offset: 30
+    bit_size: 1
+  - name: IEN31
+    description: desc IEN31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/NMIER:
+  description: desc NMIER.
+  fields:
+  - name: SWDTEN
+    description: desc SWDTEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD1EN
+    description: desc PVD1EN.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD2EN
+    description: desc PVD2EN.
+    bit_offset: 3
+    bit_size: 1
+  - name: XTALSTPEN
+    description: desc XTALSTPEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: RECCERREN
+    description: desc RECCERREN.
+    bit_offset: 9
+    bit_size: 1
+  - name: WDTEN
+    description: desc WDTEN.
+    bit_offset: 11
+    bit_size: 1
+  - name: FECCERREN
+    description: desc FECCERREN.
+    bit_offset: 12
+    bit_size: 1
+fieldset/NMIFCR:
+  description: desc NMIFCR.
+  fields:
+  - name: SWDTFCLR
+    description: desc SWDTFCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD1FCLR
+    description: desc PVD1FCLR.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD2FCLR
+    description: desc PVD2FCLR.
+    bit_offset: 3
+    bit_size: 1
+  - name: XTALSTPFCLR
+    description: desc XTALSTPFCLR.
+    bit_offset: 5
+    bit_size: 1
+  - name: RECCERRFCLR
+    description: desc RECCERRFCLR.
+    bit_offset: 9
+    bit_size: 1
+  - name: WDTFCLR
+    description: desc WDTFCLR.
+    bit_offset: 11
+    bit_size: 1
+  - name: FECCERRFCLR
+    description: desc FECCERRFCLR.
+    bit_offset: 12
+    bit_size: 1
+fieldset/NMIFR:
+  description: desc NMIFR.
+  fields:
+  - name: SWDTF
+    description: desc SWDTF.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD1F
+    description: desc PVD1F.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD2F
+    description: desc PVD2F.
+    bit_offset: 3
+    bit_size: 1
+  - name: XTALSTPF
+    description: desc XTALSTPF.
+    bit_offset: 5
+    bit_size: 1
+  - name: RECCERRF
+    description: desc RECCERRF.
+    bit_offset: 9
+    bit_size: 1
+  - name: WDTF
+    description: desc WDTF.
+    bit_offset: 11
+    bit_size: 1
+  - name: FECCERRF
+    description: desc FECCERRF.
+    bit_offset: 12
+    bit_size: 1
+fieldset/SWIER:
+  description: desc SWIER.
+  fields:
+  - name: SWIE0
+    description: desc SWIE0.
+    bit_offset: 0
+    bit_size: 1
+  - name: SWIE1
+    description: desc SWIE1.
+    bit_offset: 1
+    bit_size: 1
+  - name: SWIE2
+    description: desc SWIE2.
+    bit_offset: 2
+    bit_size: 1
+  - name: SWIE3
+    description: desc SWIE3.
+    bit_offset: 3
+    bit_size: 1
+  - name: SWIE4
+    description: desc SWIE4.
+    bit_offset: 4
+    bit_size: 1
+  - name: SWIE5
+    description: desc SWIE5.
+    bit_offset: 5
+    bit_size: 1
+  - name: SWIE6
+    description: desc SWIE6.
+    bit_offset: 6
+    bit_size: 1
+  - name: SWIE7
+    description: desc SWIE7.
+    bit_offset: 7
+    bit_size: 1
+  - name: SWIE8
+    description: desc SWIE8.
+    bit_offset: 8
+    bit_size: 1
+  - name: SWIE9
+    description: desc SWIE9.
+    bit_offset: 9
+    bit_size: 1
+  - name: SWIE10
+    description: desc SWIE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: SWIE11
+    description: desc SWIE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: SWIE12
+    description: desc SWIE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: SWIE13
+    description: desc SWIE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: SWIE14
+    description: desc SWIE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: SWIE15
+    description: desc SWIE15.
+    bit_offset: 15
+    bit_size: 1
+  - name: SWIE16
+    description: desc SWIE16.
+    bit_offset: 16
+    bit_size: 1
+  - name: SWIE17
+    description: desc SWIE17.
+    bit_offset: 17
+    bit_size: 1
+  - name: SWIE18
+    description: desc SWIE18.
+    bit_offset: 18
+    bit_size: 1
+  - name: SWIE19
+    description: desc SWIE19.
+    bit_offset: 19
+    bit_size: 1
+  - name: SWIE20
+    description: desc SWIE20.
+    bit_offset: 20
+    bit_size: 1
+  - name: SWIE21
+    description: desc SWIE21.
+    bit_offset: 21
+    bit_size: 1
+  - name: SWIE22
+    description: desc SWIE22.
+    bit_offset: 22
+    bit_size: 1
+  - name: SWIE23
+    description: desc SWIE23.
+    bit_offset: 23
+    bit_size: 1
+  - name: SWIE24
+    description: desc SWIE24.
+    bit_offset: 24
+    bit_size: 1
+  - name: SWIE25
+    description: desc SWIE25.
+    bit_offset: 25
+    bit_size: 1
+  - name: SWIE26
+    description: desc SWIE26.
+    bit_offset: 26
+    bit_size: 1
+  - name: SWIE27
+    description: desc SWIE27.
+    bit_offset: 27
+    bit_size: 1
+  - name: SWIE28
+    description: desc SWIE28.
+    bit_offset: 28
+    bit_size: 1
+  - name: SWIE29
+    description: desc SWIE29.
+    bit_offset: 29
+    bit_size: 1
+  - name: SWIE30
+    description: desc SWIE30.
+    bit_offset: 30
+    bit_size: 1
+  - name: SWIE31
+    description: desc SWIE31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/WKEN:
+  description: desc WKEN.
+  fields:
+  - name: EIRQWKEN
+    description: desc EIRQWKEN.
+    bit_offset: 0
+    bit_size: 8
+  - name: SWDTWKEN
+    description: desc SWDTWKEN.
+    bit_offset: 16
+    bit_size: 1
+  - name: PVD1WKEN
+    description: desc PVD1WKEN.
+    bit_offset: 17
+    bit_size: 1
+  - name: PVD2WKEN
+    description: desc PVD2WKEN.
+    bit_offset: 18
+    bit_size: 1
+  - name: CMP1WKEN
+    description: desc CMP1WKEN.
+    bit_offset: 19
+    bit_size: 1
+  - name: TMR0CMPWKEN
+    description: desc TMR0CMPWKEN.
+    bit_offset: 23
+    bit_size: 1
+  - name: RXWKEN
+    description: desc RXWKEN.
+    bit_offset: 26
+    bit_size: 1
+  - name: CMP2WKEN
+    description: desc CMP2WKEN.
+    bit_offset: 29
+    bit_size: 1

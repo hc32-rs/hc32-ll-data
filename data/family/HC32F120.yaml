@@ -1,0 +1,247 @@
+# HC32F120 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
+# 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
+- name: ADC
+  address: 0x4000B800
+  registers:
+    kind: adc
+    block: ADC
+    version: v15
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_ADC
+- name: AOS
+  address: 0x40000C00
+  registers:
+    kind: aos
+    block: AOS
+    version: v7
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_AOS
+- name: CMU
+  address: 0x40014400
+  registers:
+    kind: cmu
+    block: CMU
+    version: v7
+- name: CRC
+  address: 0x40015400
+  registers:
+    kind: crc
+    block: CRC
+    version: v3
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_CRC
+- name: CTC
+  address: 0x40000000
+  registers:
+    kind: ctc
+    block: CTC
+    version: v3
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_CTC
+- name: DBGC
+  address: 0x40015000
+  registers:
+    kind: dbgc
+    block: DBGC
+    version: v7
+- name: EFM
+  address: 0x40000800
+  registers:
+    kind: efm
+    block: EFM
+    version: v6
+- name: GPIO
+  address: 0x40013800
+  registers:
+    kind: gpio
+    block: GPIO
+    version: v7
+- name: I2C
+  address: 0x40004800
+  registers:
+    kind: i
+    block: I
+    version: v10
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_I2C
+- name: ICG
+  address: 0xC0
+  registers:
+    kind: icg
+    block: ICG
+    version: v6
+- name: INTC
+  address: 0x40011000
+  registers:
+    kind: intc
+    block: INTC
+    version: v7
+- name: PWC
+  address: 0x40014000
+  registers:
+    kind: pwc
+    block: PWC
+    version: v6
+- name: RMU
+  address: 0x40014100
+  registers:
+    kind: rmu
+    block: RMU
+    version: v6
+- name: SPI
+  address: 0x40003800
+  registers:
+    kind: spi
+    block: SPI
+    version: v4
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_SPI
+- name: SWDT
+  address: 0x4000CC00
+  registers:
+    kind: swdt
+    block: SWDT
+    version: v1
+- name: TMR0
+  address: 0x40005800
+  registers:
+    kind: tmr
+    block: TMR
+    version: v28
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMR0
+- name: TMRB1
+  address: 0x40007800
+  registers:
+    kind: tmrb
+    block: TMRB
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRB1
+- name: TMRB2
+  address: 0x40007800
+  registers:
+    kind: tmrb
+    block: TMRB
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRB2
+- name: TMRB3
+  address: 0x40007800
+  registers:
+    kind: tmrb
+    block: TMRB
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRB3
+- name: TMRB4
+  address: 0x40007800
+  registers:
+    kind: tmrb
+    block: TMRB
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRB4
+- name: TMRB5
+  address: 0x40007800
+  registers:
+    kind: tmrb
+    block: TMRB
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRB5
+- name: TMRB6
+  address: 0x40007800
+  registers:
+    kind: tmrb
+    block: TMRB
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRB6
+- name: TMRB7
+  address: 0x40007800
+  registers:
+    kind: tmrb
+    block: TMRB
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRB7
+- name: TMRB8
+  address: 0x40007800
+  registers:
+    kind: tmrb
+    block: TMRB
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRB8
+- name: USART1
+  address: 0x40001800
+  registers:
+    kind: usart
+    block: USART
+    version: v25
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_UART1
+- name: USART2
+  address: 0x40001800
+  registers:
+    kind: usart
+    block: USART
+    version: v25
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_UART2
+- name: USART3
+  address: 0x40001800
+  registers:
+    kind: usart
+    block: USART
+    version: v25
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_UART3
+- name: USART4
+  address: 0x40001800
+  registers:
+    kind: usart
+    block: USART
+    version: v25
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_UART4

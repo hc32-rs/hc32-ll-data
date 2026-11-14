@@ -1,0 +1,35 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/SWDT；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/SWDT:
+  description: desc SWDT.
+  items:
+  - name: SR
+    description: desc SR.
+    byte_offset: 4
+    fieldset: SR
+  - name: RR
+    description: desc RR.
+    byte_offset: 8
+    fieldset: RR
+fieldset/RR:
+  description: desc RR.
+  fields:
+  - name: RF
+    description: desc RF.
+    bit_offset: 0
+    bit_size: 16
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+  - name: UDF
+    description: desc UDF.
+    bit_offset: 16
+    bit_size: 1
+  - name: REF
+    description: desc REF.
+    bit_offset: 17
+    bit_size: 1

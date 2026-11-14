@@ -1,0 +1,54 @@
+# HC32F175KETI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F175KETI
+family: HC32F175
+subfamily: cortex-m0plus
+packages:
+- name: HC32F175KETI
+  package: LQFP64
+include_memory: ../memory/HC32F175_F512S48.yaml
+memory_sizes:
+  FLASH: 512K
+  SRAM: 48K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1395.html
+cores:
+- name: cortex-m0plus
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F175.yaml
+  include_interrupts: ../interrupts/HC32F175.yaml
+  include_dma_channels:
+    DMAC: ../dma/HC32F175_DMAC.yaml
+_raw:
+  series: HC32F175
+  freq_mhz: '72'
+  flash_kb: '512'
+  sram_kb: '48'
+  package: LQFP64
+  pin_count: '64'
+  gpio: '58'
+  vdd_min: '2.7'
+  vdd_max: '5.5'
+  uart: '6'
+  spi: '2'
+  i2c: '2'
+  i2s: ''
+  can: ''
+  usb: ''
+  adc: '1'
+  dac: ''
+  timer: 2;9;1
+  rtc: '1'
+  wdt: '1'
+  touchkey: ''
+  lcd: ''
+  opa: ''
+  cmp: ''
+  other: ADC 12bit|ADC 16ch|DMA=1|DataFlash=8K|LPUART=2|LVD=1|temp -40~105℃ -40~105℃ -40~105℃ -40~105℃|低功耗定时器=2;通用定时器=9;高级定时器=1
+  url: https://www.xhsc.com.cn/product/1395.html
+  source: DS
+  Part NO.: HC32F175KETI

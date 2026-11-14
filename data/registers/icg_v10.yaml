@@ -1,0 +1,121 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M120/ICG；覆盖系列：HC32M120。
+block/ICG:
+  description: desc ICG.
+  items:
+  - name: ICG0
+    description: desc ICG0.
+    byte_offset: 0
+    access: Read
+    fieldset: ICG0
+  - name: ICG1
+    description: desc ICG1.
+    byte_offset: 4
+    access: Read
+    fieldset: ICG1
+  - name: ICG2
+    description: desc ICG2.
+    byte_offset: 8
+    access: Read
+  - name: ICG3
+    description: desc ICG3.
+    byte_offset: 12
+    access: Read
+  - name: ICG4
+    description: desc ICG4.
+    byte_offset: 16
+    access: Read
+  - name: ICG5
+    description: desc ICG5.
+    byte_offset: 20
+    access: Read
+  - name: ICG6
+    description: desc ICG6.
+    byte_offset: 24
+    access: Read
+  - name: ICG7
+    description: desc ICG7.
+    byte_offset: 28
+    access: Read
+fieldset/ICG0:
+  description: desc ICG0.
+  fields:
+  - name: SWDTAUTS
+    description: desc SWDTAUTS.
+    bit_offset: 0
+    bit_size: 1
+  - name: SWDTITS
+    description: desc SWDTITS.
+    bit_offset: 1
+    bit_size: 1
+  - name: SWDTPERI
+    description: desc SWDTPERI.
+    bit_offset: 2
+    bit_size: 2
+  - name: SWDTCKS
+    description: desc SWDTCKS.
+    bit_offset: 4
+    bit_size: 4
+  - name: SWDTWDPT
+    description: desc SWDTWDPT.
+    bit_offset: 8
+    bit_size: 4
+  - name: SWDTSLPOFF
+    description: desc SWDTSLPOFF.
+    bit_offset: 12
+    bit_size: 1
+  - name: HRCREQS
+    description: desc HRCREQS.
+    bit_offset: 16
+    bit_size: 4
+  - name: NMIFCLK
+    description: desc NMIFCLK.
+    bit_offset: 26
+    bit_size: 2
+  - name: NMIFEN
+    description: desc NMIFEN.
+    bit_offset: 28
+    bit_size: 1
+  - name: NMITRG
+    description: desc NMITRG.
+    bit_offset: 29
+    bit_size: 1
+  - name: NMIEN
+    description: desc NMIEN.
+    bit_offset: 30
+    bit_size: 1
+  - name: NMIICGEN
+    description: desc NMIICGEN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/ICG1:
+  description: desc ICG1.
+  fields:
+  - name: DFS
+    description: desc DFS.
+    bit_offset: 0
+    bit_size: 2
+  - name: DFDIS
+    description: desc DFDIS.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVDLVL
+    description: desc LVDLVL.
+    bit_offset: 8
+    bit_size: 4
+  - name: NMIS
+    description: desc NMIS.
+    bit_offset: 12
+    bit_size: 1
+  - name: IRS
+    description: desc IRS.
+    bit_offset: 13
+    bit_size: 1
+  - name: IRDIS
+    description: desc IRDIS.
+    bit_offset: 14
+    bit_size: 1
+  - name: LVDDIS
+    description: desc LVDDIS.
+    bit_offset: 15
+    bit_size: 1

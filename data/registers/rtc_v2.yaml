@@ -1,0 +1,289 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/RTC；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/RTC:
+  description: desc RTC.
+  items:
+  - name: CR0
+    description: desc CR0.
+    byte_offset: 0
+    bit_size: 8
+    fieldset: CR0
+  - name: CR1
+    description: desc CR1.
+    byte_offset: 4
+    bit_size: 8
+    fieldset: CR1
+  - name: CR2
+    description: desc CR2.
+    byte_offset: 8
+    bit_size: 8
+    fieldset: CR2
+  - name: CR3
+    description: desc CR3.
+    byte_offset: 12
+    bit_size: 8
+    fieldset: CR3
+  - name: SEC
+    description: desc SEC.
+    byte_offset: 16
+    bit_size: 8
+    fieldset: SEC
+  - name: MIN
+    description: desc MIN.
+    byte_offset: 20
+    bit_size: 8
+    fieldset: MIN
+  - name: HOUR
+    description: desc HOUR.
+    byte_offset: 24
+    bit_size: 8
+    fieldset: HOUR
+  - name: WEEK
+    description: desc WEEK.
+    byte_offset: 28
+    bit_size: 8
+    fieldset: WEEK
+  - name: DAY
+    description: desc DAY.
+    byte_offset: 32
+    bit_size: 8
+    fieldset: DAY
+  - name: MON
+    description: desc MON.
+    byte_offset: 36
+    bit_size: 8
+    fieldset: MON
+  - name: YEAR
+    description: desc YEAR.
+    byte_offset: 40
+    bit_size: 8
+    fieldset: YEAR
+  - name: ALMMIN
+    description: desc ALMMIN.
+    byte_offset: 44
+    bit_size: 8
+    fieldset: ALMMIN
+  - name: ALMHOUR
+    description: desc ALMHOUR.
+    byte_offset: 48
+    bit_size: 8
+    fieldset: ALMHOUR
+  - name: ALMWEEK
+    description: desc ALMWEEK.
+    byte_offset: 52
+    bit_size: 8
+    fieldset: ALMWEEK
+  - name: ERRCRH
+    description: desc ERRCRH.
+    byte_offset: 56
+    bit_size: 8
+    fieldset: ERRCRH
+  - name: ERRCRL
+    description: desc ERRCRL.
+    byte_offset: 60
+    bit_size: 8
+    fieldset: ERRCRL
+fieldset/ALMHOUR:
+  description: desc ALMHOUR.
+  bit_size: 8
+  fields:
+  - name: ALMHOURU
+    description: desc ALMHOURU.
+    bit_offset: 0
+    bit_size: 4
+  - name: ALMHOURD
+    description: desc ALMHOURD.
+    bit_offset: 4
+    bit_size: 2
+fieldset/ALMMIN:
+  description: desc ALMMIN.
+  bit_size: 8
+  fields:
+  - name: ALMMINU
+    description: desc ALMMINU.
+    bit_offset: 0
+    bit_size: 4
+  - name: ALMMIND
+    description: desc ALMMIND.
+    bit_offset: 4
+    bit_size: 3
+fieldset/ALMWEEK:
+  description: desc ALMWEEK.
+  bit_size: 8
+  fields:
+  - name: ALMWEEK
+    description: desc ALMWEEK.
+    bit_offset: 0
+    bit_size: 7
+fieldset/CR0:
+  description: desc CR0.
+  bit_size: 8
+  fields:
+  - name: RESET
+    description: desc RESET.
+    bit_offset: 0
+    bit_size: 1
+fieldset/CR1:
+  description: desc CR1.
+  bit_size: 8
+  fields:
+  - name: PRDS
+    description: desc PRDS.
+    bit_offset: 0
+    bit_size: 3
+  - name: AMPM
+    description: desc AMPM.
+    bit_offset: 3
+    bit_size: 1
+  - name: ALMFCLR
+    description: desc ALMFCLR.
+    bit_offset: 4
+    bit_size: 1
+  - name: ONEHZOE
+    description: desc ONEHZOE.
+    bit_offset: 5
+    bit_size: 1
+  - name: ONEHZSEL
+    description: desc ONEHZSEL.
+    bit_offset: 6
+    bit_size: 1
+  - name: START
+    description: desc START.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CR2:
+  description: desc CR2.
+  bit_size: 8
+  fields:
+  - name: RWREQ
+    description: desc RWREQ.
+    bit_offset: 0
+    bit_size: 1
+  - name: RWEN
+    description: desc RWEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: ALMF
+    description: desc ALMF.
+    bit_offset: 3
+    bit_size: 1
+  - name: PRDIE
+    description: desc PRDIE.
+    bit_offset: 5
+    bit_size: 1
+  - name: ALMIE
+    description: desc ALMIE.
+    bit_offset: 6
+    bit_size: 1
+  - name: ALME
+    description: desc ALME.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CR3:
+  description: desc CR3.
+  bit_size: 8
+  fields:
+  - name: LRCEN
+    description: desc LRCEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: RCKSEL
+    description: desc RCKSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/DAY:
+  description: desc DAY.
+  bit_size: 8
+  fields:
+  - name: DAYU
+    description: desc DAYU.
+    bit_offset: 0
+    bit_size: 4
+  - name: DAYD
+    description: desc DAYD.
+    bit_offset: 4
+    bit_size: 2
+fieldset/ERRCRH:
+  description: desc ERRCRH.
+  bit_size: 8
+  fields:
+  - name: COMP8
+    description: desc COMP8.
+    bit_offset: 0
+    bit_size: 1
+  - name: COMPEN
+    description: desc COMPEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/ERRCRL:
+  description: desc ERRCRL.
+  bit_size: 8
+  fields:
+  - name: COMP
+    description: desc COMP.
+    bit_offset: 0
+    bit_size: 8
+fieldset/HOUR:
+  description: desc HOUR.
+  bit_size: 8
+  fields:
+  - name: HOURU
+    description: desc HOURU.
+    bit_offset: 0
+    bit_size: 4
+  - name: HOURD
+    description: desc HOURD.
+    bit_offset: 4
+    bit_size: 2
+fieldset/MIN:
+  description: desc MIN.
+  bit_size: 8
+  fields:
+  - name: MINU
+    description: desc MINU.
+    bit_offset: 0
+    bit_size: 4
+  - name: MIND
+    description: desc MIND.
+    bit_offset: 4
+    bit_size: 3
+fieldset/MON:
+  description: desc MON.
+  bit_size: 8
+  fields:
+  - name: MON
+    description: desc MON.
+    bit_offset: 0
+    bit_size: 5
+fieldset/SEC:
+  description: desc SEC.
+  bit_size: 8
+  fields:
+  - name: SECU
+    description: desc SECU.
+    bit_offset: 0
+    bit_size: 4
+  - name: SECD
+    description: desc SECD.
+    bit_offset: 4
+    bit_size: 3
+fieldset/WEEK:
+  description: desc WEEK.
+  bit_size: 8
+  fields:
+  - name: WEEK
+    description: desc WEEK.
+    bit_offset: 0
+    bit_size: 3
+fieldset/YEAR:
+  description: desc YEAR.
+  bit_size: 8
+  fields:
+  - name: YEARU
+    description: desc YEARU.
+    bit_offset: 0
+    bit_size: 4
+  - name: YEARD
+    description: desc YEARD.
+    bit_offset: 4
+    bit_size: 4

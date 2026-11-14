@@ -1,0 +1,35 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/PERIC；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/PERIC:
+  description: desc PERIC.
+  items:
+  - name: USBFS_SYCTLREG
+    description: desc USBFS_SYCTLREG.
+    byte_offset: 0
+    fieldset: USBFS_SYCTLREG
+  - name: SDIOC_SYCTLREG
+    description: desc SDIOC_SYCTLREG.
+    byte_offset: 4
+    fieldset: SDIOC_SYCTLREG
+fieldset/SDIOC_SYCTLREG:
+  description: desc SDIOC_SYCTLREG.
+  fields:
+  - name: SELMMC1
+    description: desc SELMMC1.
+    bit_offset: 1
+    bit_size: 1
+  - name: SELMMC2
+    description: desc SELMMC2.
+    bit_offset: 3
+    bit_size: 1
+fieldset/USBFS_SYCTLREG:
+  description: desc USBFS_SYCTLREG.
+  fields:
+  - name: DFB
+    description: desc DFB.
+    bit_offset: 0
+    bit_size: 1
+  - name: SOFEN
+    description: desc SOFEN.
+    bit_offset: 1
+    bit_size: 1

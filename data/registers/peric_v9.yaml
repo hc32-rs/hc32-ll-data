@@ -1,0 +1,20 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/PERIC；覆盖系列：HC32K116, HC32K118。
+block/PERIC:
+  description: desc PERIC.
+  items:
+  - name: TMR_SYNENR
+    description: desc TMR_SYNENR.
+    byte_offset: 0
+    fieldset: TMR_SYNENR
+fieldset/TMR_SYNENR:
+  description: desc TMR_SYNENR.
+  fields:
+  - name: TMRA
+    description: desc TMRA.
+    bit_offset: 0
+    bit_size: 1
+  - name: TMR4
+    description: desc TMR4.
+    bit_offset: 1
+    bit_size: 1

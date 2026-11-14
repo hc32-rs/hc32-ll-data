@@ -1,0 +1,257 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/FMAC1；覆盖系列：HC32A472, HC32A4A0, HC32A4A8, HC32F467, HC32F472, HC32F4A0, HC32F4A2, HC32F4A8。
+block/FMAC:
+  description: desc FMAC.
+  items:
+  - name: ENR
+    description: desc ENR.
+    byte_offset: 0
+    fieldset: ENR
+  - name: CTR
+    description: desc CTR.
+    byte_offset: 4
+    fieldset: CTR
+  - name: IER
+    description: desc IER.
+    byte_offset: 8
+    fieldset: IER
+  - name: DTR
+    description: desc DTR.
+    byte_offset: 12
+    fieldset: DTR
+  - name: RTR0
+    description: desc RTR0.
+    byte_offset: 16
+  - name: RTR1
+    description: desc RTR1.
+    byte_offset: 20
+  - name: STR
+    description: desc STR.
+    byte_offset: 24
+    fieldset: STR
+  - name: COR0
+    description: desc COR0.
+    byte_offset: 32
+    fieldset: COR0
+  - name: COR1
+    description: desc COR1.
+    byte_offset: 36
+    fieldset: COR1
+  - name: COR2
+    description: desc COR2.
+    byte_offset: 40
+    fieldset: COR2
+  - name: COR3
+    description: desc COR3.
+    byte_offset: 44
+    fieldset: COR3
+  - name: COR4
+    description: desc COR4.
+    byte_offset: 48
+    fieldset: COR4
+  - name: COR5
+    description: desc COR5.
+    byte_offset: 52
+    fieldset: COR5
+  - name: COR6
+    description: desc COR6.
+    byte_offset: 56
+    fieldset: COR6
+  - name: COR7
+    description: desc COR7.
+    byte_offset: 60
+    fieldset: COR7
+  - name: COR8
+    description: desc COR8.
+    byte_offset: 64
+    fieldset: COR8
+  - name: COR9
+    description: desc COR9.
+    byte_offset: 68
+    fieldset: COR9
+  - name: COR10
+    description: desc COR10.
+    byte_offset: 72
+    fieldset: COR10
+  - name: COR11
+    description: desc COR11.
+    byte_offset: 76
+    fieldset: COR11
+  - name: COR12
+    description: desc COR12.
+    byte_offset: 80
+    fieldset: COR12
+  - name: COR13
+    description: desc COR13.
+    byte_offset: 84
+    fieldset: COR13
+  - name: COR14
+    description: desc COR14.
+    byte_offset: 88
+    fieldset: COR14
+  - name: COR15
+    description: desc COR15.
+    byte_offset: 92
+    fieldset: COR15
+  - name: COR16
+    description: desc COR16.
+    byte_offset: 96
+    fieldset: COR16
+fieldset/COR0:
+  description: desc COR0.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR1:
+  description: desc COR1.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR10:
+  description: desc COR10.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR11:
+  description: desc COR11.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR12:
+  description: desc COR12.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR13:
+  description: desc COR13.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR14:
+  description: desc COR14.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR15:
+  description: desc COR15.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR16:
+  description: desc COR16.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR2:
+  description: desc COR2.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR3:
+  description: desc COR3.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR4:
+  description: desc COR4.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR5:
+  description: desc COR5.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR6:
+  description: desc COR6.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR7:
+  description: desc COR7.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR8:
+  description: desc COR8.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/COR9:
+  description: desc COR9.
+  fields:
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CTR:
+  description: desc CTR.
+  fields:
+  - name: STAGE_NUM
+    description: desc STAGE_NUM.
+    bit_offset: 0
+    bit_size: 5
+  - name: SHIFT
+    description: desc SHIFT.
+    bit_offset: 8
+    bit_size: 5
+fieldset/DTR:
+  description: desc DTR.
+  fields:
+  - name: DIN
+    description: desc DIN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/ENR:
+  description: desc ENR.
+  fields:
+  - name: FMACEN
+    description: desc FMACEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/IER:
+  description: desc IER.
+  fields:
+  - name: INTEN
+    description: desc INTEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/STR:
+  description: desc STR.
+  fields:
+  - name: READY
+    description: desc READY.
+    bit_offset: 31
+    bit_size: 1

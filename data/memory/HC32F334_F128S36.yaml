@@ -1,0 +1,19 @@
+# HC32F334 Flash 128K / SRAM 36K 的内存布局（型号：HC32F334FAUI, HC32F334JATI, HC32F334JAUI, HC32F334KATI…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 128K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x1FFFC000
+  size: 36K
+  access:
+    read: true
+    write: true
+    execute: true

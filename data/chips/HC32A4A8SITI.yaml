@@ -1,0 +1,56 @@
+# HC32A4A8SITI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32A4A8SITI
+family: HC32A4A8
+subfamily: cortex-m4
+packages:
+- name: HC32A4A8SITI
+  package: LQFP176
+include_memory: ../memory/HC32A4A8_F2048S512.yaml
+memory_sizes:
+  FLASH: 2048K
+  SRAM: 512K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1284.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32A4A8.yaml
+  include_interrupts: ../interrupts/HC32A4A8.yaml
+  include_dma_channels:
+    DMA1: ../dma/HC32A4A8_DMA1.yaml
+    DMA2: ../dma/HC32A4A8_DMA2.yaml
+_raw:
+  series: HC32A4A8
+  freq_mhz: '240'
+  flash_kb: '2048'
+  sram_kb: '512'
+  package: LQFP176
+  pin_count: '176'
+  gpio: '142'
+  vdd_min: '1.8'
+  vdd_max: '3.63'
+  uart: '10'
+  spi: '6'
+  i2c: '6'
+  i2s: '4'
+  can: '4'
+  usb: '2'
+  adc: '3'
+  dac: '4'
+  timer: 5;4;3;8;12
+  rtc: '1'
+  wdt: '1'
+  touchkey: ''
+  lcd: ''
+  opa: '4'
+  cmp: '4'
+  other: ADC 12bit|ADC 28ch|DCU=8|DMA=2|HashSHA256=256|OTP=134KB|PVD|QSPI=1|SDIO=2|TRNG|Timer0=5;Timer2=4;Timer4=3;Timer6=8;TimerA=12|temp
+    Range -40~105℃ -40~105℃ -40~105℃ -40~125℃ -40~125℃ -40~125℃
+  url: https://www.xhsc.com.cn/product/1284.html
+  source: DS
+  Part NO.: HC32A4A8SITI

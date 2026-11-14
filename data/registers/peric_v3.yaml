@@ -1,0 +1,89 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/PERIC；覆盖系列：HC32A472, HC32F472。
+block/PERIC:
+  description: desc PERIC.
+  items:
+  - name: USB_SYCTLREG
+    description: desc USB_SYCTLREG.
+    byte_offset: 0
+    fieldset: USB_SYCTLREG
+  - name: SMC_ENAR
+    description: desc SMC_ENAR.
+    byte_offset: 12
+    fieldset: SMC_ENAR
+  - name: CAN_SYCTLREG
+    description: desc CAN_SYCTLREG.
+    byte_offset: 24
+    fieldset: CAN_SYCTLREG
+  - name: USART1_NFC
+    description: desc USART1_NFC.
+    byte_offset: 28
+    fieldset: USART1_NFC
+fieldset/CAN_SYCTLREG:
+  description: desc CAN_SYCTLREG.
+  fields:
+  - name: CAN1FDE
+    description: desc CAN1FDE.
+    bit_offset: 0
+    bit_size: 1
+  - name: CAN2FDE
+    description: desc CAN2FDE.
+    bit_offset: 1
+    bit_size: 1
+  - name: CAN3FDE
+    description: desc CAN3FDE.
+    bit_offset: 2
+    bit_size: 1
+fieldset/SMC_ENAR:
+  description: desc SMC_ENAR.
+  fields:
+  - name: SMCEN
+    description: desc SMCEN.
+    bit_offset: 1
+    bit_size: 1
+fieldset/USART1_NFC:
+  description: desc USART1_NFC.
+  fields:
+  - name: USASRT1_NFS
+    description: desc USASRT1_NFS.
+    bit_offset: 0
+    bit_size: 2
+  - name: USART1_NFE
+    description: desc USART1_NFE.
+    bit_offset: 2
+    bit_size: 1
+fieldset/USB_SYCTLREG:
+  description: desc USB_SYCTLREG.
+  fields:
+  - name: USBFS_DFB
+    description: desc USBFS_DFB.
+    bit_offset: 0
+    bit_size: 1
+  - name: USBFS_SOFEN
+    description: desc USBFS_SOFEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: USBFS_WKUP
+    description: desc USBFS_WKUP.
+    bit_offset: 2
+    bit_size: 1
+  - name: USBFS_DMPD
+    description: desc USBFS_DMPD.
+    bit_offset: 3
+    bit_size: 1
+  - name: USBFS_DPPD
+    description: desc USBFS_DPPD.
+    bit_offset: 4
+    bit_size: 1
+  - name: USBFS_PDEN
+    description: desc USBFS_PDEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: USBFS_NFS
+    description: desc USBFS_NFS.
+    bit_offset: 16
+    bit_size: 2
+  - name: USBFS_NFE
+    description: desc USBFS_NFE.
+    bit_offset: 18
+    bit_size: 1

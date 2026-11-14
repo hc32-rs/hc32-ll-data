@@ -1,0 +1,271 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/PKE；覆盖系列：HC32A4A8, HC32F4A8。
+block/PKE:
+  description: desc PKE.
+  items:
+  - name: RAM0_CKCR
+    description: desc RAM0_CKCR.
+    byte_offset: 0
+    fieldset: RAM0_CKCR
+  - name: RAM0_CKSR
+    description: desc RAM0_CKSR.
+    byte_offset: 4
+    fieldset: RAM0_CKSR
+  - name: RAM0_EIEN
+    description: desc RAM0_EIEN.
+    byte_offset: 8
+    fieldset: RAM0_EIEN
+  - name: RAM0_EIBIT0
+    description: desc RAM0_EIBIT0.
+    byte_offset: 12
+  - name: RAM0_EIBIT1
+    description: desc RAM0_EIBIT1.
+    byte_offset: 16
+    fieldset: RAM0_EIBIT1
+  - name: RAM0_ECCERRADDR
+    description: desc RAM0_ECCERRADDR.
+    byte_offset: 20
+    access: Read
+    fieldset: RAM0_ECCERRADDR
+  - name: RAM1_CKCR
+    description: desc RAM1_CKCR.
+    byte_offset: 32
+    fieldset: RAM1_CKCR
+  - name: RAM1_CKSR
+    description: desc RAM1_CKSR.
+    byte_offset: 36
+    fieldset: RAM1_CKSR
+  - name: RAM1_EIEN
+    description: desc RAM1_EIEN.
+    byte_offset: 40
+    fieldset: RAM1_EIEN
+  - name: RAM1_EIBIT0
+    description: desc RAM1_EIBIT0.
+    byte_offset: 44
+  - name: RAM1_EIBIT1
+    description: desc RAM1_EIBIT1.
+    byte_offset: 48
+    fieldset: RAM1_EIBIT1
+  - name: RAM1_ECCERRADDR
+    description: desc RAM1_ECCERRADDR.
+    byte_offset: 52
+    access: Read
+    fieldset: RAM1_ECCERRADDR
+  - name: CTRL
+    description: desc CTRL.
+    byte_offset: 4096
+    fieldset: CTRL
+  - name: CFG
+    description: desc CFG.
+    byte_offset: 4100
+    fieldset: CFG
+  - name: MC_PTR
+    description: desc MC_PTR.
+    byte_offset: 4104
+    fieldset: MC_PTR
+  - name: RISR
+    description: desc RISR.
+    byte_offset: 4108
+    fieldset: RISR
+  - name: IMCR
+    description: desc IMCR.
+    byte_offset: 4112
+    fieldset: IMCR
+  - name: MISR
+    description: desc MISR.
+    byte_offset: 4116
+    access: Read
+    fieldset: MISR
+  - name: RT_CODE
+    description: desc RT_CODE.
+    byte_offset: 4132
+    access: Read
+    fieldset: RT_CODE
+  - name: EXE_CFG
+    description: desc EXE_CFG.
+    byte_offset: 4176
+    fieldset: EXE_CFG
+  - name: VERSION
+    description: desc VERSION.
+    byte_offset: 4348
+    access: Read
+    fieldset: VERSION
+  - name: MEM_RAM0
+    description: desc MEM_RAM0.
+    byte_offset: 5120
+  - name: MEM_RAM1
+    description: desc MEM_RAM1.
+    byte_offset: 8192
+fieldset/CFG:
+  description: desc CFG.
+  fields:
+  - name: PARTIAL_RADIX
+    description: desc PARTIAL_RADIX.
+    bit_offset: 0
+    bit_size: 13
+  - name: BASE_RADIX
+    description: desc BASE_RADIX.
+    bit_offset: 16
+    bit_size: 3
+fieldset/CTRL:
+  description: desc CTRL.
+  fields:
+  - name: START
+    description: desc START.
+    bit_offset: 0
+    bit_size: 1
+fieldset/EXE_CFG:
+  description: desc EXE_CFG.
+  fields:
+  - name: IAFF_R0
+    description: desc IAFF_R0.
+    bit_offset: 0
+    bit_size: 1
+  - name: IMON_R0
+    description: desc IMON_R0.
+    bit_offset: 1
+    bit_size: 1
+  - name: IAFF_R1
+    description: desc IAFF_R1.
+    bit_offset: 2
+    bit_size: 1
+  - name: IMON_R1
+    description: desc IMON_R1.
+    bit_offset: 3
+    bit_size: 1
+  - name: OAFF
+    description: desc OAFF.
+    bit_offset: 4
+    bit_size: 1
+  - name: OMON
+    description: desc OMON.
+    bit_offset: 5
+    bit_size: 1
+fieldset/IMCR:
+  description: desc IMCR.
+  fields:
+  - name: CORE_IRQEN
+    description: desc CORE_IRQEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/MC_PTR:
+  description: desc MC_PTR.
+  fields:
+  - name: ADDR
+    description: desc ADDR.
+    bit_offset: 0
+    bit_size: 12
+fieldset/MISR:
+  description: desc MISR.
+  fields:
+  - name: CORE_MI
+    description: desc CORE_MI.
+    bit_offset: 0
+    bit_size: 1
+fieldset/RAM0_CKCR:
+  description: desc RAM0_CKCR.
+  fields:
+  - name: ECCMOD
+    description: desc ECCMOD.
+    bit_offset: 0
+    bit_size: 2
+fieldset/RAM0_CKSR:
+  description: desc RAM0_CKSR.
+  fields:
+  - name: RAM_1ERR
+    description: desc RAM_1ERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: RAM_2ERR
+    description: desc RAM_2ERR.
+    bit_offset: 1
+    bit_size: 1
+fieldset/RAM0_ECCERRADDR:
+  description: desc RAM0_ECCERRADDR.
+  fields:
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    bit_offset: 0
+    bit_size: 13
+fieldset/RAM0_EIBIT1:
+  description: desc RAM0_EIBIT1.
+  fields:
+  - name: EIBIT1
+    description: desc EIBIT1.
+    bit_offset: 0
+    bit_size: 7
+fieldset/RAM0_EIEN:
+  description: desc RAM0_EIEN.
+  fields:
+  - name: EIEN
+    description: desc EIEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/RAM1_CKCR:
+  description: desc RAM1_CKCR.
+  fields:
+  - name: ECCMOD
+    description: desc ECCMOD.
+    bit_offset: 0
+    bit_size: 2
+fieldset/RAM1_CKSR:
+  description: desc RAM1_CKSR.
+  fields:
+  - name: RAM_1ERR
+    description: desc RAM_1ERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: RAM_2ERR
+    description: desc RAM_2ERR.
+    bit_offset: 1
+    bit_size: 1
+fieldset/RAM1_ECCERRADDR:
+  description: desc RAM1_ECCERRADDR.
+  fields:
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    bit_offset: 0
+    bit_size: 13
+fieldset/RAM1_EIBIT1:
+  description: desc RAM1_EIBIT1.
+  fields:
+  - name: EIBIT1
+    description: desc EIBIT1.
+    bit_offset: 0
+    bit_size: 7
+fieldset/RAM1_EIEN:
+  description: desc RAM1_EIEN.
+  fields:
+  - name: EIEN
+    description: desc EIEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/RISR:
+  description: desc RISR.
+  fields:
+  - name: CORE_RIS
+    description: desc CORE_RIS.
+    bit_offset: 0
+    bit_size: 1
+fieldset/RT_CODE:
+  description: desc RT_CODE.
+  fields:
+  - name: STOP_LOG
+    description: desc STOP_LOG.
+    bit_offset: 0
+    bit_size: 4
+fieldset/VERSION:
+  description: desc VERSION.
+  fields:
+  - name: MIR
+    description: desc MIR.
+    bit_offset: 0
+    bit_size: 4
+  - name: MAR
+    description: desc MAR.
+    bit_offset: 4
+    bit_size: 4
+  - name: PROJECT
+    description: desc PROJECT.
+    bit_offset: 16
+    bit_size: 16

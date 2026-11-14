@@ -1,0 +1,42 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/OTS；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/OTS:
+  description: desc OTS.
+  items:
+  - name: CTL
+    description: desc CTL.
+    byte_offset: 0
+    bit_size: 16
+    fieldset: CTL
+  - name: DR1
+    description: desc DR1.
+    byte_offset: 2
+    bit_size: 16
+  - name: DR2
+    description: desc DR2.
+    byte_offset: 4
+    bit_size: 16
+  - name: ECR
+    description: desc ECR.
+    byte_offset: 6
+    bit_size: 16
+fieldset/CTL:
+  description: desc CTL.
+  bit_size: 16
+  fields:
+  - name: OTSST
+    description: desc OTSST.
+    bit_offset: 0
+    bit_size: 1
+  - name: OTSCK
+    description: desc OTSCK.
+    bit_offset: 1
+    bit_size: 1
+  - name: OTSIE
+    description: desc OTSIE.
+    bit_offset: 2
+    bit_size: 1
+  - name: TSSTP
+    description: desc TSSTP.
+    bit_offset: 3
+    bit_size: 1

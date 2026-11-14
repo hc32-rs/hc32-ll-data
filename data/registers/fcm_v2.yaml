@@ -1,0 +1,132 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/FCM1；覆盖系列：HC32A4A8, HC32F4A8。
+block/FCM:
+  description: desc FCM.
+  items:
+  - name: LVR
+    description: desc LVR.
+    byte_offset: 0
+    fieldset: LVR
+  - name: UVR
+    description: desc UVR.
+    byte_offset: 4
+    fieldset: UVR
+  - name: CNTR
+    description: desc CNTR.
+    byte_offset: 8
+    access: Read
+    fieldset: CNTR
+  - name: MCCR
+    description: desc MCCR.
+    byte_offset: 16
+    fieldset: MCCR
+  - name: RCCR
+    description: desc RCCR.
+    byte_offset: 20
+    fieldset: RCCR
+  - name: RIER
+    description: desc RIER.
+    byte_offset: 24
+    fieldset: RIER
+  - name: CLR
+    description: desc CLR.
+    byte_offset: 32
+    access: Write
+    fieldset: CLR
+fieldset/CLR:
+  description: desc CLR.
+  fields:
+  - name: ERRFCLR
+    description: desc ERRFCLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: MENDFCLR
+    description: desc MENDFCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: OVFCLR
+    description: desc OVFCLR.
+    bit_offset: 2
+    bit_size: 1
+fieldset/CNTR:
+  description: desc CNTR.
+  fields:
+  - name: CNTR
+    description: desc CNTR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/LVR:
+  description: desc LVR.
+  fields:
+  - name: LVR
+    description: desc LVR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/MCCR:
+  description: desc MCCR.
+  fields:
+  - name: MDIVS
+    description: desc MDIVS.
+    bit_offset: 0
+    bit_size: 2
+  - name: MCKS
+    description: desc MCKS.
+    bit_offset: 4
+    bit_size: 4
+fieldset/RCCR:
+  description: desc RCCR.
+  fields:
+  - name: RDIVS
+    description: desc RDIVS.
+    bit_offset: 0
+    bit_size: 2
+  - name: RCKS
+    description: desc RCKS.
+    bit_offset: 3
+    bit_size: 4
+  - name: INEXS
+    description: desc INEXS.
+    bit_offset: 7
+    bit_size: 1
+  - name: DNFS
+    description: desc DNFS.
+    bit_offset: 8
+    bit_size: 2
+  - name: EDGES
+    description: desc EDGES.
+    bit_offset: 12
+    bit_size: 2
+  - name: EXREFE
+    description: desc EXREFE.
+    bit_offset: 15
+    bit_size: 1
+fieldset/RIER:
+  description: desc RIER.
+  fields:
+  - name: ERRIE
+    description: desc ERRIE.
+    bit_offset: 0
+    bit_size: 1
+  - name: MENDIE
+    description: desc MENDIE.
+    bit_offset: 1
+    bit_size: 1
+  - name: OVFIE
+    description: desc OVFIE.
+    bit_offset: 2
+    bit_size: 1
+  - name: ERRINTRS
+    description: desc ERRINTRS.
+    bit_offset: 4
+    bit_size: 1
+  - name: ERRRE
+    description: desc ERRRE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/UVR:
+  description: desc UVR.
+  fields:
+  - name: UVR
+    description: desc UVR.
+    bit_offset: 0
+    bit_size: 16

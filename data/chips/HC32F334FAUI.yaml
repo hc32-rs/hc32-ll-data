@@ -1,0 +1,54 @@
+# HC32F334FAUI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F334FAUI
+family: HC32F334
+subfamily: cortex-m4
+packages:
+- name: HC32F334FAUI
+  package: QFN32
+include_memory: ../memory/HC32F334_F128S36.yaml
+memory_sizes:
+  FLASH: 128K
+  SRAM: 36K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1217.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F334.yaml
+  include_interrupts: ../interrupts/HC32F334.yaml
+  include_dma_channels:
+    DMA: ../dma/HC32F334_DMA.yaml
+_raw:
+  series: HC32F334
+  freq_mhz: '120'
+  flash_kb: '128'
+  sram_kb: '36'
+  package: QFN32
+  pin_count: '32'
+  gpio: '27'
+  vdd_min: '1.8'
+  vdd_max: '3.63'
+  uart: '4'
+  spi: '1'
+  i2c: '1'
+  i2s: ''
+  can: '2'
+  usb: ''
+  adc: '3'
+  dac: '3'
+  timer: 6;2;1;4;5
+  rtc: '1'
+  wdt: '1'
+  touchkey: ''
+  lcd: ''
+  opa: ''
+  cmp: '3'
+  other: ADC 12bit|ADC 9ch|HRPWM=6;Timer0=2;Timer4=1;Timer6=4;TimerA=5|OTP=5KB|PVD|temp -40~105℃
+  url: https://www.xhsc.com.cn/product/1217.html
+  source: DS
+  Part NO.: HC32F334FAUI

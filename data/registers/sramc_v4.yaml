@@ -1,0 +1,144 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A0/SRAMC；覆盖系列：HC32A4A0, HC32F467, HC32F4A0, HC32F4A2。
+block/SRAMC:
+  description: desc SRAMC.
+  items:
+  - name: WTCR
+    description: desc WTCR.
+    byte_offset: 0
+    fieldset: WTCR
+  - name: WTPR
+    description: desc WTPR.
+    byte_offset: 4
+    fieldset: WTPR
+  - name: CKCR
+    description: desc CKCR.
+    byte_offset: 8
+    fieldset: CKCR
+  - name: CKPR
+    description: desc CKPR.
+    byte_offset: 12
+    fieldset: CKPR
+  - name: CKSR
+    description: desc CKSR.
+    byte_offset: 16
+    fieldset: CKSR
+fieldset/CKCR:
+  description: desc CKCR.
+  fields:
+  - name: PYOAD
+    description: desc PYOAD.
+    bit_offset: 0
+    bit_size: 1
+  - name: ECCOAD
+    description: desc ECCOAD.
+    bit_offset: 16
+    bit_size: 1
+  - name: BECCOAD
+    description: desc BECCOAD.
+    bit_offset: 17
+    bit_size: 1
+  - name: ECCMOD
+    description: desc ECCMOD.
+    bit_offset: 24
+    bit_size: 2
+  - name: BECCMOD
+    description: desc BECCMOD.
+    bit_offset: 26
+    bit_size: 2
+fieldset/CKPR:
+  description: desc CKPR.
+  fields:
+  - name: CKPRC
+    description: desc CKPRC.
+    bit_offset: 0
+    bit_size: 1
+  - name: CKPRKW
+    description: desc CKPRKW.
+    bit_offset: 1
+    bit_size: 7
+fieldset/CKSR:
+  description: desc CKSR.
+  fields:
+  - name: SRAM1_PYERR
+    description: desc SRAM1_PYERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: SRAM2_PYERR
+    description: desc SRAM2_PYERR.
+    bit_offset: 1
+    bit_size: 1
+  - name: SRAM3_PYERR
+    description: desc SRAM3_PYERR.
+    bit_offset: 2
+    bit_size: 1
+  - name: SRAMH_PYERR
+    description: desc SRAMH_PYERR.
+    bit_offset: 3
+    bit_size: 1
+  - name: SRAM4_1ERR
+    description: desc SRAM4_1ERR.
+    bit_offset: 4
+    bit_size: 1
+  - name: SRAM4_2ERR
+    description: desc SRAM4_2ERR.
+    bit_offset: 5
+    bit_size: 1
+  - name: SRAMB_1ERR
+    description: desc SRAMB_1ERR.
+    bit_offset: 6
+    bit_size: 1
+  - name: SRAMB_2ERR
+    description: desc SRAMB_2ERR.
+    bit_offset: 7
+    bit_size: 1
+  - name: CACHE_PYERR
+    description: desc CACHE_PYERR.
+    bit_offset: 8
+    bit_size: 1
+fieldset/WTCR:
+  description: desc WTCR.
+  fields:
+  - name: SRAM123RWT
+    description: desc SRAM123RWT.
+    bit_offset: 0
+    bit_size: 3
+  - name: SRAM123WWT
+    description: desc SRAM123WWT.
+    bit_offset: 4
+    bit_size: 3
+  - name: SRAM4RWT
+    description: desc SRAM4RWT.
+    bit_offset: 8
+    bit_size: 3
+  - name: SRAM4WWT
+    description: desc SRAM4WWT.
+    bit_offset: 12
+    bit_size: 3
+  - name: SRAMHRWT
+    description: desc SRAMHRWT.
+    bit_offset: 16
+    bit_size: 3
+  - name: SRAMHWWT
+    description: desc SRAMHWWT.
+    bit_offset: 20
+    bit_size: 3
+  - name: SRAMBRWT
+    description: desc SRAMBRWT.
+    bit_offset: 24
+    bit_size: 3
+  - name: SRAMBWWT
+    description: desc SRAMBWWT.
+    bit_offset: 28
+    bit_size: 3
+fieldset/WTPR:
+  description: desc WTPR.
+  fields:
+  - name: WTPRC
+    description: desc WTPRC.
+    bit_offset: 0
+    bit_size: 1
+  - name: WTPRKW
+    description: desc WTPRKW.
+    bit_offset: 1
+    bit_size: 7

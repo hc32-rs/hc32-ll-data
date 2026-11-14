@@ -1,0 +1,55 @@
+# HC32M458KCTI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32M458KCTI
+family: HC32M458
+subfamily: cortex-m4
+packages:
+- name: HC32M458KCTI
+  package: LQFP64
+include_memory: ../memory/HC32M458_F256S64.yaml
+memory_sizes:
+  FLASH: 256K
+  SRAM: 64K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1386.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32M458.yaml
+  include_interrupts: ../interrupts/HC32M458.yaml
+  include_dma_channels:
+    DMA: ../dma/HC32M458_DMA.yaml
+_raw:
+  series: HC32M458
+  freq_mhz: '200'
+  flash_kb: '256'
+  sram_kb: '64'
+  package: LQFP64
+  pin_count: '64'
+  gpio: '52'
+  vdd_min: '2.7'
+  vdd_max: '5.5'
+  uart: '4'
+  spi: '2'
+  i2c: '1'
+  i2s: ''
+  can: ''
+  usb: ''
+  adc: '2'
+  dac: '2'
+  timer: 2;2;5
+  rtc: ''
+  wdt: '1'
+  touchkey: ''
+  lcd: ''
+  opa: '2'
+  cmp: '2'
+  other: ADC 12bit|ADC 17ch|DMA=1|DataFlash=8K|PVD|SecurityTRNG|Timer0=2;Timer4=2;TimerA=5|temp Range
+    -40~105℃ -40~105℃
+  url: https://www.xhsc.com.cn/product/1386.html
+  source: DS
+  Part NO.: HC32M458KCTI

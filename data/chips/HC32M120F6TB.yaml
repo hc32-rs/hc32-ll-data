@@ -1,0 +1,50 @@
+# HC32M120F6TB（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32M120F6TB
+family: HC32M120
+subfamily: cortex-m0plus
+packages:
+- name: HC32M120F6TB
+  package: LQFP32
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1279.html
+cores:
+- name: cortex-m0plus
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32M120.yaml
+  include_interrupts: ../interrupts/HC32M120.yaml
+  include_dma_channels:
+    DMA: ../dma/HC32M120_DMA.yaml
+_raw:
+  series: HC32M120
+  freq_mhz: '48'
+  flash_kb: '32'
+  sram_kb: '4'
+  package: LQFP32
+  pin_count: '32'
+  gpio: '28'
+  vdd_min: '2.7'
+  vdd_max: '5.5'
+  uart: '3'
+  spi: '1'
+  i2c: '1'
+  i2s: ''
+  can: ''
+  usb: ''
+  adc: '1'
+  dac: ''
+  timer: '8'
+  rtc: ''
+  wdt: ''
+  touchkey: ''
+  lcd: ''
+  opa: '2'
+  cmp: '2'
+  other: DMA=2|工作温度=-40~105|ADC_ch=8
+  url: https://www.xhsc.com.cn/product/1279.html
+  source: website
+  Part NO.: HC32M120F6TB

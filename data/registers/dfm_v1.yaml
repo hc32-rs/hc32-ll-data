@@ -1,0 +1,166 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F175/DFM；覆盖系列：HC32F175。
+block/DFM:
+  description: desc DFM.
+  items:
+  - name: CR
+    description: desc CR.
+    byte_offset: 0
+    fieldset: CR
+  - name: LP
+    description: desc LP.
+    byte_offset: 12
+    fieldset: LP
+  - name: IER
+    description: desc IER.
+    byte_offset: 16
+    fieldset: IER
+  - name: IFR
+    description: desc IFR.
+    byte_offset: 20
+    access: Read
+    fieldset: IFR
+  - name: ICR
+    description: desc ICR.
+    byte_offset: 24
+    access: Write
+    fieldset: ICR
+  - name: BYPASS
+    description: desc BYPASS.
+    byte_offset: 44
+    access: Write
+    fieldset: BYPASS
+  - name: SLOCK0
+    description: desc SLOCK0.
+    byte_offset: 48
+    fieldset: SLOCK0
+  - name: SLOCK1
+    description: desc SLOCK1.
+    byte_offset: 52
+    fieldset: SLOCK1
+  - name: SLOCK2
+    description: desc SLOCK2.
+    byte_offset: 56
+    fieldset: SLOCK2
+  - name: SLOCK3
+    description: desc SLOCK3.
+    byte_offset: 60
+    fieldset: SLOCK3
+fieldset/BYPASS:
+  description: desc BYPASS.
+  fields:
+  - name: BYSEQ
+    description: desc BYSEQ.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: OP
+    description: desc OP.
+    bit_offset: 0
+    bit_size: 3
+  - name: WAIT
+    description: desc WAIT.
+    bit_offset: 8
+    bit_size: 4
+  - name: READONLY
+    description: desc READONLY.
+    bit_offset: 16
+    bit_size: 1
+fieldset/ICR:
+  description: desc ICR.
+  fields:
+  - name: PROT
+    description: desc PROT.
+    bit_offset: 0
+    bit_size: 1
+  - name: PEDONE
+    description: desc PEDONE.
+    bit_offset: 1
+    bit_size: 1
+fieldset/IER:
+  description: desc IER.
+  fields:
+  - name: PROT
+    description: desc PROT.
+    bit_offset: 0
+    bit_size: 1
+  - name: PEDONE
+    description: desc PEDONE.
+    bit_offset: 1
+    bit_size: 1
+fieldset/IFR:
+  description: desc IFR.
+  fields:
+  - name: PROT
+    description: desc PROT.
+    bit_offset: 0
+    bit_size: 1
+  - name: PEDONE
+    description: desc PEDONE.
+    bit_offset: 1
+    bit_size: 1
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 8
+    bit_size: 1
+  - name: LPSTAT
+    description: desc LPSTAT.
+    bit_offset: 9
+    bit_size: 1
+  - name: ACCESSERROR0
+    description: desc ACCESSERROR0.
+    bit_offset: 16
+    bit_size: 1
+  - name: ACCESSERROR1
+    description: desc ACCESSERROR1.
+    bit_offset: 17
+    bit_size: 1
+  - name: ACCESSERROR2
+    description: desc ACCESSERROR2.
+    bit_offset: 18
+    bit_size: 1
+  - name: ACCESSERROR3
+    description: desc ACCESSERROR3.
+    bit_offset: 19
+    bit_size: 1
+fieldset/LP:
+  description: desc LP.
+  fields:
+  - name: LPREQ
+    description: desc LPREQ.
+    bit_offset: 0
+    bit_size: 1
+  - name: DPSTBEN
+    description: desc DPSTBEN.
+    bit_offset: 1
+    bit_size: 1
+fieldset/SLOCK0:
+  description: desc SLOCK0.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK1:
+  description: desc SLOCK1.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK2:
+  description: desc SLOCK2.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK3:
+  description: desc SLOCK3.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32

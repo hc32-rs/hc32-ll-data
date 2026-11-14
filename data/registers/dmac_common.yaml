@@ -1,0 +1,440 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F175/DMAC；覆盖系列：HC32F175。
+block/DMAC:
+  description: desc DMAC.
+  items:
+  - name: CONF
+    description: desc CONF.
+    byte_offset: 0
+    fieldset: CONF
+  - name: CONFA0
+    description: desc CONFA0.
+    byte_offset: 16
+    fieldset: CONFA0
+  - name: CONFB0
+    description: desc CONFB0.
+    byte_offset: 20
+    fieldset: CONFB0
+  - name: SRCADR0
+    description: desc SRCADR0.
+    byte_offset: 24
+    fieldset: SRCADR0
+  - name: DSTADR0
+    description: desc DSTADR0.
+    byte_offset: 28
+    fieldset: DSTADR0
+  - name: CONFA1
+    description: desc CONFA1.
+    byte_offset: 32
+    fieldset: CONFA1
+  - name: CONFB1
+    description: desc CONFB1.
+    byte_offset: 36
+    fieldset: CONFB1
+  - name: SRCADR1
+    description: desc SRCADR1.
+    byte_offset: 40
+    fieldset: SRCADR1
+  - name: DSTADR1
+    description: desc DSTADR1.
+    byte_offset: 44
+    fieldset: DSTADR1
+  - name: CONFA2
+    description: desc CONFA2.
+    byte_offset: 48
+    fieldset: CONFA2
+  - name: CONFB2
+    description: desc CONFB2.
+    byte_offset: 52
+    fieldset: CONFB2
+  - name: SRCADR2
+    description: desc SRCADR2.
+    byte_offset: 56
+    fieldset: SRCADR2
+  - name: DSTADR2
+    description: desc DSTADR2.
+    byte_offset: 60
+    fieldset: DSTADR2
+  - name: CONFA3
+    description: desc CONFA3.
+    byte_offset: 64
+    fieldset: CONFA3
+  - name: CONFB3
+    description: desc CONFB3.
+    byte_offset: 68
+    fieldset: CONFB3
+  - name: SRCADR3
+    description: desc SRCADR3.
+    byte_offset: 72
+    fieldset: SRCADR3
+  - name: DSTADR3
+    description: desc DSTADR3.
+    byte_offset: 76
+    fieldset: DSTADR3
+fieldset/CONF:
+  description: desc CONF.
+  fields:
+  - name: HALT
+    description: desc HALT.
+    bit_offset: 24
+    bit_size: 4
+  - name: PRIO
+    description: desc PRIO.
+    bit_offset: 28
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CONFA0:
+  description: desc CONFA0.
+  fields:
+  - name: TC
+    description: desc TC.
+    bit_offset: 0
+    bit_size: 16
+  - name: BC
+    description: desc BC.
+    bit_offset: 16
+    bit_size: 4
+  - name: TRISEL
+    description: desc TRISEL.
+    bit_offset: 22
+    bit_size: 7
+  - name: ST
+    description: desc ST.
+    bit_offset: 29
+    bit_size: 1
+  - name: PAS
+    description: desc PAS.
+    bit_offset: 30
+    bit_size: 1
+  - name: ENS
+    description: desc ENS.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CONFA1:
+  description: desc CONFA1.
+  fields:
+  - name: TC
+    description: desc TC.
+    bit_offset: 0
+    bit_size: 16
+  - name: BC
+    description: desc BC.
+    bit_offset: 16
+    bit_size: 4
+  - name: TRISEL
+    description: desc TRISEL.
+    bit_offset: 22
+    bit_size: 7
+  - name: ST
+    description: desc ST.
+    bit_offset: 29
+    bit_size: 1
+  - name: PAS
+    description: desc PAS.
+    bit_offset: 30
+    bit_size: 1
+  - name: ENS
+    description: desc ENS.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CONFA2:
+  description: desc CONFA2.
+  fields:
+  - name: TC
+    description: desc TC.
+    bit_offset: 0
+    bit_size: 16
+  - name: BC
+    description: desc BC.
+    bit_offset: 16
+    bit_size: 4
+  - name: TRISEL
+    description: desc TRISEL.
+    bit_offset: 22
+    bit_size: 7
+  - name: ST
+    description: desc ST.
+    bit_offset: 29
+    bit_size: 1
+  - name: PAS
+    description: desc PAS.
+    bit_offset: 30
+    bit_size: 1
+  - name: ENS
+    description: desc ENS.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CONFA3:
+  description: desc CONFA3.
+  fields:
+  - name: TC
+    description: desc TC.
+    bit_offset: 0
+    bit_size: 16
+  - name: BC
+    description: desc BC.
+    bit_offset: 16
+    bit_size: 4
+  - name: TRISEL
+    description: desc TRISEL.
+    bit_offset: 22
+    bit_size: 7
+  - name: ST
+    description: desc ST.
+    bit_offset: 29
+    bit_size: 1
+  - name: PAS
+    description: desc PAS.
+    bit_offset: 30
+    bit_size: 1
+  - name: ENS
+    description: desc ENS.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CONFB0:
+  description: desc CONFB0.
+  fields:
+  - name: MSK
+    description: desc MSK.
+    bit_offset: 0
+    bit_size: 1
+  - name: STAT
+    description: desc STAT.
+    bit_offset: 16
+    bit_size: 3
+  - name: FISIE
+    description: desc FISIE.
+    bit_offset: 19
+    bit_size: 1
+  - name: ERRIE
+    description: desc ERRIE.
+    bit_offset: 20
+    bit_size: 1
+  - name: RD
+    description: desc RD.
+    bit_offset: 21
+    bit_size: 1
+  - name: RS
+    description: desc RS.
+    bit_offset: 22
+    bit_size: 1
+  - name: RC
+    description: desc RC.
+    bit_offset: 23
+    bit_size: 1
+  - name: FD
+    description: desc FD.
+    bit_offset: 24
+    bit_size: 1
+  - name: FS
+    description: desc FS.
+    bit_offset: 25
+    bit_size: 1
+  - name: WIDTH
+    description: desc WIDTH.
+    bit_offset: 26
+    bit_size: 2
+  - name: MODE
+    description: desc MODE.
+    bit_offset: 28
+    bit_size: 2
+fieldset/CONFB1:
+  description: desc CONFB1.
+  fields:
+  - name: MSK
+    description: desc MSK.
+    bit_offset: 0
+    bit_size: 1
+  - name: STAT
+    description: desc STAT.
+    bit_offset: 16
+    bit_size: 3
+  - name: FISIE
+    description: desc FISIE.
+    bit_offset: 19
+    bit_size: 1
+  - name: ERRIE
+    description: desc ERRIE.
+    bit_offset: 20
+    bit_size: 1
+  - name: RD
+    description: desc RD.
+    bit_offset: 21
+    bit_size: 1
+  - name: RS
+    description: desc RS.
+    bit_offset: 22
+    bit_size: 1
+  - name: RC
+    description: desc RC.
+    bit_offset: 23
+    bit_size: 1
+  - name: FD
+    description: desc FD.
+    bit_offset: 24
+    bit_size: 1
+  - name: FS
+    description: desc FS.
+    bit_offset: 25
+    bit_size: 1
+  - name: WIDTH
+    description: desc WIDTH.
+    bit_offset: 26
+    bit_size: 2
+  - name: MODE
+    description: desc MODE.
+    bit_offset: 28
+    bit_size: 2
+fieldset/CONFB2:
+  description: desc CONFB2.
+  fields:
+  - name: MSK
+    description: desc MSK.
+    bit_offset: 0
+    bit_size: 1
+  - name: STAT
+    description: desc STAT.
+    bit_offset: 16
+    bit_size: 3
+  - name: FISIE
+    description: desc FISIE.
+    bit_offset: 19
+    bit_size: 1
+  - name: ERRIE
+    description: desc ERRIE.
+    bit_offset: 20
+    bit_size: 1
+  - name: RD
+    description: desc RD.
+    bit_offset: 21
+    bit_size: 1
+  - name: RS
+    description: desc RS.
+    bit_offset: 22
+    bit_size: 1
+  - name: RC
+    description: desc RC.
+    bit_offset: 23
+    bit_size: 1
+  - name: FD
+    description: desc FD.
+    bit_offset: 24
+    bit_size: 1
+  - name: FS
+    description: desc FS.
+    bit_offset: 25
+    bit_size: 1
+  - name: WIDTH
+    description: desc WIDTH.
+    bit_offset: 26
+    bit_size: 2
+  - name: MODE
+    description: desc MODE.
+    bit_offset: 28
+    bit_size: 2
+fieldset/CONFB3:
+  description: desc CONFB3.
+  fields:
+  - name: MSK
+    description: desc MSK.
+    bit_offset: 0
+    bit_size: 1
+  - name: STAT
+    description: desc STAT.
+    bit_offset: 16
+    bit_size: 3
+  - name: FISIE
+    description: desc FISIE.
+    bit_offset: 19
+    bit_size: 1
+  - name: ERRIE
+    description: desc ERRIE.
+    bit_offset: 20
+    bit_size: 1
+  - name: RD
+    description: desc RD.
+    bit_offset: 21
+    bit_size: 1
+  - name: RS
+    description: desc RS.
+    bit_offset: 22
+    bit_size: 1
+  - name: RC
+    description: desc RC.
+    bit_offset: 23
+    bit_size: 1
+  - name: FD
+    description: desc FD.
+    bit_offset: 24
+    bit_size: 1
+  - name: FS
+    description: desc FS.
+    bit_offset: 25
+    bit_size: 1
+  - name: WIDTH
+    description: desc WIDTH.
+    bit_offset: 26
+    bit_size: 2
+  - name: MODE
+    description: desc MODE.
+    bit_offset: 28
+    bit_size: 2
+fieldset/DSTADR0:
+  description: desc DSTADR0.
+  fields:
+  - name: DSTADR
+    description: desc DSTADR.
+    bit_offset: 0
+    bit_size: 32
+fieldset/DSTADR1:
+  description: desc DSTADR1.
+  fields:
+  - name: DSTADR
+    description: desc DSTADR.
+    bit_offset: 0
+    bit_size: 32
+fieldset/DSTADR2:
+  description: desc DSTADR2.
+  fields:
+  - name: DSTADR
+    description: desc DSTADR.
+    bit_offset: 0
+    bit_size: 32
+fieldset/DSTADR3:
+  description: desc DSTADR3.
+  fields:
+  - name: DSTADR
+    description: desc DSTADR.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SRCADR0:
+  description: desc SRCADR0.
+  fields:
+  - name: SRCADR
+    description: desc SRCADR.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SRCADR1:
+  description: desc SRCADR1.
+  fields:
+  - name: SRCADR
+    description: desc SRCADR.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SRCADR2:
+  description: desc SRCADR2.
+  fields:
+  - name: SRCADR
+    description: desc SRCADR.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SRCADR3:
+  description: desc SRCADR3.
+  fields:
+  - name: SRCADR
+    description: desc SRCADR.
+    bit_offset: 0
+    bit_size: 32

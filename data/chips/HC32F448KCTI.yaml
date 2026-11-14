@@ -1,0 +1,56 @@
+# HC32F448KCTI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F448KCTI
+family: HC32F448
+subfamily: cortex-m4
+packages:
+- name: HC32F448KCTI
+  package: LQFP64
+include_memory: ../memory/HC32F448_F256S68.yaml
+memory_sizes:
+  FLASH: 256K
+  SRAM: 68K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1213.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F448.yaml
+  include_interrupts: ../interrupts/HC32F448.yaml
+  include_dma_channels:
+    DMA1: ../dma/HC32F448_DMA1.yaml
+    DMA2: ../dma/HC32F448_DMA2.yaml
+_raw:
+  series: HC32F448
+  freq_mhz: '200'
+  flash_kb: '256'
+  sram_kb: '68'
+  package: LQFP64
+  pin_count: '64'
+  gpio: '52'
+  vdd_min: '1.8'
+  vdd_max: '3.6'
+  uart: '6'
+  spi: '3'
+  i2c: '2'
+  i2s: ''
+  can: '2'
+  usb: ''
+  adc: '3'
+  dac: '2'
+  timer: 2;3;2;5
+  rtc: '1'
+  wdt: '1'
+  touchkey: ''
+  lcd: ''
+  opa: ''
+  cmp: '4'
+  other: ADC 12bit|ADC 17ch|DMA=2|HASHSHA256=256|PVD|QSPI=1|SecurityAES256|TRNG|Timer0=2;Timer4=3;Timer6=2;TimerA=5|temp
+    Range -40~105℃ -40~105℃ -40~105℃ -40~105℃ -40~105℃ -40~105℃ -40~105℃ -40~105℃ -40~105℃ -40~105℃
+  url: https://www.xhsc.com.cn/product/1213.html
+  source: DS
+  Part NO.: HC32F448KCTI

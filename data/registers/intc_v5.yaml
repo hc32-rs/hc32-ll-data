@@ -1,0 +1,4790 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/INTC；覆盖系列：HC32A4A8, HC32F4A8。
+block/INTC:
+  description: desc INTC.
+  items:
+  - name: NOCCR
+    description: desc NOCCR.
+    byte_offset: 0
+    fieldset: NOCCR
+  - name: NMIER
+    description: desc NMIER.
+    byte_offset: 4
+    fieldset: NMIER
+  - name: NMIFR
+    description: desc NMIFR.
+    byte_offset: 8
+    fieldset: NMIFR
+  - name: NMIFCR
+    description: desc NMIFCR.
+    byte_offset: 12
+    fieldset: NMIFCR
+  - name: EIRQCR0
+    description: desc EIRQCR0.
+    byte_offset: 16
+    fieldset: EIRQCR0
+  - name: EIRQCR1
+    description: desc EIRQCR1.
+    byte_offset: 20
+    fieldset: EIRQCR1
+  - name: EIRQCR2
+    description: desc EIRQCR2.
+    byte_offset: 24
+    fieldset: EIRQCR2
+  - name: EIRQCR3
+    description: desc EIRQCR3.
+    byte_offset: 28
+    fieldset: EIRQCR3
+  - name: EIRQCR4
+    description: desc EIRQCR4.
+    byte_offset: 32
+    fieldset: EIRQCR4
+  - name: EIRQCR5
+    description: desc EIRQCR5.
+    byte_offset: 36
+    fieldset: EIRQCR5
+  - name: EIRQCR6
+    description: desc EIRQCR6.
+    byte_offset: 40
+    fieldset: EIRQCR6
+  - name: EIRQCR7
+    description: desc EIRQCR7.
+    byte_offset: 44
+    fieldset: EIRQCR7
+  - name: EIRQCR8
+    description: desc EIRQCR8.
+    byte_offset: 48
+    fieldset: EIRQCR8
+  - name: EIRQCR9
+    description: desc EIRQCR9.
+    byte_offset: 52
+    fieldset: EIRQCR9
+  - name: EIRQCR10
+    description: desc EIRQCR10.
+    byte_offset: 56
+    fieldset: EIRQCR10
+  - name: EIRQCR11
+    description: desc EIRQCR11.
+    byte_offset: 60
+    fieldset: EIRQCR11
+  - name: EIRQCR12
+    description: desc EIRQCR12.
+    byte_offset: 64
+    fieldset: EIRQCR12
+  - name: EIRQCR13
+    description: desc EIRQCR13.
+    byte_offset: 68
+    fieldset: EIRQCR13
+  - name: EIRQCR14
+    description: desc EIRQCR14.
+    byte_offset: 72
+    fieldset: EIRQCR14
+  - name: EIRQCR15
+    description: desc EIRQCR15.
+    byte_offset: 76
+    fieldset: EIRQCR15
+  - name: WKEN
+    description: desc WKEN.
+    byte_offset: 80
+    fieldset: WKEN
+  - name: EIFR
+    description: desc EIFR.
+    byte_offset: 84
+    fieldset: EIFR
+  - name: EIFCR
+    description: desc EIFCR.
+    byte_offset: 88
+    fieldset: EIFCR
+  - name: INTSEL0
+    description: desc INTSEL0.
+    byte_offset: 92
+    fieldset: INTSEL0
+  - name: INTSEL1
+    description: desc INTSEL1.
+    byte_offset: 96
+    fieldset: INTSEL1
+  - name: INTSEL2
+    description: desc INTSEL2.
+    byte_offset: 100
+    fieldset: INTSEL2
+  - name: INTSEL3
+    description: desc INTSEL3.
+    byte_offset: 104
+    fieldset: INTSEL3
+  - name: INTSEL4
+    description: desc INTSEL4.
+    byte_offset: 108
+    fieldset: INTSEL4
+  - name: INTSEL5
+    description: desc INTSEL5.
+    byte_offset: 112
+    fieldset: INTSEL5
+  - name: INTSEL6
+    description: desc INTSEL6.
+    byte_offset: 116
+    fieldset: INTSEL6
+  - name: INTSEL7
+    description: desc INTSEL7.
+    byte_offset: 120
+    fieldset: INTSEL7
+  - name: INTSEL8
+    description: desc INTSEL8.
+    byte_offset: 124
+    fieldset: INTSEL8
+  - name: INTSEL9
+    description: desc INTSEL9.
+    byte_offset: 128
+    fieldset: INTSEL9
+  - name: INTSEL10
+    description: desc INTSEL10.
+    byte_offset: 132
+    fieldset: INTSEL10
+  - name: INTSEL11
+    description: desc INTSEL11.
+    byte_offset: 136
+    fieldset: INTSEL11
+  - name: INTSEL12
+    description: desc INTSEL12.
+    byte_offset: 140
+    fieldset: INTSEL12
+  - name: INTSEL13
+    description: desc INTSEL13.
+    byte_offset: 144
+    fieldset: INTSEL13
+  - name: INTSEL14
+    description: desc INTSEL14.
+    byte_offset: 148
+    fieldset: INTSEL14
+  - name: INTSEL15
+    description: desc INTSEL15.
+    byte_offset: 152
+    fieldset: INTSEL15
+  - name: INTSEL16
+    description: desc INTSEL16.
+    byte_offset: 156
+    fieldset: INTSEL16
+  - name: INTSEL17
+    description: desc INTSEL17.
+    byte_offset: 160
+    fieldset: INTSEL17
+  - name: INTSEL18
+    description: desc INTSEL18.
+    byte_offset: 164
+    fieldset: INTSEL18
+  - name: INTSEL19
+    description: desc INTSEL19.
+    byte_offset: 168
+    fieldset: INTSEL19
+  - name: INTSEL20
+    description: desc INTSEL20.
+    byte_offset: 172
+    fieldset: INTSEL20
+  - name: INTSEL21
+    description: desc INTSEL21.
+    byte_offset: 176
+    fieldset: INTSEL21
+  - name: INTSEL22
+    description: desc INTSEL22.
+    byte_offset: 180
+    fieldset: INTSEL22
+  - name: INTSEL23
+    description: desc INTSEL23.
+    byte_offset: 184
+    fieldset: INTSEL23
+  - name: INTSEL24
+    description: desc INTSEL24.
+    byte_offset: 188
+    fieldset: INTSEL24
+  - name: INTSEL25
+    description: desc INTSEL25.
+    byte_offset: 192
+    fieldset: INTSEL25
+  - name: INTSEL26
+    description: desc INTSEL26.
+    byte_offset: 196
+    fieldset: INTSEL26
+  - name: INTSEL27
+    description: desc INTSEL27.
+    byte_offset: 200
+    fieldset: INTSEL27
+  - name: INTSEL28
+    description: desc INTSEL28.
+    byte_offset: 204
+    fieldset: INTSEL28
+  - name: INTSEL29
+    description: desc INTSEL29.
+    byte_offset: 208
+    fieldset: INTSEL29
+  - name: INTSEL30
+    description: desc INTSEL30.
+    byte_offset: 212
+    fieldset: INTSEL30
+  - name: INTSEL31
+    description: desc INTSEL31.
+    byte_offset: 216
+    fieldset: INTSEL31
+  - name: INTSEL32
+    description: desc INTSEL32.
+    byte_offset: 220
+    fieldset: INTSEL32
+  - name: INTSEL33
+    description: desc INTSEL33.
+    byte_offset: 224
+    fieldset: INTSEL33
+  - name: INTSEL34
+    description: desc INTSEL34.
+    byte_offset: 228
+    fieldset: INTSEL34
+  - name: INTSEL35
+    description: desc INTSEL35.
+    byte_offset: 232
+    fieldset: INTSEL35
+  - name: INTSEL36
+    description: desc INTSEL36.
+    byte_offset: 236
+    fieldset: INTSEL36
+  - name: INTSEL37
+    description: desc INTSEL37.
+    byte_offset: 240
+    fieldset: INTSEL37
+  - name: INTSEL38
+    description: desc INTSEL38.
+    byte_offset: 244
+    fieldset: INTSEL38
+  - name: INTSEL39
+    description: desc INTSEL39.
+    byte_offset: 248
+    fieldset: INTSEL39
+  - name: INTSEL40
+    description: desc INTSEL40.
+    byte_offset: 252
+    fieldset: INTSEL40
+  - name: INTSEL41
+    description: desc INTSEL41.
+    byte_offset: 256
+    fieldset: INTSEL41
+  - name: INTSEL42
+    description: desc INTSEL42.
+    byte_offset: 260
+    fieldset: INTSEL42
+  - name: INTSEL43
+    description: desc INTSEL43.
+    byte_offset: 264
+    fieldset: INTSEL43
+  - name: INTSEL44
+    description: desc INTSEL44.
+    byte_offset: 268
+    fieldset: INTSEL44
+  - name: INTSEL45
+    description: desc INTSEL45.
+    byte_offset: 272
+    fieldset: INTSEL45
+  - name: INTSEL46
+    description: desc INTSEL46.
+    byte_offset: 276
+    fieldset: INTSEL46
+  - name: INTSEL47
+    description: desc INTSEL47.
+    byte_offset: 280
+    fieldset: INTSEL47
+  - name: INTSEL48
+    description: desc INTSEL48.
+    byte_offset: 284
+    fieldset: INTSEL48
+  - name: INTSEL49
+    description: desc INTSEL49.
+    byte_offset: 288
+    fieldset: INTSEL49
+  - name: INTSEL50
+    description: desc INTSEL50.
+    byte_offset: 292
+    fieldset: INTSEL50
+  - name: INTSEL51
+    description: desc INTSEL51.
+    byte_offset: 296
+    fieldset: INTSEL51
+  - name: INTSEL52
+    description: desc INTSEL52.
+    byte_offset: 300
+    fieldset: INTSEL52
+  - name: INTSEL53
+    description: desc INTSEL53.
+    byte_offset: 304
+    fieldset: INTSEL53
+  - name: INTSEL54
+    description: desc INTSEL54.
+    byte_offset: 308
+    fieldset: INTSEL54
+  - name: INTSEL55
+    description: desc INTSEL55.
+    byte_offset: 312
+    fieldset: INTSEL55
+  - name: INTSEL56
+    description: desc INTSEL56.
+    byte_offset: 316
+    fieldset: INTSEL56
+  - name: INTSEL57
+    description: desc INTSEL57.
+    byte_offset: 320
+    fieldset: INTSEL57
+  - name: INTSEL58
+    description: desc INTSEL58.
+    byte_offset: 324
+    fieldset: INTSEL58
+  - name: INTSEL59
+    description: desc INTSEL59.
+    byte_offset: 328
+    fieldset: INTSEL59
+  - name: INTSEL60
+    description: desc INTSEL60.
+    byte_offset: 332
+    fieldset: INTSEL60
+  - name: INTSEL61
+    description: desc INTSEL61.
+    byte_offset: 336
+    fieldset: INTSEL61
+  - name: INTSEL62
+    description: desc INTSEL62.
+    byte_offset: 340
+    fieldset: INTSEL62
+  - name: INTSEL63
+    description: desc INTSEL63.
+    byte_offset: 344
+    fieldset: INTSEL63
+  - name: INTSEL64
+    description: desc INTSEL64.
+    byte_offset: 348
+    fieldset: INTSEL64
+  - name: INTSEL65
+    description: desc INTSEL65.
+    byte_offset: 352
+    fieldset: INTSEL65
+  - name: INTSEL66
+    description: desc INTSEL66.
+    byte_offset: 356
+    fieldset: INTSEL66
+  - name: INTSEL67
+    description: desc INTSEL67.
+    byte_offset: 360
+    fieldset: INTSEL67
+  - name: INTSEL68
+    description: desc INTSEL68.
+    byte_offset: 364
+    fieldset: INTSEL68
+  - name: INTSEL69
+    description: desc INTSEL69.
+    byte_offset: 368
+    fieldset: INTSEL69
+  - name: INTSEL70
+    description: desc INTSEL70.
+    byte_offset: 372
+    fieldset: INTSEL70
+  - name: INTSEL71
+    description: desc INTSEL71.
+    byte_offset: 376
+    fieldset: INTSEL71
+  - name: INTSEL72
+    description: desc INTSEL72.
+    byte_offset: 380
+    fieldset: INTSEL72
+  - name: INTSEL73
+    description: desc INTSEL73.
+    byte_offset: 384
+    fieldset: INTSEL73
+  - name: INTSEL74
+    description: desc INTSEL74.
+    byte_offset: 388
+    fieldset: INTSEL74
+  - name: INTSEL75
+    description: desc INTSEL75.
+    byte_offset: 392
+    fieldset: INTSEL75
+  - name: INTSEL76
+    description: desc INTSEL76.
+    byte_offset: 396
+    fieldset: INTSEL76
+  - name: INTSEL77
+    description: desc INTSEL77.
+    byte_offset: 400
+    fieldset: INTSEL77
+  - name: INTSEL78
+    description: desc INTSEL78.
+    byte_offset: 404
+    fieldset: INTSEL78
+  - name: INTSEL79
+    description: desc INTSEL79.
+    byte_offset: 408
+    fieldset: INTSEL79
+  - name: INTSEL80
+    description: desc INTSEL80.
+    byte_offset: 412
+    fieldset: INTSEL80
+  - name: INTSEL81
+    description: desc INTSEL81.
+    byte_offset: 416
+    fieldset: INTSEL81
+  - name: INTSEL82
+    description: desc INTSEL82.
+    byte_offset: 420
+    fieldset: INTSEL82
+  - name: INTSEL83
+    description: desc INTSEL83.
+    byte_offset: 424
+    fieldset: INTSEL83
+  - name: INTSEL84
+    description: desc INTSEL84.
+    byte_offset: 428
+    fieldset: INTSEL84
+  - name: INTSEL85
+    description: desc INTSEL85.
+    byte_offset: 432
+    fieldset: INTSEL85
+  - name: INTSEL86
+    description: desc INTSEL86.
+    byte_offset: 436
+    fieldset: INTSEL86
+  - name: INTSEL87
+    description: desc INTSEL87.
+    byte_offset: 440
+    fieldset: INTSEL87
+  - name: INTSEL88
+    description: desc INTSEL88.
+    byte_offset: 444
+    fieldset: INTSEL88
+  - name: INTSEL89
+    description: desc INTSEL89.
+    byte_offset: 448
+    fieldset: INTSEL89
+  - name: INTSEL90
+    description: desc INTSEL90.
+    byte_offset: 452
+    fieldset: INTSEL90
+  - name: INTSEL91
+    description: desc INTSEL91.
+    byte_offset: 456
+    fieldset: INTSEL91
+  - name: INTSEL92
+    description: desc INTSEL92.
+    byte_offset: 460
+    fieldset: INTSEL92
+  - name: INTSEL93
+    description: desc INTSEL93.
+    byte_offset: 464
+    fieldset: INTSEL93
+  - name: INTSEL94
+    description: desc INTSEL94.
+    byte_offset: 468
+    fieldset: INTSEL94
+  - name: INTSEL95
+    description: desc INTSEL95.
+    byte_offset: 472
+    fieldset: INTSEL95
+  - name: INTSEL96
+    description: desc INTSEL96.
+    byte_offset: 476
+    fieldset: INTSEL96
+  - name: INTSEL97
+    description: desc INTSEL97.
+    byte_offset: 480
+    fieldset: INTSEL97
+  - name: INTSEL98
+    description: desc INTSEL98.
+    byte_offset: 484
+    fieldset: INTSEL98
+  - name: INTSEL99
+    description: desc INTSEL99.
+    byte_offset: 488
+    fieldset: INTSEL99
+  - name: INTSEL100
+    description: desc INTSEL100.
+    byte_offset: 492
+    fieldset: INTSEL100
+  - name: INTSEL101
+    description: desc INTSEL101.
+    byte_offset: 496
+    fieldset: INTSEL101
+  - name: INTSEL102
+    description: desc INTSEL102.
+    byte_offset: 500
+    fieldset: INTSEL102
+  - name: INTSEL103
+    description: desc INTSEL103.
+    byte_offset: 504
+    fieldset: INTSEL103
+  - name: INTSEL104
+    description: desc INTSEL104.
+    byte_offset: 508
+    fieldset: INTSEL104
+  - name: INTSEL105
+    description: desc INTSEL105.
+    byte_offset: 512
+    fieldset: INTSEL105
+  - name: INTSEL106
+    description: desc INTSEL106.
+    byte_offset: 516
+    fieldset: INTSEL106
+  - name: INTSEL107
+    description: desc INTSEL107.
+    byte_offset: 520
+    fieldset: INTSEL107
+  - name: INTSEL108
+    description: desc INTSEL108.
+    byte_offset: 524
+    fieldset: INTSEL108
+  - name: INTSEL109
+    description: desc INTSEL109.
+    byte_offset: 528
+    fieldset: INTSEL109
+  - name: INTSEL110
+    description: desc INTSEL110.
+    byte_offset: 532
+    fieldset: INTSEL110
+  - name: INTSEL111
+    description: desc INTSEL111.
+    byte_offset: 536
+    fieldset: INTSEL111
+  - name: INTSEL112
+    description: desc INTSEL112.
+    byte_offset: 540
+    fieldset: INTSEL112
+  - name: INTSEL113
+    description: desc INTSEL113.
+    byte_offset: 544
+    fieldset: INTSEL113
+  - name: INTSEL114
+    description: desc INTSEL114.
+    byte_offset: 548
+    fieldset: INTSEL114
+  - name: INTSEL115
+    description: desc INTSEL115.
+    byte_offset: 552
+    fieldset: INTSEL115
+  - name: INTSEL116
+    description: desc INTSEL116.
+    byte_offset: 556
+    fieldset: INTSEL116
+  - name: INTSEL117
+    description: desc INTSEL117.
+    byte_offset: 560
+    fieldset: INTSEL117
+  - name: INTSEL118
+    description: desc INTSEL118.
+    byte_offset: 564
+    fieldset: INTSEL118
+  - name: INTSEL119
+    description: desc INTSEL119.
+    byte_offset: 568
+    fieldset: INTSEL119
+  - name: INTSEL120
+    description: desc INTSEL120.
+    byte_offset: 572
+    fieldset: INTSEL120
+  - name: INTSEL121
+    description: desc INTSEL121.
+    byte_offset: 576
+    fieldset: INTSEL121
+  - name: INTSEL122
+    description: desc INTSEL122.
+    byte_offset: 580
+    fieldset: INTSEL122
+  - name: INTSEL123
+    description: desc INTSEL123.
+    byte_offset: 584
+    fieldset: INTSEL123
+  - name: INTSEL124
+    description: desc INTSEL124.
+    byte_offset: 588
+    fieldset: INTSEL124
+  - name: INTSEL125
+    description: desc INTSEL125.
+    byte_offset: 592
+    fieldset: INTSEL125
+  - name: INTSEL126
+    description: desc INTSEL126.
+    byte_offset: 596
+    fieldset: INTSEL126
+  - name: INTSEL127
+    description: desc INTSEL127.
+    byte_offset: 600
+    fieldset: INTSEL127
+  - name: VSSEL128
+    description: desc VSSEL128.
+    byte_offset: 604
+    fieldset: VSSEL128
+  - name: VSSEL129
+    description: desc VSSEL129.
+    byte_offset: 608
+    fieldset: VSSEL129
+  - name: VSSEL130
+    description: desc VSSEL130.
+    byte_offset: 612
+    fieldset: VSSEL130
+  - name: VSSEL131
+    description: desc VSSEL131.
+    byte_offset: 616
+    fieldset: VSSEL131
+  - name: VSSEL132
+    description: desc VSSEL132.
+    byte_offset: 620
+    fieldset: VSSEL132
+  - name: VSSEL133
+    description: desc VSSEL133.
+    byte_offset: 624
+    fieldset: VSSEL133
+  - name: VSSEL134
+    description: desc VSSEL134.
+    byte_offset: 628
+    fieldset: VSSEL134
+  - name: VSSEL135
+    description: desc VSSEL135.
+    byte_offset: 632
+    fieldset: VSSEL135
+  - name: VSSEL136
+    description: desc VSSEL136.
+    byte_offset: 636
+    fieldset: VSSEL136
+  - name: VSSEL137
+    description: desc VSSEL137.
+    byte_offset: 640
+    fieldset: VSSEL137
+  - name: VSSEL138
+    description: desc VSSEL138.
+    byte_offset: 644
+    fieldset: VSSEL138
+  - name: VSSEL139
+    description: desc VSSEL139.
+    byte_offset: 648
+    fieldset: VSSEL139
+  - name: VSSEL140
+    description: desc VSSEL140.
+    byte_offset: 652
+    fieldset: VSSEL140
+  - name: VSSEL141
+    description: desc VSSEL141.
+    byte_offset: 656
+    fieldset: VSSEL141
+  - name: VSSEL142
+    description: desc VSSEL142.
+    byte_offset: 660
+    fieldset: VSSEL142
+  - name: VSSEL143
+    description: desc VSSEL143.
+    byte_offset: 664
+    fieldset: VSSEL143
+  - name: SWIER
+    description: desc SWIER.
+    byte_offset: 668
+    fieldset: SWIER
+  - name: EVTER
+    description: desc EVTER.
+    byte_offset: 672
+    fieldset: EVTER
+  - name: IER
+    description: desc IER.
+    byte_offset: 676
+    fieldset: IER
+  - name: FPUIER
+    description: desc FPUIER.
+    byte_offset: 680
+    fieldset: FPUIER
+fieldset/EIFCR:
+  description: desc EIFCR.
+  fields:
+  - name: EIFCR0
+    description: desc EIFCR0.
+    bit_offset: 0
+    bit_size: 1
+  - name: EIFCR1
+    description: desc EIFCR1.
+    bit_offset: 1
+    bit_size: 1
+  - name: EIFCR2
+    description: desc EIFCR2.
+    bit_offset: 2
+    bit_size: 1
+  - name: EIFCR3
+    description: desc EIFCR3.
+    bit_offset: 3
+    bit_size: 1
+  - name: EIFCR4
+    description: desc EIFCR4.
+    bit_offset: 4
+    bit_size: 1
+  - name: EIFCR5
+    description: desc EIFCR5.
+    bit_offset: 5
+    bit_size: 1
+  - name: EIFCR6
+    description: desc EIFCR6.
+    bit_offset: 6
+    bit_size: 1
+  - name: EIFCR7
+    description: desc EIFCR7.
+    bit_offset: 7
+    bit_size: 1
+  - name: EIFCR8
+    description: desc EIFCR8.
+    bit_offset: 8
+    bit_size: 1
+  - name: EIFCR9
+    description: desc EIFCR9.
+    bit_offset: 9
+    bit_size: 1
+  - name: EIFCR10
+    description: desc EIFCR10.
+    bit_offset: 10
+    bit_size: 1
+  - name: EIFCR11
+    description: desc EIFCR11.
+    bit_offset: 11
+    bit_size: 1
+  - name: EIFCR12
+    description: desc EIFCR12.
+    bit_offset: 12
+    bit_size: 1
+  - name: EIFCR13
+    description: desc EIFCR13.
+    bit_offset: 13
+    bit_size: 1
+  - name: EIFCR14
+    description: desc EIFCR14.
+    bit_offset: 14
+    bit_size: 1
+  - name: EIFCR15
+    description: desc EIFCR15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EIFR:
+  description: desc EIFR.
+  fields:
+  - name: EIFR0
+    description: desc EIFR0.
+    bit_offset: 0
+    bit_size: 1
+  - name: EIFR1
+    description: desc EIFR1.
+    bit_offset: 1
+    bit_size: 1
+  - name: EIFR2
+    description: desc EIFR2.
+    bit_offset: 2
+    bit_size: 1
+  - name: EIFR3
+    description: desc EIFR3.
+    bit_offset: 3
+    bit_size: 1
+  - name: EIFR4
+    description: desc EIFR4.
+    bit_offset: 4
+    bit_size: 1
+  - name: EIFR5
+    description: desc EIFR5.
+    bit_offset: 5
+    bit_size: 1
+  - name: EIFR6
+    description: desc EIFR6.
+    bit_offset: 6
+    bit_size: 1
+  - name: EIFR7
+    description: desc EIFR7.
+    bit_offset: 7
+    bit_size: 1
+  - name: EIFR8
+    description: desc EIFR8.
+    bit_offset: 8
+    bit_size: 1
+  - name: EIFR9
+    description: desc EIFR9.
+    bit_offset: 9
+    bit_size: 1
+  - name: EIFR10
+    description: desc EIFR10.
+    bit_offset: 10
+    bit_size: 1
+  - name: EIFR11
+    description: desc EIFR11.
+    bit_offset: 11
+    bit_size: 1
+  - name: EIFR12
+    description: desc EIFR12.
+    bit_offset: 12
+    bit_size: 1
+  - name: EIFR13
+    description: desc EIFR13.
+    bit_offset: 13
+    bit_size: 1
+  - name: EIFR14
+    description: desc EIFR14.
+    bit_offset: 14
+    bit_size: 1
+  - name: EIFR15
+    description: desc EIFR15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/EIRQCR0:
+  description: desc EIRQCR0.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR1:
+  description: desc EIRQCR1.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR10:
+  description: desc EIRQCR10.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR11:
+  description: desc EIRQCR11.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR12:
+  description: desc EIRQCR12.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR13:
+  description: desc EIRQCR13.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR14:
+  description: desc EIRQCR14.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR15:
+  description: desc EIRQCR15.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR2:
+  description: desc EIRQCR2.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR3:
+  description: desc EIRQCR3.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR4:
+  description: desc EIRQCR4.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR5:
+  description: desc EIRQCR5.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR6:
+  description: desc EIRQCR6.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR7:
+  description: desc EIRQCR7.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR8:
+  description: desc EIRQCR8.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EIRQCR9:
+  description: desc EIRQCR9.
+  fields:
+  - name: EIRQTRG
+    description: desc EIRQTRG.
+    bit_offset: 0
+    bit_size: 2
+  - name: EISMPCLK
+    description: desc EISMPCLK.
+    bit_offset: 4
+    bit_size: 2
+  - name: EFEN
+    description: desc EFEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: NOCEN
+    description: desc NOCEN.
+    bit_offset: 15
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/EVTER:
+  description: desc EVTER.
+  fields:
+  - name: EVTE0
+    description: desc EVTE0.
+    bit_offset: 0
+    bit_size: 1
+  - name: EVTE1
+    description: desc EVTE1.
+    bit_offset: 1
+    bit_size: 1
+  - name: EVTE2
+    description: desc EVTE2.
+    bit_offset: 2
+    bit_size: 1
+  - name: EVTE3
+    description: desc EVTE3.
+    bit_offset: 3
+    bit_size: 1
+  - name: EVTE4
+    description: desc EVTE4.
+    bit_offset: 4
+    bit_size: 1
+  - name: EVTE5
+    description: desc EVTE5.
+    bit_offset: 5
+    bit_size: 1
+  - name: EVTE6
+    description: desc EVTE6.
+    bit_offset: 6
+    bit_size: 1
+  - name: EVTE7
+    description: desc EVTE7.
+    bit_offset: 7
+    bit_size: 1
+  - name: EVTE8
+    description: desc EVTE8.
+    bit_offset: 8
+    bit_size: 1
+  - name: EVTE9
+    description: desc EVTE9.
+    bit_offset: 9
+    bit_size: 1
+  - name: EVTE10
+    description: desc EVTE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: EVTE11
+    description: desc EVTE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: EVTE12
+    description: desc EVTE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: EVTE13
+    description: desc EVTE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: EVTE14
+    description: desc EVTE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: EVTE15
+    description: desc EVTE15.
+    bit_offset: 15
+    bit_size: 1
+  - name: EVTE16
+    description: desc EVTE16.
+    bit_offset: 16
+    bit_size: 1
+  - name: EVTE17
+    description: desc EVTE17.
+    bit_offset: 17
+    bit_size: 1
+  - name: EVTE18
+    description: desc EVTE18.
+    bit_offset: 18
+    bit_size: 1
+  - name: EVTE19
+    description: desc EVTE19.
+    bit_offset: 19
+    bit_size: 1
+  - name: EVTE20
+    description: desc EVTE20.
+    bit_offset: 20
+    bit_size: 1
+  - name: EVTE21
+    description: desc EVTE21.
+    bit_offset: 21
+    bit_size: 1
+  - name: EVTE22
+    description: desc EVTE22.
+    bit_offset: 22
+    bit_size: 1
+  - name: EVTE23
+    description: desc EVTE23.
+    bit_offset: 23
+    bit_size: 1
+  - name: EVTE24
+    description: desc EVTE24.
+    bit_offset: 24
+    bit_size: 1
+  - name: EVTE25
+    description: desc EVTE25.
+    bit_offset: 25
+    bit_size: 1
+  - name: EVTE26
+    description: desc EVTE26.
+    bit_offset: 26
+    bit_size: 1
+  - name: EVTE27
+    description: desc EVTE27.
+    bit_offset: 27
+    bit_size: 1
+  - name: EVTE28
+    description: desc EVTE28.
+    bit_offset: 28
+    bit_size: 1
+  - name: EVTE29
+    description: desc EVTE29.
+    bit_offset: 29
+    bit_size: 1
+  - name: EVTE30
+    description: desc EVTE30.
+    bit_offset: 30
+    bit_size: 1
+  - name: EVTE31
+    description: desc EVTE31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/FPUIER:
+  description: desc FPUIER.
+  fields:
+  - name: IOCIEN
+    description: desc IOCIEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: DZCIEN
+    description: desc DZCIEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: OFCIEN
+    description: desc OFCIEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: UFCIEN
+    description: desc UFCIEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: IXCIEN
+    description: desc IXCIEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: IDCIEN
+    description: desc IDCIEN.
+    bit_offset: 5
+    bit_size: 1
+fieldset/IER:
+  description: desc IER.
+  fields:
+  - name: IER0
+    description: desc IER0.
+    bit_offset: 0
+    bit_size: 1
+  - name: IER1
+    description: desc IER1.
+    bit_offset: 1
+    bit_size: 1
+  - name: IER2
+    description: desc IER2.
+    bit_offset: 2
+    bit_size: 1
+  - name: IER3
+    description: desc IER3.
+    bit_offset: 3
+    bit_size: 1
+  - name: IER4
+    description: desc IER4.
+    bit_offset: 4
+    bit_size: 1
+  - name: IER5
+    description: desc IER5.
+    bit_offset: 5
+    bit_size: 1
+  - name: IER6
+    description: desc IER6.
+    bit_offset: 6
+    bit_size: 1
+  - name: IER7
+    description: desc IER7.
+    bit_offset: 7
+    bit_size: 1
+  - name: IER8
+    description: desc IER8.
+    bit_offset: 8
+    bit_size: 1
+  - name: IER9
+    description: desc IER9.
+    bit_offset: 9
+    bit_size: 1
+  - name: IER10
+    description: desc IER10.
+    bit_offset: 10
+    bit_size: 1
+  - name: IER11
+    description: desc IER11.
+    bit_offset: 11
+    bit_size: 1
+  - name: IER12
+    description: desc IER12.
+    bit_offset: 12
+    bit_size: 1
+  - name: IER13
+    description: desc IER13.
+    bit_offset: 13
+    bit_size: 1
+  - name: IER14
+    description: desc IER14.
+    bit_offset: 14
+    bit_size: 1
+  - name: IER15
+    description: desc IER15.
+    bit_offset: 15
+    bit_size: 1
+  - name: IER16
+    description: desc IER16.
+    bit_offset: 16
+    bit_size: 1
+  - name: IER17
+    description: desc IER17.
+    bit_offset: 17
+    bit_size: 1
+  - name: IER18
+    description: desc IER18.
+    bit_offset: 18
+    bit_size: 1
+  - name: IER19
+    description: desc IER19.
+    bit_offset: 19
+    bit_size: 1
+  - name: IER20
+    description: desc IER20.
+    bit_offset: 20
+    bit_size: 1
+  - name: IER21
+    description: desc IER21.
+    bit_offset: 21
+    bit_size: 1
+  - name: IER22
+    description: desc IER22.
+    bit_offset: 22
+    bit_size: 1
+  - name: IER23
+    description: desc IER23.
+    bit_offset: 23
+    bit_size: 1
+  - name: IER24
+    description: desc IER24.
+    bit_offset: 24
+    bit_size: 1
+  - name: IER25
+    description: desc IER25.
+    bit_offset: 25
+    bit_size: 1
+  - name: IER26
+    description: desc IER26.
+    bit_offset: 26
+    bit_size: 1
+  - name: IER27
+    description: desc IER27.
+    bit_offset: 27
+    bit_size: 1
+  - name: IER28
+    description: desc IER28.
+    bit_offset: 28
+    bit_size: 1
+  - name: IER29
+    description: desc IER29.
+    bit_offset: 29
+    bit_size: 1
+  - name: IER30
+    description: desc IER30.
+    bit_offset: 30
+    bit_size: 1
+  - name: IER31
+    description: desc IER31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/INTSEL0:
+  description: desc INTSEL0.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL1:
+  description: desc INTSEL1.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL10:
+  description: desc INTSEL10.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL100:
+  description: desc INTSEL100.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL101:
+  description: desc INTSEL101.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL102:
+  description: desc INTSEL102.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL103:
+  description: desc INTSEL103.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL104:
+  description: desc INTSEL104.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL105:
+  description: desc INTSEL105.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL106:
+  description: desc INTSEL106.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL107:
+  description: desc INTSEL107.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL108:
+  description: desc INTSEL108.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL109:
+  description: desc INTSEL109.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL11:
+  description: desc INTSEL11.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL110:
+  description: desc INTSEL110.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL111:
+  description: desc INTSEL111.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL112:
+  description: desc INTSEL112.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL113:
+  description: desc INTSEL113.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL114:
+  description: desc INTSEL114.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL115:
+  description: desc INTSEL115.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL116:
+  description: desc INTSEL116.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL117:
+  description: desc INTSEL117.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL118:
+  description: desc INTSEL118.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL119:
+  description: desc INTSEL119.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL12:
+  description: desc INTSEL12.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL120:
+  description: desc INTSEL120.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL121:
+  description: desc INTSEL121.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL122:
+  description: desc INTSEL122.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL123:
+  description: desc INTSEL123.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL124:
+  description: desc INTSEL124.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL125:
+  description: desc INTSEL125.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL126:
+  description: desc INTSEL126.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL127:
+  description: desc INTSEL127.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL13:
+  description: desc INTSEL13.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL14:
+  description: desc INTSEL14.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL15:
+  description: desc INTSEL15.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL16:
+  description: desc INTSEL16.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL17:
+  description: desc INTSEL17.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL18:
+  description: desc INTSEL18.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL19:
+  description: desc INTSEL19.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL2:
+  description: desc INTSEL2.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL20:
+  description: desc INTSEL20.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL21:
+  description: desc INTSEL21.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL22:
+  description: desc INTSEL22.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL23:
+  description: desc INTSEL23.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL24:
+  description: desc INTSEL24.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL25:
+  description: desc INTSEL25.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL26:
+  description: desc INTSEL26.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL27:
+  description: desc INTSEL27.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL28:
+  description: desc INTSEL28.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL29:
+  description: desc INTSEL29.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL3:
+  description: desc INTSEL3.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL30:
+  description: desc INTSEL30.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL31:
+  description: desc INTSEL31.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL32:
+  description: desc INTSEL32.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL33:
+  description: desc INTSEL33.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL34:
+  description: desc INTSEL34.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL35:
+  description: desc INTSEL35.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL36:
+  description: desc INTSEL36.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL37:
+  description: desc INTSEL37.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL38:
+  description: desc INTSEL38.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL39:
+  description: desc INTSEL39.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL4:
+  description: desc INTSEL4.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL40:
+  description: desc INTSEL40.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL41:
+  description: desc INTSEL41.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL42:
+  description: desc INTSEL42.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL43:
+  description: desc INTSEL43.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL44:
+  description: desc INTSEL44.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL45:
+  description: desc INTSEL45.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL46:
+  description: desc INTSEL46.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL47:
+  description: desc INTSEL47.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL48:
+  description: desc INTSEL48.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL49:
+  description: desc INTSEL49.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL5:
+  description: desc INTSEL5.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL50:
+  description: desc INTSEL50.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL51:
+  description: desc INTSEL51.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL52:
+  description: desc INTSEL52.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL53:
+  description: desc INTSEL53.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL54:
+  description: desc INTSEL54.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL55:
+  description: desc INTSEL55.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL56:
+  description: desc INTSEL56.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL57:
+  description: desc INTSEL57.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL58:
+  description: desc INTSEL58.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL59:
+  description: desc INTSEL59.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL6:
+  description: desc INTSEL6.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL60:
+  description: desc INTSEL60.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL61:
+  description: desc INTSEL61.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL62:
+  description: desc INTSEL62.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL63:
+  description: desc INTSEL63.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL64:
+  description: desc INTSEL64.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL65:
+  description: desc INTSEL65.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL66:
+  description: desc INTSEL66.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL67:
+  description: desc INTSEL67.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL68:
+  description: desc INTSEL68.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL69:
+  description: desc INTSEL69.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL7:
+  description: desc INTSEL7.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL70:
+  description: desc INTSEL70.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL71:
+  description: desc INTSEL71.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL72:
+  description: desc INTSEL72.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL73:
+  description: desc INTSEL73.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL74:
+  description: desc INTSEL74.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL75:
+  description: desc INTSEL75.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL76:
+  description: desc INTSEL76.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL77:
+  description: desc INTSEL77.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL78:
+  description: desc INTSEL78.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL79:
+  description: desc INTSEL79.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL8:
+  description: desc INTSEL8.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL80:
+  description: desc INTSEL80.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL81:
+  description: desc INTSEL81.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL82:
+  description: desc INTSEL82.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL83:
+  description: desc INTSEL83.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL84:
+  description: desc INTSEL84.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL85:
+  description: desc INTSEL85.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL86:
+  description: desc INTSEL86.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL87:
+  description: desc INTSEL87.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL88:
+  description: desc INTSEL88.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL89:
+  description: desc INTSEL89.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL9:
+  description: desc INTSEL9.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL90:
+  description: desc INTSEL90.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL91:
+  description: desc INTSEL91.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL92:
+  description: desc INTSEL92.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL93:
+  description: desc INTSEL93.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL94:
+  description: desc INTSEL94.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL95:
+  description: desc INTSEL95.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL96:
+  description: desc INTSEL96.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL97:
+  description: desc INTSEL97.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL98:
+  description: desc INTSEL98.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/INTSEL99:
+  description: desc INTSEL99.
+  fields:
+  - name: INTSEL
+    description: desc INTSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/NMIER:
+  description: desc NMIER.
+  fields:
+  - name: SWDTEN
+    description: desc SWDTEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD1EN
+    description: desc PVD1EN.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD2EN
+    description: desc PVD2EN.
+    bit_offset: 3
+    bit_size: 1
+  - name: XTALSTPEN
+    description: desc XTALSTPEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: RECCERREN
+    description: desc RECCERREN.
+    bit_offset: 9
+    bit_size: 1
+  - name: BUSERREN
+    description: desc BUSERREN.
+    bit_offset: 10
+    bit_size: 1
+  - name: WDTEN
+    description: desc WDTEN.
+    bit_offset: 11
+    bit_size: 1
+  - name: FECCERREN
+    description: desc FECCERREN.
+    bit_offset: 12
+    bit_size: 1
+  - name: ERMUEN
+    description: desc ERMUEN.
+    bit_offset: 13
+    bit_size: 1
+fieldset/NMIFCR:
+  description: desc NMIFCR.
+  fields:
+  - name: SWDTCLR
+    description: desc SWDTCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD1CLR
+    description: desc PVD1CLR.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD2CLR
+    description: desc PVD2CLR.
+    bit_offset: 3
+    bit_size: 1
+  - name: XTALSTPCLR
+    description: desc XTALSTPCLR.
+    bit_offset: 5
+    bit_size: 1
+  - name: RECCERRCLR
+    description: desc RECCERRCLR.
+    bit_offset: 9
+    bit_size: 1
+  - name: BUSERRCLR
+    description: desc BUSERRCLR.
+    bit_offset: 10
+    bit_size: 1
+  - name: WDTCLR
+    description: desc WDTCLR.
+    bit_offset: 11
+    bit_size: 1
+  - name: FECCERRCLR
+    description: desc FECCERRCLR.
+    bit_offset: 12
+    bit_size: 1
+  - name: ERMUCLR
+    description: desc ERMUCLR.
+    bit_offset: 13
+    bit_size: 1
+fieldset/NMIFR:
+  description: desc NMIFR.
+  fields:
+  - name: SWDTF
+    description: desc SWDTF.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD1F
+    description: desc PVD1F.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD2F
+    description: desc PVD2F.
+    bit_offset: 3
+    bit_size: 1
+  - name: XTALSTPF
+    description: desc XTALSTPF.
+    bit_offset: 5
+    bit_size: 1
+  - name: RECCERRF
+    description: desc RECCERRF.
+    bit_offset: 9
+    bit_size: 1
+  - name: BUSERRF
+    description: desc BUSERRF.
+    bit_offset: 10
+    bit_size: 1
+  - name: WDTF
+    description: desc WDTF.
+    bit_offset: 11
+    bit_size: 1
+  - name: FECCERRF
+    description: desc FECCERRF.
+    bit_offset: 12
+    bit_size: 1
+  - name: ERMUF
+    description: desc ERMUF.
+    bit_offset: 13
+    bit_size: 1
+fieldset/NOCCR:
+  description: desc NOCCR.
+  fields:
+  - name: NOCSEL
+    description: desc NOCSEL.
+    bit_offset: 12
+    bit_size: 2
+fieldset/SWIER:
+  description: desc SWIER.
+  fields:
+  - name: SWIE0
+    description: desc SWIE0.
+    bit_offset: 0
+    bit_size: 1
+  - name: SWIE1
+    description: desc SWIE1.
+    bit_offset: 1
+    bit_size: 1
+  - name: SWIE2
+    description: desc SWIE2.
+    bit_offset: 2
+    bit_size: 1
+  - name: SWIE3
+    description: desc SWIE3.
+    bit_offset: 3
+    bit_size: 1
+  - name: SWIE4
+    description: desc SWIE4.
+    bit_offset: 4
+    bit_size: 1
+  - name: SWIE5
+    description: desc SWIE5.
+    bit_offset: 5
+    bit_size: 1
+  - name: SWIE6
+    description: desc SWIE6.
+    bit_offset: 6
+    bit_size: 1
+  - name: SWIE7
+    description: desc SWIE7.
+    bit_offset: 7
+    bit_size: 1
+  - name: SWIE8
+    description: desc SWIE8.
+    bit_offset: 8
+    bit_size: 1
+  - name: SWIE9
+    description: desc SWIE9.
+    bit_offset: 9
+    bit_size: 1
+  - name: SWIE10
+    description: desc SWIE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: SWIE11
+    description: desc SWIE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: SWIE12
+    description: desc SWIE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: SWIE13
+    description: desc SWIE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: SWIE14
+    description: desc SWIE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: SWIE15
+    description: desc SWIE15.
+    bit_offset: 15
+    bit_size: 1
+  - name: SWIE16
+    description: desc SWIE16.
+    bit_offset: 16
+    bit_size: 1
+  - name: SWIE17
+    description: desc SWIE17.
+    bit_offset: 17
+    bit_size: 1
+  - name: SWIE18
+    description: desc SWIE18.
+    bit_offset: 18
+    bit_size: 1
+  - name: SWIE19
+    description: desc SWIE19.
+    bit_offset: 19
+    bit_size: 1
+  - name: SWIE20
+    description: desc SWIE20.
+    bit_offset: 20
+    bit_size: 1
+  - name: SWIE21
+    description: desc SWIE21.
+    bit_offset: 21
+    bit_size: 1
+  - name: SWIE22
+    description: desc SWIE22.
+    bit_offset: 22
+    bit_size: 1
+  - name: SWIE23
+    description: desc SWIE23.
+    bit_offset: 23
+    bit_size: 1
+  - name: SWIE24
+    description: desc SWIE24.
+    bit_offset: 24
+    bit_size: 1
+  - name: SWIE25
+    description: desc SWIE25.
+    bit_offset: 25
+    bit_size: 1
+  - name: SWIE26
+    description: desc SWIE26.
+    bit_offset: 26
+    bit_size: 1
+  - name: SWIE27
+    description: desc SWIE27.
+    bit_offset: 27
+    bit_size: 1
+  - name: SWIE28
+    description: desc SWIE28.
+    bit_offset: 28
+    bit_size: 1
+  - name: SWIE29
+    description: desc SWIE29.
+    bit_offset: 29
+    bit_size: 1
+  - name: SWIE30
+    description: desc SWIE30.
+    bit_offset: 30
+    bit_size: 1
+  - name: SWIE31
+    description: desc SWIE31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL128:
+  description: desc VSSEL128.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL129:
+  description: desc VSSEL129.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL130:
+  description: desc VSSEL130.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL131:
+  description: desc VSSEL131.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL132:
+  description: desc VSSEL132.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL133:
+  description: desc VSSEL133.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL134:
+  description: desc VSSEL134.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL135:
+  description: desc VSSEL135.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL136:
+  description: desc VSSEL136.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL137:
+  description: desc VSSEL137.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL138:
+  description: desc VSSEL138.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL139:
+  description: desc VSSEL139.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL140:
+  description: desc VSSEL140.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL141:
+  description: desc VSSEL141.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL142:
+  description: desc VSSEL142.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/VSSEL143:
+  description: desc VSSEL143.
+  fields:
+  - name: VSEL0
+    description: desc VSEL0.
+    bit_offset: 0
+    bit_size: 1
+  - name: VSEL1
+    description: desc VSEL1.
+    bit_offset: 1
+    bit_size: 1
+  - name: VSEL2
+    description: desc VSEL2.
+    bit_offset: 2
+    bit_size: 1
+  - name: VSEL3
+    description: desc VSEL3.
+    bit_offset: 3
+    bit_size: 1
+  - name: VSEL4
+    description: desc VSEL4.
+    bit_offset: 4
+    bit_size: 1
+  - name: VSEL5
+    description: desc VSEL5.
+    bit_offset: 5
+    bit_size: 1
+  - name: VSEL6
+    description: desc VSEL6.
+    bit_offset: 6
+    bit_size: 1
+  - name: VSEL7
+    description: desc VSEL7.
+    bit_offset: 7
+    bit_size: 1
+  - name: VSEL8
+    description: desc VSEL8.
+    bit_offset: 8
+    bit_size: 1
+  - name: VSEL9
+    description: desc VSEL9.
+    bit_offset: 9
+    bit_size: 1
+  - name: VSEL10
+    description: desc VSEL10.
+    bit_offset: 10
+    bit_size: 1
+  - name: VSEL11
+    description: desc VSEL11.
+    bit_offset: 11
+    bit_size: 1
+  - name: VSEL12
+    description: desc VSEL12.
+    bit_offset: 12
+    bit_size: 1
+  - name: VSEL13
+    description: desc VSEL13.
+    bit_offset: 13
+    bit_size: 1
+  - name: VSEL14
+    description: desc VSEL14.
+    bit_offset: 14
+    bit_size: 1
+  - name: VSEL15
+    description: desc VSEL15.
+    bit_offset: 15
+    bit_size: 1
+  - name: VSEL16
+    description: desc VSEL16.
+    bit_offset: 16
+    bit_size: 1
+  - name: VSEL17
+    description: desc VSEL17.
+    bit_offset: 17
+    bit_size: 1
+  - name: VSEL18
+    description: desc VSEL18.
+    bit_offset: 18
+    bit_size: 1
+  - name: VSEL19
+    description: desc VSEL19.
+    bit_offset: 19
+    bit_size: 1
+  - name: VSEL20
+    description: desc VSEL20.
+    bit_offset: 20
+    bit_size: 1
+  - name: VSEL21
+    description: desc VSEL21.
+    bit_offset: 21
+    bit_size: 1
+  - name: VSEL22
+    description: desc VSEL22.
+    bit_offset: 22
+    bit_size: 1
+  - name: VSEL23
+    description: desc VSEL23.
+    bit_offset: 23
+    bit_size: 1
+  - name: VSEL24
+    description: desc VSEL24.
+    bit_offset: 24
+    bit_size: 1
+  - name: VSEL25
+    description: desc VSEL25.
+    bit_offset: 25
+    bit_size: 1
+  - name: VSEL26
+    description: desc VSEL26.
+    bit_offset: 26
+    bit_size: 1
+  - name: VSEL27
+    description: desc VSEL27.
+    bit_offset: 27
+    bit_size: 1
+  - name: VSEL28
+    description: desc VSEL28.
+    bit_offset: 28
+    bit_size: 1
+  - name: VSEL29
+    description: desc VSEL29.
+    bit_offset: 29
+    bit_size: 1
+  - name: VSEL30
+    description: desc VSEL30.
+    bit_offset: 30
+    bit_size: 1
+  - name: VSEL31
+    description: desc VSEL31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/WKEN:
+  description: desc WKEN.
+  fields:
+  - name: EIRQWKEN
+    description: desc EIRQWKEN.
+    bit_offset: 0
+    bit_size: 16
+  - name: SWDTWKEN
+    description: desc SWDTWKEN.
+    bit_offset: 16
+    bit_size: 1
+  - name: PVD1WKEN
+    description: desc PVD1WKEN.
+    bit_offset: 17
+    bit_size: 1
+  - name: PVD2WKEN
+    description: desc PVD2WKEN.
+    bit_offset: 18
+    bit_size: 1
+  - name: CMPWKEN
+    description: desc CMPWKEN.
+    bit_offset: 19
+    bit_size: 1
+  - name: WKTMWKEN
+    description: desc WKTMWKEN.
+    bit_offset: 20
+    bit_size: 1
+  - name: RTCALMWKEN
+    description: desc RTCALMWKEN.
+    bit_offset: 21
+    bit_size: 1
+  - name: RTCPRDWKEN
+    description: desc RTCPRDWKEN.
+    bit_offset: 22
+    bit_size: 1
+  - name: TMR0CMPWKEN
+    description: desc TMR0CMPWKEN.
+    bit_offset: 23
+    bit_size: 1
+  - name: TMR2GCMWKEN
+    description: desc TMR2GCMWKEN.
+    bit_offset: 24
+    bit_size: 1
+  - name: TMR2OVFWKEN
+    description: desc TMR2OVFWKEN.
+    bit_offset: 25
+    bit_size: 1
+  - name: RXWKEN
+    description: desc RXWKEN.
+    bit_offset: 26
+    bit_size: 1
+  - name: USHWKEN
+    description: desc USHWKEN.
+    bit_offset: 27
+    bit_size: 1
+  - name: USFWKEN
+    description: desc USFWKEN.
+    bit_offset: 28
+    bit_size: 1
+  - name: ETHWKEN
+    description: desc ETHWKEN.
+    bit_offset: 29
+    bit_size: 1

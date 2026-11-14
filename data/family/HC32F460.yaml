@@ -1,0 +1,643 @@
+# HC32F460 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
+# 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
+- name: ADC1
+  address: 0x40040000
+  registers:
+    kind: adc
+    block: ADC
+    version: v4
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_ADC1
+- name: ADC2
+  address: 0x40040400
+  registers:
+    kind: adc
+    block: ADC
+    version: v5
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_ADC2
+- name: AES
+  address: 0x40008000
+  registers:
+    kind: aes
+    block: AES
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_AES
+- name: AOS
+  address: 0x40010800
+  registers:
+    kind: aos
+    block: AOS
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_AOS
+- name: CAN
+  address: 0x40070400
+  registers:
+    kind: can
+    block: CAN
+    version: v1
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_CAN
+- name: CMP1
+  address: 0x4004A000
+  registers:
+    kind: cmp
+    block: CMP
+    version: v5
+- name: CMP2
+  address: 0x4004A000
+  registers:
+    kind: cmp
+    block: CMP
+    version: v5
+- name: CMP3
+  address: 0x4004A000
+  registers:
+    kind: cmp
+    block: CMP
+    version: v5
+- name: CMP_COMMON
+  address: 0x4004A000
+  registers:
+    kind: cmp
+    block: CMP
+    version: v6
+- name: CMU
+  address: 0x40054000
+  registers:
+    kind: cmu
+    block: CMU
+    version: v2
+- name: CRC
+  address: 0x40008C00
+  registers:
+    kind: crc
+    block: CRC
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_CRC
+- name: DBGC
+  address: 0xE0042000
+  registers:
+    kind: dbgc
+    block: DBGC
+    version: v2
+- name: DCU1
+  address: 0x40052000
+  registers:
+    kind: dcu
+    block: DCU
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DCU1
+- name: DCU2
+  address: 0x40052000
+  registers:
+    kind: dcu
+    block: DCU
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DCU2
+- name: DCU3
+  address: 0x40052000
+  registers:
+    kind: dcu
+    block: DCU
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DCU3
+- name: DCU4
+  address: 0x40052000
+  registers:
+    kind: dcu
+    block: DCU
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DCU4
+- name: DMA1
+  address: 0x40053000
+  registers:
+    kind: dma
+    block: DMA
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DMA1
+- name: DMA2
+  address: 0x40053000
+  registers:
+    kind: dma
+    block: DMA
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_DMA2
+- name: EFM
+  address: 0x40010400
+  registers:
+    kind: efm
+    block: EFM
+    version: v2
+- name: EMB0
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v3
+- name: EMB1
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v3
+- name: EMB2
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v3
+- name: EMB3
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v3
+- name: FCM
+  address: 0x40048400
+  registers:
+    kind: fcm
+    block: FCM
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_FCM
+- name: GPIO
+  address: 0x40053800
+  registers:
+    kind: gpio
+    block: GPIO
+    version: v2
+- name: HASH
+  address: 0x40008400
+  registers:
+    kind: hash
+    block: HASH
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_HASH
+- name: I2C1
+  address: 0x4004E000
+  registers:
+    kind: i
+    block: I
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2C1
+- name: I2C2
+  address: 0x4004E000
+  registers:
+    kind: i
+    block: I
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2C2
+- name: I2C3
+  address: 0x4004E000
+  registers:
+    kind: i
+    block: I
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2C3
+- name: I2S1
+  address: 0x4001E000
+  registers:
+    kind: i
+    block: I
+    version: v3
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2S1
+- name: I2S2
+  address: 0x4001E000
+  registers:
+    kind: i
+    block: I
+    version: v3
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2S2
+- name: I2S3
+  address: 0x4001E000
+  registers:
+    kind: i
+    block: I
+    version: v3
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2S3
+- name: I2S4
+  address: 0x4001E000
+  registers:
+    kind: i
+    block: I
+    version: v3
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_I2S4
+- name: ICG
+  address: 0x400
+  registers:
+    kind: icg
+    block: ICG
+    version: v2
+- name: INTC
+  address: 0x40051000
+  registers:
+    kind: intc
+    block: INTC
+    version: v2
+- name: KEYSCAN
+  address: 0x40050C00
+  registers:
+    kind: keyscan
+    block: KEYSCAN
+    version: common
+- name: MPU
+  address: 0x40050000
+  registers:
+    kind: mpu
+    block: MPU
+    version: v2
+- name: OTS
+  address: 0x4004A400
+  registers:
+    kind: ots
+    block: OTS
+    version: v1
+  rcc:
+    enable:
+      register: FCG3
+      field: PWC_FCG3_OTS
+- name: PERIC
+  address: 0x40055400
+  registers:
+    kind: peric
+    block: PERIC
+    version: v2
+- name: PWC
+  address: 0x40048000
+  registers:
+    kind: pwc
+    block: PWC
+    version: v2
+- name: QSPI
+  address: 0x9C000000
+  registers:
+    kind: qspi
+    block: QSPI
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_QSPI
+- name: RMU
+  address: 0x400540C0
+  registers:
+    kind: rmu
+    block: RMU
+    version: v2
+- name: RTC
+  address: 0x4004C000
+  registers:
+    kind: rtc
+    block: RTC
+    version: v2
+- name: SDIOC1
+  address: 0x4006FC00
+  registers:
+    kind: sdioc
+    block: SDIOC
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SDIOC1
+- name: SDIOC2
+  address: 0x4006FC00
+  registers:
+    kind: sdioc
+    block: SDIOC
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SDIOC2
+- name: SPI1
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SPI1
+- name: SPI2
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SPI2
+- name: SPI3
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SPI3
+- name: SPI4
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v2
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_SPI4
+- name: SRAMC
+  address: 0x40050800
+  registers:
+    kind: sramc
+    block: SRAMC
+    version: v2
+- name: SWDT
+  address: 0x40049400
+  registers:
+    kind: swdt
+    block: SWDT
+    version: v2
+- name: TMR01
+  address: 0x40024000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v7
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMER0_1
+- name: TMR02
+  address: 0x40024000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v7
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMER0_2
+- name: TMR41
+  address: 0x40017000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v8
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMER4_1
+- name: TMR42
+  address: 0x40017000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v8
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMER4_2
+- name: TMR43
+  address: 0x40017000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v8
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMER4_3
+- name: TMR4_ECER
+  address: 0x40055408
+  registers:
+    kind: tmr
+    block: TMR
+    version: v9
+- name: TMR61
+  address: 0x40018000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v10
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMER6_1
+- name: TMR62
+  address: 0x40018000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v10
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMER6_2
+- name: TMR63
+  address: 0x40018000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v10
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMER6_3
+- name: TMR6_COMMON
+  address: 0x40018300
+  registers:
+    kind: tmr
+    block: TMR
+    version: v11
+- name: TMRA1
+  address: 0x40015000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v2
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMERA_1
+- name: TMRA2
+  address: 0x40015000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v2
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMERA_2
+- name: TMRA3
+  address: 0x40015000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v2
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMERA_3
+- name: TMRA4
+  address: 0x40015000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v2
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMERA_4
+- name: TMRA5
+  address: 0x40015000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v2
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMERA_5
+- name: TMRA6
+  address: 0x40015000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v2
+  rcc:
+    enable:
+      register: FCG2
+      field: PWC_FCG2_TIMERA_6
+- name: TRNG
+  address: 0x40041000
+  registers:
+    kind: trng
+    block: TRNG
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: PWC_FCG0_TRNG
+- name: USART1
+  address: 0x4001D000
+  registers:
+    kind: usart
+    block: USART
+    version: v3
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_USART1
+- name: USART2
+  address: 0x4001D000
+  registers:
+    kind: usart
+    block: USART
+    version: v3
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_USART2
+- name: USART3
+  address: 0x4001D000
+  registers:
+    kind: usart
+    block: USART
+    version: v3
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_USART3
+- name: USART4
+  address: 0x4001D000
+  registers:
+    kind: usart
+    block: USART
+    version: v3
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_USART4
+- name: USBFS
+  address: 0x400C0000
+  registers:
+    kind: usbfs
+    block: USBFS
+    version: v1
+  rcc:
+    enable:
+      register: FCG1
+      field: PWC_FCG1_USBFS
+- name: WDT
+  address: 0x40049000
+  registers:
+    kind: wdt
+    block: WDT
+    version: common

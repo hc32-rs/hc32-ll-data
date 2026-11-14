@@ -1,0 +1,223 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/CMP；覆盖系列：HC32K116, HC32K118。
+block/CMP:
+  description: desc CMP.
+  items:
+  - name: MDR
+    description: desc MDR.
+    byte_offset: 0
+    bit_size: 8
+    fieldset: MDR
+  - name: FIR
+    description: desc FIR.
+    byte_offset: 1
+    bit_size: 8
+    fieldset: FIR
+  - name: OCR
+    description: desc OCR.
+    byte_offset: 2
+    bit_size: 8
+    fieldset: OCR
+  - name: OMR
+    description: desc OMR.
+    byte_offset: 3
+    access: Read
+    bit_size: 8
+    fieldset: OMR
+  - name: PMSR
+    description: desc PMSR.
+    byte_offset: 4
+    fieldset: PMSR
+  - name: DADR
+    description: desc DADR.
+    byte_offset: 12
+    bit_size: 16
+    fieldset: DADR
+  - name: DACR
+    description: desc DACR.
+    byte_offset: 14
+    bit_size: 16
+    fieldset: DACR
+  - name: BWSR1
+    description: desc BWSR1.
+    byte_offset: 16
+    fieldset: BWSR1
+  - name: BWSR2
+    description: desc BWSR2.
+    byte_offset: 20
+    bit_size: 16
+    fieldset: BWSR2
+fieldset/BWSR1:
+  description: desc BWSR1.
+  fields:
+  - name: CTWS0
+    description: desc CTWS0.
+    bit_offset: 0
+    bit_size: 1
+  - name: CTWS1
+    description: desc CTWS1.
+    bit_offset: 1
+    bit_size: 1
+  - name: CTWS2
+    description: desc CTWS2.
+    bit_offset: 2
+    bit_size: 1
+  - name: CTWS3
+    description: desc CTWS3.
+    bit_offset: 3
+    bit_size: 1
+  - name: CTWS4
+    description: desc CTWS4.
+    bit_offset: 4
+    bit_size: 1
+  - name: CTWS5
+    description: desc CTWS5.
+    bit_offset: 5
+    bit_size: 1
+  - name: CTWS6
+    description: desc CTWS6.
+    bit_offset: 6
+    bit_size: 1
+  - name: CTWS7
+    description: desc CTWS7.
+    bit_offset: 7
+    bit_size: 1
+  - name: CTWP0
+    description: desc CTWP0.
+    bit_offset: 16
+    bit_size: 1
+  - name: CTWP1
+    description: desc CTWP1.
+    bit_offset: 17
+    bit_size: 1
+  - name: CTWP2
+    description: desc CTWP2.
+    bit_offset: 18
+    bit_size: 1
+  - name: CTWP3
+    description: desc CTWP3.
+    bit_offset: 19
+    bit_size: 1
+  - name: CTWP4
+    description: desc CTWP4.
+    bit_offset: 20
+    bit_size: 1
+  - name: CTWP5
+    description: desc CTWP5.
+    bit_offset: 21
+    bit_size: 1
+  - name: CTWP6
+    description: desc CTWP6.
+    bit_offset: 22
+    bit_size: 1
+  - name: CTWP7
+    description: desc CTWP7.
+    bit_offset: 23
+    bit_size: 1
+fieldset/BWSR2:
+  description: desc BWSR2.
+  bit_size: 16
+  fields:
+  - name: MSKW
+    description: desc MSKW.
+    bit_offset: 0
+    bit_size: 8
+  - name: TWEG
+    description: desc TWEG.
+    bit_offset: 8
+    bit_size: 2
+fieldset/DACR:
+  description: desc DACR.
+  bit_size: 16
+  fields:
+  - name: DAE
+    description: desc DAE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/DADR:
+  description: desc DADR.
+  bit_size: 16
+  fields:
+  - name: DATA
+    description: desc DATA.
+    bit_offset: 0
+    bit_size: 8
+fieldset/FIR:
+  description: desc FIR.
+  bit_size: 8
+  fields:
+  - name: FCKS
+    description: desc FCKS.
+    bit_offset: 0
+    bit_size: 3
+  - name: CIEN
+    description: desc CIEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: EDGS
+    description: desc EDGS.
+    bit_offset: 4
+    bit_size: 2
+  - name: CFF
+    description: desc CFF.
+    bit_offset: 6
+    bit_size: 1
+  - name: CRF
+    description: desc CRF.
+    bit_offset: 7
+    bit_size: 1
+fieldset/MDR:
+  description: desc MDR.
+  bit_size: 8
+  fields:
+  - name: CENA
+    description: desc CENA.
+    bit_offset: 0
+    bit_size: 1
+fieldset/OCR:
+  description: desc OCR.
+  bit_size: 8
+  fields:
+  - name: COEN
+    description: desc COEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: COPS
+    description: desc COPS.
+    bit_offset: 1
+    bit_size: 1
+  - name: CPOE
+    description: desc CPOE.
+    bit_offset: 2
+    bit_size: 1
+  - name: BWEN
+    description: desc BWEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: BWMD
+    description: desc BWMD.
+    bit_offset: 5
+    bit_size: 1
+  - name: BWOL
+    description: desc BWOL.
+    bit_offset: 6
+    bit_size: 2
+fieldset/OMR:
+  description: desc OMR.
+  bit_size: 8
+  fields:
+  - name: CMON
+    description: desc CMON.
+    bit_offset: 0
+    bit_size: 1
+fieldset/PMSR:
+  description: desc PMSR.
+  fields:
+  - name: RVSL
+    description: desc RVSL.
+    bit_offset: 0
+    bit_size: 9
+  - name: CVSL
+    description: desc CVSL.
+    bit_offset: 16
+    bit_size: 9

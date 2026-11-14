@@ -1,0 +1,55 @@
+# HC32K116JATJ（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32K116JATJ
+family: HC32K116
+subfamily: cortex-m0plus
+packages:
+- name: HC32K116JATJ
+  package: LQFP48
+include_memory: ../memory/HC32K116_F128S32.yaml
+memory_sizes:
+  FLASH: 128K
+  SRAM: 32K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1316.html
+cores:
+- name: cortex-m0plus
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32K116.yaml
+  include_interrupts: ../interrupts/HC32K116.yaml
+  include_dma_channels:
+    DMA: ../dma/HC32K116_DMA.yaml
+_raw:
+  series: HC32K116
+  freq_mhz: '64'
+  flash_kb: '128'
+  sram_kb: '32'
+  package: LQFP48
+  pin_count: '48'
+  gpio: '43'
+  vdd_min: '2.7'
+  vdd_max: '5.5'
+  uart: '4'
+  spi: '2'
+  i2c: '1'
+  i2s: ''
+  can: '1'
+  usb: ''
+  adc: '13'
+  dac: ''
+  timer: 1;2;1;1
+  rtc: '1'
+  wdt: '1'
+  touchkey: ''
+  lcd: ''
+  opa: ''
+  cmp: '1'
+  other: ADC 12bit|DMA=4|DataFlash=32K|EDataFlash=2K|LVD=2|Timer0=1;Timer2=2;Timer4=1;TimerA=1|USART LIN|temp
+    Range -40~125℃ -40~125℃ -40~125℃ -40~125℃ -40~125℃ -40~125℃
+  url: https://www.xhsc.com.cn/product/1316.html
+  source: DS
+  Part NO.: HC32K116JATJ

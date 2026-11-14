@@ -1,0 +1,87 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/OTS；覆盖系列：HC32A472, HC32A4A0, HC32A4A8, HC32F467, HC32F472, HC32F4A0, HC32F4A2, HC32F4A8。
+block/OTS:
+  description: desc OTS.
+  items:
+  - name: PDR1
+    description: desc PDR1.
+    byte_offset: 224
+    fieldset: PDR1
+  - name: PDR2
+    description: desc PDR2.
+    byte_offset: 244
+    fieldset: PDR2
+  - name: PDR3
+    description: desc PDR3.
+    byte_offset: 248
+    fieldset: PDR3
+  - name: CTL
+    description: desc CTL.
+    byte_offset: 238080
+    bit_size: 16
+    fieldset: CTL
+  - name: DR1
+    description: desc DR1.
+    byte_offset: 238082
+    bit_size: 16
+  - name: DR2
+    description: desc DR2.
+    byte_offset: 238084
+    bit_size: 16
+  - name: ECR
+    description: desc ECR.
+    byte_offset: 238086
+    bit_size: 16
+fieldset/CTL:
+  description: desc CTL.
+  bit_size: 16
+  fields:
+  - name: OTSST
+    description: desc OTSST.
+    bit_offset: 0
+    bit_size: 1
+  - name: OTSCK
+    description: desc OTSCK.
+    bit_offset: 1
+    bit_size: 1
+  - name: OTSIE
+    description: desc OTSIE.
+    bit_offset: 2
+    bit_size: 1
+  - name: TSSTP
+    description: desc TSSTP.
+    bit_offset: 3
+    bit_size: 1
+fieldset/PDR1:
+  description: desc PDR1.
+  fields:
+  - name: TSPD1
+    description: desc TSPD1.
+    bit_offset: 0
+    bit_size: 16
+  - name: TSPD2
+    description: desc TSPD2.
+    bit_offset: 16
+    bit_size: 16
+fieldset/PDR2:
+  description: desc PDR2.
+  fields:
+  - name: TSPD1
+    description: desc TSPD1.
+    bit_offset: 0
+    bit_size: 16
+  - name: TSPD2
+    description: desc TSPD2.
+    bit_offset: 16
+    bit_size: 16
+fieldset/PDR3:
+  description: desc PDR3.
+  fields:
+  - name: TSPD1
+    description: desc TSPD1.
+    bit_offset: 0
+    bit_size: 16
+  - name: TSPD2
+    description: desc TSPD2.
+    bit_offset: 16
+    bit_size: 16

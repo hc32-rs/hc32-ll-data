@@ -1,0 +1,240 @@
+part_no,series,freq_mhz,flash_kb,sram_kb,package,pin_count,gpio,vdd_min,vdd_max,uart,spi,i2c,i2s,can,usb,adc,dac,timer,rtc,wdt,touchkey,lcd,opa,cmp,other,url,source
+HC32A052FAUI,HC32A052,64,128,16,QFN32,32,26,2.0,5.5,2,1,,,1,,1*10ch,,13,1,,,,,,DMA=1*5ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1312.html,website
+HC32A052JATI,HC32A052,64,128,16,LQFP48,48,40,2.0,5.5,2,2,,,1,,1*16ch,,13,1,,,,,,DMA=1*5ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1312.html,website
+HC32A136K8TB,HC32A136,48,64,8,LQFP64,64,56,1.8,5.5,2,2,2,,,,1,,7,√,,,,3,2,DMA=2ch|AES=AES128|TRNG=1|工作温度=-40~105|ADC_ch=24ch,https://www.xhsc.com.cn/product/1282.html,website
+HC32A448JCTI,HC32A448,200,256,64,LQFP48,48,38,1.8,3.6,6,3,2,,2,,3,,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=11,https://www.xhsc.com.cn/product/1256.html,website
+HC32A448KCTI,HC32A448,200,256,64,LQFP64,64,52,1.8,3.6,6,3,2,,2,,3,,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=17,https://www.xhsc.com.cn/product/1256.html,website
+HC32A448MCTI,HC32A448,200,256,64,LQFP80,80,67,1.8,3.6,6,3,2,,2,,3,,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=24,https://www.xhsc.com.cn/product/1256.html,website
+HC32A460PETB,HC32A460,200,512,192,LQFP100,100,83,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1255.html,website
+HC32A472JETI,HC32A472,120,512,64+4,LQFP48,48,39,1.8,3.6,6,4,3,,3,0+1,3*21ch,1*2ch,23,1,,,,3,2,DMA=2*16ch|QSPI=1|AES=V|TRNG=1|工作温度=-40~105,https://www.xhsc.com.cn/product/1249.html,website
+HC32A472PETI,HC32A472,120,512,64+4,LQFP100,100,85,1.8,3.6,6,4,3,,3,0+1,3*27ch,1*2ch,23,1,,,,3,2,DMA=2*16ch|QSPI=1|AES=V|TRNG=1|工作温度=-40~105,https://www.xhsc.com.cn/product/1249.html,website
+HC32A4A0PITI,HC32A4A0,240,2048,516,LQFP100,100,83,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1221.html,website
+HC32A4A0SITI,HC32A4A0,240,2048,516,LQFP176,176,142,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=28,https://www.xhsc.com.cn/product/1221.html,website
+HC32A4A8PITI,HC32A4A8,240,2048,516,LQFP100,100,83,1.8,3.6,10,6,6,,4,,"3unit,16ch",2*2ch,27,,,,,,4,DMA=2*8ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1284.html,website
+HC32A4A8PITJ,HC32A4A8,200,2048,516,LQFP100,100,83,2.7,3.6,10,6,6,,4,,"3unit,16ch",2*2ch,27,,,,,,4,DMA=2*8ch|工作温度=-40~125,https://www.xhsc.com.cn/product/1284.html,website
+HC32A4A8RITI,HC32A4A8,240,2048,516,LQFP144,144,116,1.8,3.6,10,6,6,,4,,"3unit,24ch",2*2ch,27,,,,,,4,DMA=2*8ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1284.html,website
+HC32A4A8RITJ,HC32A4A8,200,2048,516,LQFP144,144,116,2.7,3.6,10,6,6,,4,,"3unit,24ch",2*2ch,27,,,,,,4,DMA=2*8ch|工作温度=-40~125,https://www.xhsc.com.cn/product/1284.html,website
+HC32A4A8SITI,HC32A4A8,240,2048,516,LQFP176,176,142,1.8,3.6,10,6,6,,4,,"3unit,28ch",2*2ch,27,,,,,,4,DMA=2*8ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1284.html,website
+HC32A4A8SITJ,HC32A4A8,200,2048,516,LQFP176,176,142,2.7,3.6,10,6,6,,4,,"3unit,28ch",2*2ch,27,,,,,,4,DMA=2*8ch|工作温度=-40~125,https://www.xhsc.com.cn/product/1284.html,website
+HC32D391FEUA,HC32D391,200,512,192,TFN32,32,25,1.8,3.6,3,3,2,4,,USB 2.0 OTG_FS,1,,4,√,,,,1,,DMA=2*4|QSPI=1|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~85|ADC_ch=3,https://www.xhsc.com.cn/product/1281.html,website
+HC32F002C4PB,HC32F002,48,18,2,TSSOP20,20,18,2.7,5.5,2,1,1,,,,11,,5,,,,,,,工作温度=-40~105,https://www.xhsc.com.cn/product/1277.html,website
+HC32F002C4PZ,HC32F002,48,18,2,TSSOP20,20,18,1.7,5.5,2,1,1,,,,11,,5,,,,,,,工作温度=-20~105,https://www.xhsc.com.cn/product/1277.html,website
+HC32F002C4UB,HC32F002,48,18,2,ZFN20,20,18,2.7,5.5,2,1,1,,,,11,,5,,,,,,,工作温度=-40~105,https://www.xhsc.com.cn/product/1277.html,website
+HC32F002C4UZ,HC32F002,48,18,2,ZFN20,20,18,1.7,5.5,2,1,1,,,,11,,5,,,,,,,工作温度=-20~105,https://www.xhsc.com.cn/product/1277.html,website
+HC32F002D4PB,HC32F002,48,18,2,TSSOP24,24,22,2.7,5.5,2,1,1,,,,14,,5,,,,,,,工作温度=-40~105,https://www.xhsc.com.cn/product/1277.html,website
+HC32F002D4PZ,HC32F002,48,18,2,TSSOP24,24,22,1.7,5.5,2,1,1,,,,14,,5,,,,,,,工作温度=-20~105,https://www.xhsc.com.cn/product/1277.html,website
+HC32F002D4UB,HC32F002,48,18,2,QFN24,24,22,2.7,5.5,2,1,1,,,,14,,5,,,,,,,工作温度=-40~105,https://www.xhsc.com.cn/product/1277.html,website
+HC32F002D4UZ,HC32F002,48,18,2,QFN24,24,22,1.7,5.5,2,1,1,,,,14,,5,,,,,,,工作温度=-20~105,https://www.xhsc.com.cn/product/1277.html,website
+HC32F003C4PA,HC32F003,32,16,2,SOP20,20,17,1.8,5.5,2,1,1,,,,1,,6,,,,,,2,工作温度=-40~85|ADC_ch=9,https://www.xhsc.com.cn/product/1269.html,website
+HC32F003C4PB,HC32F003,32,16,2,TSSOP20,20,17,1.8,5.5,2,1,1,,,,1,,6,,,,,,2,工作温度=-40~105|ADC_ch=9,https://www.xhsc.com.cn/product/1269.html,website
+HC32F003C4UA,HC32F003,32,16,2,SFN20,20,17,1.8,5.5,2,1,1,,,,1,,6,,,,,,2,工作温度=-40~85|ADC_ch=9,https://www.xhsc.com.cn/product/1269.html,website
+HC32F005C6PA,HC32F005,32,32,4,SOP20,20,17,1.8,5.5,2,1,1,,,,1,,6,,,,,,2,工作温度=-40~85|ADC_ch=9,https://www.xhsc.com.cn/product/1270.html,website
+HC32F005C6PB,HC32F005,32,32,4,TSSOP20,20,17,1.8,5.5,2,1,1,,,,1,,6,,,,,,2,工作温度=-40~105|ADC_ch=9,https://www.xhsc.com.cn/product/1270.html,website
+HC32F005C6UA,HC32F005,32,32,4,SFN20,20,17,1.8,5.5,2,1,1,,,,1,,6,,,,,,2,工作温度=-40~85|ADC_ch=9,https://www.xhsc.com.cn/product/1270.html,website
+HC32F030E8PA,HC32F030,48,64,8,TSSOP28,28,23,1.8,5.5,2,1,2,,,,1,,7,,,,,,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=11,https://www.xhsc.com.cn/product/1271.html,website
+HC32F030F8TA,HC32F030,48,64,8,LQFP32,32,26,1.8,5.5,2,1,2,,,,1,,7,,,,,,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=10,https://www.xhsc.com.cn/product/1271.html,website
+HC32F030F8UA,HC32F030,48,64,8,QFN32,32,26,1.8,5.5,2,1,2,,,,1,,7,,,,,,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=10,https://www.xhsc.com.cn/product/1271.html,website
+HC32F030H8TA,HC32F030,48,64,8,LQFP44,44,38,1.8,5.5,2,2,2,,,,1,,7,,,,,2,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1271.html,website
+HC32F030J8TA,HC32F030,48,64,8,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,,7,,,,,2,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1271.html,website
+HC32F030K8TA,HC32F030,48,64,8,LQFP64,64,56,1.8,5.5,2,2,2,,,,1,,7,,,,,3,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=24,https://www.xhsc.com.cn/product/1271.html,website
+HC32F052F8TB,HC32F052,64,64,16,LQFP32,32,26,2.0,5.5,2,1,3,,1,,1,,6,1,,,,0,2,DMA=5|工作温度=-40~105|ADC_ch=10,https://www.xhsc.com.cn/product/1254.html,website
+HC32F052F8UB,HC32F052,64,64,16,QFN32,32,26,2.0,5.5,2,1,3,,1,,1,,6,1,,,,0,2,DMA=5|工作温度=-40~105|ADC_ch=10,https://www.xhsc.com.cn/product/1254.html,website
+HC32F052FATB,HC32F052,64,128,16,LQFP32,32,26,2.0,5.5,2,1,3,,1,,1,,6,1,,,,0,2,DMA=5|工作温度=-40~105|ADC_ch=10,https://www.xhsc.com.cn/product/1254.html,website
+HC32F052FAUB,HC32F052,64,128,16,QFN32,32,26,2.0,5.5,2,1,3,,1,,1,,6,1,,,,0,2,DMA=5|工作温度=-40~105|ADC_ch=10,https://www.xhsc.com.cn/product/1254.html,website
+HC32F052J8TB,HC32F052,64,64,16,LQFP48,48,40,2.0,5.5,2,2,3,,1,,1,,6,1,,,,2,2,DMA=5|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1254.html,website
+HC32F052J8UB,HC32F052,64,64,16,QFN48,48,40,2.0,5.5,2,2,3,,1,,1,,6,1,,,,2,2,DMA=5|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1254.html,website
+HC32F052JATB,HC32F052,64,128,16,LQFP48,48,40,2.0,5.5,2,2,3,,1,,1,,6,1,,,,2,2,DMA=5|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1254.html,website
+HC32F052JAUB,HC32F052,64,128,16,QFN48,48,40,2.0,5.5,2,2,3,,1,,1,,6,1,,,,2,2,DMA=5|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1254.html,website
+HC32F072FAUA,HC32F072,48,128,16,QFN32,32,25,1.8,5.5,2,1,1,1,1,USB 2.0 device,1,2,7,,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=11,https://www.xhsc.com.cn/product/1272.html,website
+HC32F072JATA,HC32F072,48,128,16,LQFP48,48,36,1.8,5.5,2,2,2,2,1,USB 2.0 device,1,2,7,,,,,3,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1272.html,website
+HC32F072KATA,HC32F072,48,128,16,LQFP64,64,50,1.8,5.5,4,2,2,2,1,USB 2.0 device,1,2,7,,,,,5,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1272.html,website
+HC32F072PATA,HC32F072,48,128,16,LQFP100,100,86,1.8,5.5,4,2,2,2,1,USB 2.0 device,1,2,7,,,,,5,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=24,https://www.xhsc.com.cn/product/1272.html,website
+HC32F115F8TH,HC32F115,32,64,4,LQFP32,32,28,2.7,5.5,4,1,1,,,,1,,9,,,,,,,工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1285.html,website
+HC32F115H8TH,HC32F115,32,64,4,LQFP44,44,40,2.7,5.5,4,1,1,,,,1,,9,,,,,,,工作温度=-40~85|ADC_ch=12,https://www.xhsc.com.cn/product/1285.html,website
+HC32F120F6TA,HC32F120,48,32,4,LQFP32,32,28,2.7,5.5,4,1,1,,,,1,,9,,,,,,,工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1280.html,website
+HC32F120F8TA,HC32F120,48,64,4,LQFP32,32,28,2.7,5.5,4,1,1,,,,1,,9,,,,,,,工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1280.html,website
+HC32F120H6TA,HC32F120,48,32,4,LQFP44,44,40,2.7,5.5,4,1,1,,,,1,,9,,,,,,,工作温度=-40~85|ADC_ch=12,https://www.xhsc.com.cn/product/1280.html,website
+HC32F120H8TA,HC32F120,48,64,4,LQFP44,44,40,2.7,5.5,4,1,1,,,,1,,9,,,,,,,工作温度=-40~85|ADC_ch=12,https://www.xhsc.com.cn/product/1280.html,website
+HC32F155FATH,HC32F155,32,128,32,LQFP32,32,28,2.7,5.5,6,1,1,,,,1*8ch,,,,,,,,,DMA=1*2ch,https://www.xhsc.com.cn/product/1218.html,website
+HC32F155FCTH,HC32F155,32,256,32,LQFP32,32,28,2.7,5.5,6,1,1,,,,1*8ch,,,,,,,,,DMA=1*2ch,https://www.xhsc.com.cn/product/1218.html,website
+HC32F155HATH,HC32F155,32,128,32,LQFP44,44,40,2.7,5.5,6,1,1,,,,1*12ch,,,,,,,,,DMA=1*2ch,https://www.xhsc.com.cn/product/1218.html,website
+HC32F155HCTH,HC32F155,32,256,32,LQFP44,44,40,2.7,5.5,6,1,1,,,,1*12ch,,,,,,,,,DMA=1*2ch,https://www.xhsc.com.cn/product/1218.html,website
+HC32F155JATH,HC32F155,32,128,32,LQFP48,48,44,2.7,5.5,6,1,1,,,,1*12ch,,,,,,,,,DMA=1*2ch,https://www.xhsc.com.cn/product/1218.html,website
+HC32F155JCTH,HC32F155,32,256,32,LQFP48,48,44,2.7,5.5,6,1,1,,,,1*12ch,,,,,,,,,DMA=1*2ch,https://www.xhsc.com.cn/product/1218.html,website
+HC32F155KATH,HC32F155,32,128,32,LQFP64,64,58,2.7,5.5,6,1,1,,,,1*14ch,,,,,,,,,DMA=1*2ch,https://www.xhsc.com.cn/product/1218.html,website
+HC32F155KCTH,HC32F155,32,256,32,LQFP64,64,58,2.7,5.5,6,1,1,,,,1*14ch,,,,,,,,,DMA=1*2ch,https://www.xhsc.com.cn/product/1218.html,website
+HC32F170FAUA,HC32F170,48,128,16,QFN32,32,26,1.8,5.5,2,1,2,,,,1,1,7,,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1273.html,website
+HC32F170JATA,HC32F170,48,128,16,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1273.html,website
+HC32F175HETI,HC32F175,72,512,48,LQFP44,44,40,2.7,5.5,6,2,2,,,,1*12ch,,1,1,,,,,,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1395.html,website
+HC32F175JETI,HC32F175,72,512,48,LQFP48,48,44,2.7,5.5,6,2,2,,,,1*13ch,,1,1,,,,,,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1395.html,website
+HC32F175KETI,HC32F175,72,512,48,LQFP64,64,58,2.7,5.5,6,2,2,,,,1*16ch,,1,1,,,,,,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1395.html,website
+HC32F175PETI,HC32F175,72,512,48,LQFP100,100,92,2.7,5.5,6,2,2,,,,1*28ch,,1,1,,,,,,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1395.html,website
+HC32F176JATA,HC32F176,48,128,16,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1274.html,website
+HC32F176KATA,HC32F176,48,128,16,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1274.html,website
+HC32F176MATA,HC32F176,48,128,16,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=25,https://www.xhsc.com.cn/product/1274.html,website
+HC32F176PATA,HC32F176,48,128,16,LQFP100,100,88,1.8,5.5,4,2,2,,,,1,1,7,,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=26,https://www.xhsc.com.cn/product/1274.html,website
+HC32F190FCUA,HC32F190,48,256,32,QFN32,32,26,1.8,5.5,2,1,2,,,,1,1,7,,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1275.html,website
+HC32F190JCTA,HC32F190,48,256,32,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1275.html,website
+HC32F196JCTA,HC32F196,48,256,32,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1276.html,website
+HC32F196KCTA,HC32F196,48,256,32,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1276.html,website
+HC32F196MCTA,HC32F196,48,256,32,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=25,https://www.xhsc.com.cn/product/1276.html,website
+HC32F196PCTA,HC32F196,48,256,32,LQFP100,100,88,1.8,5.5,4,2,2,,,,1,1,7,,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=26,https://www.xhsc.com.cn/product/1276.html,website
+HC32F334F8UI,HC32F334,120,,36,QFN32,32,27,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1217.html,website
+HC32F334FAUI,HC32F334,120,,36,QFN32,32,27,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1217.html,website
+HC32F334J8TI,HC32F334,120,,36,LQFP48,48,39,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1217.html,website
+HC32F334J8UI,HC32F334,120,,36,ZFN48,48,39,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1217.html,website
+HC32F334JATI,HC32F334,120,,36,LQFP48,48,39,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1217.html,website
+HC32F334JAUI,HC32F334,120,,36,ZFN48,48,39,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1217.html,website
+HC32F334K8TI,HC32F334,120,,36,LQFP64,64,53,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1217.html,website
+HC32F334KATI,HC32F334,120,,36,LQFP64,64,53,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1217.html,website
+HC32F336JATI,HC32F336,150,,36,LQFP48,48,39,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1321.html,website
+HC32F336KATI,HC32F336,150,,36,LQFP64,64,53,,,4-USART,1,1,,"2, FD supported",,3*2.5Msps,3,12,1,,,,,3,DMA=1unit * 8ch,https://www.xhsc.com.cn/product/1321.html,website
+HC32F420FAUB,HC32F420,84,128,24,QFN32,32,27,2.0,5.5,4,2,2,,,,2,,5,,,,,,2,DMA=6|工作温度=-40~105|ADC_ch=10,https://www.xhsc.com.cn/product/1216.html,website
+HC32F420JATB,HC32F420,84,128,24,LQFP48,48,38,2.0,5.5,4,2,2,,,,2,,5,,,,,,2,DMA=6|工作温度=-40~105|ADC_ch=10,https://www.xhsc.com.cn/product/1216.html,website
+HC32F420JAUB,HC32F420,84,128,24,QFN48,48,38,2.0,5.5,4,2,2,,,,2,,5,,,,,,2,DMA=6|工作温度=-40~105|ADC_ch=10,https://www.xhsc.com.cn/product/1216.html,website
+HC32F420KATB,HC32F420,84,128,24,LQFP64,64,52,2.0,5.5,4,2,2,,,,2,,5,,,,,,2,DMA=6|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1216.html,website
+HC32F431FATB,HC32F431,120,128,16,LQFP32,32,24,2.7,5.5,4,1,1,,,,1,1,,,,,,1,3,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1384.html,website
+HC32F431JATB,HC32F431,120,128,16,LQFP48,48,40,2.7,5.5,4,1,1,,,,1,1,,,,,,3,3,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1384.html,website
+HC32F431KATB,HC32F431,120,128,16,LQFP64,64,52,2.7,5.5,4,1,1,,,,1,1,,,,,,3,3,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1384.html,website
+HC32F448FAUI,HC32F448,200,128,64,QFN32,32,25,1.8,3.6,6,3,2,,2,,3,1,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=4,https://www.xhsc.com.cn/product/1213.html,website
+HC32F448FCUI,HC32F448,200,256,64,QFN32,32,25,1.8,3.6,6,3,2,,2,,3,1,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=4,https://www.xhsc.com.cn/product/1213.html,website
+HC32F448JATI,HC32F448,200,128,64,LQFP48,48,38,1.8,3.6,6,3,2,,2,,3,2,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=11,https://www.xhsc.com.cn/product/1213.html,website
+HC32F448JAUI,HC32F448,200,128,64,ZFN48,48,38,1.8,3.6,6,3,2,,2,,3,2,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=11,https://www.xhsc.com.cn/product/1213.html,website
+HC32F448JCTI,HC32F448,200,256,64,LQFP48,48,38,1.8,3.6,6,3,2,,2,,3,2,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=11,https://www.xhsc.com.cn/product/1213.html,website
+HC32F448JCUI,HC32F448,200,256,64,ZFN48,48,38,1.8,3.6,6,3,2,,2,,3,2,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=11,https://www.xhsc.com.cn/product/1213.html,website
+HC32F448KATI,HC32F448,200,128,64,LQFP64,64,52,1.8,3.6,6,3,2,,2,,3,2,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=17,https://www.xhsc.com.cn/product/1213.html,website
+HC32F448KCTI,HC32F448,200,256,64,LQFP64,64,52,1.8,3.6,6,3,2,,2,,3,2,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=17,https://www.xhsc.com.cn/product/1213.html,website
+HC32F448MATI,HC32F448,200,128,64,LQFP80,80,67,1.8,3.6,6,3,2,,2,,3,2,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=24,https://www.xhsc.com.cn/product/1213.html,website
+HC32F448MCTI,HC32F448,200,256,64,LQFP80,80,67,1.8,3.6,6,3,2,,2,,3,2,12,√,,,,,4,DMA=2*6|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=24,https://www.xhsc.com.cn/product/1213.html,website
+HC32F451FEUB,HC32F451,200,512,192,TFN32,32,25,1.8,3.6,3,3,2,4,,USB 2.0 OTG_FS,1,,4,√,,,,1,,DMA=2*4|QSPI=1|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=3,https://www.xhsc.com.cn/product/1248.html,website
+HC32F451JEUB,HC32F451,200,512,192,QFN48,48,38,1.8,3.6,4,4,3,4,,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=10,https://www.xhsc.com.cn/product/1248.html,website
+HC32F451KETB,HC32F451,200,512,192,LQFP64,64,52,1.8,3.6,4,4,3,4,,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1248.html,website
+HC32F452FEUB,HC32F452,200,512,192,TFN32,32,25,1.8,3.6,3,3,2,4,1,USB 2.0 OTG_FS,1,,4,√,,,,1,,DMA=2*4|QSPI=1|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=3,https://www.xhsc.com.cn/product/1247.html,website
+HC32F452JEUB,HC32F452,200,512,192,QFN48,48,38,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=10,https://www.xhsc.com.cn/product/1247.html,website
+HC32F452KETB,HC32F452,200,512,192,LQFP64,64,52,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1247.html,website
+HC32F460JCTA,HC32F460,200,256,192,LQFP48,48,38,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~85|ADC_ch=10,https://www.xhsc.com.cn/product/1246.html,website
+HC32F460JETA,HC32F460,200,512,192,LQFP48,48,38,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~85|ADC_ch=10,https://www.xhsc.com.cn/product/1246.html,website
+HC32F460JEUA,HC32F460,200,512,192,QFN48,48,38,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~85|ADC_ch=10,https://www.xhsc.com.cn/product/1246.html,website
+HC32F460KCTA,HC32F460,200,256,192,LQFP64,64,52,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~85|ADC_ch=16,https://www.xhsc.com.cn/product/1246.html,website
+HC32F460KETA,HC32F460,200,512,192,LQFP64,64,52,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~85|ADC_ch=16,https://www.xhsc.com.cn/product/1246.html,website
+HC32F460KEUA,HC32F460,200,512,192,QFN60,60,50,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~85|ADC_ch=15,https://www.xhsc.com.cn/product/1246.html,website
+HC32F460PCTB,HC32F460,200,256,192,LQFP100,100,83,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1246.html,website
+HC32F460PEHB,HC32F460,200,512,192,VFBGA100,100,83,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1246.html,website
+HC32F460PETB,HC32F460,200,512,192,LQFP100,100,83,1.8,3.6,4,4,3,4,1,USB 2.0 OTG_FS,2,,14,√,,,,1,3,DMA=2*4|QSPI=1|SDIO=2|AES=AES128|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1246.html,website
+HC32F467KGTI,HC32F467,240,1024,516,LQFP64,64,52,1.8,3.6,8,6,3,4,2*CAN 2.0,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,,19,√,,,,2,3,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1219.html,website
+HC32F467PGTI,HC32F467,240,1024,516,LQFP100,100,83,1.8,3.6,8,6,3,4,2*CAN 2.0,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,,19,√,,,,2,3,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1219.html,website
+HC32F467RGTI,HC32F467,240,1024,516,LQFP144,144,116,1.8,3.6,8,6,3,4,2*CAN 2.0,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,,19,√,,,,2,3,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=24,https://www.xhsc.com.cn/product/1219.html,website
+HC32F472JCTI,HC32F472,120,256,64+4,LQFP48,48,39,1.8,3.,6,4,3,,3,1*USB 2.0 Device/Host,3,2,23,√,,,,2,2,DMA=2(16ch)|QSPI=1|AES=AES128/ 192/256|TRNG=1|Hash=SHA256|工作温度=-40~105,https://www.xhsc.com.cn/product/1261.html,website
+HC32F472JETI,HC32F472,120,512,64+4,LQFP48,48,39,1.8,3.6,6,4,3,,3,1*USB 2.0 Device/Host,3,2,23,√,,,,2,2,DMA=2(16ch)|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105,https://www.xhsc.com.cn/product/1261.html,website
+HC32F472KCHI,HC32F472,120,256,64+4,VFBGA64,64,55,1.,8,6,4,3,,3,,3,8,23,√,,,,2,4,DMA=2(16ch)|QSPI=1|AES=AES128/192/ 256|TRNG=1|Hash=SHA256|工作温度=-40~105,https://www.xhsc.com.cn/product/1261.html,website
+HC32F472KCTI,HC32F472,120,256,64+ 4,LQFP64,64,53,1.,8,6,4,3,,3,1*USB 2.0 Device/Host,3,2,23,√,,,,2,2,DMA=2(16ch)|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~ 105,https://www.xhsc.com.cn/product/1261.html,website
+HC32F472KEHI,HC32F472,120,512,64+4,VFBGA64,64,55,1.8,3.6,6,4,3,,3,,3,8,23,√,,,,2,4,DMA=2(16ch)|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105,https://www.xhsc.com.cn/product/1261.html,website
+HC32F472KETI,HC32F472,120,512,64+4,LQFP64,64,53,1.8,3.6,6,4,3,,3,1*USB 2.0 Device/Host,3,2,23,√,,,,2,2,DMA=2(16ch)|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105,https://www.xhsc.com.cn/product/1261.html,website
+HC32F472PCTI,HC32F472,120,256,64+4,LQFP100,100,85,1.8,3.6,6,4,3,,3,1*USB 2.0 Device/Host,3,2,23,√,,,,2,2,DMA=2( 16ch)|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105,https://www.xhsc.com.cn/product/1261.html,website
+HC32F472PETI,HC32F472,120,512,64+4,LQFP100,100,85,1.8,3.6,6,4,3,,3,1*USB 2.0 Device/Host,3,2,23,√,,,,2,2,DMA=2(16ch)|QSPI=1|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105,https://www.xhsc.com.cn/product/1261.html,website
+HC32F4A0PGTB,HC32F4A0,240,1024,516,LQFP100,100,83,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A0PIHB,HC32F4A0,240,2048,516,VFBGA100,100,83,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A0PITB,HC32F4A0,240,2048,516,LQFP100,100,83,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A0RGTB,HC32F4A0,240,1024,516,LQFP144,144,116,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=24,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A0RITB,HC32F4A0,240,2048,516,LQFP144,144,116,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=24,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A0SGHB,HC32F4A0,240,1024,516,VFBGA176,176,142,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=28,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A0SGTB,HC32F4A0,240,1024,516,LQFP176,176,142,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=28,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A0SIHB,HC32F4A0,240,2048,516,VFBGA176,176,142,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=28,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A0SITB,HC32F4A0,240,2048,516,LQFP176,176,142,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=28,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A0TIHB,HC32F4A0,240,2048,516,TFBGA208,208,142,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=28,https://www.xhsc.com.cn/product/1220.html,website
+HC32F4A2PIHB,HC32F4A2,240,2048,516,VFBGA100,100,83,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1222.html,website
+HC32F4A2PITB,HC32F4A2,240,2048,516,LQFP100,100,83,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=16,https://www.xhsc.com.cn/product/1222.html,website
+HC32F4A2RITB,HC32F4A2,240,2048,516,LQFP144,144,116,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=24,https://www.xhsc.com.cn/product/1222.html,website
+HC32F4A2SIHB,HC32F4A2,240,2048,516,VFBGA176,176,142,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=28,https://www.xhsc.com.cn/product/1222.html,website
+HC32F4A2SITB,HC32F4A2,240,2048,516,LQFP176,176,142,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=28,https://www.xhsc.com.cn/product/1222.html,website
+HC32F4A2TIHB,HC32F4A2,240,2048,516,TFBGA208,208,142,1.8,3.6,10,6,6,4,2,USB 2.0 OTG_FS+USB 2.0 OTG_HS,3,4,29,√,,,,4,4,DMA=2*8|QSPI=1|SDIO=2|AES=AES128/192/256|TRNG=1|Hash=SHA256|工作温度=-40~105|ADC_ch=28,https://www.xhsc.com.cn/product/1222.html,website
+HC32F4A8PIHB,HC32F4A8,240,2048,512+4,VFBGA100,100,83,1.8,3.6,10,6,6,,,,3*16ch,2*4ch,,,,,,,4,DMA=2*16ch,https://www.xhsc.com.cn/product/1268.html,website
+HC32F4A8PITB,HC32F4A8,240,2048,512+4,LQFP100,100,83,1.8,3.6,10,6,6,,,,3*16ch,2*4ch,,,,,,,4,DMA=2*16ch,https://www.xhsc.com.cn/product/1268.html,website
+HC32F4A8RITB,HC32F4A8,240,2048,512+4,LQFP144,144,116,1.8,3.6,10,6,6,,,,3*24ch,2*4ch,,,,,,,4,DMA=2*16ch,https://www.xhsc.com.cn/product/1268.html,website
+HC32F4A8SIHB,HC32F4A8,240,2048,512+4,VFBGA176,176,142,1.8,3.6,10,6,6,,,,3*28ch,2*4ch,,,,,,,4,DMA=2*16ch,https://www.xhsc.com.cn/product/1268.html,website
+HC32F4A8SITB,HC32F4A8,240,2048,512+4,LQFP176,176,142,1.8,3.6,10,6,6,,,,3*28ch,2*4ch,,,,,,,4,DMA=2*16ch,https://www.xhsc.com.cn/product/1268.html,website
+HC32K116FAUJ,HC32K116,64,,,QFN32,32,28,,,2,2,1,,1,,1*9ch,,5,1,,,,,,,https://www.xhsc.com.cn/product/1316.html,website
+HC32K116JATJ,HC32K116,64,,,LQFP48,48,43,,,2,2,1,,1,,1*13ch,,5,1,,,,,,,https://www.xhsc.com.cn/product/1316.html,website
+HC32K116KATJ,HC32K116,64,,,LQFP64,64,58,,,2,2,1,,1,,1*16ch,,5,1,,,,,,,https://www.xhsc.com.cn/product/1316.html,website
+HC32K118FCUJ,HC32K118,64,,,QFN32,32,28,,,2,2,1,,1,,1*9ch,,5,1,,,,,,,https://www.xhsc.com.cn/product/1314.html,website
+HC32K118JCTJ,HC32K118,64,,,LQFP48,48,43,,,2,2,1,,1,,1*13ch,,5,1,,,,,,,https://www.xhsc.com.cn/product/1314.html,website
+HC32K118KCTJ,HC32K118,64,,,LQFP64,64,58,,,2,2,1,,1,,1*16ch,,5,1,,,,,,,https://www.xhsc.com.cn/product/1314.html,website
+HC32L021B8UB,HC32L021,48,64,6,XFN14,14,9+1,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,TRNG=√|工作温度=-40~105|ADC_ch=7,https://www.xhsc.com.cn/product/1263.html,website
+HC32L021C8PB,HC32L021,48,64,6,TSSOP20,20,16+1,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,TRNG=√|工作温度=-40~105|ADC_ch=8,https://www.xhsc.com.cn/product/1263.html,website
+HC32L021C8UB,HC32L021,48,64,6,ZFN20,20,16+1,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,TRNG=√|工作温度=-40~105|ADC_ch=8,https://www.xhsc.com.cn/product/1263.html,website
+HC32L031D8UB,HC32L031,48,64,8,QFN24,24,20+1,1.8,5.5,1,2,2,,,,1*12ch,,7,1,,,,,2,DMA=1*2ch|TRNG=√|工作温度=-40~105,https://www.xhsc.com.cn/product/1319.html,website
+HC32L031F8TB,HC32L031,48,64,8,LQFP32,32,28+1,1.8,5.5,1,2,2,,,,1*16ch,,7,1,,,,,2,DMA=1*2ch|TRNG=√|工作温度=-40~105,https://www.xhsc.com.cn/product/1319.html,website
+HC32L031F8UB,HC32L031,48,64,8,QFN32,32,28+1,1.8,5.5,1,2,2,,,,1*16ch,,7,1,,,,,2,DMA=1*2ch|TRNG=√|工作温度=-40~105,https://www.xhsc.com.cn/product/1319.html,website
+HC32L072FAUA,HC32L072,48,128,16,QFN32,32,22,1.8,5.5,2,1,1,1,1,USB 2.0 device,1,2,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=10,https://www.xhsc.com.cn/product/1214.html,website
+HC32L072JATA,HC32L072,48,128,16,LQFP48,48,36,1.8,5.5,2,2,2,2,1,USB 2.0 device,1,2,7,√,,,,3,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1214.html,website
+HC32L072KATA,HC32L072,48,128,16,LQFP64,64,50,1.8,5.5,4,2,2,2,1,USB 2.0 device,1,2,7,√,,,,5,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1214.html,website
+HC32L072PATA,HC32L072,48,128,16,LQFP100,100,86,1.8,5.5,4,2,2,2,1,USB 2.0 device,1,2,7,√,,,,5,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=24,https://www.xhsc.com.cn/product/1214.html,website
+HC32L073JATA,HC32L073,48,128,16,LQFP48,48,38,1.8,5.5,2,2,2,2,1,,1,2,7,√,,,,3,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1215.html,website
+HC32L073KATA,HC32L073,48,128,16,LQFP64,64,52,1.8,5.5,4,2,2,2,1,,1,2,7,√,,,,5,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1215.html,website
+HC32L073PATA,HC32L073,48,128,16,LQFP100,100,86,1.8,5.5,4,2,2,2,1,USB 2.0 device,1,2,7,√,,,,5,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=24,https://www.xhsc.com.cn/product/1215.html,website
+HC32L110B4PA,HC32L110,32,16,2,TSSOP16,16,13,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,工作温度=-40~85|ADC_ch=6,https://www.xhsc.com.cn/product/1244.html,website
+HC32L110B6PA,HC32L110,32,32,4,TSSOP16,16,13,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,工作温度=-40~85|ADC_ch=6,https://www.xhsc.com.cn/product/1244.html,website
+HC32L110B6YA,HC32L110,32,32,4,CSP16,16,13,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,工作温度=-40~85|ADC_ch=6,https://www.xhsc.com.cn/product/1244.html,website
+HC32L110C4PA,HC32L110,32,16,2,TSSOP20,20,17,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,工作温度=-40~85|ADC_ch=9,https://www.xhsc.com.cn/product/1244.html,website
+HC32L110C4UA,HC32L110,32,16,2,SFN20,20,17,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,工作温度=-40~85|ADC_ch=9,https://www.xhsc.com.cn/product/1244.html,website
+HC32L110C6PA,HC32L110,32,32,4,TSSOP20,20,17,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,工作温度=-40~85|ADC_ch=9,https://www.xhsc.com.cn/product/1244.html,website
+HC32L110C6UA,HC32L110,32,32,4,SFN20,20,17,1.8,5.5,2,1,1,,,,1,,6,√,,,,,2,工作温度=-40~85|ADC_ch=9,https://www.xhsc.com.cn/product/1244.html,website
+HC32L121DAUB,HC32L121,48,128,16,UFN24,24,20,1.8,5.5,1,1,3,,,,1*6ch,,4,1,,,,,2,DMA=1*2ch|AES=1|TRNG=1|工作温度=-40~105,https://www.xhsc.com.cn/product/1310.html,website
+HC32L121FAUB,HC32L121,48,128,16,QFN32,32,26,1.8,5.5,2,1,3,,,,1*7ch,,4,1,,,,,2,DMA=1*2ch|AES=1|TRNG=1|工作温度=-40~105,https://www.xhsc.com.cn/product/1310.html,website
+HC32L121JAUB,HC32L121,48,128,16,ZFN48,48,40,1.8,5.5,2,2,3,,,,1*10ch,,4,1,,,,,2,DMA=1*2ch|AES=1|TRNG=1|工作温度=-40~105,https://www.xhsc.com.cn/product/1310.html,website
+HC32L126JATB,HC32L126,48,128,16,LQFP48,48,40,1.8,5.5,2,2,3,,,,1*10ch,,4,1,,,,,2,DMA=1* 2ch|AES=1|TRNG=1|工作温度=-40~105,https://www.xhsc.com.cn/product/1309.html,website
+HC32L126KATB,HC32L126,48,128,16,LQFP64,64,56,1.8,5.5,2,2,3,,,,1*16ch,,4,1,,,,,2,DMA=1*2ch|AES=1|TRNG=1|工作温度=-40~105,https://www.xhsc.com.cn/product/1309.html,website
+HC32L130E8PA,HC32L130,48,64,8,TSSOP28,28,23,1.8,5.5,2,1,2,,,,1,,7,√,,,,,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=11,https://www.xhsc.com.cn/product/1245.html,website
+HC32L130F8UA,HC32L130,48,64,8,QFN32,32,26,1.8,5.5,2,1,2,,,,1,,7,√,,,,,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1245.html,website
+HC32L130J8TA,HC32L130,48,64,8,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,,7,√,,,,2,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1245.html,website
+HC32L130J8UA,HC32L130,48,64,8,QFN48,48,40,1.8,5.5,2,2,2,,,,1,,7,√,,,,2,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1245.html,website
+HC32L136J8TA,HC32L136,48,64,8,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,,7,√,,,,2,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/296.html,website
+HC32L136K8TA,HC32L136,48,64,8,LQFP64,64,56,1.8,5.5,2,2,2,,,,1,,7,√,,,,3,2,DMA=2|AES=AES128|TRNG=1|工作温度=-40~85|ADC_ch=24,https://www.xhsc.com.cn/product/296.html,website
+HC32L160FAUA,HC32L160,48,128,16,QFN32,32,26,1.8,5.5,2,1,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1252.html,website
+HC32L160FAUB,HC32L160,48,128,16,QFN32,32,26,1.8,5.5,2,1,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~105|ADC_ch=8,https://www.xhsc.com.cn/product/1252.html,website
+HC32L160FCUA,HC32L160,48,256,32,QFN32,32,26,1.8,5.5,2,1,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1252.html,website
+HC32L160FCUB,HC32L160,48,256,32,QFN32,32,26,1.8,5.5,2,1,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~105|ADC_ch=8,https://www.xhsc.com.cn/product/1252.html,website
+HC32L166JATA,HC32L166,48,128,16,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,1,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166JATB,HC32L166,48,128,16,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~105|ADC_ch=17,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166JCTA,HC32L166,48,256,32,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,1,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166JCTB,HC32L166,48,256,32,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~105|ADC_ch=17,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166KATA,HC32L166,48,128,16,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,1,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166KATB,HC32L166,48,128,16,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~105|ADC_ch=23,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166KCTA,HC32L166,48,256,32,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,1,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166KCTB,HC32L166,48,256,32,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~105|ADC_ch=23,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166MATA,HC32L166,48,128,16,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,1,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=25,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166MATB,HC32L166,48,128,16,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~105|ADC_ch=25,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166MCTA,HC32L166,48,256,32,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,1,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=25,https://www.xhsc.com.cn/product/1253.html,website
+HC32L166MCTB,HC32L166,48,256,32,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~105|ADC_ch=25,https://www.xhsc.com.cn/product/1253.html,website
+HC32L170FAUA,HC32L170,48,128,16,QFN32,32,26,1.8,5.5,2,1,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1250.html,website
+HC32L170JATA,HC32L170,48,128,16,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1250.html,website
+HC32L176JATA,HC32L176,48,128,16,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1251.html,website
+HC32L176KATA,HC32L176,48,128,16,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1251.html,website
+HC32L176MATA,HC32L176,48,128,16,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=25,https://www.xhsc.com.cn/product/1251.html,website
+HC32L176PATA,HC32L176,48,128,16,LQFP100,100,88,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=26,https://www.xhsc.com.cn/product/1251.html,website
+HC32L180FATH,HC32L180,48,128,32,LQFP32,32,26,1.8,5.5,2,1,2,,,,1,1,7,1,,,,,3,DMA=2|TRNG=1|工作温度=-40~85|ADC_ch=10,https://www.xhsc.com.cn/product/1259.html,website
+HC32L180FCTH,HC32L180,48,256,32,LQFP32,32,26,1.8,5.5,2,1,2,,,,1,1,7,1,,,,,3,DMA=2|TRNG=1|工作温度=-40~85|ADC_ch=10,https://www.xhsc.com.cn/product/1259.html,website
+HC32L180JATH,HC32L180,48,128,32,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,1,,,,,3,DMA=2|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1259.html,website
+HC32L180JCTH,HC32L180,48,256,32,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,1,,,,,3,DMA=2|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1259.html,website
+HC32L186KATH,HC32L186,48,128,32,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,1,,,,1,3,DMA=2|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1260.html,website
+HC32L186KCTH,HC32L186,48,256,32,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,1,,,,1,3,DMA=2|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1260.html,website
+HC32L186MATH,HC32L186,48,128,32,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,1,,,,1,3,DMA=2|TRNG=1|工作温度=-40~85|ADC_ch=25,https://www.xhsc.com.cn/product/1260.html,website
+HC32L186MCTH,HC32L186,48,256,32,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,1,,,,1,3,DMA=2|TRNG=1|工作温度=-40~85|ADC_ch=25,https://www.xhsc.com.cn/product/1260.html,website
+HC32L190FCUA,HC32L190,48,256,32,QFN32,32,26,1.8,5.5,2,1,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=8,https://www.xhsc.com.cn/product/1257.html,website
+HC32L190JCTA,HC32L190,48,256,32,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1257.html,website
+HC32L196JCTA,HC32L196,48,256,32,LQFP48,48,40,1.8,5.5,2,2,2,,,,1,1,7,√,,,,,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=17,https://www.xhsc.com.cn/product/1258.html,website
+HC32L196KCTA,HC32L196,48,256,32,LQFP64,64,56,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=23,https://www.xhsc.com.cn/product/1258.html,website
+HC32L196MCTA,HC32L196,48,256,32,LQFP80,80,72,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=25,https://www.xhsc.com.cn/product/1258.html,website
+HC32L196PCTA,HC32L196,48,256,32,LQFP100,100,88,1.8,5.5,4,2,2,,,,1,1,7,√,,,,1,3,DMA=2|AES=AES128/192/256|TRNG=1|工作温度=-40~85|ADC_ch=26,https://www.xhsc.com.cn/product/1258.html,website
+HC32M120F6TB,HC32M120,48,32,4,LQFP32,32,28,2.7,5.5,3,1,1,,,,1,,8,,,,,2,2,DMA=2|工作温度=-40~105|ADC_ch=8,https://www.xhsc.com.cn/product/1279.html,website
+HC32M120J6TB,HC32M120,48,32,4,LQFP48,48,44,2.7,5.5,3,1,1,,,,1,,8,,,,,2,2,DMA=2|工作温度=-40~105|ADC_ch=12,https://www.xhsc.com.cn/product/1279.html,website
+HC32M140J8TA,HC32M140,48,64,8,TQFP48,48,41,2.7,5.5,3,3,3,,,,1,,5,,,,,2,1,DMA=2|工作温度=-40~85|ADC_ch=16,https://www.xhsc.com.cn/product/1283.html,website
+HC32M413FATI,HC32M413,120,128,16,LQFP32,32,24,2.7,5.5,4,1,1,,,,1,1,,,,,,1,3,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1387.html,website
+HC32M413JATI,HC32M413,120,128,16,LQFP48,48,40,2.7,5.5,4,1,1,,,,1,1,,,,,,3,3,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1387.html,website
+HC32M413KATI,HC32M413,120,128,16,LQFP64,64,52,2.7,5.5,4,1,1,,,,1,1,,,,,,3,3,DMA=1*4ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1387.html,website
+HC32M441JATI,HC32M441,200,128,32,LQFP48,48,38,1.8,3.6,6,3,2,,,,3*11ch,1*2ch,,,,,,,4,DMA=2*12ch,https://www.xhsc.com.cn/product/1262.html,website
+HC32M441JCTI,HC32M441,200,256,32,LQFP48,48,38,1.8,3.6,6,3,2,,,,3*11ch,1*2ch,,,,,,,4,DMA=2*12ch,https://www.xhsc.com.cn/product/1262.html,website
+HC32M441KATI,HC32M441,200,128,32,LQFP64,64,52,1.8,3.6,6,3,2,,,,3*17ch,1*2ch,,,,,,,4,DMA=2*12ch,https://www.xhsc.com.cn/product/1262.html,website
+HC32M441KCTI,HC32M441,200,256,32,LQFP64,64,52,1.8,3.6,6,3,2,,,,3*17ch,1*2ch,,,,,,,4,DMA=2*12ch,https://www.xhsc.com.cn/product/1262.html,website
+HC32M458KCTI,HC32M458,200,256,64,LQFP64,64,52,2.7,5.5,4,2,1,,,,2,2,,,,,,2,2,DMA=1*2ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1386.html,website
+HC32M458KETI,HC32M458,200,512,64,LQFP64,64,52,2.7,5.5,4,2,1,,,,2,2,,,,,,2,2,DMA=1*2ch|工作温度=-40~105,https://www.xhsc.com.cn/product/1386.html,website

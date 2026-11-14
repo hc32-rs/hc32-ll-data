@@ -1,0 +1,19 @@
+# HC32F452 Flash 512K / SRAM 192K 的内存布局（型号：HC32F452FEUB, HC32F452JEUB, HC32F452KETB…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 512K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x1FFF8000
+  size: 192K
+  access:
+    read: true
+    write: true
+    execute: true

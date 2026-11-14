@@ -1,0 +1,80 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F175/DBGC；覆盖系列：HC32F175。
+block/DBGC:
+  description: desc DBGC.
+  items:
+  - name: STOP
+    description: desc STOP.
+    byte_offset: 0
+    fieldset: STOP
+fieldset/STOP:
+  description: desc STOP.
+  fields:
+  - name: IWDTSTP
+    description: desc IWDTSTP.
+    bit_offset: 0
+    bit_size: 1
+  - name: WWDTSTP
+    description: desc WWDTSTP.
+    bit_offset: 1
+    bit_size: 1
+  - name: RTCSTP
+    description: desc RTCSTP.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVDSTP
+    description: desc LVDSTP.
+    bit_offset: 3
+    bit_size: 1
+  - name: CTRIMSTP
+    description: desc CTRIMSTP.
+    bit_offset: 4
+    bit_size: 1
+  - name: LPTIM0STP
+    description: desc LPTIM0STP.
+    bit_offset: 5
+    bit_size: 1
+  - name: LPTIM1STP
+    description: desc LPTIM1STP.
+    bit_offset: 6
+    bit_size: 1
+  - name: GTIM0STP
+    description: desc GTIM0STP.
+    bit_offset: 7
+    bit_size: 1
+  - name: GTIM1STP
+    description: desc GTIM1STP.
+    bit_offset: 8
+    bit_size: 1
+  - name: GTIM2STP
+    description: desc GTIM2STP.
+    bit_offset: 9
+    bit_size: 1
+  - name: GTIM3STP
+    description: desc GTIM3STP.
+    bit_offset: 10
+    bit_size: 1
+  - name: GTIM4STP
+    description: desc GTIM4STP.
+    bit_offset: 11
+    bit_size: 1
+  - name: GTIM5STP
+    description: desc GTIM5STP.
+    bit_offset: 12
+    bit_size: 1
+  - name: GTIM6STP
+    description: desc GTIM6STP.
+    bit_offset: 13
+    bit_size: 1
+  - name: GTIM7STP
+    description: desc GTIM7STP.
+    bit_offset: 14
+    bit_size: 1
+  - name: GTIM8STP
+    description: desc GTIM8STP.
+    bit_offset: 15
+    bit_size: 1
+  - name: ATIM3STP
+    description: desc ATIM3STP.
+    bit_offset: 16
+    bit_size: 1

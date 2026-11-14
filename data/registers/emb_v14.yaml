@@ -1,0 +1,304 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F467/EMB4；覆盖系列：HC32F467。
+block/EMB:
+  description: desc EMB.
+  items:
+  - name: CTL1
+    description: desc CTL1.
+    byte_offset: 0
+    fieldset: CTL1
+  - name: CTL2
+    description: desc CTL2.
+    byte_offset: 4
+    fieldset: CTL2
+  - name: SOE
+    description: desc SOE.
+    byte_offset: 8
+    fieldset: SOE
+  - name: STAT
+    description: desc STAT.
+    byte_offset: 12
+    access: Read
+    fieldset: STAT
+  - name: STATCLR
+    description: desc STATCLR.
+    byte_offset: 16
+    access: Write
+    fieldset: STATCLR
+  - name: INTEN
+    description: desc INTEN.
+    byte_offset: 20
+    fieldset: INTEN
+  - name: RLSSEL
+    description: desc RLSSEL.
+    byte_offset: 24
+    fieldset: RLSSEL
+fieldset/CTL1:
+  description: desc CTL1.
+  fields:
+  - name: CMPEN1
+    description: desc CMPEN1.
+    bit_offset: 0
+    bit_size: 1
+  - name: CMPEN2
+    description: desc CMPEN2.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPEN3
+    description: desc CMPEN3.
+    bit_offset: 2
+    bit_size: 1
+  - name: OSCSTPEN
+    description: desc OSCSTPEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: PWMSEN0
+    description: desc PWMSEN0.
+    bit_offset: 5
+    bit_size: 1
+  - name: PWMSEN1
+    description: desc PWMSEN1.
+    bit_offset: 6
+    bit_size: 1
+  - name: PWMSEN2
+    description: desc PWMSEN2.
+    bit_offset: 7
+    bit_size: 1
+  - name: PORTINEN1
+    description: desc PORTINEN1.
+    bit_offset: 16
+    bit_size: 1
+  - name: PORTINEN2
+    description: desc PORTINEN2.
+    bit_offset: 17
+    bit_size: 1
+  - name: PORTINEN3
+    description: desc PORTINEN3.
+    bit_offset: 18
+    bit_size: 1
+  - name: PORTINEN4
+    description: desc PORTINEN4.
+    bit_offset: 19
+    bit_size: 1
+  - name: INVSEL1
+    description: desc INVSEL1.
+    bit_offset: 22
+    bit_size: 1
+  - name: INVSEL2
+    description: desc INVSEL2.
+    bit_offset: 23
+    bit_size: 1
+  - name: INVSEL3
+    description: desc INVSEL3.
+    bit_offset: 24
+    bit_size: 1
+  - name: INVSEL4
+    description: desc INVSEL4.
+    bit_offset: 25
+    bit_size: 1
+fieldset/CTL2:
+  description: desc CTL2.
+  fields:
+  - name: PWMLV0
+    description: desc PWMLV0.
+    bit_offset: 0
+    bit_size: 1
+  - name: PWMLV1
+    description: desc PWMLV1.
+    bit_offset: 1
+    bit_size: 1
+  - name: PWMLV2
+    description: desc PWMLV2.
+    bit_offset: 2
+    bit_size: 1
+  - name: NFSEL1
+    description: desc NFSEL1.
+    bit_offset: 16
+    bit_size: 2
+  - name: NFEN1
+    description: desc NFEN1.
+    bit_offset: 18
+    bit_size: 1
+  - name: NFSEL2
+    description: desc NFSEL2.
+    bit_offset: 19
+    bit_size: 2
+  - name: NFEN2
+    description: desc NFEN2.
+    bit_offset: 21
+    bit_size: 1
+  - name: NFSEL3
+    description: desc NFSEL3.
+    bit_offset: 22
+    bit_size: 2
+  - name: NFEN3
+    description: desc NFEN3.
+    bit_offset: 24
+    bit_size: 1
+  - name: NFSEL4
+    description: desc NFSEL4.
+    bit_offset: 25
+    bit_size: 2
+  - name: NFEN4
+    description: desc NFEN4.
+    bit_offset: 27
+    bit_size: 1
+fieldset/INTEN:
+  description: desc INTEN.
+  fields:
+  - name: PWMSINTEN
+    description: desc PWMSINTEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPINTEN
+    description: desc CMPINTEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: OSINTEN
+    description: desc OSINTEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: PORTININTEN1
+    description: desc PORTININTEN1.
+    bit_offset: 8
+    bit_size: 1
+  - name: PORTININTEN2
+    description: desc PORTININTEN2.
+    bit_offset: 9
+    bit_size: 1
+  - name: PORTININTEN3
+    description: desc PORTININTEN3.
+    bit_offset: 10
+    bit_size: 1
+  - name: PORTININTEN4
+    description: desc PORTININTEN4.
+    bit_offset: 11
+    bit_size: 1
+fieldset/RLSSEL:
+  description: desc RLSSEL.
+  fields:
+  - name: PWMRSEL
+    description: desc PWMRSEL.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPRSEL
+    description: desc CMPRSEL.
+    bit_offset: 2
+    bit_size: 1
+  - name: OSRSEL
+    description: desc OSRSEL.
+    bit_offset: 3
+    bit_size: 1
+  - name: PORTINRSEL1
+    description: desc PORTINRSEL1.
+    bit_offset: 8
+    bit_size: 1
+  - name: PORTINRSEL2
+    description: desc PORTINRSEL2.
+    bit_offset: 9
+    bit_size: 1
+  - name: PORTINRSEL3
+    description: desc PORTINRSEL3.
+    bit_offset: 10
+    bit_size: 1
+  - name: PORTINRSEL4
+    description: desc PORTINRSEL4.
+    bit_offset: 11
+    bit_size: 1
+fieldset/SOE:
+  description: desc SOE.
+  fields:
+  - name: SOE
+    description: desc SOE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/STAT:
+  description: desc STAT.
+  fields:
+  - name: PWMSF
+    description: desc PWMSF.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPF
+    description: desc CMPF.
+    bit_offset: 2
+    bit_size: 1
+  - name: OSF
+    description: desc OSF.
+    bit_offset: 3
+    bit_size: 1
+  - name: PWMST
+    description: desc PWMST.
+    bit_offset: 5
+    bit_size: 1
+  - name: CMPST
+    description: desc CMPST.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSST
+    description: desc OSST.
+    bit_offset: 7
+    bit_size: 1
+  - name: PORTINF1
+    description: desc PORTINF1.
+    bit_offset: 8
+    bit_size: 1
+  - name: PORTINF2
+    description: desc PORTINF2.
+    bit_offset: 9
+    bit_size: 1
+  - name: PORTINF3
+    description: desc PORTINF3.
+    bit_offset: 10
+    bit_size: 1
+  - name: PORTINF4
+    description: desc PORTINF4.
+    bit_offset: 11
+    bit_size: 1
+  - name: PORTINST1
+    description: desc PORTINST1.
+    bit_offset: 14
+    bit_size: 1
+  - name: PORTINST2
+    description: desc PORTINST2.
+    bit_offset: 15
+    bit_size: 1
+  - name: PORTINST3
+    description: desc PORTINST3.
+    bit_offset: 16
+    bit_size: 1
+  - name: PORTINST4
+    description: desc PORTINST4.
+    bit_offset: 17
+    bit_size: 1
+fieldset/STATCLR:
+  description: desc STATCLR.
+  fields:
+  - name: PWMSFCLR
+    description: desc PWMSFCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPFCLR
+    description: desc CMPFCLR.
+    bit_offset: 2
+    bit_size: 1
+  - name: OSFCLR
+    description: desc OSFCLR.
+    bit_offset: 3
+    bit_size: 1
+  - name: PORTINFCLR1
+    description: desc PORTINFCLR1.
+    bit_offset: 8
+    bit_size: 1
+  - name: PORTINFCLR2
+    description: desc PORTINFCLR2.
+    bit_offset: 9
+    bit_size: 1
+  - name: PORTINFCLR3
+    description: desc PORTINFCLR3.
+    bit_offset: 10
+    bit_size: 1
+  - name: PORTINFCLR4
+    description: desc PORTINFCLR4.
+    bit_offset: 11
+    bit_size: 1

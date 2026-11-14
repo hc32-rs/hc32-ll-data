@@ -1,0 +1,212 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F175/CTRIM；覆盖系列：HC32F175。
+block/CTRIM:
+  description: desc CTRIM.
+  items:
+  - name: ARR
+    description: desc ARR.
+    byte_offset: 0
+    fieldset: ARR
+  - name: CNT
+    description: desc CNT.
+    byte_offset: 4
+    access: Read
+    fieldset: CNT
+  - name: CR0
+    description: desc CR0.
+    byte_offset: 12
+    fieldset: CR0
+  - name: CR1
+    description: desc CR1.
+    byte_offset: 16
+    fieldset: CR1
+  - name: IER
+    description: desc IER.
+    byte_offset: 20
+    fieldset: IER
+  - name: ISR
+    description: desc ISR.
+    byte_offset: 24
+    access: Read
+    fieldset: ISR
+  - name: ICR
+    description: desc ICR.
+    byte_offset: 28
+    access: Write
+    fieldset: ICR
+  - name: FCAP
+    description: desc FCAP.
+    byte_offset: 32
+    access: Read
+    fieldset: FCAP
+  - name: TVAL
+    description: desc TVAL.
+    byte_offset: 36
+    access: Read
+    fieldset: TVAL
+  - name: FLIM
+    description: desc FLIM.
+    byte_offset: 40
+    fieldset: FLIM
+fieldset/ARR:
+  description: desc ARR.
+  fields:
+  - name: ARR
+    description: desc ARR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CNT:
+  description: desc CNT.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CR0:
+  description: desc CR0.
+  fields:
+  - name: STEP
+    description: desc STEP.
+    bit_offset: 0
+    bit_size: 3
+  - name: ETRFLT
+    description: desc ETRFLT.
+    bit_offset: 4
+    bit_size: 3
+  - name: SRC
+    description: desc SRC.
+    bit_offset: 8
+    bit_size: 3
+fieldset/CR1:
+  description: desc CR1.
+  fields:
+  - name: EN
+    description: desc EN.
+    bit_offset: 0
+    bit_size: 1
+  - name: MD
+    description: desc MD.
+    bit_offset: 1
+    bit_size: 2
+  - name: AUTO
+    description: desc AUTO.
+    bit_offset: 3
+    bit_size: 1
+  - name: PRS
+    description: desc PRS.
+    bit_offset: 4
+    bit_size: 4
+  - name: OST
+    description: desc OST.
+    bit_offset: 8
+    bit_size: 1
+  - name: MDHRC
+    description: desc MDHRC.
+    bit_offset: 9
+    bit_size: 2
+fieldset/FCAP:
+  description: desc FCAP.
+  fields:
+  - name: FCAP
+    description: desc FCAP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/FLIM:
+  description: desc FLIM.
+  fields:
+  - name: FLIM
+    description: desc FLIM.
+    bit_offset: 0
+    bit_size: 12
+fieldset/ICR:
+  description: desc ICR.
+  fields:
+  - name: UD
+    description: desc UD.
+    bit_offset: 0
+    bit_size: 1
+  - name: END
+    description: desc END.
+    bit_offset: 1
+    bit_size: 1
+  - name: PS
+    description: desc PS.
+    bit_offset: 2
+    bit_size: 1
+  - name: MISS
+    description: desc MISS.
+    bit_offset: 3
+    bit_size: 1
+  - name: OV
+    description: desc OV.
+    bit_offset: 4
+    bit_size: 1
+  - name: OK
+    description: desc OK.
+    bit_offset: 5
+    bit_size: 1
+fieldset/IER:
+  description: desc IER.
+  fields:
+  - name: UD
+    description: desc UD.
+    bit_offset: 0
+    bit_size: 1
+  - name: END
+    description: desc END.
+    bit_offset: 1
+    bit_size: 1
+  - name: PS
+    description: desc PS.
+    bit_offset: 2
+    bit_size: 1
+  - name: MISS
+    description: desc MISS.
+    bit_offset: 3
+    bit_size: 1
+  - name: OV
+    description: desc OV.
+    bit_offset: 4
+    bit_size: 1
+  - name: OK
+    description: desc OK.
+    bit_offset: 5
+    bit_size: 1
+fieldset/ISR:
+  description: desc ISR.
+  fields:
+  - name: UD
+    description: desc UD.
+    bit_offset: 0
+    bit_size: 1
+  - name: END
+    description: desc END.
+    bit_offset: 1
+    bit_size: 1
+  - name: PS
+    description: desc PS.
+    bit_offset: 2
+    bit_size: 1
+  - name: MISS
+    description: desc MISS.
+    bit_offset: 3
+    bit_size: 1
+  - name: OV
+    description: desc OV.
+    bit_offset: 4
+    bit_size: 1
+  - name: OK
+    description: desc OK.
+    bit_offset: 5
+    bit_size: 1
+  - name: DIR
+    description: desc DIR.
+    bit_offset: 6
+    bit_size: 1
+fieldset/TVAL:
+  description: desc TVAL.
+  fields:
+  - name: TVAL
+    description: desc TVAL.
+    bit_offset: 0
+    bit_size: 16

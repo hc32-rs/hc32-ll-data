@@ -1,0 +1,19 @@
+# HC32F448 Flash 128K / SRAM 68K 的内存布局（型号：HC32F448FAUI, HC32F448JATI, HC32F448JAUI, HC32F448KATI…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 128K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x1FFF8000
+  size: 68K
+  access:
+    read: true
+    write: true
+    execute: true

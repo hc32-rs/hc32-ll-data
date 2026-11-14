@@ -1,0 +1,242 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A448/DAC；覆盖系列：HC32A448, HC32F448, HC32M441。
+block/DAC:
+  description: desc DAC.
+  items:
+  - name: DADR1
+    description: desc DADR1.
+    byte_offset: 0
+    bit_size: 16
+    fieldset: DADR1
+  - name: DADR2
+    description: desc DADR2.
+    byte_offset: 2
+    bit_size: 16
+    fieldset: DADR2
+  - name: DACR
+    description: desc DACR.
+    byte_offset: 4
+    bit_size: 16
+    fieldset: DACR
+  - name: DAADPCR
+    description: desc DAADPCR.
+    byte_offset: 6
+    bit_size: 16
+    fieldset: DAADPCR
+  - name: DAOCR
+    description: desc DAOCR.
+    byte_offset: 28
+    bit_size: 16
+    fieldset: DAOCR
+fieldset/DAADPCR:
+  description: desc DAADPCR.
+  bit_size: 16
+  fields:
+  - name: ADCSL1
+    description: desc ADCSL1.
+    bit_offset: 0
+    bit_size: 1
+  - name: ADCSL2
+    description: desc ADCSL2.
+    bit_offset: 1
+    bit_size: 1
+  - name: ADCSL3
+    description: desc ADCSL3.
+    bit_offset: 2
+    bit_size: 1
+  - name: DA1SF
+    description: desc DA1SF.
+    bit_offset: 8
+    bit_size: 1
+  - name: DA2SF
+    description: desc DA2SF.
+    bit_offset: 9
+    bit_size: 1
+  - name: ADPEN
+    description: desc ADPEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/DACR:
+  description: desc DACR.
+  bit_size: 16
+  fields:
+  - name: DAE
+    description: desc DAE.
+    bit_offset: 0
+    bit_size: 1
+  - name: DA1E
+    description: desc DA1E.
+    bit_offset: 1
+    bit_size: 1
+  - name: DA2E
+    description: desc DA2E.
+    bit_offset: 2
+    bit_size: 1
+  - name: DPSEL
+    description: desc DPSEL.
+    bit_offset: 8
+    bit_size: 1
+  - name: DAAMP1
+    description: desc DAAMP1.
+    bit_offset: 9
+    bit_size: 1
+  - name: DAAMP2
+    description: desc DAAMP2.
+    bit_offset: 10
+    bit_size: 1
+  - name: EXTDSL1
+    description: desc EXTDSL1.
+    bit_offset: 11
+    bit_size: 1
+  - name: EXTDSL2
+    description: desc EXTDSL2.
+    bit_offset: 12
+    bit_size: 1
+fieldset/DADR1:
+  description: desc DADR1.
+  bit_size: 16
+  fields:
+  - name: DR0
+    description: desc DR0.
+    bit_offset: 0
+    bit_size: 1
+  - name: DR1
+    description: desc DR1.
+    bit_offset: 1
+    bit_size: 1
+  - name: DR2
+    description: desc DR2.
+    bit_offset: 2
+    bit_size: 1
+  - name: DR3
+    description: desc DR3.
+    bit_offset: 3
+    bit_size: 1
+  - name: DL0R4
+    description: desc DL0R4.
+    bit_offset: 4
+    bit_size: 1
+  - name: DL1R5
+    description: desc DL1R5.
+    bit_offset: 5
+    bit_size: 1
+  - name: DL2R6
+    description: desc DL2R6.
+    bit_offset: 6
+    bit_size: 1
+  - name: DL3R7
+    description: desc DL3R7.
+    bit_offset: 7
+    bit_size: 1
+  - name: DL4R8
+    description: desc DL4R8.
+    bit_offset: 8
+    bit_size: 1
+  - name: DL5R9
+    description: desc DL5R9.
+    bit_offset: 9
+    bit_size: 1
+  - name: DL6R10
+    description: desc DL6R10.
+    bit_offset: 10
+    bit_size: 1
+  - name: DL7R11
+    description: desc DL7R11.
+    bit_offset: 11
+    bit_size: 1
+  - name: DL8
+    description: desc DL8.
+    bit_offset: 12
+    bit_size: 1
+  - name: DL9
+    description: desc DL9.
+    bit_offset: 13
+    bit_size: 1
+  - name: DL10
+    description: desc DL10.
+    bit_offset: 14
+    bit_size: 1
+  - name: DL11
+    description: desc DL11.
+    bit_offset: 15
+    bit_size: 1
+fieldset/DADR2:
+  description: desc DADR2.
+  bit_size: 16
+  fields:
+  - name: DR0
+    description: desc DR0.
+    bit_offset: 0
+    bit_size: 1
+  - name: DR1
+    description: desc DR1.
+    bit_offset: 1
+    bit_size: 1
+  - name: DR2
+    description: desc DR2.
+    bit_offset: 2
+    bit_size: 1
+  - name: DR3
+    description: desc DR3.
+    bit_offset: 3
+    bit_size: 1
+  - name: DL0R4
+    description: desc DL0R4.
+    bit_offset: 4
+    bit_size: 1
+  - name: DL1R5
+    description: desc DL1R5.
+    bit_offset: 5
+    bit_size: 1
+  - name: DL2R6
+    description: desc DL2R6.
+    bit_offset: 6
+    bit_size: 1
+  - name: DL3R7
+    description: desc DL3R7.
+    bit_offset: 7
+    bit_size: 1
+  - name: DL4R8
+    description: desc DL4R8.
+    bit_offset: 8
+    bit_size: 1
+  - name: DL5R9
+    description: desc DL5R9.
+    bit_offset: 9
+    bit_size: 1
+  - name: DL6R10
+    description: desc DL6R10.
+    bit_offset: 10
+    bit_size: 1
+  - name: DL7R11
+    description: desc DL7R11.
+    bit_offset: 11
+    bit_size: 1
+  - name: DL8
+    description: desc DL8.
+    bit_offset: 12
+    bit_size: 1
+  - name: DL9
+    description: desc DL9.
+    bit_offset: 13
+    bit_size: 1
+  - name: DL10
+    description: desc DL10.
+    bit_offset: 14
+    bit_size: 1
+  - name: DL11
+    description: desc DL11.
+    bit_offset: 15
+    bit_size: 1
+fieldset/DAOCR:
+  description: desc DAOCR.
+  bit_size: 16
+  fields:
+  - name: DAODIS1
+    description: desc DAODIS1.
+    bit_offset: 14
+    bit_size: 1
+  - name: DAODIS2
+    description: desc DAODIS2.
+    bit_offset: 15
+    bit_size: 1

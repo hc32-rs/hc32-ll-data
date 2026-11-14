@@ -1,0 +1,231 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M120/EFM；覆盖系列：HC32M120。
+block/EFM:
+  description: desc EFM.
+  items:
+  - name: FAPRT
+    description: desc FAPRT.
+    byte_offset: 0
+    fieldset: FAPRT
+  - name: FSTP
+    description: desc FSTP.
+    byte_offset: 4
+    fieldset: FSTP
+  - name: FRMC
+    description: desc FRMC.
+    byte_offset: 8
+    fieldset: FRMC
+  - name: FWMC
+    description: desc FWMC.
+    byte_offset: 12
+    fieldset: FWMC
+  - name: FSR
+    description: desc FSR.
+    byte_offset: 16
+    access: Read
+    fieldset: FSR
+  - name: FSCLR
+    description: desc FSCLR.
+    byte_offset: 20
+    fieldset: FSCLR
+  - name: FITE
+    description: desc FITE.
+    byte_offset: 24
+    fieldset: FITE
+  - name: FPMTSW
+    description: desc FPMTSW.
+    byte_offset: 32
+    fieldset: FPMTSW
+  - name: FPMTEW
+    description: desc FPMTEW.
+    byte_offset: 36
+    fieldset: FPMTEW
+  - name: UQID0
+    description: desc UQID0.
+    byte_offset: 80
+    access: Read
+  - name: UQID1
+    description: desc UQID1.
+    byte_offset: 84
+    access: Read
+  - name: UQID2
+    description: desc UQID2.
+    byte_offset: 88
+    access: Read
+  - name: HRCCFGR
+    description: desc HRCCFGR.
+    byte_offset: 642
+    bit_size: 8
+    fieldset: HRCCFGR
+  - name: LVDICGCR
+    description: desc LVDICGCR.
+    byte_offset: 644
+    bit_size: 16
+    fieldset: LVDICGCR
+fieldset/FAPRT:
+  description: desc FAPRT.
+  fields:
+  - name: FAPRT
+    description: desc FAPRT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/FITE:
+  description: desc FITE.
+  fields:
+  - name: PEERRITE
+    description: desc PEERRITE.
+    bit_offset: 0
+    bit_size: 1
+  - name: OPTENDITE
+    description: desc OPTENDITE.
+    bit_offset: 1
+    bit_size: 1
+  - name: COLERRITE
+    description: desc COLERRITE.
+    bit_offset: 2
+    bit_size: 1
+fieldset/FPMTEW:
+  description: desc FPMTEW.
+  fields:
+  - name: FPMTEW
+    description: desc FPMTEW.
+    bit_offset: 0
+    bit_size: 15
+fieldset/FPMTSW:
+  description: desc FPMTSW.
+  fields:
+  - name: FPMTSW
+    description: desc FPMTSW.
+    bit_offset: 0
+    bit_size: 15
+fieldset/FRMC:
+  description: desc FRMC.
+  fields:
+  - name: FLWT
+    description: desc FLWT.
+    bit_offset: 0
+    bit_size: 1
+  - name: CACHE
+    description: desc CACHE.
+    bit_offset: 16
+    bit_size: 1
+  - name: PREFETE
+    description: desc PREFETE.
+    bit_offset: 17
+    bit_size: 1
+  - name: CRST
+    description: desc CRST.
+    bit_offset: 18
+    bit_size: 1
+fieldset/FSCLR:
+  description: desc FSCLR.
+  fields:
+  - name: PEWERRCLR
+    description: desc PEWERRCLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: PEPRTERRCLR
+    description: desc PEPRTERRCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: PGMISMTCHCLR
+    description: desc PGMISMTCHCLR.
+    bit_offset: 3
+    bit_size: 1
+  - name: OPTENDCLR
+    description: desc OPTENDCLR.
+    bit_offset: 4
+    bit_size: 1
+  - name: COLERRCLR
+    description: desc COLERRCLR.
+    bit_offset: 5
+    bit_size: 1
+fieldset/FSR:
+  description: desc FSR.
+  fields:
+  - name: PEWERR
+    description: desc PEWERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: PEPRTERR
+    description: desc PEPRTERR.
+    bit_offset: 1
+    bit_size: 1
+  - name: PGMISMTCH
+    description: desc PGMISMTCH.
+    bit_offset: 3
+    bit_size: 1
+  - name: OPTEND
+    description: desc OPTEND.
+    bit_offset: 4
+    bit_size: 1
+  - name: COLERR
+    description: desc COLERR.
+    bit_offset: 5
+    bit_size: 1
+  - name: RDY
+    description: desc RDY.
+    bit_offset: 8
+    bit_size: 1
+fieldset/FSTP:
+  description: desc FSTP.
+  fields:
+  - name: FSTP
+    description: desc FSTP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/FWMC:
+  description: desc FWMC.
+  fields:
+  - name: PEMODE
+    description: desc PEMODE.
+    bit_offset: 0
+    bit_size: 1
+  - name: PEMOD
+    description: desc PEMOD.
+    bit_offset: 4
+    bit_size: 3
+  - name: BUSHLDCTL
+    description: desc BUSHLDCTL.
+    bit_offset: 8
+    bit_size: 1
+fieldset/HRCCFGR:
+  description: desc HRCCFGR.
+  bit_size: 8
+  fields:
+  - name: HRCFREQS
+    description: desc HRCFREQS.
+    bit_offset: 0
+    bit_size: 4
+fieldset/LVDICGCR:
+  description: desc LVDICGCR.
+  bit_size: 16
+  fields:
+  - name: DFS
+    description: desc DFS.
+    bit_offset: 0
+    bit_size: 2
+  - name: DFDIS
+    description: desc DFDIS.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVDLVL
+    description: desc LVDLVL.
+    bit_offset: 8
+    bit_size: 4
+  - name: NMIS
+    description: desc NMIS.
+    bit_offset: 12
+    bit_size: 1
+  - name: IRS
+    description: desc IRS.
+    bit_offset: 13
+    bit_size: 1
+  - name: IRDIS
+    description: desc IRDIS.
+    bit_offset: 14
+    bit_size: 1
+  - name: LVDDIS
+    description: desc LVDDIS.
+    bit_offset: 15
+    bit_size: 1

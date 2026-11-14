@@ -1,0 +1,165 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/EMB0；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/EMB:
+  description: desc EMB.
+  items:
+  - name: CTL
+    description: desc CTL.
+    byte_offset: 0
+    fieldset: CTL
+  - name: PWMLV
+    description: desc PWMLV.
+    byte_offset: 4
+    fieldset: PWMLV
+  - name: SOE
+    description: desc SOE.
+    byte_offset: 8
+    fieldset: SOE
+  - name: STAT
+    description: desc STAT.
+    byte_offset: 12
+    access: Read
+    fieldset: STAT
+  - name: STATCLR
+    description: desc STATCLR.
+    byte_offset: 16
+    access: Write
+    fieldset: STATCLR
+  - name: INTEN
+    description: desc INTEN.
+    byte_offset: 20
+    fieldset: INTEN
+fieldset/CTL:
+  description: desc CTL.
+  fields:
+  - name: PORTINEN
+    description: desc PORTINEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: CMPEN1
+    description: desc CMPEN1.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPEN2
+    description: desc CMPEN2.
+    bit_offset: 2
+    bit_size: 1
+  - name: CMPEN3
+    description: desc CMPEN3.
+    bit_offset: 3
+    bit_size: 1
+  - name: OSCSTPEN
+    description: desc OSCSTPEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: PWMSEN0
+    description: desc PWMSEN0.
+    bit_offset: 6
+    bit_size: 1
+  - name: PWMSEN1
+    description: desc PWMSEN1.
+    bit_offset: 7
+    bit_size: 1
+  - name: PWMSEN2
+    description: desc PWMSEN2.
+    bit_offset: 8
+    bit_size: 1
+  - name: NFSEL
+    description: desc NFSEL.
+    bit_offset: 28
+    bit_size: 2
+  - name: NFEN
+    description: desc NFEN.
+    bit_offset: 30
+    bit_size: 1
+  - name: INVSEL
+    description: desc INVSEL.
+    bit_offset: 31
+    bit_size: 1
+fieldset/INTEN:
+  description: desc INTEN.
+  fields:
+  - name: PORTININTEN
+    description: desc PORTININTEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: PWMSINTEN
+    description: desc PWMSINTEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPINTEN
+    description: desc CMPINTEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: OSINTEN
+    description: desc OSINTEN.
+    bit_offset: 3
+    bit_size: 1
+fieldset/PWMLV:
+  description: desc PWMLV.
+  fields:
+  - name: PWMLV0
+    description: desc PWMLV0.
+    bit_offset: 0
+    bit_size: 1
+  - name: PWMLV1
+    description: desc PWMLV1.
+    bit_offset: 1
+    bit_size: 1
+  - name: PWMLV2
+    description: desc PWMLV2.
+    bit_offset: 2
+    bit_size: 1
+fieldset/SOE:
+  description: desc SOE.
+  fields:
+  - name: SOE
+    description: desc SOE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/STAT:
+  description: desc STAT.
+  fields:
+  - name: PORTINF
+    description: desc PORTINF.
+    bit_offset: 0
+    bit_size: 1
+  - name: PWMSF
+    description: desc PWMSF.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPF
+    description: desc CMPF.
+    bit_offset: 2
+    bit_size: 1
+  - name: OSF
+    description: desc OSF.
+    bit_offset: 3
+    bit_size: 1
+  - name: PORTINST
+    description: desc PORTINST.
+    bit_offset: 4
+    bit_size: 1
+  - name: PWMST
+    description: desc PWMST.
+    bit_offset: 5
+    bit_size: 1
+fieldset/STATCLR:
+  description: desc STATCLR.
+  fields:
+  - name: PORTINFCLR
+    description: desc PORTINFCLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: PWMSFCLR
+    description: desc PWMSFCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPFCLR
+    description: desc CMPFCLR.
+    bit_offset: 2
+    bit_size: 1
+  - name: OSFCLR
+    description: desc OSFCLR.
+    bit_offset: 3
+    bit_size: 1

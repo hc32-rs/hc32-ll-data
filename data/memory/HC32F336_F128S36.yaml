@@ -1,0 +1,19 @@
+# HC32F336 Flash 128K / SRAM 36K 的内存布局（型号：HC32F336JATI, HC32F336KATI…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 128K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x1FFFC000
+  size: 36K
+  access:
+    read: true
+    write: true
+    execute: true

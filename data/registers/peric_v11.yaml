@@ -1,0 +1,82 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M458/PERIC；覆盖系列：HC32M458。
+block/PERIC:
+  description: desc PERIC.
+  items:
+  - name: SMC_ENAR
+    description: desc SMC_ENAR.
+    byte_offset: 12
+    fieldset: SMC_ENAR
+  - name: TMR_SYNENR
+    description: desc TMR_SYNENR.
+    byte_offset: 20
+    fieldset: TMR_SYNENR
+  - name: USART1_NFC
+    description: desc USART1_NFC.
+    byte_offset: 28
+    fieldset: USART1_NFC
+fieldset/SMC_ENAR:
+  description: desc SMC_ENAR.
+  fields:
+  - name: SMCEN
+    description: desc SMCEN.
+    bit_offset: 1
+    bit_size: 1
+fieldset/TMR_SYNENR:
+  description: desc TMR_SYNENR.
+  fields:
+  - name: TMR0_1_A
+    description: desc TMR0_1_A.
+    bit_offset: 0
+    bit_size: 1
+  - name: TMR0_1_B
+    description: desc TMR0_1_B.
+    bit_offset: 1
+    bit_size: 1
+  - name: TMR0_2_A
+    description: desc TMR0_2_A.
+    bit_offset: 2
+    bit_size: 1
+  - name: TMR0_2_B
+    description: desc TMR0_2_B.
+    bit_offset: 3
+    bit_size: 1
+  - name: TMR4_1
+    description: desc TMR4_1.
+    bit_offset: 4
+    bit_size: 1
+  - name: TMR4_2
+    description: desc TMR4_2.
+    bit_offset: 5
+    bit_size: 1
+  - name: TMRA_1
+    description: desc TMRA_1.
+    bit_offset: 16
+    bit_size: 1
+  - name: TMRA_2
+    description: desc TMRA_2.
+    bit_offset: 17
+    bit_size: 1
+  - name: TMRA_3
+    description: desc TMRA_3.
+    bit_offset: 18
+    bit_size: 1
+  - name: TMRA_4
+    description: desc TMRA_4.
+    bit_offset: 19
+    bit_size: 1
+  - name: TMRA_5
+    description: desc TMRA_5.
+    bit_offset: 20
+    bit_size: 1
+fieldset/USART1_NFC:
+  description: desc USART1_NFC.
+  fields:
+  - name: USASRT1_NFS
+    description: desc USASRT1_NFS.
+    bit_offset: 0
+    bit_size: 2
+  - name: USART1_NFE
+    description: desc USART1_NFE.
+    bit_offset: 2
+    bit_size: 1

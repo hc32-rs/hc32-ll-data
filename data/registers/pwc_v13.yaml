@@ -1,0 +1,155 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M120/PWC；覆盖系列：HC32M120。
+block/PWC:
+  description: desc PWC.
+  items:
+  - name: STPMCR
+    description: desc STPMCR.
+    byte_offset: 0
+    bit_size: 8
+    fieldset: STPMCR
+  - name: PWRC
+    description: desc PWRC.
+    byte_offset: 4
+    bit_size: 8
+    fieldset: PWRC
+  - name: RAMCR
+    description: desc RAMCR.
+    byte_offset: 12
+    bit_size: 8
+    fieldset: RAMCR
+  - name: LVDCSR
+    description: desc LVDCSR.
+    byte_offset: 16
+    bit_size: 8
+    fieldset: LVDCSR
+  - name: FPRC
+    description: desc FPRC.
+    byte_offset: 32
+    bit_size: 16
+    fieldset: FPRC
+  - name: DBGC
+    description: desc DBGC.
+    byte_offset: 64
+    bit_size: 8
+    fieldset: DBGC
+fieldset/DBGC:
+  description: desc DBGC.
+  bit_size: 8
+  fields:
+  - name: DBGEN
+    description: desc DBGEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/FPRC:
+  description: desc FPRC.
+  bit_size: 16
+  fields:
+  - name: CKRWE
+    description: desc CKRWE.
+    bit_offset: 0
+    bit_size: 1
+  - name: PWRWE
+    description: desc PWRWE.
+    bit_offset: 1
+    bit_size: 1
+  - name: FPRCB2
+    description: desc FPRCB2.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVRWE
+    description: desc LVRWE.
+    bit_offset: 3
+    bit_size: 1
+  - name: FPRCB4
+    description: desc FPRCB4.
+    bit_offset: 4
+    bit_size: 1
+  - name: FPRCB5
+    description: desc FPRCB5.
+    bit_offset: 5
+    bit_size: 1
+  - name: FPRCB6
+    description: desc FPRCB6.
+    bit_offset: 6
+    bit_size: 1
+  - name: FPRCB7
+    description: desc FPRCB7.
+    bit_offset: 7
+    bit_size: 1
+  - name: FPRCWE
+    description: desc FPRCWE.
+    bit_offset: 8
+    bit_size: 8
+fieldset/LVDCSR:
+  description: desc LVDCSR.
+  bit_size: 8
+  fields:
+  - name: EXVCCINEN
+    description: desc EXVCCINEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: LVIF
+    description: desc LVIF.
+    bit_offset: 3
+    bit_size: 1
+  - name: DETF
+    description: desc DETF.
+    bit_offset: 4
+    bit_size: 1
+  - name: CMPOE
+    description: desc CMPOE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/PWRC:
+  description: desc PWRC.
+  bit_size: 8
+  fields:
+  - name: PWDRV
+    description: desc PWDRV.
+    bit_offset: 0
+    bit_size: 3
+  - name: PWMONSEL
+    description: desc PWMONSEL.
+    bit_offset: 4
+    bit_size: 1
+  - name: PWMONE
+    description: desc PWMONE.
+    bit_offset: 5
+    bit_size: 1
+  - name: LPDADJ
+    description: desc LPDADJ.
+    bit_offset: 6
+    bit_size: 1
+fieldset/RAMCR:
+  description: desc RAMCR.
+  bit_size: 8
+  fields:
+  - name: RPRTA
+    description: desc RPRTA.
+    bit_offset: 0
+    bit_size: 2
+  - name: RPERDIS
+    description: desc RPERDIS.
+    bit_offset: 4
+    bit_size: 1
+  - name: RPEF
+    description: desc RPEF.
+    bit_offset: 5
+    bit_size: 1
+fieldset/STPMCR:
+  description: desc STPMCR.
+  bit_size: 8
+  fields:
+  - name: CKSHRC
+    description: desc CKSHRC.
+    bit_offset: 1
+    bit_size: 1
+  - name: HAPORDIS
+    description: desc HAPORDIS.
+    bit_offset: 3
+    bit_size: 1
+  - name: STOP
+    description: desc STOP.
+    bit_offset: 7
+    bit_size: 1

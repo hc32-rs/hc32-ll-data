@@ -1,0 +1,502 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/CMU；覆盖系列：HC32A4A8, HC32F4A8。
+block/CMU:
+  description: desc CMU.
+  items:
+  - name: XTALDIVR
+    description: desc XTALDIVR.
+    byte_offset: 24
+    fieldset: XTALDIVR
+  - name: XTALDIVCR
+    description: desc XTALDIVCR.
+    byte_offset: 28
+    fieldset: XTALDIVCR
+  - name: XTAL32CR
+    description: desc XTAL32CR.
+    byte_offset: 17408
+    bit_size: 8
+    fieldset: XTAL32CR
+  - name: XTAL32CFGR
+    description: desc XTAL32CFGR.
+    byte_offset: 17412
+    bit_size: 8
+    fieldset: XTAL32CFGR
+  - name: XTAL32NFR
+    description: desc XTAL32NFR.
+    byte_offset: 17428
+    bit_size: 8
+    fieldset: XTAL32NFR
+  - name: LRCCR
+    description: desc LRCCR.
+    byte_offset: 17436
+    bit_size: 8
+    fieldset: LRCCR
+  - name: LRCTRM
+    description: desc LRCTRM.
+    byte_offset: 17444
+    bit_size: 8
+  - name: RTCLRCTRM
+    description: desc RTCLRCTRM.
+    byte_offset: 17452
+    bit_size: 8
+  - name: XTALCFGR
+    description: desc XTALCFGR.
+    byte_offset: 19576
+    bit_size: 8
+    fieldset: XTALCFGR
+  - name: PERICKSEL
+    description: desc PERICKSEL.
+    byte_offset: 49168
+    bit_size: 16
+    fieldset: PERICKSEL
+  - name: I2SCKSEL
+    description: desc I2SCKSEL.
+    byte_offset: 49170
+    bit_size: 16
+    fieldset: I2SCKSEL
+  - name: CANCKCFGR
+    description: desc CANCKCFGR.
+    byte_offset: 49176
+    bit_size: 16
+    fieldset: CANCKCFGR
+  - name: SCFGR
+    description: desc SCFGR.
+    byte_offset: 49184
+    fieldset: SCFGR
+  - name: USBCKCFGR
+    description: desc USBCKCFGR.
+    byte_offset: 49188
+    bit_size: 8
+    fieldset: USBCKCFGR
+  - name: CKSWR
+    description: desc CKSWR.
+    byte_offset: 49190
+    bit_size: 8
+    fieldset: CKSWR
+  - name: PLLHCR
+    description: desc PLLHCR.
+    byte_offset: 49194
+    bit_size: 8
+    fieldset: PLLHCR
+  - name: PLLACR
+    description: desc PLLACR.
+    byte_offset: 49198
+    bit_size: 8
+    fieldset: PLLACR
+  - name: XTALCR
+    description: desc XTALCR.
+    byte_offset: 49202
+    bit_size: 8
+    fieldset: XTALCR
+  - name: HRCCR
+    description: desc HRCCR.
+    byte_offset: 49206
+    bit_size: 8
+    fieldset: HRCCR
+  - name: MRCCR
+    description: desc MRCCR.
+    byte_offset: 49208
+    bit_size: 8
+    fieldset: MRCCR
+  - name: OSCSTBSR
+    description: desc OSCSTBSR.
+    byte_offset: 49212
+    bit_size: 8
+    fieldset: OSCSTBSR
+  - name: MCO1CFGR
+    description: desc MCO1CFGR.
+    byte_offset: 49213
+    bit_size: 8
+    fieldset: MCO1CFGR
+  - name: MCO2CFGR
+    description: desc MCO2CFGR.
+    byte_offset: 49214
+    bit_size: 8
+    fieldset: MCO2CFGR
+  - name: TPIUCKCFGR
+    description: desc TPIUCKCFGR.
+    byte_offset: 49215
+    bit_size: 8
+    fieldset: TPIUCKCFGR
+  - name: XTALSTDCR
+    description: desc XTALSTDCR.
+    byte_offset: 49216
+    bit_size: 8
+    fieldset: XTALSTDCR
+  - name: XTALSTDSR
+    description: desc XTALSTDSR.
+    byte_offset: 49217
+    bit_size: 8
+    fieldset: XTALSTDSR
+  - name: MRCTRM
+    description: desc MRCTRM.
+    byte_offset: 49249
+    bit_size: 8
+  - name: HRCTRM
+    description: desc HRCTRM.
+    byte_offset: 49250
+    bit_size: 8
+  - name: XTALSTBCR
+    description: desc XTALSTBCR.
+    byte_offset: 49314
+    bit_size: 8
+    fieldset: XTALSTBCR
+  - name: PLLHCFGR
+    description: desc PLLHCFGR.
+    byte_offset: 49408
+    fieldset: PLLHCFGR
+  - name: PLLACFGR
+    description: desc PLLACFGR.
+    byte_offset: 49412
+    fieldset: PLLACFGR
+fieldset/CANCKCFGR:
+  description: desc CANCKCFGR.
+  bit_size: 16
+  fields:
+  - name: CAN1CKS
+    description: desc CAN1CKS.
+    bit_offset: 0
+    bit_size: 4
+  - name: CAN2CKS
+    description: desc CAN2CKS.
+    bit_offset: 4
+    bit_size: 4
+  - name: CAN3CKS
+    description: desc CAN3CKS.
+    bit_offset: 8
+    bit_size: 4
+  - name: CAN4CKS
+    description: desc CAN4CKS.
+    bit_offset: 12
+    bit_size: 4
+fieldset/CKSWR:
+  description: desc CKSWR.
+  bit_size: 8
+  fields:
+  - name: CKSW
+    description: desc CKSW.
+    bit_offset: 0
+    bit_size: 3
+fieldset/HRCCR:
+  description: desc HRCCR.
+  bit_size: 8
+  fields:
+  - name: HRCSTP
+    description: desc HRCSTP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/I2SCKSEL:
+  description: desc I2SCKSEL.
+  bit_size: 16
+  fields:
+  - name: I2S1CKSEL
+    description: desc I2S1CKSEL.
+    bit_offset: 0
+    bit_size: 4
+  - name: I2S2CKSEL
+    description: desc I2S2CKSEL.
+    bit_offset: 4
+    bit_size: 4
+  - name: I2S3CKSEL
+    description: desc I2S3CKSEL.
+    bit_offset: 8
+    bit_size: 4
+  - name: I2S4CKSEL
+    description: desc I2S4CKSEL.
+    bit_offset: 12
+    bit_size: 4
+fieldset/LRCCR:
+  description: desc LRCCR.
+  bit_size: 8
+  fields:
+  - name: LRCSTP
+    description: desc LRCSTP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/MCO1CFGR:
+  description: desc MCO1CFGR.
+  bit_size: 8
+  fields:
+  - name: MCOSEL
+    description: desc MCOSEL.
+    bit_offset: 0
+    bit_size: 4
+  - name: MCODIV
+    description: desc MCODIV.
+    bit_offset: 4
+    bit_size: 3
+  - name: MCOEN
+    description: desc MCOEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/MCO2CFGR:
+  description: desc MCO2CFGR.
+  bit_size: 8
+  fields:
+  - name: MCOSEL
+    description: desc MCOSEL.
+    bit_offset: 0
+    bit_size: 4
+  - name: MCODIV
+    description: desc MCODIV.
+    bit_offset: 4
+    bit_size: 3
+  - name: MCOEN
+    description: desc MCOEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/MRCCR:
+  description: desc MRCCR.
+  bit_size: 8
+  fields:
+  - name: MRCSTP
+    description: desc MRCSTP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/OSCSTBSR:
+  description: desc OSCSTBSR.
+  bit_size: 8
+  fields:
+  - name: HRCSTBF
+    description: desc HRCSTBF.
+    bit_offset: 0
+    bit_size: 1
+  - name: XTALSTBF
+    description: desc XTALSTBF.
+    bit_offset: 3
+    bit_size: 1
+  - name: PLLHSTBF
+    description: desc PLLHSTBF.
+    bit_offset: 5
+    bit_size: 1
+  - name: PLLASTBF
+    description: desc PLLASTBF.
+    bit_offset: 6
+    bit_size: 1
+fieldset/PERICKSEL:
+  description: desc PERICKSEL.
+  bit_size: 16
+  fields:
+  - name: PERICKSEL
+    description: desc PERICKSEL.
+    bit_offset: 0
+    bit_size: 4
+fieldset/PLLACFGR:
+  description: desc PLLACFGR.
+  fields:
+  - name: PLLAM
+    description: desc PLLAM.
+    bit_offset: 0
+    bit_size: 5
+  - name: PLLAN
+    description: desc PLLAN.
+    bit_offset: 8
+    bit_size: 9
+  - name: PLLAR
+    description: desc PLLAR.
+    bit_offset: 20
+    bit_size: 4
+  - name: PLLAQ
+    description: desc PLLAQ.
+    bit_offset: 24
+    bit_size: 4
+  - name: PLLAP
+    description: desc PLLAP.
+    bit_offset: 28
+    bit_size: 4
+fieldset/PLLACR:
+  description: desc PLLACR.
+  bit_size: 8
+  fields:
+  - name: PLLAOFF
+    description: desc PLLAOFF.
+    bit_offset: 0
+    bit_size: 1
+fieldset/PLLHCFGR:
+  description: desc PLLHCFGR.
+  fields:
+  - name: PLLHM
+    description: desc PLLHM.
+    bit_offset: 0
+    bit_size: 2
+  - name: PLLSRC
+    description: desc PLLSRC.
+    bit_offset: 7
+    bit_size: 1
+  - name: PLLHN
+    description: desc PLLHN.
+    bit_offset: 8
+    bit_size: 8
+  - name: PLLHR
+    description: desc PLLHR.
+    bit_offset: 20
+    bit_size: 4
+  - name: PLLHQ
+    description: desc PLLHQ.
+    bit_offset: 24
+    bit_size: 4
+  - name: PLLHP
+    description: desc PLLHP.
+    bit_offset: 28
+    bit_size: 4
+fieldset/PLLHCR:
+  description: desc PLLHCR.
+  bit_size: 8
+  fields:
+  - name: PLLHOFF
+    description: desc PLLHOFF.
+    bit_offset: 0
+    bit_size: 1
+fieldset/SCFGR:
+  description: desc SCFGR.
+  fields:
+  - name: PCLK0S
+    description: desc PCLK0S.
+    bit_offset: 0
+    bit_size: 3
+  - name: PCLK1S
+    description: desc PCLK1S.
+    bit_offset: 4
+    bit_size: 3
+  - name: PCLK2S
+    description: desc PCLK2S.
+    bit_offset: 8
+    bit_size: 3
+  - name: PCLK3S
+    description: desc PCLK3S.
+    bit_offset: 12
+    bit_size: 3
+  - name: PCLK4S
+    description: desc PCLK4S.
+    bit_offset: 16
+    bit_size: 3
+  - name: EXCKS
+    description: desc EXCKS.
+    bit_offset: 20
+    bit_size: 3
+  - name: HCLKS
+    description: desc HCLKS.
+    bit_offset: 24
+    bit_size: 3
+fieldset/TPIUCKCFGR:
+  description: desc TPIUCKCFGR.
+  bit_size: 8
+  fields:
+  - name: TPIUCKS
+    description: desc TPIUCKS.
+    bit_offset: 0
+    bit_size: 2
+  - name: TPIUCKOE
+    description: desc TPIUCKOE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/USBCKCFGR:
+  description: desc USBCKCFGR.
+  bit_size: 8
+  fields:
+  - name: USBCKS
+    description: desc USBCKS.
+    bit_offset: 4
+    bit_size: 4
+fieldset/XTAL32CFGR:
+  description: desc XTAL32CFGR.
+  bit_size: 8
+  fields:
+  - name: XTAL32DRV
+    description: desc XTAL32DRV.
+    bit_offset: 0
+    bit_size: 3
+  - name: XTAL32IE
+    description: desc XTAL32IE.
+    bit_offset: 3
+    bit_size: 1
+fieldset/XTAL32CR:
+  description: desc XTAL32CR.
+  bit_size: 8
+  fields:
+  - name: XTAL32STP
+    description: desc XTAL32STP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/XTAL32NFR:
+  description: desc XTAL32NFR.
+  bit_size: 8
+  fields:
+  - name: XTAL32NF
+    description: desc XTAL32NF.
+    bit_offset: 0
+    bit_size: 2
+fieldset/XTALCFGR:
+  description: desc XTALCFGR.
+  bit_size: 8
+  fields:
+  - name: XTALDRV
+    description: desc XTALDRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: XTALMS
+    description: desc XTALMS.
+    bit_offset: 6
+    bit_size: 1
+fieldset/XTALCR:
+  description: desc XTALCR.
+  bit_size: 8
+  fields:
+  - name: XTALSTP
+    description: desc XTALSTP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/XTALDIVCR:
+  description: desc XTALDIVCR.
+  fields:
+  - name: FRADIVEN
+    description: desc FRADIVEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/XTALDIVR:
+  description: desc XTALDIVR.
+  fields:
+  - name: DEMON
+    description: desc DEMON.
+    bit_offset: 0
+    bit_size: 11
+  - name: NUMER
+    description: desc NUMER.
+    bit_offset: 12
+    bit_size: 17
+fieldset/XTALSTBCR:
+  description: desc XTALSTBCR.
+  bit_size: 8
+  fields:
+  - name: XTALSTB
+    description: desc XTALSTB.
+    bit_offset: 0
+    bit_size: 4
+fieldset/XTALSTDCR:
+  description: desc XTALSTDCR.
+  bit_size: 8
+  fields:
+  - name: XTALSTDIE
+    description: desc XTALSTDIE.
+    bit_offset: 0
+    bit_size: 1
+  - name: XTALSTDRE
+    description: desc XTALSTDRE.
+    bit_offset: 1
+    bit_size: 1
+  - name: XTALSTDRIS
+    description: desc XTALSTDRIS.
+    bit_offset: 2
+    bit_size: 1
+  - name: XTALSTDE
+    description: desc XTALSTDE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/XTALSTDSR:
+  description: desc XTALSTDSR.
+  bit_size: 8
+  fields:
+  - name: XTALSTDF
+    description: desc XTALSTDF.
+    bit_offset: 0
+    bit_size: 1

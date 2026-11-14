@@ -1,0 +1,55 @@
+# HC32F472KETI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F472KETI
+family: HC32F472
+subfamily: cortex-m4
+packages:
+- name: HC32F472KETI
+  package: LQFP64
+include_memory: ../memory/HC32F472_F512S64.yaml
+memory_sizes:
+  FLASH: 512K
+  SRAM: 64K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1261.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F472.yaml
+  include_interrupts: ../interrupts/HC32F472.yaml
+  include_dma_channels:
+    DMA1: ../dma/HC32F472_DMA1.yaml
+    DMA2: ../dma/HC32F472_DMA2.yaml
+_raw:
+  series: HC32F472
+  freq_mhz: '120'
+  flash_kb: '512'
+  sram_kb: '64'
+  package: LQFP64
+  pin_count: '64'
+  gpio: '53'
+  vdd_min: '1.8'
+  vdd_max: '3.6'
+  uart: '6'
+  spi: '4'
+  i2c: '3'
+  i2s: ''
+  can: '3'
+  usb: '1'
+  adc: '3'
+  dac: '2'
+  timer: '23'
+  rtc: √
+  wdt: ''
+  touchkey: ''
+  lcd: ''
+  opa: '2'
+  cmp: '2'
+  other: ADC 27ch|AES256=1|OTP(KB)=134|PVD|temp -40~105
+  url: https://www.xhsc.com.cn/product/1261.html
+  source: DS
+  Part NO.: HC32F472KETI

@@ -1,0 +1,1637 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F467/PWC；覆盖系列：HC32F467。
+block/PWC:
+  description: desc PWC.
+  items:
+  - name: FCG0
+    description: desc FCG0.
+    byte_offset: 0
+    fieldset: FCG0
+  - name: FCG1
+    description: desc FCG1.
+    byte_offset: 4
+    fieldset: FCG1
+  - name: FCG2
+    description: desc FCG2.
+    byte_offset: 8
+    fieldset: FCG2
+  - name: FCG3
+    description: desc FCG3.
+    byte_offset: 12
+    fieldset: FCG3
+  - name: FCG0PC
+    description: desc FCG0PC.
+    byte_offset: 16
+    fieldset: FCG0PC
+  - name: VBATRSTR
+    description: desc VBATRSTR.
+    byte_offset: 17456
+    bit_size: 8
+  - name: VBATCR
+    description: desc VBATCR.
+    byte_offset: 17472
+    bit_size: 8
+    fieldset: VBATCR
+  - name: WKTC0
+    description: desc WKTC0.
+    byte_offset: 17488
+    bit_size: 8
+    fieldset: WKTC0
+  - name: WKTC1
+    description: desc WKTC1.
+    byte_offset: 17492
+    bit_size: 8
+    fieldset: WKTC1
+  - name: WKTC2
+    description: desc WKTC2.
+    byte_offset: 17496
+    bit_size: 8
+    fieldset: WKTC2
+  - name: BKR0
+    description: desc BKR0.
+    byte_offset: 17920
+    bit_size: 8
+  - name: BKR1
+    description: desc BKR1.
+    byte_offset: 17924
+    bit_size: 8
+  - name: BKR2
+    description: desc BKR2.
+    byte_offset: 17928
+    bit_size: 8
+  - name: BKR3
+    description: desc BKR3.
+    byte_offset: 17932
+    bit_size: 8
+  - name: BKR4
+    description: desc BKR4.
+    byte_offset: 17936
+    bit_size: 8
+  - name: BKR5
+    description: desc BKR5.
+    byte_offset: 17940
+    bit_size: 8
+  - name: BKR6
+    description: desc BKR6.
+    byte_offset: 17944
+    bit_size: 8
+  - name: BKR7
+    description: desc BKR7.
+    byte_offset: 17948
+    bit_size: 8
+  - name: BKR8
+    description: desc BKR8.
+    byte_offset: 17952
+    bit_size: 8
+  - name: BKR9
+    description: desc BKR9.
+    byte_offset: 17956
+    bit_size: 8
+  - name: BKR10
+    description: desc BKR10.
+    byte_offset: 17960
+    bit_size: 8
+  - name: BKR11
+    description: desc BKR11.
+    byte_offset: 17964
+    bit_size: 8
+  - name: BKR12
+    description: desc BKR12.
+    byte_offset: 17968
+    bit_size: 8
+  - name: BKR13
+    description: desc BKR13.
+    byte_offset: 17972
+    bit_size: 8
+  - name: BKR14
+    description: desc BKR14.
+    byte_offset: 17976
+    bit_size: 8
+  - name: BKR15
+    description: desc BKR15.
+    byte_offset: 17980
+    bit_size: 8
+  - name: BKR16
+    description: desc BKR16.
+    byte_offset: 17984
+    bit_size: 8
+  - name: BKR17
+    description: desc BKR17.
+    byte_offset: 17988
+    bit_size: 8
+  - name: BKR18
+    description: desc BKR18.
+    byte_offset: 17992
+    bit_size: 8
+  - name: BKR19
+    description: desc BKR19.
+    byte_offset: 17996
+    bit_size: 8
+  - name: BKR20
+    description: desc BKR20.
+    byte_offset: 18000
+    bit_size: 8
+  - name: BKR21
+    description: desc BKR21.
+    byte_offset: 18004
+    bit_size: 8
+  - name: BKR22
+    description: desc BKR22.
+    byte_offset: 18008
+    bit_size: 8
+  - name: BKR23
+    description: desc BKR23.
+    byte_offset: 18012
+    bit_size: 8
+  - name: BKR24
+    description: desc BKR24.
+    byte_offset: 18016
+    bit_size: 8
+  - name: BKR25
+    description: desc BKR25.
+    byte_offset: 18020
+    bit_size: 8
+  - name: BKR26
+    description: desc BKR26.
+    byte_offset: 18024
+    bit_size: 8
+  - name: BKR27
+    description: desc BKR27.
+    byte_offset: 18028
+    bit_size: 8
+  - name: BKR28
+    description: desc BKR28.
+    byte_offset: 18032
+    bit_size: 8
+  - name: BKR29
+    description: desc BKR29.
+    byte_offset: 18036
+    bit_size: 8
+  - name: BKR30
+    description: desc BKR30.
+    byte_offset: 18040
+    bit_size: 8
+  - name: BKR31
+    description: desc BKR31.
+    byte_offset: 18044
+    bit_size: 8
+  - name: BKR32
+    description: desc BKR32.
+    byte_offset: 18048
+    bit_size: 8
+  - name: BKR33
+    description: desc BKR33.
+    byte_offset: 18052
+    bit_size: 8
+  - name: BKR34
+    description: desc BKR34.
+    byte_offset: 18056
+    bit_size: 8
+  - name: BKR35
+    description: desc BKR35.
+    byte_offset: 18060
+    bit_size: 8
+  - name: BKR36
+    description: desc BKR36.
+    byte_offset: 18064
+    bit_size: 8
+  - name: BKR37
+    description: desc BKR37.
+    byte_offset: 18068
+    bit_size: 8
+  - name: BKR38
+    description: desc BKR38.
+    byte_offset: 18072
+    bit_size: 8
+  - name: BKR39
+    description: desc BKR39.
+    byte_offset: 18076
+    bit_size: 8
+  - name: BKR40
+    description: desc BKR40.
+    byte_offset: 18080
+    bit_size: 8
+  - name: BKR41
+    description: desc BKR41.
+    byte_offset: 18084
+    bit_size: 8
+  - name: BKR42
+    description: desc BKR42.
+    byte_offset: 18088
+    bit_size: 8
+  - name: BKR43
+    description: desc BKR43.
+    byte_offset: 18092
+    bit_size: 8
+  - name: BKR44
+    description: desc BKR44.
+    byte_offset: 18096
+    bit_size: 8
+  - name: BKR45
+    description: desc BKR45.
+    byte_offset: 18100
+    bit_size: 8
+  - name: BKR46
+    description: desc BKR46.
+    byte_offset: 18104
+    bit_size: 8
+  - name: BKR47
+    description: desc BKR47.
+    byte_offset: 18108
+    bit_size: 8
+  - name: BKR48
+    description: desc BKR48.
+    byte_offset: 18112
+    bit_size: 8
+  - name: BKR49
+    description: desc BKR49.
+    byte_offset: 18116
+    bit_size: 8
+  - name: BKR50
+    description: desc BKR50.
+    byte_offset: 18120
+    bit_size: 8
+  - name: BKR51
+    description: desc BKR51.
+    byte_offset: 18124
+    bit_size: 8
+  - name: BKR52
+    description: desc BKR52.
+    byte_offset: 18128
+    bit_size: 8
+  - name: BKR53
+    description: desc BKR53.
+    byte_offset: 18132
+    bit_size: 8
+  - name: BKR54
+    description: desc BKR54.
+    byte_offset: 18136
+    bit_size: 8
+  - name: BKR55
+    description: desc BKR55.
+    byte_offset: 18140
+    bit_size: 8
+  - name: BKR56
+    description: desc BKR56.
+    byte_offset: 18144
+    bit_size: 8
+  - name: BKR57
+    description: desc BKR57.
+    byte_offset: 18148
+    bit_size: 8
+  - name: BKR58
+    description: desc BKR58.
+    byte_offset: 18152
+    bit_size: 8
+  - name: BKR59
+    description: desc BKR59.
+    byte_offset: 18156
+    bit_size: 8
+  - name: BKR60
+    description: desc BKR60.
+    byte_offset: 18160
+    bit_size: 8
+  - name: BKR61
+    description: desc BKR61.
+    byte_offset: 18164
+    bit_size: 8
+  - name: BKR62
+    description: desc BKR62.
+    byte_offset: 18168
+    bit_size: 8
+  - name: BKR63
+    description: desc BKR63.
+    byte_offset: 18172
+    bit_size: 8
+  - name: BKR64
+    description: desc BKR64.
+    byte_offset: 18176
+    bit_size: 8
+  - name: BKR65
+    description: desc BKR65.
+    byte_offset: 18180
+    bit_size: 8
+  - name: BKR66
+    description: desc BKR66.
+    byte_offset: 18184
+    bit_size: 8
+  - name: BKR67
+    description: desc BKR67.
+    byte_offset: 18188
+    bit_size: 8
+  - name: BKR68
+    description: desc BKR68.
+    byte_offset: 18192
+    bit_size: 8
+  - name: BKR69
+    description: desc BKR69.
+    byte_offset: 18196
+    bit_size: 8
+  - name: BKR70
+    description: desc BKR70.
+    byte_offset: 18200
+    bit_size: 8
+  - name: BKR71
+    description: desc BKR71.
+    byte_offset: 18204
+    bit_size: 8
+  - name: BKR72
+    description: desc BKR72.
+    byte_offset: 18208
+    bit_size: 8
+  - name: BKR73
+    description: desc BKR73.
+    byte_offset: 18212
+    bit_size: 8
+  - name: BKR74
+    description: desc BKR74.
+    byte_offset: 18216
+    bit_size: 8
+  - name: BKR75
+    description: desc BKR75.
+    byte_offset: 18220
+    bit_size: 8
+  - name: BKR76
+    description: desc BKR76.
+    byte_offset: 18224
+    bit_size: 8
+  - name: BKR77
+    description: desc BKR77.
+    byte_offset: 18228
+    bit_size: 8
+  - name: BKR78
+    description: desc BKR78.
+    byte_offset: 18232
+    bit_size: 8
+  - name: BKR79
+    description: desc BKR79.
+    byte_offset: 18236
+    bit_size: 8
+  - name: BKR80
+    description: desc BKR80.
+    byte_offset: 18240
+    bit_size: 8
+  - name: BKR81
+    description: desc BKR81.
+    byte_offset: 18244
+    bit_size: 8
+  - name: BKR82
+    description: desc BKR82.
+    byte_offset: 18248
+    bit_size: 8
+  - name: BKR83
+    description: desc BKR83.
+    byte_offset: 18252
+    bit_size: 8
+  - name: BKR84
+    description: desc BKR84.
+    byte_offset: 18256
+    bit_size: 8
+  - name: BKR85
+    description: desc BKR85.
+    byte_offset: 18260
+    bit_size: 8
+  - name: BKR86
+    description: desc BKR86.
+    byte_offset: 18264
+    bit_size: 8
+  - name: BKR87
+    description: desc BKR87.
+    byte_offset: 18268
+    bit_size: 8
+  - name: BKR88
+    description: desc BKR88.
+    byte_offset: 18272
+    bit_size: 8
+  - name: BKR89
+    description: desc BKR89.
+    byte_offset: 18276
+    bit_size: 8
+  - name: BKR90
+    description: desc BKR90.
+    byte_offset: 18280
+    bit_size: 8
+  - name: BKR91
+    description: desc BKR91.
+    byte_offset: 18284
+    bit_size: 8
+  - name: BKR92
+    description: desc BKR92.
+    byte_offset: 18288
+    bit_size: 8
+  - name: BKR93
+    description: desc BKR93.
+    byte_offset: 18292
+    bit_size: 8
+  - name: BKR94
+    description: desc BKR94.
+    byte_offset: 18296
+    bit_size: 8
+  - name: BKR95
+    description: desc BKR95.
+    byte_offset: 18300
+    bit_size: 8
+  - name: BKR96
+    description: desc BKR96.
+    byte_offset: 18304
+    bit_size: 8
+  - name: BKR97
+    description: desc BKR97.
+    byte_offset: 18308
+    bit_size: 8
+  - name: BKR98
+    description: desc BKR98.
+    byte_offset: 18312
+    bit_size: 8
+  - name: BKR99
+    description: desc BKR99.
+    byte_offset: 18316
+    bit_size: 8
+  - name: BKR100
+    description: desc BKR100.
+    byte_offset: 18320
+    bit_size: 8
+  - name: BKR101
+    description: desc BKR101.
+    byte_offset: 18324
+    bit_size: 8
+  - name: BKR102
+    description: desc BKR102.
+    byte_offset: 18328
+    bit_size: 8
+  - name: BKR103
+    description: desc BKR103.
+    byte_offset: 18332
+    bit_size: 8
+  - name: BKR104
+    description: desc BKR104.
+    byte_offset: 18336
+    bit_size: 8
+  - name: BKR105
+    description: desc BKR105.
+    byte_offset: 18340
+    bit_size: 8
+  - name: BKR106
+    description: desc BKR106.
+    byte_offset: 18344
+    bit_size: 8
+  - name: BKR107
+    description: desc BKR107.
+    byte_offset: 18348
+    bit_size: 8
+  - name: BKR108
+    description: desc BKR108.
+    byte_offset: 18352
+    bit_size: 8
+  - name: BKR109
+    description: desc BKR109.
+    byte_offset: 18356
+    bit_size: 8
+  - name: BKR110
+    description: desc BKR110.
+    byte_offset: 18360
+    bit_size: 8
+  - name: BKR111
+    description: desc BKR111.
+    byte_offset: 18364
+    bit_size: 8
+  - name: BKR112
+    description: desc BKR112.
+    byte_offset: 18368
+    bit_size: 8
+  - name: BKR113
+    description: desc BKR113.
+    byte_offset: 18372
+    bit_size: 8
+  - name: BKR114
+    description: desc BKR114.
+    byte_offset: 18376
+    bit_size: 8
+  - name: BKR115
+    description: desc BKR115.
+    byte_offset: 18380
+    bit_size: 8
+  - name: BKR116
+    description: desc BKR116.
+    byte_offset: 18384
+    bit_size: 8
+  - name: BKR117
+    description: desc BKR117.
+    byte_offset: 18388
+    bit_size: 8
+  - name: BKR118
+    description: desc BKR118.
+    byte_offset: 18392
+    bit_size: 8
+  - name: BKR119
+    description: desc BKR119.
+    byte_offset: 18396
+    bit_size: 8
+  - name: BKR120
+    description: desc BKR120.
+    byte_offset: 18400
+    bit_size: 8
+  - name: BKR121
+    description: desc BKR121.
+    byte_offset: 18404
+    bit_size: 8
+  - name: BKR122
+    description: desc BKR122.
+    byte_offset: 18408
+    bit_size: 8
+  - name: BKR123
+    description: desc BKR123.
+    byte_offset: 18412
+    bit_size: 8
+  - name: BKR124
+    description: desc BKR124.
+    byte_offset: 18416
+    bit_size: 8
+  - name: BKR125
+    description: desc BKR125.
+    byte_offset: 18420
+    bit_size: 8
+  - name: BKR126
+    description: desc BKR126.
+    byte_offset: 18424
+    bit_size: 8
+  - name: BKR127
+    description: desc BKR127.
+    byte_offset: 18428
+    bit_size: 8
+  - name: PWRC0
+    description: desc PWRC0.
+    byte_offset: 19456
+    bit_size: 8
+    fieldset: PWRC0
+  - name: PWRC1
+    description: desc PWRC1.
+    byte_offset: 19460
+    bit_size: 8
+    fieldset: PWRC1
+  - name: PWRC2
+    description: desc PWRC2.
+    byte_offset: 19464
+    bit_size: 8
+    fieldset: PWRC2
+  - name: PWRC3
+    description: desc PWRC3.
+    byte_offset: 19468
+    bit_size: 8
+    fieldset: PWRC3
+  - name: PWRC4
+    description: desc PWRC4.
+    byte_offset: 19472
+    bit_size: 8
+    fieldset: PWRC4
+  - name: PVDCR0
+    description: desc PVDCR0.
+    byte_offset: 19476
+    bit_size: 8
+    fieldset: PVDCR0
+  - name: PVDCR1
+    description: desc PVDCR1.
+    byte_offset: 19480
+    bit_size: 8
+    fieldset: PVDCR1
+  - name: PVDFCR
+    description: desc PVDFCR.
+    byte_offset: 19484
+    bit_size: 8
+    fieldset: PVDFCR
+  - name: PVDLCR
+    description: desc PVDLCR.
+    byte_offset: 19488
+    bit_size: 8
+    fieldset: PVDLCR
+  - name: PDWKE0
+    description: desc PDWKE0.
+    byte_offset: 19496
+    bit_size: 8
+    fieldset: PDWKE0
+  - name: PDWKE1
+    description: desc PDWKE1.
+    byte_offset: 19500
+    bit_size: 8
+    fieldset: PDWKE1
+  - name: PDWKE2
+    description: desc PDWKE2.
+    byte_offset: 19504
+    bit_size: 8
+    fieldset: PDWKE2
+  - name: PDWKES
+    description: desc PDWKES.
+    byte_offset: 19508
+    bit_size: 8
+    fieldset: PDWKES
+  - name: PDWKF0
+    description: desc PDWKF0.
+    byte_offset: 19512
+    bit_size: 8
+    fieldset: PDWKF0
+  - name: PDWKF1
+    description: desc PDWKF1.
+    byte_offset: 19516
+    bit_size: 8
+    fieldset: PDWKF1
+  - name: RAMPC0
+    description: desc RAMPC0.
+    byte_offset: 19680
+    fieldset: RAMPC0
+  - name: RAMOPM
+    description: desc RAMOPM.
+    byte_offset: 19684
+    bit_size: 16
+  - name: PRAMLPC
+    description: desc PRAMLPC.
+    byte_offset: 19688
+    fieldset: PRAMLPC
+  - name: PVDICR
+    description: desc PVDICR.
+    byte_offset: 19696
+    bit_size: 8
+    fieldset: PVDICR
+  - name: PVDDSR
+    description: desc PVDDSR.
+    byte_offset: 19700
+    bit_size: 8
+    fieldset: PVDDSR
+  - name: STPMCR
+    description: desc STPMCR.
+    byte_offset: 49164
+    bit_size: 16
+    fieldset: STPMCR
+  - name: FPRC
+    description: desc FPRC.
+    byte_offset: 50174
+    bit_size: 16
+    fieldset: FPRC
+fieldset/FCG0:
+  description: desc FCG0.
+  fields:
+  - name: SRAMH
+    description: desc SRAMH.
+    bit_offset: 0
+    bit_size: 1
+  - name: SRAM1
+    description: desc SRAM1.
+    bit_offset: 4
+    bit_size: 1
+  - name: SRAM2
+    description: desc SRAM2.
+    bit_offset: 5
+    bit_size: 1
+  - name: SRAM3
+    description: desc SRAM3.
+    bit_offset: 6
+    bit_size: 1
+  - name: SRAM4
+    description: desc SRAM4.
+    bit_offset: 7
+    bit_size: 1
+  - name: SRAMB
+    description: desc SRAMB.
+    bit_offset: 10
+    bit_size: 1
+  - name: KEY
+    description: desc KEY.
+    bit_offset: 13
+    bit_size: 1
+  - name: DMA1
+    description: desc DMA1.
+    bit_offset: 14
+    bit_size: 1
+  - name: DMA2
+    description: desc DMA2.
+    bit_offset: 15
+    bit_size: 1
+  - name: FCM
+    description: desc FCM.
+    bit_offset: 16
+    bit_size: 1
+  - name: AOS
+    description: desc AOS.
+    bit_offset: 17
+    bit_size: 1
+  - name: CTC
+    description: desc CTC.
+    bit_offset: 18
+    bit_size: 1
+  - name: MAU
+    description: desc MAU.
+    bit_offset: 19
+    bit_size: 1
+  - name: AES
+    description: desc AES.
+    bit_offset: 20
+    bit_size: 1
+  - name: HASH
+    description: desc HASH.
+    bit_offset: 21
+    bit_size: 1
+  - name: TRNG
+    description: desc TRNG.
+    bit_offset: 22
+    bit_size: 1
+  - name: CRC
+    description: desc CRC.
+    bit_offset: 23
+    bit_size: 1
+  - name: DCU1
+    description: desc DCU1.
+    bit_offset: 24
+    bit_size: 1
+  - name: DCU2
+    description: desc DCU2.
+    bit_offset: 25
+    bit_size: 1
+  - name: DCU3
+    description: desc DCU3.
+    bit_offset: 26
+    bit_size: 1
+  - name: DCU4
+    description: desc DCU4.
+    bit_offset: 27
+    bit_size: 1
+  - name: DCU5
+    description: desc DCU5.
+    bit_offset: 28
+    bit_size: 1
+  - name: DCU6
+    description: desc DCU6.
+    bit_offset: 29
+    bit_size: 1
+  - name: DCU7
+    description: desc DCU7.
+    bit_offset: 30
+    bit_size: 1
+  - name: DCU8
+    description: desc DCU8.
+    bit_offset: 31
+    bit_size: 1
+fieldset/FCG0PC:
+  description: desc FCG0PC.
+  fields:
+  - name: PRT0
+    description: desc PRT0.
+    bit_offset: 0
+    bit_size: 1
+  - name: FCG0PCWE
+    description: desc FCG0PCWE.
+    bit_offset: 16
+    bit_size: 16
+fieldset/FCG1:
+  description: desc FCG1.
+  fields:
+  - name: CAN1
+    description: desc CAN1.
+    bit_offset: 0
+    bit_size: 1
+  - name: CAN2
+    description: desc CAN2.
+    bit_offset: 1
+    bit_size: 1
+  - name: ETHMAC
+    description: desc ETHMAC.
+    bit_offset: 2
+    bit_size: 1
+  - name: QSPI
+    description: desc QSPI.
+    bit_offset: 3
+    bit_size: 1
+  - name: I2C1
+    description: desc I2C1.
+    bit_offset: 4
+    bit_size: 1
+  - name: I2C2
+    description: desc I2C2.
+    bit_offset: 5
+    bit_size: 1
+  - name: I2C3
+    description: desc I2C3.
+    bit_offset: 6
+    bit_size: 1
+  - name: SDIOC1
+    description: desc SDIOC1.
+    bit_offset: 10
+    bit_size: 1
+  - name: SDIOC2
+    description: desc SDIOC2.
+    bit_offset: 11
+    bit_size: 1
+  - name: I2S1
+    description: desc I2S1.
+    bit_offset: 12
+    bit_size: 1
+  - name: I2S2
+    description: desc I2S2.
+    bit_offset: 13
+    bit_size: 1
+  - name: I2S3
+    description: desc I2S3.
+    bit_offset: 14
+    bit_size: 1
+  - name: I2S4
+    description: desc I2S4.
+    bit_offset: 15
+    bit_size: 1
+  - name: SPI1
+    description: desc SPI1.
+    bit_offset: 16
+    bit_size: 1
+  - name: SPI2
+    description: desc SPI2.
+    bit_offset: 17
+    bit_size: 1
+  - name: SPI3
+    description: desc SPI3.
+    bit_offset: 18
+    bit_size: 1
+  - name: SPI4
+    description: desc SPI4.
+    bit_offset: 19
+    bit_size: 1
+  - name: SPI5
+    description: desc SPI5.
+    bit_offset: 20
+    bit_size: 1
+  - name: SPI6
+    description: desc SPI6.
+    bit_offset: 21
+    bit_size: 1
+  - name: USBFS
+    description: desc USBFS.
+    bit_offset: 22
+    bit_size: 1
+  - name: USBHS
+    description: desc USBHS.
+    bit_offset: 23
+    bit_size: 1
+  - name: FMAC1
+    description: desc FMAC1.
+    bit_offset: 24
+    bit_size: 1
+  - name: FMAC2
+    description: desc FMAC2.
+    bit_offset: 25
+    bit_size: 1
+  - name: FMAC3
+    description: desc FMAC3.
+    bit_offset: 26
+    bit_size: 1
+  - name: FMAC4
+    description: desc FMAC4.
+    bit_offset: 27
+    bit_size: 1
+fieldset/FCG2:
+  description: desc FCG2.
+  fields:
+  - name: TMR6_1
+    description: desc TMR6_1.
+    bit_offset: 0
+    bit_size: 1
+  - name: TMR6_2
+    description: desc TMR6_2.
+    bit_offset: 1
+    bit_size: 1
+  - name: TMR6_3
+    description: desc TMR6_3.
+    bit_offset: 2
+    bit_size: 1
+  - name: TMR6_4
+    description: desc TMR6_4.
+    bit_offset: 3
+    bit_size: 1
+  - name: TMR6_5
+    description: desc TMR6_5.
+    bit_offset: 4
+    bit_size: 1
+  - name: TMR6_6
+    description: desc TMR6_6.
+    bit_offset: 5
+    bit_size: 1
+  - name: TMR6_7
+    description: desc TMR6_7.
+    bit_offset: 6
+    bit_size: 1
+  - name: TMR6_8
+    description: desc TMR6_8.
+    bit_offset: 7
+    bit_size: 1
+  - name: TMR4_1
+    description: desc TMR4_1.
+    bit_offset: 8
+    bit_size: 1
+  - name: TMR4_2
+    description: desc TMR4_2.
+    bit_offset: 9
+    bit_size: 1
+  - name: TMR4_3
+    description: desc TMR4_3.
+    bit_offset: 10
+    bit_size: 1
+  - name: HRPWM
+    description: desc HRPWM.
+    bit_offset: 11
+    bit_size: 1
+  - name: TMR0_1
+    description: desc TMR0_1.
+    bit_offset: 12
+    bit_size: 1
+  - name: TMR0_2
+    description: desc TMR0_2.
+    bit_offset: 13
+    bit_size: 1
+  - name: EMB
+    description: desc EMB.
+    bit_offset: 15
+    bit_size: 1
+  - name: TMR2_1
+    description: desc TMR2_1.
+    bit_offset: 16
+    bit_size: 1
+  - name: TMR2_2
+    description: desc TMR2_2.
+    bit_offset: 17
+    bit_size: 1
+  - name: TMR2_3
+    description: desc TMR2_3.
+    bit_offset: 18
+    bit_size: 1
+  - name: TMR2_4
+    description: desc TMR2_4.
+    bit_offset: 19
+    bit_size: 1
+  - name: TMRA_1
+    description: desc TMRA_1.
+    bit_offset: 20
+    bit_size: 1
+  - name: TMRA_2
+    description: desc TMRA_2.
+    bit_offset: 21
+    bit_size: 1
+  - name: TMRA_3
+    description: desc TMRA_3.
+    bit_offset: 22
+    bit_size: 1
+  - name: TMRA_4
+    description: desc TMRA_4.
+    bit_offset: 23
+    bit_size: 1
+  - name: TMRA_5
+    description: desc TMRA_5.
+    bit_offset: 24
+    bit_size: 1
+  - name: TMRA_6
+    description: desc TMRA_6.
+    bit_offset: 25
+    bit_size: 1
+  - name: TMRA_7
+    description: desc TMRA_7.
+    bit_offset: 26
+    bit_size: 1
+  - name: TMRA_8
+    description: desc TMRA_8.
+    bit_offset: 27
+    bit_size: 1
+fieldset/FCG3:
+  description: desc FCG3.
+  fields:
+  - name: ADC1
+    description: desc ADC1.
+    bit_offset: 0
+    bit_size: 1
+  - name: ADC2
+    description: desc ADC2.
+    bit_offset: 1
+    bit_size: 1
+  - name: ADC3
+    description: desc ADC3.
+    bit_offset: 2
+    bit_size: 1
+  - name: CMBIAS
+    description: desc CMBIAS.
+    bit_offset: 3
+    bit_size: 1
+  - name: DAC1
+    description: desc DAC1.
+    bit_offset: 4
+    bit_size: 1
+  - name: CMP12
+    description: desc CMP12.
+    bit_offset: 8
+    bit_size: 1
+  - name: CMP3
+    description: desc CMP3.
+    bit_offset: 9
+    bit_size: 1
+  - name: OTS
+    description: desc OTS.
+    bit_offset: 12
+    bit_size: 1
+  - name: DVP
+    description: desc DVP.
+    bit_offset: 15
+    bit_size: 1
+  - name: SMC
+    description: desc SMC.
+    bit_offset: 16
+    bit_size: 1
+  - name: DMC
+    description: desc DMC.
+    bit_offset: 17
+    bit_size: 1
+  - name: NFC
+    description: desc NFC.
+    bit_offset: 18
+    bit_size: 1
+  - name: USART1
+    description: desc USART1.
+    bit_offset: 20
+    bit_size: 1
+  - name: USART2
+    description: desc USART2.
+    bit_offset: 21
+    bit_size: 1
+  - name: USART3
+    description: desc USART3.
+    bit_offset: 22
+    bit_size: 1
+  - name: USART4
+    description: desc USART4.
+    bit_offset: 23
+    bit_size: 1
+  - name: USART5
+    description: desc USART5.
+    bit_offset: 24
+    bit_size: 1
+  - name: USART6
+    description: desc USART6.
+    bit_offset: 25
+    bit_size: 1
+  - name: USART7
+    description: desc USART7.
+    bit_offset: 26
+    bit_size: 1
+  - name: USART10
+    description: desc USART10.
+    bit_offset: 29
+    bit_size: 1
+fieldset/FPRC:
+  description: desc FPRC.
+  bit_size: 16
+  fields:
+  - name: FPRCB0
+    description: desc FPRCB0.
+    bit_offset: 0
+    bit_size: 1
+  - name: FPRCB1
+    description: desc FPRCB1.
+    bit_offset: 1
+    bit_size: 1
+  - name: FPRCB2
+    description: desc FPRCB2.
+    bit_offset: 2
+    bit_size: 1
+  - name: FPRCB3
+    description: desc FPRCB3.
+    bit_offset: 3
+    bit_size: 1
+  - name: FPRCWE
+    description: desc FPRCWE.
+    bit_offset: 8
+    bit_size: 8
+fieldset/PDWKE0:
+  description: desc PDWKE0.
+  bit_size: 8
+  fields:
+  - name: WKE00
+    description: desc WKE00.
+    bit_offset: 0
+    bit_size: 1
+  - name: WKE01
+    description: desc WKE01.
+    bit_offset: 1
+    bit_size: 1
+  - name: WKE02
+    description: desc WKE02.
+    bit_offset: 2
+    bit_size: 1
+  - name: WKE03
+    description: desc WKE03.
+    bit_offset: 3
+    bit_size: 1
+  - name: WKE10
+    description: desc WKE10.
+    bit_offset: 4
+    bit_size: 1
+  - name: WKE11
+    description: desc WKE11.
+    bit_offset: 5
+    bit_size: 1
+  - name: WKE12
+    description: desc WKE12.
+    bit_offset: 6
+    bit_size: 1
+  - name: WKE13
+    description: desc WKE13.
+    bit_offset: 7
+    bit_size: 1
+fieldset/PDWKE1:
+  description: desc PDWKE1.
+  bit_size: 8
+  fields:
+  - name: WKE20
+    description: desc WKE20.
+    bit_offset: 0
+    bit_size: 1
+  - name: WKE21
+    description: desc WKE21.
+    bit_offset: 1
+    bit_size: 1
+  - name: WKE22
+    description: desc WKE22.
+    bit_offset: 2
+    bit_size: 1
+  - name: WKE23
+    description: desc WKE23.
+    bit_offset: 3
+    bit_size: 1
+  - name: WKE30
+    description: desc WKE30.
+    bit_offset: 4
+    bit_size: 1
+  - name: WKE31
+    description: desc WKE31.
+    bit_offset: 5
+    bit_size: 1
+  - name: WKE32
+    description: desc WKE32.
+    bit_offset: 6
+    bit_size: 1
+  - name: WKE33
+    description: desc WKE33.
+    bit_offset: 7
+    bit_size: 1
+fieldset/PDWKE2:
+  description: desc PDWKE2.
+  bit_size: 8
+  fields:
+  - name: VD1WKE
+    description: desc VD1WKE.
+    bit_offset: 0
+    bit_size: 1
+  - name: VD2WKE
+    description: desc VD2WKE.
+    bit_offset: 1
+    bit_size: 1
+  - name: RTCPRDWKE
+    description: desc RTCPRDWKE.
+    bit_offset: 4
+    bit_size: 1
+  - name: RTCALMWKE
+    description: desc RTCALMWKE.
+    bit_offset: 5
+    bit_size: 1
+  - name: WKTMWKE
+    description: desc WKTMWKE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/PDWKES:
+  description: desc PDWKES.
+  bit_size: 8
+  fields:
+  - name: WK0EGS
+    description: desc WK0EGS.
+    bit_offset: 0
+    bit_size: 1
+  - name: WK1EGS
+    description: desc WK1EGS.
+    bit_offset: 1
+    bit_size: 1
+  - name: WK2EGS
+    description: desc WK2EGS.
+    bit_offset: 2
+    bit_size: 1
+  - name: WK3EGS
+    description: desc WK3EGS.
+    bit_offset: 3
+    bit_size: 1
+  - name: VD1EGS
+    description: desc VD1EGS.
+    bit_offset: 4
+    bit_size: 1
+  - name: VD2EGS
+    description: desc VD2EGS.
+    bit_offset: 5
+    bit_size: 1
+fieldset/PDWKF0:
+  description: desc PDWKF0.
+  bit_size: 8
+  fields:
+  - name: PTWK0F
+    description: desc PTWK0F.
+    bit_offset: 0
+    bit_size: 1
+  - name: PTWK1F
+    description: desc PTWK1F.
+    bit_offset: 1
+    bit_size: 1
+  - name: PTWK2F
+    description: desc PTWK2F.
+    bit_offset: 2
+    bit_size: 1
+  - name: PTWK3F
+    description: desc PTWK3F.
+    bit_offset: 3
+    bit_size: 1
+  - name: VD1WKF
+    description: desc VD1WKF.
+    bit_offset: 4
+    bit_size: 1
+  - name: VD2WKF
+    description: desc VD2WKF.
+    bit_offset: 5
+    bit_size: 1
+fieldset/PDWKF1:
+  description: desc PDWKF1.
+  bit_size: 8
+  fields:
+  - name: RXD0WKF
+    description: desc RXD0WKF.
+    bit_offset: 3
+    bit_size: 1
+  - name: RTCPRDWKF
+    description: desc RTCPRDWKF.
+    bit_offset: 4
+    bit_size: 1
+  - name: RTCALMWKF
+    description: desc RTCALMWKF.
+    bit_offset: 5
+    bit_size: 1
+  - name: WKTMWKF
+    description: desc WKTMWKF.
+    bit_offset: 7
+    bit_size: 1
+fieldset/PRAMLPC:
+  description: desc PRAMLPC.
+  fields:
+  - name: PRAMPDC0
+    description: desc PRAMPDC0.
+    bit_offset: 0
+    bit_size: 1
+  - name: PRAMPDC1
+    description: desc PRAMPDC1.
+    bit_offset: 1
+    bit_size: 1
+  - name: PRAMPDC2
+    description: desc PRAMPDC2.
+    bit_offset: 2
+    bit_size: 1
+  - name: PRAMPDC3
+    description: desc PRAMPDC3.
+    bit_offset: 3
+    bit_size: 1
+  - name: PRAMPDC4
+    description: desc PRAMPDC4.
+    bit_offset: 4
+    bit_size: 1
+  - name: PRAMPDC5
+    description: desc PRAMPDC5.
+    bit_offset: 5
+    bit_size: 1
+  - name: PRAMPDC6
+    description: desc PRAMPDC6.
+    bit_offset: 6
+    bit_size: 1
+  - name: PRAMPDC7
+    description: desc PRAMPDC7.
+    bit_offset: 7
+    bit_size: 1
+  - name: PRAMPDC8
+    description: desc PRAMPDC8.
+    bit_offset: 8
+    bit_size: 1
+  - name: PRAMPDC9
+    description: desc PRAMPDC9.
+    bit_offset: 9
+    bit_size: 1
+fieldset/PVDCR0:
+  description: desc PVDCR0.
+  bit_size: 8
+  fields:
+  - name: EXVCCINEN
+    description: desc EXVCCINEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1EN
+    description: desc PVD1EN.
+    bit_offset: 5
+    bit_size: 1
+  - name: PVD2EN
+    description: desc PVD2EN.
+    bit_offset: 6
+    bit_size: 1
+fieldset/PVDCR1:
+  description: desc PVDCR1.
+  bit_size: 8
+  fields:
+  - name: PVD1IRE
+    description: desc PVD1IRE.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1IRS
+    description: desc PVD1IRS.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD1CMPOE
+    description: desc PVD1CMPOE.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD2IRE
+    description: desc PVD2IRE.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2IRS
+    description: desc PVD2IRS.
+    bit_offset: 5
+    bit_size: 1
+  - name: PVD2CMPOE
+    description: desc PVD2CMPOE.
+    bit_offset: 6
+    bit_size: 1
+fieldset/PVDDSR:
+  description: desc PVDDSR.
+  bit_size: 8
+  fields:
+  - name: PVD1MON
+    description: desc PVD1MON.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1DETFLG
+    description: desc PVD1DETFLG.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD2MON
+    description: desc PVD2MON.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2DETFLG
+    description: desc PVD2DETFLG.
+    bit_offset: 5
+    bit_size: 1
+fieldset/PVDFCR:
+  description: desc PVDFCR.
+  bit_size: 8
+  fields:
+  - name: PVD1NFDIS
+    description: desc PVD1NFDIS.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1NFCKS
+    description: desc PVD1NFCKS.
+    bit_offset: 1
+    bit_size: 2
+  - name: PVD2NFDIS
+    description: desc PVD2NFDIS.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2NFCKS
+    description: desc PVD2NFCKS.
+    bit_offset: 5
+    bit_size: 2
+fieldset/PVDICR:
+  description: desc PVDICR.
+  bit_size: 8
+  fields:
+  - name: PVD1NMIS
+    description: desc PVD1NMIS.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1EDGS
+    description: desc PVD1EDGS.
+    bit_offset: 1
+    bit_size: 2
+  - name: PVD2NMIS
+    description: desc PVD2NMIS.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2EDGS
+    description: desc PVD2EDGS.
+    bit_offset: 5
+    bit_size: 2
+fieldset/PVDLCR:
+  description: desc PVDLCR.
+  bit_size: 8
+  fields:
+  - name: PVD1LVL
+    description: desc PVD1LVL.
+    bit_offset: 0
+    bit_size: 3
+  - name: PVD2LVL
+    description: desc PVD2LVL.
+    bit_offset: 4
+    bit_size: 3
+fieldset/PWRC0:
+  description: desc PWRC0.
+  bit_size: 8
+  fields:
+  - name: PDMDS
+    description: desc PDMDS.
+    bit_offset: 0
+    bit_size: 2
+  - name: IORTN
+    description: desc IORTN.
+    bit_offset: 4
+    bit_size: 2
+  - name: PWDN
+    description: desc PWDN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/PWRC1:
+  description: desc PWRC1.
+  bit_size: 8
+  fields:
+  - name: VPLLSD
+    description: desc VPLLSD.
+    bit_offset: 0
+    bit_size: 2
+  - name: VHRCSD
+    description: desc VHRCSD.
+    bit_offset: 2
+    bit_size: 1
+  - name: PDTS
+    description: desc PDTS.
+    bit_offset: 3
+    bit_size: 1
+  - name: STPDAS
+    description: desc STPDAS.
+    bit_offset: 6
+    bit_size: 2
+fieldset/PWRC2:
+  description: desc PWRC2.
+  bit_size: 8
+  fields:
+  - name: DDAS
+    description: desc DDAS.
+    bit_offset: 0
+    bit_size: 4
+  - name: DVS
+    description: desc DVS.
+    bit_offset: 4
+    bit_size: 2
+fieldset/PWRC3:
+  description: desc PWRC3.
+  bit_size: 8
+  fields:
+  - name: DDAS
+    description: desc DDAS.
+    bit_offset: 0
+    bit_size: 8
+fieldset/PWRC4:
+  description: desc PWRC4.
+  bit_size: 8
+  fields:
+  - name: VBATREFSEL
+    description: desc VBATREFSEL.
+    bit_offset: 0
+    bit_size: 1
+  - name: VBATME
+    description: desc VBATME.
+    bit_offset: 1
+    bit_size: 1
+  - name: VBATMON
+    description: desc VBATMON.
+    bit_offset: 4
+    bit_size: 1
+  - name: ADBUFS
+    description: desc ADBUFS.
+    bit_offset: 6
+    bit_size: 1
+  - name: ADBUFE
+    description: desc ADBUFE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/RAMPC0:
+  description: desc RAMPC0.
+  fields:
+  - name: RAMPDC0
+    description: desc RAMPDC0.
+    bit_offset: 0
+    bit_size: 1
+  - name: RAMPDC1
+    description: desc RAMPDC1.
+    bit_offset: 1
+    bit_size: 1
+  - name: RAMPDC2
+    description: desc RAMPDC2.
+    bit_offset: 2
+    bit_size: 1
+  - name: RAMPDC3
+    description: desc RAMPDC3.
+    bit_offset: 3
+    bit_size: 1
+  - name: RAMPDC4
+    description: desc RAMPDC4.
+    bit_offset: 4
+    bit_size: 1
+  - name: RAMPDC5
+    description: desc RAMPDC5.
+    bit_offset: 5
+    bit_size: 1
+  - name: RAMPDC6
+    description: desc RAMPDC6.
+    bit_offset: 6
+    bit_size: 1
+  - name: RAMPDC7
+    description: desc RAMPDC7.
+    bit_offset: 7
+    bit_size: 1
+  - name: RAMPDC8
+    description: desc RAMPDC8.
+    bit_offset: 8
+    bit_size: 1
+  - name: RAMPDC9
+    description: desc RAMPDC9.
+    bit_offset: 9
+    bit_size: 1
+  - name: RAMPDC10
+    description: desc RAMPDC10.
+    bit_offset: 10
+    bit_size: 1
+fieldset/STPMCR:
+  description: desc STPMCR.
+  bit_size: 16
+  fields:
+  - name: FLNWT
+    description: desc FLNWT.
+    bit_offset: 0
+    bit_size: 1
+  - name: CKSMRC
+    description: desc CKSMRC.
+    bit_offset: 1
+    bit_size: 1
+  - name: EXBUSOE
+    description: desc EXBUSOE.
+    bit_offset: 14
+    bit_size: 1
+  - name: STOP
+    description: desc STOP.
+    bit_offset: 15
+    bit_size: 1
+fieldset/VBATCR:
+  description: desc VBATCR.
+  bit_size: 8
+  fields:
+  - name: VBTRSD
+    description: desc VBTRSD.
+    bit_offset: 0
+    bit_size: 1
+  - name: RAMVALID
+    description: desc RAMVALID.
+    bit_offset: 1
+    bit_size: 1
+  - name: RAMPDF
+    description: desc RAMPDF.
+    bit_offset: 2
+    bit_size: 1
+  - name: VBATDIVMONE
+    description: desc VBATDIVMONE.
+    bit_offset: 3
+    bit_size: 1
+  - name: CSDIS
+    description: desc CSDIS.
+    bit_offset: 7
+    bit_size: 1
+fieldset/WKTC0:
+  description: desc WKTC0.
+  bit_size: 8
+  fields:
+  - name: WKTMCMP
+    description: desc WKTMCMP.
+    bit_offset: 0
+    bit_size: 8
+fieldset/WKTC1:
+  description: desc WKTC1.
+  bit_size: 8
+  fields:
+  - name: WKTMCMP
+    description: desc WKTMCMP.
+    bit_offset: 0
+    bit_size: 4
+fieldset/WKTC2:
+  description: desc WKTC2.
+  bit_size: 8
+  fields:
+  - name: WKOVF
+    description: desc WKOVF.
+    bit_offset: 4
+    bit_size: 1
+  - name: WKCKS
+    description: desc WKCKS.
+    bit_offset: 5
+    bit_size: 2
+  - name: WKTCE
+    description: desc WKTCE.
+    bit_offset: 7
+    bit_size: 1

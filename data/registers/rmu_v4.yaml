@@ -1,0 +1,93 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A0/RMU；覆盖系列：HC32A4A0, HC32F467, HC32F4A0, HC32F4A2。
+block/RMU:
+  description: desc RMU.
+  items:
+  - name: PRSTCR0
+    description: desc PRSTCR0.
+    byte_offset: 248
+    bit_size: 8
+    fieldset: PRSTCR0
+  - name: RSTF0
+    description: desc RSTF0.
+    byte_offset: 252
+    fieldset: RSTF0
+fieldset/PRSTCR0:
+  description: desc PRSTCR0.
+  bit_size: 8
+  fields:
+  - name: LKUPREN
+    description: desc LKUPREN.
+    bit_offset: 5
+    bit_size: 1
+fieldset/RSTF0:
+  description: desc RSTF0.
+  fields:
+  - name: PORF
+    description: desc PORF.
+    bit_offset: 0
+    bit_size: 1
+  - name: PINRF
+    description: desc PINRF.
+    bit_offset: 1
+    bit_size: 1
+  - name: BORF
+    description: desc BORF.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD1RF
+    description: desc PVD1RF.
+    bit_offset: 3
+    bit_size: 1
+  - name: PVD2RF
+    description: desc PVD2RF.
+    bit_offset: 4
+    bit_size: 1
+  - name: WDRF
+    description: desc WDRF.
+    bit_offset: 5
+    bit_size: 1
+  - name: SWDRF
+    description: desc SWDRF.
+    bit_offset: 6
+    bit_size: 1
+  - name: PDRF
+    description: desc PDRF.
+    bit_offset: 7
+    bit_size: 1
+  - name: SWRF
+    description: desc SWRF.
+    bit_offset: 8
+    bit_size: 1
+  - name: MPUERF
+    description: desc MPUERF.
+    bit_offset: 9
+    bit_size: 1
+  - name: RAPERF
+    description: desc RAPERF.
+    bit_offset: 10
+    bit_size: 1
+  - name: RAECRF
+    description: desc RAECRF.
+    bit_offset: 11
+    bit_size: 1
+  - name: CKFERF
+    description: desc CKFERF.
+    bit_offset: 12
+    bit_size: 1
+  - name: XTALERF
+    description: desc XTALERF.
+    bit_offset: 13
+    bit_size: 1
+  - name: LKUPRF
+    description: desc LKUPRF.
+    bit_offset: 14
+    bit_size: 1
+  - name: MULTIRF
+    description: desc MULTIRF.
+    bit_offset: 30
+    bit_size: 1
+  - name: CLRF
+    description: desc CLRF.
+    bit_offset: 31
+    bit_size: 1

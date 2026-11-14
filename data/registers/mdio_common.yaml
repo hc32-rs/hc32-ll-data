@@ -1,0 +1,266 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/MDIO；覆盖系列：HC32A472, HC32F472。
+block/MDIO:
+  description: desc MDIO.
+  items:
+  - name: MDCON
+    description: desc MDCON.
+    byte_offset: 0
+    fieldset: MDCON
+  - name: MDCON1
+    description: desc MDCON1.
+    byte_offset: 4
+    fieldset: MDCON1
+  - name: MDFRM
+    description: desc MDFRM.
+    byte_offset: 8
+    access: Read
+    fieldset: MDFRM
+  - name: MDRXD
+    description: desc MDRXD.
+    byte_offset: 12
+    access: Read
+    fieldset: MDRXD
+  - name: MDADR
+    description: desc MDADR.
+    byte_offset: 16
+    access: Read
+    fieldset: MDADR
+  - name: MDTXD
+    description: desc MDTXD.
+    byte_offset: 20
+    fieldset: MDTXD
+  - name: MDPHY
+    description: desc MDPHY.
+    byte_offset: 24
+    fieldset: MDPHY
+  - name: MDSTA
+    description: desc MDSTA.
+    byte_offset: 28
+    fieldset: MDSTA
+  - name: MDIEN
+    description: desc MDIEN.
+    byte_offset: 32
+    fieldset: MDIEN
+  - name: MDPIN
+    description: desc MDPIN.
+    byte_offset: 36
+    access: Read
+    fieldset: MDPIN
+  - name: MDTO
+    description: desc MDTO.
+    byte_offset: 40
+    fieldset: MDTO
+fieldset/MDADR:
+  description: desc MDADR.
+  fields:
+  - name: MD_ADR
+    description: desc MD_ADR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/MDCON:
+  description: desc MDCON.
+  fields:
+  - name: MD_RST
+    description: desc MD_RST.
+    bit_offset: 0
+    bit_size: 1
+  - name: MD_PHYB
+    description: desc MD_PHYB.
+    bit_offset: 1
+    bit_size: 1
+fieldset/MDCON1:
+  description: desc MDCON1.
+  fields:
+  - name: MD_MSDEV
+    description: desc MD_MSDEV.
+    bit_offset: 0
+    bit_size: 1
+  - name: SEL_EDGE
+    description: desc SEL_EDGE.
+    bit_offset: 2
+    bit_size: 1
+  - name: MD_EN
+    description: desc MD_EN.
+    bit_offset: 3
+    bit_size: 1
+fieldset/MDFRM:
+  description: desc MDFRM.
+  fields:
+  - name: MD_ROP
+    description: desc MD_ROP.
+    bit_offset: 0
+    bit_size: 2
+  - name: MD_RPHYAD
+    description: desc MD_RPHYAD.
+    bit_offset: 2
+    bit_size: 5
+  - name: MD_RDEVAD
+    description: desc MD_RDEVAD.
+    bit_offset: 7
+    bit_size: 5
+  - name: MD_RTA
+    description: desc MD_RTA.
+    bit_offset: 12
+    bit_size: 2
+fieldset/MDIEN:
+  description: desc MDIEN.
+  fields:
+  - name: MD_WRFIE
+    description: desc MD_WRFIE.
+    bit_offset: 0
+    bit_size: 1
+  - name: MD_ADRFIE
+    description: desc MD_ADRFIE.
+    bit_offset: 1
+    bit_size: 1
+  - name: MD_INCFIE
+    description: desc MD_INCFIE.
+    bit_offset: 2
+    bit_size: 1
+  - name: MD_RDFIE
+    description: desc MD_RDFIE.
+    bit_offset: 3
+    bit_size: 1
+  - name: MD_DEVMIE
+    description: desc MD_DEVMIE.
+    bit_offset: 4
+    bit_size: 1
+  - name: MD_DEVNIE
+    description: desc MD_DEVNIE.
+    bit_offset: 5
+    bit_size: 1
+  - name: MD_PHYMIE
+    description: desc MD_PHYMIE.
+    bit_offset: 6
+    bit_size: 1
+  - name: MD_PHYNIE
+    description: desc MD_PHYNIE.
+    bit_offset: 7
+    bit_size: 1
+  - name: MD_TANMIE
+    description: desc MD_TANMIE.
+    bit_offset: 8
+    bit_size: 1
+  - name: MD_TOIE
+    description: desc MD_TOIE.
+    bit_offset: 9
+    bit_size: 1
+  - name: MD_UDRIE
+    description: desc MD_UDRIE.
+    bit_offset: 10
+    bit_size: 1
+  - name: MD_OVRIE
+    description: desc MD_OVRIE.
+    bit_offset: 11
+    bit_size: 1
+  - name: MD_RBNEIE
+    description: desc MD_RBNEIE.
+    bit_offset: 12
+    bit_size: 1
+fieldset/MDPHY:
+  description: desc MDPHY.
+  fields:
+  - name: MD_PHYSW
+    description: desc MD_PHYSW.
+    bit_offset: 0
+    bit_size: 5
+  - name: MD_PHYSEL
+    description: desc MD_PHYSEL.
+    bit_offset: 5
+    bit_size: 5
+  - name: MD_DEVADD
+    description: desc MD_DEVADD.
+    bit_offset: 10
+    bit_size: 5
+fieldset/MDPIN:
+  description: desc MDPIN.
+  fields:
+  - name: MD_PIN
+    description: desc MD_PIN.
+    bit_offset: 0
+    bit_size: 5
+fieldset/MDRXD:
+  description: desc MDRXD.
+  fields:
+  - name: MD_RXD
+    description: desc MD_RXD.
+    bit_offset: 0
+    bit_size: 16
+fieldset/MDSTA:
+  description: desc MDSTA.
+  fields:
+  - name: MD_WRF
+    description: desc MD_WRF.
+    bit_offset: 0
+    bit_size: 1
+  - name: MD_ADRF
+    description: desc MD_ADRF.
+    bit_offset: 1
+    bit_size: 1
+  - name: MD_INCF
+    description: desc MD_INCF.
+    bit_offset: 2
+    bit_size: 1
+  - name: MD_RDF
+    description: desc MD_RDF.
+    bit_offset: 3
+    bit_size: 1
+  - name: MD_DEVM
+    description: desc MD_DEVM.
+    bit_offset: 4
+    bit_size: 1
+  - name: MD_DEVN
+    description: desc MD_DEVN.
+    bit_offset: 5
+    bit_size: 1
+  - name: MD_PHYM
+    description: desc MD_PHYM.
+    bit_offset: 6
+    bit_size: 1
+  - name: MD_PHYN
+    description: desc MD_PHYN.
+    bit_offset: 7
+    bit_size: 1
+  - name: MD_TANM
+    description: desc MD_TANM.
+    bit_offset: 8
+    bit_size: 1
+  - name: MD_TO
+    description: desc MD_TO.
+    bit_offset: 9
+    bit_size: 1
+  - name: MD_UDR
+    description: desc MD_UDR.
+    bit_offset: 10
+    bit_size: 1
+  - name: MD_OVR
+    description: desc MD_OVR.
+    bit_offset: 11
+    bit_size: 1
+  - name: MD_RBNE
+    description: desc MD_RBNE.
+    bit_offset: 12
+    bit_size: 1
+  - name: MD_BUSY
+    description: desc MD_BUSY.
+    bit_offset: 16
+    bit_size: 1
+fieldset/MDTO:
+  description: desc MDTO.
+  fields:
+  - name: TOCNT
+    description: desc TOCNT.
+    bit_offset: 0
+    bit_size: 16
+  - name: TOEN
+    description: desc TOEN.
+    bit_offset: 16
+    bit_size: 1
+fieldset/MDTXD:
+  description: desc MDTXD.
+  fields:
+  - name: MD_TXD
+    description: desc MD_TXD.
+    bit_offset: 0
+    bit_size: 16

@@ -1,0 +1,286 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F431/PWC；覆盖系列：HC32F431, HC32M413。
+block/PWC:
+  description: desc PWC.
+  items:
+  - name: STPMCR
+    description: desc STPMCR.
+    byte_offset: 0
+    bit_size: 8
+    fieldset: STPMCR
+  - name: RAMCR
+    description: desc RAMCR.
+    byte_offset: 12
+    bit_size: 8
+    fieldset: RAMCR
+  - name: PVDCR0
+    description: desc PVDCR0.
+    byte_offset: 16
+    bit_size: 8
+    fieldset: PVDCR0
+  - name: PVDCR1
+    description: desc PVDCR1.
+    byte_offset: 20
+    bit_size: 8
+    fieldset: PVDCR1
+  - name: PVDFCR
+    description: desc PVDFCR.
+    byte_offset: 24
+    bit_size: 8
+    fieldset: PVDFCR
+  - name: PVDLCR
+    description: desc PVDLCR.
+    byte_offset: 28
+    bit_size: 8
+    fieldset: PVDLCR
+  - name: PVDICR
+    description: desc PVDICR.
+    byte_offset: 32
+    bit_size: 8
+    fieldset: PVDICR
+  - name: PVDDSR
+    description: desc PVDDSR.
+    byte_offset: 36
+    bit_size: 8
+    fieldset: PVDDSR
+  - name: FPRC
+    description: desc FPRC.
+    byte_offset: 48
+    bit_size: 16
+    fieldset: FPRC
+  - name: DBGC
+    description: desc DBGC.
+    byte_offset: 64
+    bit_size: 16
+    fieldset: DBGC
+  - name: LPMCSR
+    description: desc LPMCSR.
+    byte_offset: 80
+    access: Read
+    bit_size: 16
+    fieldset: LPMCSR
+  - name: LPMCSCR
+    description: desc LPMCSCR.
+    byte_offset: 82
+    bit_size: 16
+    fieldset: LPMCSCR
+fieldset/DBGC:
+  description: desc DBGC.
+  bit_size: 16
+  fields:
+  - name: DBGEN
+    description: desc DBGEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/FPRC:
+  description: desc FPRC.
+  bit_size: 16
+  fields:
+  - name: FPRCB0
+    description: desc FPRCB0.
+    bit_offset: 0
+    bit_size: 1
+  - name: FPRCB1
+    description: desc FPRCB1.
+    bit_offset: 1
+    bit_size: 1
+  - name: FPRCB2
+    description: desc FPRCB2.
+    bit_offset: 2
+    bit_size: 1
+  - name: FPRCB3
+    description: desc FPRCB3.
+    bit_offset: 3
+    bit_size: 1
+  - name: FPRCB4
+    description: desc FPRCB4.
+    bit_offset: 4
+    bit_size: 1
+  - name: FPRCB5
+    description: desc FPRCB5.
+    bit_offset: 5
+    bit_size: 1
+  - name: FPRCB6
+    description: desc FPRCB6.
+    bit_offset: 6
+    bit_size: 1
+  - name: FPRCB7
+    description: desc FPRCB7.
+    bit_offset: 7
+    bit_size: 1
+  - name: FPRCWE
+    description: desc FPRCWE.
+    bit_offset: 8
+    bit_size: 8
+fieldset/LPMCSCR:
+  description: desc LPMCSCR.
+  bit_size: 16
+  fields:
+  - name: LPMFC
+    description: desc LPMFC.
+    bit_offset: 0
+    bit_size: 1
+fieldset/LPMCSR:
+  description: desc LPMCSR.
+  bit_size: 16
+  fields:
+  - name: LPMF
+    description: desc LPMF.
+    bit_offset: 0
+    bit_size: 1
+fieldset/PVDCR0:
+  description: desc PVDCR0.
+  bit_size: 8
+  fields:
+  - name: EXVCCINEN
+    description: desc EXVCCINEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1EN
+    description: desc PVD1EN.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2EN
+    description: desc PVD2EN.
+    bit_offset: 5
+    bit_size: 1
+fieldset/PVDCR1:
+  description: desc PVDCR1.
+  bit_size: 8
+  fields:
+  - name: PVD1IRE
+    description: desc PVD1IRE.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1IRS
+    description: desc PVD1IRS.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD1CMPOE
+    description: desc PVD1CMPOE.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD2IRE
+    description: desc PVD2IRE.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2IRS
+    description: desc PVD2IRS.
+    bit_offset: 5
+    bit_size: 1
+  - name: PVD2CMPOE
+    description: desc PVD2CMPOE.
+    bit_offset: 6
+    bit_size: 1
+fieldset/PVDDSR:
+  description: desc PVDDSR.
+  bit_size: 8
+  fields:
+  - name: PVD1MON
+    description: desc PVD1MON.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1DETFLG
+    description: desc PVD1DETFLG.
+    bit_offset: 1
+    bit_size: 1
+  - name: PVD2MON
+    description: desc PVD2MON.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2DETFLG
+    description: desc PVD2DETFLG.
+    bit_offset: 5
+    bit_size: 1
+fieldset/PVDFCR:
+  description: desc PVDFCR.
+  bit_size: 8
+  fields:
+  - name: PVD1NFDIS
+    description: desc PVD1NFDIS.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1NFCKS
+    description: desc PVD1NFCKS.
+    bit_offset: 1
+    bit_size: 2
+  - name: PVD2NFDIS
+    description: desc PVD2NFDIS.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2NFCKS
+    description: desc PVD2NFCKS.
+    bit_offset: 5
+    bit_size: 2
+fieldset/PVDICR:
+  description: desc PVDICR.
+  bit_size: 8
+  fields:
+  - name: PVD1NMIS
+    description: desc PVD1NMIS.
+    bit_offset: 0
+    bit_size: 1
+  - name: PVD1EDGS
+    description: desc PVD1EDGS.
+    bit_offset: 1
+    bit_size: 2
+  - name: PVD2NMIS
+    description: desc PVD2NMIS.
+    bit_offset: 4
+    bit_size: 1
+  - name: PVD2EDGS
+    description: desc PVD2EDGS.
+    bit_offset: 5
+    bit_size: 2
+fieldset/PVDLCR:
+  description: desc PVDLCR.
+  bit_size: 8
+  fields:
+  - name: PVD1LVL
+    description: desc PVD1LVL.
+    bit_offset: 0
+    bit_size: 4
+  - name: PVD2LVL
+    description: desc PVD2LVL.
+    bit_offset: 4
+    bit_size: 4
+fieldset/RAMCR:
+  description: desc RAMCR.
+  bit_size: 8
+  fields:
+  - name: RPERDIS
+    description: desc RPERDIS.
+    bit_offset: 4
+    bit_size: 1
+  - name: SRPEF
+    description: desc SRPEF.
+    bit_offset: 5
+    bit_size: 1
+  - name: HRPEF
+    description: desc HRPEF.
+    bit_offset: 6
+    bit_size: 1
+  - name: CRPEF
+    description: desc CRPEF.
+    bit_offset: 7
+    bit_size: 1
+fieldset/STPMCR:
+  description: desc STPMCR.
+  bit_size: 8
+  fields:
+  - name: FLNWT
+    description: desc FLNWT.
+    bit_offset: 0
+    bit_size: 1
+  - name: CKSMRC
+    description: desc CKSMRC.
+    bit_offset: 1
+    bit_size: 1
+  - name: HPBGREN
+    description: desc HPBGREN.
+    bit_offset: 3
+    bit_size: 1
+  - name: STOP
+    description: desc STOP.
+    bit_offset: 7
+    bit_size: 1

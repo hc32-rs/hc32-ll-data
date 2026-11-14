@@ -1,0 +1,212 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M458/SPI1；覆盖系列：HC32M458。
+block/SPI:
+  description: desc SPI.
+  items:
+  - name: DR
+    description: desc DR.
+    byte_offset: 0
+  - name: CR
+    description: desc CR.
+    byte_offset: 4
+    fieldset: CR
+  - name: CFG1
+    description: desc CFG1.
+    byte_offset: 12
+    fieldset: CFG1
+  - name: SR
+    description: desc SR.
+    byte_offset: 20
+    fieldset: SR
+  - name: CFG2
+    description: desc CFG2.
+    byte_offset: 24
+    fieldset: CFG2
+fieldset/CFG1:
+  description: desc CFG1.
+  fields:
+  - name: FTHLV
+    description: desc FTHLV.
+    bit_offset: 0
+    bit_size: 2
+  - name: CTMDS
+    description: desc CTMDS.
+    bit_offset: 2
+    bit_size: 1
+  - name: SPRDTD
+    description: desc SPRDTD.
+    bit_offset: 6
+    bit_size: 1
+  - name: SS0PV
+    description: desc SS0PV.
+    bit_offset: 8
+    bit_size: 1
+  - name: SS1PV
+    description: desc SS1PV.
+    bit_offset: 9
+    bit_size: 1
+  - name: SS2PV
+    description: desc SS2PV.
+    bit_offset: 10
+    bit_size: 1
+  - name: SS3PV
+    description: desc SS3PV.
+    bit_offset: 11
+    bit_size: 1
+  - name: CLKDIV
+    description: desc CLKDIV.
+    bit_offset: 12
+    bit_size: 4
+  - name: MSSI
+    description: desc MSSI.
+    bit_offset: 20
+    bit_size: 3
+  - name: MSSDL
+    description: desc MSSDL.
+    bit_offset: 24
+    bit_size: 3
+  - name: MIDI
+    description: desc MIDI.
+    bit_offset: 28
+    bit_size: 3
+fieldset/CFG2:
+  description: desc CFG2.
+  fields:
+  - name: CPHA
+    description: desc CPHA.
+    bit_offset: 0
+    bit_size: 1
+  - name: CPOL
+    description: desc CPOL.
+    bit_offset: 1
+    bit_size: 1
+  - name: MBR
+    description: desc MBR.
+    bit_offset: 2
+    bit_size: 2
+  - name: SSA
+    description: desc SSA.
+    bit_offset: 5
+    bit_size: 3
+  - name: DSIZE
+    description: desc DSIZE.
+    bit_offset: 8
+    bit_size: 4
+  - name: LSBF
+    description: desc LSBF.
+    bit_offset: 12
+    bit_size: 1
+  - name: MIDIE
+    description: desc MIDIE.
+    bit_offset: 13
+    bit_size: 1
+  - name: MSSDLE
+    description: desc MSSDLE.
+    bit_offset: 14
+    bit_size: 1
+  - name: MSSIE
+    description: desc MSSIE.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: SPIMDS
+    description: desc SPIMDS.
+    bit_offset: 0
+    bit_size: 1
+  - name: TXMDS
+    description: desc TXMDS.
+    bit_offset: 1
+    bit_size: 1
+  - name: RXMDS
+    description: desc RXMDS.
+    bit_offset: 2
+    bit_size: 1
+  - name: MSTR
+    description: desc MSTR.
+    bit_offset: 3
+    bit_size: 1
+  - name: SPLPBK
+    description: desc SPLPBK.
+    bit_offset: 4
+    bit_size: 1
+  - name: SPLPBK2
+    description: desc SPLPBK2.
+    bit_offset: 5
+    bit_size: 1
+  - name: SPE
+    description: desc SPE.
+    bit_offset: 6
+    bit_size: 1
+  - name: CSUSPE
+    description: desc CSUSPE.
+    bit_offset: 7
+    bit_size: 1
+  - name: EIE
+    description: desc EIE.
+    bit_offset: 8
+    bit_size: 1
+  - name: TXIE
+    description: desc TXIE.
+    bit_offset: 9
+    bit_size: 1
+  - name: RXIE
+    description: desc RXIE.
+    bit_offset: 10
+    bit_size: 1
+  - name: IDIE
+    description: desc IDIE.
+    bit_offset: 11
+    bit_size: 1
+  - name: MODFE
+    description: desc MODFE.
+    bit_offset: 12
+    bit_size: 1
+  - name: PATE
+    description: desc PATE.
+    bit_offset: 13
+    bit_size: 1
+  - name: PAOE
+    description: desc PAOE.
+    bit_offset: 14
+    bit_size: 1
+  - name: PAE
+    description: desc PAE.
+    bit_offset: 15
+    bit_size: 1
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: OVRERF
+    description: desc OVRERF.
+    bit_offset: 0
+    bit_size: 1
+  - name: IDLNF
+    description: desc IDLNF.
+    bit_offset: 1
+    bit_size: 1
+  - name: MODFERF
+    description: desc MODFERF.
+    bit_offset: 2
+    bit_size: 1
+  - name: PERF
+    description: desc PERF.
+    bit_offset: 3
+    bit_size: 1
+  - name: UDRERF
+    description: desc UDRERF.
+    bit_offset: 4
+    bit_size: 1
+  - name: TDEF
+    description: desc TDEF.
+    bit_offset: 5
+    bit_size: 1
+  - name: FMIDLF
+    description: desc FMIDLF.
+    bit_offset: 6
+    bit_size: 1
+  - name: RDFF
+    description: desc RDFF.
+    bit_offset: 7
+    bit_size: 1

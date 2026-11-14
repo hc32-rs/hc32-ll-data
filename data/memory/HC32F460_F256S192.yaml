@@ -1,0 +1,19 @@
+# HC32F460 Flash 256K / SRAM 192K 的内存布局（型号：HC32F460JCTA, HC32F460KCTA, HC32F460PCTB…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 256K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x1FFF8000
+  size: 192K
+  access:
+    read: true
+    write: true
+    execute: true

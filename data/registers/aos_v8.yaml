@@ -1,0 +1,83 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F155/AOS；覆盖系列：HC32F155。
+block/AOS:
+  description: desc AOS.
+  items:
+  - name: INTC_STRGCR
+    description: desc INTC_STRGCR.
+    byte_offset: 0
+    access: Write
+    fieldset: INTC_STRGCR
+  - name: TMR0_TRGSEL
+    description: desc TMR0_TRGSEL.
+    byte_offset: 32
+    fieldset: TMR0_TRGSEL
+  - name: TMRB_TRGSEL
+    description: desc TMRB_TRGSEL.
+    byte_offset: 80
+    fieldset: TMRB_TRGSEL
+  - name: ADC_TRGSEL0
+    description: desc ADC_TRGSEL0.
+    byte_offset: 96
+    fieldset: ADC_TRGSEL0
+  - name: ADC_TRGSEL1
+    description: desc ADC_TRGSEL1.
+    byte_offset: 100
+    fieldset: ADC_TRGSEL1
+  - name: DMA_TRGSEL0
+    description: desc DMA_TRGSEL0.
+    byte_offset: 128
+    fieldset: DMA_TRGSEL0
+  - name: DMA_TRGSEL1
+    description: desc DMA_TRGSEL1.
+    byte_offset: 132
+    fieldset: DMA_TRGSEL1
+fieldset/ADC_TRGSEL0:
+  description: desc ADC_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/ADC_TRGSEL1:
+  description: desc ADC_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/DMA_TRGSEL0:
+  description: desc DMA_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/DMA_TRGSEL1:
+  description: desc DMA_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/INTC_STRGCR:
+  description: desc INTC_STRGCR.
+  fields:
+  - name: STRG
+    description: desc STRG.
+    bit_offset: 0
+    bit_size: 1
+fieldset/TMR0_TRGSEL:
+  description: desc TMR0_TRGSEL.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/TMRB_TRGSEL:
+  description: desc TMRB_TRGSEL.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7

@@ -1,0 +1,553 @@
+# HC32M458 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
+# 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
+- name: ADC1
+  address: 0x40040000
+  registers:
+    kind: adc
+    block: ADC
+    version: v25
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_ADC1
+  interrupts:
+  - signal: ADC1_EOCA
+    interrupt: ADC1_EOCA
+  - signal: ADC1_EOCB
+    interrupt: ADC1_EOCB
+  - signal: ADC1_EOCC
+    interrupt: ADC1_EOCC
+  - signal: ADC1_AWD01
+    interrupt: ADC1_AWD01
+- name: ADC2
+  address: 0x40040400
+  registers:
+    kind: adc
+    block: ADC
+    version: v26
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_ADC2
+  interrupts:
+  - signal: ADC2_EOCA
+    interrupt: ADC2_EOCA
+  - signal: ADC2_EOCB
+    interrupt: ADC2_EOCB
+  - signal: ADC2_EOCC
+    interrupt: ADC2_EOCC
+  - signal: ADC2_AWD01
+    interrupt: ADC2_AWD01
+- name: AOS
+  address: 0x40010800
+  registers:
+    kind: aos
+    block: AOS
+    version: v13
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_AOS
+- name: CMP1
+  address: 0x40038800
+  registers:
+    kind: cmp
+    block: CMP
+    version: v19
+  interrupts:
+  - signal: CMP1
+    interrupt: CMP1
+- name: CMP2
+  address: 0x40038800
+  registers:
+    kind: cmp
+    block: CMP
+    version: v19
+  interrupts:
+  - signal: CMP2
+    interrupt: CMP2
+- name: CMU
+  address: 0x40054000
+  registers:
+    kind: cmu
+    block: CMU
+    version: v14
+  interrupts:
+  - signal: XTAL_STOP_SWINT10
+    interrupt: XTAL_STOP_SWINT10
+- name: CRC
+  address: 0x40050400
+  registers:
+    kind: crc
+    block: CRC
+    version: v4
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_CRC
+- name: DBGC
+  address: 0xE0042000
+  registers:
+    kind: dbgc
+    block: DBGC
+    version: v15
+- name: DFM
+  address: 0x40050000
+  registers:
+    kind: dfm
+    block: DFM
+    version: v2
+  interrupts:
+  - signal: DFM_SWINT18
+    interrupt: DFM_SWINT18
+- name: DMA
+  address: 0x40053000
+  registers:
+    kind: dma
+    block: DMA
+    version: v12
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_DMA
+  interrupts:
+  - signal: DMA_TC0_BC0_SWINT14
+    interrupt: DMA_TC0_BC0_SWINT14
+  - signal: DMA_TC1_BTC1_SWINT15
+    interrupt: DMA_TC1_BTC1_SWINT15
+  - signal: DMA_ERR_SWINT16
+    interrupt: DMA_ERR_SWINT16
+- name: EFM
+  address: 0x40010400
+  registers:
+    kind: efm
+    block: EFM
+    version: v14
+  interrupts:
+  - signal: EFM_SWINT17
+    interrupt: EFM_SWINT17
+- name: EFM2
+  address: 0x1001C50
+  registers:
+    kind: efm
+    block: EFM
+    version: v15
+- name: EMB0
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v17
+  interrupts:
+  - signal: EMB
+    interrupt: EMB
+- name: EMB1
+  address: 0x40017C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v17
+- name: EMB2
+  address: 0x40017C40
+  registers:
+    kind: emb
+    block: EMB
+    version: v18
+- name: EMB3
+  address: 0x40017C40
+  registers:
+    kind: emb
+    block: EMB
+    version: v18
+- name: FCM
+  address: 0x40048400
+  registers:
+    kind: fcm
+    block: FCM
+    version: v4
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_FCM
+  interrupts:
+  - signal: FCM
+    interrupt: FCM
+- name: GPIO
+  address: 0x40053800
+  registers:
+    kind: gpio
+    block: GPIO
+    version: v15
+- name: I2C
+  address: 0x4003B400
+  registers:
+    kind: i
+    block: I
+    version: v16
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_I2C
+  interrupts:
+  - signal: I2C_RF_SE
+    interrupt: I2C_RF_SE
+  - signal: I2C_TC_Err
+    interrupt: I2C_TC_Err
+- name: ICG
+  address: 0x80000
+  registers:
+    kind: icg
+    block: ICG
+    version: v11
+- name: INTC
+  address: 0x40051000
+  registers:
+    kind: intc
+    block: INTC
+    version: v13
+  interrupts:
+  - signal: EXTINT0_SWINT0
+    interrupt: EXTINT0_SWINT0
+  - signal: EXTINT1_SWINT1
+    interrupt: EXTINT1_SWINT1
+  - signal: EXTINT2_SWINT2
+    interrupt: EXTINT2_SWINT2
+  - signal: EXTINT3_SWINT3
+    interrupt: EXTINT3_SWINT3
+  - signal: EXTINT4_SWINT4
+    interrupt: EXTINT4_SWINT4
+  - signal: EXTINT5_SWINT5
+    interrupt: EXTINT5_SWINT5
+  - signal: EXTINT6_SWINT6
+    interrupt: EXTINT6_SWINT6
+  - signal: EXTINT7_SWINT7
+    interrupt: EXTINT7_SWINT7
+  - signal: FPU_SWINT19
+    interrupt: FPU_SWINT19
+- name: MAU
+  address: 0x40054800
+  registers:
+    kind: mau
+    block: MAU
+    version: v4
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_MAU
+  interrupts:
+  - signal: MAU_SWINT20
+    interrupt: MAU_SWINT20
+- name: PERIC
+  address: 0x40055400
+  registers:
+    kind: peric
+    block: PERIC
+    version: v11
+- name: PWC
+  address: 0x40054400
+  registers:
+    kind: pwc
+    block: PWC
+    version: v15
+  interrupts:
+  - signal: LVD1_SWINT12
+    interrupt: LVD1_SWINT12
+  - signal: LVD2_SWINT13
+    interrupt: LVD2_SWINT13
+- name: RMU
+  address: 0x40054500
+  registers:
+    kind: rmu
+    block: RMU
+    version: v11
+- name: SPI1
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v8
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_SPI1
+  interrupts:
+  - signal: SPI1_RF_SE
+    interrupt: SPI1_RF_SE
+  - signal: SPI1_Idle_Err
+    interrupt: SPI1_Idle_Err
+- name: SPI2
+  address: 0x4001C000
+  registers:
+    kind: spi
+    block: SPI
+    version: v8
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_SPI2
+  interrupts:
+  - signal: SPI2_RF_SE
+    interrupt: SPI2_RF_SE
+  - signal: SPI2_Idle_Err
+    interrupt: SPI2_Idle_Err
+- name: SRAMC
+  address: 0x40050800
+  registers:
+    kind: sramc
+    block: SRAMC
+    version: v9
+- name: SWDT
+  address: 0x40049400
+  registers:
+    kind: swdt
+    block: SWDT
+    version: v1
+  interrupts:
+  - signal: SWDT_SWINT11
+    interrupt: SWDT_SWINT11
+- name: TMR01
+  address: 0x40024000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v39
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMR0_1
+  interrupts:
+  - signal: TMR0_1_SWINT8
+    interrupt: TMR0_1_SWINT8
+- name: TMR02
+  address: 0x40024000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v39
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMR0_2
+  interrupts:
+  - signal: TMR0_2_SWINT9
+    interrupt: TMR0_2_SWINT9
+- name: TMR41
+  address: 0x40038000
+  registers:
+    kind: tmr
+    block: TMR
+    version: v40
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMR4_1
+  interrupts:
+  - signal: TMR41_OVF_SWINT21
+    interrupt: TMR41_OVF_SWINT21
+  - signal: TMR41_UDF_SWINT22
+    interrupt: TMR41_UDF_SWINT22
+  - signal: TMR41_RELOAD_SWINT23
+    interrupt: TMR41_RELOAD_SWINT23
+  - signal: TMR41_GCM_SWINT24
+    interrupt: TMR41_GCM_SWINT24
+  - signal: TMR41_SCM_SWINT25
+    interrupt: TMR41_SCM_SWINT25
+- name: TMR42
+  address: 0x40038400
+  registers:
+    kind: tmr
+    block: TMR
+    version: v41
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMR4_2
+  interrupts:
+  - signal: TMR42_OVF
+    interrupt: TMR42_OVF
+  - signal: TMR42_UDF
+    interrupt: TMR42_UDF
+  - signal: TMR42_RELOAD
+    interrupt: TMR42_RELOAD
+  - signal: TMR42_GCM
+    interrupt: TMR42_GCM
+  - signal: TMR42_SCM
+    interrupt: TMR42_SCM
+- name: TMRA1
+  address: 0x4003A000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v17
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRA_1
+  interrupts:
+  - signal: TMRA1_OVF_SWINT26
+    interrupt: TMRA1_OVF_SWINT26
+  - signal: TMRA1_UDF_SWINT27
+    interrupt: TMRA1_UDF_SWINT27
+  - signal: TMRA1_CMP_SWINT28
+    interrupt: TMRA1_CMP_SWINT28
+- name: TMRA2
+  address: 0x4003A000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v17
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRA_2
+  interrupts:
+  - signal: TMRA2_OVF_SWINT29
+    interrupt: TMRA2_OVF_SWINT29
+  - signal: TMRA2_UDF_SWINT30
+    interrupt: TMRA2_UDF_SWINT30
+  - signal: TMRA2_CMP_SWINT31
+    interrupt: TMRA2_CMP_SWINT31
+- name: TMRA3
+  address: 0x4003A000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v17
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRA_3
+  interrupts:
+  - signal: TMRA3_OVF
+    interrupt: TMRA3_OVF
+  - signal: TMRA3_UDF
+    interrupt: TMRA3_UDF
+  - signal: TMRA3_CMP
+    interrupt: TMRA3_CMP
+- name: TMRA4
+  address: 0x4003A000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v17
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRA_4
+  interrupts:
+  - signal: TMRA4_OVF
+    interrupt: TMRA4_OVF
+  - signal: TMRA4_UDF
+    interrupt: TMRA4_UDF
+  - signal: TMRA4_CMP
+    interrupt: TMRA4_CMP
+- name: TMRA5
+  address: 0x4003A000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v17
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRA_5
+  interrupts:
+  - signal: TMRA5_OVF
+    interrupt: TMRA5_OVF
+  - signal: TMRA5_UDF
+    interrupt: TMRA5_UDF
+  - signal: TMRA5_CMP
+    interrupt: TMRA5_CMP
+- name: TRNG
+  address: 0x40042000
+  registers:
+    kind: trng
+    block: TRNG
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TRNG
+  interrupts:
+  - signal: TRNG
+    interrupt: TRNG
+- name: USART1
+  address: 0x4001CC00
+  registers:
+    kind: usart
+    block: USART
+    version: v35
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_USART1
+  interrupts:
+  - signal: USART1_RF_SE
+    interrupt: USART1_RF_SE
+  - signal: USART1_Err_Tend_Lin_Timeout
+    interrupt: USART1_Err_Tend_Lin_Timeout
+  - signal: USART1_TCI
+    interrupt: USART1_TCI
+  - signal: USART1_WKUP
+    interrupt: USART1_WKUP
+- name: USART2
+  address: 0x4001CC00
+  registers:
+    kind: usart
+    block: USART
+    version: v35
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_USART2
+  interrupts:
+  - signal: USART2_RF_SE
+    interrupt: USART2_RF_SE
+  - signal: USART2_Err_Tend_Lin_Timeout
+    interrupt: USART2_Err_Tend_Lin_Timeout
+  - signal: USART2_TCI
+    interrupt: USART2_TCI
+- name: USART3
+  address: 0x4001CC00
+  registers:
+    kind: usart
+    block: USART
+    version: v35
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_USART3
+  interrupts:
+  - signal: USART3_RF_SE
+    interrupt: USART3_RF_SE
+  - signal: USART3_Err_Tend_Lin_Timeout
+    interrupt: USART3_Err_Tend_Lin_Timeout
+  - signal: USART3_TCI
+    interrupt: USART3_TCI
+- name: USART4
+  address: 0x4001CC00
+  registers:
+    kind: usart
+    block: USART
+    version: v35
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_USART4
+  interrupts:
+  - signal: USART4_RF_SE
+    interrupt: USART4_RF_SE
+  - signal: USART4_Err_Tend_Lin_Timeout
+    interrupt: USART4_Err_Tend_Lin_Timeout
+  - signal: USART4_TCI
+    interrupt: USART4_TCI
+- name: WDT
+  address: 0x40049000
+  registers:
+    kind: wdt
+    block: WDT
+    version: common
+  interrupts:
+  - signal: WDT
+    interrupt: WDT

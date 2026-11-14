@@ -1,0 +1,158 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/CRC；覆盖系列：HC32A4A8, HC32F431, HC32F4A8, HC32M413, HC32M458。
+block/CRC:
+  description: desc CRC.
+  items:
+  - name: CR
+    description: desc CR.
+    byte_offset: 0
+    fieldset: CR
+  - name: RESLT1
+    description: desc RESLT1.
+    byte_offset: 4
+  - name: RESLT2
+    description: desc RESLT2.
+    byte_offset: 8
+  - name: DAT0
+    description: desc DAT0.
+    byte_offset: 128
+    access: Write
+  - name: DAT1
+    description: desc DAT1.
+    byte_offset: 132
+    access: Write
+  - name: DAT2
+    description: desc DAT2.
+    byte_offset: 136
+    access: Write
+  - name: DAT3
+    description: desc DAT3.
+    byte_offset: 140
+    access: Write
+  - name: DAT4
+    description: desc DAT4.
+    byte_offset: 144
+    access: Write
+  - name: DAT5
+    description: desc DAT5.
+    byte_offset: 148
+    access: Write
+  - name: DAT6
+    description: desc DAT6.
+    byte_offset: 152
+    access: Write
+  - name: DAT7
+    description: desc DAT7.
+    byte_offset: 156
+    access: Write
+  - name: DAT8
+    description: desc DAT8.
+    byte_offset: 160
+    access: Write
+  - name: DAT9
+    description: desc DAT9.
+    byte_offset: 164
+    access: Write
+  - name: DAT10
+    description: desc DAT10.
+    byte_offset: 168
+    access: Write
+  - name: DAT11
+    description: desc DAT11.
+    byte_offset: 172
+    access: Write
+  - name: DAT12
+    description: desc DAT12.
+    byte_offset: 176
+    access: Write
+  - name: DAT13
+    description: desc DAT13.
+    byte_offset: 180
+    access: Write
+  - name: DAT14
+    description: desc DAT14.
+    byte_offset: 184
+    access: Write
+  - name: DAT15
+    description: desc DAT15.
+    byte_offset: 188
+    access: Write
+  - name: DAT16
+    description: desc DAT16.
+    byte_offset: 192
+    access: Write
+  - name: DAT17
+    description: desc DAT17.
+    byte_offset: 196
+    access: Write
+  - name: DAT18
+    description: desc DAT18.
+    byte_offset: 200
+    access: Write
+  - name: DAT19
+    description: desc DAT19.
+    byte_offset: 204
+    access: Write
+  - name: DAT20
+    description: desc DAT20.
+    byte_offset: 208
+    access: Write
+  - name: DAT21
+    description: desc DAT21.
+    byte_offset: 212
+    access: Write
+  - name: DAT22
+    description: desc DAT22.
+    byte_offset: 216
+    access: Write
+  - name: DAT23
+    description: desc DAT23.
+    byte_offset: 220
+    access: Write
+  - name: DAT24
+    description: desc DAT24.
+    byte_offset: 224
+    access: Write
+  - name: DAT25
+    description: desc DAT25.
+    byte_offset: 228
+    access: Write
+  - name: DAT26
+    description: desc DAT26.
+    byte_offset: 232
+    access: Write
+  - name: DAT27
+    description: desc DAT27.
+    byte_offset: 236
+    access: Write
+  - name: DAT28
+    description: desc DAT28.
+    byte_offset: 240
+    access: Write
+  - name: DAT29
+    description: desc DAT29.
+    byte_offset: 244
+    access: Write
+  - name: DAT30
+    description: desc DAT30.
+    byte_offset: 248
+    access: Write
+  - name: DAT31
+    description: desc DAT31.
+    byte_offset: 252
+    access: Write
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: CR
+    description: desc CR.
+    bit_offset: 0
+    bit_size: 1
+  - name: FLAG
+    description: desc FLAG.
+    bit_offset: 1
+    bit_size: 1
+  - name: SELECT
+    description: desc SELECT.
+    bit_offset: 2
+    bit_size: 3

@@ -1,0 +1,141 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F334/DAC1；覆盖系列：HC32F334, HC32F336。
+block/DAC:
+  description: desc DAC.
+  items:
+  - name: DADR1
+    description: desc DADR1.
+    byte_offset: 0
+    bit_size: 16
+  - name: DADR2
+    description: desc DADR2.
+    byte_offset: 2
+    bit_size: 16
+  - name: DACR
+    description: desc DACR.
+    byte_offset: 4
+    bit_size: 16
+    fieldset: DACR
+  - name: DAADPCR
+    description: desc DAADPCR.
+    byte_offset: 6
+    bit_size: 16
+    fieldset: DAADPCR
+  - name: DAOCR
+    description: desc DAOCR.
+    byte_offset: 28
+    bit_size: 16
+    fieldset: DAOCR
+  - name: DACR2
+    description: desc DACR2.
+    byte_offset: 32
+    bit_size: 16
+    fieldset: DACR2
+  - name: DADACTR1
+    description: desc DADACTR1.
+    byte_offset: 44
+    access: Read
+    bit_size: 16
+    fieldset: DADACTR1
+  - name: DADACTR2
+    description: desc DADACTR2.
+    byte_offset: 46
+    access: Read
+    bit_size: 16
+    fieldset: DADACTR2
+fieldset/DAADPCR:
+  description: desc DAADPCR.
+  bit_size: 16
+  fields:
+  - name: ADCSL1
+    description: desc ADCSL1.
+    bit_offset: 0
+    bit_size: 1
+  - name: ADCSL2
+    description: desc ADCSL2.
+    bit_offset: 1
+    bit_size: 1
+  - name: ADCSL3
+    description: desc ADCSL3.
+    bit_offset: 2
+    bit_size: 1
+  - name: DA1SF
+    description: desc DA1SF.
+    bit_offset: 8
+    bit_size: 1
+  - name: DA2SF
+    description: desc DA2SF.
+    bit_offset: 9
+    bit_size: 1
+  - name: ADPEN
+    description: desc ADPEN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/DACR:
+  description: desc DACR.
+  bit_size: 16
+  fields:
+  - name: DAE
+    description: desc DAE.
+    bit_offset: 0
+    bit_size: 1
+  - name: DA1E
+    description: desc DA1E.
+    bit_offset: 1
+    bit_size: 1
+  - name: DA2E
+    description: desc DA2E.
+    bit_offset: 2
+    bit_size: 1
+  - name: DPSEL
+    description: desc DPSEL.
+    bit_offset: 8
+    bit_size: 1
+  - name: DAAMP1
+    description: desc DAAMP1.
+    bit_offset: 9
+    bit_size: 1
+  - name: DAAMP2
+    description: desc DAAMP2.
+    bit_offset: 10
+    bit_size: 1
+fieldset/DACR2:
+  description: desc DACR2.
+  bit_size: 16
+  fields:
+  - name: LDMD1
+    description: desc LDMD1.
+    bit_offset: 7
+    bit_size: 1
+  - name: LDMD2
+    description: desc LDMD2.
+    bit_offset: 15
+    bit_size: 1
+fieldset/DADACTR1:
+  description: desc DADACTR1.
+  bit_size: 16
+  fields:
+  - name: DATAACT
+    description: desc DATAACT.
+    bit_offset: 0
+    bit_size: 12
+fieldset/DADACTR2:
+  description: desc DADACTR2.
+  bit_size: 16
+  fields:
+  - name: DATAACT
+    description: desc DATAACT.
+    bit_offset: 0
+    bit_size: 12
+fieldset/DAOCR:
+  description: desc DAOCR.
+  bit_size: 16
+  fields:
+  - name: DAODIS1
+    description: desc DAODIS1.
+    bit_offset: 14
+    bit_size: 1
+  - name: DAODIS2
+    description: desc DAODIS2.
+    bit_offset: 15
+    bit_size: 1

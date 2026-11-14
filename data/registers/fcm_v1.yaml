@@ -1,0 +1,163 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A448/FCM；覆盖系列：HC32A448, HC32A460, HC32A472, HC32A4A0, HC32F334, HC32F336, HC32F448, HC32F451, HC32F452, HC32F460, HC32F467, HC32F472, HC32F4A0, HC32F4A2, HC32M441。
+block/FCM:
+  description: desc FCM.
+  items:
+  - name: LVR
+    description: desc LVR.
+    byte_offset: 0
+    fieldset: LVR
+  - name: UVR
+    description: desc UVR.
+    byte_offset: 4
+    fieldset: UVR
+  - name: CNTR
+    description: desc CNTR.
+    byte_offset: 8
+    access: Read
+    fieldset: CNTR
+  - name: STR
+    description: desc STR.
+    byte_offset: 12
+    fieldset: STR
+  - name: MCCR
+    description: desc MCCR.
+    byte_offset: 16
+    fieldset: MCCR
+  - name: RCCR
+    description: desc RCCR.
+    byte_offset: 20
+    fieldset: RCCR
+  - name: RIER
+    description: desc RIER.
+    byte_offset: 24
+    fieldset: RIER
+  - name: SR
+    description: desc SR.
+    byte_offset: 28
+    access: Read
+    fieldset: SR
+  - name: CLR
+    description: desc CLR.
+    byte_offset: 32
+    access: Write
+    fieldset: CLR
+fieldset/CLR:
+  description: desc CLR.
+  fields:
+  - name: ERRFCLR
+    description: desc ERRFCLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: MENDFCLR
+    description: desc MENDFCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: OVFCLR
+    description: desc OVFCLR.
+    bit_offset: 2
+    bit_size: 1
+fieldset/CNTR:
+  description: desc CNTR.
+  fields:
+  - name: CNTR
+    description: desc CNTR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/LVR:
+  description: desc LVR.
+  fields:
+  - name: LVR
+    description: desc LVR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/MCCR:
+  description: desc MCCR.
+  fields:
+  - name: MDIVS
+    description: desc MDIVS.
+    bit_offset: 0
+    bit_size: 2
+  - name: MCKS
+    description: desc MCKS.
+    bit_offset: 4
+    bit_size: 4
+fieldset/RCCR:
+  description: desc RCCR.
+  fields:
+  - name: RDIVS
+    description: desc RDIVS.
+    bit_offset: 0
+    bit_size: 2
+  - name: RCKS
+    description: desc RCKS.
+    bit_offset: 3
+    bit_size: 4
+  - name: INEXS
+    description: desc INEXS.
+    bit_offset: 7
+    bit_size: 1
+  - name: DNFS
+    description: desc DNFS.
+    bit_offset: 8
+    bit_size: 2
+  - name: EDGES
+    description: desc EDGES.
+    bit_offset: 12
+    bit_size: 2
+  - name: EXREFE
+    description: desc EXREFE.
+    bit_offset: 15
+    bit_size: 1
+fieldset/RIER:
+  description: desc RIER.
+  fields:
+  - name: ERRIE
+    description: desc ERRIE.
+    bit_offset: 0
+    bit_size: 1
+  - name: MENDIE
+    description: desc MENDIE.
+    bit_offset: 1
+    bit_size: 1
+  - name: OVFIE
+    description: desc OVFIE.
+    bit_offset: 2
+    bit_size: 1
+  - name: ERRINTRS
+    description: desc ERRINTRS.
+    bit_offset: 4
+    bit_size: 1
+  - name: ERRE
+    description: desc ERRE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: ERRF
+    description: desc ERRF.
+    bit_offset: 0
+    bit_size: 1
+  - name: MENDF
+    description: desc MENDF.
+    bit_offset: 1
+    bit_size: 1
+  - name: OVF
+    description: desc OVF.
+    bit_offset: 2
+    bit_size: 1
+fieldset/STR:
+  description: desc STR.
+  fields:
+  - name: START
+    description: desc START.
+    bit_offset: 0
+    bit_size: 1
+fieldset/UVR:
+  description: desc UVR.
+  fields:
+  - name: UVR
+    description: desc UVR.
+    bit_offset: 0
+    bit_size: 16

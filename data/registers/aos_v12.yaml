@@ -1,0 +1,176 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M120/AOS；覆盖系列：HC32M120。
+block/AOS:
+  description: desc AOS.
+  items:
+  - name: INTC_STRGCR
+    description: desc INTC_STRGCR.
+    byte_offset: 0
+    access: Write
+    fieldset: INTC_STRGCR
+  - name: EVPRT_CR
+    description: desc EVPRT_CR.
+    byte_offset: 4
+    fieldset: EVPRT_CR
+  - name: EVPRT_SR
+    description: desc EVPRT_SR.
+    byte_offset: 8
+    access: Read
+    fieldset: EVPRT_SR
+  - name: TMR0_HTSSR
+    description: desc TMR0_HTSSR.
+    byte_offset: 32
+    fieldset: TMR0_HTSSR
+  - name: TMR2_HTSSR
+    description: desc TMR2_HTSSR.
+    byte_offset: 32
+    fieldset: TMR2_HTSSR
+  - name: TMRA_HTSSR
+    description: desc TMRA_HTSSR.
+    byte_offset: 64
+    fieldset: TMRA_HTSSR
+  - name: TMRB_HTSSR
+    description: desc TMRB_HTSSR.
+    byte_offset: 80
+    fieldset: TMRB_HTSSR
+  - name: ADC_ITRGSELR0
+    description: desc ADC_ITRGSELR0.
+    byte_offset: 96
+    fieldset: ADC_ITRGSELR0
+  - name: ADC_ITRGSELR1
+    description: desc ADC_ITRGSELR1.
+    byte_offset: 100
+    fieldset: ADC_ITRGSELR1
+  - name: DMA_TRGSEL0
+    description: desc DMA_TRGSEL0.
+    byte_offset: 128
+    fieldset: DMA_TRGSEL0
+  - name: DMA_TRGSEL1
+    description: desc DMA_TRGSEL1.
+    byte_offset: 132
+    fieldset: DMA_TRGSEL1
+fieldset/ADC_ITRGSELR0:
+  description: desc ADC_ITRGSELR0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/ADC_ITRGSELR1:
+  description: desc ADC_ITRGSELR1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/DMA_TRGSEL0:
+  description: desc DMA_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/DMA_TRGSEL1:
+  description: desc DMA_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/EVPRT_CR:
+  description: desc EVPRT_CR.
+  fields:
+  - name: EVP1FEE
+    description: desc EVP1FEE.
+    bit_offset: 0
+    bit_size: 1
+  - name: EVP2FEE
+    description: desc EVP2FEE.
+    bit_offset: 1
+    bit_size: 1
+  - name: EVP3FEE
+    description: desc EVP3FEE.
+    bit_offset: 2
+    bit_size: 1
+  - name: EVP4FEE
+    description: desc EVP4FEE.
+    bit_offset: 3
+    bit_size: 1
+  - name: EVP1REE
+    description: desc EVP1REE.
+    bit_offset: 4
+    bit_size: 1
+  - name: EVP2REE
+    description: desc EVP2REE.
+    bit_offset: 5
+    bit_size: 1
+  - name: EVP3REE
+    description: desc EVP3REE.
+    bit_offset: 6
+    bit_size: 1
+  - name: EVP4REE
+    description: desc EVP4REE.
+    bit_offset: 7
+    bit_size: 1
+  - name: EVPDIVS
+    description: desc EVPDIVS.
+    bit_offset: 8
+    bit_size: 2
+  - name: EVPNFE
+    description: desc EVPNFE.
+    bit_offset: 10
+    bit_size: 1
+fieldset/EVPRT_SR:
+  description: desc EVPRT_SR.
+  fields:
+  - name: PTSTS0
+    description: desc PTSTS0.
+    bit_offset: 0
+    bit_size: 4
+  - name: PTSTS1
+    description: desc PTSTS1.
+    bit_offset: 4
+    bit_size: 4
+  - name: PTSTS2
+    description: desc PTSTS2.
+    bit_offset: 8
+    bit_size: 4
+  - name: PTSTS3
+    description: desc PTSTS3.
+    bit_offset: 12
+    bit_size: 4
+fieldset/INTC_STRGCR:
+  description: desc INTC_STRGCR.
+  fields:
+  - name: STRG
+    description: desc STRG.
+    bit_offset: 0
+    bit_size: 1
+fieldset/TMR0_HTSSR:
+  description: desc TMR0_HTSSR.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/TMR2_HTSSR:
+  description: desc TMR2_HTSSR.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/TMRA_HTSSR:
+  description: desc TMRA_HTSSR.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7
+fieldset/TMRB_HTSSR:
+  description: desc TMRB_HTSSR.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 7

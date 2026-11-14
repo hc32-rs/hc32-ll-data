@@ -1,0 +1,54 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/VREF；覆盖系列：HC32A472, HC32F472。
+block/VREF:
+  description: desc VREF.
+  items:
+  - name: BGRCR
+    description: desc BGRCR.
+    byte_offset: 0
+    fieldset: BGRCR
+  - name: CSCR
+    description: desc CSCR.
+    byte_offset: 4
+    fieldset: CSCR
+  - name: CR
+    description: desc CR.
+    byte_offset: 8
+    fieldset: CR
+fieldset/BGRCR:
+  description: desc BGRCR.
+  fields:
+  - name: BGREN
+    description: desc BGREN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: AVCCMONEN
+    description: desc AVCCMONEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: VREFINTEN
+    description: desc VREFINTEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: IVREFEN
+    description: desc IVREFEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: HIZ
+    description: desc HIZ.
+    bit_offset: 3
+    bit_size: 1
+  - name: AVCCMONS
+    description: desc AVCCMONS.
+    bit_offset: 4
+    bit_size: 2
+fieldset/CSCR:
+  description: desc CSCR.
+  fields:
+  - name: CSEN
+    description: desc CSEN.
+    bit_offset: 0
+    bit_size: 1

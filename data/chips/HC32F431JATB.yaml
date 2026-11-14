@@ -1,0 +1,54 @@
+# HC32F431JATB（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F431JATB
+family: HC32F431
+subfamily: cortex-m4
+packages:
+- name: HC32F431JATB
+  package: LQFP48
+include_memory: ../memory/HC32F431_F128S16.yaml
+memory_sizes:
+  FLASH: 128K
+  SRAM: 16K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1384.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F431.yaml
+  include_interrupts: ../interrupts/HC32F431.yaml
+  include_dma_channels:
+    DMA: ../dma/HC32F431_DMA.yaml
+_raw:
+  series: HC32F431
+  freq_mhz: '120'
+  flash_kb: '128'
+  sram_kb: '16'
+  package: LQFP48
+  pin_count: '48'
+  gpio: '40'
+  vdd_min: '2.7'
+  vdd_max: '5.5'
+  uart: '4'
+  spi: '1'
+  i2c: '1'
+  i2s: ''
+  can: ''
+  usb: ''
+  adc: '1'
+  dac: '1'
+  timer: 2;1;5
+  rtc: ''
+  wdt: '1'
+  touchkey: ''
+  lcd: ''
+  opa: '3'
+  cmp: '3'
+  other: ADC 12bit|ADC 14ch|DMA=1|PVD|Timer0=2;Timer4=1;TimerA=5|temp Range -40~105℃ -40~105℃ -40~105℃
+  url: https://www.xhsc.com.cn/product/1384.html
+  source: DS
+  Part NO.: HC32F431JATB

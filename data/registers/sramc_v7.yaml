@@ -1,0 +1,86 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/SRAMC；覆盖系列：HC32K116, HC32K118。
+block/SRAMC:
+  description: desc SRAMC.
+  items:
+  - name: CKCR
+    description: desc CKCR.
+    byte_offset: 8
+    fieldset: CKCR
+  - name: CKPR
+    description: desc CKPR.
+    byte_offset: 12
+    fieldset: CKPR
+  - name: CKSR
+    description: desc CKSR.
+    byte_offset: 16
+    fieldset: CKSR
+  - name: SRAM1_EIEN
+    description: desc SRAM1_EIEN.
+    byte_offset: 20
+    fieldset: SRAM1_EIEN
+  - name: SRAM1_EIBIT0
+    description: desc SRAM1_EIBIT0.
+    byte_offset: 24
+  - name: SRAM1_EIBIT1
+    description: desc SRAM1_EIBIT1.
+    byte_offset: 28
+    fieldset: SRAM1_EIBIT1
+  - name: SRAM1_ECCERRADDR
+    description: desc SRAM1_ECCERRADDR.
+    byte_offset: 32
+    fieldset: SRAM1_ECCERRADDR
+fieldset/CKCR:
+  description: desc CKCR.
+  fields:
+  - name: SRAM1_ECCOAD
+    description: desc SRAM1_ECCOAD.
+    bit_offset: 1
+    bit_size: 1
+  - name: SRAM1_ECCMOD
+    description: desc SRAM1_ECCMOD.
+    bit_offset: 10
+    bit_size: 2
+fieldset/CKPR:
+  description: desc CKPR.
+  fields:
+  - name: CKPRC
+    description: desc CKPRC.
+    bit_offset: 0
+    bit_size: 1
+  - name: CKPRKW
+    description: desc CKPRKW.
+    bit_offset: 1
+    bit_size: 7
+fieldset/CKSR:
+  description: desc CKSR.
+  fields:
+  - name: SRAM1_1ERR
+    description: desc SRAM1_1ERR.
+    bit_offset: 2
+    bit_size: 1
+  - name: SRAM1_2ERR
+    description: desc SRAM1_2ERR.
+    bit_offset: 3
+    bit_size: 1
+fieldset/SRAM1_ECCERRADDR:
+  description: desc SRAM1_ECCERRADDR.
+  fields:
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    bit_offset: 0
+    bit_size: 17
+fieldset/SRAM1_EIBIT1:
+  description: desc SRAM1_EIBIT1.
+  fields:
+  - name: EIBIT
+    description: desc EIBIT.
+    bit_offset: 0
+    bit_size: 7
+fieldset/SRAM1_EIEN:
+  description: desc SRAM1_EIEN.
+  fields:
+  - name: EIEN
+    description: desc EIEN.
+    bit_offset: 0
+    bit_size: 1

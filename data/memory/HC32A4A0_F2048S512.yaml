@@ -1,0 +1,19 @@
+# HC32A4A0 Flash 2048K / SRAM 512K 的内存布局（型号：HC32A4A0PITI, HC32A4A0SITI…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 2048K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x1FFE0000
+  size: 512K
+  access:
+    read: true
+    write: true
+    execute: true

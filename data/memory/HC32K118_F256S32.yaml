@@ -1,0 +1,19 @@
+# HC32K118 Flash 256K / SRAM 32K 的内存布局（型号：HC32K118FCUJ, HC32K118JCTJ, HC32K118KCTJ…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 256K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x20000000
+  size: 32K
+  access:
+    read: true
+    write: true
+    execute: true

@@ -1,0 +1,592 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/CAN1；覆盖系列：HC32A472, HC32A4A0, HC32F467, HC32F472, HC32F4A0, HC32F4A2。
+block/CAN:
+  description: desc CAN.
+  items:
+  - name: RBUF
+    description: desc RBUF.
+    byte_offset: 0
+    access: Read
+  - name: TBUF
+    description: desc TBUF.
+    byte_offset: 80
+  - name: CFG_STAT
+    description: desc CFG_STAT.
+    byte_offset: 160
+    bit_size: 8
+    fieldset: CFG_STAT
+  - name: TCMD
+    description: desc TCMD.
+    byte_offset: 161
+    bit_size: 8
+    fieldset: TCMD
+  - name: TCTRL
+    description: desc TCTRL.
+    byte_offset: 162
+    bit_size: 8
+    fieldset: TCTRL
+  - name: RCTRL
+    description: desc RCTRL.
+    byte_offset: 163
+    bit_size: 8
+    fieldset: RCTRL
+  - name: RTIE
+    description: desc RTIE.
+    byte_offset: 164
+    bit_size: 8
+    fieldset: RTIE
+  - name: RTIF
+    description: desc RTIF.
+    byte_offset: 165
+    bit_size: 8
+    fieldset: RTIF
+  - name: ERRINT
+    description: desc ERRINT.
+    byte_offset: 166
+    bit_size: 8
+    fieldset: ERRINT
+  - name: LIMIT
+    description: desc LIMIT.
+    byte_offset: 167
+    bit_size: 8
+    fieldset: LIMIT
+  - name: SBT
+    description: desc SBT.
+    byte_offset: 168
+    fieldset: SBT
+  - name: FBT
+    description: desc FBT.
+    byte_offset: 172
+    fieldset: FBT
+  - name: EALCAP
+    description: desc EALCAP.
+    byte_offset: 176
+    access: Read
+    bit_size: 8
+    fieldset: EALCAP
+  - name: TDC
+    description: desc TDC.
+    byte_offset: 177
+    bit_size: 8
+    fieldset: TDC
+  - name: RECNT
+    description: desc RECNT.
+    byte_offset: 178
+    bit_size: 8
+  - name: TECNT
+    description: desc TECNT.
+    byte_offset: 179
+    bit_size: 8
+  - name: ACFCTRL
+    description: desc ACFCTRL.
+    byte_offset: 180
+    bit_size: 8
+    fieldset: ACFCTRL
+  - name: ACFEN
+    description: desc ACFEN.
+    byte_offset: 182
+    bit_size: 16
+    fieldset: ACFEN
+  - name: ACF
+    description: desc ACF.
+    byte_offset: 184
+    fieldset: ACF
+  - name: TBSLOT
+    description: desc TBSLOT.
+    byte_offset: 190
+    bit_size: 8
+    fieldset: TBSLOT
+  - name: TTCFG
+    description: desc TTCFG.
+    byte_offset: 191
+    bit_size: 8
+    fieldset: TTCFG
+  - name: REF_MSG
+    description: desc REF_MSG.
+    byte_offset: 192
+    fieldset: REF_MSG
+  - name: TRG_CFG
+    description: desc TRG_CFG.
+    byte_offset: 196
+    bit_size: 16
+    fieldset: TRG_CFG
+  - name: TT_TRIG
+    description: desc TT_TRIG.
+    byte_offset: 198
+    bit_size: 16
+  - name: TT_WTRIG
+    description: desc TT_WTRIG.
+    byte_offset: 200
+    bit_size: 16
+fieldset/ACF:
+  description: desc ACF.
+  fields:
+  - name: ACODEORAMASK
+    description: desc ACODEORAMASK.
+    bit_offset: 0
+    bit_size: 29
+  - name: AIDE
+    description: desc AIDE.
+    bit_offset: 29
+    bit_size: 1
+  - name: AIDEE
+    description: desc AIDEE.
+    bit_offset: 30
+    bit_size: 1
+fieldset/ACFCTRL:
+  description: desc ACFCTRL.
+  bit_size: 8
+  fields:
+  - name: ACFADR
+    description: desc ACFADR.
+    bit_offset: 0
+    bit_size: 4
+  - name: SELMASK
+    description: desc SELMASK.
+    bit_offset: 5
+    bit_size: 1
+fieldset/ACFEN:
+  description: desc ACFEN.
+  bit_size: 16
+  fields:
+  - name: AE_1
+    description: desc AE_1.
+    bit_offset: 0
+    bit_size: 1
+  - name: AE_2
+    description: desc AE_2.
+    bit_offset: 1
+    bit_size: 1
+  - name: AE_3
+    description: desc AE_3.
+    bit_offset: 2
+    bit_size: 1
+  - name: AE_4
+    description: desc AE_4.
+    bit_offset: 3
+    bit_size: 1
+  - name: AE_5
+    description: desc AE_5.
+    bit_offset: 4
+    bit_size: 1
+  - name: AE_6
+    description: desc AE_6.
+    bit_offset: 5
+    bit_size: 1
+  - name: AE_7
+    description: desc AE_7.
+    bit_offset: 6
+    bit_size: 1
+  - name: AE_8
+    description: desc AE_8.
+    bit_offset: 7
+    bit_size: 1
+  - name: AE_9
+    description: desc AE_9.
+    bit_offset: 8
+    bit_size: 1
+  - name: AE_10
+    description: desc AE_10.
+    bit_offset: 9
+    bit_size: 1
+  - name: AE_11
+    description: desc AE_11.
+    bit_offset: 10
+    bit_size: 1
+  - name: AE_12
+    description: desc AE_12.
+    bit_offset: 11
+    bit_size: 1
+  - name: AE_13
+    description: desc AE_13.
+    bit_offset: 12
+    bit_size: 1
+  - name: AE_14
+    description: desc AE_14.
+    bit_offset: 13
+    bit_size: 1
+  - name: AE_15
+    description: desc AE_15.
+    bit_offset: 14
+    bit_size: 1
+  - name: AE_16
+    description: desc AE_16.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CFG_STAT:
+  description: desc CFG_STAT.
+  bit_size: 8
+  fields:
+  - name: BUSOFF
+    description: desc BUSOFF.
+    bit_offset: 0
+    bit_size: 1
+  - name: TACTIVE
+    description: desc TACTIVE.
+    bit_offset: 1
+    bit_size: 1
+  - name: RACTIVE
+    description: desc RACTIVE.
+    bit_offset: 2
+    bit_size: 1
+  - name: TSSS
+    description: desc TSSS.
+    bit_offset: 3
+    bit_size: 1
+  - name: TPSS
+    description: desc TPSS.
+    bit_offset: 4
+    bit_size: 1
+  - name: LBMI
+    description: desc LBMI.
+    bit_offset: 5
+    bit_size: 1
+  - name: LBME
+    description: desc LBME.
+    bit_offset: 6
+    bit_size: 1
+  - name: RESET
+    description: desc RESET.
+    bit_offset: 7
+    bit_size: 1
+fieldset/EALCAP:
+  description: desc EALCAP.
+  bit_size: 8
+  fields:
+  - name: ALC
+    description: desc ALC.
+    bit_offset: 0
+    bit_size: 5
+  - name: KOER
+    description: desc KOER.
+    bit_offset: 5
+    bit_size: 3
+fieldset/ERRINT:
+  description: desc ERRINT.
+  bit_size: 8
+  fields:
+  - name: BEIF
+    description: desc BEIF.
+    bit_offset: 0
+    bit_size: 1
+  - name: BEIE
+    description: desc BEIE.
+    bit_offset: 1
+    bit_size: 1
+  - name: ALIF
+    description: desc ALIF.
+    bit_offset: 2
+    bit_size: 1
+  - name: ALIE
+    description: desc ALIE.
+    bit_offset: 3
+    bit_size: 1
+  - name: EPIF
+    description: desc EPIF.
+    bit_offset: 4
+    bit_size: 1
+  - name: EPIE
+    description: desc EPIE.
+    bit_offset: 5
+    bit_size: 1
+  - name: EPASS
+    description: desc EPASS.
+    bit_offset: 6
+    bit_size: 1
+  - name: EWARN
+    description: desc EWARN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/FBT:
+  description: desc FBT.
+  fields:
+  - name: F_SEG_1
+    description: desc F_SEG_1.
+    bit_offset: 0
+    bit_size: 5
+  - name: F_SEG_2
+    description: desc F_SEG_2.
+    bit_offset: 8
+    bit_size: 4
+  - name: F_SJW
+    description: desc F_SJW.
+    bit_offset: 16
+    bit_size: 4
+  - name: F_PRESC
+    description: desc F_PRESC.
+    bit_offset: 24
+    bit_size: 8
+fieldset/LIMIT:
+  description: desc LIMIT.
+  bit_size: 8
+  fields:
+  - name: EWL
+    description: desc EWL.
+    bit_offset: 0
+    bit_size: 4
+  - name: AFWL
+    description: desc AFWL.
+    bit_offset: 4
+    bit_size: 4
+fieldset/RCTRL:
+  description: desc RCTRL.
+  bit_size: 8
+  fields:
+  - name: RSTAT
+    description: desc RSTAT.
+    bit_offset: 0
+    bit_size: 2
+  - name: RBALL
+    description: desc RBALL.
+    bit_offset: 3
+    bit_size: 1
+  - name: RREL
+    description: desc RREL.
+    bit_offset: 4
+    bit_size: 1
+  - name: ROV
+    description: desc ROV.
+    bit_offset: 5
+    bit_size: 1
+  - name: ROM
+    description: desc ROM.
+    bit_offset: 6
+    bit_size: 1
+  - name: SACK
+    description: desc SACK.
+    bit_offset: 7
+    bit_size: 1
+fieldset/REF_MSG:
+  description: desc REF_MSG.
+  fields:
+  - name: REF_ID
+    description: desc REF_ID.
+    bit_offset: 0
+    bit_size: 29
+  - name: REF_IDE
+    description: desc REF_IDE.
+    bit_offset: 31
+    bit_size: 1
+fieldset/RTIE:
+  description: desc RTIE.
+  bit_size: 8
+  fields:
+  - name: TSFF
+    description: desc TSFF.
+    bit_offset: 0
+    bit_size: 1
+  - name: EIE
+    description: desc EIE.
+    bit_offset: 1
+    bit_size: 1
+  - name: TSIE
+    description: desc TSIE.
+    bit_offset: 2
+    bit_size: 1
+  - name: TPIE
+    description: desc TPIE.
+    bit_offset: 3
+    bit_size: 1
+  - name: RAFIE
+    description: desc RAFIE.
+    bit_offset: 4
+    bit_size: 1
+  - name: RFIE
+    description: desc RFIE.
+    bit_offset: 5
+    bit_size: 1
+  - name: ROIE
+    description: desc ROIE.
+    bit_offset: 6
+    bit_size: 1
+  - name: RIE
+    description: desc RIE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/RTIF:
+  description: desc RTIF.
+  bit_size: 8
+  fields:
+  - name: AIF
+    description: desc AIF.
+    bit_offset: 0
+    bit_size: 1
+  - name: EIF
+    description: desc EIF.
+    bit_offset: 1
+    bit_size: 1
+  - name: TSIF
+    description: desc TSIF.
+    bit_offset: 2
+    bit_size: 1
+  - name: TPIF
+    description: desc TPIF.
+    bit_offset: 3
+    bit_size: 1
+  - name: RAFIF
+    description: desc RAFIF.
+    bit_offset: 4
+    bit_size: 1
+  - name: RFIF
+    description: desc RFIF.
+    bit_offset: 5
+    bit_size: 1
+  - name: ROIF
+    description: desc ROIF.
+    bit_offset: 6
+    bit_size: 1
+  - name: RIF
+    description: desc RIF.
+    bit_offset: 7
+    bit_size: 1
+fieldset/SBT:
+  description: desc SBT.
+  fields:
+  - name: S_SEG_1
+    description: desc S_SEG_1.
+    bit_offset: 0
+    bit_size: 8
+  - name: S_SEG_2
+    description: desc S_SEG_2.
+    bit_offset: 8
+    bit_size: 7
+  - name: S_SJW
+    description: desc S_SJW.
+    bit_offset: 16
+    bit_size: 7
+  - name: S_PRESC
+    description: desc S_PRESC.
+    bit_offset: 24
+    bit_size: 8
+fieldset/TBSLOT:
+  description: desc TBSLOT.
+  bit_size: 8
+  fields:
+  - name: TBPTR
+    description: desc TBPTR.
+    bit_offset: 0
+    bit_size: 6
+  - name: TBF
+    description: desc TBF.
+    bit_offset: 6
+    bit_size: 1
+  - name: TBE
+    description: desc TBE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/TCMD:
+  description: desc TCMD.
+  bit_size: 8
+  fields:
+  - name: TSA
+    description: desc TSA.
+    bit_offset: 0
+    bit_size: 1
+  - name: TSALL
+    description: desc TSALL.
+    bit_offset: 1
+    bit_size: 1
+  - name: TSONE
+    description: desc TSONE.
+    bit_offset: 2
+    bit_size: 1
+  - name: TPA
+    description: desc TPA.
+    bit_offset: 3
+    bit_size: 1
+  - name: TPE
+    description: desc TPE.
+    bit_offset: 4
+    bit_size: 1
+  - name: LOM
+    description: desc LOM.
+    bit_offset: 6
+    bit_size: 1
+  - name: TBSEL
+    description: desc TBSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/TCTRL:
+  description: desc TCTRL.
+  bit_size: 8
+  fields:
+  - name: TSSTAT
+    description: desc TSSTAT.
+    bit_offset: 0
+    bit_size: 2
+  - name: TTTBM
+    description: desc TTTBM.
+    bit_offset: 4
+    bit_size: 1
+  - name: TSMODE
+    description: desc TSMODE.
+    bit_offset: 5
+    bit_size: 1
+  - name: TSNEXT
+    description: desc TSNEXT.
+    bit_offset: 6
+    bit_size: 1
+  - name: FD_ISO
+    description: desc FD_ISO.
+    bit_offset: 7
+    bit_size: 1
+fieldset/TDC:
+  description: desc TDC.
+  bit_size: 8
+  fields:
+  - name: SSPOFF
+    description: desc SSPOFF.
+    bit_offset: 0
+    bit_size: 7
+  - name: TDCEN
+    description: desc TDCEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/TRG_CFG:
+  description: desc TRG_CFG.
+  bit_size: 16
+  fields:
+  - name: TTPTR
+    description: desc TTPTR.
+    bit_offset: 0
+    bit_size: 6
+  - name: TTYPE
+    description: desc TTYPE.
+    bit_offset: 8
+    bit_size: 3
+  - name: TEW
+    description: desc TEW.
+    bit_offset: 12
+    bit_size: 4
+fieldset/TTCFG:
+  description: desc TTCFG.
+  bit_size: 8
+  fields:
+  - name: TTEN
+    description: desc TTEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: T_PRESC
+    description: desc T_PRESC.
+    bit_offset: 1
+    bit_size: 2
+  - name: TTIF
+    description: desc TTIF.
+    bit_offset: 3
+    bit_size: 1
+  - name: TTIE
+    description: desc TTIE.
+    bit_offset: 4
+    bit_size: 1
+  - name: TEIF
+    description: desc TEIF.
+    bit_offset: 5
+    bit_size: 1
+  - name: WTIF
+    description: desc WTIF.
+    bit_offset: 6
+    bit_size: 1
+  - name: WTIE
+    description: desc WTIE.
+    bit_offset: 7
+    bit_size: 1

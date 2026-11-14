@@ -1,0 +1,62 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A448/SWDT；覆盖系列：HC32A448, HC32A472, HC32A4A0, HC32A4A8, HC32F115, HC32F120, HC32F155, HC32F334, HC32F336, HC32F431, HC32F448, HC32F467, HC32F472, HC32F4A0, HC32F4A2, HC32F4A8, HC32K116, HC32K118, HC32M120, HC32M413, HC32M441, HC32M458。
+block/SWDT:
+  description: desc SWDT.
+  items:
+  - name: CR
+    description: desc CR.
+    byte_offset: 0
+    fieldset: CR
+  - name: SR
+    description: desc SR.
+    byte_offset: 4
+    fieldset: SR
+  - name: RR
+    description: desc RR.
+    byte_offset: 8
+    fieldset: RR
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: PERI
+    description: desc PERI.
+    bit_offset: 0
+    bit_size: 2
+  - name: CKS
+    description: desc CKS.
+    bit_offset: 4
+    bit_size: 4
+  - name: WDPT
+    description: desc WDPT.
+    bit_offset: 8
+    bit_size: 4
+  - name: SLPOFF
+    description: desc SLPOFF.
+    bit_offset: 16
+    bit_size: 1
+  - name: ITS
+    description: desc ITS.
+    bit_offset: 31
+    bit_size: 1
+fieldset/RR:
+  description: desc RR.
+  fields:
+  - name: RF
+    description: desc RF.
+    bit_offset: 0
+    bit_size: 16
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+  - name: UDF
+    description: desc UDF.
+    bit_offset: 16
+    bit_size: 1
+  - name: REF
+    description: desc REF.
+    bit_offset: 17
+    bit_size: 1

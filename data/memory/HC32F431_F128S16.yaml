@@ -1,0 +1,19 @@
+# HC32F431 Flash 128K / SRAM 16K 的内存布局（型号：HC32F431FATB, HC32F431JATB, HC32F431KATB…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 128K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x1FFFE000
+  size: 16K
+  access:
+    read: true
+    write: true
+    execute: true

@@ -1,0 +1,94 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F431/MAU；覆盖系列：HC32F431, HC32M413。
+block/MAU:
+  description: desc MAU.
+  items:
+  - name: CSR
+    description: desc CSR.
+    byte_offset: 0
+    fieldset: CSR
+  - name: DTR0
+    description: desc DTR0.
+    byte_offset: 4
+    fieldset: DTR0
+  - name: RTR0
+    description: desc RTR0.
+    byte_offset: 12
+    fieldset: RTR0
+  - name: DTR1
+    description: desc DTR1.
+    byte_offset: 28
+    fieldset: DTR1
+  - name: RTR1
+    description: desc RTR1.
+    byte_offset: 32
+    fieldset: RTR1
+  - name: ATAN_DIN
+    description: desc ATAN_DIN.
+    byte_offset: 36
+    fieldset: ATAN_DIN
+  - name: ATAN_DOUT
+    description: desc ATAN_DOUT.
+    byte_offset: 40
+    fieldset: ATAN_DOUT
+fieldset/ATAN_DIN:
+  description: desc ATAN_DIN.
+  fields:
+  - name: ATAN_DIN
+    description: desc ATAN_DIN.
+    bit_offset: 0
+    bit_size: 12
+fieldset/ATAN_DOUT:
+  description: desc ATAN_DOUT.
+  fields:
+  - name: ATAN_DOUT
+    description: desc ATAN_DOUT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CSR:
+  description: desc CSR.
+  fields:
+  - name: START
+    description: desc START.
+    bit_offset: 0
+    bit_size: 1
+  - name: INTEN
+    description: desc INTEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 3
+    bit_size: 1
+  - name: SHIFT
+    description: desc SHIFT.
+    bit_offset: 8
+    bit_size: 5
+fieldset/DTR0:
+  description: desc DTR0.
+  fields:
+  - name: SQRT_DIN
+    description: desc SQRT_DIN.
+    bit_offset: 0
+    bit_size: 32
+fieldset/DTR1:
+  description: desc DTR1.
+  fields:
+  - name: SIN_DIN
+    description: desc SIN_DIN.
+    bit_offset: 0
+    bit_size: 12
+fieldset/RTR0:
+  description: desc RTR0.
+  fields:
+  - name: SQRT_DOUT
+    description: desc SQRT_DOUT.
+    bit_offset: 0
+    bit_size: 32
+fieldset/RTR1:
+  description: desc RTR1.
+  fields:
+  - name: SIN_DOUT
+    description: desc SIN_DOUT.
+    bit_offset: 0
+    bit_size: 16

@@ -1,0 +1,19 @@
+# HC32M413 Flash 128K / SRAM 16K 的内存布局（型号：HC32M413FATI, HC32M413JATI, HC32M413KATI…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 128K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x1FFFE000
+  size: 16K
+  access:
+    read: true
+    write: true
+    execute: true

@@ -1,0 +1,171 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F431/RMU；覆盖系列：HC32F431, HC32M413。
+block/RMU:
+  description: desc RMU.
+  items:
+  - name: RSTF0
+    description: desc RSTF0.
+    byte_offset: 0
+    fieldset: RSTF0
+  - name: FRST0
+    description: desc FRST0.
+    byte_offset: 4
+    fieldset: FRST0
+fieldset/FRST0:
+  description: desc FRST0.
+  fields:
+  - name: ADC
+    description: desc ADC.
+    bit_offset: 0
+    bit_size: 1
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 3
+    bit_size: 1
+  - name: AOS
+    description: desc AOS.
+    bit_offset: 4
+    bit_size: 1
+  - name: DMA
+    description: desc DMA.
+    bit_offset: 5
+    bit_size: 1
+  - name: HALL
+    description: desc HALL.
+    bit_offset: 6
+    bit_size: 1
+  - name: FCM
+    description: desc FCM.
+    bit_offset: 7
+    bit_size: 1
+  - name: TMRA_1
+    description: desc TMRA_1.
+    bit_offset: 8
+    bit_size: 1
+  - name: TMRA_2
+    description: desc TMRA_2.
+    bit_offset: 9
+    bit_size: 1
+  - name: TMRA_3
+    description: desc TMRA_3.
+    bit_offset: 10
+    bit_size: 1
+  - name: TMRA_4
+    description: desc TMRA_4.
+    bit_offset: 11
+    bit_size: 1
+  - name: TMRA_5
+    description: desc TMRA_5.
+    bit_offset: 12
+    bit_size: 1
+  - name: TMR0_1
+    description: desc TMR0_1.
+    bit_offset: 14
+    bit_size: 1
+  - name: TMR0_2
+    description: desc TMR0_2.
+    bit_offset: 15
+    bit_size: 1
+  - name: EMB
+    description: desc EMB.
+    bit_offset: 19
+    bit_size: 1
+  - name: TMR4
+    description: desc TMR4.
+    bit_offset: 20
+    bit_size: 1
+  - name: MAU
+    description: desc MAU.
+    bit_offset: 22
+    bit_size: 1
+  - name: USART1
+    description: desc USART1.
+    bit_offset: 24
+    bit_size: 1
+  - name: USART2
+    description: desc USART2.
+    bit_offset: 25
+    bit_size: 1
+  - name: USART3
+    description: desc USART3.
+    bit_offset: 26
+    bit_size: 1
+  - name: USART4
+    description: desc USART4.
+    bit_offset: 27
+    bit_size: 1
+  - name: I2C
+    description: desc I2C.
+    bit_offset: 28
+    bit_size: 1
+  - name: SPI
+    description: desc SPI.
+    bit_offset: 29
+    bit_size: 1
+  - name: CRC
+    description: desc CRC.
+    bit_offset: 30
+    bit_size: 1
+  - name: DCU
+    description: desc DCU.
+    bit_offset: 31
+    bit_size: 1
+fieldset/RSTF0:
+  description: desc RSTF0.
+  fields:
+  - name: PORF
+    description: desc PORF.
+    bit_offset: 0
+    bit_size: 1
+  - name: PINRF
+    description: desc PINRF.
+    bit_offset: 1
+    bit_size: 1
+  - name: BORF
+    description: desc BORF.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD1RF
+    description: desc PVD1RF.
+    bit_offset: 3
+    bit_size: 1
+  - name: PVD2RF
+    description: desc PVD2RF.
+    bit_offset: 4
+    bit_size: 1
+  - name: WDRF
+    description: desc WDRF.
+    bit_offset: 5
+    bit_size: 1
+  - name: SWDRF
+    description: desc SWDRF.
+    bit_offset: 6
+    bit_size: 1
+  - name: CKFERF
+    description: desc CKFERF.
+    bit_offset: 7
+    bit_size: 1
+  - name: SWRF
+    description: desc SWRF.
+    bit_offset: 8
+    bit_size: 1
+  - name: RAMPERF
+    description: desc RAMPERF.
+    bit_offset: 10
+    bit_size: 1
+  - name: LKUPRF
+    description: desc LKUPRF.
+    bit_offset: 12
+    bit_size: 1
+  - name: XTALERF
+    description: desc XTALERF.
+    bit_offset: 13
+    bit_size: 1
+  - name: MULTIRF
+    description: desc MULTIRF.
+    bit_offset: 14
+    bit_size: 1
+  - name: CLRF
+    description: desc CLRF.
+    bit_offset: 15
+    bit_size: 1

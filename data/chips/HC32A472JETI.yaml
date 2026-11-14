@@ -1,0 +1,51 @@
+# HC32A472JETI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32A472JETI
+family: HC32A472
+subfamily: cortex-m4
+packages:
+- name: HC32A472JETI
+  package: LQFP48
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1249.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32A472.yaml
+  include_interrupts: ../interrupts/HC32A472.yaml
+  include_dma_channels:
+    DMA1: ../dma/HC32A472_DMA1.yaml
+    DMA2: ../dma/HC32A472_DMA2.yaml
+_raw:
+  series: HC32A472
+  freq_mhz: '39'
+  flash_kb: '120'
+  sram_kb: 64+4
+  package: LQFP48
+  pin_count: '48'
+  gpio: '39'
+  vdd_min: '1.8'
+  vdd_max: '3.6'
+  uart: '6'
+  spi: '4'
+  i2c: '3'
+  i2s: ''
+  can: '3'
+  usb: 0+1
+  adc: '3'
+  dac: 1*2ch
+  timer: '23'
+  rtc: '1'
+  wdt: ''
+  touchkey: ''
+  lcd: ''
+  opa: '3'
+  cmp: '2'
+  other: ADC 21ch|AES256=3|OTP(KB)=134|SHA256=1|temp -40~105
+  url: https://www.xhsc.com.cn/product/1249.html
+  source: DS
+  Part NO.: HC32A472JETI

@@ -1,0 +1,44 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/AES；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/AES:
+  description: desc AES.
+  items:
+  - name: CR
+    description: desc CR.
+    byte_offset: 0
+    fieldset: CR
+  - name: DR0
+    description: desc DR0.
+    byte_offset: 16
+  - name: DR1
+    description: desc DR1.
+    byte_offset: 20
+  - name: DR2
+    description: desc DR2.
+    byte_offset: 24
+  - name: DR3
+    description: desc DR3.
+    byte_offset: 28
+  - name: KR0
+    description: desc KR0.
+    byte_offset: 32
+  - name: KR1
+    description: desc KR1.
+    byte_offset: 36
+  - name: KR2
+    description: desc KR2.
+    byte_offset: 40
+  - name: KR3
+    description: desc KR3.
+    byte_offset: 44
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: START
+    description: desc START.
+    bit_offset: 0
+    bit_size: 1
+  - name: MODE
+    description: desc MODE.
+    bit_offset: 1
+    bit_size: 1

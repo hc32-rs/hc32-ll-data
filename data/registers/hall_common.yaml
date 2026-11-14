@@ -1,0 +1,94 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F431/HALL；覆盖系列：HC32F431, HC32M413。
+block/HALL:
+  description: desc HALL.
+  items:
+  - name: CTLR
+    description: desc CTLR.
+    byte_offset: 0
+    bit_size: 16
+    fieldset: CTLR
+  - name: FILR
+    description: desc FILR.
+    byte_offset: 4
+    fieldset: FILR
+  - name: INFR
+    description: desc INFR.
+    byte_offset: 8
+    fieldset: INFR
+  - name: CAPR
+    description: desc CAPR.
+    byte_offset: 16
+    access: Read
+  - name: THDR
+    description: desc THDR.
+    byte_offset: 32
+  - name: CNTR
+    description: desc CNTR.
+    byte_offset: 48
+fieldset/CTLR:
+  description: desc CTLR.
+  bit_size: 16
+  fields:
+  - name: HALLEN
+    description: desc HALLEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: CKDIV
+    description: desc CKDIV.
+    bit_offset: 4
+    bit_size: 4
+  - name: ITENCHG
+    description: desc ITENCHG.
+    bit_offset: 8
+    bit_size: 1
+  - name: ITENOVF
+    description: desc ITENOVF.
+    bit_offset: 9
+    bit_size: 1
+  - name: ITENSW
+    description: desc ITENSW.
+    bit_offset: 10
+    bit_size: 1
+  - name: CAPCLR
+    description: desc CAPCLR.
+    bit_offset: 12
+    bit_size: 1
+  - name: SWCLR
+    description: desc SWCLR.
+    bit_offset: 13
+    bit_size: 1
+fieldset/FILR:
+  description: desc FILR.
+  fields:
+  - name: FILLEN
+    description: desc FILLEN.
+    bit_offset: 0
+    bit_size: 15
+  - name: FIL75
+    description: desc FIL75.
+    bit_offset: 16
+    bit_size: 1
+fieldset/INFR:
+  description: desc INFR.
+  fields:
+  - name: FILDAT
+    description: desc FILDAT.
+    bit_offset: 0
+    bit_size: 3
+  - name: RAWDAT
+    description: desc RAWDAT.
+    bit_offset: 8
+    bit_size: 3
+  - name: CHGF
+    description: desc CHGF.
+    bit_offset: 16
+    bit_size: 1
+  - name: OVRFF
+    description: desc OVRFF.
+    bit_offset: 17
+    bit_size: 1
+  - name: SWF
+    description: desc SWF.
+    bit_offset: 18
+    bit_size: 1

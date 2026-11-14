@@ -1,0 +1,174 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M458/AOS；覆盖系列：HC32M458。
+block/AOS:
+  description: desc AOS.
+  items:
+  - name: INTSFTTRG
+    description: desc INTSFTTRG.
+    byte_offset: 0
+    access: Write
+    fieldset: INTSFTTRG
+  - name: DMA_TRGSEL0
+    description: desc DMA_TRGSEL0.
+    byte_offset: 4
+    fieldset: DMA_TRGSEL0
+  - name: DMA_TRGSEL1
+    description: desc DMA_TRGSEL1.
+    byte_offset: 8
+    fieldset: DMA_TRGSEL1
+  - name: DMA_RC_TRGSEL
+    description: desc DMA_RC_TRGSEL.
+    byte_offset: 12
+    fieldset: DMA_RC_TRGSEL
+  - name: ADC_TRGSEL0
+    description: desc ADC_TRGSEL0.
+    byte_offset: 16
+    fieldset: ADC_TRGSEL0
+  - name: ADC_TRGSEL1
+    description: desc ADC_TRGSEL1.
+    byte_offset: 20
+    fieldset: ADC_TRGSEL1
+  - name: ADC_TRGSEL2
+    description: desc ADC_TRGSEL2.
+    byte_offset: 24
+    fieldset: ADC_TRGSEL2
+  - name: ADC_TRGSEL3
+    description: desc ADC_TRGSEL3.
+    byte_offset: 28
+    fieldset: ADC_TRGSEL3
+  - name: ADC_TRGSEL4
+    description: desc ADC_TRGSEL4.
+    byte_offset: 32
+    fieldset: ADC_TRGSEL4
+  - name: ADC_TRGSEL5
+    description: desc ADC_TRGSEL5.
+    byte_offset: 36
+    fieldset: ADC_TRGSEL5
+  - name: COMTRGSEL1
+    description: desc COMTRGSEL1.
+    byte_offset: 40
+    fieldset: COMTRGSEL1
+  - name: COMTRGSEL2
+    description: desc COMTRGSEL2.
+    byte_offset: 44
+    fieldset: COMTRGSEL2
+fieldset/ADC_TRGSEL0:
+  description: desc ADC_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC_TRGSEL1:
+  description: desc ADC_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC_TRGSEL2:
+  description: desc ADC_TRGSEL2.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC_TRGSEL3:
+  description: desc ADC_TRGSEL3.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC_TRGSEL4:
+  description: desc ADC_TRGSEL4.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/ADC_TRGSEL5:
+  description: desc ADC_TRGSEL5.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/COMTRGSEL1:
+  description: desc COMTRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/COMTRGSEL2:
+  description: desc COMTRGSEL2.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+fieldset/DMA_RC_TRGSEL:
+  description: desc DMA_RC_TRGSEL.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA_TRGSEL0:
+  description: desc DMA_TRGSEL0.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/DMA_TRGSEL1:
+  description: desc DMA_TRGSEL1.
+  fields:
+  - name: TRGSEL
+    description: desc TRGSEL.
+    bit_offset: 0
+    bit_size: 9
+  - name: COMEN
+    description: desc COMEN.
+    bit_offset: 30
+    bit_size: 2
+fieldset/INTSFTTRG:
+  description: desc INTSFTTRG.
+  fields:
+  - name: STRG
+    description: desc STRG.
+    bit_offset: 0
+    bit_size: 1

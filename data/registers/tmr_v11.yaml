@@ -1,0 +1,62 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/TMR6_COMMON；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/TMR:
+  description: desc TMR6_COMMON.
+  items:
+  - name: SSTAR
+    description: desc SSTAR.
+    byte_offset: 244
+    fieldset: SSTAR
+  - name: SSTPR
+    description: desc SSTPR.
+    byte_offset: 248
+    fieldset: SSTPR
+  - name: SCLRR
+    description: desc SCLRR.
+    byte_offset: 252
+    fieldset: SCLRR
+fieldset/SCLRR:
+  description: desc SCLRR.
+  fields:
+  - name: SCLE1
+    description: desc SCLE1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SCLE2
+    description: desc SCLE2.
+    bit_offset: 1
+    bit_size: 1
+  - name: SCLE3
+    description: desc SCLE3.
+    bit_offset: 2
+    bit_size: 1
+fieldset/SSTAR:
+  description: desc SSTAR.
+  fields:
+  - name: SSTA1
+    description: desc SSTA1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SSTA2
+    description: desc SSTA2.
+    bit_offset: 1
+    bit_size: 1
+  - name: SSTA3
+    description: desc SSTA3.
+    bit_offset: 2
+    bit_size: 1
+fieldset/SSTPR:
+  description: desc SSTPR.
+  fields:
+  - name: SSTP1
+    description: desc SSTP1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SSTP2
+    description: desc SSTP2.
+    bit_offset: 1
+    bit_size: 1
+  - name: SSTP3
+    description: desc SSTP3.
+    bit_offset: 2
+    bit_size: 1

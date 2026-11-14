@@ -1,0 +1,2302 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A448/MCAN1；覆盖系列：HC32A448, HC32A4A8, HC32F334, HC32F336, HC32F448, HC32F4A8。
+block/MCAN:
+  description: desc MCAN.
+  items:
+  - name: ENDN
+    description: desc ENDN.
+    byte_offset: 4
+  - name: DBTP
+    description: desc DBTP.
+    byte_offset: 12
+    fieldset: DBTP
+  - name: TEST
+    description: desc TEST.
+    byte_offset: 16
+    fieldset: TEST
+  - name: RWD
+    description: desc RWD.
+    byte_offset: 20
+    fieldset: RWD
+  - name: CCCR
+    description: desc CCCR.
+    byte_offset: 24
+    fieldset: CCCR
+  - name: NBTP
+    description: desc NBTP.
+    byte_offset: 28
+    fieldset: NBTP
+  - name: TSCC
+    description: desc TSCC.
+    byte_offset: 32
+    fieldset: TSCC
+  - name: TSCV
+    description: desc TSCV.
+    byte_offset: 36
+    fieldset: TSCV
+  - name: TOCC
+    description: desc TOCC.
+    byte_offset: 40
+    fieldset: TOCC
+  - name: TOCV
+    description: desc TOCV.
+    byte_offset: 44
+    fieldset: TOCV
+  - name: ECR
+    description: desc ECR.
+    byte_offset: 64
+    access: Read
+    fieldset: ECR
+  - name: PSR
+    description: desc PSR.
+    byte_offset: 68
+    access: Read
+    fieldset: PSR
+  - name: TDCR
+    description: desc TDCR.
+    byte_offset: 72
+    fieldset: TDCR
+  - name: IR
+    description: desc IR.
+    byte_offset: 80
+    fieldset: IR
+  - name: IE
+    description: desc IE.
+    byte_offset: 84
+    fieldset: IE
+  - name: ILS
+    description: desc ILS.
+    byte_offset: 88
+    fieldset: ILS
+  - name: ILE
+    description: desc ILE.
+    byte_offset: 92
+    fieldset: ILE
+  - name: GFC
+    description: desc GFC.
+    byte_offset: 128
+    fieldset: GFC
+  - name: SIDFC
+    description: desc SIDFC.
+    byte_offset: 132
+    fieldset: SIDFC
+  - name: XIDFC
+    description: desc XIDFC.
+    byte_offset: 136
+    fieldset: XIDFC
+  - name: XIDAM
+    description: desc XIDAM.
+    byte_offset: 144
+    fieldset: XIDAM
+  - name: HPMS
+    description: desc HPMS.
+    byte_offset: 148
+    access: Read
+    fieldset: HPMS
+  - name: NDAT1
+    description: desc NDAT1.
+    byte_offset: 152
+    fieldset: NDAT1
+  - name: NDAT2
+    description: desc NDAT2.
+    byte_offset: 156
+    fieldset: NDAT2
+  - name: RXF0C
+    description: desc RXF0C.
+    byte_offset: 160
+    fieldset: RXF0C
+  - name: RXF0S
+    description: desc RXF0S.
+    byte_offset: 164
+    access: Read
+    fieldset: RXF0S
+  - name: RXF0A
+    description: desc RXF0A.
+    byte_offset: 168
+    fieldset: RXF0A
+  - name: RXBC
+    description: desc RXBC.
+    byte_offset: 172
+    fieldset: RXBC
+  - name: RXF1C
+    description: desc RXF1C.
+    byte_offset: 176
+    fieldset: RXF1C
+  - name: RXF1S
+    description: desc RXF1S.
+    byte_offset: 180
+    access: Read
+    fieldset: RXF1S
+  - name: RXF1A
+    description: desc RXF1A.
+    byte_offset: 184
+    fieldset: RXF1A
+  - name: RXESC
+    description: desc RXESC.
+    byte_offset: 188
+    fieldset: RXESC
+  - name: TXBC
+    description: desc TXBC.
+    byte_offset: 192
+    fieldset: TXBC
+  - name: TXFQS
+    description: desc TXFQS.
+    byte_offset: 196
+    access: Read
+    fieldset: TXFQS
+  - name: TXESC
+    description: desc TXESC.
+    byte_offset: 200
+    fieldset: TXESC
+  - name: TXBRP
+    description: desc TXBRP.
+    byte_offset: 204
+    access: Read
+    fieldset: TXBRP
+  - name: TXBAR
+    description: desc TXBAR.
+    byte_offset: 208
+    fieldset: TXBAR
+  - name: TXBCR
+    description: desc TXBCR.
+    byte_offset: 212
+    fieldset: TXBCR
+  - name: TXBTO
+    description: desc TXBTO.
+    byte_offset: 216
+    access: Read
+    fieldset: TXBTO
+  - name: TXBCF
+    description: desc TXBCF.
+    byte_offset: 220
+    access: Read
+    fieldset: TXBCF
+  - name: TXBTIE
+    description: desc TXBTIE.
+    byte_offset: 224
+    fieldset: TXBTIE
+  - name: TXBCIE
+    description: desc TXBCIE.
+    byte_offset: 228
+    fieldset: TXBCIE
+  - name: TXEFC
+    description: desc TXEFC.
+    byte_offset: 240
+    fieldset: TXEFC
+  - name: TXEFS
+    description: desc TXEFS.
+    byte_offset: 244
+    access: Read
+    fieldset: TXEFS
+  - name: TXEFA
+    description: desc TXEFA.
+    byte_offset: 248
+    fieldset: TXEFA
+fieldset/CCCR:
+  description: desc CCCR.
+  fields:
+  - name: INIT
+    description: desc INIT.
+    bit_offset: 0
+    bit_size: 1
+  - name: CCE
+    description: desc CCE.
+    bit_offset: 1
+    bit_size: 1
+  - name: ASM
+    description: desc ASM.
+    bit_offset: 2
+    bit_size: 1
+  - name: CSA
+    description: desc CSA.
+    bit_offset: 3
+    bit_size: 1
+  - name: CSR
+    description: desc CSR.
+    bit_offset: 4
+    bit_size: 1
+  - name: MON
+    description: desc MON.
+    bit_offset: 5
+    bit_size: 1
+  - name: DAR
+    description: desc DAR.
+    bit_offset: 6
+    bit_size: 1
+  - name: TEST
+    description: desc TEST.
+    bit_offset: 7
+    bit_size: 1
+  - name: FDOE
+    description: desc FDOE.
+    bit_offset: 8
+    bit_size: 1
+  - name: BRSE
+    description: desc BRSE.
+    bit_offset: 9
+    bit_size: 1
+  - name: UTSU
+    description: desc UTSU.
+    bit_offset: 10
+    bit_size: 1
+  - name: WMM
+    description: desc WMM.
+    bit_offset: 11
+    bit_size: 1
+  - name: PXHD
+    description: desc PXHD.
+    bit_offset: 12
+    bit_size: 1
+  - name: EFBI
+    description: desc EFBI.
+    bit_offset: 13
+    bit_size: 1
+  - name: TXP
+    description: desc TXP.
+    bit_offset: 14
+    bit_size: 1
+  - name: NISO
+    description: desc NISO.
+    bit_offset: 15
+    bit_size: 1
+fieldset/DBTP:
+  description: desc DBTP.
+  fields:
+  - name: DSJW
+    description: desc DSJW.
+    bit_offset: 0
+    bit_size: 4
+  - name: DTSEG2
+    description: desc DTSEG2.
+    bit_offset: 4
+    bit_size: 4
+  - name: DTSEG1
+    description: desc DTSEG1.
+    bit_offset: 8
+    bit_size: 5
+  - name: DBRP
+    description: desc DBRP.
+    bit_offset: 16
+    bit_size: 5
+  - name: TDC
+    description: desc TDC.
+    bit_offset: 23
+    bit_size: 1
+fieldset/ECR:
+  description: desc ECR.
+  fields:
+  - name: TEC
+    description: desc TEC.
+    bit_offset: 0
+    bit_size: 8
+  - name: REC
+    description: desc REC.
+    bit_offset: 8
+    bit_size: 7
+  - name: RP
+    description: desc RP.
+    bit_offset: 15
+    bit_size: 1
+  - name: CEL
+    description: desc CEL.
+    bit_offset: 16
+    bit_size: 8
+fieldset/GFC:
+  description: desc GFC.
+  fields:
+  - name: RRFE
+    description: desc RRFE.
+    bit_offset: 0
+    bit_size: 1
+  - name: RRFS
+    description: desc RRFS.
+    bit_offset: 1
+    bit_size: 1
+  - name: ANFE
+    description: desc ANFE.
+    bit_offset: 2
+    bit_size: 2
+  - name: ANFS
+    description: desc ANFS.
+    bit_offset: 4
+    bit_size: 2
+fieldset/HPMS:
+  description: desc HPMS.
+  fields:
+  - name: BIDX
+    description: desc BIDX.
+    bit_offset: 0
+    bit_size: 6
+  - name: MSI
+    description: desc MSI.
+    bit_offset: 6
+    bit_size: 2
+  - name: FIDX
+    description: desc FIDX.
+    bit_offset: 8
+    bit_size: 7
+  - name: FLST
+    description: desc FLST.
+    bit_offset: 15
+    bit_size: 1
+fieldset/IE:
+  description: desc IE.
+  fields:
+  - name: RF0NE
+    description: desc RF0NE.
+    bit_offset: 0
+    bit_size: 1
+  - name: RF0WE
+    description: desc RF0WE.
+    bit_offset: 1
+    bit_size: 1
+  - name: RF0FE
+    description: desc RF0FE.
+    bit_offset: 2
+    bit_size: 1
+  - name: RF0LE
+    description: desc RF0LE.
+    bit_offset: 3
+    bit_size: 1
+  - name: RF1NE
+    description: desc RF1NE.
+    bit_offset: 4
+    bit_size: 1
+  - name: RF1WE
+    description: desc RF1WE.
+    bit_offset: 5
+    bit_size: 1
+  - name: RF1FE
+    description: desc RF1FE.
+    bit_offset: 6
+    bit_size: 1
+  - name: RF1LE
+    description: desc RF1LE.
+    bit_offset: 7
+    bit_size: 1
+  - name: HPME
+    description: desc HPME.
+    bit_offset: 8
+    bit_size: 1
+  - name: TCE
+    description: desc TCE.
+    bit_offset: 9
+    bit_size: 1
+  - name: TCFE
+    description: desc TCFE.
+    bit_offset: 10
+    bit_size: 1
+  - name: TFEE
+    description: desc TFEE.
+    bit_offset: 11
+    bit_size: 1
+  - name: TEFNE
+    description: desc TEFNE.
+    bit_offset: 12
+    bit_size: 1
+  - name: TEFWE
+    description: desc TEFWE.
+    bit_offset: 13
+    bit_size: 1
+  - name: TEFFE
+    description: desc TEFFE.
+    bit_offset: 14
+    bit_size: 1
+  - name: TEFLE
+    description: desc TEFLE.
+    bit_offset: 15
+    bit_size: 1
+  - name: TSWE
+    description: desc TSWE.
+    bit_offset: 16
+    bit_size: 1
+  - name: MRAFE
+    description: desc MRAFE.
+    bit_offset: 17
+    bit_size: 1
+  - name: TOOE
+    description: desc TOOE.
+    bit_offset: 18
+    bit_size: 1
+  - name: DRXE
+    description: desc DRXE.
+    bit_offset: 19
+    bit_size: 1
+  - name: BECE
+    description: desc BECE.
+    bit_offset: 20
+    bit_size: 1
+  - name: BEUE
+    description: desc BEUE.
+    bit_offset: 21
+    bit_size: 1
+  - name: ELOE
+    description: desc ELOE.
+    bit_offset: 22
+    bit_size: 1
+  - name: EPE
+    description: desc EPE.
+    bit_offset: 23
+    bit_size: 1
+  - name: EWE
+    description: desc EWE.
+    bit_offset: 24
+    bit_size: 1
+  - name: BOE
+    description: desc BOE.
+    bit_offset: 25
+    bit_size: 1
+  - name: WDIE
+    description: desc WDIE.
+    bit_offset: 26
+    bit_size: 1
+  - name: PEAE
+    description: desc PEAE.
+    bit_offset: 27
+    bit_size: 1
+  - name: PEDE
+    description: desc PEDE.
+    bit_offset: 28
+    bit_size: 1
+  - name: ARAE
+    description: desc ARAE.
+    bit_offset: 29
+    bit_size: 1
+fieldset/ILE:
+  description: desc ILE.
+  fields:
+  - name: EINT0
+    description: desc EINT0.
+    bit_offset: 0
+    bit_size: 1
+  - name: EINT1
+    description: desc EINT1.
+    bit_offset: 1
+    bit_size: 1
+fieldset/ILS:
+  description: desc ILS.
+  fields:
+  - name: RF0NL
+    description: desc RF0NL.
+    bit_offset: 0
+    bit_size: 1
+  - name: RF0WL
+    description: desc RF0WL.
+    bit_offset: 1
+    bit_size: 1
+  - name: RF0FL
+    description: desc RF0FL.
+    bit_offset: 2
+    bit_size: 1
+  - name: RF0LL
+    description: desc RF0LL.
+    bit_offset: 3
+    bit_size: 1
+  - name: RF1NL
+    description: desc RF1NL.
+    bit_offset: 4
+    bit_size: 1
+  - name: RF1WL
+    description: desc RF1WL.
+    bit_offset: 5
+    bit_size: 1
+  - name: RF1FL
+    description: desc RF1FL.
+    bit_offset: 6
+    bit_size: 1
+  - name: RF1LL
+    description: desc RF1LL.
+    bit_offset: 7
+    bit_size: 1
+  - name: HPML
+    description: desc HPML.
+    bit_offset: 8
+    bit_size: 1
+  - name: TCL
+    description: desc TCL.
+    bit_offset: 9
+    bit_size: 1
+  - name: TCFL
+    description: desc TCFL.
+    bit_offset: 10
+    bit_size: 1
+  - name: TFEL
+    description: desc TFEL.
+    bit_offset: 11
+    bit_size: 1
+  - name: TEFNL
+    description: desc TEFNL.
+    bit_offset: 12
+    bit_size: 1
+  - name: TEFWL
+    description: desc TEFWL.
+    bit_offset: 13
+    bit_size: 1
+  - name: TEFFL
+    description: desc TEFFL.
+    bit_offset: 14
+    bit_size: 1
+  - name: TEFLL
+    description: desc TEFLL.
+    bit_offset: 15
+    bit_size: 1
+  - name: TSWL
+    description: desc TSWL.
+    bit_offset: 16
+    bit_size: 1
+  - name: MRAFL
+    description: desc MRAFL.
+    bit_offset: 17
+    bit_size: 1
+  - name: TOOL
+    description: desc TOOL.
+    bit_offset: 18
+    bit_size: 1
+  - name: DRXL
+    description: desc DRXL.
+    bit_offset: 19
+    bit_size: 1
+  - name: BECL
+    description: desc BECL.
+    bit_offset: 20
+    bit_size: 1
+  - name: BEUL
+    description: desc BEUL.
+    bit_offset: 21
+    bit_size: 1
+  - name: ELOL
+    description: desc ELOL.
+    bit_offset: 22
+    bit_size: 1
+  - name: EPL
+    description: desc EPL.
+    bit_offset: 23
+    bit_size: 1
+  - name: EWL
+    description: desc EWL.
+    bit_offset: 24
+    bit_size: 1
+  - name: BOL
+    description: desc BOL.
+    bit_offset: 25
+    bit_size: 1
+  - name: WDIL
+    description: desc WDIL.
+    bit_offset: 26
+    bit_size: 1
+  - name: PEAL
+    description: desc PEAL.
+    bit_offset: 27
+    bit_size: 1
+  - name: PEDL
+    description: desc PEDL.
+    bit_offset: 28
+    bit_size: 1
+  - name: ARAL
+    description: desc ARAL.
+    bit_offset: 29
+    bit_size: 1
+fieldset/IR:
+  description: desc IR.
+  fields:
+  - name: RF0N
+    description: desc RF0N.
+    bit_offset: 0
+    bit_size: 1
+  - name: RF0W
+    description: desc RF0W.
+    bit_offset: 1
+    bit_size: 1
+  - name: RF0F
+    description: desc RF0F.
+    bit_offset: 2
+    bit_size: 1
+  - name: RF0L
+    description: desc RF0L.
+    bit_offset: 3
+    bit_size: 1
+  - name: RF1N
+    description: desc RF1N.
+    bit_offset: 4
+    bit_size: 1
+  - name: RF1W
+    description: desc RF1W.
+    bit_offset: 5
+    bit_size: 1
+  - name: RF1F
+    description: desc RF1F.
+    bit_offset: 6
+    bit_size: 1
+  - name: RF1L
+    description: desc RF1L.
+    bit_offset: 7
+    bit_size: 1
+  - name: HPM
+    description: desc HPM.
+    bit_offset: 8
+    bit_size: 1
+  - name: TC
+    description: desc TC.
+    bit_offset: 9
+    bit_size: 1
+  - name: TCF
+    description: desc TCF.
+    bit_offset: 10
+    bit_size: 1
+  - name: TFE
+    description: desc TFE.
+    bit_offset: 11
+    bit_size: 1
+  - name: TEFN
+    description: desc TEFN.
+    bit_offset: 12
+    bit_size: 1
+  - name: TEFW
+    description: desc TEFW.
+    bit_offset: 13
+    bit_size: 1
+  - name: TEFF
+    description: desc TEFF.
+    bit_offset: 14
+    bit_size: 1
+  - name: TEFL
+    description: desc TEFL.
+    bit_offset: 15
+    bit_size: 1
+  - name: TSW
+    description: desc TSW.
+    bit_offset: 16
+    bit_size: 1
+  - name: MRAF
+    description: desc MRAF.
+    bit_offset: 17
+    bit_size: 1
+  - name: TOO
+    description: desc TOO.
+    bit_offset: 18
+    bit_size: 1
+  - name: DRX
+    description: desc DRX.
+    bit_offset: 19
+    bit_size: 1
+  - name: BEC
+    description: desc BEC.
+    bit_offset: 20
+    bit_size: 1
+  - name: BEU
+    description: desc BEU.
+    bit_offset: 21
+    bit_size: 1
+  - name: ELO
+    description: desc ELO.
+    bit_offset: 22
+    bit_size: 1
+  - name: EP
+    description: desc EP.
+    bit_offset: 23
+    bit_size: 1
+  - name: EW
+    description: desc EW.
+    bit_offset: 24
+    bit_size: 1
+  - name: BO
+    description: desc BO.
+    bit_offset: 25
+    bit_size: 1
+  - name: WDI
+    description: desc WDI.
+    bit_offset: 26
+    bit_size: 1
+  - name: PEA
+    description: desc PEA.
+    bit_offset: 27
+    bit_size: 1
+  - name: PED
+    description: desc PED.
+    bit_offset: 28
+    bit_size: 1
+  - name: ARA
+    description: desc ARA.
+    bit_offset: 29
+    bit_size: 1
+fieldset/NBTP:
+  description: desc NBTP.
+  fields:
+  - name: NTSEG2
+    description: desc NTSEG2.
+    bit_offset: 0
+    bit_size: 7
+  - name: NTSEG1
+    description: desc NTSEG1.
+    bit_offset: 8
+    bit_size: 8
+  - name: NBRP
+    description: desc NBRP.
+    bit_offset: 16
+    bit_size: 9
+  - name: NSJW
+    description: desc NSJW.
+    bit_offset: 25
+    bit_size: 7
+fieldset/NDAT1:
+  description: desc NDAT1.
+  fields:
+  - name: ND0
+    description: desc ND0.
+    bit_offset: 0
+    bit_size: 1
+  - name: ND1
+    description: desc ND1.
+    bit_offset: 1
+    bit_size: 1
+  - name: ND2
+    description: desc ND2.
+    bit_offset: 2
+    bit_size: 1
+  - name: ND3
+    description: desc ND3.
+    bit_offset: 3
+    bit_size: 1
+  - name: ND4
+    description: desc ND4.
+    bit_offset: 4
+    bit_size: 1
+  - name: ND5
+    description: desc ND5.
+    bit_offset: 5
+    bit_size: 1
+  - name: ND6
+    description: desc ND6.
+    bit_offset: 6
+    bit_size: 1
+  - name: ND7
+    description: desc ND7.
+    bit_offset: 7
+    bit_size: 1
+  - name: ND8
+    description: desc ND8.
+    bit_offset: 8
+    bit_size: 1
+  - name: ND9
+    description: desc ND9.
+    bit_offset: 9
+    bit_size: 1
+  - name: ND10
+    description: desc ND10.
+    bit_offset: 10
+    bit_size: 1
+  - name: ND11
+    description: desc ND11.
+    bit_offset: 11
+    bit_size: 1
+  - name: ND12
+    description: desc ND12.
+    bit_offset: 12
+    bit_size: 1
+  - name: ND13
+    description: desc ND13.
+    bit_offset: 13
+    bit_size: 1
+  - name: ND14
+    description: desc ND14.
+    bit_offset: 14
+    bit_size: 1
+  - name: ND15
+    description: desc ND15.
+    bit_offset: 15
+    bit_size: 1
+  - name: ND16
+    description: desc ND16.
+    bit_offset: 16
+    bit_size: 1
+  - name: ND17
+    description: desc ND17.
+    bit_offset: 17
+    bit_size: 1
+  - name: ND18
+    description: desc ND18.
+    bit_offset: 18
+    bit_size: 1
+  - name: ND19
+    description: desc ND19.
+    bit_offset: 19
+    bit_size: 1
+  - name: ND20
+    description: desc ND20.
+    bit_offset: 20
+    bit_size: 1
+  - name: ND21
+    description: desc ND21.
+    bit_offset: 21
+    bit_size: 1
+  - name: ND22
+    description: desc ND22.
+    bit_offset: 22
+    bit_size: 1
+  - name: ND23
+    description: desc ND23.
+    bit_offset: 23
+    bit_size: 1
+  - name: ND24
+    description: desc ND24.
+    bit_offset: 24
+    bit_size: 1
+  - name: ND25
+    description: desc ND25.
+    bit_offset: 25
+    bit_size: 1
+  - name: ND26
+    description: desc ND26.
+    bit_offset: 26
+    bit_size: 1
+  - name: ND27
+    description: desc ND27.
+    bit_offset: 27
+    bit_size: 1
+  - name: ND28
+    description: desc ND28.
+    bit_offset: 28
+    bit_size: 1
+  - name: ND29
+    description: desc ND29.
+    bit_offset: 29
+    bit_size: 1
+  - name: ND30
+    description: desc ND30.
+    bit_offset: 30
+    bit_size: 1
+  - name: ND31
+    description: desc ND31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/NDAT2:
+  description: desc NDAT2.
+  fields:
+  - name: ND32
+    description: desc ND32.
+    bit_offset: 0
+    bit_size: 1
+  - name: ND33
+    description: desc ND33.
+    bit_offset: 1
+    bit_size: 1
+  - name: ND34
+    description: desc ND34.
+    bit_offset: 2
+    bit_size: 1
+  - name: ND35
+    description: desc ND35.
+    bit_offset: 3
+    bit_size: 1
+  - name: ND36
+    description: desc ND36.
+    bit_offset: 4
+    bit_size: 1
+  - name: ND37
+    description: desc ND37.
+    bit_offset: 5
+    bit_size: 1
+  - name: ND38
+    description: desc ND38.
+    bit_offset: 6
+    bit_size: 1
+  - name: ND39
+    description: desc ND39.
+    bit_offset: 7
+    bit_size: 1
+  - name: ND40
+    description: desc ND40.
+    bit_offset: 8
+    bit_size: 1
+  - name: ND41
+    description: desc ND41.
+    bit_offset: 9
+    bit_size: 1
+  - name: ND42
+    description: desc ND42.
+    bit_offset: 10
+    bit_size: 1
+  - name: ND43
+    description: desc ND43.
+    bit_offset: 11
+    bit_size: 1
+  - name: ND44
+    description: desc ND44.
+    bit_offset: 12
+    bit_size: 1
+  - name: ND45
+    description: desc ND45.
+    bit_offset: 13
+    bit_size: 1
+  - name: ND46
+    description: desc ND46.
+    bit_offset: 14
+    bit_size: 1
+  - name: ND47
+    description: desc ND47.
+    bit_offset: 15
+    bit_size: 1
+  - name: ND48
+    description: desc ND48.
+    bit_offset: 16
+    bit_size: 1
+  - name: ND49
+    description: desc ND49.
+    bit_offset: 17
+    bit_size: 1
+  - name: ND50
+    description: desc ND50.
+    bit_offset: 18
+    bit_size: 1
+  - name: ND51
+    description: desc ND51.
+    bit_offset: 19
+    bit_size: 1
+  - name: ND52
+    description: desc ND52.
+    bit_offset: 20
+    bit_size: 1
+  - name: ND53
+    description: desc ND53.
+    bit_offset: 21
+    bit_size: 1
+  - name: ND54
+    description: desc ND54.
+    bit_offset: 22
+    bit_size: 1
+  - name: ND55
+    description: desc ND55.
+    bit_offset: 23
+    bit_size: 1
+  - name: ND56
+    description: desc ND56.
+    bit_offset: 24
+    bit_size: 1
+  - name: ND57
+    description: desc ND57.
+    bit_offset: 25
+    bit_size: 1
+  - name: ND58
+    description: desc ND58.
+    bit_offset: 26
+    bit_size: 1
+  - name: ND59
+    description: desc ND59.
+    bit_offset: 27
+    bit_size: 1
+  - name: ND60
+    description: desc ND60.
+    bit_offset: 28
+    bit_size: 1
+  - name: ND61
+    description: desc ND61.
+    bit_offset: 29
+    bit_size: 1
+  - name: ND62
+    description: desc ND62.
+    bit_offset: 30
+    bit_size: 1
+  - name: ND63
+    description: desc ND63.
+    bit_offset: 31
+    bit_size: 1
+fieldset/PSR:
+  description: desc PSR.
+  fields:
+  - name: LEC
+    description: desc LEC.
+    bit_offset: 0
+    bit_size: 3
+  - name: ACT
+    description: desc ACT.
+    bit_offset: 3
+    bit_size: 2
+  - name: EP
+    description: desc EP.
+    bit_offset: 5
+    bit_size: 1
+  - name: EW
+    description: desc EW.
+    bit_offset: 6
+    bit_size: 1
+  - name: BO
+    description: desc BO.
+    bit_offset: 7
+    bit_size: 1
+  - name: DLEC
+    description: desc DLEC.
+    bit_offset: 8
+    bit_size: 3
+  - name: RESI
+    description: desc RESI.
+    bit_offset: 11
+    bit_size: 1
+  - name: RBRS
+    description: desc RBRS.
+    bit_offset: 12
+    bit_size: 1
+  - name: RFDF
+    description: desc RFDF.
+    bit_offset: 13
+    bit_size: 1
+  - name: PXE
+    description: desc PXE.
+    bit_offset: 14
+    bit_size: 1
+  - name: TDCV
+    description: desc TDCV.
+    bit_offset: 16
+    bit_size: 7
+fieldset/RWD:
+  description: desc RWD.
+  fields:
+  - name: WDC
+    description: desc WDC.
+    bit_offset: 0
+    bit_size: 8
+  - name: WDV
+    description: desc WDV.
+    bit_offset: 8
+    bit_size: 8
+fieldset/RXBC:
+  description: desc RXBC.
+  fields:
+  - name: RBSA
+    description: desc RBSA.
+    bit_offset: 2
+    bit_size: 14
+fieldset/RXESC:
+  description: desc RXESC.
+  fields:
+  - name: F0DS
+    description: desc F0DS.
+    bit_offset: 0
+    bit_size: 3
+  - name: F1DS
+    description: desc F1DS.
+    bit_offset: 4
+    bit_size: 3
+  - name: RBDS
+    description: desc RBDS.
+    bit_offset: 8
+    bit_size: 3
+fieldset/RXF0A:
+  description: desc RXF0A.
+  fields:
+  - name: F0AI
+    description: desc F0AI.
+    bit_offset: 0
+    bit_size: 6
+fieldset/RXF0C:
+  description: desc RXF0C.
+  fields:
+  - name: F0SA
+    description: desc F0SA.
+    bit_offset: 2
+    bit_size: 14
+  - name: F0S
+    description: desc F0S.
+    bit_offset: 16
+    bit_size: 7
+  - name: F0WM
+    description: desc F0WM.
+    bit_offset: 24
+    bit_size: 7
+  - name: F0OM
+    description: desc F0OM.
+    bit_offset: 31
+    bit_size: 1
+fieldset/RXF0S:
+  description: desc RXF0S.
+  fields:
+  - name: F0FL
+    description: desc F0FL.
+    bit_offset: 0
+    bit_size: 7
+  - name: F0GI
+    description: desc F0GI.
+    bit_offset: 8
+    bit_size: 6
+  - name: F0PI
+    description: desc F0PI.
+    bit_offset: 16
+    bit_size: 6
+  - name: F0F
+    description: desc F0F.
+    bit_offset: 24
+    bit_size: 1
+  - name: RF0L
+    description: desc RF0L.
+    bit_offset: 25
+    bit_size: 1
+fieldset/RXF1A:
+  description: desc RXF1A.
+  fields:
+  - name: F1AI
+    description: desc F1AI.
+    bit_offset: 0
+    bit_size: 6
+fieldset/RXF1C:
+  description: desc RXF1C.
+  fields:
+  - name: F1SA
+    description: desc F1SA.
+    bit_offset: 2
+    bit_size: 14
+  - name: F1S
+    description: desc F1S.
+    bit_offset: 16
+    bit_size: 7
+  - name: F1WM
+    description: desc F1WM.
+    bit_offset: 24
+    bit_size: 7
+  - name: F1OM
+    description: desc F1OM.
+    bit_offset: 31
+    bit_size: 1
+fieldset/RXF1S:
+  description: desc RXF1S.
+  fields:
+  - name: F1FL
+    description: desc F1FL.
+    bit_offset: 0
+    bit_size: 7
+  - name: F1GI
+    description: desc F1GI.
+    bit_offset: 8
+    bit_size: 6
+  - name: F1PI
+    description: desc F1PI.
+    bit_offset: 16
+    bit_size: 6
+  - name: F1F
+    description: desc F1F.
+    bit_offset: 24
+    bit_size: 1
+  - name: RF1L
+    description: desc RF1L.
+    bit_offset: 25
+    bit_size: 1
+  - name: DMS
+    description: desc DMS.
+    bit_offset: 30
+    bit_size: 2
+fieldset/SIDFC:
+  description: desc SIDFC.
+  fields:
+  - name: FLSSA
+    description: desc FLSSA.
+    bit_offset: 2
+    bit_size: 14
+  - name: LSS
+    description: desc LSS.
+    bit_offset: 16
+    bit_size: 8
+fieldset/TDCR:
+  description: desc TDCR.
+  fields:
+  - name: TDCF
+    description: desc TDCF.
+    bit_offset: 0
+    bit_size: 7
+  - name: TDCO
+    description: desc TDCO.
+    bit_offset: 8
+    bit_size: 7
+fieldset/TEST:
+  description: desc TEST.
+  fields:
+  - name: LBCK
+    description: desc LBCK.
+    bit_offset: 4
+    bit_size: 1
+  - name: TX
+    description: desc TX.
+    bit_offset: 5
+    bit_size: 2
+  - name: RX
+    description: desc RX.
+    bit_offset: 7
+    bit_size: 1
+  - name: TXBNP
+    description: desc TXBNP.
+    bit_offset: 8
+    bit_size: 5
+  - name: PVAL
+    description: desc PVAL.
+    bit_offset: 13
+    bit_size: 1
+  - name: TXBNS
+    description: desc TXBNS.
+    bit_offset: 16
+    bit_size: 5
+  - name: SVAL
+    description: desc SVAL.
+    bit_offset: 21
+    bit_size: 1
+fieldset/TOCC:
+  description: desc TOCC.
+  fields:
+  - name: ETOC
+    description: desc ETOC.
+    bit_offset: 0
+    bit_size: 1
+  - name: TOS
+    description: desc TOS.
+    bit_offset: 1
+    bit_size: 2
+  - name: TOP
+    description: desc TOP.
+    bit_offset: 16
+    bit_size: 16
+fieldset/TOCV:
+  description: desc TOCV.
+  fields:
+  - name: TOC
+    description: desc TOC.
+    bit_offset: 0
+    bit_size: 16
+fieldset/TSCC:
+  description: desc TSCC.
+  fields:
+  - name: TSS
+    description: desc TSS.
+    bit_offset: 0
+    bit_size: 2
+  - name: TCP
+    description: desc TCP.
+    bit_offset: 16
+    bit_size: 4
+fieldset/TSCV:
+  description: desc TSCV.
+  fields:
+  - name: TSC
+    description: desc TSC.
+    bit_offset: 0
+    bit_size: 16
+fieldset/TXBAR:
+  description: desc TXBAR.
+  fields:
+  - name: AR0
+    description: desc AR0.
+    bit_offset: 0
+    bit_size: 1
+  - name: AR1
+    description: desc AR1.
+    bit_offset: 1
+    bit_size: 1
+  - name: AR2
+    description: desc AR2.
+    bit_offset: 2
+    bit_size: 1
+  - name: AR3
+    description: desc AR3.
+    bit_offset: 3
+    bit_size: 1
+  - name: AR4
+    description: desc AR4.
+    bit_offset: 4
+    bit_size: 1
+  - name: AR5
+    description: desc AR5.
+    bit_offset: 5
+    bit_size: 1
+  - name: AR6
+    description: desc AR6.
+    bit_offset: 6
+    bit_size: 1
+  - name: AR7
+    description: desc AR7.
+    bit_offset: 7
+    bit_size: 1
+  - name: AR8
+    description: desc AR8.
+    bit_offset: 8
+    bit_size: 1
+  - name: AR9
+    description: desc AR9.
+    bit_offset: 9
+    bit_size: 1
+  - name: AR10
+    description: desc AR10.
+    bit_offset: 10
+    bit_size: 1
+  - name: AR11
+    description: desc AR11.
+    bit_offset: 11
+    bit_size: 1
+  - name: AR12
+    description: desc AR12.
+    bit_offset: 12
+    bit_size: 1
+  - name: AR13
+    description: desc AR13.
+    bit_offset: 13
+    bit_size: 1
+  - name: AR14
+    description: desc AR14.
+    bit_offset: 14
+    bit_size: 1
+  - name: AR15
+    description: desc AR15.
+    bit_offset: 15
+    bit_size: 1
+  - name: AR16
+    description: desc AR16.
+    bit_offset: 16
+    bit_size: 1
+  - name: AR17
+    description: desc AR17.
+    bit_offset: 17
+    bit_size: 1
+  - name: AR18
+    description: desc AR18.
+    bit_offset: 18
+    bit_size: 1
+  - name: AR19
+    description: desc AR19.
+    bit_offset: 19
+    bit_size: 1
+  - name: AR20
+    description: desc AR20.
+    bit_offset: 20
+    bit_size: 1
+  - name: AR21
+    description: desc AR21.
+    bit_offset: 21
+    bit_size: 1
+  - name: AR22
+    description: desc AR22.
+    bit_offset: 22
+    bit_size: 1
+  - name: AR23
+    description: desc AR23.
+    bit_offset: 23
+    bit_size: 1
+  - name: AR24
+    description: desc AR24.
+    bit_offset: 24
+    bit_size: 1
+  - name: AR25
+    description: desc AR25.
+    bit_offset: 25
+    bit_size: 1
+  - name: AR26
+    description: desc AR26.
+    bit_offset: 26
+    bit_size: 1
+  - name: AR27
+    description: desc AR27.
+    bit_offset: 27
+    bit_size: 1
+  - name: AR28
+    description: desc AR28.
+    bit_offset: 28
+    bit_size: 1
+  - name: AR29
+    description: desc AR29.
+    bit_offset: 29
+    bit_size: 1
+  - name: AR30
+    description: desc AR30.
+    bit_offset: 30
+    bit_size: 1
+  - name: AR31
+    description: desc AR31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/TXBC:
+  description: desc TXBC.
+  fields:
+  - name: TBSA
+    description: desc TBSA.
+    bit_offset: 2
+    bit_size: 14
+  - name: NDTB
+    description: desc NDTB.
+    bit_offset: 16
+    bit_size: 6
+  - name: TFQS
+    description: desc TFQS.
+    bit_offset: 24
+    bit_size: 6
+  - name: TFQM
+    description: desc TFQM.
+    bit_offset: 30
+    bit_size: 1
+fieldset/TXBCF:
+  description: desc TXBCF.
+  fields:
+  - name: CF0
+    description: desc CF0.
+    bit_offset: 0
+    bit_size: 1
+  - name: CF1
+    description: desc CF1.
+    bit_offset: 1
+    bit_size: 1
+  - name: CF2
+    description: desc CF2.
+    bit_offset: 2
+    bit_size: 1
+  - name: CF3
+    description: desc CF3.
+    bit_offset: 3
+    bit_size: 1
+  - name: CF4
+    description: desc CF4.
+    bit_offset: 4
+    bit_size: 1
+  - name: CF5
+    description: desc CF5.
+    bit_offset: 5
+    bit_size: 1
+  - name: CF6
+    description: desc CF6.
+    bit_offset: 6
+    bit_size: 1
+  - name: CF7
+    description: desc CF7.
+    bit_offset: 7
+    bit_size: 1
+  - name: CF8
+    description: desc CF8.
+    bit_offset: 8
+    bit_size: 1
+  - name: CF9
+    description: desc CF9.
+    bit_offset: 9
+    bit_size: 1
+  - name: CF10
+    description: desc CF10.
+    bit_offset: 10
+    bit_size: 1
+  - name: CF11
+    description: desc CF11.
+    bit_offset: 11
+    bit_size: 1
+  - name: CF12
+    description: desc CF12.
+    bit_offset: 12
+    bit_size: 1
+  - name: CF13
+    description: desc CF13.
+    bit_offset: 13
+    bit_size: 1
+  - name: CF14
+    description: desc CF14.
+    bit_offset: 14
+    bit_size: 1
+  - name: CF15
+    description: desc CF15.
+    bit_offset: 15
+    bit_size: 1
+  - name: CF16
+    description: desc CF16.
+    bit_offset: 16
+    bit_size: 1
+  - name: CF17
+    description: desc CF17.
+    bit_offset: 17
+    bit_size: 1
+  - name: CF18
+    description: desc CF18.
+    bit_offset: 18
+    bit_size: 1
+  - name: CF19
+    description: desc CF19.
+    bit_offset: 19
+    bit_size: 1
+  - name: CF20
+    description: desc CF20.
+    bit_offset: 20
+    bit_size: 1
+  - name: CF21
+    description: desc CF21.
+    bit_offset: 21
+    bit_size: 1
+  - name: CF22
+    description: desc CF22.
+    bit_offset: 22
+    bit_size: 1
+  - name: CF23
+    description: desc CF23.
+    bit_offset: 23
+    bit_size: 1
+  - name: CF24
+    description: desc CF24.
+    bit_offset: 24
+    bit_size: 1
+  - name: CF25
+    description: desc CF25.
+    bit_offset: 25
+    bit_size: 1
+  - name: CF26
+    description: desc CF26.
+    bit_offset: 26
+    bit_size: 1
+  - name: CF27
+    description: desc CF27.
+    bit_offset: 27
+    bit_size: 1
+  - name: CF28
+    description: desc CF28.
+    bit_offset: 28
+    bit_size: 1
+  - name: CF29
+    description: desc CF29.
+    bit_offset: 29
+    bit_size: 1
+  - name: CF30
+    description: desc CF30.
+    bit_offset: 30
+    bit_size: 1
+  - name: CF31
+    description: desc CF31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/TXBCIE:
+  description: desc TXBCIE.
+  fields:
+  - name: CFIE0
+    description: desc CFIE0.
+    bit_offset: 0
+    bit_size: 1
+  - name: CFIE1
+    description: desc CFIE1.
+    bit_offset: 1
+    bit_size: 1
+  - name: CFIE2
+    description: desc CFIE2.
+    bit_offset: 2
+    bit_size: 1
+  - name: CFIE3
+    description: desc CFIE3.
+    bit_offset: 3
+    bit_size: 1
+  - name: CFIE4
+    description: desc CFIE4.
+    bit_offset: 4
+    bit_size: 1
+  - name: CFIE5
+    description: desc CFIE5.
+    bit_offset: 5
+    bit_size: 1
+  - name: CFIE6
+    description: desc CFIE6.
+    bit_offset: 6
+    bit_size: 1
+  - name: CFIE7
+    description: desc CFIE7.
+    bit_offset: 7
+    bit_size: 1
+  - name: CFIE8
+    description: desc CFIE8.
+    bit_offset: 8
+    bit_size: 1
+  - name: CFIE9
+    description: desc CFIE9.
+    bit_offset: 9
+    bit_size: 1
+  - name: CFIE10
+    description: desc CFIE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: CFIE11
+    description: desc CFIE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: CFIE12
+    description: desc CFIE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: CFIE13
+    description: desc CFIE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: CFIE14
+    description: desc CFIE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: CFIE15
+    description: desc CFIE15.
+    bit_offset: 15
+    bit_size: 1
+  - name: CFIE16
+    description: desc CFIE16.
+    bit_offset: 16
+    bit_size: 1
+  - name: CFIE17
+    description: desc CFIE17.
+    bit_offset: 17
+    bit_size: 1
+  - name: CFIE18
+    description: desc CFIE18.
+    bit_offset: 18
+    bit_size: 1
+  - name: CFIE19
+    description: desc CFIE19.
+    bit_offset: 19
+    bit_size: 1
+  - name: CFIE20
+    description: desc CFIE20.
+    bit_offset: 20
+    bit_size: 1
+  - name: CFIE21
+    description: desc CFIE21.
+    bit_offset: 21
+    bit_size: 1
+  - name: CFIE22
+    description: desc CFIE22.
+    bit_offset: 22
+    bit_size: 1
+  - name: CFIE23
+    description: desc CFIE23.
+    bit_offset: 23
+    bit_size: 1
+  - name: CFIE24
+    description: desc CFIE24.
+    bit_offset: 24
+    bit_size: 1
+  - name: CFIE25
+    description: desc CFIE25.
+    bit_offset: 25
+    bit_size: 1
+  - name: CFIE26
+    description: desc CFIE26.
+    bit_offset: 26
+    bit_size: 1
+  - name: CFIE27
+    description: desc CFIE27.
+    bit_offset: 27
+    bit_size: 1
+  - name: CFIE28
+    description: desc CFIE28.
+    bit_offset: 28
+    bit_size: 1
+  - name: CFIE29
+    description: desc CFIE29.
+    bit_offset: 29
+    bit_size: 1
+  - name: CFIE30
+    description: desc CFIE30.
+    bit_offset: 30
+    bit_size: 1
+  - name: CFIE31
+    description: desc CFIE31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/TXBCR:
+  description: desc TXBCR.
+  fields:
+  - name: CR0
+    description: desc CR0.
+    bit_offset: 0
+    bit_size: 1
+  - name: CR1
+    description: desc CR1.
+    bit_offset: 1
+    bit_size: 1
+  - name: CR2
+    description: desc CR2.
+    bit_offset: 2
+    bit_size: 1
+  - name: CR3
+    description: desc CR3.
+    bit_offset: 3
+    bit_size: 1
+  - name: CR4
+    description: desc CR4.
+    bit_offset: 4
+    bit_size: 1
+  - name: CR5
+    description: desc CR5.
+    bit_offset: 5
+    bit_size: 1
+  - name: CR6
+    description: desc CR6.
+    bit_offset: 6
+    bit_size: 1
+  - name: CR7
+    description: desc CR7.
+    bit_offset: 7
+    bit_size: 1
+  - name: CR8
+    description: desc CR8.
+    bit_offset: 8
+    bit_size: 1
+  - name: CR9
+    description: desc CR9.
+    bit_offset: 9
+    bit_size: 1
+  - name: CR10
+    description: desc CR10.
+    bit_offset: 10
+    bit_size: 1
+  - name: CR11
+    description: desc CR11.
+    bit_offset: 11
+    bit_size: 1
+  - name: CR12
+    description: desc CR12.
+    bit_offset: 12
+    bit_size: 1
+  - name: CR13
+    description: desc CR13.
+    bit_offset: 13
+    bit_size: 1
+  - name: CR14
+    description: desc CR14.
+    bit_offset: 14
+    bit_size: 1
+  - name: CR15
+    description: desc CR15.
+    bit_offset: 15
+    bit_size: 1
+  - name: CR16
+    description: desc CR16.
+    bit_offset: 16
+    bit_size: 1
+  - name: CR17
+    description: desc CR17.
+    bit_offset: 17
+    bit_size: 1
+  - name: CR18
+    description: desc CR18.
+    bit_offset: 18
+    bit_size: 1
+  - name: CR19
+    description: desc CR19.
+    bit_offset: 19
+    bit_size: 1
+  - name: CR20
+    description: desc CR20.
+    bit_offset: 20
+    bit_size: 1
+  - name: CR21
+    description: desc CR21.
+    bit_offset: 21
+    bit_size: 1
+  - name: CR22
+    description: desc CR22.
+    bit_offset: 22
+    bit_size: 1
+  - name: CR23
+    description: desc CR23.
+    bit_offset: 23
+    bit_size: 1
+  - name: CR24
+    description: desc CR24.
+    bit_offset: 24
+    bit_size: 1
+  - name: CR25
+    description: desc CR25.
+    bit_offset: 25
+    bit_size: 1
+  - name: CR26
+    description: desc CR26.
+    bit_offset: 26
+    bit_size: 1
+  - name: CR27
+    description: desc CR27.
+    bit_offset: 27
+    bit_size: 1
+  - name: CR28
+    description: desc CR28.
+    bit_offset: 28
+    bit_size: 1
+  - name: CR29
+    description: desc CR29.
+    bit_offset: 29
+    bit_size: 1
+  - name: CR30
+    description: desc CR30.
+    bit_offset: 30
+    bit_size: 1
+  - name: CR31
+    description: desc CR31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/TXBRP:
+  description: desc TXBRP.
+  fields:
+  - name: TRP0
+    description: desc TRP0.
+    bit_offset: 0
+    bit_size: 1
+  - name: TRP1
+    description: desc TRP1.
+    bit_offset: 1
+    bit_size: 1
+  - name: TRP2
+    description: desc TRP2.
+    bit_offset: 2
+    bit_size: 1
+  - name: TRP3
+    description: desc TRP3.
+    bit_offset: 3
+    bit_size: 1
+  - name: TRP4
+    description: desc TRP4.
+    bit_offset: 4
+    bit_size: 1
+  - name: TRP5
+    description: desc TRP5.
+    bit_offset: 5
+    bit_size: 1
+  - name: TRP6
+    description: desc TRP6.
+    bit_offset: 6
+    bit_size: 1
+  - name: TRP7
+    description: desc TRP7.
+    bit_offset: 7
+    bit_size: 1
+  - name: TRP8
+    description: desc TRP8.
+    bit_offset: 8
+    bit_size: 1
+  - name: TRP9
+    description: desc TRP9.
+    bit_offset: 9
+    bit_size: 1
+  - name: TRP10
+    description: desc TRP10.
+    bit_offset: 10
+    bit_size: 1
+  - name: TRP11
+    description: desc TRP11.
+    bit_offset: 11
+    bit_size: 1
+  - name: TRP12
+    description: desc TRP12.
+    bit_offset: 12
+    bit_size: 1
+  - name: TRP13
+    description: desc TRP13.
+    bit_offset: 13
+    bit_size: 1
+  - name: TRP14
+    description: desc TRP14.
+    bit_offset: 14
+    bit_size: 1
+  - name: TRP15
+    description: desc TRP15.
+    bit_offset: 15
+    bit_size: 1
+  - name: TRP16
+    description: desc TRP16.
+    bit_offset: 16
+    bit_size: 1
+  - name: TRP17
+    description: desc TRP17.
+    bit_offset: 17
+    bit_size: 1
+  - name: TRP18
+    description: desc TRP18.
+    bit_offset: 18
+    bit_size: 1
+  - name: TRP19
+    description: desc TRP19.
+    bit_offset: 19
+    bit_size: 1
+  - name: TRP20
+    description: desc TRP20.
+    bit_offset: 20
+    bit_size: 1
+  - name: TRP21
+    description: desc TRP21.
+    bit_offset: 21
+    bit_size: 1
+  - name: TRP22
+    description: desc TRP22.
+    bit_offset: 22
+    bit_size: 1
+  - name: TRP23
+    description: desc TRP23.
+    bit_offset: 23
+    bit_size: 1
+  - name: TRP24
+    description: desc TRP24.
+    bit_offset: 24
+    bit_size: 1
+  - name: TRP25
+    description: desc TRP25.
+    bit_offset: 25
+    bit_size: 1
+  - name: TRP26
+    description: desc TRP26.
+    bit_offset: 26
+    bit_size: 1
+  - name: TRP27
+    description: desc TRP27.
+    bit_offset: 27
+    bit_size: 1
+  - name: TRP28
+    description: desc TRP28.
+    bit_offset: 28
+    bit_size: 1
+  - name: TRP29
+    description: desc TRP29.
+    bit_offset: 29
+    bit_size: 1
+  - name: TRP30
+    description: desc TRP30.
+    bit_offset: 30
+    bit_size: 1
+  - name: TRP31
+    description: desc TRP31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/TXBTIE:
+  description: desc TXBTIE.
+  fields:
+  - name: TIE0
+    description: desc TIE0.
+    bit_offset: 0
+    bit_size: 1
+  - name: TIE1
+    description: desc TIE1.
+    bit_offset: 1
+    bit_size: 1
+  - name: TIE2
+    description: desc TIE2.
+    bit_offset: 2
+    bit_size: 1
+  - name: TIE3
+    description: desc TIE3.
+    bit_offset: 3
+    bit_size: 1
+  - name: TIE4
+    description: desc TIE4.
+    bit_offset: 4
+    bit_size: 1
+  - name: TIE5
+    description: desc TIE5.
+    bit_offset: 5
+    bit_size: 1
+  - name: TIE6
+    description: desc TIE6.
+    bit_offset: 6
+    bit_size: 1
+  - name: TIE7
+    description: desc TIE7.
+    bit_offset: 7
+    bit_size: 1
+  - name: TIE8
+    description: desc TIE8.
+    bit_offset: 8
+    bit_size: 1
+  - name: TIE9
+    description: desc TIE9.
+    bit_offset: 9
+    bit_size: 1
+  - name: TIE10
+    description: desc TIE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: TIE11
+    description: desc TIE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: TIE12
+    description: desc TIE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: TIE13
+    description: desc TIE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: TIE14
+    description: desc TIE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: TIE15
+    description: desc TIE15.
+    bit_offset: 15
+    bit_size: 1
+  - name: TIE16
+    description: desc TIE16.
+    bit_offset: 16
+    bit_size: 1
+  - name: TIE17
+    description: desc TIE17.
+    bit_offset: 17
+    bit_size: 1
+  - name: TIE18
+    description: desc TIE18.
+    bit_offset: 18
+    bit_size: 1
+  - name: TIE19
+    description: desc TIE19.
+    bit_offset: 19
+    bit_size: 1
+  - name: TIE20
+    description: desc TIE20.
+    bit_offset: 20
+    bit_size: 1
+  - name: TIE21
+    description: desc TIE21.
+    bit_offset: 21
+    bit_size: 1
+  - name: TIE22
+    description: desc TIE22.
+    bit_offset: 22
+    bit_size: 1
+  - name: TIE23
+    description: desc TIE23.
+    bit_offset: 23
+    bit_size: 1
+  - name: TIE24
+    description: desc TIE24.
+    bit_offset: 24
+    bit_size: 1
+  - name: TIE25
+    description: desc TIE25.
+    bit_offset: 25
+    bit_size: 1
+  - name: TIE26
+    description: desc TIE26.
+    bit_offset: 26
+    bit_size: 1
+  - name: TIE27
+    description: desc TIE27.
+    bit_offset: 27
+    bit_size: 1
+  - name: TIE28
+    description: desc TIE28.
+    bit_offset: 28
+    bit_size: 1
+  - name: TIE29
+    description: desc TIE29.
+    bit_offset: 29
+    bit_size: 1
+  - name: TIE30
+    description: desc TIE30.
+    bit_offset: 30
+    bit_size: 1
+  - name: TIE31
+    description: desc TIE31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/TXBTO:
+  description: desc TXBTO.
+  fields:
+  - name: TO0
+    description: desc TO0.
+    bit_offset: 0
+    bit_size: 1
+  - name: TO1
+    description: desc TO1.
+    bit_offset: 1
+    bit_size: 1
+  - name: TO2
+    description: desc TO2.
+    bit_offset: 2
+    bit_size: 1
+  - name: TO3
+    description: desc TO3.
+    bit_offset: 3
+    bit_size: 1
+  - name: TO4
+    description: desc TO4.
+    bit_offset: 4
+    bit_size: 1
+  - name: TO5
+    description: desc TO5.
+    bit_offset: 5
+    bit_size: 1
+  - name: TO6
+    description: desc TO6.
+    bit_offset: 6
+    bit_size: 1
+  - name: TO7
+    description: desc TO7.
+    bit_offset: 7
+    bit_size: 1
+  - name: TO8
+    description: desc TO8.
+    bit_offset: 8
+    bit_size: 1
+  - name: TO9
+    description: desc TO9.
+    bit_offset: 9
+    bit_size: 1
+  - name: TO10
+    description: desc TO10.
+    bit_offset: 10
+    bit_size: 1
+  - name: TO11
+    description: desc TO11.
+    bit_offset: 11
+    bit_size: 1
+  - name: TO12
+    description: desc TO12.
+    bit_offset: 12
+    bit_size: 1
+  - name: TO13
+    description: desc TO13.
+    bit_offset: 13
+    bit_size: 1
+  - name: TO14
+    description: desc TO14.
+    bit_offset: 14
+    bit_size: 1
+  - name: TO15
+    description: desc TO15.
+    bit_offset: 15
+    bit_size: 1
+  - name: TO16
+    description: desc TO16.
+    bit_offset: 16
+    bit_size: 1
+  - name: TO17
+    description: desc TO17.
+    bit_offset: 17
+    bit_size: 1
+  - name: TO18
+    description: desc TO18.
+    bit_offset: 18
+    bit_size: 1
+  - name: TO19
+    description: desc TO19.
+    bit_offset: 19
+    bit_size: 1
+  - name: TO20
+    description: desc TO20.
+    bit_offset: 20
+    bit_size: 1
+  - name: TO21
+    description: desc TO21.
+    bit_offset: 21
+    bit_size: 1
+  - name: TO22
+    description: desc TO22.
+    bit_offset: 22
+    bit_size: 1
+  - name: TO23
+    description: desc TO23.
+    bit_offset: 23
+    bit_size: 1
+  - name: TO24
+    description: desc TO24.
+    bit_offset: 24
+    bit_size: 1
+  - name: TO25
+    description: desc TO25.
+    bit_offset: 25
+    bit_size: 1
+  - name: TO26
+    description: desc TO26.
+    bit_offset: 26
+    bit_size: 1
+  - name: TO27
+    description: desc TO27.
+    bit_offset: 27
+    bit_size: 1
+  - name: TO28
+    description: desc TO28.
+    bit_offset: 28
+    bit_size: 1
+  - name: TO29
+    description: desc TO29.
+    bit_offset: 29
+    bit_size: 1
+  - name: TO30
+    description: desc TO30.
+    bit_offset: 30
+    bit_size: 1
+  - name: TO31
+    description: desc TO31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/TXEFA:
+  description: desc TXEFA.
+  fields:
+  - name: EFAI
+    description: desc EFAI.
+    bit_offset: 0
+    bit_size: 5
+fieldset/TXEFC:
+  description: desc TXEFC.
+  fields:
+  - name: EFSA
+    description: desc EFSA.
+    bit_offset: 2
+    bit_size: 14
+  - name: EFS
+    description: desc EFS.
+    bit_offset: 16
+    bit_size: 6
+  - name: EFWM
+    description: desc EFWM.
+    bit_offset: 24
+    bit_size: 6
+fieldset/TXEFS:
+  description: desc TXEFS.
+  fields:
+  - name: EFFL
+    description: desc EFFL.
+    bit_offset: 0
+    bit_size: 6
+  - name: EFGI
+    description: desc EFGI.
+    bit_offset: 8
+    bit_size: 5
+  - name: EFPI
+    description: desc EFPI.
+    bit_offset: 16
+    bit_size: 5
+  - name: EFF
+    description: desc EFF.
+    bit_offset: 24
+    bit_size: 1
+  - name: TEFL
+    description: desc TEFL.
+    bit_offset: 25
+    bit_size: 1
+fieldset/TXESC:
+  description: desc TXESC.
+  fields:
+  - name: TBDS
+    description: desc TBDS.
+    bit_offset: 0
+    bit_size: 3
+fieldset/TXFQS:
+  description: desc TXFQS.
+  fields:
+  - name: TFFL
+    description: desc TFFL.
+    bit_offset: 0
+    bit_size: 6
+  - name: TFGI
+    description: desc TFGI.
+    bit_offset: 8
+    bit_size: 5
+  - name: TFQPI
+    description: desc TFQPI.
+    bit_offset: 16
+    bit_size: 5
+  - name: TFQF
+    description: desc TFQF.
+    bit_offset: 21
+    bit_size: 1
+fieldset/XIDAM:
+  description: desc XIDAM.
+  fields:
+  - name: EIDM
+    description: desc EIDM.
+    bit_offset: 0
+    bit_size: 29
+fieldset/XIDFC:
+  description: desc XIDFC.
+  fields:
+  - name: FLESA
+    description: desc FLESA.
+    bit_offset: 2
+    bit_size: 14
+  - name: LSE
+    description: desc LSE.
+    bit_offset: 16
+    bit_size: 7

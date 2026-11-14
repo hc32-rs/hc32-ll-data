@@ -1,0 +1,63 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/DBGC；覆盖系列：HC32K116, HC32K118。
+block/DBGC:
+  description: desc DBGC.
+  items:
+  - name: MCUDBGSTAT
+    description: desc MCUDBGSTAT.
+    byte_offset: 0
+    fieldset: MCUDBGSTAT
+  - name: MCUSTPCTL
+    description: desc MCUSTPCTL.
+    byte_offset: 4
+    fieldset: MCUSTPCTL
+fieldset/MCUDBGSTAT:
+  description: desc MCUDBGSTAT.
+  fields:
+  - name: CDBGPWRUPREQ
+    description: desc CDBGPWRUPREQ.
+    bit_offset: 0
+    bit_size: 1
+  - name: CDBGPWRUPACK
+    description: desc CDBGPWRUPACK.
+    bit_offset: 1
+    bit_size: 1
+fieldset/MCUSTPCTL:
+  description: desc MCUSTPCTL.
+  fields:
+  - name: SWDTSTP
+    description: desc SWDTSTP.
+    bit_offset: 0
+    bit_size: 1
+  - name: RTCSTP
+    description: desc RTCSTP.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVD1STP
+    description: desc LVD1STP.
+    bit_offset: 3
+    bit_size: 1
+  - name: LVD2STP
+    description: desc LVD2STP.
+    bit_offset: 4
+    bit_size: 1
+  - name: TMR01STP
+    description: desc TMR01STP.
+    bit_offset: 14
+    bit_size: 1
+  - name: TMR21STP
+    description: desc TMR21STP.
+    bit_offset: 17
+    bit_size: 1
+  - name: TMR22STP
+    description: desc TMR22STP.
+    bit_offset: 18
+    bit_size: 1
+  - name: TMR41STP
+    description: desc TMR41STP.
+    bit_offset: 20
+    bit_size: 1
+  - name: TMRA1STP
+    description: desc TMRA1STP.
+    bit_offset: 23
+    bit_size: 1

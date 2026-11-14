@@ -1,0 +1,678 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/SDIOC1；覆盖系列：HC32A460, HC32A4A0, HC32A4A8, HC32F451, HC32F452, HC32F460, HC32F467, HC32F4A0, HC32F4A2, HC32F4A8。
+block/SDIOC:
+  description: desc SDIOC.
+  items:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    byte_offset: 4
+    bit_size: 16
+    fieldset: BLKSIZE
+  - name: BLKCNT
+    description: desc BLKCNT.
+    byte_offset: 6
+    bit_size: 16
+  - name: ARG0
+    description: desc ARG0.
+    byte_offset: 8
+    bit_size: 16
+  - name: ARG1
+    description: desc ARG1.
+    byte_offset: 10
+    bit_size: 16
+  - name: TRANSMODE
+    description: desc TRANSMODE.
+    byte_offset: 12
+    bit_size: 16
+    fieldset: TRANSMODE
+  - name: CMD
+    description: desc CMD.
+    byte_offset: 14
+    bit_size: 16
+    fieldset: CMD
+  - name: RESP0
+    description: desc RESP0.
+    byte_offset: 16
+    access: Read
+    bit_size: 16
+  - name: RESP1
+    description: desc RESP1.
+    byte_offset: 18
+    access: Read
+    bit_size: 16
+  - name: RESP2
+    description: desc RESP2.
+    byte_offset: 20
+    access: Read
+    bit_size: 16
+  - name: RESP3
+    description: desc RESP3.
+    byte_offset: 22
+    access: Read
+    bit_size: 16
+  - name: RESP4
+    description: desc RESP4.
+    byte_offset: 24
+    access: Read
+    bit_size: 16
+  - name: RESP5
+    description: desc RESP5.
+    byte_offset: 26
+    access: Read
+    bit_size: 16
+  - name: RESP6
+    description: desc RESP6.
+    byte_offset: 28
+    access: Read
+    bit_size: 16
+  - name: RESP7
+    description: desc RESP7.
+    byte_offset: 30
+    access: Read
+    bit_size: 16
+  - name: BUF0
+    description: desc BUF0.
+    byte_offset: 32
+    bit_size: 16
+  - name: BUF1
+    description: desc BUF1.
+    byte_offset: 34
+    bit_size: 16
+  - name: PSTAT
+    description: desc PSTAT.
+    byte_offset: 36
+    access: Read
+    fieldset: PSTAT
+  - name: HOSTCON
+    description: desc HOSTCON.
+    byte_offset: 40
+    bit_size: 8
+    fieldset: HOSTCON
+  - name: PWRCON
+    description: desc PWRCON.
+    byte_offset: 41
+    bit_size: 8
+    fieldset: PWRCON
+  - name: BLKGPCON
+    description: desc BLKGPCON.
+    byte_offset: 42
+    bit_size: 8
+    fieldset: BLKGPCON
+  - name: CLKCON
+    description: desc CLKCON.
+    byte_offset: 44
+    bit_size: 16
+    fieldset: CLKCON
+  - name: TOUTCON
+    description: desc TOUTCON.
+    byte_offset: 46
+    bit_size: 8
+    fieldset: TOUTCON
+  - name: SFTRST
+    description: desc SFTRST.
+    byte_offset: 47
+    bit_size: 8
+    fieldset: SFTRST
+  - name: NORINTST
+    description: desc NORINTST.
+    byte_offset: 48
+    bit_size: 16
+    fieldset: NORINTST
+  - name: ERRINTST
+    description: desc ERRINTST.
+    byte_offset: 50
+    bit_size: 16
+    fieldset: ERRINTST
+  - name: NORINTSTEN
+    description: desc NORINTSTEN.
+    byte_offset: 52
+    bit_size: 16
+    fieldset: NORINTSTEN
+  - name: ERRINTSTEN
+    description: desc ERRINTSTEN.
+    byte_offset: 54
+    bit_size: 16
+    fieldset: ERRINTSTEN
+  - name: NORINTSGEN
+    description: desc NORINTSGEN.
+    byte_offset: 56
+    bit_size: 16
+    fieldset: NORINTSGEN
+  - name: ERRINTSGEN
+    description: desc ERRINTSGEN.
+    byte_offset: 58
+    bit_size: 16
+    fieldset: ERRINTSGEN
+  - name: ATCERRST
+    description: desc ATCERRST.
+    byte_offset: 60
+    access: Read
+    bit_size: 16
+    fieldset: ATCERRST
+  - name: FEA
+    description: desc FEA.
+    byte_offset: 80
+    access: Write
+    bit_size: 16
+    fieldset: FEA
+  - name: FEE
+    description: desc FEE.
+    byte_offset: 82
+    access: Write
+    bit_size: 16
+    fieldset: FEE
+fieldset/ATCERRST:
+  description: desc ATCERRST.
+  bit_size: 16
+  fields:
+  - name: NE
+    description: desc NE.
+    bit_offset: 0
+    bit_size: 1
+  - name: TOE
+    description: desc TOE.
+    bit_offset: 1
+    bit_size: 1
+  - name: CE
+    description: desc CE.
+    bit_offset: 2
+    bit_size: 1
+  - name: EBE
+    description: desc EBE.
+    bit_offset: 3
+    bit_size: 1
+  - name: IE
+    description: desc IE.
+    bit_offset: 4
+    bit_size: 1
+  - name: CMDE
+    description: desc CMDE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/BLKGPCON:
+  description: desc BLKGPCON.
+  bit_size: 8
+  fields:
+  - name: SABGR
+    description: desc SABGR.
+    bit_offset: 0
+    bit_size: 1
+  - name: CR
+    description: desc CR.
+    bit_offset: 1
+    bit_size: 1
+  - name: RWC
+    description: desc RWC.
+    bit_offset: 2
+    bit_size: 1
+  - name: IABG
+    description: desc IABG.
+    bit_offset: 3
+    bit_size: 1
+fieldset/BLKSIZE:
+  description: desc BLKSIZE.
+  bit_size: 16
+  fields:
+  - name: TBS
+    description: desc TBS.
+    bit_offset: 0
+    bit_size: 12
+fieldset/CLKCON:
+  description: desc CLKCON.
+  bit_size: 16
+  fields:
+  - name: ICE
+    description: desc ICE.
+    bit_offset: 0
+    bit_size: 1
+  - name: CE
+    description: desc CE.
+    bit_offset: 2
+    bit_size: 1
+  - name: FS
+    description: desc FS.
+    bit_offset: 8
+    bit_size: 8
+fieldset/CMD:
+  description: desc CMD.
+  bit_size: 16
+  fields:
+  - name: RESTYP
+    description: desc RESTYP.
+    bit_offset: 0
+    bit_size: 2
+  - name: CCE
+    description: desc CCE.
+    bit_offset: 3
+    bit_size: 1
+  - name: ICE
+    description: desc ICE.
+    bit_offset: 4
+    bit_size: 1
+  - name: DAT
+    description: desc DAT.
+    bit_offset: 5
+    bit_size: 1
+  - name: TYP
+    description: desc TYP.
+    bit_offset: 6
+    bit_size: 2
+  - name: IDX
+    description: desc IDX.
+    bit_offset: 8
+    bit_size: 6
+fieldset/ERRINTSGEN:
+  description: desc ERRINTSGEN.
+  bit_size: 16
+  fields:
+  - name: CTOESEN
+    description: desc CTOESEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: CCESEN
+    description: desc CCESEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: CEBESEN
+    description: desc CEBESEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: CIESEN
+    description: desc CIESEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: DTOESEN
+    description: desc DTOESEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DCESEN
+    description: desc DCESEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: DEBESEN
+    description: desc DEBESEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: ACESEN
+    description: desc ACESEN.
+    bit_offset: 8
+    bit_size: 1
+fieldset/ERRINTST:
+  description: desc ERRINTST.
+  bit_size: 16
+  fields:
+  - name: CTOE
+    description: desc CTOE.
+    bit_offset: 0
+    bit_size: 1
+  - name: CCE
+    description: desc CCE.
+    bit_offset: 1
+    bit_size: 1
+  - name: CEBE
+    description: desc CEBE.
+    bit_offset: 2
+    bit_size: 1
+  - name: CIE
+    description: desc CIE.
+    bit_offset: 3
+    bit_size: 1
+  - name: DTOE
+    description: desc DTOE.
+    bit_offset: 4
+    bit_size: 1
+  - name: DCE
+    description: desc DCE.
+    bit_offset: 5
+    bit_size: 1
+  - name: DEBE
+    description: desc DEBE.
+    bit_offset: 6
+    bit_size: 1
+  - name: ACE
+    description: desc ACE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/ERRINTSTEN:
+  description: desc ERRINTSTEN.
+  bit_size: 16
+  fields:
+  - name: CTOEEN
+    description: desc CTOEEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: CCEEN
+    description: desc CCEEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: CEBEEN
+    description: desc CEBEEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: CIEEN
+    description: desc CIEEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: DTOEEN
+    description: desc DTOEEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DCEEN
+    description: desc DCEEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: DEBEEN
+    description: desc DEBEEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: ACEEN
+    description: desc ACEEN.
+    bit_offset: 8
+    bit_size: 1
+fieldset/FEA:
+  description: desc FEA.
+  bit_size: 16
+  fields:
+  - name: FNE
+    description: desc FNE.
+    bit_offset: 0
+    bit_size: 1
+  - name: FTOE
+    description: desc FTOE.
+    bit_offset: 1
+    bit_size: 1
+  - name: FCE
+    description: desc FCE.
+    bit_offset: 2
+    bit_size: 1
+  - name: FEBE
+    description: desc FEBE.
+    bit_offset: 3
+    bit_size: 1
+  - name: FIE
+    description: desc FIE.
+    bit_offset: 4
+    bit_size: 1
+  - name: FCMDE
+    description: desc FCMDE.
+    bit_offset: 7
+    bit_size: 1
+fieldset/FEE:
+  description: desc FEE.
+  bit_size: 16
+  fields:
+  - name: FCTOE
+    description: desc FCTOE.
+    bit_offset: 0
+    bit_size: 1
+  - name: FCCE
+    description: desc FCCE.
+    bit_offset: 1
+    bit_size: 1
+  - name: FCEBE
+    description: desc FCEBE.
+    bit_offset: 2
+    bit_size: 1
+  - name: FCIE
+    description: desc FCIE.
+    bit_offset: 3
+    bit_size: 1
+  - name: FDTOE
+    description: desc FDTOE.
+    bit_offset: 4
+    bit_size: 1
+  - name: FDCE
+    description: desc FDCE.
+    bit_offset: 5
+    bit_size: 1
+  - name: FDEBE
+    description: desc FDEBE.
+    bit_offset: 6
+    bit_size: 1
+  - name: FACE
+    description: desc FACE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/HOSTCON:
+  description: desc HOSTCON.
+  bit_size: 8
+  fields:
+  - name: DW
+    description: desc DW.
+    bit_offset: 1
+    bit_size: 1
+  - name: HSEN
+    description: desc HSEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: EXDW
+    description: desc EXDW.
+    bit_offset: 5
+    bit_size: 1
+  - name: CDTL
+    description: desc CDTL.
+    bit_offset: 6
+    bit_size: 1
+  - name: CDSS
+    description: desc CDSS.
+    bit_offset: 7
+    bit_size: 1
+fieldset/NORINTSGEN:
+  description: desc NORINTSGEN.
+  bit_size: 16
+  fields:
+  - name: CCSEN
+    description: desc CCSEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: TCSEN
+    description: desc TCSEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: BGESEN
+    description: desc BGESEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: BWRSEN
+    description: desc BWRSEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: BRRSEN
+    description: desc BRRSEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: CISTSEN
+    description: desc CISTSEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: CRMSEN
+    description: desc CRMSEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: CINTSEN
+    description: desc CINTSEN.
+    bit_offset: 8
+    bit_size: 1
+fieldset/NORINTST:
+  description: desc NORINTST.
+  bit_size: 16
+  fields:
+  - name: CC
+    description: desc CC.
+    bit_offset: 0
+    bit_size: 1
+  - name: TC
+    description: desc TC.
+    bit_offset: 1
+    bit_size: 1
+  - name: BGE
+    description: desc BGE.
+    bit_offset: 2
+    bit_size: 1
+  - name: BWR
+    description: desc BWR.
+    bit_offset: 4
+    bit_size: 1
+  - name: BRR
+    description: desc BRR.
+    bit_offset: 5
+    bit_size: 1
+  - name: CIST
+    description: desc CIST.
+    bit_offset: 6
+    bit_size: 1
+  - name: CRM
+    description: desc CRM.
+    bit_offset: 7
+    bit_size: 1
+  - name: CINT
+    description: desc CINT.
+    bit_offset: 8
+    bit_size: 1
+  - name: EI
+    description: desc EI.
+    bit_offset: 15
+    bit_size: 1
+fieldset/NORINTSTEN:
+  description: desc NORINTSTEN.
+  bit_size: 16
+  fields:
+  - name: CCEN
+    description: desc CCEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: TCEN
+    description: desc TCEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: BGEEN
+    description: desc BGEEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: BWREN
+    description: desc BWREN.
+    bit_offset: 4
+    bit_size: 1
+  - name: BRREN
+    description: desc BRREN.
+    bit_offset: 5
+    bit_size: 1
+  - name: CISTEN
+    description: desc CISTEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: CRMEN
+    description: desc CRMEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: CINTEN
+    description: desc CINTEN.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PSTAT:
+  description: desc PSTAT.
+  fields:
+  - name: CIC
+    description: desc CIC.
+    bit_offset: 0
+    bit_size: 1
+  - name: CID
+    description: desc CID.
+    bit_offset: 1
+    bit_size: 1
+  - name: DA
+    description: desc DA.
+    bit_offset: 2
+    bit_size: 1
+  - name: WTA
+    description: desc WTA.
+    bit_offset: 8
+    bit_size: 1
+  - name: RTA
+    description: desc RTA.
+    bit_offset: 9
+    bit_size: 1
+  - name: BWE
+    description: desc BWE.
+    bit_offset: 10
+    bit_size: 1
+  - name: BRE
+    description: desc BRE.
+    bit_offset: 11
+    bit_size: 1
+  - name: CIN
+    description: desc CIN.
+    bit_offset: 16
+    bit_size: 1
+  - name: CSS
+    description: desc CSS.
+    bit_offset: 17
+    bit_size: 1
+  - name: CDL
+    description: desc CDL.
+    bit_offset: 18
+    bit_size: 1
+  - name: WPL
+    description: desc WPL.
+    bit_offset: 19
+    bit_size: 1
+  - name: DATL
+    description: desc DATL.
+    bit_offset: 20
+    bit_size: 4
+  - name: CMDL
+    description: desc CMDL.
+    bit_offset: 24
+    bit_size: 1
+fieldset/PWRCON:
+  description: desc PWRCON.
+  bit_size: 8
+  fields:
+  - name: PWON
+    description: desc PWON.
+    bit_offset: 0
+    bit_size: 1
+fieldset/SFTRST:
+  description: desc SFTRST.
+  bit_size: 8
+  fields:
+  - name: RSTA
+    description: desc RSTA.
+    bit_offset: 0
+    bit_size: 1
+  - name: RSTC
+    description: desc RSTC.
+    bit_offset: 1
+    bit_size: 1
+  - name: RSTD
+    description: desc RSTD.
+    bit_offset: 2
+    bit_size: 1
+fieldset/TOUTCON:
+  description: desc TOUTCON.
+  bit_size: 8
+  fields:
+  - name: DTO
+    description: desc DTO.
+    bit_offset: 0
+    bit_size: 4
+fieldset/TRANSMODE:
+  description: desc TRANSMODE.
+  bit_size: 16
+  fields:
+  - name: BCE
+    description: desc BCE.
+    bit_offset: 1
+    bit_size: 1
+  - name: ATCEN
+    description: desc ATCEN.
+    bit_offset: 2
+    bit_size: 2
+  - name: DDIR
+    description: desc DDIR.
+    bit_offset: 4
+    bit_size: 1
+  - name: MULB
+    description: desc MULB.
+    bit_offset: 5
+    bit_size: 1

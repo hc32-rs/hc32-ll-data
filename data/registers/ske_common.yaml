@@ -1,0 +1,240 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/SKE；覆盖系列：HC32A4A8, HC32F4A8。
+block/SKE:
+  description: desc SKE.
+  items:
+  - name: CTRL
+    description: desc CTRL.
+    byte_offset: 0
+    fieldset: CTRL
+  - name: CFG
+    description: desc CFG.
+    byte_offset: 4
+    fieldset: CFG
+  - name: SR1
+    description: desc SR1.
+    byte_offset: 8
+    fieldset: SR1
+  - name: SR2
+    description: desc SR2.
+    byte_offset: 12
+    fieldset: SR2
+  - name: KEY1
+    description: desc KEY1.
+    byte_offset: 16
+    access: Write
+  - name: KEY2
+    description: desc KEY2.
+    byte_offset: 20
+    access: Write
+  - name: KEY3
+    description: desc KEY3.
+    byte_offset: 24
+    access: Write
+  - name: KEY4
+    description: desc KEY4.
+    byte_offset: 28
+    access: Write
+  - name: KEY5
+    description: desc KEY5.
+    byte_offset: 32
+    access: Write
+  - name: KEY6
+    description: desc KEY6.
+    byte_offset: 36
+    access: Write
+  - name: KEY7
+    description: desc KEY7.
+    byte_offset: 40
+    access: Write
+  - name: KEY8
+    description: desc KEY8.
+    byte_offset: 44
+    access: Write
+  - name: AAD1
+    description: desc AAD1.
+    byte_offset: 96
+  - name: AAD2
+    description: desc AAD2.
+    byte_offset: 100
+  - name: CLEN1
+    description: desc CLEN1.
+    byte_offset: 104
+  - name: CLEN2
+    description: desc CLEN2.
+    byte_offset: 108
+  - name: IV1
+    description: desc IV1.
+    byte_offset: 112
+  - name: IV2
+    description: desc IV2.
+    byte_offset: 116
+  - name: IV3
+    description: desc IV3.
+    byte_offset: 120
+  - name: IV4
+    description: desc IV4.
+    byte_offset: 124
+  - name: DIN_CR
+    description: desc DIN_CR.
+    byte_offset: 128
+    fieldset: DIN_CR
+  - name: DIN1
+    description: desc DIN1.
+    byte_offset: 144
+    access: Write
+  - name: DIN2
+    description: desc DIN2.
+    byte_offset: 148
+    access: Write
+  - name: DIN3
+    description: desc DIN3.
+    byte_offset: 152
+    access: Write
+  - name: DIN4
+    description: desc DIN4.
+    byte_offset: 156
+    access: Write
+  - name: DOUT1
+    description: desc DOUT1.
+    byte_offset: 176
+    access: Read
+  - name: DOUT2
+    description: desc DOUT2.
+    byte_offset: 180
+    access: Read
+  - name: DOUT3
+    description: desc DOUT3.
+    byte_offset: 184
+    access: Read
+  - name: DOUT4
+    description: desc DOUT4.
+    byte_offset: 188
+    access: Read
+  - name: VERSION
+    description: desc VERSION.
+    byte_offset: 252
+    access: Read
+    fieldset: VERSION
+  - name: MID_IV1
+    description: desc MID_IV1.
+    byte_offset: 416
+  - name: MID_IV2
+    description: desc MID_IV2.
+    byte_offset: 420
+  - name: MID_IV3
+    description: desc MID_IV3.
+    byte_offset: 424
+  - name: MID_IV4
+    description: desc MID_IV4.
+    byte_offset: 428
+  - name: MID_MAC1
+    description: desc MID_MAC1.
+    byte_offset: 432
+  - name: MID_MAC2
+    description: desc MID_MAC2.
+    byte_offset: 436
+  - name: MID_MAC3
+    description: desc MID_MAC3.
+    byte_offset: 440
+  - name: MID_MAC4
+    description: desc MID_MAC4.
+    byte_offset: 444
+  - name: TOTAL_AAD1
+    description: desc TOTAL_AAD1.
+    byte_offset: 448
+  - name: TOTAL_AAD2
+    description: desc TOTAL_AAD2.
+    byte_offset: 452
+  - name: TOTAL_CLEN1
+    description: desc TOTAL_CLEN1.
+    byte_offset: 456
+  - name: TOTAL_CLEN2
+    description: desc TOTAL_CLEN2.
+    byte_offset: 460
+fieldset/CFG:
+  description: desc CFG.
+  fields:
+  - name: ALG
+    description: desc ALG.
+    bit_offset: 0
+    bit_size: 4
+  - name: DEC
+    description: desc DEC.
+    bit_offset: 11
+    bit_size: 1
+  - name: UP_CFG
+    description: desc UP_CFG.
+    bit_offset: 12
+    bit_size: 1
+  - name: DMAEN
+    description: desc DMAEN.
+    bit_offset: 16
+    bit_size: 1
+  - name: IRQEN
+    description: desc IRQEN.
+    bit_offset: 17
+    bit_size: 1
+  - name: SEC_STAGE
+    description: desc SEC_STAGE.
+    bit_offset: 22
+    bit_size: 2
+  - name: DATA_TYPE
+    description: desc DATA_TYPE.
+    bit_offset: 24
+    bit_size: 2
+  - name: MODE
+    description: desc MODE.
+    bit_offset: 28
+    bit_size: 4
+fieldset/CTRL:
+  description: desc CTRL.
+  fields:
+  - name: START
+    description: desc START.
+    bit_offset: 0
+    bit_size: 1
+fieldset/DIN_CR:
+  description: desc DIN_CR.
+  fields:
+  - name: LAST_LEN
+    description: desc LAST_LEN.
+    bit_offset: 0
+    bit_size: 8
+  - name: LAST
+    description: desc LAST.
+    bit_offset: 16
+    bit_size: 1
+fieldset/SR1:
+  description: desc SR1.
+  fields:
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 0
+    bit_size: 1
+  - name: MID_O_VALID
+    description: desc MID_O_VALID.
+    bit_offset: 1
+    bit_size: 1
+fieldset/SR2:
+  description: desc SR2.
+  fields:
+  - name: CORE_DONE
+    description: desc CORE_DONE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/VERSION:
+  description: desc VERSION.
+  fields:
+  - name: MIR
+    description: desc MIR.
+    bit_offset: 0
+    bit_size: 4
+  - name: MAR
+    description: desc MAR.
+    bit_offset: 4
+    bit_size: 4
+  - name: PROJECT
+    description: desc PROJECT.
+    bit_offset: 16
+    bit_size: 16

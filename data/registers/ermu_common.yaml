@@ -1,0 +1,826 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/ERMU；覆盖系列：HC32A4A8, HC32F4A8。
+block/ERMU:
+  description: desc ERMU.
+  items:
+  - name: EO0C
+    description: desc EO0C.
+    byte_offset: 0
+    fieldset: EO0C
+  - name: EO0S
+    description: desc EO0S.
+    byte_offset: 4
+    access: Read
+    fieldset: EO0S
+  - name: EO0CTCNT
+    description: desc EO0CTCNT.
+    byte_offset: 8
+    access: Read
+    fieldset: EO0CTCNT
+  - name: EO0CTCMP
+    description: desc EO0CTCMP.
+    byte_offset: 12
+    fieldset: EO0CTCMP
+  - name: EO0TTC
+    description: desc EO0TTC.
+    byte_offset: 16
+    fieldset: EO0TTC
+  - name: EO0TTCMP
+    description: desc EO0TTCMP.
+    byte_offset: 24
+    fieldset: EO0TTCMP
+  - name: EO0OM0
+    description: desc EO0OM0.
+    byte_offset: 64
+    fieldset: EO0OM0
+  - name: EO0OM1
+    description: desc EO0OM1.
+    byte_offset: 68
+    fieldset: EO0OM1
+  - name: EO1C
+    description: desc EO1C.
+    byte_offset: 128
+    fieldset: EO1C
+  - name: EO1S
+    description: desc EO1S.
+    byte_offset: 132
+    access: Read
+    fieldset: EO1S
+  - name: EO1CTCNT
+    description: desc EO1CTCNT.
+    byte_offset: 136
+    access: Read
+    fieldset: EO1CTCNT
+  - name: EO1CTCMP
+    description: desc EO1CTCMP.
+    byte_offset: 140
+    fieldset: EO1CTCMP
+  - name: EO1TTC
+    description: desc EO1TTC.
+    byte_offset: 144
+    fieldset: EO1TTC
+  - name: EO1TTCMP
+    description: desc EO1TTCMP.
+    byte_offset: 152
+    fieldset: EO1TTCMP
+  - name: EO1OM0
+    description: desc EO1OM0.
+    byte_offset: 192
+    fieldset: EO1OM0
+  - name: EO1OM1
+    description: desc EO1OM1.
+    byte_offset: 196
+    fieldset: EO1OM1
+  - name: EO2C
+    description: desc EO2C.
+    byte_offset: 256
+    fieldset: EO2C
+  - name: EO2S
+    description: desc EO2S.
+    byte_offset: 260
+    access: Read
+    fieldset: EO2S
+  - name: EO2CTCNT
+    description: desc EO2CTCNT.
+    byte_offset: 264
+    access: Read
+    fieldset: EO2CTCNT
+  - name: EO2CTCMP
+    description: desc EO2CTCMP.
+    byte_offset: 268
+    fieldset: EO2CTCMP
+  - name: EO2TTC
+    description: desc EO2TTC.
+    byte_offset: 272
+    fieldset: EO2TTC
+  - name: EO2TTCMP
+    description: desc EO2TTCMP.
+    byte_offset: 280
+    fieldset: EO2TTCMP
+  - name: EO2OM0
+    description: desc EO2OM0.
+    byte_offset: 320
+    fieldset: EO2OM0
+  - name: EO2OM1
+    description: desc EO2OM1.
+    byte_offset: 324
+    fieldset: EO2OM1
+  - name: EO3C
+    description: desc EO3C.
+    byte_offset: 384
+    fieldset: EO3C
+  - name: EO3S
+    description: desc EO3S.
+    byte_offset: 388
+    access: Read
+    fieldset: EO3S
+  - name: EO3CTCNT
+    description: desc EO3CTCNT.
+    byte_offset: 392
+    access: Read
+    fieldset: EO3CTCNT
+  - name: EO3CTCMP
+    description: desc EO3CTCMP.
+    byte_offset: 396
+    fieldset: EO3CTCMP
+  - name: EO3TTC
+    description: desc EO3TTC.
+    byte_offset: 400
+    fieldset: EO3TTC
+  - name: EO3TTCMP
+    description: desc EO3TTCMP.
+    byte_offset: 408
+    fieldset: EO3TTCMP
+  - name: EO3OM0
+    description: desc EO3OM0.
+    byte_offset: 448
+    fieldset: EO3OM0
+  - name: EO3OM1
+    description: desc EO3OM1.
+    byte_offset: 452
+    fieldset: EO3OM1
+  - name: WT0C
+    description: desc WT0C.
+    byte_offset: 512
+    fieldset: WT0C
+  - name: WT0S
+    description: desc WT0S.
+    byte_offset: 516
+    access: Read
+    fieldset: WT0S
+  - name: WT0CNT
+    description: desc WT0CNT.
+    byte_offset: 520
+    access: Read
+    fieldset: WT0CNT
+  - name: WT0CMP
+    description: desc WT0CMP.
+    byte_offset: 524
+    fieldset: WT0CMP
+  - name: WT0SE
+    description: desc WT0SE.
+    byte_offset: 528
+    fieldset: WT0SE
+  - name: WT1C
+    description: desc WT1C.
+    byte_offset: 544
+    fieldset: WT1C
+  - name: WT1S
+    description: desc WT1S.
+    byte_offset: 548
+    access: Read
+    fieldset: WT1S
+  - name: WT1CNT
+    description: desc WT1CNT.
+    byte_offset: 552
+    access: Read
+    fieldset: WT1CNT
+  - name: WT1CMP
+    description: desc WT1CMP.
+    byte_offset: 556
+    fieldset: WT1CMP
+  - name: WT1SE
+    description: desc WT1SE.
+    byte_offset: 560
+    fieldset: WT1SE
+  - name: WT2C
+    description: desc WT2C.
+    byte_offset: 576
+    fieldset: WT2C
+  - name: WT2S
+    description: desc WT2S.
+    byte_offset: 580
+    access: Read
+    fieldset: WT2S
+  - name: WT2CNT
+    description: desc WT2CNT.
+    byte_offset: 584
+    access: Read
+    fieldset: WT2CNT
+  - name: WT2CMP
+    description: desc WT2CMP.
+    byte_offset: 588
+    fieldset: WT2CMP
+  - name: WT2SE
+    description: desc WT2SE.
+    byte_offset: 592
+    fieldset: WT2SE
+  - name: WT3C
+    description: desc WT3C.
+    byte_offset: 608
+    fieldset: WT3C
+  - name: WT3S
+    description: desc WT3S.
+    byte_offset: 612
+    access: Read
+    fieldset: WT3S
+  - name: WT3CNT
+    description: desc WT3CNT.
+    byte_offset: 616
+    access: Read
+    fieldset: WT3CNT
+  - name: WT3CMP
+    description: desc WT3CMP.
+    byte_offset: 620
+    fieldset: WT3CMP
+  - name: WT3SE
+    description: desc WT3SE.
+    byte_offset: 624
+    fieldset: WT3SE
+  - name: ESS0
+    description: desc ESS0.
+    byte_offset: 768
+    access: Read
+    fieldset: ESS0
+  - name: ESS1
+    description: desc ESS1.
+    byte_offset: 772
+    access: Read
+    fieldset: ESS1
+  - name: ESSC0
+    description: desc ESSC0.
+    byte_offset: 832
+    access: Write
+    fieldset: ESSC0
+  - name: ESSC1
+    description: desc ESSC1.
+    byte_offset: 836
+    access: Write
+    fieldset: ESSC1
+  - name: PET0
+    description: desc PET0.
+    byte_offset: 896
+    access: Write
+    fieldset: PET0
+  - name: PET1
+    description: desc PET1.
+    byte_offset: 900
+    access: Write
+    fieldset: PET1
+  - name: RE0
+    description: desc RE0.
+    byte_offset: 960
+    fieldset: RE0
+  - name: RE1
+    description: desc RE1.
+    byte_offset: 964
+    fieldset: RE1
+  - name: LPIE0
+    description: desc LPIE0.
+    byte_offset: 1024
+    fieldset: LPIE0
+  - name: LPIE1
+    description: desc LPIE1.
+    byte_offset: 1028
+    fieldset: LPIE1
+  - name: HPIE0
+    description: desc HPIE0.
+    byte_offset: 1280
+    fieldset: HPIE0
+  - name: HPIE1
+    description: desc HPIE1.
+    byte_offset: 1284
+    fieldset: HPIE1
+  - name: CCPS
+    description: desc CCPS.
+    byte_offset: 1536
+    fieldset: CCPS
+fieldset/CCPS:
+  description: desc CCPS.
+  fields:
+  - name: PSE
+    description: desc PSE.
+    bit_offset: 0
+    bit_size: 1
+  - name: PSS
+    description: desc PSS.
+    bit_offset: 16
+    bit_size: 16
+fieldset/EO0C:
+  description: desc EO0C.
+  fields:
+  - name: SET
+    description: desc SET.
+    bit_offset: 0
+    bit_size: 1
+  - name: CLR
+    description: desc CLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: CTE
+    description: desc CTE.
+    bit_offset: 16
+    bit_size: 1
+fieldset/EO0CTCMP:
+  description: desc EO0CTCMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO0CTCNT:
+  description: desc EO0CTCNT.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO0OM0:
+  description: desc EO0OM0.
+  fields:
+  - name: OM
+    description: desc OM.
+    bit_offset: 0
+    bit_size: 32
+fieldset/EO0OM1:
+  description: desc EO0OM1.
+  fields:
+  - name: OM
+    description: desc OM.
+    bit_offset: 0
+    bit_size: 32
+fieldset/EO0S:
+  description: desc EO0S.
+  fields:
+  - name: EOS
+    description: desc EOS.
+    bit_offset: 0
+    bit_size: 1
+  - name: CTS
+    description: desc CTS.
+    bit_offset: 16
+    bit_size: 1
+fieldset/EO0TTC:
+  description: desc EO0TTC.
+  fields:
+  - name: TTE
+    description: desc TTE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/EO0TTCMP:
+  description: desc EO0TTCMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO1C:
+  description: desc EO1C.
+  fields:
+  - name: SET
+    description: desc SET.
+    bit_offset: 0
+    bit_size: 1
+  - name: CLR
+    description: desc CLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: CTE
+    description: desc CTE.
+    bit_offset: 16
+    bit_size: 1
+fieldset/EO1CTCMP:
+  description: desc EO1CTCMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO1CTCNT:
+  description: desc EO1CTCNT.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO1OM0:
+  description: desc EO1OM0.
+  fields:
+  - name: OM
+    description: desc OM.
+    bit_offset: 0
+    bit_size: 32
+fieldset/EO1OM1:
+  description: desc EO1OM1.
+  fields:
+  - name: OM
+    description: desc OM.
+    bit_offset: 0
+    bit_size: 32
+fieldset/EO1S:
+  description: desc EO1S.
+  fields:
+  - name: EOS
+    description: desc EOS.
+    bit_offset: 0
+    bit_size: 1
+  - name: CTS
+    description: desc CTS.
+    bit_offset: 16
+    bit_size: 1
+fieldset/EO1TTC:
+  description: desc EO1TTC.
+  fields:
+  - name: TTE
+    description: desc TTE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/EO1TTCMP:
+  description: desc EO1TTCMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO2C:
+  description: desc EO2C.
+  fields:
+  - name: SET
+    description: desc SET.
+    bit_offset: 0
+    bit_size: 1
+  - name: CLR
+    description: desc CLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: CTE
+    description: desc CTE.
+    bit_offset: 16
+    bit_size: 1
+fieldset/EO2CTCMP:
+  description: desc EO2CTCMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO2CTCNT:
+  description: desc EO2CTCNT.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO2OM0:
+  description: desc EO2OM0.
+  fields:
+  - name: OM
+    description: desc OM.
+    bit_offset: 0
+    bit_size: 32
+fieldset/EO2OM1:
+  description: desc EO2OM1.
+  fields:
+  - name: OM
+    description: desc OM.
+    bit_offset: 0
+    bit_size: 32
+fieldset/EO2S:
+  description: desc EO2S.
+  fields:
+  - name: EOS
+    description: desc EOS.
+    bit_offset: 0
+    bit_size: 1
+  - name: CTS
+    description: desc CTS.
+    bit_offset: 16
+    bit_size: 1
+fieldset/EO2TTC:
+  description: desc EO2TTC.
+  fields:
+  - name: TTE
+    description: desc TTE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/EO2TTCMP:
+  description: desc EO2TTCMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO3C:
+  description: desc EO3C.
+  fields:
+  - name: SET
+    description: desc SET.
+    bit_offset: 0
+    bit_size: 1
+  - name: CLR
+    description: desc CLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: CTE
+    description: desc CTE.
+    bit_offset: 16
+    bit_size: 1
+fieldset/EO3CTCMP:
+  description: desc EO3CTCMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO3CTCNT:
+  description: desc EO3CTCNT.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/EO3OM0:
+  description: desc EO3OM0.
+  fields:
+  - name: OM
+    description: desc OM.
+    bit_offset: 0
+    bit_size: 32
+fieldset/EO3OM1:
+  description: desc EO3OM1.
+  fields:
+  - name: OM
+    description: desc OM.
+    bit_offset: 0
+    bit_size: 32
+fieldset/EO3S:
+  description: desc EO3S.
+  fields:
+  - name: EOS
+    description: desc EOS.
+    bit_offset: 0
+    bit_size: 1
+  - name: CTS
+    description: desc CTS.
+    bit_offset: 16
+    bit_size: 1
+fieldset/EO3TTC:
+  description: desc EO3TTC.
+  fields:
+  - name: TTE
+    description: desc TTE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/EO3TTCMP:
+  description: desc EO3TTCMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/ESS0:
+  description: desc ESS0.
+  fields:
+  - name: ESS
+    description: desc ESS.
+    bit_offset: 0
+    bit_size: 32
+fieldset/ESS1:
+  description: desc ESS1.
+  fields:
+  - name: ESS
+    description: desc ESS.
+    bit_offset: 0
+    bit_size: 32
+fieldset/ESSC0:
+  description: desc ESSC0.
+  fields:
+  - name: ESSC
+    description: desc ESSC.
+    bit_offset: 0
+    bit_size: 32
+fieldset/ESSC1:
+  description: desc ESSC1.
+  fields:
+  - name: ESSC
+    description: desc ESSC.
+    bit_offset: 0
+    bit_size: 32
+fieldset/HPIE0:
+  description: desc HPIE0.
+  fields:
+  - name: HPIE
+    description: desc HPIE.
+    bit_offset: 0
+    bit_size: 32
+fieldset/HPIE1:
+  description: desc HPIE1.
+  fields:
+  - name: HPIE
+    description: desc HPIE.
+    bit_offset: 0
+    bit_size: 32
+fieldset/LPIE0:
+  description: desc LPIE0.
+  fields:
+  - name: LPIE
+    description: desc LPIE.
+    bit_offset: 0
+    bit_size: 32
+fieldset/LPIE1:
+  description: desc LPIE1.
+  fields:
+  - name: LPIE
+    description: desc LPIE.
+    bit_offset: 0
+    bit_size: 32
+fieldset/PET0:
+  description: desc PET0.
+  fields:
+  - name: PET
+    description: desc PET.
+    bit_offset: 0
+    bit_size: 32
+fieldset/PET1:
+  description: desc PET1.
+  fields:
+  - name: PET
+    description: desc PET.
+    bit_offset: 0
+    bit_size: 32
+fieldset/RE0:
+  description: desc RE0.
+  fields:
+  - name: RE
+    description: desc RE.
+    bit_offset: 0
+    bit_size: 32
+fieldset/RE1:
+  description: desc RE1.
+  fields:
+  - name: RE
+    description: desc RE.
+    bit_offset: 0
+    bit_size: 32
+fieldset/WT0C:
+  description: desc WT0C.
+  fields:
+  - name: WTE
+    description: desc WTE.
+    bit_offset: 0
+    bit_size: 1
+  - name: STP
+    description: desc STP.
+    bit_offset: 16
+    bit_size: 1
+fieldset/WT0CMP:
+  description: desc WT0CMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/WT0CNT:
+  description: desc WT0CNT.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/WT0S:
+  description: desc WT0S.
+  fields:
+  - name: WTS
+    description: desc WTS.
+    bit_offset: 0
+    bit_size: 1
+fieldset/WT0SE:
+  description: desc WT0SE.
+  fields:
+  - name: LPISE
+    description: desc LPISE.
+    bit_offset: 0
+    bit_size: 1
+  - name: HPISE
+    description: desc HPISE.
+    bit_offset: 16
+    bit_size: 1
+fieldset/WT1C:
+  description: desc WT1C.
+  fields:
+  - name: WTE
+    description: desc WTE.
+    bit_offset: 0
+    bit_size: 1
+  - name: STP
+    description: desc STP.
+    bit_offset: 16
+    bit_size: 1
+fieldset/WT1CMP:
+  description: desc WT1CMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/WT1CNT:
+  description: desc WT1CNT.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/WT1S:
+  description: desc WT1S.
+  fields:
+  - name: WTS
+    description: desc WTS.
+    bit_offset: 0
+    bit_size: 1
+fieldset/WT1SE:
+  description: desc WT1SE.
+  fields:
+  - name: LPISE
+    description: desc LPISE.
+    bit_offset: 0
+    bit_size: 1
+  - name: HPISE
+    description: desc HPISE.
+    bit_offset: 16
+    bit_size: 1
+fieldset/WT2C:
+  description: desc WT2C.
+  fields:
+  - name: WTE
+    description: desc WTE.
+    bit_offset: 0
+    bit_size: 1
+  - name: STP
+    description: desc STP.
+    bit_offset: 16
+    bit_size: 1
+fieldset/WT2CMP:
+  description: desc WT2CMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/WT2CNT:
+  description: desc WT2CNT.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/WT2S:
+  description: desc WT2S.
+  fields:
+  - name: WTS
+    description: desc WTS.
+    bit_offset: 0
+    bit_size: 1
+fieldset/WT2SE:
+  description: desc WT2SE.
+  fields:
+  - name: LPISE
+    description: desc LPISE.
+    bit_offset: 0
+    bit_size: 1
+  - name: HPISE
+    description: desc HPISE.
+    bit_offset: 16
+    bit_size: 1
+fieldset/WT3C:
+  description: desc WT3C.
+  fields:
+  - name: WTE
+    description: desc WTE.
+    bit_offset: 0
+    bit_size: 1
+  - name: STP
+    description: desc STP.
+    bit_offset: 16
+    bit_size: 1
+fieldset/WT3CMP:
+  description: desc WT3CMP.
+  fields:
+  - name: CMP
+    description: desc CMP.
+    bit_offset: 0
+    bit_size: 16
+fieldset/WT3CNT:
+  description: desc WT3CNT.
+  fields:
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/WT3S:
+  description: desc WT3S.
+  fields:
+  - name: WTS
+    description: desc WTS.
+    bit_offset: 0
+    bit_size: 1
+fieldset/WT3SE:
+  description: desc WT3SE.
+  fields:
+  - name: LPISE
+    description: desc LPISE.
+    bit_offset: 0
+    bit_size: 1
+  - name: HPISE
+    description: desc HPISE.
+    bit_offset: 16
+    bit_size: 1

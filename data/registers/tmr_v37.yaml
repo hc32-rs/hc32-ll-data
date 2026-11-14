@@ -1,0 +1,174 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M120/TMR2；覆盖系列：HC32M120。
+block/TMR:
+  description: desc TMR2.
+  items:
+  - name: CNTAR
+    description: desc CNTAR.
+    byte_offset: 0
+    fieldset: CNTAR
+  - name: CMPAR
+    description: desc CMPAR.
+    byte_offset: 8
+    fieldset: CMPAR
+  - name: BCONR
+    description: desc BCONR.
+    byte_offset: 16
+    fieldset: BCONR
+  - name: ICONR
+    description: desc ICONR.
+    byte_offset: 20
+    fieldset: ICONR
+  - name: PCONR
+    description: desc PCONR.
+    byte_offset: 24
+    fieldset: PCONR
+  - name: HCONR
+    description: desc HCONR.
+    byte_offset: 28
+    fieldset: HCONR
+  - name: STFLR
+    description: desc STFLR.
+    byte_offset: 32
+    fieldset: STFLR
+fieldset/BCONR:
+  description: desc BCONR.
+  fields:
+  - name: CSTA
+    description: desc CSTA.
+    bit_offset: 0
+    bit_size: 1
+  - name: CAPMDA
+    description: desc CAPMDA.
+    bit_offset: 1
+    bit_size: 1
+  - name: SYNSA
+    description: desc SYNSA.
+    bit_offset: 3
+    bit_size: 1
+  - name: CKDIVA
+    description: desc CKDIVA.
+    bit_offset: 4
+    bit_size: 4
+  - name: SYNCLKA
+    description: desc SYNCLKA.
+    bit_offset: 8
+    bit_size: 2
+  - name: ASYNCLKA
+    description: desc ASYNCLKA.
+    bit_offset: 10
+    bit_size: 2
+fieldset/CMPAR:
+  description: desc CMPAR.
+  fields:
+  - name: CMPA
+    description: desc CMPA.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CNTAR:
+  description: desc CNTAR.
+  fields:
+  - name: CNTA
+    description: desc CNTA.
+    bit_offset: 0
+    bit_size: 16
+fieldset/HCONR:
+  description: desc HCONR.
+  fields:
+  - name: HSTAA0
+    description: desc HSTAA0.
+    bit_offset: 0
+    bit_size: 1
+  - name: HSTAA1
+    description: desc HSTAA1.
+    bit_offset: 1
+    bit_size: 1
+  - name: HSTAA2
+    description: desc HSTAA2.
+    bit_offset: 2
+    bit_size: 1
+  - name: HSTPA0
+    description: desc HSTPA0.
+    bit_offset: 4
+    bit_size: 1
+  - name: HSTPA1
+    description: desc HSTPA1.
+    bit_offset: 5
+    bit_size: 1
+  - name: HSTPA2
+    description: desc HSTPA2.
+    bit_offset: 6
+    bit_size: 1
+  - name: HCLEA0
+    description: desc HCLEA0.
+    bit_offset: 8
+    bit_size: 1
+  - name: HCLEA1
+    description: desc HCLEA1.
+    bit_offset: 9
+    bit_size: 1
+  - name: HCLEA2
+    description: desc HCLEA2.
+    bit_offset: 10
+    bit_size: 1
+  - name: HICPA0
+    description: desc HICPA0.
+    bit_offset: 12
+    bit_size: 1
+  - name: HICPA1
+    description: desc HICPA1.
+    bit_offset: 13
+    bit_size: 1
+  - name: HICPA2
+    description: desc HICPA2.
+    bit_offset: 14
+    bit_size: 1
+fieldset/ICONR:
+  description: desc ICONR.
+  fields:
+  - name: CMENA
+    description: desc CMENA.
+    bit_offset: 0
+    bit_size: 1
+  - name: OVENA
+    description: desc OVENA.
+    bit_offset: 1
+    bit_size: 1
+fieldset/PCONR:
+  description: desc PCONR.
+  fields:
+  - name: STACA
+    description: desc STACA.
+    bit_offset: 0
+    bit_size: 2
+  - name: STPCA
+    description: desc STPCA.
+    bit_offset: 2
+    bit_size: 2
+  - name: CMPCA
+    description: desc CMPCA.
+    bit_offset: 4
+    bit_size: 2
+  - name: OUTENA
+    description: desc OUTENA.
+    bit_offset: 8
+    bit_size: 1
+  - name: NOFIENA
+    description: desc NOFIENA.
+    bit_offset: 12
+    bit_size: 1
+  - name: NOFICKA
+    description: desc NOFICKA.
+    bit_offset: 13
+    bit_size: 2
+fieldset/STFLR:
+  description: desc STFLR.
+  fields:
+  - name: CMFA
+    description: desc CMFA.
+    bit_offset: 0
+    bit_size: 1
+  - name: OVFA
+    description: desc OVFA.
+    bit_offset: 1
+    bit_size: 1

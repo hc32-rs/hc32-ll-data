@@ -1,0 +1,48 @@
+# HC32F120F6TA（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F120F6TA
+family: HC32F120
+subfamily: cortex-m0plus
+packages:
+- name: HC32F120F6TA
+  package: LQFP32
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1280.html
+cores:
+- name: cortex-m0plus
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F120.yaml
+  include_interrupts: ../interrupts/HC32F120.yaml
+_raw:
+  series: HC32F120
+  freq_mhz: '48'
+  flash_kb: '32'
+  sram_kb: '4'
+  package: LQFP32
+  pin_count: '32'
+  gpio: '28'
+  vdd_min: '2.7'
+  vdd_max: '5.5'
+  uart: '4'
+  spi: '1'
+  i2c: '1'
+  i2s: ''
+  can: ''
+  usb: ''
+  adc: '1'
+  dac: ''
+  timer: '9'
+  rtc: ''
+  wdt: ''
+  touchkey: ''
+  lcd: ''
+  opa: ''
+  cmp: ''
+  other: 工作温度=-40~85|ADC_ch=8
+  url: https://www.xhsc.com.cn/product/1280.html
+  source: website
+  Part NO.: HC32F120F6TA

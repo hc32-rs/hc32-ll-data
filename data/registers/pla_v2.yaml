@@ -1,0 +1,812 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F334/PLA；覆盖系列：HC32F334, HC32F336。
+block/PLA:
+  description: desc PLA.
+  items:
+  - name: GCTL
+    description: desc GCTL.
+    byte_offset: 0
+    fieldset: GCTL
+  - name: STAT
+    description: desc STAT.
+    byte_offset: 12
+    access: Read
+    fieldset: STAT
+  - name: MUXS0
+    description: desc MUXS0.
+    byte_offset: 16
+    fieldset: MUXS0
+  - name: LUTCTL0
+    description: desc LUTCTL0.
+    byte_offset: 20
+    fieldset: LUTCTL0
+  - name: CTL0
+    description: desc CTL0.
+    byte_offset: 24
+    fieldset: CTL0
+  - name: MUXS1
+    description: desc MUXS1.
+    byte_offset: 28
+    fieldset: MUXS1
+  - name: LUTCTL1
+    description: desc LUTCTL1.
+    byte_offset: 32
+    fieldset: LUTCTL1
+  - name: CTL1
+    description: desc CTL1.
+    byte_offset: 36
+    fieldset: CTL1
+  - name: MUXS2
+    description: desc MUXS2.
+    byte_offset: 40
+    fieldset: MUXS2
+  - name: LUTCTL2
+    description: desc LUTCTL2.
+    byte_offset: 44
+    fieldset: LUTCTL2
+  - name: CTL2
+    description: desc CTL2.
+    byte_offset: 48
+    fieldset: CTL2
+  - name: MUXS3
+    description: desc MUXS3.
+    byte_offset: 52
+    fieldset: MUXS3
+  - name: LUTCTL3
+    description: desc LUTCTL3.
+    byte_offset: 56
+    fieldset: LUTCTL3
+  - name: CTL3
+    description: desc CTL3.
+    byte_offset: 60
+    fieldset: CTL3
+  - name: MUXS4
+    description: desc MUXS4.
+    byte_offset: 64
+    fieldset: MUXS4
+  - name: LUTCTL4
+    description: desc LUTCTL4.
+    byte_offset: 68
+    fieldset: LUTCTL4
+  - name: CTL4
+    description: desc CTL4.
+    byte_offset: 72
+    fieldset: CTL4
+  - name: MUXS5
+    description: desc MUXS5.
+    byte_offset: 76
+    fieldset: MUXS5
+  - name: LUTCTL5
+    description: desc LUTCTL5.
+    byte_offset: 80
+    fieldset: LUTCTL5
+  - name: CTL5
+    description: desc CTL5.
+    byte_offset: 84
+    fieldset: CTL5
+  - name: MUXS6
+    description: desc MUXS6.
+    byte_offset: 88
+    fieldset: MUXS6
+  - name: LUTCTL6
+    description: desc LUTCTL6.
+    byte_offset: 92
+    fieldset: LUTCTL6
+  - name: CTL6
+    description: desc CTL6.
+    byte_offset: 96
+    fieldset: CTL6
+  - name: MUXS7
+    description: desc MUXS7.
+    byte_offset: 100
+    fieldset: MUXS7
+  - name: LUTCTL7
+    description: desc LUTCTL7.
+    byte_offset: 104
+    fieldset: LUTCTL7
+  - name: CTL7
+    description: desc CTL7.
+    byte_offset: 108
+    fieldset: CTL7
+  - name: MUXS8
+    description: desc MUXS8.
+    byte_offset: 112
+    fieldset: MUXS8
+  - name: LUTCTL8
+    description: desc LUTCTL8.
+    byte_offset: 116
+    fieldset: LUTCTL8
+  - name: CTL8
+    description: desc CTL8.
+    byte_offset: 120
+    fieldset: CTL8
+  - name: MUXS9
+    description: desc MUXS9.
+    byte_offset: 124
+    fieldset: MUXS9
+  - name: LUTCTL9
+    description: desc LUTCTL9.
+    byte_offset: 128
+    fieldset: LUTCTL9
+  - name: CTL9
+    description: desc CTL9.
+    byte_offset: 132
+    fieldset: CTL9
+  - name: MUXS10
+    description: desc MUXS10.
+    byte_offset: 136
+    fieldset: MUXS10
+  - name: LUTCTL10
+    description: desc LUTCTL10.
+    byte_offset: 140
+    fieldset: LUTCTL10
+  - name: CTL10
+    description: desc CTL10.
+    byte_offset: 144
+    fieldset: CTL10
+  - name: MUXS11
+    description: desc MUXS11.
+    byte_offset: 148
+    fieldset: MUXS11
+  - name: LUTCTL11
+    description: desc LUTCTL11.
+    byte_offset: 152
+    fieldset: LUTCTL11
+  - name: CTL11
+    description: desc CTL11.
+    byte_offset: 156
+    fieldset: CTL11
+  - name: MUXS12
+    description: desc MUXS12.
+    byte_offset: 160
+    fieldset: MUXS12
+  - name: LUTCTL12
+    description: desc LUTCTL12.
+    byte_offset: 164
+    fieldset: LUTCTL12
+  - name: CTL12
+    description: desc CTL12.
+    byte_offset: 168
+    fieldset: CTL12
+  - name: MUXS13
+    description: desc MUXS13.
+    byte_offset: 172
+    fieldset: MUXS13
+  - name: LUTCTL13
+    description: desc LUTCTL13.
+    byte_offset: 176
+    fieldset: LUTCTL13
+  - name: CTL13
+    description: desc CTL13.
+    byte_offset: 180
+    fieldset: CTL13
+  - name: MUXS14
+    description: desc MUXS14.
+    byte_offset: 184
+    fieldset: MUXS14
+  - name: LUTCTL14
+    description: desc LUTCTL14.
+    byte_offset: 188
+    fieldset: LUTCTL14
+  - name: CTL14
+    description: desc CTL14.
+    byte_offset: 192
+    fieldset: CTL14
+  - name: MUXS15
+    description: desc MUXS15.
+    byte_offset: 196
+    fieldset: MUXS15
+  - name: LUTCTL15
+    description: desc LUTCTL15.
+    byte_offset: 200
+    fieldset: LUTCTL15
+  - name: CTL15
+    description: desc CTL15.
+    byte_offset: 204
+    fieldset: CTL15
+fieldset/CTL0:
+  description: desc CTL0.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL1:
+  description: desc CTL1.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL10:
+  description: desc CTL10.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL11:
+  description: desc CTL11.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL12:
+  description: desc CTL12.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL13:
+  description: desc CTL13.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL14:
+  description: desc CTL14.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL15:
+  description: desc CTL15.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL2:
+  description: desc CTL2.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL3:
+  description: desc CTL3.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL4:
+  description: desc CTL4.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL5:
+  description: desc CTL5.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL6:
+  description: desc CTL6.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL7:
+  description: desc CTL7.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL8:
+  description: desc CTL8.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CTL9:
+  description: desc CTL9.
+  fields:
+  - name: OEN
+    description: desc OEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: OSEL
+    description: desc OSEL.
+    bit_offset: 7
+    bit_size: 1
+fieldset/GCTL:
+  description: desc GCTL.
+  fields:
+  - name: EN
+    description: desc EN.
+    bit_offset: 0
+    bit_size: 16
+fieldset/LUTCTL0:
+  description: desc LUTCTL0.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL1:
+  description: desc LUTCTL1.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL10:
+  description: desc LUTCTL10.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL11:
+  description: desc LUTCTL11.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL12:
+  description: desc LUTCTL12.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL13:
+  description: desc LUTCTL13.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL14:
+  description: desc LUTCTL14.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL15:
+  description: desc LUTCTL15.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL2:
+  description: desc LUTCTL2.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL3:
+  description: desc LUTCTL3.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL4:
+  description: desc LUTCTL4.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL5:
+  description: desc LUTCTL5.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL6:
+  description: desc LUTCTL6.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL7:
+  description: desc LUTCTL7.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL8:
+  description: desc LUTCTL8.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/LUTCTL9:
+  description: desc LUTCTL9.
+  fields:
+  - name: LUTCTL
+    description: desc LUTCTL.
+    bit_offset: 0
+    bit_size: 8
+fieldset/MUXS0:
+  description: desc MUXS0.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS1:
+  description: desc MUXS1.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS10:
+  description: desc MUXS10.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS11:
+  description: desc MUXS11.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS12:
+  description: desc MUXS12.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS13:
+  description: desc MUXS13.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS14:
+  description: desc MUXS14.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS15:
+  description: desc MUXS15.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS2:
+  description: desc MUXS2.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS3:
+  description: desc MUXS3.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS4:
+  description: desc MUXS4.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS5:
+  description: desc MUXS5.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS6:
+  description: desc MUXS6.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS7:
+  description: desc MUXS7.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS8:
+  description: desc MUXS8.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/MUXS9:
+  description: desc MUXS9.
+  fields:
+  - name: MUX1
+    description: desc MUX1.
+    bit_offset: 0
+    bit_size: 4
+  - name: MUX0
+    description: desc MUX0.
+    bit_offset: 4
+    bit_size: 4
+  - name: MUX1_4
+    description: desc MUX1_4.
+    bit_offset: 14
+    bit_size: 1
+  - name: MUX0_4
+    description: desc MUX0_4.
+    bit_offset: 15
+    bit_size: 1
+fieldset/STAT:
+  description: desc STAT.
+  fields:
+  - name: OUT
+    description: desc OUT.
+    bit_offset: 0
+    bit_size: 16

@@ -1,0 +1,145 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/ICG；覆盖系列：HC32A4A8, HC32F4A8。
+block/ICG:
+  description: desc ICG.
+  items:
+  - name: ICG0
+    description: desc ICG0.
+    byte_offset: 0
+    access: Read
+    fieldset: ICG0
+  - name: ICG1
+    description: desc ICG1.
+    byte_offset: 4
+    access: Read
+    fieldset: ICG1
+  - name: ICG3
+    description: desc ICG3.
+    byte_offset: 12
+    access: Read
+    fieldset: ICG3
+  - name: ICG8A
+    description: desc ICG8A.
+    byte_offset: 96
+    access: Read
+    fieldset: ICG8A
+  - name: ICG8B
+    description: desc ICG8B.
+    byte_offset: 100
+    access: Read
+    fieldset: ICG8B
+  - name: ICG8C
+    description: desc ICG8C.
+    byte_offset: 104
+    access: Read
+    fieldset: ICG8C
+fieldset/ICG0:
+  description: desc ICG0.
+  fields:
+  - name: SWDTAUTS
+    description: desc SWDTAUTS.
+    bit_offset: 0
+    bit_size: 1
+  - name: SWDTITS
+    description: desc SWDTITS.
+    bit_offset: 1
+    bit_size: 1
+  - name: SWDTPERI
+    description: desc SWDTPERI.
+    bit_offset: 2
+    bit_size: 2
+  - name: SWDTCKS
+    description: desc SWDTCKS.
+    bit_offset: 4
+    bit_size: 4
+  - name: SWDTWDPT
+    description: desc SWDTWDPT.
+    bit_offset: 8
+    bit_size: 4
+  - name: SWDTSLPOFF
+    description: desc SWDTSLPOFF.
+    bit_offset: 12
+    bit_size: 1
+  - name: WDTAUTS
+    description: desc WDTAUTS.
+    bit_offset: 16
+    bit_size: 1
+  - name: WDTITS
+    description: desc WDTITS.
+    bit_offset: 17
+    bit_size: 1
+  - name: WDTPERI
+    description: desc WDTPERI.
+    bit_offset: 18
+    bit_size: 2
+  - name: WDTCKS
+    description: desc WDTCKS.
+    bit_offset: 20
+    bit_size: 4
+  - name: WDTWDPT
+    description: desc WDTWDPT.
+    bit_offset: 24
+    bit_size: 4
+  - name: WDTSLPOFF
+    description: desc WDTSLPOFF.
+    bit_offset: 28
+    bit_size: 1
+fieldset/ICG1:
+  description: desc ICG1.
+  fields:
+  - name: HRCFREQSEL
+    description: desc HRCFREQSEL.
+    bit_offset: 0
+    bit_size: 1
+  - name: HRCSTOP
+    description: desc HRCSTOP.
+    bit_offset: 8
+    bit_size: 1
+  - name: BOR_LEV
+    description: desc BOR_LEV.
+    bit_offset: 16
+    bit_size: 2
+  - name: BORDIS
+    description: desc BORDIS.
+    bit_offset: 18
+    bit_size: 1
+fieldset/ICG3:
+  description: desc ICG3.
+  fields:
+  - name: DBUSPRT
+    description: desc DBUSPRT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/ICG8A:
+  description: desc ICG8A.
+  fields:
+  - name: ERMUOUTSEL
+    description: desc ERMUOUTSEL.
+    bit_offset: 0
+    bit_size: 2
+  - name: ERMUOUTDIS
+    description: desc ERMUOUTDIS.
+    bit_offset: 4
+    bit_size: 1
+fieldset/ICG8B:
+  description: desc ICG8B.
+  fields:
+  - name: ERMUOUTSEL
+    description: desc ERMUOUTSEL.
+    bit_offset: 0
+    bit_size: 2
+  - name: ERMUOUTDIS
+    description: desc ERMUOUTDIS.
+    bit_offset: 4
+    bit_size: 1
+fieldset/ICG8C:
+  description: desc ICG8C.
+  fields:
+  - name: ERMUOUTSEL
+    description: desc ERMUOUTSEL.
+    bit_offset: 0
+    bit_size: 2
+  - name: ERMUOUTDIS
+    description: desc ERMUOUTDIS.
+    bit_offset: 4
+    bit_size: 1

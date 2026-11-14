@@ -1,0 +1,52 @@
+# HC32F115F8TH（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F115F8TH
+family: HC32F115
+subfamily: cortex-m0plus
+packages:
+- name: HC32F115F8TH
+  package: LQFP32
+include_memory: ../memory/HC32F115_F64S4.yaml
+memory_sizes:
+  FLASH: 64K
+  SRAM: 4K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1285.html
+cores:
+- name: cortex-m0plus
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F115.yaml
+  include_interrupts: ../interrupts/HC32F115.yaml
+_raw:
+  series: HC32F115
+  freq_mhz: '32'
+  flash_kb: '64'
+  sram_kb: '4'
+  package: LQFP32
+  pin_count: '32'
+  gpio: '28'
+  vdd_min: '2.7'
+  vdd_max: '5.5'
+  uart: '4'
+  spi: '1'
+  i2c: '1'
+  i2s: ''
+  can: ''
+  usb: ''
+  adc: '8'
+  dac: ''
+  timer: 1;8
+  rtc: '1'
+  wdt: '1'
+  touchkey: ''
+  lcd: ''
+  opa: ''
+  cmp: ''
+  other: LIN=1|LVD=1|Timer0=1;TimerB=8|temp Range -40℃~85℃ -40℃~85℃
+  url: https://www.xhsc.com.cn/product/1285.html
+  source: DS
+  Part NO.: HC32F115F8TH

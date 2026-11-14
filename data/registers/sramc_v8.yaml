@@ -1,0 +1,99 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M441/SRAMC；覆盖系列：HC32M441。
+block/SRAMC:
+  description: desc SRAMC.
+  items:
+  - name: CKCR
+    description: desc CKCR.
+    byte_offset: 8
+    fieldset: CKCR
+  - name: CKPR
+    description: desc CKPR.
+    byte_offset: 12
+    fieldset: CKPR
+  - name: CKSR
+    description: desc CKSR.
+    byte_offset: 16
+    fieldset: CKSR
+  - name: SRAM0_EIEN
+    description: desc SRAM0_EIEN.
+    byte_offset: 20
+    fieldset: SRAM0_EIEN
+  - name: SRAM0_EIBIT0
+    description: desc SRAM0_EIBIT0.
+    byte_offset: 24
+  - name: SRAM0_EIBIT1
+    description: desc SRAM0_EIBIT1.
+    byte_offset: 28
+    fieldset: SRAM0_EIBIT1
+  - name: SRAM0_ECCERRADDR
+    description: desc SRAM0_ECCERRADDR.
+    byte_offset: 32
+    access: Read
+    fieldset: SRAM0_ECCERRADDR
+fieldset/CKCR:
+  description: desc CKCR.
+  fields:
+  - name: PYOAD
+    description: desc PYOAD.
+    bit_offset: 0
+    bit_size: 1
+  - name: ECCOAD
+    description: desc ECCOAD.
+    bit_offset: 16
+    bit_size: 1
+  - name: ECCMOD
+    description: desc ECCMOD.
+    bit_offset: 24
+    bit_size: 2
+fieldset/CKPR:
+  description: desc CKPR.
+  fields:
+  - name: CKPRC
+    description: desc CKPRC.
+    bit_offset: 0
+    bit_size: 1
+  - name: CKPRKW
+    description: desc CKPRKW.
+    bit_offset: 1
+    bit_size: 7
+fieldset/CKSR:
+  description: desc CKSR.
+  fields:
+  - name: SRAMH_PYERR
+    description: desc SRAMH_PYERR.
+    bit_offset: 3
+    bit_size: 1
+  - name: SRAM0_1ERR
+    description: desc SRAM0_1ERR.
+    bit_offset: 4
+    bit_size: 1
+  - name: SRAM0_2ERR
+    description: desc SRAM0_2ERR.
+    bit_offset: 5
+    bit_size: 1
+  - name: CACHE_PYERR
+    description: desc CACHE_PYERR.
+    bit_offset: 8
+    bit_size: 1
+fieldset/SRAM0_ECCERRADDR:
+  description: desc SRAM0_ECCERRADDR.
+  fields:
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    bit_offset: 0
+    bit_size: 15
+fieldset/SRAM0_EIBIT1:
+  description: desc SRAM0_EIBIT1.
+  fields:
+  - name: EIBIT
+    description: desc EIBIT.
+    bit_offset: 0
+    bit_size: 7
+fieldset/SRAM0_EIEN:
+  description: desc SRAM0_EIEN.
+  fields:
+  - name: EIEN
+    description: desc EIEN.
+    bit_offset: 0
+    bit_size: 1

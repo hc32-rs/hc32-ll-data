@@ -1,0 +1,220 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F175/SPI0；覆盖系列：HC32F175。
+block/SPI:
+  description: desc SPI.
+  items:
+  - name: CR0
+    description: desc CR0.
+    byte_offset: 0
+    fieldset: CR0
+  - name: CR1
+    description: desc CR1.
+    byte_offset: 4
+    fieldset: CR1
+  - name: HDOE
+    description: desc HDOE.
+    byte_offset: 8
+    fieldset: HDOE
+  - name: SSI
+    description: desc SSI.
+    byte_offset: 12
+    fieldset: SSI
+  - name: SR
+    description: desc SR.
+    byte_offset: 16
+    access: Read
+    fieldset: SR
+  - name: ICR
+    description: desc ICR.
+    byte_offset: 20
+    access: Write
+    fieldset: ICR
+  - name: DR
+    description: desc DR.
+    byte_offset: 24
+    fieldset: DR
+fieldset/CR0:
+  description: desc CR0.
+  fields:
+  - name: EN
+    description: desc EN.
+    bit_offset: 0
+    bit_size: 1
+  - name: BRR
+    description: desc BRR.
+    bit_offset: 1
+    bit_size: 3
+  - name: CPHA
+    description: desc CPHA.
+    bit_offset: 4
+    bit_size: 1
+  - name: CPOL
+    description: desc CPOL.
+    bit_offset: 5
+    bit_size: 1
+  - name: MSTR
+    description: desc MSTR.
+    bit_offset: 6
+    bit_size: 1
+  - name: LSBF
+    description: desc LSBF.
+    bit_offset: 7
+    bit_size: 1
+  - name: WIDTH
+    description: desc WIDTH.
+    bit_offset: 8
+    bit_size: 4
+  - name: SSM
+    description: desc SSM.
+    bit_offset: 12
+    bit_size: 1
+  - name: CM
+    description: desc CM.
+    bit_offset: 13
+    bit_size: 2
+  - name: SMP
+    description: desc SMP.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CR1:
+  description: desc CR1.
+  fields:
+  - name: TXEIE
+    description: desc TXEIE.
+    bit_offset: 0
+    bit_size: 1
+  - name: RXNEIE
+    description: desc RXNEIE.
+    bit_offset: 1
+    bit_size: 1
+  - name: SSFIE
+    description: desc SSFIE.
+    bit_offset: 2
+    bit_size: 1
+  - name: SSRIE
+    description: desc SSRIE.
+    bit_offset: 3
+    bit_size: 1
+  - name: UDFIE
+    description: desc UDFIE.
+    bit_offset: 4
+    bit_size: 1
+  - name: OVFIE
+    description: desc OVFIE.
+    bit_offset: 5
+    bit_size: 1
+  - name: SSERRIE
+    description: desc SSERRIE.
+    bit_offset: 6
+    bit_size: 1
+  - name: MODFIE
+    description: desc MODFIE.
+    bit_offset: 7
+    bit_size: 1
+  - name: DMARXEN
+    description: desc DMARXEN.
+    bit_offset: 8
+    bit_size: 1
+  - name: DMATXEN
+    description: desc DMATXEN.
+    bit_offset: 9
+    bit_size: 1
+fieldset/DR:
+  description: desc DR.
+  fields:
+  - name: DR
+    description: desc DR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/HDOE:
+  description: desc HDOE.
+  fields:
+  - name: HDOE
+    description: desc HDOE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/ICR:
+  description: desc ICR.
+  fields:
+  - name: TXE
+    description: desc TXE.
+    bit_offset: 0
+    bit_size: 1
+  - name: RXNE
+    description: desc RXNE.
+    bit_offset: 1
+    bit_size: 1
+  - name: SSF
+    description: desc SSF.
+    bit_offset: 2
+    bit_size: 1
+  - name: SSR
+    description: desc SSR.
+    bit_offset: 3
+    bit_size: 1
+  - name: UDF
+    description: desc UDF.
+    bit_offset: 4
+    bit_size: 1
+  - name: OVF
+    description: desc OVF.
+    bit_offset: 5
+    bit_size: 1
+  - name: SSERR
+    description: desc SSERR.
+    bit_offset: 6
+    bit_size: 1
+  - name: MODF
+    description: desc MODF.
+    bit_offset: 7
+    bit_size: 1
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: TXE
+    description: desc TXE.
+    bit_offset: 0
+    bit_size: 1
+  - name: RXNE
+    description: desc RXNE.
+    bit_offset: 1
+    bit_size: 1
+  - name: SSF
+    description: desc SSF.
+    bit_offset: 2
+    bit_size: 1
+  - name: SSR
+    description: desc SSR.
+    bit_offset: 3
+    bit_size: 1
+  - name: UDF
+    description: desc UDF.
+    bit_offset: 4
+    bit_size: 1
+  - name: OVF
+    description: desc OVF.
+    bit_offset: 5
+    bit_size: 1
+  - name: SSERR
+    description: desc SSERR.
+    bit_offset: 6
+    bit_size: 1
+  - name: MODF
+    description: desc MODF.
+    bit_offset: 7
+    bit_size: 1
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 8
+    bit_size: 1
+  - name: SSLVL
+    description: desc SSLVL.
+    bit_offset: 9
+    bit_size: 1
+fieldset/SSI:
+  description: desc SSI.
+  fields:
+  - name: SSI
+    description: desc SSI.
+    bit_offset: 0
+    bit_size: 1

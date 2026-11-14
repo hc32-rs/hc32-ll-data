@@ -1,0 +1,291 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A0/USART10；覆盖系列：HC32A4A0, HC32F467, HC32F4A0, HC32F4A2。
+block/USART:
+  description: desc USART10.
+  items:
+  - name: SR
+    description: desc SR.
+    byte_offset: 0
+    access: Read
+    fieldset: SR
+  - name: TDR
+    description: desc TDR.
+    byte_offset: 4
+    bit_size: 16
+    fieldset: TDR
+  - name: RDR
+    description: desc RDR.
+    byte_offset: 6
+    access: Read
+    bit_size: 16
+    fieldset: RDR
+  - name: BRR
+    description: desc BRR.
+    byte_offset: 8
+    fieldset: BRR
+  - name: CR1
+    description: desc CR1.
+    byte_offset: 12
+    fieldset: CR1
+  - name: CR2
+    description: desc CR2.
+    byte_offset: 16
+    fieldset: CR2
+  - name: CR3
+    description: desc CR3.
+    byte_offset: 20
+    fieldset: CR3
+  - name: PR
+    description: desc PR.
+    byte_offset: 24
+    fieldset: PR
+  - name: LBMC
+    description: desc LBMC.
+    byte_offset: 28
+    access: Read
+    fieldset: LBMC
+fieldset/BRR:
+  description: desc BRR.
+  fields:
+  - name: DIV_INTEGER
+    description: desc DIV_INTEGER.
+    bit_offset: 8
+    bit_size: 8
+fieldset/CR1:
+  description: desc CR1.
+  fields:
+  - name: RE
+    description: desc RE.
+    bit_offset: 2
+    bit_size: 1
+  - name: TE
+    description: desc TE.
+    bit_offset: 3
+    bit_size: 1
+  - name: SLME
+    description: desc SLME.
+    bit_offset: 4
+    bit_size: 1
+  - name: RIE
+    description: desc RIE.
+    bit_offset: 5
+    bit_size: 1
+  - name: TCIE
+    description: desc TCIE.
+    bit_offset: 6
+    bit_size: 1
+  - name: TXEIE
+    description: desc TXEIE.
+    bit_offset: 7
+    bit_size: 1
+  - name: PS
+    description: desc PS.
+    bit_offset: 9
+    bit_size: 1
+  - name: PCE
+    description: desc PCE.
+    bit_offset: 10
+    bit_size: 1
+  - name: M
+    description: desc M.
+    bit_offset: 12
+    bit_size: 1
+  - name: OVER8
+    description: desc OVER8.
+    bit_offset: 15
+    bit_size: 1
+  - name: CPE
+    description: desc CPE.
+    bit_offset: 16
+    bit_size: 1
+  - name: CFE
+    description: desc CFE.
+    bit_offset: 17
+    bit_size: 1
+  - name: CORE
+    description: desc CORE.
+    bit_offset: 19
+    bit_size: 1
+  - name: CBE
+    description: desc CBE.
+    bit_offset: 21
+    bit_size: 1
+  - name: CWKUP
+    description: desc CWKUP.
+    bit_offset: 22
+    bit_size: 1
+  - name: CLBD
+    description: desc CLBD.
+    bit_offset: 23
+    bit_size: 1
+  - name: MS
+    description: desc MS.
+    bit_offset: 24
+    bit_size: 1
+  - name: ML
+    description: desc ML.
+    bit_offset: 28
+    bit_size: 1
+  - name: NFE
+    description: desc NFE.
+    bit_offset: 30
+    bit_size: 1
+  - name: SBS
+    description: desc SBS.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CR2:
+  description: desc CR2.
+  fields:
+  - name: MPE
+    description: desc MPE.
+    bit_offset: 0
+    bit_size: 1
+  - name: WKUPIE
+    description: desc WKUPIE.
+    bit_offset: 1
+    bit_size: 1
+  - name: BEIE
+    description: desc BEIE.
+    bit_offset: 2
+    bit_size: 1
+  - name: BEE
+    description: desc BEE.
+    bit_offset: 3
+    bit_size: 1
+  - name: LBDIE
+    description: desc LBDIE.
+    bit_offset: 4
+    bit_size: 1
+  - name: LBDL
+    description: desc LBDL.
+    bit_offset: 5
+    bit_size: 1
+  - name: SBKL
+    description: desc SBKL.
+    bit_offset: 6
+    bit_size: 2
+  - name: WKUPE
+    description: desc WKUPE.
+    bit_offset: 8
+    bit_size: 1
+  - name: CLKC
+    description: desc CLKC.
+    bit_offset: 11
+    bit_size: 2
+  - name: STOP
+    description: desc STOP.
+    bit_offset: 13
+    bit_size: 1
+  - name: LINEN
+    description: desc LINEN.
+    bit_offset: 14
+    bit_size: 1
+  - name: SBK
+    description: desc SBK.
+    bit_offset: 16
+    bit_size: 1
+  - name: SBKM
+    description: desc SBKM.
+    bit_offset: 17
+    bit_size: 1
+fieldset/CR3:
+  description: desc CR3.
+  fields:
+  - name: HDSEL
+    description: desc HDSEL.
+    bit_offset: 3
+    bit_size: 1
+  - name: LOOP
+    description: desc LOOP.
+    bit_offset: 4
+    bit_size: 1
+  - name: RTSE
+    description: desc RTSE.
+    bit_offset: 8
+    bit_size: 1
+  - name: CTSE
+    description: desc CTSE.
+    bit_offset: 9
+    bit_size: 1
+fieldset/LBMC:
+  description: desc LBMC.
+  fields:
+  - name: LBMC
+    description: desc LBMC.
+    bit_offset: 0
+    bit_size: 16
+fieldset/PR:
+  description: desc PR.
+  fields:
+  - name: PSC
+    description: desc PSC.
+    bit_offset: 0
+    bit_size: 2
+  - name: LBMPSC
+    description: desc LBMPSC.
+    bit_offset: 2
+    bit_size: 2
+fieldset/RDR:
+  description: desc RDR.
+  bit_size: 16
+  fields:
+  - name: RDR
+    description: desc RDR.
+    bit_offset: 0
+    bit_size: 9
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: PE
+    description: desc PE.
+    bit_offset: 0
+    bit_size: 1
+  - name: FE
+    description: desc FE.
+    bit_offset: 1
+    bit_size: 1
+  - name: ORE
+    description: desc ORE.
+    bit_offset: 3
+    bit_size: 1
+  - name: BE
+    description: desc BE.
+    bit_offset: 4
+    bit_size: 1
+  - name: RXNE
+    description: desc RXNE.
+    bit_offset: 5
+    bit_size: 1
+  - name: TC
+    description: desc TC.
+    bit_offset: 6
+    bit_size: 1
+  - name: TXE
+    description: desc TXE.
+    bit_offset: 7
+    bit_size: 1
+  - name: WKUP
+    description: desc WKUP.
+    bit_offset: 9
+    bit_size: 1
+  - name: LBD
+    description: desc LBD.
+    bit_offset: 10
+    bit_size: 1
+  - name: MPB
+    description: desc MPB.
+    bit_offset: 16
+    bit_size: 1
+fieldset/TDR:
+  description: desc TDR.
+  bit_size: 16
+  fields:
+  - name: TDR
+    description: desc TDR.
+    bit_offset: 0
+    bit_size: 9
+  - name: MPID
+    description: desc MPID.
+    bit_offset: 9
+    bit_size: 1

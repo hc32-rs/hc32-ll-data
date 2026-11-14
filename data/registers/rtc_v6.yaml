@@ -1,0 +1,485 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F175/RTC；覆盖系列：HC32F175。
+block/RTC:
+  description: desc RTC.
+  items:
+  - name: CR0
+    description: desc CR0.
+    byte_offset: 0
+    fieldset: CR0
+  - name: CR1
+    description: desc CR1.
+    byte_offset: 4
+    fieldset: CR1
+  - name: SEC
+    description: desc SEC.
+    byte_offset: 8
+    fieldset: SEC
+  - name: MIN
+    description: desc MIN.
+    byte_offset: 12
+    fieldset: MIN
+  - name: HOUR
+    description: desc HOUR.
+    byte_offset: 16
+    fieldset: HOUR
+  - name: WEEK
+    description: desc WEEK.
+    byte_offset: 20
+    fieldset: WEEK
+  - name: DAY
+    description: desc DAY.
+    byte_offset: 24
+    fieldset: DAY
+  - name: MON
+    description: desc MON.
+    byte_offset: 28
+    fieldset: MON
+  - name: YEAR
+    description: desc YEAR.
+    byte_offset: 32
+    fieldset: YEAR
+  - name: COMPEN
+    description: desc COMPEN.
+    byte_offset: 48
+    fieldset: COMPEN
+  - name: HCOMP
+    description: desc HCOMP.
+    byte_offset: 52
+    fieldset: HCOMP
+  - name: CR2
+    description: desc CR2.
+    byte_offset: 60
+    fieldset: CR2
+  - name: ALMA
+    description: desc ALMA.
+    byte_offset: 64
+    fieldset: ALMA
+  - name: ALMB
+    description: desc ALMB.
+    byte_offset: 68
+    fieldset: ALMB
+  - name: TSTR
+    description: desc TSTR.
+    byte_offset: 72
+    access: Read
+    fieldset: TSTR
+  - name: TSDR
+    description: desc TSDR.
+    byte_offset: 76
+    access: Read
+    fieldset: TSDR
+  - name: WUTR
+    description: desc WUTR.
+    byte_offset: 80
+    fieldset: WUTR
+  - name: IER
+    description: desc IER.
+    byte_offset: 84
+    fieldset: IER
+  - name: IFR
+    description: desc IFR.
+    byte_offset: 88
+    access: Read
+    fieldset: IFR
+  - name: ICR
+    description: desc ICR.
+    byte_offset: 92
+    access: Write
+    fieldset: ICR
+  - name: WPR
+    description: desc WPR.
+    byte_offset: 96
+    access: Write
+    fieldset: WPR
+fieldset/ALMA:
+  description: desc ALMA.
+  fields:
+  - name: SECL
+    description: desc SECL.
+    bit_offset: 0
+    bit_size: 4
+  - name: SECH
+    description: desc SECH.
+    bit_offset: 4
+    bit_size: 3
+  - name: MSKS
+    description: desc MSKS.
+    bit_offset: 7
+    bit_size: 1
+  - name: MINL
+    description: desc MINL.
+    bit_offset: 8
+    bit_size: 4
+  - name: MINH
+    description: desc MINH.
+    bit_offset: 12
+    bit_size: 3
+  - name: MSKM
+    description: desc MSKM.
+    bit_offset: 15
+    bit_size: 1
+  - name: HOURL
+    description: desc HOURL.
+    bit_offset: 16
+    bit_size: 4
+  - name: HOURH
+    description: desc HOURH.
+    bit_offset: 20
+    bit_size: 2
+  - name: MSKH
+    description: desc MSKH.
+    bit_offset: 23
+    bit_size: 1
+  - name: WEEK
+    description: desc WEEK.
+    bit_offset: 24
+    bit_size: 7
+fieldset/ALMB:
+  description: desc ALMB.
+  fields:
+  - name: SECL
+    description: desc SECL.
+    bit_offset: 0
+    bit_size: 4
+  - name: SECH
+    description: desc SECH.
+    bit_offset: 4
+    bit_size: 3
+  - name: MSKS
+    description: desc MSKS.
+    bit_offset: 7
+    bit_size: 1
+  - name: MINL
+    description: desc MINL.
+    bit_offset: 8
+    bit_size: 4
+  - name: MINH
+    description: desc MINH.
+    bit_offset: 12
+    bit_size: 3
+  - name: MSKM
+    description: desc MSKM.
+    bit_offset: 15
+    bit_size: 1
+  - name: HOURL
+    description: desc HOURL.
+    bit_offset: 16
+    bit_size: 4
+  - name: HOURH
+    description: desc HOURH.
+    bit_offset: 20
+    bit_size: 2
+  - name: MSKH
+    description: desc MSKH.
+    bit_offset: 23
+    bit_size: 1
+  - name: WEEK
+    description: desc WEEK.
+    bit_offset: 24
+    bit_size: 7
+fieldset/COMPEN:
+  description: desc COMPEN.
+  fields:
+  - name: CR
+    description: desc CR.
+    bit_offset: 0
+    bit_size: 13
+  - name: CSTEPS
+    description: desc CSTEPS.
+    bit_offset: 14
+    bit_size: 1
+  - name: CREN
+    description: desc CREN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CR0:
+  description: desc CR0.
+  fields:
+  - name: PRDS
+    description: desc PRDS.
+    bit_offset: 0
+    bit_size: 3
+  - name: AMPM
+    description: desc AMPM.
+    bit_offset: 3
+    bit_size: 1
+  - name: HZ1OE
+    description: desc HZ1OE.
+    bit_offset: 5
+    bit_size: 1
+  - name: HZ1SEL
+    description: desc HZ1SEL.
+    bit_offset: 6
+    bit_size: 1
+  - name: START
+    description: desc START.
+    bit_offset: 7
+    bit_size: 1
+  - name: PRDX
+    description: desc PRDX.
+    bit_offset: 8
+    bit_size: 6
+  - name: PRDSEL
+    description: desc PRDSEL.
+    bit_offset: 14
+    bit_size: 1
+  - name: TEST
+    description: desc TEST.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CR1:
+  description: desc CR1.
+  fields:
+  - name: WAIT
+    description: desc WAIT.
+    bit_offset: 0
+    bit_size: 1
+  - name: WAITF
+    description: desc WAITF.
+    bit_offset: 1
+    bit_size: 1
+fieldset/CR2:
+  description: desc CR2.
+  fields:
+  - name: WUCKSEL
+    description: desc WUCKSEL.
+    bit_offset: 0
+    bit_size: 3
+  - name: TSEDG
+    description: desc TSEDG.
+    bit_offset: 3
+    bit_size: 1
+  - name: O2SEL
+    description: desc O2SEL.
+    bit_offset: 4
+    bit_size: 2
+  - name: TSE
+    description: desc TSE.
+    bit_offset: 6
+    bit_size: 1
+  - name: WUTE
+    description: desc WUTE.
+    bit_offset: 7
+    bit_size: 1
+  - name: ALMAE
+    description: desc ALMAE.
+    bit_offset: 9
+    bit_size: 1
+  - name: ALMBE
+    description: desc ALMBE.
+    bit_offset: 10
+    bit_size: 1
+fieldset/DAY:
+  description: desc DAY.
+  fields:
+  - name: DAYL
+    description: desc DAYL.
+    bit_offset: 0
+    bit_size: 4
+  - name: DAYH
+    description: desc DAYH.
+    bit_offset: 4
+    bit_size: 2
+fieldset/HCOMP:
+  description: desc HCOMP.
+  fields:
+  - name: PARA
+    description: desc PARA.
+    bit_offset: 0
+    bit_size: 6
+fieldset/HOUR:
+  description: desc HOUR.
+  fields:
+  - name: HOURL
+    description: desc HOURL.
+    bit_offset: 0
+    bit_size: 4
+  - name: HOURH
+    description: desc HOURH.
+    bit_offset: 4
+    bit_size: 2
+fieldset/ICR:
+  description: desc ICR.
+  fields:
+  - name: ALMA
+    description: desc ALMA.
+    bit_offset: 0
+    bit_size: 1
+  - name: ALMB
+    description: desc ALMB.
+    bit_offset: 1
+    bit_size: 1
+  - name: WU
+    description: desc WU.
+    bit_offset: 2
+    bit_size: 1
+  - name: TS
+    description: desc TS.
+    bit_offset: 3
+    bit_size: 1
+  - name: TSOV
+    description: desc TSOV.
+    bit_offset: 4
+    bit_size: 1
+  - name: PRD
+    description: desc PRD.
+    bit_offset: 6
+    bit_size: 1
+fieldset/IER:
+  description: desc IER.
+  fields:
+  - name: ALMA
+    description: desc ALMA.
+    bit_offset: 0
+    bit_size: 1
+  - name: ALMB
+    description: desc ALMB.
+    bit_offset: 1
+    bit_size: 1
+  - name: WU
+    description: desc WU.
+    bit_offset: 2
+    bit_size: 1
+  - name: TS
+    description: desc TS.
+    bit_offset: 3
+    bit_size: 1
+  - name: PRD
+    description: desc PRD.
+    bit_offset: 6
+    bit_size: 1
+fieldset/IFR:
+  description: desc IFR.
+  fields:
+  - name: ALMA
+    description: desc ALMA.
+    bit_offset: 0
+    bit_size: 1
+  - name: ALMB
+    description: desc ALMB.
+    bit_offset: 1
+    bit_size: 1
+  - name: WU
+    description: desc WU.
+    bit_offset: 2
+    bit_size: 1
+  - name: TS
+    description: desc TS.
+    bit_offset: 3
+    bit_size: 1
+  - name: TSOV
+    description: desc TSOV.
+    bit_offset: 4
+    bit_size: 1
+  - name: PRD
+    description: desc PRD.
+    bit_offset: 6
+    bit_size: 1
+fieldset/MIN:
+  description: desc MIN.
+  fields:
+  - name: MINL
+    description: desc MINL.
+    bit_offset: 0
+    bit_size: 4
+  - name: MINH
+    description: desc MINH.
+    bit_offset: 4
+    bit_size: 3
+fieldset/MON:
+  description: desc MON.
+  fields:
+  - name: MON
+    description: desc MON.
+    bit_offset: 0
+    bit_size: 5
+fieldset/SEC:
+  description: desc SEC.
+  fields:
+  - name: SECL
+    description: desc SECL.
+    bit_offset: 0
+    bit_size: 4
+  - name: SECH
+    description: desc SECH.
+    bit_offset: 4
+    bit_size: 3
+fieldset/TSDR:
+  description: desc TSDR.
+  fields:
+  - name: DAYL
+    description: desc DAYL.
+    bit_offset: 0
+    bit_size: 4
+  - name: DAYH
+    description: desc DAYH.
+    bit_offset: 4
+    bit_size: 2
+  - name: MON
+    description: desc MON.
+    bit_offset: 8
+    bit_size: 5
+  - name: WEEK
+    description: desc WEEK.
+    bit_offset: 13
+    bit_size: 3
+fieldset/TSTR:
+  description: desc TSTR.
+  fields:
+  - name: SECL
+    description: desc SECL.
+    bit_offset: 0
+    bit_size: 4
+  - name: SECH
+    description: desc SECH.
+    bit_offset: 4
+    bit_size: 3
+  - name: MINL
+    description: desc MINL.
+    bit_offset: 8
+    bit_size: 4
+  - name: MINH
+    description: desc MINH.
+    bit_offset: 12
+    bit_size: 3
+  - name: HOURL
+    description: desc HOURL.
+    bit_offset: 16
+    bit_size: 4
+  - name: HOURH
+    description: desc HOURH.
+    bit_offset: 20
+    bit_size: 2
+fieldset/WEEK:
+  description: desc WEEK.
+  fields:
+  - name: WEEK
+    description: desc WEEK.
+    bit_offset: 0
+    bit_size: 3
+fieldset/WPR:
+  description: desc WPR.
+  fields:
+  - name: WPR
+    description: desc WPR.
+    bit_offset: 0
+    bit_size: 8
+fieldset/WUTR:
+  description: desc WUTR.
+  fields:
+  - name: ARR
+    description: desc ARR.
+    bit_offset: 0
+    bit_size: 16
+fieldset/YEAR:
+  description: desc YEAR.
+  fields:
+  - name: YEARL
+    description: desc YEARL.
+    bit_offset: 0
+    bit_size: 4
+  - name: YEARH
+    description: desc YEARH.
+    bit_offset: 4
+    bit_size: 4

@@ -1,0 +1,55 @@
+# HC32F4A0PITB（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F4A0PITB
+family: HC32F4A0
+subfamily: cortex-m4
+packages:
+- name: HC32F4A0PITB
+  package: LQFP100
+include_memory: ../memory/HC32F4A0_F2048S512.yaml
+memory_sizes:
+  FLASH: 2048K
+  SRAM: 512K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1220.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F4A0.yaml
+  include_interrupts: ../interrupts/HC32F4A0.yaml
+  include_dma_channels:
+    DMA1: ../dma/HC32F4A0_DMA1.yaml
+    DMA2: ../dma/HC32F4A0_DMA2.yaml
+_raw:
+  series: HC32F4A0
+  freq_mhz: '240'
+  flash_kb: '2048'
+  sram_kb: '512'
+  package: LQFP100
+  pin_count: '100'
+  gpio: '83'
+  vdd_min: '1.8'
+  vdd_max: '3.6'
+  uart: '10'
+  spi: '6'
+  i2c: '6'
+  i2s: '4'
+  can: '2'
+  usb: USB 2.0 OTG_FS+USB 2.0 OTG_HS
+  adc: '3'
+  dac: '2'
+  timer: '16'
+  rtc: √
+  wdt: ''
+  touchkey: ''
+  lcd: ''
+  opa: '4'
+  cmp: '4'
+  other: ADC 16ch|AES=256|DAC 8ch|DCU=8|HRPWM=16|HashSHA256=256|QSPI=1|SDIO=2|TRNG=1|otp=134|temp -40~105
+  url: https://www.xhsc.com.cn/product/1220.html
+  source: DS
+  Part NO.: HC32F4A0PITB

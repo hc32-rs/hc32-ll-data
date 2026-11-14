@@ -1,0 +1,150 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/SRAMC；覆盖系列：HC32A472, HC32F472。
+block/SRAMC:
+  description: desc SRAMC.
+  items:
+  - name: CKCR
+    description: desc CKCR.
+    byte_offset: 8
+    fieldset: CKCR
+  - name: CKPR
+    description: desc CKPR.
+    byte_offset: 12
+    fieldset: CKPR
+  - name: CKSR
+    description: desc CKSR.
+    byte_offset: 16
+    fieldset: CKSR
+  - name: SRAM0_EIEN
+    description: desc SRAM0_EIEN.
+    byte_offset: 20
+    fieldset: SRAM0_EIEN
+  - name: SRAM0_EIBIT0
+    description: desc SRAM0_EIBIT0.
+    byte_offset: 24
+  - name: SRAM0_EIBIT1
+    description: desc SRAM0_EIBIT1.
+    byte_offset: 28
+    fieldset: SRAM0_EIBIT1
+  - name: SRAM0_ECCERRADDR
+    description: desc SRAM0_ECCERRADDR.
+    byte_offset: 32
+    fieldset: SRAM0_ECCERRADDR
+  - name: SRAMB_EIEN
+    description: desc SRAMB_EIEN.
+    byte_offset: 36
+    fieldset: SRAMB_EIEN
+  - name: SRAMB_EIBIT0
+    description: desc SRAMB_EIBIT0.
+    byte_offset: 40
+  - name: SRAMB_EIBIT1
+    description: desc SRAMB_EIBIT1.
+    byte_offset: 44
+    fieldset: SRAMB_EIBIT1
+  - name: SRAMB_ECCERRADDR
+    description: desc SRAMB_ECCERRADDR.
+    byte_offset: 48
+    fieldset: SRAMB_ECCERRADDR
+fieldset/CKCR:
+  description: desc CKCR.
+  fields:
+  - name: PYOAD
+    description: desc PYOAD.
+    bit_offset: 0
+    bit_size: 1
+  - name: ECCOAD
+    description: desc ECCOAD.
+    bit_offset: 16
+    bit_size: 1
+  - name: BECCOAD
+    description: desc BECCOAD.
+    bit_offset: 17
+    bit_size: 1
+  - name: ECCMOD
+    description: desc ECCMOD.
+    bit_offset: 24
+    bit_size: 2
+  - name: BECCMOD
+    description: desc BECCMOD.
+    bit_offset: 26
+    bit_size: 2
+fieldset/CKPR:
+  description: desc CKPR.
+  fields:
+  - name: CKPRC
+    description: desc CKPRC.
+    bit_offset: 0
+    bit_size: 1
+  - name: CKPRKW
+    description: desc CKPRKW.
+    bit_offset: 1
+    bit_size: 7
+fieldset/CKSR:
+  description: desc CKSR.
+  fields:
+  - name: SRAMH_PYERR
+    description: desc SRAMH_PYERR.
+    bit_offset: 3
+    bit_size: 1
+  - name: SRAM0_1ERR
+    description: desc SRAM0_1ERR.
+    bit_offset: 4
+    bit_size: 1
+  - name: SRAM0_2ERR
+    description: desc SRAM0_2ERR.
+    bit_offset: 5
+    bit_size: 1
+  - name: SRAMB_1ERR
+    description: desc SRAMB_1ERR.
+    bit_offset: 6
+    bit_size: 1
+  - name: SRAMB_2ERR
+    description: desc SRAMB_2ERR.
+    bit_offset: 7
+    bit_size: 1
+  - name: CACHE_PYERR
+    description: desc CACHE_PYERR.
+    bit_offset: 8
+    bit_size: 1
+fieldset/SRAM0_ECCERRADDR:
+  description: desc SRAM0_ECCERRADDR.
+  fields:
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    bit_offset: 0
+    bit_size: 15
+fieldset/SRAM0_EIBIT1:
+  description: desc SRAM0_EIBIT1.
+  fields:
+  - name: EIBIT
+    description: desc EIBIT.
+    bit_offset: 0
+    bit_size: 7
+fieldset/SRAM0_EIEN:
+  description: desc SRAM0_EIEN.
+  fields:
+  - name: EIEN
+    description: desc EIEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/SRAMB_ECCERRADDR:
+  description: desc SRAMB_ECCERRADDR.
+  fields:
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    bit_offset: 0
+    bit_size: 12
+fieldset/SRAMB_EIBIT1:
+  description: desc SRAMB_EIBIT1.
+  fields:
+  - name: EIBIT
+    description: desc EIBIT.
+    bit_offset: 0
+    bit_size: 7
+fieldset/SRAMB_EIEN:
+  description: desc SRAMB_EIEN.
+  fields:
+  - name: EIEN
+    description: desc EIEN.
+    bit_offset: 0
+    bit_size: 1

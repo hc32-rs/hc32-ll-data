@@ -1,0 +1,55 @@
+# HC32F452JEUB（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F452JEUB
+family: HC32F452
+subfamily: cortex-m4
+packages:
+- name: HC32F452JEUB
+  package: QFN48
+include_memory: ../memory/HC32F452_F512S192.yaml
+memory_sizes:
+  FLASH: 512K
+  SRAM: 192K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1247.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F452.yaml
+  include_interrupts: ../interrupts/HC32F452.yaml
+  include_dma_channels:
+    DMA1: ../dma/HC32F452_DMA1.yaml
+    DMA2: ../dma/HC32F452_DMA2.yaml
+_raw:
+  series: HC32F452
+  freq_mhz: '200'
+  flash_kb: '512'
+  sram_kb: '192'
+  package: QFN48
+  pin_count: '48'
+  gpio: '38'
+  vdd_min: '1.8'
+  vdd_max: '3.6'
+  uart: '4'
+  spi: '4'
+  i2c: '3'
+  i2s: '4'
+  can: '1'
+  usb: USB 2.0 OTG_FS
+  adc: '2'
+  dac: ''
+  timer: '14'
+  rtc: √
+  wdt: ''
+  touchkey: ''
+  lcd: ''
+  opa: '1'
+  cmp: '3'
+  other: ADC 10ch|ADC 12bit|AES128=1|CRC=1|DMA=2|QSPI=1|SDIO=2|SHA256=1|TRNG=1|temp -40~105|通用定时器=14
+  url: https://www.xhsc.com.cn/product/1247.html
+  source: DS
+  Part NO.: HC32F452JEUB

@@ -1,0 +1,84 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A448/CTC；覆盖系列：HC32A448, HC32F155, HC32F334, HC32F336, HC32F448, HC32M441。
+block/CTC:
+  description: desc CTC.
+  items:
+  - name: CR1
+    description: desc CR1.
+    byte_offset: 0
+    fieldset: CR1
+  - name: CR2
+    description: desc CR2.
+    byte_offset: 4
+    fieldset: CR2
+  - name: STR
+    description: desc STR.
+    byte_offset: 8
+    access: Read
+    fieldset: STR
+  - name: CNT
+    description: desc CNT.
+    byte_offset: 12
+    access: Read
+    bit_size: 16
+fieldset/CR1:
+  description: desc CR1.
+  fields:
+  - name: REFPSC
+    description: desc REFPSC.
+    bit_offset: 0
+    bit_size: 3
+  - name: REFCKS
+    description: desc REFCKS.
+    bit_offset: 4
+    bit_size: 2
+  - name: ERRIE
+    description: desc ERRIE.
+    bit_offset: 6
+    bit_size: 1
+  - name: CTCEN
+    description: desc CTCEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: HRCPSC
+    description: desc HRCPSC.
+    bit_offset: 8
+    bit_size: 3
+  - name: REFEDG
+    description: desc REFEDG.
+    bit_offset: 12
+    bit_size: 2
+  - name: TRMVAL
+    description: desc TRMVAL.
+    bit_offset: 16
+    bit_size: 6
+fieldset/CR2:
+  description: desc CR2.
+  fields:
+  - name: OFSVAL
+    description: desc OFSVAL.
+    bit_offset: 0
+    bit_size: 8
+  - name: RLDVAL
+    description: desc RLDVAL.
+    bit_offset: 16
+    bit_size: 16
+fieldset/STR:
+  description: desc STR.
+  fields:
+  - name: TRIMOK
+    description: desc TRIMOK.
+    bit_offset: 0
+    bit_size: 1
+  - name: TRMOVF
+    description: desc TRMOVF.
+    bit_offset: 1
+    bit_size: 1
+  - name: TRMUDF
+    description: desc TRMUDF.
+    bit_offset: 2
+    bit_size: 1
+  - name: CTCBSY
+    description: desc CTCBSY.
+    bit_offset: 3
+    bit_size: 1

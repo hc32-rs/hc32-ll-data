@@ -1,0 +1,192 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M458/SRAMC；覆盖系列：HC32M458。
+block/SRAMC:
+  description: desc SRAMC.
+  items:
+  - name: WTCR
+    description: desc WTCR.
+    byte_offset: 0
+    fieldset: WTCR
+  - name: WTPR
+    description: desc WTPR.
+    byte_offset: 4
+    fieldset: WTPR
+  - name: CKCR
+    description: desc CKCR.
+    byte_offset: 8
+    fieldset: CKCR
+  - name: CKPR
+    description: desc CKPR.
+    byte_offset: 12
+    fieldset: CKPR
+  - name: CKSR
+    description: desc CKSR.
+    byte_offset: 16
+    fieldset: CKSR
+  - name: SRAM1_EIEN
+    description: desc SRAM1_EIEN.
+    byte_offset: 20
+    fieldset: SRAM1_EIEN
+  - name: SRAM1_EIBIT0
+    description: desc SRAM1_EIBIT0.
+    byte_offset: 24
+  - name: SRAM1_EIBIT1
+    description: desc SRAM1_EIBIT1.
+    byte_offset: 28
+    fieldset: SRAM1_EIBIT1
+  - name: SRAM1_ECCERRADDR
+    description: desc SRAM1_ECCERRADDR.
+    byte_offset: 32
+    fieldset: SRAM1_ECCERRADDR
+  - name: SRAMH_EIEN
+    description: desc SRAMH_EIEN.
+    byte_offset: 36
+    fieldset: SRAMH_EIEN
+  - name: SRAMH_EIBIT0
+    description: desc SRAMH_EIBIT0.
+    byte_offset: 40
+  - name: SRAMH_EIBIT1
+    description: desc SRAMH_EIBIT1.
+    byte_offset: 44
+    fieldset: SRAMH_EIBIT1
+  - name: SRAMH_ECCERRADDR
+    description: desc SRAMH_ECCERRADDR.
+    byte_offset: 48
+    fieldset: SRAMH_ECCERRADDR
+fieldset/CKCR:
+  description: desc CKCR.
+  fields:
+  - name: CACHE_ECCOAD
+    description: desc CACHE_ECCOAD.
+    bit_offset: 0
+    bit_size: 1
+  - name: SRAM1_ECCOAD
+    description: desc SRAM1_ECCOAD.
+    bit_offset: 1
+    bit_size: 1
+  - name: SRAMH_ECCOAD
+    description: desc SRAMH_ECCOAD.
+    bit_offset: 2
+    bit_size: 1
+  - name: CACHE_ECCMOD
+    description: desc CACHE_ECCMOD.
+    bit_offset: 8
+    bit_size: 2
+  - name: SRAM1_ECCMOD
+    description: desc SRAM1_ECCMOD.
+    bit_offset: 10
+    bit_size: 2
+  - name: SRAMH_ECCMOD
+    description: desc SRAMH_ECCMOD.
+    bit_offset: 12
+    bit_size: 2
+fieldset/CKPR:
+  description: desc CKPR.
+  fields:
+  - name: CKPRC
+    description: desc CKPRC.
+    bit_offset: 0
+    bit_size: 1
+  - name: CKPRKW
+    description: desc CKPRKW.
+    bit_offset: 1
+    bit_size: 7
+fieldset/CKSR:
+  description: desc CKSR.
+  fields:
+  - name: CACHE_1ERR
+    description: desc CACHE_1ERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: CACHE_2ERR
+    description: desc CACHE_2ERR.
+    bit_offset: 1
+    bit_size: 1
+  - name: SRAM1_1ERR
+    description: desc SRAM1_1ERR.
+    bit_offset: 2
+    bit_size: 1
+  - name: SRAM1_2ERR
+    description: desc SRAM1_2ERR.
+    bit_offset: 3
+    bit_size: 1
+  - name: SRAMH_1ERR
+    description: desc SRAMH_1ERR.
+    bit_offset: 4
+    bit_size: 1
+  - name: SRAMH_2ERR
+    description: desc SRAMH_2ERR.
+    bit_offset: 5
+    bit_size: 1
+fieldset/SRAM1_ECCERRADDR:
+  description: desc SRAM1_ECCERRADDR.
+  fields:
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    bit_offset: 0
+    bit_size: 17
+fieldset/SRAM1_EIBIT1:
+  description: desc SRAM1_EIBIT1.
+  fields:
+  - name: EIBIT
+    description: desc EIBIT.
+    bit_offset: 0
+    bit_size: 7
+fieldset/SRAM1_EIEN:
+  description: desc SRAM1_EIEN.
+  fields:
+  - name: EIEN
+    description: desc EIEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/SRAMH_ECCERRADDR:
+  description: desc SRAMH_ECCERRADDR.
+  fields:
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    bit_offset: 0
+    bit_size: 17
+fieldset/SRAMH_EIBIT1:
+  description: desc SRAMH_EIBIT1.
+  fields:
+  - name: EIBIT
+    description: desc EIBIT.
+    bit_offset: 0
+    bit_size: 7
+fieldset/SRAMH_EIEN:
+  description: desc SRAMH_EIEN.
+  fields:
+  - name: EIEN
+    description: desc EIEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/WTCR:
+  description: desc WTCR.
+  fields:
+  - name: SRAM1RWT
+    description: desc SRAM1RWT.
+    bit_offset: 0
+    bit_size: 3
+  - name: SRAM1WWT
+    description: desc SRAM1WWT.
+    bit_offset: 4
+    bit_size: 3
+  - name: SRAMHRWT
+    description: desc SRAMHRWT.
+    bit_offset: 8
+    bit_size: 3
+  - name: SRAMHWWT
+    description: desc SRAMHWWT.
+    bit_offset: 12
+    bit_size: 3
+fieldset/WTPR:
+  description: desc WTPR.
+  fields:
+  - name: WTPRC
+    description: desc WTPRC.
+    bit_offset: 0
+    bit_size: 1
+  - name: WTPRKW
+    description: desc WTPRKW.
+    bit_offset: 1
+    bit_size: 7

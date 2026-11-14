@@ -1,0 +1,54 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A448/KEYSCAN；覆盖系列：HC32A448, HC32A460, HC32A472, HC32A4A0, HC32A4A8, HC32F448, HC32F451, HC32F452, HC32F460, HC32F467, HC32F472, HC32F4A0, HC32F4A2, HC32F4A8, HC32M441。
+block/KEYSCAN:
+  description: desc KEYSCAN.
+  items:
+  - name: SCR
+    description: desc SCR.
+    byte_offset: 0
+    fieldset: SCR
+  - name: SER
+    description: desc SER.
+    byte_offset: 4
+    fieldset: SER
+  - name: SSR
+    description: desc SSR.
+    byte_offset: 8
+    fieldset: SSR
+fieldset/SCR:
+  description: desc SCR.
+  fields:
+  - name: KEYINSEL
+    description: desc KEYINSEL.
+    bit_offset: 0
+    bit_size: 16
+  - name: KEYOUTSEL
+    description: desc KEYOUTSEL.
+    bit_offset: 16
+    bit_size: 3
+  - name: CKSEL
+    description: desc CKSEL.
+    bit_offset: 20
+    bit_size: 2
+  - name: T_LLEVEL
+    description: desc T_LLEVEL.
+    bit_offset: 24
+    bit_size: 5
+  - name: T_HIZ
+    description: desc T_HIZ.
+    bit_offset: 29
+    bit_size: 3
+fieldset/SER:
+  description: desc SER.
+  fields:
+  - name: SEN
+    description: desc SEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/SSR:
+  description: desc SSR.
+  fields:
+  - name: INDEX
+    description: desc INDEX.
+    bit_offset: 0
+    bit_size: 3

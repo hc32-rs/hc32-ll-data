@@ -1,0 +1,1166 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/MPU；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/MPU:
+  description: desc MPU.
+  items:
+  - name: RGD0
+    description: desc RGD0.
+    byte_offset: 0
+    fieldset: RGD0
+  - name: RGD1
+    description: desc RGD1.
+    byte_offset: 4
+    fieldset: RGD1
+  - name: RGD2
+    description: desc RGD2.
+    byte_offset: 8
+    fieldset: RGD2
+  - name: RGD3
+    description: desc RGD3.
+    byte_offset: 12
+    fieldset: RGD3
+  - name: RGD4
+    description: desc RGD4.
+    byte_offset: 16
+    fieldset: RGD4
+  - name: RGD5
+    description: desc RGD5.
+    byte_offset: 20
+    fieldset: RGD5
+  - name: RGD6
+    description: desc RGD6.
+    byte_offset: 24
+    fieldset: RGD6
+  - name: RGD7
+    description: desc RGD7.
+    byte_offset: 28
+    fieldset: RGD7
+  - name: RGD8
+    description: desc RGD8.
+    byte_offset: 32
+    fieldset: RGD8
+  - name: RGD9
+    description: desc RGD9.
+    byte_offset: 36
+    fieldset: RGD9
+  - name: RGD10
+    description: desc RGD10.
+    byte_offset: 40
+    fieldset: RGD10
+  - name: RGD11
+    description: desc RGD11.
+    byte_offset: 44
+    fieldset: RGD11
+  - name: RGD12
+    description: desc RGD12.
+    byte_offset: 48
+    fieldset: RGD12
+  - name: RGD13
+    description: desc RGD13.
+    byte_offset: 52
+    fieldset: RGD13
+  - name: RGD14
+    description: desc RGD14.
+    byte_offset: 56
+    fieldset: RGD14
+  - name: RGD15
+    description: desc RGD15.
+    byte_offset: 60
+    fieldset: RGD15
+  - name: RGCR0
+    description: desc RGCR0.
+    byte_offset: 64
+    fieldset: RGCR0
+  - name: RGCR1
+    description: desc RGCR1.
+    byte_offset: 68
+    fieldset: RGCR1
+  - name: RGCR2
+    description: desc RGCR2.
+    byte_offset: 72
+    fieldset: RGCR2
+  - name: RGCR3
+    description: desc RGCR3.
+    byte_offset: 76
+    fieldset: RGCR3
+  - name: RGCR4
+    description: desc RGCR4.
+    byte_offset: 80
+    fieldset: RGCR4
+  - name: RGCR5
+    description: desc RGCR5.
+    byte_offset: 84
+    fieldset: RGCR5
+  - name: RGCR6
+    description: desc RGCR6.
+    byte_offset: 88
+    fieldset: RGCR6
+  - name: RGCR7
+    description: desc RGCR7.
+    byte_offset: 92
+    fieldset: RGCR7
+  - name: RGCR8
+    description: desc RGCR8.
+    byte_offset: 96
+    fieldset: RGCR8
+  - name: RGCR9
+    description: desc RGCR9.
+    byte_offset: 100
+    fieldset: RGCR9
+  - name: RGCR10
+    description: desc RGCR10.
+    byte_offset: 104
+    fieldset: RGCR10
+  - name: RGCR11
+    description: desc RGCR11.
+    byte_offset: 108
+    fieldset: RGCR11
+  - name: RGCR12
+    description: desc RGCR12.
+    byte_offset: 112
+    fieldset: RGCR12
+  - name: RGCR13
+    description: desc RGCR13.
+    byte_offset: 116
+    fieldset: RGCR13
+  - name: RGCR14
+    description: desc RGCR14.
+    byte_offset: 120
+    fieldset: RGCR14
+  - name: RGCR15
+    description: desc RGCR15.
+    byte_offset: 124
+    fieldset: RGCR15
+  - name: CR
+    description: desc CR.
+    byte_offset: 128
+    fieldset: CR
+  - name: SR
+    description: desc SR.
+    byte_offset: 132
+    access: Read
+    fieldset: SR
+  - name: ECLR
+    description: desc ECLR.
+    byte_offset: 136
+    access: Write
+    fieldset: ECLR
+  - name: WP
+    description: desc WP.
+    byte_offset: 140
+    fieldset: WP
+  - name: IPPR
+    description: desc IPPR.
+    byte_offset: 16412
+    fieldset: IPPR
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: SMPU2BRP
+    description: desc SMPU2BRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: SMPU2BWP
+    description: desc SMPU2BWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: SMPU2ACT
+    description: desc SMPU2ACT.
+    bit_offset: 2
+    bit_size: 2
+  - name: SMPU2E
+    description: desc SMPU2E.
+    bit_offset: 7
+    bit_size: 1
+  - name: SMPU1BRP
+    description: desc SMPU1BRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: SMPU1BWP
+    description: desc SMPU1BWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: SMPU1ACT
+    description: desc SMPU1ACT.
+    bit_offset: 10
+    bit_size: 2
+  - name: SMPU1E
+    description: desc SMPU1E.
+    bit_offset: 15
+    bit_size: 1
+  - name: FMPUBRP
+    description: desc FMPUBRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FMPUBWP
+    description: desc FMPUBWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FMPUACT
+    description: desc FMPUACT.
+    bit_offset: 18
+    bit_size: 2
+  - name: FMPUE
+    description: desc FMPUE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/ECLR:
+  description: desc ECLR.
+  fields:
+  - name: SMPU2ECLR
+    description: desc SMPU2ECLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: SMPU1ECLR
+    description: desc SMPU1ECLR.
+    bit_offset: 8
+    bit_size: 1
+  - name: FMPUECLR
+    description: desc FMPUECLR.
+    bit_offset: 16
+    bit_size: 1
+fieldset/IPPR:
+  description: desc IPPR.
+  fields:
+  - name: AESRDP
+    description: desc AESRDP.
+    bit_offset: 0
+    bit_size: 1
+  - name: AESWRP
+    description: desc AESWRP.
+    bit_offset: 1
+    bit_size: 1
+  - name: HASHRDP
+    description: desc HASHRDP.
+    bit_offset: 2
+    bit_size: 1
+  - name: HASHWRP
+    description: desc HASHWRP.
+    bit_offset: 3
+    bit_size: 1
+  - name: TRNGRDP
+    description: desc TRNGRDP.
+    bit_offset: 4
+    bit_size: 1
+  - name: TRNGWRP
+    description: desc TRNGWRP.
+    bit_offset: 5
+    bit_size: 1
+  - name: CRCRDP
+    description: desc CRCRDP.
+    bit_offset: 6
+    bit_size: 1
+  - name: CRCWRP
+    description: desc CRCWRP.
+    bit_offset: 7
+    bit_size: 1
+  - name: EFMRDP
+    description: desc EFMRDP.
+    bit_offset: 8
+    bit_size: 1
+  - name: EFMWRP
+    description: desc EFMWRP.
+    bit_offset: 9
+    bit_size: 1
+  - name: WDTRDP
+    description: desc WDTRDP.
+    bit_offset: 12
+    bit_size: 1
+  - name: WDTWRP
+    description: desc WDTWRP.
+    bit_offset: 13
+    bit_size: 1
+  - name: SWDTRDP
+    description: desc SWDTRDP.
+    bit_offset: 14
+    bit_size: 1
+  - name: SWDTWRP
+    description: desc SWDTWRP.
+    bit_offset: 15
+    bit_size: 1
+  - name: BKSRAMRDP
+    description: desc BKSRAMRDP.
+    bit_offset: 16
+    bit_size: 1
+  - name: BKSRAMWRP
+    description: desc BKSRAMWRP.
+    bit_offset: 17
+    bit_size: 1
+  - name: RTCRDP
+    description: desc RTCRDP.
+    bit_offset: 18
+    bit_size: 1
+  - name: RTCWRP
+    description: desc RTCWRP.
+    bit_offset: 19
+    bit_size: 1
+  - name: DMPURDP
+    description: desc DMPURDP.
+    bit_offset: 20
+    bit_size: 1
+  - name: DMPUWRP
+    description: desc DMPUWRP.
+    bit_offset: 21
+    bit_size: 1
+  - name: SRAMCRDP
+    description: desc SRAMCRDP.
+    bit_offset: 22
+    bit_size: 1
+  - name: SRAMCWRP
+    description: desc SRAMCWRP.
+    bit_offset: 23
+    bit_size: 1
+  - name: INTCRDP
+    description: desc INTCRDP.
+    bit_offset: 24
+    bit_size: 1
+  - name: INTCWRP
+    description: desc INTCWRP.
+    bit_offset: 25
+    bit_size: 1
+  - name: SYSCRDP
+    description: desc SYSCRDP.
+    bit_offset: 26
+    bit_size: 1
+  - name: SYSCWRP
+    description: desc SYSCWRP.
+    bit_offset: 27
+    bit_size: 1
+  - name: MSTPRDP
+    description: desc MSTPRDP.
+    bit_offset: 28
+    bit_size: 1
+  - name: MSTPWRP
+    description: desc MSTPWRP.
+    bit_offset: 29
+    bit_size: 1
+  - name: BUSERRE
+    description: desc BUSERRE.
+    bit_offset: 31
+    bit_size: 1
+fieldset/RGCR0:
+  description: desc RGCR0.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR1:
+  description: desc RGCR1.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR10:
+  description: desc RGCR10.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR11:
+  description: desc RGCR11.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR12:
+  description: desc RGCR12.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR13:
+  description: desc RGCR13.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR14:
+  description: desc RGCR14.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR15:
+  description: desc RGCR15.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR2:
+  description: desc RGCR2.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR3:
+  description: desc RGCR3.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR4:
+  description: desc RGCR4.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR5:
+  description: desc RGCR5.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR6:
+  description: desc RGCR6.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR7:
+  description: desc RGCR7.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR8:
+  description: desc RGCR8.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGCR9:
+  description: desc RGCR9.
+  fields:
+  - name: S2RGRP
+    description: desc S2RGRP.
+    bit_offset: 0
+    bit_size: 1
+  - name: S2RGWP
+    description: desc S2RGWP.
+    bit_offset: 1
+    bit_size: 1
+  - name: S2RGE
+    description: desc S2RGE.
+    bit_offset: 7
+    bit_size: 1
+  - name: S1RGRP
+    description: desc S1RGRP.
+    bit_offset: 8
+    bit_size: 1
+  - name: S1RGWP
+    description: desc S1RGWP.
+    bit_offset: 9
+    bit_size: 1
+  - name: S1RGE
+    description: desc S1RGE.
+    bit_offset: 15
+    bit_size: 1
+  - name: FRGRP
+    description: desc FRGRP.
+    bit_offset: 16
+    bit_size: 1
+  - name: FRGWP
+    description: desc FRGWP.
+    bit_offset: 17
+    bit_size: 1
+  - name: FRGE
+    description: desc FRGE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/RGD0:
+  description: desc RGD0.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD1:
+  description: desc RGD1.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD10:
+  description: desc RGD10.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD11:
+  description: desc RGD11.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD12:
+  description: desc RGD12.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD13:
+  description: desc RGD13.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD14:
+  description: desc RGD14.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD15:
+  description: desc RGD15.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD2:
+  description: desc RGD2.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD3:
+  description: desc RGD3.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD4:
+  description: desc RGD4.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD5:
+  description: desc RGD5.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD6:
+  description: desc RGD6.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD7:
+  description: desc RGD7.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD8:
+  description: desc RGD8.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/RGD9:
+  description: desc RGD9.
+  fields:
+  - name: MPURGSIZE
+    description: desc MPURGSIZE.
+    bit_offset: 0
+    bit_size: 5
+  - name: MPURGADDR
+    description: desc MPURGADDR.
+    bit_offset: 5
+    bit_size: 27
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: SMPU2EAF
+    description: desc SMPU2EAF.
+    bit_offset: 0
+    bit_size: 1
+  - name: SMPU1EAF
+    description: desc SMPU1EAF.
+    bit_offset: 8
+    bit_size: 1
+  - name: FMPUEAF
+    description: desc FMPUEAF.
+    bit_offset: 16
+    bit_size: 1
+fieldset/WP:
+  description: desc WP.
+  fields:
+  - name: MPUWE
+    description: desc MPUWE.
+    bit_offset: 0
+    bit_size: 1
+  - name: WKEY
+    description: desc WKEY.
+    bit_offset: 1
+    bit_size: 15

@@ -1,0 +1,265 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A448/RMU；覆盖系列：HC32A448, HC32F448。
+block/RMU:
+  description: desc RMU.
+  items:
+  - name: FRST0
+    description: desc FRST0.
+    byte_offset: 0
+    fieldset: FRST0
+  - name: FRST1
+    description: desc FRST1.
+    byte_offset: 4
+    fieldset: FRST1
+  - name: FRST2
+    description: desc FRST2.
+    byte_offset: 8
+    fieldset: FRST2
+  - name: FRST3
+    description: desc FRST3.
+    byte_offset: 12
+    fieldset: FRST3
+  - name: PRSTCR0
+    description: desc PRSTCR0.
+    byte_offset: 16
+    bit_size: 8
+    fieldset: PRSTCR0
+  - name: RSTF0
+    description: desc RSTF0.
+    byte_offset: 20
+    fieldset: RSTF0
+fieldset/FRST0:
+  description: desc FRST0.
+  fields:
+  - name: KEY
+    description: desc KEY.
+    bit_offset: 13
+    bit_size: 1
+  - name: DMA1
+    description: desc DMA1.
+    bit_offset: 14
+    bit_size: 1
+  - name: DMA2
+    description: desc DMA2.
+    bit_offset: 15
+    bit_size: 1
+  - name: FCM
+    description: desc FCM.
+    bit_offset: 16
+    bit_size: 1
+  - name: AOS
+    description: desc AOS.
+    bit_offset: 17
+    bit_size: 1
+  - name: CTC
+    description: desc CTC.
+    bit_offset: 18
+    bit_size: 1
+  - name: AES
+    description: desc AES.
+    bit_offset: 20
+    bit_size: 1
+  - name: HASH
+    description: desc HASH.
+    bit_offset: 21
+    bit_size: 1
+  - name: TRNG
+    description: desc TRNG.
+    bit_offset: 22
+    bit_size: 1
+  - name: CRC
+    description: desc CRC.
+    bit_offset: 23
+    bit_size: 1
+  - name: DCU1
+    description: desc DCU1.
+    bit_offset: 24
+    bit_size: 1
+  - name: DCU2
+    description: desc DCU2.
+    bit_offset: 25
+    bit_size: 1
+  - name: DCU3
+    description: desc DCU3.
+    bit_offset: 26
+    bit_size: 1
+  - name: DCU4
+    description: desc DCU4.
+    bit_offset: 27
+    bit_size: 1
+fieldset/FRST1:
+  description: desc FRST1.
+  fields:
+  - name: QSPI
+    description: desc QSPI.
+    bit_offset: 3
+    bit_size: 1
+  - name: SPI1
+    description: desc SPI1.
+    bit_offset: 16
+    bit_size: 1
+  - name: SPI2
+    description: desc SPI2.
+    bit_offset: 17
+    bit_size: 1
+  - name: SPI3
+    description: desc SPI3.
+    bit_offset: 18
+    bit_size: 1
+fieldset/FRST2:
+  description: desc FRST2.
+  fields:
+  - name: TMR6
+    description: desc TMR6.
+    bit_offset: 0
+    bit_size: 1
+  - name: TMR4
+    description: desc TMR4.
+    bit_offset: 10
+    bit_size: 1
+  - name: TMR0
+    description: desc TMR0.
+    bit_offset: 12
+    bit_size: 1
+  - name: EMB
+    description: desc EMB.
+    bit_offset: 15
+    bit_size: 1
+  - name: TMRA
+    description: desc TMRA.
+    bit_offset: 20
+    bit_size: 1
+fieldset/FRST3:
+  description: desc FRST3.
+  fields:
+  - name: ADC1
+    description: desc ADC1.
+    bit_offset: 0
+    bit_size: 1
+  - name: ADC2
+    description: desc ADC2.
+    bit_offset: 1
+    bit_size: 1
+  - name: ADC3
+    description: desc ADC3.
+    bit_offset: 2
+    bit_size: 1
+  - name: DAC
+    description: desc DAC.
+    bit_offset: 4
+    bit_size: 1
+  - name: CMP12
+    description: desc CMP12.
+    bit_offset: 8
+    bit_size: 1
+  - name: CMP34
+    description: desc CMP34.
+    bit_offset: 9
+    bit_size: 1
+  - name: SMC
+    description: desc SMC.
+    bit_offset: 16
+    bit_size: 1
+  - name: USART1
+    description: desc USART1.
+    bit_offset: 20
+    bit_size: 1
+  - name: USART2
+    description: desc USART2.
+    bit_offset: 21
+    bit_size: 1
+  - name: USART3
+    description: desc USART3.
+    bit_offset: 22
+    bit_size: 1
+  - name: USART4
+    description: desc USART4.
+    bit_offset: 23
+    bit_size: 1
+  - name: USART5
+    description: desc USART5.
+    bit_offset: 24
+    bit_size: 1
+  - name: USART6
+    description: desc USART6.
+    bit_offset: 25
+    bit_size: 1
+fieldset/PRSTCR0:
+  description: desc PRSTCR0.
+  bit_size: 8
+  fields:
+  - name: LKUPREN
+    description: desc LKUPREN.
+    bit_offset: 5
+    bit_size: 1
+fieldset/RSTF0:
+  description: desc RSTF0.
+  fields:
+  - name: PORF
+    description: desc PORF.
+    bit_offset: 0
+    bit_size: 1
+  - name: PINRF
+    description: desc PINRF.
+    bit_offset: 1
+    bit_size: 1
+  - name: BORF
+    description: desc BORF.
+    bit_offset: 2
+    bit_size: 1
+  - name: PVD1RF
+    description: desc PVD1RF.
+    bit_offset: 3
+    bit_size: 1
+  - name: PVD2RF
+    description: desc PVD2RF.
+    bit_offset: 4
+    bit_size: 1
+  - name: WDRF
+    description: desc WDRF.
+    bit_offset: 5
+    bit_size: 1
+  - name: SWDRF
+    description: desc SWDRF.
+    bit_offset: 6
+    bit_size: 1
+  - name: PDRF
+    description: desc PDRF.
+    bit_offset: 7
+    bit_size: 1
+  - name: SWRF
+    description: desc SWRF.
+    bit_offset: 8
+    bit_size: 1
+  - name: MPUERF
+    description: desc MPUERF.
+    bit_offset: 9
+    bit_size: 1
+  - name: RAPERF
+    description: desc RAPERF.
+    bit_offset: 10
+    bit_size: 1
+  - name: RAECRF
+    description: desc RAECRF.
+    bit_offset: 11
+    bit_size: 1
+  - name: CKFERF
+    description: desc CKFERF.
+    bit_offset: 12
+    bit_size: 1
+  - name: XTALERF
+    description: desc XTALERF.
+    bit_offset: 13
+    bit_size: 1
+  - name: LKUPRF
+    description: desc LKUPRF.
+    bit_offset: 14
+    bit_size: 1
+  - name: MULTIRF
+    description: desc MULTIRF.
+    bit_offset: 30
+    bit_size: 1
+  - name: CLRF
+    description: desc CLRF.
+    bit_offset: 31
+    bit_size: 1

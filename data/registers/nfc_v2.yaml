@@ -1,0 +1,1586 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/NFC；覆盖系列：HC32A4A8, HC32F4A8。
+block/NFC:
+  description: desc NFC.
+  items:
+  - name: DATR_BASE
+    description: desc DATR_BASE.
+    byte_offset: 0
+  - name: CMDR
+    description: desc CMDR.
+    byte_offset: 32768
+    fieldset: CMDR
+  - name: IDXR0
+    description: desc IDXR0.
+    byte_offset: 32772
+  - name: IENR
+    description: desc IENR.
+    byte_offset: 32816
+    fieldset: IENR
+  - name: ISTR
+    description: desc ISTR.
+    byte_offset: 32820
+    fieldset: ISTR
+  - name: IRSR
+    description: desc IRSR.
+    byte_offset: 32824
+    fieldset: IRSR
+  - name: IDXR1
+    description: desc IDXR1.
+    byte_offset: 32840
+    fieldset: IDXR1
+  - name: TMCR0
+    description: desc TMCR0.
+    byte_offset: 32844
+    fieldset: TMCR0
+  - name: TMCR1
+    description: desc TMCR1.
+    byte_offset: 32848
+    fieldset: TMCR1
+  - name: BACR
+    description: desc BACR.
+    byte_offset: 32852
+    fieldset: BACR
+  - name: TMCR2
+    description: desc TMCR2.
+    byte_offset: 32860
+    fieldset: TMCR2
+  - name: ECCR0
+    description: desc ECCR0.
+    byte_offset: 32864
+    access: Read
+    fieldset: ECCR0
+  - name: ECCR1
+    description: desc ECCR1.
+    byte_offset: 32868
+    access: Read
+    fieldset: ECCR1
+  - name: ECCR2
+    description: desc ECCR2.
+    byte_offset: 32872
+    access: Read
+    fieldset: ECCR2
+  - name: ECCR3
+    description: desc ECCR3.
+    byte_offset: 32876
+    access: Read
+    fieldset: ECCR3
+  - name: ECCR4
+    description: desc ECCR4.
+    byte_offset: 32880
+    access: Read
+    fieldset: ECCR4
+  - name: ECCR5
+    description: desc ECCR5.
+    byte_offset: 32884
+    access: Read
+    fieldset: ECCR5
+  - name: ECCR6
+    description: desc ECCR6.
+    byte_offset: 32888
+    access: Read
+    fieldset: ECCR6
+  - name: ECCR7
+    description: desc ECCR7.
+    byte_offset: 32892
+    access: Read
+    fieldset: ECCR7
+  - name: ECC_STAT
+    description: desc ECC_STAT.
+    byte_offset: 32892
+    access: Read
+    fieldset: ECC_STAT
+  - name: ECCR8
+    description: desc ECCR8.
+    byte_offset: 32896
+    access: Read
+    fieldset: ECCR8
+  - name: ECC_SECTION0_SYND12
+    description: desc ECC_SECTION0_SYND12.
+    byte_offset: 32896
+    access: Read
+    fieldset: ECC_SECTION0_SYND12
+  - name: ECCR9
+    description: desc ECCR9.
+    byte_offset: 32900
+    access: Read
+    fieldset: ECCR9
+  - name: ECC_SECTION0_SYND34
+    description: desc ECC_SECTION0_SYND34.
+    byte_offset: 32900
+    access: Read
+    fieldset: ECC_SECTION0_SYND34
+  - name: ECCR10
+    description: desc ECCR10.
+    byte_offset: 32904
+    access: Read
+    fieldset: ECCR10
+  - name: ECC_SECTION0_SYND56
+    description: desc ECC_SECTION0_SYND56.
+    byte_offset: 32904
+    access: Read
+    fieldset: ECC_SECTION0_SYND56
+  - name: ECCR11
+    description: desc ECCR11.
+    byte_offset: 32908
+    access: Read
+    fieldset: ECCR11
+  - name: ECC_SECTION0_SYND78
+    description: desc ECC_SECTION0_SYND78.
+    byte_offset: 32908
+    access: Read
+    fieldset: ECC_SECTION0_SYND78
+  - name: ECCR12
+    description: desc ECCR12.
+    byte_offset: 32912
+    access: Read
+    fieldset: ECCR12
+  - name: ECC_SECTION1_SYND12
+    description: desc ECC_SECTION1_SYND12.
+    byte_offset: 32912
+    access: Read
+    fieldset: ECC_SECTION1_SYND12
+  - name: ECCR13
+    description: desc ECCR13.
+    byte_offset: 32916
+    access: Read
+    fieldset: ECCR13
+  - name: ECC_SECTION1_SYND34
+    description: desc ECC_SECTION1_SYND34.
+    byte_offset: 32916
+    access: Read
+    fieldset: ECC_SECTION1_SYND34
+  - name: ECCR14
+    description: desc ECCR14.
+    byte_offset: 32920
+    access: Read
+    fieldset: ECCR14
+  - name: ECC_SECTION1_SYND56
+    description: desc ECC_SECTION1_SYND56.
+    byte_offset: 32920
+    access: Read
+    fieldset: ECC_SECTION1_SYND56
+  - name: ECCR15
+    description: desc ECCR15.
+    byte_offset: 32924
+    access: Read
+    fieldset: ECCR15
+  - name: ECC_SECTION1_SYND78
+    description: desc ECC_SECTION1_SYND78.
+    byte_offset: 32924
+    access: Read
+    fieldset: ECC_SECTION1_SYND78
+  - name: ECC_SECTION2_SYND12
+    description: desc ECC_SECTION2_SYND12.
+    byte_offset: 32928
+    access: Read
+    fieldset: ECC_SECTION2_SYND12
+  - name: ECC_SECTION2_SYND34
+    description: desc ECC_SECTION2_SYND34.
+    byte_offset: 32932
+    access: Read
+    fieldset: ECC_SECTION2_SYND34
+  - name: ECC_SECTION2_SYND56
+    description: desc ECC_SECTION2_SYND56.
+    byte_offset: 32936
+    access: Read
+    fieldset: ECC_SECTION2_SYND56
+  - name: ECC_SECTION2_SYND78
+    description: desc ECC_SECTION2_SYND78.
+    byte_offset: 32940
+    access: Read
+    fieldset: ECC_SECTION2_SYND78
+  - name: ECC_SECTION3_SYND12
+    description: desc ECC_SECTION3_SYND12.
+    byte_offset: 32944
+    access: Read
+    fieldset: ECC_SECTION3_SYND12
+  - name: ECC_SECTION3_SYND34
+    description: desc ECC_SECTION3_SYND34.
+    byte_offset: 32948
+    access: Read
+    fieldset: ECC_SECTION3_SYND34
+  - name: ECC_SECTION3_SYND56
+    description: desc ECC_SECTION3_SYND56.
+    byte_offset: 32952
+    access: Read
+    fieldset: ECC_SECTION3_SYND56
+  - name: ECC_SECTION3_SYND78
+    description: desc ECC_SECTION3_SYND78.
+    byte_offset: 32956
+    access: Read
+    fieldset: ECC_SECTION3_SYND78
+  - name: ECC_SECTION4_SYND12
+    description: desc ECC_SECTION4_SYND12.
+    byte_offset: 32960
+    access: Read
+    fieldset: ECC_SECTION4_SYND12
+  - name: ECC_SECTION4_SYND34
+    description: desc ECC_SECTION4_SYND34.
+    byte_offset: 32964
+    access: Read
+    fieldset: ECC_SECTION4_SYND34
+  - name: ECC_SECTION4_SYND56
+    description: desc ECC_SECTION4_SYND56.
+    byte_offset: 32968
+    access: Read
+    fieldset: ECC_SECTION4_SYND56
+  - name: ECC_SECTION4_SYND78
+    description: desc ECC_SECTION4_SYND78.
+    byte_offset: 32972
+    access: Read
+    fieldset: ECC_SECTION4_SYND78
+  - name: ECC_SECTION5_SYND12
+    description: desc ECC_SECTION5_SYND12.
+    byte_offset: 32976
+    access: Read
+    fieldset: ECC_SECTION5_SYND12
+  - name: ECC_SECTION5_SYND34
+    description: desc ECC_SECTION5_SYND34.
+    byte_offset: 32980
+    access: Read
+    fieldset: ECC_SECTION5_SYND34
+  - name: ECC_SECTION5_SYND56
+    description: desc ECC_SECTION5_SYND56.
+    byte_offset: 32984
+    access: Read
+    fieldset: ECC_SECTION5_SYND56
+  - name: ECC_SECTION5_SYND78
+    description: desc ECC_SECTION5_SYND78.
+    byte_offset: 32988
+    access: Read
+    fieldset: ECC_SECTION5_SYND78
+  - name: ECC_SECTION6_SYND12
+    description: desc ECC_SECTION6_SYND12.
+    byte_offset: 32992
+    access: Read
+    fieldset: ECC_SECTION6_SYND12
+  - name: ECC_SECTION6_SYND34
+    description: desc ECC_SECTION6_SYND34.
+    byte_offset: 32996
+    access: Read
+    fieldset: ECC_SECTION6_SYND34
+  - name: ECC_SECTION6_SYND56
+    description: desc ECC_SECTION6_SYND56.
+    byte_offset: 33000
+    access: Read
+    fieldset: ECC_SECTION6_SYND56
+  - name: ECC_SECTION6_SYND78
+    description: desc ECC_SECTION6_SYND78.
+    byte_offset: 33004
+    access: Read
+    fieldset: ECC_SECTION6_SYND78
+  - name: ECC_SECTION7_SYND12
+    description: desc ECC_SECTION7_SYND12.
+    byte_offset: 33008
+    access: Read
+    fieldset: ECC_SECTION7_SYND12
+  - name: ECC_SECTION7_SYND34
+    description: desc ECC_SECTION7_SYND34.
+    byte_offset: 33012
+    access: Read
+    fieldset: ECC_SECTION7_SYND34
+  - name: ECC_SECTION7_SYND56
+    description: desc ECC_SECTION7_SYND56.
+    byte_offset: 33016
+    access: Read
+    fieldset: ECC_SECTION7_SYND56
+  - name: ECC_SECTION7_SYND78
+    description: desc ECC_SECTION7_SYND78.
+    byte_offset: 33020
+    access: Read
+    fieldset: ECC_SECTION7_SYND78
+  - name: ECC_SECTION8_SYND12
+    description: desc ECC_SECTION8_SYND12.
+    byte_offset: 33024
+    access: Read
+    fieldset: ECC_SECTION8_SYND12
+  - name: ECC_SECTION8_SYND34
+    description: desc ECC_SECTION8_SYND34.
+    byte_offset: 33028
+    access: Read
+    fieldset: ECC_SECTION8_SYND34
+  - name: ECC_SECTION8_SYND56
+    description: desc ECC_SECTION8_SYND56.
+    byte_offset: 33032
+    access: Read
+    fieldset: ECC_SECTION8_SYND56
+  - name: ECC_SECTION8_SYND78
+    description: desc ECC_SECTION8_SYND78.
+    byte_offset: 33036
+    access: Read
+    fieldset: ECC_SECTION8_SYND78
+  - name: ECC_SECTION9_SYND12
+    description: desc ECC_SECTION9_SYND12.
+    byte_offset: 33040
+    access: Read
+    fieldset: ECC_SECTION9_SYND12
+  - name: ECC_SECTION9_SYND34
+    description: desc ECC_SECTION9_SYND34.
+    byte_offset: 33044
+    access: Read
+    fieldset: ECC_SECTION9_SYND34
+  - name: ECC_SECTION9_SYND56
+    description: desc ECC_SECTION9_SYND56.
+    byte_offset: 33048
+    access: Read
+    fieldset: ECC_SECTION9_SYND56
+  - name: ECC_SECTION9_SYND78
+    description: desc ECC_SECTION9_SYND78.
+    byte_offset: 33052
+    access: Read
+    fieldset: ECC_SECTION9_SYND78
+  - name: ECC_SECTION10_SYND12
+    description: desc ECC_SECTION10_SYND12.
+    byte_offset: 33056
+    access: Read
+    fieldset: ECC_SECTION10_SYND12
+  - name: ECC_SECTION10_SYND34
+    description: desc ECC_SECTION10_SYND34.
+    byte_offset: 33060
+    access: Read
+    fieldset: ECC_SECTION10_SYND34
+  - name: ECC_SECTION10_SYND56
+    description: desc ECC_SECTION10_SYND56.
+    byte_offset: 33064
+    access: Read
+    fieldset: ECC_SECTION10_SYND56
+  - name: ECC_SECTION10_SYND78
+    description: desc ECC_SECTION10_SYND78.
+    byte_offset: 33068
+    access: Read
+    fieldset: ECC_SECTION10_SYND78
+  - name: ECC_SECTION11_SYND12
+    description: desc ECC_SECTION11_SYND12.
+    byte_offset: 33072
+    access: Read
+    fieldset: ECC_SECTION11_SYND12
+  - name: ECC_SECTION11_SYND34
+    description: desc ECC_SECTION11_SYND34.
+    byte_offset: 33076
+    access: Read
+    fieldset: ECC_SECTION11_SYND34
+  - name: ECC_SECTION11_SYND56
+    description: desc ECC_SECTION11_SYND56.
+    byte_offset: 33080
+    access: Read
+    fieldset: ECC_SECTION11_SYND56
+  - name: ECC_SECTION11_SYND78
+    description: desc ECC_SECTION11_SYND78.
+    byte_offset: 33084
+    access: Read
+    fieldset: ECC_SECTION11_SYND78
+  - name: ECC_SECTION12_SYND12
+    description: desc ECC_SECTION12_SYND12.
+    byte_offset: 33088
+    access: Read
+    fieldset: ECC_SECTION12_SYND12
+  - name: ECC_SECTION12_SYND34
+    description: desc ECC_SECTION12_SYND34.
+    byte_offset: 33092
+    access: Read
+    fieldset: ECC_SECTION12_SYND34
+  - name: ECC_SECTION12_SYND56
+    description: desc ECC_SECTION12_SYND56.
+    byte_offset: 33096
+    access: Read
+    fieldset: ECC_SECTION12_SYND56
+  - name: ECC_SECTION12_SYND78
+    description: desc ECC_SECTION12_SYND78.
+    byte_offset: 33100
+    access: Read
+    fieldset: ECC_SECTION12_SYND78
+  - name: ECC_SECTION13_SYND12
+    description: desc ECC_SECTION13_SYND12.
+    byte_offset: 33104
+    access: Read
+    fieldset: ECC_SECTION13_SYND12
+  - name: ECC_SECTION13_SYND34
+    description: desc ECC_SECTION13_SYND34.
+    byte_offset: 33108
+    access: Read
+    fieldset: ECC_SECTION13_SYND34
+  - name: ECC_SECTION13_SYND56
+    description: desc ECC_SECTION13_SYND56.
+    byte_offset: 33112
+    access: Read
+    fieldset: ECC_SECTION13_SYND56
+  - name: ECC_SECTION13_SYND78
+    description: desc ECC_SECTION13_SYND78.
+    byte_offset: 33116
+    access: Read
+    fieldset: ECC_SECTION13_SYND78
+  - name: ECC_SECTION14_SYND12
+    description: desc ECC_SECTION14_SYND12.
+    byte_offset: 33120
+    access: Read
+    fieldset: ECC_SECTION14_SYND12
+  - name: ECC_SECTION14_SYND34
+    description: desc ECC_SECTION14_SYND34.
+    byte_offset: 33124
+    access: Read
+    fieldset: ECC_SECTION14_SYND34
+  - name: ECC_SECTION14_SYND56
+    description: desc ECC_SECTION14_SYND56.
+    byte_offset: 33128
+    access: Read
+    fieldset: ECC_SECTION14_SYND56
+  - name: ECC_SECTION14_SYND78
+    description: desc ECC_SECTION14_SYND78.
+    byte_offset: 33132
+    access: Read
+    fieldset: ECC_SECTION14_SYND78
+  - name: ECC_SECTION15_SYND12
+    description: desc ECC_SECTION15_SYND12.
+    byte_offset: 33136
+    access: Read
+    fieldset: ECC_SECTION15_SYND12
+  - name: ECC_SECTION15_SYND34
+    description: desc ECC_SECTION15_SYND34.
+    byte_offset: 33140
+    access: Read
+    fieldset: ECC_SECTION15_SYND34
+  - name: ECC_SECTION15_SYND56
+    description: desc ECC_SECTION15_SYND56.
+    byte_offset: 33144
+    access: Read
+    fieldset: ECC_SECTION15_SYND56
+  - name: ECC_SECTION15_SYND78
+    description: desc ECC_SECTION15_SYND78.
+    byte_offset: 33148
+    access: Read
+    fieldset: ECC_SECTION15_SYND78
+fieldset/BACR:
+  description: desc BACR.
+  fields:
+  - name: SIZE
+    description: desc SIZE.
+    bit_offset: 0
+    bit_size: 3
+  - name: B16BIT
+    description: desc B16BIT.
+    bit_offset: 3
+    bit_size: 1
+  - name: BANK
+    description: desc BANK.
+    bit_offset: 6
+    bit_size: 2
+  - name: PAGE
+    description: desc PAGE.
+    bit_offset: 8
+    bit_size: 2
+  - name: WP
+    description: desc WP.
+    bit_offset: 10
+    bit_size: 1
+  - name: ECCM
+    description: desc ECCM.
+    bit_offset: 11
+    bit_size: 2
+  - name: RAC
+    description: desc RAC.
+    bit_offset: 13
+    bit_size: 1
+  - name: SCS
+    description: desc SCS.
+    bit_offset: 16
+    bit_size: 8
+fieldset/CMDR:
+  description: desc CMDR.
+  fields:
+  - name: CMD
+    description: desc CMD.
+    bit_offset: 0
+    bit_size: 8
+  - name: ARG
+    description: desc ARG.
+    bit_offset: 8
+    bit_size: 24
+fieldset/ECCR0:
+  description: desc ECCR0.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR1:
+  description: desc ECCR1.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR10:
+  description: desc ECCR10.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR11:
+  description: desc ECCR11.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR12:
+  description: desc ECCR12.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR13:
+  description: desc ECCR13.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR14:
+  description: desc ECCR14.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR15:
+  description: desc ECCR15.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR2:
+  description: desc ECCR2.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR3:
+  description: desc ECCR3.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR4:
+  description: desc ECCR4.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR5:
+  description: desc ECCR5.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR6:
+  description: desc ECCR6.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR7:
+  description: desc ECCR7.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR8:
+  description: desc ECCR8.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECCR9:
+  description: desc ECCR9.
+  fields:
+  - name: ERRLOC
+    description: desc ERRLOC.
+    bit_offset: 0
+    bit_size: 12
+  - name: SE
+    description: desc SE.
+    bit_offset: 12
+    bit_size: 1
+  - name: ME
+    description: desc ME.
+    bit_offset: 13
+    bit_size: 1
+fieldset/ECC_SECTION0_SYND12:
+  description: desc ECC_SECTION0_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION0_SYND34:
+  description: desc ECC_SECTION0_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION0_SYND56:
+  description: desc ECC_SECTION0_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION0_SYND78:
+  description: desc ECC_SECTION0_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION10_SYND12:
+  description: desc ECC_SECTION10_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION10_SYND34:
+  description: desc ECC_SECTION10_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION10_SYND56:
+  description: desc ECC_SECTION10_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION10_SYND78:
+  description: desc ECC_SECTION10_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION11_SYND12:
+  description: desc ECC_SECTION11_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION11_SYND34:
+  description: desc ECC_SECTION11_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION11_SYND56:
+  description: desc ECC_SECTION11_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION11_SYND78:
+  description: desc ECC_SECTION11_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION12_SYND12:
+  description: desc ECC_SECTION12_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION12_SYND34:
+  description: desc ECC_SECTION12_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION12_SYND56:
+  description: desc ECC_SECTION12_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION12_SYND78:
+  description: desc ECC_SECTION12_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION13_SYND12:
+  description: desc ECC_SECTION13_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION13_SYND34:
+  description: desc ECC_SECTION13_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION13_SYND56:
+  description: desc ECC_SECTION13_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION13_SYND78:
+  description: desc ECC_SECTION13_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION14_SYND12:
+  description: desc ECC_SECTION14_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION14_SYND34:
+  description: desc ECC_SECTION14_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION14_SYND56:
+  description: desc ECC_SECTION14_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION14_SYND78:
+  description: desc ECC_SECTION14_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION15_SYND12:
+  description: desc ECC_SECTION15_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION15_SYND34:
+  description: desc ECC_SECTION15_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION15_SYND56:
+  description: desc ECC_SECTION15_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION15_SYND78:
+  description: desc ECC_SECTION15_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION1_SYND12:
+  description: desc ECC_SECTION1_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION1_SYND34:
+  description: desc ECC_SECTION1_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION1_SYND56:
+  description: desc ECC_SECTION1_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION1_SYND78:
+  description: desc ECC_SECTION1_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION2_SYND12:
+  description: desc ECC_SECTION2_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION2_SYND34:
+  description: desc ECC_SECTION2_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION2_SYND56:
+  description: desc ECC_SECTION2_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION2_SYND78:
+  description: desc ECC_SECTION2_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION3_SYND12:
+  description: desc ECC_SECTION3_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION3_SYND34:
+  description: desc ECC_SECTION3_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION3_SYND56:
+  description: desc ECC_SECTION3_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION3_SYND78:
+  description: desc ECC_SECTION3_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION4_SYND12:
+  description: desc ECC_SECTION4_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION4_SYND34:
+  description: desc ECC_SECTION4_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION4_SYND56:
+  description: desc ECC_SECTION4_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION4_SYND78:
+  description: desc ECC_SECTION4_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION5_SYND12:
+  description: desc ECC_SECTION5_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION5_SYND34:
+  description: desc ECC_SECTION5_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION5_SYND56:
+  description: desc ECC_SECTION5_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION5_SYND78:
+  description: desc ECC_SECTION5_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION6_SYND12:
+  description: desc ECC_SECTION6_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION6_SYND34:
+  description: desc ECC_SECTION6_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION6_SYND56:
+  description: desc ECC_SECTION6_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION6_SYND78:
+  description: desc ECC_SECTION6_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION7_SYND12:
+  description: desc ECC_SECTION7_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION7_SYND34:
+  description: desc ECC_SECTION7_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION7_SYND56:
+  description: desc ECC_SECTION7_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION7_SYND78:
+  description: desc ECC_SECTION7_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION8_SYND12:
+  description: desc ECC_SECTION8_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION8_SYND34:
+  description: desc ECC_SECTION8_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION8_SYND56:
+  description: desc ECC_SECTION8_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION8_SYND78:
+  description: desc ECC_SECTION8_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION9_SYND12:
+  description: desc ECC_SECTION9_SYND12.
+  fields:
+  - name: S1
+    description: desc S1.
+    bit_offset: 0
+    bit_size: 13
+  - name: S2
+    description: desc S2.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION9_SYND34:
+  description: desc ECC_SECTION9_SYND34.
+  fields:
+  - name: S3
+    description: desc S3.
+    bit_offset: 0
+    bit_size: 13
+  - name: S4
+    description: desc S4.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION9_SYND56:
+  description: desc ECC_SECTION9_SYND56.
+  fields:
+  - name: S5
+    description: desc S5.
+    bit_offset: 0
+    bit_size: 13
+  - name: S6
+    description: desc S6.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_SECTION9_SYND78:
+  description: desc ECC_SECTION9_SYND78.
+  fields:
+  - name: S7
+    description: desc S7.
+    bit_offset: 0
+    bit_size: 13
+  - name: S8
+    description: desc S8.
+    bit_offset: 16
+    bit_size: 13
+fieldset/ECC_STAT:
+  description: desc ECC_STAT.
+  fields:
+  - name: ERRSEC
+    description: desc ERRSEC.
+    bit_offset: 0
+    bit_size: 16
+fieldset/IDXR1:
+  description: desc IDXR1.
+  fields:
+  - name: IDX1
+    description: desc IDX1.
+    bit_offset: 0
+    bit_size: 8
+fieldset/IENR:
+  description: desc IENR.
+  fields:
+  - name: ECCEUEN
+    description: desc ECCEUEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: ECCECEN
+    description: desc ECCECEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: ECCCEN
+    description: desc ECCCEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: ECCEEN
+    description: desc ECCEEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: ECCDIS
+    description: desc ECCDIS.
+    bit_offset: 7
+    bit_size: 1
+  - name: RBEN
+    description: desc RBEN.
+    bit_offset: 8
+    bit_size: 8
+fieldset/IRSR:
+  description: desc IRSR.
+  fields:
+  - name: ECCEURS
+    description: desc ECCEURS.
+    bit_offset: 0
+    bit_size: 1
+  - name: ECCECRS
+    description: desc ECCECRS.
+    bit_offset: 1
+    bit_size: 1
+  - name: ECCCRS
+    description: desc ECCCRS.
+    bit_offset: 4
+    bit_size: 1
+  - name: ECCERS
+    description: desc ECCERS.
+    bit_offset: 6
+    bit_size: 1
+  - name: RBRS
+    description: desc RBRS.
+    bit_offset: 8
+    bit_size: 8
+fieldset/ISTR:
+  description: desc ISTR.
+  fields:
+  - name: ECCEUST
+    description: desc ECCEUST.
+    bit_offset: 0
+    bit_size: 1
+  - name: ECCECST
+    description: desc ECCECST.
+    bit_offset: 1
+    bit_size: 1
+  - name: ECCCST
+    description: desc ECCCST.
+    bit_offset: 4
+    bit_size: 1
+  - name: ECCEST
+    description: desc ECCEST.
+    bit_offset: 6
+    bit_size: 1
+  - name: RBST
+    description: desc RBST.
+    bit_offset: 8
+    bit_size: 8
+fieldset/TMCR0:
+  description: desc TMCR0.
+  fields:
+  - name: TS
+    description: desc TS.
+    bit_offset: 0
+    bit_size: 8
+  - name: TWP
+    description: desc TWP.
+    bit_offset: 8
+    bit_size: 8
+  - name: TRP
+    description: desc TRP.
+    bit_offset: 16
+    bit_size: 8
+  - name: TH
+    description: desc TH.
+    bit_offset: 24
+    bit_size: 8
+fieldset/TMCR1:
+  description: desc TMCR1.
+  fields:
+  - name: TWH
+    description: desc TWH.
+    bit_offset: 0
+    bit_size: 8
+  - name: TRH
+    description: desc TRH.
+    bit_offset: 8
+    bit_size: 8
+  - name: TRR
+    description: desc TRR.
+    bit_offset: 16
+    bit_size: 8
+  - name: TWB
+    description: desc TWB.
+    bit_offset: 24
+    bit_size: 8
+fieldset/TMCR2:
+  description: desc TMCR2.
+  fields:
+  - name: TCCS
+    description: desc TCCS.
+    bit_offset: 0
+    bit_size: 8
+  - name: TWTR
+    description: desc TWTR.
+    bit_offset: 8
+    bit_size: 8
+  - name: TRTW
+    description: desc TRTW.
+    bit_offset: 16
+    bit_size: 8
+  - name: TADL
+    description: desc TADL.
+    bit_offset: 24
+    bit_size: 8

@@ -1,0 +1,200 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A0/TMR6_COMMON；覆盖系列：HC32A4A0, HC32A4A8, HC32F4A0, HC32F4A2, HC32F4A8。
+block/TMR:
+  description: desc TMR6_COMMON.
+  items:
+  - name: FCNTR
+    description: desc FCNTR.
+    byte_offset: 236
+    fieldset: FCNTR
+  - name: SSTAR
+    description: desc SSTAR.
+    byte_offset: 240
+    fieldset: SSTAR
+  - name: SSTPR
+    description: desc SSTPR.
+    byte_offset: 244
+    fieldset: SSTPR
+  - name: SCLRR
+    description: desc SCLRR.
+    byte_offset: 248
+    fieldset: SCLRR
+  - name: SUPDR
+    description: desc SUPDR.
+    byte_offset: 252
+    fieldset: SUPDR
+fieldset/FCNTR:
+  description: desc FCNTR.
+  fields:
+  - name: NOFIENTA
+    description: desc NOFIENTA.
+    bit_offset: 0
+    bit_size: 1
+  - name: NOFICKTA
+    description: desc NOFICKTA.
+    bit_offset: 1
+    bit_size: 2
+  - name: NOFIENTB
+    description: desc NOFIENTB.
+    bit_offset: 4
+    bit_size: 1
+  - name: NOFICKTB
+    description: desc NOFICKTB.
+    bit_offset: 5
+    bit_size: 2
+  - name: NOFIENTC
+    description: desc NOFIENTC.
+    bit_offset: 8
+    bit_size: 1
+  - name: NOFICKTC
+    description: desc NOFICKTC.
+    bit_offset: 9
+    bit_size: 2
+  - name: NOFIENTD
+    description: desc NOFIENTD.
+    bit_offset: 12
+    bit_size: 1
+  - name: NOFICKTD
+    description: desc NOFICKTD.
+    bit_offset: 13
+    bit_size: 2
+fieldset/SCLRR:
+  description: desc SCLRR.
+  fields:
+  - name: SCLE1
+    description: desc SCLE1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SCLE2
+    description: desc SCLE2.
+    bit_offset: 1
+    bit_size: 1
+  - name: SCLE3
+    description: desc SCLE3.
+    bit_offset: 2
+    bit_size: 1
+  - name: SCLE4
+    description: desc SCLE4.
+    bit_offset: 3
+    bit_size: 1
+  - name: SCLE5
+    description: desc SCLE5.
+    bit_offset: 4
+    bit_size: 1
+  - name: SCLE6
+    description: desc SCLE6.
+    bit_offset: 5
+    bit_size: 1
+  - name: SCLE7
+    description: desc SCLE7.
+    bit_offset: 6
+    bit_size: 1
+  - name: SCLE8
+    description: desc SCLE8.
+    bit_offset: 7
+    bit_size: 1
+fieldset/SSTAR:
+  description: desc SSTAR.
+  fields:
+  - name: SSTA1
+    description: desc SSTA1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SSTA2
+    description: desc SSTA2.
+    bit_offset: 1
+    bit_size: 1
+  - name: SSTA3
+    description: desc SSTA3.
+    bit_offset: 2
+    bit_size: 1
+  - name: SSTA4
+    description: desc SSTA4.
+    bit_offset: 3
+    bit_size: 1
+  - name: SSTA5
+    description: desc SSTA5.
+    bit_offset: 4
+    bit_size: 1
+  - name: SSTA6
+    description: desc SSTA6.
+    bit_offset: 5
+    bit_size: 1
+  - name: SSTA7
+    description: desc SSTA7.
+    bit_offset: 6
+    bit_size: 1
+  - name: SSTA8
+    description: desc SSTA8.
+    bit_offset: 7
+    bit_size: 1
+fieldset/SSTPR:
+  description: desc SSTPR.
+  fields:
+  - name: SSTP1
+    description: desc SSTP1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SSTP2
+    description: desc SSTP2.
+    bit_offset: 1
+    bit_size: 1
+  - name: SSTP3
+    description: desc SSTP3.
+    bit_offset: 2
+    bit_size: 1
+  - name: SSTP4
+    description: desc SSTP4.
+    bit_offset: 3
+    bit_size: 1
+  - name: SSTP5
+    description: desc SSTP5.
+    bit_offset: 4
+    bit_size: 1
+  - name: SSTP6
+    description: desc SSTP6.
+    bit_offset: 5
+    bit_size: 1
+  - name: SSTP7
+    description: desc SSTP7.
+    bit_offset: 6
+    bit_size: 1
+  - name: SSTP8
+    description: desc SSTP8.
+    bit_offset: 7
+    bit_size: 1
+fieldset/SUPDR:
+  description: desc SUPDR.
+  fields:
+  - name: SUPD1
+    description: desc SUPD1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SUPD2
+    description: desc SUPD2.
+    bit_offset: 1
+    bit_size: 1
+  - name: SUPD3
+    description: desc SUPD3.
+    bit_offset: 2
+    bit_size: 1
+  - name: SUPD4
+    description: desc SUPD4.
+    bit_offset: 3
+    bit_size: 1
+  - name: SUPD5
+    description: desc SUPD5.
+    bit_offset: 4
+    bit_size: 1
+  - name: SUPD6
+    description: desc SUPD6.
+    bit_offset: 5
+    bit_size: 1
+  - name: SUPD7
+    description: desc SUPD7.
+    bit_offset: 6
+    bit_size: 1
+  - name: SUPD8
+    description: desc SUPD8.
+    bit_offset: 7
+    bit_size: 1

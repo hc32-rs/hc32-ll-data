@@ -1,0 +1,38 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/TMR4_ECER；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/TMR:
+  description: desc TMR4_ECER.
+  items:
+  - name: ECER1
+    description: desc ECER1.
+    byte_offset: 0
+    fieldset: ECER1
+  - name: ECER2
+    description: desc ECER2.
+    byte_offset: 4
+    fieldset: ECER2
+  - name: ECER3
+    description: desc ECER3.
+    byte_offset: 8
+    fieldset: ECER3
+fieldset/ECER1:
+  description: desc ECER1.
+  fields:
+  - name: EMBVAL
+    description: desc EMBVAL.
+    bit_offset: 0
+    bit_size: 2
+fieldset/ECER2:
+  description: desc ECER2.
+  fields:
+  - name: EMBVAL
+    description: desc EMBVAL.
+    bit_offset: 0
+    bit_size: 2
+fieldset/ECER3:
+  description: desc ECER3.
+  fields:
+  - name: EMBVAL
+    description: desc EMBVAL.
+    bit_offset: 0
+    bit_size: 2

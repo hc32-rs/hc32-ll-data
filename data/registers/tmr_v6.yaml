@@ -1,0 +1,88 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A448/TMR6_COMMON；覆盖系列：HC32A448, HC32F448, HC32M441。
+block/TMR:
+  description: desc TMR6_COMMON.
+  items:
+  - name: FCNTR
+    description: desc FCNTR.
+    byte_offset: 236
+    fieldset: FCNTR
+  - name: SSTAR
+    description: desc SSTAR.
+    byte_offset: 240
+    fieldset: SSTAR
+  - name: SSTPR
+    description: desc SSTPR.
+    byte_offset: 244
+    fieldset: SSTPR
+  - name: SCLRR
+    description: desc SCLRR.
+    byte_offset: 248
+    fieldset: SCLRR
+  - name: SUPDR
+    description: desc SUPDR.
+    byte_offset: 252
+    fieldset: SUPDR
+fieldset/FCNTR:
+  description: desc FCNTR.
+  fields:
+  - name: NOFIENTA
+    description: desc NOFIENTA.
+    bit_offset: 0
+    bit_size: 1
+  - name: NOFICKTA
+    description: desc NOFICKTA.
+    bit_offset: 1
+    bit_size: 2
+  - name: NOFIENTB
+    description: desc NOFIENTB.
+    bit_offset: 4
+    bit_size: 1
+  - name: NOFICKTB
+    description: desc NOFICKTB.
+    bit_offset: 5
+    bit_size: 2
+fieldset/SCLRR:
+  description: desc SCLRR.
+  fields:
+  - name: SCLE1
+    description: desc SCLE1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SCLE2
+    description: desc SCLE2.
+    bit_offset: 1
+    bit_size: 1
+fieldset/SSTAR:
+  description: desc SSTAR.
+  fields:
+  - name: SSTA1
+    description: desc SSTA1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SSTA2
+    description: desc SSTA2.
+    bit_offset: 1
+    bit_size: 1
+fieldset/SSTPR:
+  description: desc SSTPR.
+  fields:
+  - name: SSTP1
+    description: desc SSTP1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SSTP2
+    description: desc SSTP2.
+    bit_offset: 1
+    bit_size: 1
+fieldset/SUPDR:
+  description: desc SUPDR.
+  fields:
+  - name: SUPD1
+    description: desc SUPD1.
+    bit_offset: 0
+    bit_size: 1
+  - name: SUPD2
+    description: desc SUPD2.
+    bit_offset: 1
+    bit_size: 1

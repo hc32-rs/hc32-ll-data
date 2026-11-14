@@ -1,0 +1,379 @@
+# HC32F175 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
+# 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
+- name: ADC
+  address: 0x40007800
+  registers:
+    kind: adc
+    block: ADC
+    version: v17
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_ADC
+- name: ATIM3
+  address: 0x4000E400
+  registers:
+    kind: atim
+    block: ATIM
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_ATIM3
+- name: CRC
+  address: 0x40027800
+  registers:
+    kind: crc
+    block: CRC
+    version: v5
+- name: CSU0
+  address: 0x40025100
+  registers:
+    kind: csu
+    block: CSU
+    version: common
+- name: CSU1
+  address: 0x40025100
+  registers:
+    kind: csu
+    block: CSU
+    version: common
+- name: CSU2
+  address: 0x40025100
+  registers:
+    kind: csu
+    block: CSU
+    version: common
+- name: CTRIM
+  address: 0x40000000
+  registers:
+    kind: ctrim
+    block: CTRIM
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_CTRIM
+- name: DBGC
+  address: 0x40001C00
+  registers:
+    kind: dbgc
+    block: DBGC
+    version: v9
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_DBGC
+- name: DFM
+  address: 0x40026800
+  registers:
+    kind: dfm
+    block: DFM
+    version: v1
+- name: DMAC
+  address: 0x40024800
+  registers:
+    kind: dmac
+    block: DMAC
+    version: common
+- name: EFM
+  address: 0x40026400
+  registers:
+    kind: efm
+    block: EFM
+    version: v8
+- name: EXTI
+  address: 0x40024000
+  registers:
+    kind: exti
+    block: EXTI
+    version: common
+- name: GPIO
+  address: 0x40020000
+  registers:
+    kind: gpio
+    block: GPIO
+    version: v9
+- name: GTIM0
+  address: 0x40005800
+  registers:
+    kind: gtim
+    block: GTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_GTIM0
+- name: GTIM1
+  address: 0x40005800
+  registers:
+    kind: gtim
+    block: GTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_GTIM1
+- name: GTIM2
+  address: 0x40005800
+  registers:
+    kind: gtim
+    block: GTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_GTIM2
+- name: GTIM3
+  address: 0x40005800
+  registers:
+    kind: gtim
+    block: GTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_GTIM3
+- name: GTIM4
+  address: 0x40005800
+  registers:
+    kind: gtim
+    block: GTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_GTIM4
+- name: GTIM5
+  address: 0x40005800
+  registers:
+    kind: gtim
+    block: GTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_GTIM5
+- name: GTIM6
+  address: 0x40005800
+  registers:
+    kind: gtim
+    block: GTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_GTIM6
+- name: GTIM7
+  address: 0x40005800
+  registers:
+    kind: gtim
+    block: GTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_GTIM7
+- name: GTIM8
+  address: 0x40005800
+  registers:
+    kind: gtim
+    block: GTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_GTIM8
+- name: I2C0
+  address: 0x40004800
+  registers:
+    kind: i
+    block: I
+    version: v12
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_I2C0
+- name: I2C1
+  address: 0x40004800
+  registers:
+    kind: i
+    block: I
+    version: v12
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_I2C1
+- name: IWDT
+  address: 0x40000800
+  registers:
+    kind: iwdt
+    block: IWDT
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_IWDT
+- name: LPTIM0
+  address: 0x40005000
+  registers:
+    kind: lptim
+    block: LPTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_LPTIM0
+- name: LPTIM1
+  address: 0x40005000
+  registers:
+    kind: lptim
+    block: LPTIM
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_LPTIM1
+- name: LPUART0
+  address: 0x40003800
+  registers:
+    kind: lpuart
+    block: LPUART
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_LPUART0
+- name: LPUART1
+  address: 0x40003800
+  registers:
+    kind: lpuart
+    block: LPUART
+    version: common
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_LPUART1
+- name: LVD
+  address: 0x40007400
+  registers:
+    kind: lvd
+    block: LVD
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_LVD
+- name: RTC
+  address: 0x40001000
+  registers:
+    kind: rtc
+    block: RTC
+    version: v6
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_RTC
+- name: SPI0
+  address: 0x40004000
+  registers:
+    kind: spi
+    block: SPI
+    version: v5
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_SPI0
+- name: SPI1
+  address: 0x40004000
+  registers:
+    kind: spi
+    block: SPI
+    version: v5
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_SPI1
+- name: SRAM
+  address: 0x40024C00
+  registers:
+    kind: sram
+    block: SRAM
+    version: common
+- name: SYSCTRL
+  address: 0x40025000
+  registers:
+    kind: sysctrl
+    block: SYSCTRL
+    version: common
+- name: USART0
+  address: 0x40002400
+  registers:
+    kind: usart
+    block: USART
+    version: v26
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_USART0
+- name: USART1
+  address: 0x40002400
+  registers:
+    kind: usart
+    block: USART
+    version: v26
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_USART1
+- name: USART2
+  address: 0x40002400
+  registers:
+    kind: usart
+    block: USART
+    version: v26
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_USART2
+- name: USART3
+  address: 0x40002400
+  registers:
+    kind: usart
+    block: USART
+    version: v26
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_USART3
+- name: USART4
+  address: 0x40002400
+  registers:
+    kind: usart
+    block: USART
+    version: v26
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_USART4
+- name: USART5
+  address: 0x40002400
+  registers:
+    kind: usart
+    block: USART
+    version: v26
+  rcc:
+    enable:
+      register: FCG1
+      field: SYSCTRL_APBEN1_USART5
+- name: WWDT
+  address: 0x40000C00
+  registers:
+    kind: wwdt
+    block: WWDT
+    version: common
+  rcc:
+    enable:
+      register: FCG0
+      field: SYSCTRL_APBEN0_WWDT

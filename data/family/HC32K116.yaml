@@ -1,0 +1,389 @@
+# HC32K116 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
+# 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
+- name: ADC
+  address: 0x4000B800
+  registers:
+    kind: adc
+    block: ADC
+    version: v23
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_ADC
+  interrupts:
+  - signal: ADC
+    interrupt: ADC
+- name: AOS
+  address: 0x40000C00
+  registers:
+    kind: aos
+    block: AOS
+    version: v11
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_AOS
+- name: CMP
+  address: 0x4000C800
+  registers:
+    kind: cmp
+    block: CMP
+    version: v16
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_CMP
+  interrupts:
+  - signal: CMP
+    interrupt: CMP
+- name: CMU
+  address: 0x40014400
+  registers:
+    kind: cmu
+    block: CMU
+    version: v11
+  interrupts:
+  - signal: FCM_CMU
+    interrupt: FCM_CMU
+- name: CRC
+  address: 0x40015400
+  registers:
+    kind: crc
+    block: CRC
+    version: v1
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_CRC
+- name: CTC
+  address: 0x40000000
+  registers:
+    kind: ctc
+    block: CTC
+    version: v4
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_CTC
+- name: DBGC
+  address: 0x40015000
+  registers:
+    kind: dbgc
+    block: DBGC
+    version: v12
+- name: DBGC_T
+  address: 0xE0042000
+  registers:
+    kind: dbgc
+    block: DBGC
+    version: v13
+- name: DMA
+  address: 0x40013000
+  registers:
+    kind: dma
+    block: DMA
+    version: v9
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_DMA
+  interrupts:
+  - signal: DMA
+    interrupt: DMA
+- name: EFM
+  address: 0x40000400
+  registers:
+    kind: efm
+    block: EFM
+    version: v11
+  interrupts:
+  - signal: EFM
+    interrupt: EFM
+- name: EMB
+  address: 0x40006C00
+  registers:
+    kind: emb
+    block: EMB
+    version: v15
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_EMB
+  interrupts:
+  - signal: EMB
+    interrupt: EMB
+- name: FCM
+  address: 0x40005400
+  registers:
+    kind: fcm
+    block: FCM
+    version: v4
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_FCM
+- name: GPIO
+  address: 0x40013800
+  registers:
+    kind: gpio
+    block: GPIO
+    version: v13
+  interrupts:
+  - signal: EXTINT0_1
+    interrupt: EXTINT0_1
+  - signal: EXTINT2_3
+    interrupt: EXTINT2_3
+  - signal: EXTINT4_5
+    interrupt: EXTINT4_5
+  - signal: EXTINT6_7
+    interrupt: EXTINT6_7
+- name: I2C
+  address: 0x40004800
+  registers:
+    kind: i
+    block: I
+    version: v15
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_I2C
+  interrupts:
+  - signal: I2C_RXFULL_TXEMPTY
+    interrupt: I2C_RXFULL_TXEMPTY
+  - signal: I2C_IDLE_ERROR
+    interrupt: I2C_IDLE_ERROR
+- name: ICGA
+  address: 0x1000A00
+  registers:
+    kind: icga
+    block: ICGA
+    version: common
+- name: ICGB
+  address: 0x40017800
+  registers:
+    kind: icgb
+    block: ICGB
+    version: common
+- name: INTC
+  address: 0x40011000
+  registers:
+    kind: intc
+    block: INTC
+    version: v11
+- name: MCAN
+  address: 0x40011400
+  registers:
+    kind: mcan
+    block: MCAN
+    version: v2
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_MCAN
+  interrupts:
+  - signal: MCAN
+    interrupt: MCAN
+- name: MCANRAM
+  address: 0x40011800
+  registers:
+    kind: mcanram
+    block: MCANRAM
+    version: v3
+- name: PERIC
+  address: 0x40013400
+  registers:
+    kind: peric
+    block: PERIC
+    version: v9
+- name: PWC
+  address: 0x40014000
+  registers:
+    kind: pwc
+    block: PWC
+    version: v12
+  interrupts:
+  - signal: LVD
+    interrupt: LVD
+- name: RMU
+  address: 0x40014100
+  registers:
+    kind: rmu
+    block: RMU
+    version: v9
+- name: RTC
+  address: 0x4000D400
+  registers:
+    kind: rtc
+    block: RTC
+    version: v7
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_RTC
+- name: SPI1
+  address: 0x40003800
+  registers:
+    kind: spi
+    block: SPI
+    version: v7
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_SPI1
+  interrupts:
+  - signal: SPI1_RXFULL_TXEMPTY
+    interrupt: SPI1_RXFULL_TXEMPTY
+  - signal: SPI1_IDLE_ERROR
+    interrupt: SPI1_IDLE_ERROR
+- name: SPI2
+  address: 0x40003800
+  registers:
+    kind: spi
+    block: SPI
+    version: v7
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_SPI2
+  interrupts:
+  - signal: SPI2_RXFULL_TXEMPTY
+    interrupt: SPI2_RXFULL_TXEMPTY
+  - signal: SPI2_IDLE_ERROR
+    interrupt: SPI2_IDLE_ERROR
+- name: SRAMC
+  address: 0x40010C00
+  registers:
+    kind: sramc
+    block: SRAMC
+    version: v7
+- name: SWDT
+  address: 0x4000CC00
+  registers:
+    kind: swdt
+    block: SWDT
+    version: v1
+- name: TMR0
+  address: 0x40005800
+  registers:
+    kind: tmr
+    block: TMR
+    version: v35
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMR0
+  interrupts:
+  - signal: TMR0
+    interrupt: TMR0
+- name: TMR21
+  address: 0x40005C00
+  registers:
+    kind: tmr
+    block: TMR
+    version: v36
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMR2_1
+  interrupts:
+  - signal: TMR2
+    interrupt: TMR2
+- name: TMR22
+  address: 0x40005C00
+  registers:
+    kind: tmr
+    block: TMR
+    version: v36
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMR2_2
+- name: TMR4
+  address: 0x40006800
+  registers:
+    kind: tmr
+    block: TMR
+    version: v14
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMR4
+  interrupts:
+  - signal: TMR4_CMP_OVF_UDF_RELOAD
+    interrupt: TMR4_CMP_OVF_UDF_RELOAD
+  - signal: TMR4_SCMP
+    interrupt: TMR4_SCMP
+- name: TMRA
+  address: 0x40007000
+  registers:
+    kind: tmra
+    block: TMRA
+    version: v15
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_TMRA
+  interrupts:
+  - signal: TMRA
+    interrupt: TMRA
+- name: USART1
+  address: 0x40001800
+  registers:
+    kind: usart
+    block: USART
+    version: v31
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_USART1
+  interrupts:
+  - signal: USART1_WKUP_RXFULL_TXEMPT
+    interrupt: USART1_WKUP_RXFULL_TXEMPT
+  - signal: USART1_ERR_TXEND_TXCMPL_RTO
+    interrupt: USART1_ERR_TXEND_TXCMPL_RTO
+- name: USART2
+  address: 0x40001800
+  registers:
+    kind: usart
+    block: USART
+    version: v31
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_USART2
+  interrupts:
+  - signal: USART2_WKUP_RXFULL_TXEMPT
+    interrupt: USART2_WKUP_RXFULL_TXEMPT
+  - signal: USART2_ERR_TXEND_TXCMPL_RTO
+    interrupt: USART2_ERR_TXEND_TXCMPL_RTO
+- name: USART3
+  address: 0x40002000
+  registers:
+    kind: usart
+    block: USART
+    version: v32
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_USART3
+  interrupts:
+  - signal: USART3_WKUP_RXFULL_TXEMPT
+    interrupt: USART3_WKUP_RXFULL_TXEMPT
+  - signal: USART3_ERR_TXEND_TXCMPL_RTO
+    interrupt: USART3_ERR_TXEND_TXCMPL_RTO
+- name: USART4
+  address: 0x40002000
+  registers:
+    kind: usart
+    block: USART
+    version: v32
+  rcc:
+    enable:
+      register: FCG0
+      field: CMU_FCG_USART4
+  interrupts:
+  - signal: USART4_WKUP_RXFULL_TXEMPT
+    interrupt: USART4_WKUP_RXFULL_TXEMPT
+  - signal: USART4_ERR_TXEND_TXCMPL_RTO
+    interrupt: USART4_ERR_TXEND_TXCMPL_RTO

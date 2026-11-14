@@ -1,0 +1,360 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F175/EFM；覆盖系列：HC32F175。
+block/EFM:
+  description: desc EFM.
+  items:
+  - name: CR
+    description: desc CR.
+    byte_offset: 0
+    fieldset: CR
+  - name: IER
+    description: desc IER.
+    byte_offset: 16
+    fieldset: IER
+  - name: IFR
+    description: desc IFR.
+    byte_offset: 20
+    access: Read
+    fieldset: IFR
+  - name: ICLR
+    description: desc ICLR.
+    byte_offset: 24
+    access: Write
+    fieldset: ICLR
+  - name: BYPASS
+    description: desc BYPASS.
+    byte_offset: 44
+    fieldset: BYPASS
+  - name: SLOCK0
+    description: desc SLOCK0.
+    byte_offset: 48
+    fieldset: SLOCK0
+  - name: SLOCK1
+    description: desc SLOCK1.
+    byte_offset: 52
+    fieldset: SLOCK1
+  - name: SLOCK2
+    description: desc SLOCK2.
+    byte_offset: 56
+    fieldset: SLOCK2
+  - name: SLOCK3
+    description: desc SLOCK3.
+    byte_offset: 60
+    fieldset: SLOCK3
+  - name: SLOCK4
+    description: desc SLOCK4.
+    byte_offset: 64
+    fieldset: SLOCK4
+  - name: SLOCK5
+    description: desc SLOCK5.
+    byte_offset: 68
+    fieldset: SLOCK5
+  - name: SLOCK6
+    description: desc SLOCK6.
+    byte_offset: 72
+    fieldset: SLOCK6
+  - name: SLOCK7
+    description: desc SLOCK7.
+    byte_offset: 76
+    fieldset: SLOCK7
+  - name: LOCKST
+    description: desc LOCKST.
+    byte_offset: 116
+    access: Read
+    fieldset: LOCKST
+  - name: LOCK2ST
+    description: desc LOCK2ST.
+    byte_offset: 120
+    access: Read
+    fieldset: LOCK2ST
+  - name: ECCCR
+    description: desc ECCCR.
+    byte_offset: 128
+    fieldset: ECCCR
+  - name: ECCDR
+    description: desc ECCDR.
+    byte_offset: 132
+    fieldset: ECCDR
+  - name: ECCADR0
+    description: desc ECCADR0.
+    byte_offset: 136
+    access: Read
+    fieldset: ECCADR0
+  - name: ECCADR1
+    description: desc ECCADR1.
+    byte_offset: 140
+    access: Read
+    fieldset: ECCADR1
+fieldset/BYPASS:
+  description: desc BYPASS.
+  fields:
+  - name: BYSEQ
+    description: desc BYSEQ.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: OP
+    description: desc OP.
+    bit_offset: 0
+    bit_size: 3
+  - name: WAIT
+    description: desc WAIT.
+    bit_offset: 8
+    bit_size: 4
+  - name: DPSTBEN
+    description: desc DPSTBEN.
+    bit_offset: 16
+    bit_size: 1
+  - name: PREFETCHEN
+    description: desc PREFETCHEN.
+    bit_offset: 17
+    bit_size: 1
+  - name: READONLY
+    description: desc READONLY.
+    bit_offset: 24
+    bit_size: 1
+  - name: PCROPCRCEN
+    description: desc PCROPCRCEN.
+    bit_offset: 25
+    bit_size: 1
+fieldset/ECCADR0:
+  description: desc ECCADR0.
+  fields:
+  - name: INDEX
+    description: desc INDEX.
+    bit_offset: 0
+    bit_size: 19
+  - name: FLASHSEL
+    description: desc FLASHSEL.
+    bit_offset: 24
+    bit_size: 1
+fieldset/ECCADR1:
+  description: desc ECCADR1.
+  fields:
+  - name: INDEX
+    description: desc INDEX.
+    bit_offset: 0
+    bit_size: 19
+  - name: FLASHSEL
+    description: desc FLASHSEL.
+    bit_offset: 24
+    bit_size: 1
+fieldset/ECCCR:
+  description: desc ECCCR.
+  fields:
+  - name: ECCEN
+    description: desc ECCEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: GDIS
+    description: desc GDIS.
+    bit_offset: 1
+    bit_size: 1
+  - name: KEY
+    description: desc KEY.
+    bit_offset: 8
+    bit_size: 8
+fieldset/ECCDR:
+  description: desc ECCDR.
+  fields:
+  - name: ECCWD
+    description: desc ECCWD.
+    bit_offset: 0
+    bit_size: 8
+fieldset/ICLR:
+  description: desc ICLR.
+  fields:
+  - name: PC
+    description: desc PC.
+    bit_offset: 0
+    bit_size: 1
+  - name: PROT
+    description: desc PROT.
+    bit_offset: 1
+    bit_size: 1
+  - name: PCROP
+    description: desc PCROP.
+    bit_offset: 8
+    bit_size: 1
+  - name: PROGSIZE
+    description: desc PROGSIZE.
+    bit_offset: 16
+    bit_size: 1
+  - name: ECC1ERR0
+    description: desc ECC1ERR0.
+    bit_offset: 17
+    bit_size: 1
+  - name: ECC1ERR1
+    description: desc ECC1ERR1.
+    bit_offset: 18
+    bit_size: 1
+  - name: ECC2ERR0
+    description: desc ECC2ERR0.
+    bit_offset: 19
+    bit_size: 1
+  - name: ECC2ERR1
+    description: desc ECC2ERR1.
+    bit_offset: 20
+    bit_size: 1
+  - name: ECCOVF
+    description: desc ECCOVF.
+    bit_offset: 21
+    bit_size: 1
+fieldset/IER:
+  description: desc IER.
+  fields:
+  - name: PC
+    description: desc PC.
+    bit_offset: 0
+    bit_size: 1
+  - name: PROT
+    description: desc PROT.
+    bit_offset: 1
+    bit_size: 1
+  - name: PCROP
+    description: desc PCROP.
+    bit_offset: 8
+    bit_size: 1
+  - name: PROGSIZE
+    description: desc PROGSIZE.
+    bit_offset: 16
+    bit_size: 1
+  - name: ECC1ERR0
+    description: desc ECC1ERR0.
+    bit_offset: 17
+    bit_size: 1
+  - name: ECC1ERR1
+    description: desc ECC1ERR1.
+    bit_offset: 18
+    bit_size: 1
+  - name: ECC2ERR0
+    description: desc ECC2ERR0.
+    bit_offset: 19
+    bit_size: 1
+  - name: ECC2ERR1
+    description: desc ECC2ERR1.
+    bit_offset: 20
+    bit_size: 1
+  - name: ECCOVF
+    description: desc ECCOVF.
+    bit_offset: 21
+    bit_size: 1
+fieldset/IFR:
+  description: desc IFR.
+  fields:
+  - name: PC
+    description: desc PC.
+    bit_offset: 0
+    bit_size: 1
+  - name: PROT
+    description: desc PROT.
+    bit_offset: 1
+    bit_size: 1
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 4
+    bit_size: 1
+  - name: PCROP
+    description: desc PCROP.
+    bit_offset: 8
+    bit_size: 1
+  - name: PROGSIZE
+    description: desc PROGSIZE.
+    bit_offset: 16
+    bit_size: 1
+  - name: ECC1ERR0
+    description: desc ECC1ERR0.
+    bit_offset: 17
+    bit_size: 1
+  - name: ECC1ERR1
+    description: desc ECC1ERR1.
+    bit_offset: 18
+    bit_size: 1
+  - name: ECC2ERR0
+    description: desc ECC2ERR0.
+    bit_offset: 19
+    bit_size: 1
+  - name: ECC2ERR1
+    description: desc ECC2ERR1.
+    bit_offset: 20
+    bit_size: 1
+  - name: ECCOVF
+    description: desc ECCOVF.
+    bit_offset: 21
+    bit_size: 1
+fieldset/LOCK2ST:
+  description: desc LOCK2ST.
+  fields:
+  - name: PCROPSTART
+    description: desc PCROPSTART.
+    bit_offset: 0
+    bit_size: 10
+  - name: PCROPEND
+    description: desc PCROPEND.
+    bit_offset: 16
+    bit_size: 10
+fieldset/LOCKST:
+  description: desc LOCKST.
+  fields:
+  - name: STATE
+    description: desc STATE.
+    bit_offset: 0
+    bit_size: 2
+fieldset/SLOCK0:
+  description: desc SLOCK0.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK1:
+  description: desc SLOCK1.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK2:
+  description: desc SLOCK2.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK3:
+  description: desc SLOCK3.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK4:
+  description: desc SLOCK4.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK5:
+  description: desc SLOCK5.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK6:
+  description: desc SLOCK6.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32
+fieldset/SLOCK7:
+  description: desc SLOCK7.
+  fields:
+  - name: SLOCK
+    description: desc SLOCK.
+    bit_offset: 0
+    bit_size: 32

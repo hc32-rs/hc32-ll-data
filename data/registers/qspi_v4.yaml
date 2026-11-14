@@ -1,0 +1,193 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/QSPI；覆盖系列：HC32A4A8, HC32F4A8。
+block/QSPI:
+  description: desc QSPI.
+  items:
+  - name: CR
+    description: desc CR.
+    byte_offset: 0
+    fieldset: CR
+  - name: CSCR
+    description: desc CSCR.
+    byte_offset: 4
+    fieldset: CSCR
+  - name: FCR
+    description: desc FCR.
+    byte_offset: 8
+    fieldset: FCR
+  - name: SR
+    description: desc SR.
+    byte_offset: 12
+    fieldset: SR
+  - name: DCOM
+    description: desc DCOM.
+    byte_offset: 16
+    fieldset: DCOM
+  - name: CCMD
+    description: desc CCMD.
+    byte_offset: 20
+    fieldset: CCMD
+  - name: XCMD
+    description: desc XCMD.
+    byte_offset: 24
+    fieldset: XCMD
+  - name: CLR
+    description: desc CLR.
+    byte_offset: 36
+    access: Write
+    fieldset: CLR
+  - name: EXAR
+    description: desc EXAR.
+    byte_offset: 2052
+    fieldset: EXAR
+fieldset/CCMD:
+  description: desc CCMD.
+  fields:
+  - name: RIC
+    description: desc RIC.
+    bit_offset: 0
+    bit_size: 8
+fieldset/CLR:
+  description: desc CLR.
+  fields:
+  - name: RAERCLR
+    description: desc RAERCLR.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: MDSEL
+    description: desc MDSEL.
+    bit_offset: 0
+    bit_size: 3
+  - name: PFE
+    description: desc PFE.
+    bit_offset: 3
+    bit_size: 1
+  - name: PFSAE
+    description: desc PFSAE.
+    bit_offset: 4
+    bit_size: 1
+  - name: DCOME
+    description: desc DCOME.
+    bit_offset: 5
+    bit_size: 1
+  - name: XIPE
+    description: desc XIPE.
+    bit_offset: 6
+    bit_size: 1
+  - name: SPIMD3
+    description: desc SPIMD3.
+    bit_offset: 7
+    bit_size: 1
+  - name: IPRSL
+    description: desc IPRSL.
+    bit_offset: 8
+    bit_size: 2
+  - name: APRSL
+    description: desc APRSL.
+    bit_offset: 10
+    bit_size: 2
+  - name: DPRSL
+    description: desc DPRSL.
+    bit_offset: 12
+    bit_size: 2
+  - name: DIV
+    description: desc DIV.
+    bit_offset: 16
+    bit_size: 6
+fieldset/CSCR:
+  description: desc CSCR.
+  fields:
+  - name: SSHW
+    description: desc SSHW.
+    bit_offset: 0
+    bit_size: 4
+  - name: SSNW
+    description: desc SSNW.
+    bit_offset: 4
+    bit_size: 2
+fieldset/DCOM:
+  description: desc DCOM.
+  fields:
+  - name: DCOM
+    description: desc DCOM.
+    bit_offset: 0
+    bit_size: 8
+  - name: DCOMPRSL
+    description: desc DCOMPRSL.
+    bit_offset: 8
+    bit_size: 2
+fieldset/EXAR:
+  description: desc EXAR.
+  fields:
+  - name: EXADR
+    description: desc EXADR.
+    bit_offset: 26
+    bit_size: 6
+fieldset/FCR:
+  description: desc FCR.
+  fields:
+  - name: AWSL
+    description: desc AWSL.
+    bit_offset: 0
+    bit_size: 2
+  - name: FOUR_BIC
+    description: desc FOUR_BIC.
+    bit_offset: 2
+    bit_size: 1
+  - name: SSNHD
+    description: desc SSNHD.
+    bit_offset: 4
+    bit_size: 1
+  - name: SSNLD
+    description: desc SSNLD.
+    bit_offset: 5
+    bit_size: 1
+  - name: WPOL
+    description: desc WPOL.
+    bit_offset: 6
+    bit_size: 1
+  - name: DMCYCN
+    description: desc DMCYCN.
+    bit_offset: 8
+    bit_size: 4
+  - name: DUTY
+    description: desc DUTY.
+    bit_offset: 15
+    bit_size: 1
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 0
+    bit_size: 1
+  - name: XIPF
+    description: desc XIPF.
+    bit_offset: 6
+    bit_size: 1
+  - name: RAER
+    description: desc RAER.
+    bit_offset: 7
+    bit_size: 1
+  - name: PFNUM
+    description: desc PFNUM.
+    bit_offset: 8
+    bit_size: 5
+  - name: PFFUL
+    description: desc PFFUL.
+    bit_offset: 14
+    bit_size: 1
+  - name: PFAN
+    description: desc PFAN.
+    bit_offset: 15
+    bit_size: 1
+fieldset/XCMD:
+  description: desc XCMD.
+  fields:
+  - name: XIPMC
+    description: desc XIPMC.
+    bit_offset: 0
+    bit_size: 8

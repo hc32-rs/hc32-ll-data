@@ -1,0 +1,50 @@
+# HC32F155FATH（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32F155FATH
+family: HC32F155
+subfamily: cortex-m0plus
+packages:
+- name: HC32F155FATH
+  package: LQFP32
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1218.html
+cores:
+- name: cortex-m0plus
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32F155.yaml
+  include_interrupts: ../interrupts/HC32F155.yaml
+  include_dma_channels:
+    DMA: ../dma/HC32F155_DMA.yaml
+_raw:
+  series: HC32F155
+  freq_mhz: '32'
+  flash_kb: '28'
+  sram_kb: '32'
+  package: LQFP32
+  pin_count: '32'
+  gpio: '28'
+  vdd_min: '2.7'
+  vdd_max: '5.5'
+  uart: '6'
+  spi: '1'
+  i2c: '1'
+  i2s: ''
+  can: ''
+  usb: ''
+  adc: 1*8ch
+  dac: ''
+  timer: ''
+  rtc: ''
+  wdt: ''
+  touchkey: ''
+  lcd: ''
+  opa: ''
+  cmp: ''
+  other: CRC=32KB|LVD=1
+  url: https://www.xhsc.com.cn/product/1218.html
+  source: DS
+  Part NO.: HC32F155FATH

@@ -1,0 +1,56 @@
+# HC32A4A0PITI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32A4A0PITI
+family: HC32A4A0
+subfamily: cortex-m4
+packages:
+- name: HC32A4A0PITI
+  package: LQFP100
+include_memory: ../memory/HC32A4A0_F2048S512.yaml
+memory_sizes:
+  FLASH: 2048K
+  SRAM: 512K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1221.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32A4A0.yaml
+  include_interrupts: ../interrupts/HC32A4A0.yaml
+  include_dma_channels:
+    DMA1: ../dma/HC32A4A0_DMA1.yaml
+    DMA2: ../dma/HC32A4A0_DMA2.yaml
+_raw:
+  series: HC32A4A0
+  freq_mhz: '240'
+  flash_kb: '2048'
+  sram_kb: '512'
+  package: LQFP100
+  pin_count: '100'
+  gpio: '83'
+  vdd_min: '1.8'
+  vdd_max: '3.6'
+  uart: '10'
+  spi: '6'
+  i2c: '6'
+  i2s: '4'
+  can: '2'
+  usb: '1'
+  adc: '3'
+  dac: '4'
+  timer: 16;2;4;3;8;32;12
+  rtc: '1'
+  wdt: '1'
+  touchkey: ''
+  lcd: ''
+  opa: '4'
+  cmp: '4'
+  other: ADC 12bit|ADC 16ch|AES256|AES=256|CAN-FD|DAC 8ch|DCU=8|DMA=8|HASH（SHA256）|HRPWM=16;Timer0=2;Timer2=4;Timer4=3;Timer6=8;Timer=32;TimerA=12|HashSHA256/HMAC=256|OTP=134KB|PVD|QSPI=1|SDIO=2|TRNG|TRNG=1|temp
+    -40 ~ 105℃|temp -40~105
+  url: https://www.xhsc.com.cn/product/1221.html
+  source: DS
+  Part NO.: HC32A4A0PITI

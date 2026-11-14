@@ -1,0 +1,1129 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/EFM；覆盖系列：HC32K116, HC32K118。
+block/EFM:
+  description: desc EFM.
+  items:
+  - name: DFAPRT
+    description: desc DFAPRT.
+    byte_offset: 0
+    fieldset: DFAPRT
+  - name: DKEY1
+    description: desc DKEY1.
+    byte_offset: 4
+  - name: DKEY2
+    description: desc DKEY2.
+    byte_offset: 8
+  - name: DFSTP
+    description: desc DFSTP.
+    byte_offset: 20
+    fieldset: DFSTP
+  - name: DFRMC
+    description: desc DFRMC.
+    byte_offset: 24
+    fieldset: DFRMC
+  - name: DFWMC
+    description: desc DFWMC.
+    byte_offset: 28
+    fieldset: DFWMC
+  - name: DFSR
+    description: desc DFSR.
+    byte_offset: 32
+    access: Read
+    fieldset: DFSR
+  - name: DFSCLR
+    description: desc DFSCLR.
+    byte_offset: 36
+    fieldset: DFSCLR
+  - name: DFITE
+    description: desc DFITE.
+    byte_offset: 40
+    fieldset: DFITE
+  - name: DFEC
+    description: desc DFEC.
+    byte_offset: 176
+    fieldset: DFEC
+  - name: DFECERA
+    description: desc DFECERA.
+    byte_offset: 180
+    access: Read
+  - name: DERI0
+    description: desc DERI0.
+    byte_offset: 184
+  - name: DERI2
+    description: desc DERI2.
+    byte_offset: 192
+    fieldset: DERI2
+  - name: DFNWPRT0
+    description: desc DFNWPRT0.
+    byte_offset: 288
+    fieldset: DFNWPRT0
+  - name: DFNWPRT1
+    description: desc DFNWPRT1.
+    byte_offset: 292
+    fieldset: DFNWPRT1
+  - name: FAPRT
+    description: desc FAPRT.
+    byte_offset: 1024
+    fieldset: FAPRT
+  - name: KEY1
+    description: desc KEY1.
+    byte_offset: 1028
+  - name: KEY2
+    description: desc KEY2.
+    byte_offset: 1032
+  - name: FSTP
+    description: desc FSTP.
+    byte_offset: 1044
+    fieldset: FSTP
+  - name: FRMC
+    description: desc FRMC.
+    byte_offset: 1048
+    fieldset: FRMC
+  - name: FWMC
+    description: desc FWMC.
+    byte_offset: 1052
+    fieldset: FWMC
+  - name: FSR
+    description: desc FSR.
+    byte_offset: 1056
+    access: Read
+    fieldset: FSR
+  - name: FSCLR
+    description: desc FSCLR.
+    byte_offset: 1060
+    fieldset: FSCLR
+  - name: FITE
+    description: desc FITE.
+    byte_offset: 1064
+    fieldset: FITE
+  - name: FSWP
+    description: desc FSWP.
+    byte_offset: 1068
+    access: Read
+    fieldset: FSWP
+  - name: CHIPID
+    description: desc CHIPID.
+    byte_offset: 1088
+    access: Read
+  - name: UQID0
+    description: desc UQID0.
+    byte_offset: 1104
+    access: Read
+  - name: UQID1
+    description: desc UQID1.
+    byte_offset: 1108
+    access: Read
+  - name: UQID2
+    description: desc UQID2.
+    byte_offset: 1112
+    access: Read
+  - name: FEC
+    description: desc FEC.
+    byte_offset: 1200
+    fieldset: FEC
+  - name: FECERA
+    description: desc FECERA.
+    byte_offset: 1204
+    access: Read
+  - name: ERI0
+    description: desc ERI0.
+    byte_offset: 1208
+  - name: ERI1
+    description: desc ERI1.
+    byte_offset: 1212
+  - name: ERI2
+    description: desc ERI2.
+    byte_offset: 1216
+    fieldset: ERI2
+  - name: FNWPRT0
+    description: desc FNWPRT0.
+    byte_offset: 1312
+    fieldset: FNWPRT0
+  - name: FNWPRT1
+    description: desc FNWPRT1.
+    byte_offset: 1316
+    fieldset: FNWPRT1
+  - name: LVD1ICGCR
+    description: desc LVD1ICGCR.
+    byte_offset: 1668
+    access: Read
+    bit_size: 16
+    fieldset: LVD1ICGCR
+  - name: HRCCFGR
+    description: desc HRCCFGR.
+    byte_offset: 1670
+    bit_size: 8
+    fieldset: HRCCFGR
+fieldset/DERI2:
+  description: desc DERI2.
+  fields:
+  - name: ERI2
+    description: desc ERI2.
+    bit_offset: 0
+    bit_size: 7
+fieldset/DFAPRT:
+  description: desc DFAPRT.
+  fields:
+  - name: FAPRT
+    description: desc FAPRT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/DFEC:
+  description: desc DFEC.
+  fields:
+  - name: ECCOAD
+    description: desc ECCOAD.
+    bit_offset: 0
+    bit_size: 1
+  - name: ECCMOD
+    description: desc ECCMOD.
+    bit_offset: 1
+    bit_size: 2
+fieldset/DFITE:
+  description: desc DFITE.
+  fields:
+  - name: PEERRITE
+    description: desc PEERRITE.
+    bit_offset: 0
+    bit_size: 1
+  - name: OPTENDITE
+    description: desc OPTENDITE.
+    bit_offset: 1
+    bit_size: 1
+  - name: COLERRITE
+    description: desc COLERRITE.
+    bit_offset: 2
+    bit_size: 1
+  - name: BLKERRITE
+    description: desc BLKERRITE.
+    bit_offset: 3
+    bit_size: 1
+fieldset/DFNWPRT0:
+  description: desc DFNWPRT0.
+  fields:
+  - name: FNWPRT0
+    description: desc FNWPRT0.
+    bit_offset: 0
+    bit_size: 1
+  - name: FNWPRT1
+    description: desc FNWPRT1.
+    bit_offset: 1
+    bit_size: 1
+  - name: FNWPRT2
+    description: desc FNWPRT2.
+    bit_offset: 2
+    bit_size: 1
+  - name: FNWPRT3
+    description: desc FNWPRT3.
+    bit_offset: 3
+    bit_size: 1
+  - name: FNWPRT4
+    description: desc FNWPRT4.
+    bit_offset: 4
+    bit_size: 1
+  - name: FNWPRT5
+    description: desc FNWPRT5.
+    bit_offset: 5
+    bit_size: 1
+  - name: FNWPRT6
+    description: desc FNWPRT6.
+    bit_offset: 6
+    bit_size: 1
+  - name: FNWPRT7
+    description: desc FNWPRT7.
+    bit_offset: 7
+    bit_size: 1
+  - name: FNWPRT8
+    description: desc FNWPRT8.
+    bit_offset: 8
+    bit_size: 1
+  - name: FNWPRT9
+    description: desc FNWPRT9.
+    bit_offset: 9
+    bit_size: 1
+  - name: FNWPRT10
+    description: desc FNWPRT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: FNWPRT11
+    description: desc FNWPRT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: FNWPRT12
+    description: desc FNWPRT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: FNWPRT13
+    description: desc FNWPRT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: FNWPRT14
+    description: desc FNWPRT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: FNWPRT15
+    description: desc FNWPRT15.
+    bit_offset: 15
+    bit_size: 1
+  - name: FNWPRT16
+    description: desc FNWPRT16.
+    bit_offset: 16
+    bit_size: 1
+  - name: FNWPRT17
+    description: desc FNWPRT17.
+    bit_offset: 17
+    bit_size: 1
+  - name: FNWPRT18
+    description: desc FNWPRT18.
+    bit_offset: 18
+    bit_size: 1
+  - name: FNWPRT19
+    description: desc FNWPRT19.
+    bit_offset: 19
+    bit_size: 1
+  - name: FNWPRT20
+    description: desc FNWPRT20.
+    bit_offset: 20
+    bit_size: 1
+  - name: FNWPRT21
+    description: desc FNWPRT21.
+    bit_offset: 21
+    bit_size: 1
+  - name: FNWPRT22
+    description: desc FNWPRT22.
+    bit_offset: 22
+    bit_size: 1
+  - name: FNWPRT23
+    description: desc FNWPRT23.
+    bit_offset: 23
+    bit_size: 1
+  - name: FNWPRT24
+    description: desc FNWPRT24.
+    bit_offset: 24
+    bit_size: 1
+  - name: FNWPRT25
+    description: desc FNWPRT25.
+    bit_offset: 25
+    bit_size: 1
+  - name: FNWPRT26
+    description: desc FNWPRT26.
+    bit_offset: 26
+    bit_size: 1
+  - name: FNWPRT27
+    description: desc FNWPRT27.
+    bit_offset: 27
+    bit_size: 1
+  - name: FNWPRT28
+    description: desc FNWPRT28.
+    bit_offset: 28
+    bit_size: 1
+  - name: FNWPRT29
+    description: desc FNWPRT29.
+    bit_offset: 29
+    bit_size: 1
+  - name: FNWPRT30
+    description: desc FNWPRT30.
+    bit_offset: 30
+    bit_size: 1
+  - name: FNWPRT31
+    description: desc FNWPRT31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/DFNWPRT1:
+  description: desc DFNWPRT1.
+  fields:
+  - name: ENWPRT0
+    description: desc ENWPRT0.
+    bit_offset: 0
+    bit_size: 1
+  - name: ENWPRT1
+    description: desc ENWPRT1.
+    bit_offset: 1
+    bit_size: 1
+  - name: ENWPRT2
+    description: desc ENWPRT2.
+    bit_offset: 2
+    bit_size: 1
+  - name: ENWPRT3
+    description: desc ENWPRT3.
+    bit_offset: 3
+    bit_size: 1
+  - name: ENWPRT4
+    description: desc ENWPRT4.
+    bit_offset: 4
+    bit_size: 1
+  - name: ENWPRT5
+    description: desc ENWPRT5.
+    bit_offset: 5
+    bit_size: 1
+  - name: ENWPRT6
+    description: desc ENWPRT6.
+    bit_offset: 6
+    bit_size: 1
+  - name: ENWPRT7
+    description: desc ENWPRT7.
+    bit_offset: 7
+    bit_size: 1
+  - name: ENWPRT8
+    description: desc ENWPRT8.
+    bit_offset: 8
+    bit_size: 1
+  - name: ENWPRT9
+    description: desc ENWPRT9.
+    bit_offset: 9
+    bit_size: 1
+  - name: ENWPRT10
+    description: desc ENWPRT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: ENWPRT11
+    description: desc ENWPRT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: ENWPRT12
+    description: desc ENWPRT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: ENWPRT13
+    description: desc ENWPRT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: ENWPRT14
+    description: desc ENWPRT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: ENWPRT15
+    description: desc ENWPRT15.
+    bit_offset: 15
+    bit_size: 1
+  - name: ENWPRT16
+    description: desc ENWPRT16.
+    bit_offset: 16
+    bit_size: 1
+  - name: ENWPRT17
+    description: desc ENWPRT17.
+    bit_offset: 17
+    bit_size: 1
+  - name: ENWPRT18
+    description: desc ENWPRT18.
+    bit_offset: 18
+    bit_size: 1
+  - name: ENWPRT19
+    description: desc ENWPRT19.
+    bit_offset: 19
+    bit_size: 1
+  - name: ENWPRT20
+    description: desc ENWPRT20.
+    bit_offset: 20
+    bit_size: 1
+  - name: ENWPRT21
+    description: desc ENWPRT21.
+    bit_offset: 21
+    bit_size: 1
+  - name: ENWPRT22
+    description: desc ENWPRT22.
+    bit_offset: 22
+    bit_size: 1
+  - name: ENWPRT23
+    description: desc ENWPRT23.
+    bit_offset: 23
+    bit_size: 1
+  - name: ENWPRT24
+    description: desc ENWPRT24.
+    bit_offset: 24
+    bit_size: 1
+  - name: ENWPRT25
+    description: desc ENWPRT25.
+    bit_offset: 25
+    bit_size: 1
+  - name: ENWPRT26
+    description: desc ENWPRT26.
+    bit_offset: 26
+    bit_size: 1
+  - name: ENWPRT27
+    description: desc ENWPRT27.
+    bit_offset: 27
+    bit_size: 1
+  - name: ENWPRT28
+    description: desc ENWPRT28.
+    bit_offset: 28
+    bit_size: 1
+  - name: ENWPRT29
+    description: desc ENWPRT29.
+    bit_offset: 29
+    bit_size: 1
+  - name: ENWPRT30
+    description: desc ENWPRT30.
+    bit_offset: 30
+    bit_size: 1
+  - name: ENWPRT31
+    description: desc ENWPRT31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/DFRMC:
+  description: desc DFRMC.
+  fields:
+  - name: FLWT
+    description: desc FLWT.
+    bit_offset: 0
+    bit_size: 4
+  - name: M0RD
+    description: desc M0RD.
+    bit_offset: 8
+    bit_size: 1
+  - name: M1RD
+    description: desc M1RD.
+    bit_offset: 9
+    bit_size: 1
+  - name: BLKDE
+    description: desc BLKDE.
+    bit_offset: 10
+    bit_size: 1
+  - name: EIRD
+    description: desc EIRD.
+    bit_offset: 11
+    bit_size: 1
+fieldset/DFSCLR:
+  description: desc DFSCLR.
+  fields:
+  - name: OTPWERRCLR
+    description: desc OTPWERRCLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: PRTWERRCLR
+    description: desc PRTWERRCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: PGSZERRCLR
+    description: desc PGSZERRCLR.
+    bit_offset: 2
+    bit_size: 1
+  - name: MISMTCHCLR
+    description: desc MISMTCHCLR.
+    bit_offset: 3
+    bit_size: 1
+  - name: OPTENDCLR
+    description: desc OPTENDCLR.
+    bit_offset: 4
+    bit_size: 1
+  - name: COLERRCLR
+    description: desc COLERRCLR.
+    bit_offset: 5
+    bit_size: 1
+  - name: ERCALCLR
+    description: desc ERCALCLR.
+    bit_offset: 6
+    bit_size: 1
+  - name: ECC1ERRCLR
+    description: desc ECC1ERRCLR.
+    bit_offset: 10
+    bit_size: 1
+  - name: ECC2ERRCLR
+    description: desc ECC2ERRCLR.
+    bit_offset: 11
+    bit_size: 1
+  - name: BLKERRCLR
+    description: desc BLKERRCLR.
+    bit_offset: 12
+    bit_size: 1
+fieldset/DFSR:
+  description: desc DFSR.
+  fields:
+  - name: OTPWERR
+    description: desc OTPWERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: PRTWERR
+    description: desc PRTWERR.
+    bit_offset: 1
+    bit_size: 1
+  - name: PGSZERR
+    description: desc PGSZERR.
+    bit_offset: 2
+    bit_size: 1
+  - name: MISMTCH
+    description: desc MISMTCH.
+    bit_offset: 3
+    bit_size: 1
+  - name: OPTEND
+    description: desc OPTEND.
+    bit_offset: 4
+    bit_size: 1
+  - name: COLERR
+    description: desc COLERR.
+    bit_offset: 5
+    bit_size: 1
+  - name: ERCAL
+    description: desc ERCAL.
+    bit_offset: 6
+    bit_size: 1
+  - name: RDY
+    description: desc RDY.
+    bit_offset: 8
+    bit_size: 1
+  - name: ECC1ERR
+    description: desc ECC1ERR.
+    bit_offset: 10
+    bit_size: 1
+  - name: ECC2ERR
+    description: desc ECC2ERR.
+    bit_offset: 11
+    bit_size: 1
+  - name: BLKERR
+    description: desc BLKERR.
+    bit_offset: 12
+    bit_size: 1
+fieldset/DFSTP:
+  description: desc DFSTP.
+  fields:
+  - name: FSTP
+    description: desc FSTP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/DFWMC:
+  description: desc DFWMC.
+  fields:
+  - name: PEMOD
+    description: desc PEMOD.
+    bit_offset: 0
+    bit_size: 3
+  - name: ERCALE
+    description: desc ERCALE.
+    bit_offset: 4
+    bit_size: 1
+  - name: BUSHLDCTL
+    description: desc BUSHLDCTL.
+    bit_offset: 8
+    bit_size: 1
+  - name: BLKECCWSEL
+    description: desc BLKECCWSEL.
+    bit_offset: 9
+    bit_size: 1
+  - name: BLKECCRSEL
+    description: desc BLKECCRSEL.
+    bit_offset: 10
+    bit_size: 1
+  - name: KEY1LOCK
+    description: desc KEY1LOCK.
+    bit_offset: 16
+    bit_size: 1
+  - name: KEY2LOCK
+    description: desc KEY2LOCK.
+    bit_offset: 17
+    bit_size: 1
+fieldset/ERI2:
+  description: desc ERI2.
+  fields:
+  - name: ERI2
+    description: desc ERI2.
+    bit_offset: 0
+    bit_size: 8
+fieldset/FAPRT:
+  description: desc FAPRT.
+  fields:
+  - name: FAPRT
+    description: desc FAPRT.
+    bit_offset: 0
+    bit_size: 16
+fieldset/FEC:
+  description: desc FEC.
+  fields:
+  - name: ECCOAD
+    description: desc ECCOAD.
+    bit_offset: 0
+    bit_size: 1
+  - name: ECCMOD
+    description: desc ECCMOD.
+    bit_offset: 1
+    bit_size: 2
+fieldset/FITE:
+  description: desc FITE.
+  fields:
+  - name: PEERRITE
+    description: desc PEERRITE.
+    bit_offset: 0
+    bit_size: 1
+  - name: OPTENDITE
+    description: desc OPTENDITE.
+    bit_offset: 1
+    bit_size: 1
+  - name: COLERRITE
+    description: desc COLERRITE.
+    bit_offset: 2
+    bit_size: 1
+  - name: BLKERRITE
+    description: desc BLKERRITE.
+    bit_offset: 3
+    bit_size: 1
+fieldset/FNWPRT0:
+  description: desc FNWPRT0.
+  fields:
+  - name: FNWPRT0
+    description: desc FNWPRT0.
+    bit_offset: 0
+    bit_size: 1
+  - name: FNWPRT1
+    description: desc FNWPRT1.
+    bit_offset: 1
+    bit_size: 1
+  - name: FNWPRT2
+    description: desc FNWPRT2.
+    bit_offset: 2
+    bit_size: 1
+  - name: FNWPRT3
+    description: desc FNWPRT3.
+    bit_offset: 3
+    bit_size: 1
+  - name: FNWPRT4
+    description: desc FNWPRT4.
+    bit_offset: 4
+    bit_size: 1
+  - name: FNWPRT5
+    description: desc FNWPRT5.
+    bit_offset: 5
+    bit_size: 1
+  - name: FNWPRT6
+    description: desc FNWPRT6.
+    bit_offset: 6
+    bit_size: 1
+  - name: FNWPRT7
+    description: desc FNWPRT7.
+    bit_offset: 7
+    bit_size: 1
+  - name: FNWPRT8
+    description: desc FNWPRT8.
+    bit_offset: 8
+    bit_size: 1
+  - name: FNWPRT9
+    description: desc FNWPRT9.
+    bit_offset: 9
+    bit_size: 1
+  - name: FNWPRT10
+    description: desc FNWPRT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: FNWPRT11
+    description: desc FNWPRT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: FNWPRT12
+    description: desc FNWPRT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: FNWPRT13
+    description: desc FNWPRT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: FNWPRT14
+    description: desc FNWPRT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: FNWPRT15
+    description: desc FNWPRT15.
+    bit_offset: 15
+    bit_size: 1
+  - name: FNWPRT16
+    description: desc FNWPRT16.
+    bit_offset: 16
+    bit_size: 1
+  - name: FNWPRT17
+    description: desc FNWPRT17.
+    bit_offset: 17
+    bit_size: 1
+  - name: FNWPRT18
+    description: desc FNWPRT18.
+    bit_offset: 18
+    bit_size: 1
+  - name: FNWPRT19
+    description: desc FNWPRT19.
+    bit_offset: 19
+    bit_size: 1
+  - name: FNWPRT20
+    description: desc FNWPRT20.
+    bit_offset: 20
+    bit_size: 1
+  - name: FNWPRT21
+    description: desc FNWPRT21.
+    bit_offset: 21
+    bit_size: 1
+  - name: FNWPRT22
+    description: desc FNWPRT22.
+    bit_offset: 22
+    bit_size: 1
+  - name: FNWPRT23
+    description: desc FNWPRT23.
+    bit_offset: 23
+    bit_size: 1
+  - name: FNWPRT24
+    description: desc FNWPRT24.
+    bit_offset: 24
+    bit_size: 1
+  - name: FNWPRT25
+    description: desc FNWPRT25.
+    bit_offset: 25
+    bit_size: 1
+  - name: FNWPRT26
+    description: desc FNWPRT26.
+    bit_offset: 26
+    bit_size: 1
+  - name: FNWPRT27
+    description: desc FNWPRT27.
+    bit_offset: 27
+    bit_size: 1
+  - name: FNWPRT28
+    description: desc FNWPRT28.
+    bit_offset: 28
+    bit_size: 1
+  - name: FNWPRT29
+    description: desc FNWPRT29.
+    bit_offset: 29
+    bit_size: 1
+  - name: FNWPRT30
+    description: desc FNWPRT30.
+    bit_offset: 30
+    bit_size: 1
+  - name: FNWPRT31
+    description: desc FNWPRT31.
+    bit_offset: 31
+    bit_size: 1
+fieldset/FNWPRT1:
+  description: desc FNWPRT1.
+  fields:
+  - name: FNWPRT32
+    description: desc FNWPRT32.
+    bit_offset: 0
+    bit_size: 1
+  - name: FNWPRT33
+    description: desc FNWPRT33.
+    bit_offset: 1
+    bit_size: 1
+  - name: FNWPRT34
+    description: desc FNWPRT34.
+    bit_offset: 2
+    bit_size: 1
+  - name: FNWPRT35
+    description: desc FNWPRT35.
+    bit_offset: 3
+    bit_size: 1
+  - name: FNWPRT36
+    description: desc FNWPRT36.
+    bit_offset: 4
+    bit_size: 1
+  - name: FNWPRT37
+    description: desc FNWPRT37.
+    bit_offset: 5
+    bit_size: 1
+  - name: FNWPRT38
+    description: desc FNWPRT38.
+    bit_offset: 6
+    bit_size: 1
+  - name: FNWPRT39
+    description: desc FNWPRT39.
+    bit_offset: 7
+    bit_size: 1
+  - name: FNWPRT40
+    description: desc FNWPRT40.
+    bit_offset: 8
+    bit_size: 1
+  - name: FNWPRT41
+    description: desc FNWPRT41.
+    bit_offset: 9
+    bit_size: 1
+  - name: FNWPRT42
+    description: desc FNWPRT42.
+    bit_offset: 10
+    bit_size: 1
+  - name: FNWPRT43
+    description: desc FNWPRT43.
+    bit_offset: 11
+    bit_size: 1
+  - name: FNWPRT44
+    description: desc FNWPRT44.
+    bit_offset: 12
+    bit_size: 1
+  - name: FNWPRT45
+    description: desc FNWPRT45.
+    bit_offset: 13
+    bit_size: 1
+  - name: FNWPRT46
+    description: desc FNWPRT46.
+    bit_offset: 14
+    bit_size: 1
+  - name: FNWPRT47
+    description: desc FNWPRT47.
+    bit_offset: 15
+    bit_size: 1
+  - name: FNWPRT48
+    description: desc FNWPRT48.
+    bit_offset: 16
+    bit_size: 1
+  - name: FNWPRT49
+    description: desc FNWPRT49.
+    bit_offset: 17
+    bit_size: 1
+  - name: FNWPRT50
+    description: desc FNWPRT50.
+    bit_offset: 18
+    bit_size: 1
+  - name: FNWPRT51
+    description: desc FNWPRT51.
+    bit_offset: 19
+    bit_size: 1
+  - name: FNWPRT52
+    description: desc FNWPRT52.
+    bit_offset: 20
+    bit_size: 1
+  - name: FNWPRT53
+    description: desc FNWPRT53.
+    bit_offset: 21
+    bit_size: 1
+  - name: FNWPRT54
+    description: desc FNWPRT54.
+    bit_offset: 22
+    bit_size: 1
+  - name: FNWPRT55
+    description: desc FNWPRT55.
+    bit_offset: 23
+    bit_size: 1
+  - name: FNWPRT56
+    description: desc FNWPRT56.
+    bit_offset: 24
+    bit_size: 1
+  - name: FNWPRT57
+    description: desc FNWPRT57.
+    bit_offset: 25
+    bit_size: 1
+  - name: FNWPRT58
+    description: desc FNWPRT58.
+    bit_offset: 26
+    bit_size: 1
+  - name: FNWPRT59
+    description: desc FNWPRT59.
+    bit_offset: 27
+    bit_size: 1
+  - name: FNWPRT60
+    description: desc FNWPRT60.
+    bit_offset: 28
+    bit_size: 1
+  - name: FNWPRT61
+    description: desc FNWPRT61.
+    bit_offset: 29
+    bit_size: 1
+  - name: FNWPRT62
+    description: desc FNWPRT62.
+    bit_offset: 30
+    bit_size: 1
+  - name: FNWPRT63
+    description: desc FNWPRT63.
+    bit_offset: 31
+    bit_size: 1
+fieldset/FRMC:
+  description: desc FRMC.
+  fields:
+  - name: FLWT
+    description: desc FLWT.
+    bit_offset: 0
+    bit_size: 4
+  - name: M0RD
+    description: desc M0RD.
+    bit_offset: 8
+    bit_size: 1
+  - name: M1RD
+    description: desc M1RD.
+    bit_offset: 9
+    bit_size: 1
+  - name: BLKDE
+    description: desc BLKDE.
+    bit_offset: 10
+    bit_size: 1
+  - name: EIRD
+    description: desc EIRD.
+    bit_offset: 11
+    bit_size: 1
+  - name: PREFETE
+    description: desc PREFETE.
+    bit_offset: 18
+    bit_size: 1
+fieldset/FSCLR:
+  description: desc FSCLR.
+  fields:
+  - name: OTPWERRCLR
+    description: desc OTPWERRCLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: PRTWERRCLR
+    description: desc PRTWERRCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: PGSZERRCLR
+    description: desc PGSZERRCLR.
+    bit_offset: 2
+    bit_size: 1
+  - name: MISMTCHCLR
+    description: desc MISMTCHCLR.
+    bit_offset: 3
+    bit_size: 1
+  - name: OPTENDCLR
+    description: desc OPTENDCLR.
+    bit_offset: 4
+    bit_size: 1
+  - name: COLERRCLR
+    description: desc COLERRCLR.
+    bit_offset: 5
+    bit_size: 1
+  - name: ERCALCLR
+    description: desc ERCALCLR.
+    bit_offset: 6
+    bit_size: 1
+  - name: FSTWRSTCLR
+    description: desc FSTWRSTCLR.
+    bit_offset: 9
+    bit_size: 1
+  - name: ECC1ERRCLR
+    description: desc ECC1ERRCLR.
+    bit_offset: 10
+    bit_size: 1
+  - name: ECC2ERRCLR
+    description: desc ECC2ERRCLR.
+    bit_offset: 11
+    bit_size: 1
+  - name: BLKERRCLR
+    description: desc BLKERRCLR.
+    bit_offset: 12
+    bit_size: 1
+fieldset/FSR:
+  description: desc FSR.
+  fields:
+  - name: OTPWERR
+    description: desc OTPWERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: PRTWERR
+    description: desc PRTWERR.
+    bit_offset: 1
+    bit_size: 1
+  - name: PGSZERR
+    description: desc PGSZERR.
+    bit_offset: 2
+    bit_size: 1
+  - name: MISMTCH
+    description: desc MISMTCH.
+    bit_offset: 3
+    bit_size: 1
+  - name: OPTEND
+    description: desc OPTEND.
+    bit_offset: 4
+    bit_size: 1
+  - name: COLERR
+    description: desc COLERR.
+    bit_offset: 5
+    bit_size: 1
+  - name: ERCAL
+    description: desc ERCAL.
+    bit_offset: 6
+    bit_size: 1
+  - name: RDY
+    description: desc RDY.
+    bit_offset: 8
+    bit_size: 1
+  - name: FSTWRST
+    description: desc FSTWRST.
+    bit_offset: 9
+    bit_size: 1
+  - name: ECC1ERR
+    description: desc ECC1ERR.
+    bit_offset: 10
+    bit_size: 1
+  - name: ECC2ERR
+    description: desc ECC2ERR.
+    bit_offset: 11
+    bit_size: 1
+  - name: BLKERR
+    description: desc BLKERR.
+    bit_offset: 12
+    bit_size: 1
+fieldset/FSTP:
+  description: desc FSTP.
+  fields:
+  - name: FSTP
+    description: desc FSTP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/FSWP:
+  description: desc FSWP.
+  fields:
+  - name: FSWP
+    description: desc FSWP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/FWMC:
+  description: desc FWMC.
+  fields:
+  - name: PEMOD
+    description: desc PEMOD.
+    bit_offset: 0
+    bit_size: 3
+  - name: ERCALE
+    description: desc ERCALE.
+    bit_offset: 4
+    bit_size: 1
+  - name: BUSHLDCTL
+    description: desc BUSHLDCTL.
+    bit_offset: 8
+    bit_size: 1
+  - name: BLKECCWSEL
+    description: desc BLKECCWSEL.
+    bit_offset: 9
+    bit_size: 1
+  - name: BLKECCRSEL
+    description: desc BLKECCRSEL.
+    bit_offset: 10
+    bit_size: 1
+  - name: KEY1LOCK
+    description: desc KEY1LOCK.
+    bit_offset: 16
+    bit_size: 1
+  - name: KEY2LOCK
+    description: desc KEY2LOCK.
+    bit_offset: 17
+    bit_size: 1
+fieldset/HRCCFGR:
+  description: desc HRCCFGR.
+  bit_size: 8
+  fields:
+  - name: HRCFREQS
+    description: desc HRCFREQS.
+    bit_offset: 0
+    bit_size: 4
+fieldset/LVD1ICGCR:
+  description: desc LVD1ICGCR.
+  bit_size: 16
+  fields:
+  - name: LVD1DFS
+    description: desc LVD1DFS.
+    bit_offset: 0
+    bit_size: 2
+  - name: LVD1DFDIS
+    description: desc LVD1DFDIS.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVD1LVL
+    description: desc LVD1LVL.
+    bit_offset: 8
+    bit_size: 2
+  - name: LVD1NMIS
+    description: desc LVD1NMIS.
+    bit_offset: 12
+    bit_size: 1
+  - name: LVD1IRS
+    description: desc LVD1IRS.
+    bit_offset: 13
+    bit_size: 1
+  - name: LVD1IRDIS
+    description: desc LVD1IRDIS.
+    bit_offset: 14
+    bit_size: 1
+  - name: LVD1DIS
+    description: desc LVD1DIS.
+    bit_offset: 15
+    bit_size: 1

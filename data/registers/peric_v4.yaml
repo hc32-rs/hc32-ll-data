@@ -1,0 +1,138 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A0/PERIC；覆盖系列：HC32A4A0, HC32F467, HC32F4A0。
+block/PERIC:
+  description: desc PERIC.
+  items:
+  - name: USB_SYCTLREG
+    description: desc USB_SYCTLREG.
+    byte_offset: 0
+    fieldset: USB_SYCTLREG
+  - name: SDIOC_SYCTLREG
+    description: desc SDIOC_SYCTLREG.
+    byte_offset: 4
+    fieldset: SDIOC_SYCTLREG
+  - name: NFC_STCR
+    description: desc NFC_STCR.
+    byte_offset: 8
+    fieldset: NFC_STCR
+  - name: DMC_ENAR
+    description: desc DMC_ENAR.
+    byte_offset: 12
+    fieldset: DMC_ENAR
+  - name: NFC_ENAR
+    description: desc NFC_ENAR.
+    byte_offset: 12
+    fieldset: NFC_ENAR
+  - name: SMC_ENAR
+    description: desc SMC_ENAR.
+    byte_offset: 12
+    fieldset: SMC_ENAR
+  - name: USART1_NFC
+    description: desc USART1_NFC.
+    byte_offset: 28
+    fieldset: USART1_NFC
+  - name: NFC_STSR
+    description: desc NFC_STSR.
+    byte_offset: 40
+    access: Read
+    fieldset: NFC_STSR
+fieldset/DMC_ENAR:
+  description: desc DMC_ENAR.
+  fields:
+  - name: DMCEN
+    description: desc DMCEN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/NFC_ENAR:
+  description: desc NFC_ENAR.
+  fields:
+  - name: NFCEN
+    description: desc NFCEN.
+    bit_offset: 2
+    bit_size: 1
+fieldset/NFC_STCR:
+  description: desc NFC_STCR.
+  fields:
+  - name: OPENP
+    description: desc OPENP.
+    bit_offset: 0
+    bit_size: 1
+fieldset/NFC_STSR:
+  description: desc NFC_STSR.
+  fields:
+  - name: CHIP_BUSY
+    description: desc CHIP_BUSY.
+    bit_offset: 0
+    bit_size: 8
+  - name: PECC
+    description: desc PECC.
+    bit_offset: 8
+    bit_size: 1
+fieldset/SDIOC_SYCTLREG:
+  description: desc SDIOC_SYCTLREG.
+  fields:
+  - name: SELMMC1
+    description: desc SELMMC1.
+    bit_offset: 1
+    bit_size: 1
+  - name: SELMMC2
+    description: desc SELMMC2.
+    bit_offset: 3
+    bit_size: 1
+fieldset/SMC_ENAR:
+  description: desc SMC_ENAR.
+  fields:
+  - name: SMCEN
+    description: desc SMCEN.
+    bit_offset: 1
+    bit_size: 1
+fieldset/USART1_NFC:
+  description: desc USART1_NFC.
+  fields:
+  - name: USASRT1_NFS
+    description: desc USASRT1_NFS.
+    bit_offset: 0
+    bit_size: 2
+  - name: USART1_NFE
+    description: desc USART1_NFE.
+    bit_offset: 2
+    bit_size: 1
+fieldset/USB_SYCTLREG:
+  description: desc USB_SYCTLREG.
+  fields:
+  - name: USBFS_DFB
+    description: desc USBFS_DFB.
+    bit_offset: 0
+    bit_size: 1
+  - name: USBFS_SOFEN
+    description: desc USBFS_SOFEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: USBHS_DFB
+    description: desc USBHS_DFB.
+    bit_offset: 8
+    bit_size: 1
+  - name: USBHS_SOFEN
+    description: desc USBHS_SOFEN.
+    bit_offset: 9
+    bit_size: 1
+  - name: USBHS_FSPHYE
+    description: desc USBHS_FSPHYE.
+    bit_offset: 10
+    bit_size: 1
+  - name: USBFS_NFS
+    description: desc USBFS_NFS.
+    bit_offset: 16
+    bit_size: 2
+  - name: USBFS_NFE
+    description: desc USBFS_NFE.
+    bit_offset: 18
+    bit_size: 1
+  - name: USBHS_NFS
+    description: desc USBHS_NFS.
+    bit_offset: 24
+    bit_size: 2
+  - name: USBHS_NFE
+    description: desc USBHS_NFE.
+    bit_offset: 26
+    bit_size: 1

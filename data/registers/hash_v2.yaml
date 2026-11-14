@@ -1,0 +1,124 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/HASH；覆盖系列：HC32A472, HC32A4A0, HC32F467, HC32F472, HC32F4A0, HC32F4A2。
+block/HASH:
+  description: desc HASH.
+  items:
+  - name: CR
+    description: desc CR.
+    byte_offset: 0
+    fieldset: CR
+  - name: HR7
+    description: desc HR7.
+    byte_offset: 16
+  - name: HR6
+    description: desc HR6.
+    byte_offset: 20
+  - name: HR5
+    description: desc HR5.
+    byte_offset: 24
+  - name: HR4
+    description: desc HR4.
+    byte_offset: 28
+  - name: HR3
+    description: desc HR3.
+    byte_offset: 32
+  - name: HR2
+    description: desc HR2.
+    byte_offset: 36
+  - name: HR1
+    description: desc HR1.
+    byte_offset: 40
+  - name: HR0
+    description: desc HR0.
+    byte_offset: 44
+  - name: DR15
+    description: desc DR15.
+    byte_offset: 64
+  - name: DR14
+    description: desc DR14.
+    byte_offset: 68
+  - name: DR13
+    description: desc DR13.
+    byte_offset: 72
+  - name: DR12
+    description: desc DR12.
+    byte_offset: 76
+  - name: DR11
+    description: desc DR11.
+    byte_offset: 80
+  - name: DR10
+    description: desc DR10.
+    byte_offset: 84
+  - name: DR9
+    description: desc DR9.
+    byte_offset: 88
+  - name: DR8
+    description: desc DR8.
+    byte_offset: 92
+  - name: DR7
+    description: desc DR7.
+    byte_offset: 96
+  - name: DR6
+    description: desc DR6.
+    byte_offset: 100
+  - name: DR5
+    description: desc DR5.
+    byte_offset: 104
+  - name: DR4
+    description: desc DR4.
+    byte_offset: 108
+  - name: DR3
+    description: desc DR3.
+    byte_offset: 112
+  - name: DR2
+    description: desc DR2.
+    byte_offset: 116
+  - name: DR1
+    description: desc DR1.
+    byte_offset: 120
+  - name: DR0
+    description: desc DR0.
+    byte_offset: 124
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: START
+    description: desc START.
+    bit_offset: 0
+    bit_size: 1
+  - name: FST_GRP
+    description: desc FST_GRP.
+    bit_offset: 1
+    bit_size: 1
+  - name: KMSG_END
+    description: desc KMSG_END.
+    bit_offset: 2
+    bit_size: 1
+  - name: MODE
+    description: desc MODE.
+    bit_offset: 4
+    bit_size: 2
+  - name: LKEY
+    description: desc LKEY.
+    bit_offset: 6
+    bit_size: 1
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 8
+    bit_size: 1
+  - name: CYC_END
+    description: desc CYC_END.
+    bit_offset: 9
+    bit_size: 1
+  - name: HMAC_END
+    description: desc HMAC_END.
+    bit_offset: 10
+    bit_size: 1
+  - name: HCIE
+    description: desc HCIE.
+    bit_offset: 14
+    bit_size: 1
+  - name: HEIE
+    description: desc HEIE.
+    bit_offset: 15
+    bit_size: 1

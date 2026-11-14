@@ -1,0 +1,138 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M458/DFM；覆盖系列：HC32M458。
+block/DFM:
+  description: desc DFM.
+  items:
+  - name: CR
+    description: desc CR.
+    byte_offset: 0
+    fieldset: CR
+  - name: LP
+    description: desc LP.
+    byte_offset: 12
+    fieldset: LP
+  - name: IER
+    description: desc IER.
+    byte_offset: 16
+    fieldset: IER
+  - name: IFR
+    description: desc IFR.
+    byte_offset: 20
+    access: Read
+    fieldset: IFR
+  - name: ICR
+    description: desc ICR.
+    byte_offset: 24
+    access: Write
+    fieldset: ICR
+  - name: BYPASS
+    description: desc BYPASS.
+    byte_offset: 44
+    access: Write
+    fieldset: BYPASS
+  - name: SLOCK0
+    description: desc SLOCK0.
+    byte_offset: 48
+  - name: SLOCK1
+    description: desc SLOCK1.
+    byte_offset: 52
+  - name: SLOCK2
+    description: desc SLOCK2.
+    byte_offset: 56
+  - name: SLOCK3
+    description: desc SLOCK3.
+    byte_offset: 60
+fieldset/BYPASS:
+  description: desc BYPASS.
+  fields:
+  - name: BYSEQ
+    description: desc BYSEQ.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: OP
+    description: desc OP.
+    bit_offset: 0
+    bit_size: 3
+  - name: WAIT
+    description: desc WAIT.
+    bit_offset: 8
+    bit_size: 4
+  - name: READ_ONLY
+    description: desc READ_ONLY.
+    bit_offset: 16
+    bit_size: 1
+fieldset/ICR:
+  description: desc ICR.
+  fields:
+  - name: PROT_CLR
+    description: desc PROT_CLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: PE_DONE_CLR
+    description: desc PE_DONE_CLR.
+    bit_offset: 1
+    bit_size: 1
+fieldset/IER:
+  description: desc IER.
+  fields:
+  - name: PROT_IE
+    description: desc PROT_IE.
+    bit_offset: 0
+    bit_size: 1
+  - name: PE_DONE_IE
+    description: desc PE_DONE_IE.
+    bit_offset: 1
+    bit_size: 1
+fieldset/IFR:
+  description: desc IFR.
+  fields:
+  - name: PROT
+    description: desc PROT.
+    bit_offset: 0
+    bit_size: 1
+  - name: PE_DONE
+    description: desc PE_DONE.
+    bit_offset: 1
+    bit_size: 1
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 8
+    bit_size: 1
+  - name: LP_STAT
+    description: desc LP_STAT.
+    bit_offset: 9
+    bit_size: 1
+  - name: ACC_ERR0
+    description: desc ACC_ERR0.
+    bit_offset: 16
+    bit_size: 1
+  - name: ACC_ERR1
+    description: desc ACC_ERR1.
+    bit_offset: 17
+    bit_size: 1
+  - name: ACC_ERR2
+    description: desc ACC_ERR2.
+    bit_offset: 18
+    bit_size: 1
+  - name: ACC_ERR3
+    description: desc ACC_ERR3.
+    bit_offset: 19
+    bit_size: 1
+  - name: ACC_ERR4
+    description: desc ACC_ERR4.
+    bit_offset: 20
+    bit_size: 1
+fieldset/LP:
+  description: desc LP.
+  fields:
+  - name: LP_REQ
+    description: desc LP_REQ.
+    bit_offset: 0
+    bit_size: 1
+  - name: DPSTB_EN
+    description: desc DPSTB_EN.
+    bit_offset: 1
+    bit_size: 1

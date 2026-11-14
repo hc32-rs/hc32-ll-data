@@ -1,0 +1,7865 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A460/GPIO；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+block/GPIO:
+  description: desc GPIO.
+  items:
+  - name: PIDRA
+    description: desc PIDRA.
+    byte_offset: 0
+    access: Read
+    bit_size: 16
+    fieldset: PIDRA
+  - name: PODRA
+    description: desc PODRA.
+    byte_offset: 4
+    bit_size: 16
+    fieldset: PODRA
+  - name: POERA
+    description: desc POERA.
+    byte_offset: 6
+    bit_size: 16
+    fieldset: POERA
+  - name: POSRA
+    description: desc POSRA.
+    byte_offset: 8
+    bit_size: 16
+    fieldset: POSRA
+  - name: PORRA
+    description: desc PORRA.
+    byte_offset: 10
+    bit_size: 16
+    fieldset: PORRA
+  - name: POTRA
+    description: desc POTRA.
+    byte_offset: 12
+    bit_size: 16
+    fieldset: POTRA
+  - name: PIDRB
+    description: desc PIDRB.
+    byte_offset: 16
+    access: Read
+    bit_size: 16
+    fieldset: PIDRB
+  - name: PODRB
+    description: desc PODRB.
+    byte_offset: 20
+    bit_size: 16
+    fieldset: PODRB
+  - name: POERB
+    description: desc POERB.
+    byte_offset: 22
+    bit_size: 16
+    fieldset: POERB
+  - name: POSRB
+    description: desc POSRB.
+    byte_offset: 24
+    bit_size: 16
+    fieldset: POSRB
+  - name: PORRB
+    description: desc PORRB.
+    byte_offset: 26
+    bit_size: 16
+    fieldset: PORRB
+  - name: POTRB
+    description: desc POTRB.
+    byte_offset: 28
+    bit_size: 16
+    fieldset: POTRB
+  - name: PIDRC
+    description: desc PIDRC.
+    byte_offset: 32
+    access: Read
+    bit_size: 16
+    fieldset: PIDRC
+  - name: PODRC
+    description: desc PODRC.
+    byte_offset: 36
+    bit_size: 16
+    fieldset: PODRC
+  - name: POERC
+    description: desc POERC.
+    byte_offset: 38
+    bit_size: 16
+    fieldset: POERC
+  - name: POSRC
+    description: desc POSRC.
+    byte_offset: 40
+    bit_size: 16
+    fieldset: POSRC
+  - name: PORRC
+    description: desc PORRC.
+    byte_offset: 42
+    bit_size: 16
+    fieldset: PORRC
+  - name: POTRC
+    description: desc POTRC.
+    byte_offset: 44
+    bit_size: 16
+    fieldset: POTRC
+  - name: PIDRD
+    description: desc PIDRD.
+    byte_offset: 48
+    access: Read
+    bit_size: 16
+    fieldset: PIDRD
+  - name: PODRD
+    description: desc PODRD.
+    byte_offset: 52
+    bit_size: 16
+    fieldset: PODRD
+  - name: POERD
+    description: desc POERD.
+    byte_offset: 54
+    bit_size: 16
+    fieldset: POERD
+  - name: POSRD
+    description: desc POSRD.
+    byte_offset: 56
+    bit_size: 16
+    fieldset: POSRD
+  - name: PORRD
+    description: desc PORRD.
+    byte_offset: 58
+    bit_size: 16
+    fieldset: PORRD
+  - name: POTRD
+    description: desc POTRD.
+    byte_offset: 60
+    bit_size: 16
+    fieldset: POTRD
+  - name: PIDRE
+    description: desc PIDRE.
+    byte_offset: 64
+    access: Read
+    bit_size: 16
+    fieldset: PIDRE
+  - name: PODRE
+    description: desc PODRE.
+    byte_offset: 68
+    bit_size: 16
+    fieldset: PODRE
+  - name: POERE
+    description: desc POERE.
+    byte_offset: 70
+    bit_size: 16
+    fieldset: POERE
+  - name: POSRE
+    description: desc POSRE.
+    byte_offset: 72
+    bit_size: 16
+    fieldset: POSRE
+  - name: PORRE
+    description: desc PORRE.
+    byte_offset: 74
+    bit_size: 16
+    fieldset: PORRE
+  - name: POTRE
+    description: desc POTRE.
+    byte_offset: 76
+    bit_size: 16
+    fieldset: POTRE
+  - name: PIDRH
+    description: desc PIDRH.
+    byte_offset: 80
+    access: Read
+    bit_size: 16
+    fieldset: PIDRH
+  - name: PODRH
+    description: desc PODRH.
+    byte_offset: 84
+    bit_size: 16
+    fieldset: PODRH
+  - name: POERH
+    description: desc POERH.
+    byte_offset: 86
+    bit_size: 16
+    fieldset: POERH
+  - name: POSRH
+    description: desc POSRH.
+    byte_offset: 88
+    bit_size: 16
+    fieldset: POSRH
+  - name: PORRH
+    description: desc PORRH.
+    byte_offset: 90
+    bit_size: 16
+    fieldset: PORRH
+  - name: POTRH
+    description: desc POTRH.
+    byte_offset: 92
+    bit_size: 16
+    fieldset: POTRH
+  - name: PSPCR
+    description: desc PSPCR.
+    byte_offset: 1012
+    bit_size: 16
+    fieldset: PSPCR
+  - name: PCCR
+    description: desc PCCR.
+    byte_offset: 1016
+    bit_size: 16
+    fieldset: PCCR
+  - name: PINAER
+    description: desc PINAER.
+    byte_offset: 1018
+    bit_size: 16
+    fieldset: PINAER
+  - name: PWPR
+    description: desc PWPR.
+    byte_offset: 1020
+    bit_size: 16
+    fieldset: PWPR
+  - name: PCRA0
+    description: desc PCRA0.
+    byte_offset: 1024
+    bit_size: 16
+    fieldset: PCRA0
+  - name: PFSRA0
+    description: desc PFSRA0.
+    byte_offset: 1026
+    bit_size: 16
+    fieldset: PFSRA0
+  - name: PCRA1
+    description: desc PCRA1.
+    byte_offset: 1028
+    bit_size: 16
+    fieldset: PCRA1
+  - name: PFSRA1
+    description: desc PFSRA1.
+    byte_offset: 1030
+    bit_size: 16
+    fieldset: PFSRA1
+  - name: PCRA2
+    description: desc PCRA2.
+    byte_offset: 1032
+    bit_size: 16
+    fieldset: PCRA2
+  - name: PFSRA2
+    description: desc PFSRA2.
+    byte_offset: 1034
+    bit_size: 16
+    fieldset: PFSRA2
+  - name: PCRA3
+    description: desc PCRA3.
+    byte_offset: 1036
+    bit_size: 16
+    fieldset: PCRA3
+  - name: PFSRA3
+    description: desc PFSRA3.
+    byte_offset: 1038
+    bit_size: 16
+    fieldset: PFSRA3
+  - name: PCRA4
+    description: desc PCRA4.
+    byte_offset: 1040
+    bit_size: 16
+    fieldset: PCRA4
+  - name: PFSRA4
+    description: desc PFSRA4.
+    byte_offset: 1042
+    bit_size: 16
+    fieldset: PFSRA4
+  - name: PCRA5
+    description: desc PCRA5.
+    byte_offset: 1044
+    bit_size: 16
+    fieldset: PCRA5
+  - name: PFSRA5
+    description: desc PFSRA5.
+    byte_offset: 1046
+    bit_size: 16
+    fieldset: PFSRA5
+  - name: PCRA6
+    description: desc PCRA6.
+    byte_offset: 1048
+    bit_size: 16
+    fieldset: PCRA6
+  - name: PFSRA6
+    description: desc PFSRA6.
+    byte_offset: 1050
+    bit_size: 16
+    fieldset: PFSRA6
+  - name: PCRA7
+    description: desc PCRA7.
+    byte_offset: 1052
+    bit_size: 16
+    fieldset: PCRA7
+  - name: PFSRA7
+    description: desc PFSRA7.
+    byte_offset: 1054
+    bit_size: 16
+    fieldset: PFSRA7
+  - name: PCRA8
+    description: desc PCRA8.
+    byte_offset: 1056
+    bit_size: 16
+    fieldset: PCRA8
+  - name: PFSRA8
+    description: desc PFSRA8.
+    byte_offset: 1058
+    bit_size: 16
+    fieldset: PFSRA8
+  - name: PCRA9
+    description: desc PCRA9.
+    byte_offset: 1060
+    bit_size: 16
+    fieldset: PCRA9
+  - name: PFSRA9
+    description: desc PFSRA9.
+    byte_offset: 1062
+    bit_size: 16
+    fieldset: PFSRA9
+  - name: PCRA10
+    description: desc PCRA10.
+    byte_offset: 1064
+    bit_size: 16
+    fieldset: PCRA10
+  - name: PFSRA10
+    description: desc PFSRA10.
+    byte_offset: 1066
+    bit_size: 16
+    fieldset: PFSRA10
+  - name: PCRA11
+    description: desc PCRA11.
+    byte_offset: 1068
+    bit_size: 16
+    fieldset: PCRA11
+  - name: PFSRA11
+    description: desc PFSRA11.
+    byte_offset: 1070
+    bit_size: 16
+    fieldset: PFSRA11
+  - name: PCRA12
+    description: desc PCRA12.
+    byte_offset: 1072
+    bit_size: 16
+    fieldset: PCRA12
+  - name: PFSRA12
+    description: desc PFSRA12.
+    byte_offset: 1074
+    bit_size: 16
+    fieldset: PFSRA12
+  - name: PCRA13
+    description: desc PCRA13.
+    byte_offset: 1076
+    bit_size: 16
+    fieldset: PCRA13
+  - name: PFSRA13
+    description: desc PFSRA13.
+    byte_offset: 1078
+    bit_size: 16
+    fieldset: PFSRA13
+  - name: PCRA14
+    description: desc PCRA14.
+    byte_offset: 1080
+    bit_size: 16
+    fieldset: PCRA14
+  - name: PFSRA14
+    description: desc PFSRA14.
+    byte_offset: 1082
+    bit_size: 16
+    fieldset: PFSRA14
+  - name: PCRA15
+    description: desc PCRA15.
+    byte_offset: 1084
+    bit_size: 16
+    fieldset: PCRA15
+  - name: PFSRA15
+    description: desc PFSRA15.
+    byte_offset: 1086
+    bit_size: 16
+    fieldset: PFSRA15
+  - name: PCRB0
+    description: desc PCRB0.
+    byte_offset: 1088
+    bit_size: 16
+    fieldset: PCRB0
+  - name: PFSRB0
+    description: desc PFSRB0.
+    byte_offset: 1090
+    bit_size: 16
+    fieldset: PFSRB0
+  - name: PCRB1
+    description: desc PCRB1.
+    byte_offset: 1092
+    bit_size: 16
+    fieldset: PCRB1
+  - name: PFSRB1
+    description: desc PFSRB1.
+    byte_offset: 1094
+    bit_size: 16
+    fieldset: PFSRB1
+  - name: PCRB2
+    description: desc PCRB2.
+    byte_offset: 1096
+    bit_size: 16
+    fieldset: PCRB2
+  - name: PFSRB2
+    description: desc PFSRB2.
+    byte_offset: 1098
+    bit_size: 16
+    fieldset: PFSRB2
+  - name: PCRB3
+    description: desc PCRB3.
+    byte_offset: 1100
+    bit_size: 16
+    fieldset: PCRB3
+  - name: PFSRB3
+    description: desc PFSRB3.
+    byte_offset: 1102
+    bit_size: 16
+    fieldset: PFSRB3
+  - name: PCRB4
+    description: desc PCRB4.
+    byte_offset: 1104
+    bit_size: 16
+    fieldset: PCRB4
+  - name: PFSRB4
+    description: desc PFSRB4.
+    byte_offset: 1106
+    bit_size: 16
+    fieldset: PFSRB4
+  - name: PCRB5
+    description: desc PCRB5.
+    byte_offset: 1108
+    bit_size: 16
+    fieldset: PCRB5
+  - name: PFSRB5
+    description: desc PFSRB5.
+    byte_offset: 1110
+    bit_size: 16
+    fieldset: PFSRB5
+  - name: PCRB6
+    description: desc PCRB6.
+    byte_offset: 1112
+    bit_size: 16
+    fieldset: PCRB6
+  - name: PFSRB6
+    description: desc PFSRB6.
+    byte_offset: 1114
+    bit_size: 16
+    fieldset: PFSRB6
+  - name: PCRB7
+    description: desc PCRB7.
+    byte_offset: 1116
+    bit_size: 16
+    fieldset: PCRB7
+  - name: PFSRB7
+    description: desc PFSRB7.
+    byte_offset: 1118
+    bit_size: 16
+    fieldset: PFSRB7
+  - name: PCRB8
+    description: desc PCRB8.
+    byte_offset: 1120
+    bit_size: 16
+    fieldset: PCRB8
+  - name: PFSRB8
+    description: desc PFSRB8.
+    byte_offset: 1122
+    bit_size: 16
+    fieldset: PFSRB8
+  - name: PCRB9
+    description: desc PCRB9.
+    byte_offset: 1124
+    bit_size: 16
+    fieldset: PCRB9
+  - name: PFSRB9
+    description: desc PFSRB9.
+    byte_offset: 1126
+    bit_size: 16
+    fieldset: PFSRB9
+  - name: PCRB10
+    description: desc PCRB10.
+    byte_offset: 1128
+    bit_size: 16
+    fieldset: PCRB10
+  - name: PFSRB10
+    description: desc PFSRB10.
+    byte_offset: 1130
+    bit_size: 16
+    fieldset: PFSRB10
+  - name: PCRB11
+    description: desc PCRB11.
+    byte_offset: 1132
+    bit_size: 16
+    fieldset: PCRB11
+  - name: PFSRB11
+    description: desc PFSRB11.
+    byte_offset: 1134
+    bit_size: 16
+    fieldset: PFSRB11
+  - name: PCRB12
+    description: desc PCRB12.
+    byte_offset: 1136
+    bit_size: 16
+    fieldset: PCRB12
+  - name: PFSRB12
+    description: desc PFSRB12.
+    byte_offset: 1138
+    bit_size: 16
+    fieldset: PFSRB12
+  - name: PCRB13
+    description: desc PCRB13.
+    byte_offset: 1140
+    bit_size: 16
+    fieldset: PCRB13
+  - name: PFSRB13
+    description: desc PFSRB13.
+    byte_offset: 1142
+    bit_size: 16
+    fieldset: PFSRB13
+  - name: PCRB14
+    description: desc PCRB14.
+    byte_offset: 1144
+    bit_size: 16
+    fieldset: PCRB14
+  - name: PFSRB14
+    description: desc PFSRB14.
+    byte_offset: 1146
+    bit_size: 16
+    fieldset: PFSRB14
+  - name: PCRB15
+    description: desc PCRB15.
+    byte_offset: 1148
+    bit_size: 16
+    fieldset: PCRB15
+  - name: PFSRB15
+    description: desc PFSRB15.
+    byte_offset: 1150
+    bit_size: 16
+    fieldset: PFSRB15
+  - name: PCRC0
+    description: desc PCRC0.
+    byte_offset: 1152
+    bit_size: 16
+    fieldset: PCRC0
+  - name: PFSRC0
+    description: desc PFSRC0.
+    byte_offset: 1154
+    bit_size: 16
+    fieldset: PFSRC0
+  - name: PCRC1
+    description: desc PCRC1.
+    byte_offset: 1156
+    bit_size: 16
+    fieldset: PCRC1
+  - name: PFSRC1
+    description: desc PFSRC1.
+    byte_offset: 1158
+    bit_size: 16
+    fieldset: PFSRC1
+  - name: PCRC2
+    description: desc PCRC2.
+    byte_offset: 1160
+    bit_size: 16
+    fieldset: PCRC2
+  - name: PFSRC2
+    description: desc PFSRC2.
+    byte_offset: 1162
+    bit_size: 16
+    fieldset: PFSRC2
+  - name: PCRC3
+    description: desc PCRC3.
+    byte_offset: 1164
+    bit_size: 16
+    fieldset: PCRC3
+  - name: PFSRC3
+    description: desc PFSRC3.
+    byte_offset: 1166
+    bit_size: 16
+    fieldset: PFSRC3
+  - name: PCRC4
+    description: desc PCRC4.
+    byte_offset: 1168
+    bit_size: 16
+    fieldset: PCRC4
+  - name: PFSRC4
+    description: desc PFSRC4.
+    byte_offset: 1170
+    bit_size: 16
+    fieldset: PFSRC4
+  - name: PCRC5
+    description: desc PCRC5.
+    byte_offset: 1172
+    bit_size: 16
+    fieldset: PCRC5
+  - name: PFSRC5
+    description: desc PFSRC5.
+    byte_offset: 1174
+    bit_size: 16
+    fieldset: PFSRC5
+  - name: PCRC6
+    description: desc PCRC6.
+    byte_offset: 1176
+    bit_size: 16
+    fieldset: PCRC6
+  - name: PFSRC6
+    description: desc PFSRC6.
+    byte_offset: 1178
+    bit_size: 16
+    fieldset: PFSRC6
+  - name: PCRC7
+    description: desc PCRC7.
+    byte_offset: 1180
+    bit_size: 16
+    fieldset: PCRC7
+  - name: PFSRC7
+    description: desc PFSRC7.
+    byte_offset: 1182
+    bit_size: 16
+    fieldset: PFSRC7
+  - name: PCRC8
+    description: desc PCRC8.
+    byte_offset: 1184
+    bit_size: 16
+    fieldset: PCRC8
+  - name: PFSRC8
+    description: desc PFSRC8.
+    byte_offset: 1186
+    bit_size: 16
+    fieldset: PFSRC8
+  - name: PCRC9
+    description: desc PCRC9.
+    byte_offset: 1188
+    bit_size: 16
+    fieldset: PCRC9
+  - name: PFSRC9
+    description: desc PFSRC9.
+    byte_offset: 1190
+    bit_size: 16
+    fieldset: PFSRC9
+  - name: PCRC10
+    description: desc PCRC10.
+    byte_offset: 1192
+    bit_size: 16
+    fieldset: PCRC10
+  - name: PFSRC10
+    description: desc PFSRC10.
+    byte_offset: 1194
+    bit_size: 16
+    fieldset: PFSRC10
+  - name: PCRC11
+    description: desc PCRC11.
+    byte_offset: 1196
+    bit_size: 16
+    fieldset: PCRC11
+  - name: PFSRC11
+    description: desc PFSRC11.
+    byte_offset: 1198
+    bit_size: 16
+    fieldset: PFSRC11
+  - name: PCRC12
+    description: desc PCRC12.
+    byte_offset: 1200
+    bit_size: 16
+    fieldset: PCRC12
+  - name: PFSRC12
+    description: desc PFSRC12.
+    byte_offset: 1202
+    bit_size: 16
+    fieldset: PFSRC12
+  - name: PCRC13
+    description: desc PCRC13.
+    byte_offset: 1204
+    bit_size: 16
+    fieldset: PCRC13
+  - name: PFSRC13
+    description: desc PFSRC13.
+    byte_offset: 1206
+    bit_size: 16
+    fieldset: PFSRC13
+  - name: PCRC14
+    description: desc PCRC14.
+    byte_offset: 1208
+    bit_size: 16
+    fieldset: PCRC14
+  - name: PFSRC14
+    description: desc PFSRC14.
+    byte_offset: 1210
+    bit_size: 16
+    fieldset: PFSRC14
+  - name: PCRC15
+    description: desc PCRC15.
+    byte_offset: 1212
+    bit_size: 16
+    fieldset: PCRC15
+  - name: PFSRC15
+    description: desc PFSRC15.
+    byte_offset: 1214
+    bit_size: 16
+    fieldset: PFSRC15
+  - name: PCRD0
+    description: desc PCRD0.
+    byte_offset: 1216
+    bit_size: 16
+    fieldset: PCRD0
+  - name: PFSRD0
+    description: desc PFSRD0.
+    byte_offset: 1218
+    bit_size: 16
+    fieldset: PFSRD0
+  - name: PCRD1
+    description: desc PCRD1.
+    byte_offset: 1220
+    bit_size: 16
+    fieldset: PCRD1
+  - name: PFSRD1
+    description: desc PFSRD1.
+    byte_offset: 1222
+    bit_size: 16
+    fieldset: PFSRD1
+  - name: PCRD2
+    description: desc PCRD2.
+    byte_offset: 1224
+    bit_size: 16
+    fieldset: PCRD2
+  - name: PFSRD2
+    description: desc PFSRD2.
+    byte_offset: 1226
+    bit_size: 16
+    fieldset: PFSRD2
+  - name: PCRD3
+    description: desc PCRD3.
+    byte_offset: 1228
+    bit_size: 16
+    fieldset: PCRD3
+  - name: PFSRD3
+    description: desc PFSRD3.
+    byte_offset: 1230
+    bit_size: 16
+    fieldset: PFSRD3
+  - name: PCRD4
+    description: desc PCRD4.
+    byte_offset: 1232
+    bit_size: 16
+    fieldset: PCRD4
+  - name: PFSRD4
+    description: desc PFSRD4.
+    byte_offset: 1234
+    bit_size: 16
+    fieldset: PFSRD4
+  - name: PCRD5
+    description: desc PCRD5.
+    byte_offset: 1236
+    bit_size: 16
+    fieldset: PCRD5
+  - name: PFSRD5
+    description: desc PFSRD5.
+    byte_offset: 1238
+    bit_size: 16
+    fieldset: PFSRD5
+  - name: PCRD6
+    description: desc PCRD6.
+    byte_offset: 1240
+    bit_size: 16
+    fieldset: PCRD6
+  - name: PFSRD6
+    description: desc PFSRD6.
+    byte_offset: 1242
+    bit_size: 16
+    fieldset: PFSRD6
+  - name: PCRD7
+    description: desc PCRD7.
+    byte_offset: 1244
+    bit_size: 16
+    fieldset: PCRD7
+  - name: PFSRD7
+    description: desc PFSRD7.
+    byte_offset: 1246
+    bit_size: 16
+    fieldset: PFSRD7
+  - name: PCRD8
+    description: desc PCRD8.
+    byte_offset: 1248
+    bit_size: 16
+    fieldset: PCRD8
+  - name: PFSRD8
+    description: desc PFSRD8.
+    byte_offset: 1250
+    bit_size: 16
+    fieldset: PFSRD8
+  - name: PCRD9
+    description: desc PCRD9.
+    byte_offset: 1252
+    bit_size: 16
+    fieldset: PCRD9
+  - name: PFSRD9
+    description: desc PFSRD9.
+    byte_offset: 1254
+    bit_size: 16
+    fieldset: PFSRD9
+  - name: PCRD10
+    description: desc PCRD10.
+    byte_offset: 1256
+    bit_size: 16
+    fieldset: PCRD10
+  - name: PFSRD10
+    description: desc PFSRD10.
+    byte_offset: 1258
+    bit_size: 16
+    fieldset: PFSRD10
+  - name: PCRD11
+    description: desc PCRD11.
+    byte_offset: 1260
+    bit_size: 16
+    fieldset: PCRD11
+  - name: PFSRD11
+    description: desc PFSRD11.
+    byte_offset: 1262
+    bit_size: 16
+    fieldset: PFSRD11
+  - name: PCRD12
+    description: desc PCRD12.
+    byte_offset: 1264
+    bit_size: 16
+    fieldset: PCRD12
+  - name: PFSRD12
+    description: desc PFSRD12.
+    byte_offset: 1266
+    bit_size: 16
+    fieldset: PFSRD12
+  - name: PCRD13
+    description: desc PCRD13.
+    byte_offset: 1268
+    bit_size: 16
+    fieldset: PCRD13
+  - name: PFSRD13
+    description: desc PFSRD13.
+    byte_offset: 1270
+    bit_size: 16
+    fieldset: PFSRD13
+  - name: PCRD14
+    description: desc PCRD14.
+    byte_offset: 1272
+    bit_size: 16
+    fieldset: PCRD14
+  - name: PFSRD14
+    description: desc PFSRD14.
+    byte_offset: 1274
+    bit_size: 16
+    fieldset: PFSRD14
+  - name: PCRD15
+    description: desc PCRD15.
+    byte_offset: 1276
+    bit_size: 16
+    fieldset: PCRD15
+  - name: PFSRD15
+    description: desc PFSRD15.
+    byte_offset: 1278
+    bit_size: 16
+    fieldset: PFSRD15
+  - name: PCRE0
+    description: desc PCRE0.
+    byte_offset: 1280
+    bit_size: 16
+    fieldset: PCRE0
+  - name: PFSRE0
+    description: desc PFSRE0.
+    byte_offset: 1282
+    bit_size: 16
+    fieldset: PFSRE0
+  - name: PCRE1
+    description: desc PCRE1.
+    byte_offset: 1284
+    bit_size: 16
+    fieldset: PCRE1
+  - name: PFSRE1
+    description: desc PFSRE1.
+    byte_offset: 1286
+    bit_size: 16
+    fieldset: PFSRE1
+  - name: PCRE2
+    description: desc PCRE2.
+    byte_offset: 1288
+    bit_size: 16
+    fieldset: PCRE2
+  - name: PFSRE2
+    description: desc PFSRE2.
+    byte_offset: 1290
+    bit_size: 16
+    fieldset: PFSRE2
+  - name: PCRE3
+    description: desc PCRE3.
+    byte_offset: 1292
+    bit_size: 16
+    fieldset: PCRE3
+  - name: PFSRE3
+    description: desc PFSRE3.
+    byte_offset: 1294
+    bit_size: 16
+    fieldset: PFSRE3
+  - name: PCRE4
+    description: desc PCRE4.
+    byte_offset: 1296
+    bit_size: 16
+    fieldset: PCRE4
+  - name: PFSRE4
+    description: desc PFSRE4.
+    byte_offset: 1298
+    bit_size: 16
+    fieldset: PFSRE4
+  - name: PCRE5
+    description: desc PCRE5.
+    byte_offset: 1300
+    bit_size: 16
+    fieldset: PCRE5
+  - name: PFSRE5
+    description: desc PFSRE5.
+    byte_offset: 1302
+    bit_size: 16
+    fieldset: PFSRE5
+  - name: PCRE6
+    description: desc PCRE6.
+    byte_offset: 1304
+    bit_size: 16
+    fieldset: PCRE6
+  - name: PFSRE6
+    description: desc PFSRE6.
+    byte_offset: 1306
+    bit_size: 16
+    fieldset: PFSRE6
+  - name: PCRE7
+    description: desc PCRE7.
+    byte_offset: 1308
+    bit_size: 16
+    fieldset: PCRE7
+  - name: PFSRE7
+    description: desc PFSRE7.
+    byte_offset: 1310
+    bit_size: 16
+    fieldset: PFSRE7
+  - name: PCRE8
+    description: desc PCRE8.
+    byte_offset: 1312
+    bit_size: 16
+    fieldset: PCRE8
+  - name: PFSRE8
+    description: desc PFSRE8.
+    byte_offset: 1314
+    bit_size: 16
+    fieldset: PFSRE8
+  - name: PCRE9
+    description: desc PCRE9.
+    byte_offset: 1316
+    bit_size: 16
+    fieldset: PCRE9
+  - name: PFSRE9
+    description: desc PFSRE9.
+    byte_offset: 1318
+    bit_size: 16
+    fieldset: PFSRE9
+  - name: PCRE10
+    description: desc PCRE10.
+    byte_offset: 1320
+    bit_size: 16
+    fieldset: PCRE10
+  - name: PFSRE10
+    description: desc PFSRE10.
+    byte_offset: 1322
+    bit_size: 16
+    fieldset: PFSRE10
+  - name: PCRE11
+    description: desc PCRE11.
+    byte_offset: 1324
+    bit_size: 16
+    fieldset: PCRE11
+  - name: PFSRE11
+    description: desc PFSRE11.
+    byte_offset: 1326
+    bit_size: 16
+    fieldset: PFSRE11
+  - name: PCRE12
+    description: desc PCRE12.
+    byte_offset: 1328
+    bit_size: 16
+    fieldset: PCRE12
+  - name: PFSRE12
+    description: desc PFSRE12.
+    byte_offset: 1330
+    bit_size: 16
+    fieldset: PFSRE12
+  - name: PCRE13
+    description: desc PCRE13.
+    byte_offset: 1332
+    bit_size: 16
+    fieldset: PCRE13
+  - name: PFSRE13
+    description: desc PFSRE13.
+    byte_offset: 1334
+    bit_size: 16
+    fieldset: PFSRE13
+  - name: PCRE14
+    description: desc PCRE14.
+    byte_offset: 1336
+    bit_size: 16
+    fieldset: PCRE14
+  - name: PFSRE14
+    description: desc PFSRE14.
+    byte_offset: 1338
+    bit_size: 16
+    fieldset: PFSRE14
+  - name: PCRE15
+    description: desc PCRE15.
+    byte_offset: 1340
+    bit_size: 16
+    fieldset: PCRE15
+  - name: PFSRE15
+    description: desc PFSRE15.
+    byte_offset: 1342
+    bit_size: 16
+    fieldset: PFSRE15
+  - name: PCRH0
+    description: desc PCRH0.
+    byte_offset: 1344
+    bit_size: 16
+    fieldset: PCRH0
+  - name: PFSRH0
+    description: desc PFSRH0.
+    byte_offset: 1346
+    bit_size: 16
+    fieldset: PFSRH0
+  - name: PCRH1
+    description: desc PCRH1.
+    byte_offset: 1348
+    bit_size: 16
+    fieldset: PCRH1
+  - name: PFSRH1
+    description: desc PFSRH1.
+    byte_offset: 1350
+    bit_size: 16
+    fieldset: PFSRH1
+  - name: PCRH2
+    description: desc PCRH2.
+    byte_offset: 1352
+    bit_size: 16
+    fieldset: PCRH2
+  - name: PFSRH2
+    description: desc PFSRH2.
+    byte_offset: 1354
+    bit_size: 16
+    fieldset: PFSRH2
+fieldset/PCCR:
+  description: desc PCCR.
+  bit_size: 16
+  fields:
+  - name: BFSEL
+    description: desc BFSEL.
+    bit_offset: 0
+    bit_size: 4
+  - name: RDWT
+    description: desc RDWT.
+    bit_offset: 14
+    bit_size: 2
+fieldset/PCRA0:
+  description: desc PCRA0.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA1:
+  description: desc PCRA1.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA10:
+  description: desc PCRA10.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA11:
+  description: desc PCRA11.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA12:
+  description: desc PCRA12.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA13:
+  description: desc PCRA13.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA14:
+  description: desc PCRA14.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA15:
+  description: desc PCRA15.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA2:
+  description: desc PCRA2.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA3:
+  description: desc PCRA3.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA4:
+  description: desc PCRA4.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA5:
+  description: desc PCRA5.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA6:
+  description: desc PCRA6.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA7:
+  description: desc PCRA7.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA8:
+  description: desc PCRA8.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRA9:
+  description: desc PCRA9.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB0:
+  description: desc PCRB0.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB1:
+  description: desc PCRB1.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB10:
+  description: desc PCRB10.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB11:
+  description: desc PCRB11.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB12:
+  description: desc PCRB12.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB13:
+  description: desc PCRB13.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB14:
+  description: desc PCRB14.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB15:
+  description: desc PCRB15.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB2:
+  description: desc PCRB2.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB3:
+  description: desc PCRB3.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB4:
+  description: desc PCRB4.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB5:
+  description: desc PCRB5.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB6:
+  description: desc PCRB6.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB7:
+  description: desc PCRB7.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB8:
+  description: desc PCRB8.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRB9:
+  description: desc PCRB9.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC0:
+  description: desc PCRC0.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC1:
+  description: desc PCRC1.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC10:
+  description: desc PCRC10.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC11:
+  description: desc PCRC11.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC12:
+  description: desc PCRC12.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC13:
+  description: desc PCRC13.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC14:
+  description: desc PCRC14.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC15:
+  description: desc PCRC15.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC2:
+  description: desc PCRC2.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC3:
+  description: desc PCRC3.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC4:
+  description: desc PCRC4.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC5:
+  description: desc PCRC5.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC6:
+  description: desc PCRC6.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC7:
+  description: desc PCRC7.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC8:
+  description: desc PCRC8.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRC9:
+  description: desc PCRC9.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD0:
+  description: desc PCRD0.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD1:
+  description: desc PCRD1.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD10:
+  description: desc PCRD10.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD11:
+  description: desc PCRD11.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD12:
+  description: desc PCRD12.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD13:
+  description: desc PCRD13.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD14:
+  description: desc PCRD14.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD15:
+  description: desc PCRD15.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD2:
+  description: desc PCRD2.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD3:
+  description: desc PCRD3.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD4:
+  description: desc PCRD4.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD5:
+  description: desc PCRD5.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD6:
+  description: desc PCRD6.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD7:
+  description: desc PCRD7.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD8:
+  description: desc PCRD8.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRD9:
+  description: desc PCRD9.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE0:
+  description: desc PCRE0.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE1:
+  description: desc PCRE1.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE10:
+  description: desc PCRE10.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE11:
+  description: desc PCRE11.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE12:
+  description: desc PCRE12.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE13:
+  description: desc PCRE13.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE14:
+  description: desc PCRE14.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE15:
+  description: desc PCRE15.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE2:
+  description: desc PCRE2.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE3:
+  description: desc PCRE3.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE4:
+  description: desc PCRE4.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE5:
+  description: desc PCRE5.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE6:
+  description: desc PCRE6.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE7:
+  description: desc PCRE7.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE8:
+  description: desc PCRE8.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRE9:
+  description: desc PCRE9.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRH0:
+  description: desc PCRH0.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRH1:
+  description: desc PCRH1.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PCRH2:
+  description: desc PCRH2.
+  bit_size: 16
+  fields:
+  - name: POUT
+    description: desc POUT.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE
+    description: desc POUTE.
+    bit_offset: 1
+    bit_size: 1
+  - name: NOD
+    description: desc NOD.
+    bit_offset: 2
+    bit_size: 1
+  - name: DRV
+    description: desc DRV.
+    bit_offset: 4
+    bit_size: 2
+  - name: PUU
+    description: desc PUU.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN
+    description: desc PIN.
+    bit_offset: 8
+    bit_size: 1
+  - name: INVE
+    description: desc INVE.
+    bit_offset: 9
+    bit_size: 1
+  - name: INTE
+    description: desc INTE.
+    bit_offset: 12
+    bit_size: 1
+  - name: LTE
+    description: desc LTE.
+    bit_offset: 14
+    bit_size: 1
+  - name: DDIS
+    description: desc DDIS.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PFSRA0:
+  description: desc PFSRA0.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA1:
+  description: desc PFSRA1.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA10:
+  description: desc PFSRA10.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA11:
+  description: desc PFSRA11.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA12:
+  description: desc PFSRA12.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA13:
+  description: desc PFSRA13.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA14:
+  description: desc PFSRA14.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA15:
+  description: desc PFSRA15.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA2:
+  description: desc PFSRA2.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA3:
+  description: desc PFSRA3.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA4:
+  description: desc PFSRA4.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA5:
+  description: desc PFSRA5.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA6:
+  description: desc PFSRA6.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA7:
+  description: desc PFSRA7.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA8:
+  description: desc PFSRA8.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRA9:
+  description: desc PFSRA9.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB0:
+  description: desc PFSRB0.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB1:
+  description: desc PFSRB1.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB10:
+  description: desc PFSRB10.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB11:
+  description: desc PFSRB11.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB12:
+  description: desc PFSRB12.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB13:
+  description: desc PFSRB13.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB14:
+  description: desc PFSRB14.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB15:
+  description: desc PFSRB15.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB2:
+  description: desc PFSRB2.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB3:
+  description: desc PFSRB3.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB4:
+  description: desc PFSRB4.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB5:
+  description: desc PFSRB5.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB6:
+  description: desc PFSRB6.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB7:
+  description: desc PFSRB7.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB8:
+  description: desc PFSRB8.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRB9:
+  description: desc PFSRB9.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC0:
+  description: desc PFSRC0.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC1:
+  description: desc PFSRC1.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC10:
+  description: desc PFSRC10.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC11:
+  description: desc PFSRC11.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC12:
+  description: desc PFSRC12.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC13:
+  description: desc PFSRC13.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC14:
+  description: desc PFSRC14.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC15:
+  description: desc PFSRC15.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC2:
+  description: desc PFSRC2.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC3:
+  description: desc PFSRC3.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC4:
+  description: desc PFSRC4.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC5:
+  description: desc PFSRC5.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC6:
+  description: desc PFSRC6.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC7:
+  description: desc PFSRC7.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC8:
+  description: desc PFSRC8.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRC9:
+  description: desc PFSRC9.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD0:
+  description: desc PFSRD0.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD1:
+  description: desc PFSRD1.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD10:
+  description: desc PFSRD10.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD11:
+  description: desc PFSRD11.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD12:
+  description: desc PFSRD12.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD13:
+  description: desc PFSRD13.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD14:
+  description: desc PFSRD14.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD15:
+  description: desc PFSRD15.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD2:
+  description: desc PFSRD2.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD3:
+  description: desc PFSRD3.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD4:
+  description: desc PFSRD4.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD5:
+  description: desc PFSRD5.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD6:
+  description: desc PFSRD6.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD7:
+  description: desc PFSRD7.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD8:
+  description: desc PFSRD8.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRD9:
+  description: desc PFSRD9.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE0:
+  description: desc PFSRE0.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE1:
+  description: desc PFSRE1.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE10:
+  description: desc PFSRE10.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE11:
+  description: desc PFSRE11.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE12:
+  description: desc PFSRE12.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE13:
+  description: desc PFSRE13.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE14:
+  description: desc PFSRE14.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE15:
+  description: desc PFSRE15.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE2:
+  description: desc PFSRE2.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE3:
+  description: desc PFSRE3.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE4:
+  description: desc PFSRE4.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE5:
+  description: desc PFSRE5.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE6:
+  description: desc PFSRE6.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE7:
+  description: desc PFSRE7.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE8:
+  description: desc PFSRE8.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRE9:
+  description: desc PFSRE9.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRH0:
+  description: desc PFSRH0.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRH1:
+  description: desc PFSRH1.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PFSRH2:
+  description: desc PFSRH2.
+  bit_size: 16
+  fields:
+  - name: FSEL
+    description: desc FSEL.
+    bit_offset: 0
+    bit_size: 6
+  - name: BFE
+    description: desc BFE.
+    bit_offset: 8
+    bit_size: 1
+fieldset/PIDRA:
+  description: desc PIDRA.
+  bit_size: 16
+  fields:
+  - name: PIN00
+    description: desc PIN00.
+    bit_offset: 0
+    bit_size: 1
+  - name: PIN01
+    description: desc PIN01.
+    bit_offset: 1
+    bit_size: 1
+  - name: PIN02
+    description: desc PIN02.
+    bit_offset: 2
+    bit_size: 1
+  - name: PIN03
+    description: desc PIN03.
+    bit_offset: 3
+    bit_size: 1
+  - name: PIN04
+    description: desc PIN04.
+    bit_offset: 4
+    bit_size: 1
+  - name: PIN05
+    description: desc PIN05.
+    bit_offset: 5
+    bit_size: 1
+  - name: PIN06
+    description: desc PIN06.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN07
+    description: desc PIN07.
+    bit_offset: 7
+    bit_size: 1
+  - name: PIN08
+    description: desc PIN08.
+    bit_offset: 8
+    bit_size: 1
+  - name: PIN09
+    description: desc PIN09.
+    bit_offset: 9
+    bit_size: 1
+  - name: PIN10
+    description: desc PIN10.
+    bit_offset: 10
+    bit_size: 1
+  - name: PIN11
+    description: desc PIN11.
+    bit_offset: 11
+    bit_size: 1
+  - name: PIN12
+    description: desc PIN12.
+    bit_offset: 12
+    bit_size: 1
+  - name: PIN13
+    description: desc PIN13.
+    bit_offset: 13
+    bit_size: 1
+  - name: PIN14
+    description: desc PIN14.
+    bit_offset: 14
+    bit_size: 1
+  - name: PIN15
+    description: desc PIN15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PIDRB:
+  description: desc PIDRB.
+  bit_size: 16
+  fields:
+  - name: PIN00
+    description: desc PIN00.
+    bit_offset: 0
+    bit_size: 1
+  - name: PIN01
+    description: desc PIN01.
+    bit_offset: 1
+    bit_size: 1
+  - name: PIN02
+    description: desc PIN02.
+    bit_offset: 2
+    bit_size: 1
+  - name: PIN03
+    description: desc PIN03.
+    bit_offset: 3
+    bit_size: 1
+  - name: PIN04
+    description: desc PIN04.
+    bit_offset: 4
+    bit_size: 1
+  - name: PIN05
+    description: desc PIN05.
+    bit_offset: 5
+    bit_size: 1
+  - name: PIN06
+    description: desc PIN06.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN07
+    description: desc PIN07.
+    bit_offset: 7
+    bit_size: 1
+  - name: PIN08
+    description: desc PIN08.
+    bit_offset: 8
+    bit_size: 1
+  - name: PIN09
+    description: desc PIN09.
+    bit_offset: 9
+    bit_size: 1
+  - name: PIN10
+    description: desc PIN10.
+    bit_offset: 10
+    bit_size: 1
+  - name: PIN11
+    description: desc PIN11.
+    bit_offset: 11
+    bit_size: 1
+  - name: PIN12
+    description: desc PIN12.
+    bit_offset: 12
+    bit_size: 1
+  - name: PIN13
+    description: desc PIN13.
+    bit_offset: 13
+    bit_size: 1
+  - name: PIN14
+    description: desc PIN14.
+    bit_offset: 14
+    bit_size: 1
+  - name: PIN15
+    description: desc PIN15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PIDRC:
+  description: desc PIDRC.
+  bit_size: 16
+  fields:
+  - name: PIN00
+    description: desc PIN00.
+    bit_offset: 0
+    bit_size: 1
+  - name: PIN01
+    description: desc PIN01.
+    bit_offset: 1
+    bit_size: 1
+  - name: PIN02
+    description: desc PIN02.
+    bit_offset: 2
+    bit_size: 1
+  - name: PIN03
+    description: desc PIN03.
+    bit_offset: 3
+    bit_size: 1
+  - name: PIN04
+    description: desc PIN04.
+    bit_offset: 4
+    bit_size: 1
+  - name: PIN05
+    description: desc PIN05.
+    bit_offset: 5
+    bit_size: 1
+  - name: PIN06
+    description: desc PIN06.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN07
+    description: desc PIN07.
+    bit_offset: 7
+    bit_size: 1
+  - name: PIN08
+    description: desc PIN08.
+    bit_offset: 8
+    bit_size: 1
+  - name: PIN09
+    description: desc PIN09.
+    bit_offset: 9
+    bit_size: 1
+  - name: PIN10
+    description: desc PIN10.
+    bit_offset: 10
+    bit_size: 1
+  - name: PIN11
+    description: desc PIN11.
+    bit_offset: 11
+    bit_size: 1
+  - name: PIN12
+    description: desc PIN12.
+    bit_offset: 12
+    bit_size: 1
+  - name: PIN13
+    description: desc PIN13.
+    bit_offset: 13
+    bit_size: 1
+  - name: PIN14
+    description: desc PIN14.
+    bit_offset: 14
+    bit_size: 1
+  - name: PIN15
+    description: desc PIN15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PIDRD:
+  description: desc PIDRD.
+  bit_size: 16
+  fields:
+  - name: PIN00
+    description: desc PIN00.
+    bit_offset: 0
+    bit_size: 1
+  - name: PIN01
+    description: desc PIN01.
+    bit_offset: 1
+    bit_size: 1
+  - name: PIN02
+    description: desc PIN02.
+    bit_offset: 2
+    bit_size: 1
+  - name: PIN03
+    description: desc PIN03.
+    bit_offset: 3
+    bit_size: 1
+  - name: PIN04
+    description: desc PIN04.
+    bit_offset: 4
+    bit_size: 1
+  - name: PIN05
+    description: desc PIN05.
+    bit_offset: 5
+    bit_size: 1
+  - name: PIN06
+    description: desc PIN06.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN07
+    description: desc PIN07.
+    bit_offset: 7
+    bit_size: 1
+  - name: PIN08
+    description: desc PIN08.
+    bit_offset: 8
+    bit_size: 1
+  - name: PIN09
+    description: desc PIN09.
+    bit_offset: 9
+    bit_size: 1
+  - name: PIN10
+    description: desc PIN10.
+    bit_offset: 10
+    bit_size: 1
+  - name: PIN11
+    description: desc PIN11.
+    bit_offset: 11
+    bit_size: 1
+  - name: PIN12
+    description: desc PIN12.
+    bit_offset: 12
+    bit_size: 1
+  - name: PIN13
+    description: desc PIN13.
+    bit_offset: 13
+    bit_size: 1
+  - name: PIN14
+    description: desc PIN14.
+    bit_offset: 14
+    bit_size: 1
+  - name: PIN15
+    description: desc PIN15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PIDRE:
+  description: desc PIDRE.
+  bit_size: 16
+  fields:
+  - name: PIN00
+    description: desc PIN00.
+    bit_offset: 0
+    bit_size: 1
+  - name: PIN01
+    description: desc PIN01.
+    bit_offset: 1
+    bit_size: 1
+  - name: PIN02
+    description: desc PIN02.
+    bit_offset: 2
+    bit_size: 1
+  - name: PIN03
+    description: desc PIN03.
+    bit_offset: 3
+    bit_size: 1
+  - name: PIN04
+    description: desc PIN04.
+    bit_offset: 4
+    bit_size: 1
+  - name: PIN05
+    description: desc PIN05.
+    bit_offset: 5
+    bit_size: 1
+  - name: PIN06
+    description: desc PIN06.
+    bit_offset: 6
+    bit_size: 1
+  - name: PIN07
+    description: desc PIN07.
+    bit_offset: 7
+    bit_size: 1
+  - name: PIN08
+    description: desc PIN08.
+    bit_offset: 8
+    bit_size: 1
+  - name: PIN09
+    description: desc PIN09.
+    bit_offset: 9
+    bit_size: 1
+  - name: PIN10
+    description: desc PIN10.
+    bit_offset: 10
+    bit_size: 1
+  - name: PIN11
+    description: desc PIN11.
+    bit_offset: 11
+    bit_size: 1
+  - name: PIN12
+    description: desc PIN12.
+    bit_offset: 12
+    bit_size: 1
+  - name: PIN13
+    description: desc PIN13.
+    bit_offset: 13
+    bit_size: 1
+  - name: PIN14
+    description: desc PIN14.
+    bit_offset: 14
+    bit_size: 1
+  - name: PIN15
+    description: desc PIN15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PIDRH:
+  description: desc PIDRH.
+  bit_size: 16
+  fields:
+  - name: PIN00
+    description: desc PIN00.
+    bit_offset: 0
+    bit_size: 1
+  - name: PIN01
+    description: desc PIN01.
+    bit_offset: 1
+    bit_size: 1
+  - name: PIN02
+    description: desc PIN02.
+    bit_offset: 2
+    bit_size: 1
+fieldset/PINAER:
+  description: desc PINAER.
+  bit_size: 16
+  fields:
+  - name: PINAE
+    description: desc PINAE.
+    bit_offset: 0
+    bit_size: 6
+fieldset/PODRA:
+  description: desc PODRA.
+  bit_size: 16
+  fields:
+  - name: POUT00
+    description: desc POUT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUT01
+    description: desc POUT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUT02
+    description: desc POUT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUT03
+    description: desc POUT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUT04
+    description: desc POUT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUT05
+    description: desc POUT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUT06
+    description: desc POUT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUT07
+    description: desc POUT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUT08
+    description: desc POUT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUT09
+    description: desc POUT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUT10
+    description: desc POUT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUT11
+    description: desc POUT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUT12
+    description: desc POUT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUT13
+    description: desc POUT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUT14
+    description: desc POUT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUT15
+    description: desc POUT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PODRB:
+  description: desc PODRB.
+  bit_size: 16
+  fields:
+  - name: POUT00
+    description: desc POUT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUT01
+    description: desc POUT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUT02
+    description: desc POUT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUT03
+    description: desc POUT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUT04
+    description: desc POUT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUT05
+    description: desc POUT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUT06
+    description: desc POUT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUT07
+    description: desc POUT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUT08
+    description: desc POUT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUT09
+    description: desc POUT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUT10
+    description: desc POUT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUT11
+    description: desc POUT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUT12
+    description: desc POUT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUT13
+    description: desc POUT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUT14
+    description: desc POUT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUT15
+    description: desc POUT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PODRC:
+  description: desc PODRC.
+  bit_size: 16
+  fields:
+  - name: POUT00
+    description: desc POUT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUT01
+    description: desc POUT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUT02
+    description: desc POUT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUT03
+    description: desc POUT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUT04
+    description: desc POUT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUT05
+    description: desc POUT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUT06
+    description: desc POUT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUT07
+    description: desc POUT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUT08
+    description: desc POUT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUT09
+    description: desc POUT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUT10
+    description: desc POUT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUT11
+    description: desc POUT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUT12
+    description: desc POUT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUT13
+    description: desc POUT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUT14
+    description: desc POUT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUT15
+    description: desc POUT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PODRD:
+  description: desc PODRD.
+  bit_size: 16
+  fields:
+  - name: POUT00
+    description: desc POUT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUT01
+    description: desc POUT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUT02
+    description: desc POUT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUT03
+    description: desc POUT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUT04
+    description: desc POUT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUT05
+    description: desc POUT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUT06
+    description: desc POUT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUT07
+    description: desc POUT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUT08
+    description: desc POUT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUT09
+    description: desc POUT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUT10
+    description: desc POUT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUT11
+    description: desc POUT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUT12
+    description: desc POUT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUT13
+    description: desc POUT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUT14
+    description: desc POUT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUT15
+    description: desc POUT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PODRE:
+  description: desc PODRE.
+  bit_size: 16
+  fields:
+  - name: POUT00
+    description: desc POUT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUT01
+    description: desc POUT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUT02
+    description: desc POUT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUT03
+    description: desc POUT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUT04
+    description: desc POUT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUT05
+    description: desc POUT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUT06
+    description: desc POUT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUT07
+    description: desc POUT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUT08
+    description: desc POUT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUT09
+    description: desc POUT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUT10
+    description: desc POUT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUT11
+    description: desc POUT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUT12
+    description: desc POUT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUT13
+    description: desc POUT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUT14
+    description: desc POUT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUT15
+    description: desc POUT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PODRH:
+  description: desc PODRH.
+  bit_size: 16
+  fields:
+  - name: POUT00
+    description: desc POUT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUT01
+    description: desc POUT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUT02
+    description: desc POUT02.
+    bit_offset: 2
+    bit_size: 1
+fieldset/POERA:
+  description: desc POERA.
+  bit_size: 16
+  fields:
+  - name: POUTE00
+    description: desc POUTE00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE01
+    description: desc POUTE01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUTE02
+    description: desc POUTE02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUTE03
+    description: desc POUTE03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUTE04
+    description: desc POUTE04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUTE05
+    description: desc POUTE05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUTE06
+    description: desc POUTE06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUTE07
+    description: desc POUTE07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUTE08
+    description: desc POUTE08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUTE09
+    description: desc POUTE09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUTE10
+    description: desc POUTE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUTE11
+    description: desc POUTE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUTE12
+    description: desc POUTE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUTE13
+    description: desc POUTE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUTE14
+    description: desc POUTE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUTE15
+    description: desc POUTE15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POERB:
+  description: desc POERB.
+  bit_size: 16
+  fields:
+  - name: POUTE00
+    description: desc POUTE00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE01
+    description: desc POUTE01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUTE02
+    description: desc POUTE02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUTE03
+    description: desc POUTE03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUTE04
+    description: desc POUTE04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUTE05
+    description: desc POUTE05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUTE06
+    description: desc POUTE06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUTE07
+    description: desc POUTE07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUTE08
+    description: desc POUTE08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUTE09
+    description: desc POUTE09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUTE10
+    description: desc POUTE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUTE11
+    description: desc POUTE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUTE12
+    description: desc POUTE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUTE13
+    description: desc POUTE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUTE14
+    description: desc POUTE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUTE15
+    description: desc POUTE15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POERC:
+  description: desc POERC.
+  bit_size: 16
+  fields:
+  - name: POUTE00
+    description: desc POUTE00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE01
+    description: desc POUTE01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUTE02
+    description: desc POUTE02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUTE03
+    description: desc POUTE03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUTE04
+    description: desc POUTE04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUTE05
+    description: desc POUTE05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUTE06
+    description: desc POUTE06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUTE07
+    description: desc POUTE07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUTE08
+    description: desc POUTE08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUTE09
+    description: desc POUTE09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUTE10
+    description: desc POUTE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUTE11
+    description: desc POUTE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUTE12
+    description: desc POUTE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUTE13
+    description: desc POUTE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUTE14
+    description: desc POUTE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUTE15
+    description: desc POUTE15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POERD:
+  description: desc POERD.
+  bit_size: 16
+  fields:
+  - name: POUTE00
+    description: desc POUTE00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE01
+    description: desc POUTE01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUTE02
+    description: desc POUTE02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUTE03
+    description: desc POUTE03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUTE04
+    description: desc POUTE04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUTE05
+    description: desc POUTE05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUTE06
+    description: desc POUTE06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUTE07
+    description: desc POUTE07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUTE08
+    description: desc POUTE08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUTE09
+    description: desc POUTE09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUTE10
+    description: desc POUTE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUTE11
+    description: desc POUTE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUTE12
+    description: desc POUTE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUTE13
+    description: desc POUTE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUTE14
+    description: desc POUTE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUTE15
+    description: desc POUTE15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POERE:
+  description: desc POERE.
+  bit_size: 16
+  fields:
+  - name: POUTE00
+    description: desc POUTE00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE01
+    description: desc POUTE01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUTE02
+    description: desc POUTE02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POUTE03
+    description: desc POUTE03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POUTE04
+    description: desc POUTE04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POUTE05
+    description: desc POUTE05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POUTE06
+    description: desc POUTE06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POUTE07
+    description: desc POUTE07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POUTE08
+    description: desc POUTE08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POUTE09
+    description: desc POUTE09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POUTE10
+    description: desc POUTE10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POUTE11
+    description: desc POUTE11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POUTE12
+    description: desc POUTE12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POUTE13
+    description: desc POUTE13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POUTE14
+    description: desc POUTE14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POUTE15
+    description: desc POUTE15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POERH:
+  description: desc POERH.
+  bit_size: 16
+  fields:
+  - name: POUTE00
+    description: desc POUTE00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POUTE01
+    description: desc POUTE01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POUTE02
+    description: desc POUTE02.
+    bit_offset: 2
+    bit_size: 1
+fieldset/PORRA:
+  description: desc PORRA.
+  bit_size: 16
+  fields:
+  - name: POR00
+    description: desc POR00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POR01
+    description: desc POR01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POR02
+    description: desc POR02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POR03
+    description: desc POR03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POR04
+    description: desc POR04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POR05
+    description: desc POR05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POR06
+    description: desc POR06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POR07
+    description: desc POR07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POR08
+    description: desc POR08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POR09
+    description: desc POR09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POR10
+    description: desc POR10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POR11
+    description: desc POR11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POR12
+    description: desc POR12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POR13
+    description: desc POR13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POR14
+    description: desc POR14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POR15
+    description: desc POR15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PORRB:
+  description: desc PORRB.
+  bit_size: 16
+  fields:
+  - name: POR00
+    description: desc POR00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POR01
+    description: desc POR01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POR02
+    description: desc POR02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POR03
+    description: desc POR03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POR04
+    description: desc POR04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POR05
+    description: desc POR05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POR06
+    description: desc POR06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POR07
+    description: desc POR07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POR08
+    description: desc POR08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POR09
+    description: desc POR09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POR10
+    description: desc POR10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POR11
+    description: desc POR11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POR12
+    description: desc POR12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POR13
+    description: desc POR13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POR14
+    description: desc POR14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POR15
+    description: desc POR15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PORRC:
+  description: desc PORRC.
+  bit_size: 16
+  fields:
+  - name: POR00
+    description: desc POR00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POR01
+    description: desc POR01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POR02
+    description: desc POR02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POR03
+    description: desc POR03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POR04
+    description: desc POR04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POR05
+    description: desc POR05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POR06
+    description: desc POR06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POR07
+    description: desc POR07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POR08
+    description: desc POR08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POR09
+    description: desc POR09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POR10
+    description: desc POR10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POR11
+    description: desc POR11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POR12
+    description: desc POR12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POR13
+    description: desc POR13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POR14
+    description: desc POR14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POR15
+    description: desc POR15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PORRD:
+  description: desc PORRD.
+  bit_size: 16
+  fields:
+  - name: POR00
+    description: desc POR00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POR01
+    description: desc POR01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POR02
+    description: desc POR02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POR03
+    description: desc POR03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POR04
+    description: desc POR04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POR05
+    description: desc POR05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POR06
+    description: desc POR06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POR07
+    description: desc POR07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POR08
+    description: desc POR08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POR09
+    description: desc POR09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POR10
+    description: desc POR10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POR11
+    description: desc POR11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POR12
+    description: desc POR12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POR13
+    description: desc POR13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POR14
+    description: desc POR14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POR15
+    description: desc POR15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PORRE:
+  description: desc PORRE.
+  bit_size: 16
+  fields:
+  - name: POR00
+    description: desc POR00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POR01
+    description: desc POR01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POR02
+    description: desc POR02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POR03
+    description: desc POR03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POR04
+    description: desc POR04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POR05
+    description: desc POR05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POR06
+    description: desc POR06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POR07
+    description: desc POR07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POR08
+    description: desc POR08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POR09
+    description: desc POR09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POR10
+    description: desc POR10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POR11
+    description: desc POR11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POR12
+    description: desc POR12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POR13
+    description: desc POR13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POR14
+    description: desc POR14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POR15
+    description: desc POR15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/PORRH:
+  description: desc PORRH.
+  bit_size: 16
+  fields:
+  - name: POR00
+    description: desc POR00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POR01
+    description: desc POR01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POR02
+    description: desc POR02.
+    bit_offset: 2
+    bit_size: 1
+fieldset/POSRA:
+  description: desc POSRA.
+  bit_size: 16
+  fields:
+  - name: POS00
+    description: desc POS00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POS01
+    description: desc POS01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POS02
+    description: desc POS02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POS03
+    description: desc POS03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POS04
+    description: desc POS04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POS05
+    description: desc POS05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POS06
+    description: desc POS06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POS07
+    description: desc POS07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POS08
+    description: desc POS08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POS09
+    description: desc POS09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POS10
+    description: desc POS10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POS11
+    description: desc POS11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POS12
+    description: desc POS12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POS13
+    description: desc POS13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POS14
+    description: desc POS14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POS15
+    description: desc POS15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POSRB:
+  description: desc POSRB.
+  bit_size: 16
+  fields:
+  - name: POS00
+    description: desc POS00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POS01
+    description: desc POS01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POS02
+    description: desc POS02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POS03
+    description: desc POS03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POS04
+    description: desc POS04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POS05
+    description: desc POS05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POS06
+    description: desc POS06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POS07
+    description: desc POS07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POS08
+    description: desc POS08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POS09
+    description: desc POS09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POS10
+    description: desc POS10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POS11
+    description: desc POS11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POS12
+    description: desc POS12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POS13
+    description: desc POS13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POS14
+    description: desc POS14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POS15
+    description: desc POS15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POSRC:
+  description: desc POSRC.
+  bit_size: 16
+  fields:
+  - name: POS00
+    description: desc POS00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POS01
+    description: desc POS01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POS02
+    description: desc POS02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POS03
+    description: desc POS03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POS04
+    description: desc POS04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POS05
+    description: desc POS05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POS06
+    description: desc POS06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POS07
+    description: desc POS07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POS08
+    description: desc POS08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POS09
+    description: desc POS09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POS10
+    description: desc POS10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POS11
+    description: desc POS11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POS12
+    description: desc POS12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POS13
+    description: desc POS13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POS14
+    description: desc POS14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POS15
+    description: desc POS15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POSRD:
+  description: desc POSRD.
+  bit_size: 16
+  fields:
+  - name: POS00
+    description: desc POS00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POS01
+    description: desc POS01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POS02
+    description: desc POS02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POS03
+    description: desc POS03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POS04
+    description: desc POS04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POS05
+    description: desc POS05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POS06
+    description: desc POS06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POS07
+    description: desc POS07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POS08
+    description: desc POS08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POS09
+    description: desc POS09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POS10
+    description: desc POS10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POS11
+    description: desc POS11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POS12
+    description: desc POS12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POS13
+    description: desc POS13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POS14
+    description: desc POS14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POS15
+    description: desc POS15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POSRE:
+  description: desc POSRE.
+  bit_size: 16
+  fields:
+  - name: POS00
+    description: desc POS00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POS01
+    description: desc POS01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POS02
+    description: desc POS02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POS03
+    description: desc POS03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POS04
+    description: desc POS04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POS05
+    description: desc POS05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POS06
+    description: desc POS06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POS07
+    description: desc POS07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POS08
+    description: desc POS08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POS09
+    description: desc POS09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POS10
+    description: desc POS10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POS11
+    description: desc POS11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POS12
+    description: desc POS12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POS13
+    description: desc POS13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POS14
+    description: desc POS14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POS15
+    description: desc POS15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POSRH:
+  description: desc POSRH.
+  bit_size: 16
+  fields:
+  - name: POS00
+    description: desc POS00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POS01
+    description: desc POS01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POS02
+    description: desc POS02.
+    bit_offset: 2
+    bit_size: 1
+fieldset/POTRA:
+  description: desc POTRA.
+  bit_size: 16
+  fields:
+  - name: POT00
+    description: desc POT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POT01
+    description: desc POT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POT02
+    description: desc POT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POT03
+    description: desc POT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POT04
+    description: desc POT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POT05
+    description: desc POT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POT06
+    description: desc POT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POT07
+    description: desc POT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POT08
+    description: desc POT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POT09
+    description: desc POT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POT10
+    description: desc POT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POT11
+    description: desc POT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POT12
+    description: desc POT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POT13
+    description: desc POT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POT14
+    description: desc POT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POT15
+    description: desc POT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POTRB:
+  description: desc POTRB.
+  bit_size: 16
+  fields:
+  - name: POT00
+    description: desc POT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POT01
+    description: desc POT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POT02
+    description: desc POT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POT03
+    description: desc POT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POT04
+    description: desc POT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POT05
+    description: desc POT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POT06
+    description: desc POT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POT07
+    description: desc POT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POT08
+    description: desc POT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POT09
+    description: desc POT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POT10
+    description: desc POT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POT11
+    description: desc POT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POT12
+    description: desc POT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POT13
+    description: desc POT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POT14
+    description: desc POT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POT15
+    description: desc POT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POTRC:
+  description: desc POTRC.
+  bit_size: 16
+  fields:
+  - name: POT00
+    description: desc POT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POT01
+    description: desc POT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POT02
+    description: desc POT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POT03
+    description: desc POT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POT04
+    description: desc POT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POT05
+    description: desc POT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POT06
+    description: desc POT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POT07
+    description: desc POT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POT08
+    description: desc POT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POT09
+    description: desc POT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POT10
+    description: desc POT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POT11
+    description: desc POT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POT12
+    description: desc POT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POT13
+    description: desc POT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POT14
+    description: desc POT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POT15
+    description: desc POT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POTRD:
+  description: desc POTRD.
+  bit_size: 16
+  fields:
+  - name: POT00
+    description: desc POT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POT01
+    description: desc POT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POT02
+    description: desc POT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POT03
+    description: desc POT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POT04
+    description: desc POT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POT05
+    description: desc POT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POT06
+    description: desc POT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POT07
+    description: desc POT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POT08
+    description: desc POT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POT09
+    description: desc POT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POT10
+    description: desc POT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POT11
+    description: desc POT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POT12
+    description: desc POT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POT13
+    description: desc POT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POT14
+    description: desc POT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POT15
+    description: desc POT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POTRE:
+  description: desc POTRE.
+  bit_size: 16
+  fields:
+  - name: POT00
+    description: desc POT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POT01
+    description: desc POT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POT02
+    description: desc POT02.
+    bit_offset: 2
+    bit_size: 1
+  - name: POT03
+    description: desc POT03.
+    bit_offset: 3
+    bit_size: 1
+  - name: POT04
+    description: desc POT04.
+    bit_offset: 4
+    bit_size: 1
+  - name: POT05
+    description: desc POT05.
+    bit_offset: 5
+    bit_size: 1
+  - name: POT06
+    description: desc POT06.
+    bit_offset: 6
+    bit_size: 1
+  - name: POT07
+    description: desc POT07.
+    bit_offset: 7
+    bit_size: 1
+  - name: POT08
+    description: desc POT08.
+    bit_offset: 8
+    bit_size: 1
+  - name: POT09
+    description: desc POT09.
+    bit_offset: 9
+    bit_size: 1
+  - name: POT10
+    description: desc POT10.
+    bit_offset: 10
+    bit_size: 1
+  - name: POT11
+    description: desc POT11.
+    bit_offset: 11
+    bit_size: 1
+  - name: POT12
+    description: desc POT12.
+    bit_offset: 12
+    bit_size: 1
+  - name: POT13
+    description: desc POT13.
+    bit_offset: 13
+    bit_size: 1
+  - name: POT14
+    description: desc POT14.
+    bit_offset: 14
+    bit_size: 1
+  - name: POT15
+    description: desc POT15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/POTRH:
+  description: desc POTRH.
+  bit_size: 16
+  fields:
+  - name: POT00
+    description: desc POT00.
+    bit_offset: 0
+    bit_size: 1
+  - name: POT01
+    description: desc POT01.
+    bit_offset: 1
+    bit_size: 1
+  - name: POT02
+    description: desc POT02.
+    bit_offset: 2
+    bit_size: 1
+fieldset/PSPCR:
+  description: desc PSPCR.
+  bit_size: 16
+  fields:
+  - name: SPFE
+    description: desc SPFE.
+    bit_offset: 0
+    bit_size: 5
+fieldset/PWPR:
+  description: desc PWPR.
+  bit_size: 16
+  fields:
+  - name: WE
+    description: desc WE.
+    bit_offset: 0
+    bit_size: 1
+  - name: WP
+    description: desc WP.
+    bit_offset: 8
+    bit_size: 8

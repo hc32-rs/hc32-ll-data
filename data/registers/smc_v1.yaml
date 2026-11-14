@@ -1,0 +1,249 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A448/SMC；覆盖系列：HC32A448, HC32F448。
+block/SMC:
+  description: desc SMC.
+  items:
+  - name: STSR
+    description: desc STSR.
+    byte_offset: 0
+    access: Read
+    fieldset: STSR
+  - name: STCR0
+    description: desc STCR0.
+    byte_offset: 8
+    access: Write
+    fieldset: STCR0
+  - name: STCR1
+    description: desc STCR1.
+    byte_offset: 12
+    access: Write
+    fieldset: STCR1
+  - name: CMDR
+    description: desc CMDR.
+    byte_offset: 16
+    access: Write
+    fieldset: CMDR
+  - name: TMCR
+    description: desc TMCR.
+    byte_offset: 20
+    access: Write
+    fieldset: TMCR
+  - name: CPCR
+    description: desc CPCR.
+    byte_offset: 24
+    access: Write
+    fieldset: CPCR
+  - name: RFTR
+    description: desc RFTR.
+    byte_offset: 32
+    fieldset: RFTR
+  - name: TMSR0
+    description: desc TMSR0.
+    byte_offset: 256
+    access: Read
+    fieldset: TMSR0
+  - name: CPSR0
+    description: desc CPSR0.
+    byte_offset: 260
+    access: Read
+    fieldset: CPSR0
+  - name: BACR
+    description: desc BACR.
+    byte_offset: 512
+    fieldset: BACR
+  - name: CSCR0
+    description: desc CSCR0.
+    byte_offset: 520
+    fieldset: CSCR0
+  - name: CSCR1
+    description: desc CSCR1.
+    byte_offset: 524
+    fieldset: CSCR1
+fieldset/BACR:
+  description: desc BACR.
+  fields:
+  - name: MUXMD
+    description: desc MUXMD.
+    bit_offset: 4
+    bit_size: 1
+  - name: CKSEL
+    description: desc CKSEL.
+    bit_offset: 14
+    bit_size: 2
+fieldset/CMDR:
+  description: desc CMDR.
+  fields:
+  - name: CMDADD
+    description: desc CMDADD.
+    bit_offset: 0
+    bit_size: 20
+  - name: CRES
+    description: desc CRES.
+    bit_offset: 20
+    bit_size: 1
+  - name: CMD
+    description: desc CMD.
+    bit_offset: 21
+    bit_size: 2
+  - name: CMDCHIP
+    description: desc CMDCHIP.
+    bit_offset: 23
+    bit_size: 3
+fieldset/CPCR:
+  description: desc CPCR.
+  fields:
+  - name: RSYN
+    description: desc RSYN.
+    bit_offset: 0
+    bit_size: 1
+  - name: WSYN
+    description: desc WSYN.
+    bit_offset: 4
+    bit_size: 1
+  - name: MW
+    description: desc MW.
+    bit_offset: 8
+    bit_size: 2
+  - name: BAAS
+    description: desc BAAS.
+    bit_offset: 10
+    bit_size: 1
+  - name: ADVS
+    description: desc ADVS.
+    bit_offset: 11
+    bit_size: 1
+  - name: BLSS
+    description: desc BLSS.
+    bit_offset: 12
+    bit_size: 1
+fieldset/CPSR0:
+  description: desc CPSR0.
+  fields:
+  - name: RSYN
+    description: desc RSYN.
+    bit_offset: 0
+    bit_size: 1
+  - name: WSYN
+    description: desc WSYN.
+    bit_offset: 4
+    bit_size: 1
+  - name: MW
+    description: desc MW.
+    bit_offset: 8
+    bit_size: 2
+  - name: BAAS
+    description: desc BAAS.
+    bit_offset: 10
+    bit_size: 1
+  - name: ADVS
+    description: desc ADVS.
+    bit_offset: 11
+    bit_size: 1
+  - name: BLSS
+    description: desc BLSS.
+    bit_offset: 12
+    bit_size: 1
+  - name: ADDMSK
+    description: desc ADDMSK.
+    bit_offset: 16
+    bit_size: 8
+  - name: ADDMAT
+    description: desc ADDMAT.
+    bit_offset: 24
+    bit_size: 8
+fieldset/CSCR0:
+  description: desc CSCR0.
+  fields:
+  - name: ADDMSK0
+    description: desc ADDMSK0.
+    bit_offset: 0
+    bit_size: 8
+fieldset/CSCR1:
+  description: desc CSCR1.
+  fields:
+  - name: ADDMAT0
+    description: desc ADDMAT0.
+    bit_offset: 0
+    bit_size: 8
+fieldset/RFTR:
+  description: desc RFTR.
+  fields:
+  - name: REFPRD
+    description: desc REFPRD.
+    bit_offset: 0
+    bit_size: 4
+fieldset/STCR0:
+  description: desc STCR0.
+  fields:
+  - name: LPWIR
+    description: desc LPWIR.
+    bit_offset: 2
+    bit_size: 1
+fieldset/STCR1:
+  description: desc STCR1.
+  fields:
+  - name: LPWOR
+    description: desc LPWOR.
+    bit_offset: 2
+    bit_size: 1
+fieldset/STSR:
+  description: desc STSR.
+  fields:
+  - name: STATUS
+    description: desc STATUS.
+    bit_offset: 0
+    bit_size: 1
+fieldset/TMCR:
+  description: desc TMCR.
+  fields:
+  - name: T_RC
+    description: desc T_RC.
+    bit_offset: 0
+    bit_size: 4
+  - name: T_WC
+    description: desc T_WC.
+    bit_offset: 4
+    bit_size: 4
+  - name: T_CEOE
+    description: desc T_CEOE.
+    bit_offset: 8
+    bit_size: 3
+  - name: T_WP
+    description: desc T_WP.
+    bit_offset: 12
+    bit_size: 3
+  - name: T_TR
+    description: desc T_TR.
+    bit_offset: 20
+    bit_size: 3
+  - name: T_ADV
+    description: desc T_ADV.
+    bit_offset: 24
+    bit_size: 3
+fieldset/TMSR0:
+  description: desc TMSR0.
+  fields:
+  - name: T_RC
+    description: desc T_RC.
+    bit_offset: 0
+    bit_size: 4
+  - name: T_WC
+    description: desc T_WC.
+    bit_offset: 4
+    bit_size: 4
+  - name: T_CEOE
+    description: desc T_CEOE.
+    bit_offset: 8
+    bit_size: 3
+  - name: T_WP
+    description: desc T_WP.
+    bit_offset: 12
+    bit_size: 3
+  - name: T_TR
+    description: desc T_TR.
+    bit_offset: 20
+    bit_size: 3
+  - name: T_ADV
+    description: desc T_ADV.
+    bit_offset: 24
+    bit_size: 3

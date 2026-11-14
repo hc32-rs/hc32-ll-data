@@ -1,0 +1,19 @@
+# HC32F467 Flash 1024K / SRAM 512K 的内存布局（型号：HC32F467KGTI, HC32F467PGTI, HC32F467RGTI…）。
+# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+memory:
+- name: FLASH
+  kind: flash
+  address: 0x0
+  size: 1024K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: SRAM
+  kind: ram
+  address: 0x1FFE0000
+  size: 512K
+  access:
+    read: true
+    write: true
+    execute: true

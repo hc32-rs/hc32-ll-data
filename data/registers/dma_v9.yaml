@@ -1,0 +1,459 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/DMA；覆盖系列：HC32K116, HC32K118。
+block/DMA:
+  description: desc DMA.
+  items:
+  - name: EN
+    description: desc EN.
+    byte_offset: 0
+    fieldset: EN
+  - name: INTSTAT0
+    description: desc INTSTAT0.
+    byte_offset: 4
+    access: Read
+    fieldset: INTSTAT0
+  - name: INTSTAT1
+    description: desc INTSTAT1.
+    byte_offset: 8
+    access: Read
+    fieldset: INTSTAT1
+  - name: INTMASK0
+    description: desc INTMASK0.
+    byte_offset: 12
+    fieldset: INTMASK0
+  - name: INTMASK1
+    description: desc INTMASK1.
+    byte_offset: 16
+    fieldset: INTMASK1
+  - name: INTCLR0
+    description: desc INTCLR0.
+    byte_offset: 20
+    access: Write
+    fieldset: INTCLR0
+  - name: INTCLR1
+    description: desc INTCLR1.
+    byte_offset: 24
+    access: Write
+    fieldset: INTCLR1
+  - name: CHEN
+    description: desc CHEN.
+    byte_offset: 28
+    fieldset: CHEN
+  - name: CHSTAT
+    description: desc CHSTAT.
+    byte_offset: 36
+    access: Read
+    fieldset: CHSTAT
+  - name: BASE1_LLP
+    description: desc BASE1_LLP.
+    byte_offset: 48
+    fieldset: BASE1_LLP
+  - name: BASE2_LLP
+    description: desc BASE2_LLP.
+    byte_offset: 52
+    fieldset: BASE2_LLP
+  - name: CHENCLR
+    description: desc CHENCLR.
+    byte_offset: 56
+    access: Write
+    fieldset: CHENCLR
+  - name: SAR0
+    description: desc SAR0.
+    byte_offset: 64
+  - name: DAR0
+    description: desc DAR0.
+    byte_offset: 68
+  - name: CH0CTL0
+    description: desc CH0CTL0.
+    byte_offset: 72
+    fieldset: CH0CTL0
+  - name: CH0CTL1
+    description: desc CH0CTL1.
+    byte_offset: 76
+    fieldset: CH0CTL1
+  - name: SAR1
+    description: desc SAR1.
+    byte_offset: 128
+  - name: DAR1
+    description: desc DAR1.
+    byte_offset: 132
+  - name: CH1CTL0
+    description: desc CH1CTL0.
+    byte_offset: 136
+    fieldset: CH1CTL0
+  - name: CH1CTL1
+    description: desc CH1CTL1.
+    byte_offset: 140
+    fieldset: CH1CTL1
+  - name: SAR2
+    description: desc SAR2.
+    byte_offset: 192
+  - name: DAR2
+    description: desc DAR2.
+    byte_offset: 196
+  - name: CH2CTL0
+    description: desc CH2CTL0.
+    byte_offset: 200
+    fieldset: CH2CTL0
+  - name: CH2CTL1
+    description: desc CH2CTL1.
+    byte_offset: 204
+    fieldset: CH2CTL1
+  - name: SAR3
+    description: desc SAR3.
+    byte_offset: 256
+  - name: DAR3
+    description: desc DAR3.
+    byte_offset: 260
+  - name: CH3CTL0
+    description: desc CH3CTL0.
+    byte_offset: 264
+    fieldset: CH3CTL0
+  - name: CH3CTL1
+    description: desc CH3CTL1.
+    byte_offset: 268
+    fieldset: CH3CTL1
+fieldset/BASE1_LLP:
+  description: desc BASE1_LLP.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 14
+    bit_size: 18
+fieldset/BASE2_LLP:
+  description: desc BASE2_LLP.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 14
+    bit_size: 18
+fieldset/CH0CTL0:
+  description: desc CH0CTL0.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 8
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 8
+    bit_size: 10
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 18
+    bit_size: 10
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 28
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 29
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 30
+    bit_size: 2
+fieldset/CH0CTL1:
+  description: desc CH0CTL1.
+  fields:
+  - name: OFFSET
+    description: desc OFFSET.
+    bit_offset: 0
+    bit_size: 16
+  - name: RPTNSCNT
+    description: desc RPTNSCNT.
+    bit_offset: 16
+    bit_size: 8
+  - name: RPTNSEN
+    description: desc RPTNSEN.
+    bit_offset: 24
+    bit_size: 1
+  - name: RPTNSSEL
+    description: desc RPTNSSEL.
+    bit_offset: 25
+    bit_size: 2
+  - name: LLPSEL
+    description: desc LLPSEL.
+    bit_offset: 27
+    bit_size: 1
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 28
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 30
+    bit_size: 2
+fieldset/CH1CTL0:
+  description: desc CH1CTL0.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 8
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 8
+    bit_size: 10
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 18
+    bit_size: 10
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 28
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 29
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 30
+    bit_size: 2
+fieldset/CH1CTL1:
+  description: desc CH1CTL1.
+  fields:
+  - name: OFFSET
+    description: desc OFFSET.
+    bit_offset: 0
+    bit_size: 16
+  - name: RPTNSCNT
+    description: desc RPTNSCNT.
+    bit_offset: 16
+    bit_size: 8
+  - name: RPTNSEN
+    description: desc RPTNSEN.
+    bit_offset: 24
+    bit_size: 1
+  - name: RPTNSSEL
+    description: desc RPTNSSEL.
+    bit_offset: 25
+    bit_size: 2
+  - name: LLPSEL
+    description: desc LLPSEL.
+    bit_offset: 27
+    bit_size: 1
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 28
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 30
+    bit_size: 2
+fieldset/CH2CTL0:
+  description: desc CH2CTL0.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 8
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 8
+    bit_size: 10
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 18
+    bit_size: 10
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 28
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 29
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 30
+    bit_size: 2
+fieldset/CH2CTL1:
+  description: desc CH2CTL1.
+  fields:
+  - name: OFFSET
+    description: desc OFFSET.
+    bit_offset: 0
+    bit_size: 16
+  - name: RPTNSCNT
+    description: desc RPTNSCNT.
+    bit_offset: 16
+    bit_size: 8
+  - name: RPTNSEN
+    description: desc RPTNSEN.
+    bit_offset: 24
+    bit_size: 1
+  - name: RPTNSSEL
+    description: desc RPTNSSEL.
+    bit_offset: 25
+    bit_size: 2
+  - name: LLPSEL
+    description: desc LLPSEL.
+    bit_offset: 27
+    bit_size: 1
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 28
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 30
+    bit_size: 2
+fieldset/CH3CTL0:
+  description: desc CH3CTL0.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 8
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 8
+    bit_size: 10
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 18
+    bit_size: 10
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 28
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 29
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 30
+    bit_size: 2
+fieldset/CH3CTL1:
+  description: desc CH3CTL1.
+  fields:
+  - name: OFFSET
+    description: desc OFFSET.
+    bit_offset: 0
+    bit_size: 16
+  - name: RPTNSCNT
+    description: desc RPTNSCNT.
+    bit_offset: 16
+    bit_size: 8
+  - name: RPTNSEN
+    description: desc RPTNSEN.
+    bit_offset: 24
+    bit_size: 1
+  - name: RPTNSSEL
+    description: desc RPTNSSEL.
+    bit_offset: 25
+    bit_size: 2
+  - name: LLPSEL
+    description: desc LLPSEL.
+    bit_offset: 27
+    bit_size: 1
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 28
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 30
+    bit_size: 2
+fieldset/CHEN:
+  description: desc CHEN.
+  fields:
+  - name: CHEN
+    description: desc CHEN.
+    bit_offset: 0
+    bit_size: 4
+fieldset/CHENCLR:
+  description: desc CHENCLR.
+  fields:
+  - name: CHENCLR
+    description: desc CHENCLR.
+    bit_offset: 0
+    bit_size: 4
+fieldset/CHSTAT:
+  description: desc CHSTAT.
+  fields:
+  - name: DMAACT
+    description: desc DMAACT.
+    bit_offset: 0
+    bit_size: 1
+  - name: CHACT
+    description: desc CHACT.
+    bit_offset: 16
+    bit_size: 4
+fieldset/EN:
+  description: desc EN.
+  fields:
+  - name: EN
+    description: desc EN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/INTCLR0:
+  description: desc INTCLR0.
+  fields:
+  - name: CLRTRNERR
+    description: desc CLRTRNERR.
+    bit_offset: 0
+    bit_size: 4
+  - name: CLRREQERR
+    description: desc CLRREQERR.
+    bit_offset: 16
+    bit_size: 4
+fieldset/INTCLR1:
+  description: desc INTCLR1.
+  fields:
+  - name: CLRTC
+    description: desc CLRTC.
+    bit_offset: 0
+    bit_size: 4
+  - name: CLRBTC
+    description: desc CLRBTC.
+    bit_offset: 16
+    bit_size: 4
+fieldset/INTMASK0:
+  description: desc INTMASK0.
+  fields:
+  - name: MSKTRNERR
+    description: desc MSKTRNERR.
+    bit_offset: 0
+    bit_size: 4
+  - name: MSKREQERR
+    description: desc MSKREQERR.
+    bit_offset: 16
+    bit_size: 4
+fieldset/INTMASK1:
+  description: desc INTMASK1.
+  fields:
+  - name: MSKTC
+    description: desc MSKTC.
+    bit_offset: 0
+    bit_size: 4
+  - name: MSKBTC
+    description: desc MSKBTC.
+    bit_offset: 16
+    bit_size: 4
+fieldset/INTSTAT0:
+  description: desc INTSTAT0.
+  fields:
+  - name: TRNERR
+    description: desc TRNERR.
+    bit_offset: 0
+    bit_size: 4
+  - name: REQERR
+    description: desc REQERR.
+    bit_offset: 16
+    bit_size: 4
+fieldset/INTSTAT1:
+  description: desc INTSTAT1.
+  fields:
+  - name: TC
+    description: desc TC.
+    bit_offset: 0
+    bit_size: 4
+  - name: BTC
+    description: desc BTC.
+    bit_offset: 16
+    bit_size: 4

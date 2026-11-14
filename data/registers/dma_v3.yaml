@@ -1,0 +1,2180 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/DMA1；覆盖系列：HC32A472, HC32F472。
+block/DMA:
+  description: desc DMA.
+  items:
+  - name: EN
+    description: desc EN.
+    byte_offset: 0
+    fieldset: EN
+  - name: INTSTAT0
+    description: desc INTSTAT0.
+    byte_offset: 4
+    access: Read
+    fieldset: INTSTAT0
+  - name: INTSTAT1
+    description: desc INTSTAT1.
+    byte_offset: 8
+    access: Read
+    fieldset: INTSTAT1
+  - name: INTMASK0
+    description: desc INTMASK0.
+    byte_offset: 12
+    fieldset: INTMASK0
+  - name: INTMASK1
+    description: desc INTMASK1.
+    byte_offset: 16
+    fieldset: INTMASK1
+  - name: INTCLR0
+    description: desc INTCLR0.
+    byte_offset: 20
+    fieldset: INTCLR0
+  - name: INTCLR1
+    description: desc INTCLR1.
+    byte_offset: 24
+    fieldset: INTCLR1
+  - name: CHEN
+    description: desc CHEN.
+    byte_offset: 28
+    fieldset: CHEN
+  - name: REQSTAT
+    description: desc REQSTAT.
+    byte_offset: 32
+    access: Read
+    fieldset: REQSTAT
+  - name: CHSTAT
+    description: desc CHSTAT.
+    byte_offset: 36
+    access: Read
+    fieldset: CHSTAT
+  - name: RCFGCTL
+    description: desc RCFGCTL.
+    byte_offset: 44
+    fieldset: RCFGCTL
+  - name: SWREQ
+    description: desc SWREQ.
+    byte_offset: 48
+    fieldset: SWREQ
+  - name: CHENCLR
+    description: desc CHENCLR.
+    byte_offset: 52
+    fieldset: CHENCLR
+  - name: SAR0
+    description: desc SAR0.
+    byte_offset: 64
+  - name: DAR0
+    description: desc DAR0.
+    byte_offset: 68
+  - name: DTCTL0
+    description: desc DTCTL0.
+    byte_offset: 72
+    fieldset: DTCTL0
+  - name: RPT0
+    description: desc RPT0.
+    byte_offset: 76
+    fieldset: RPT0
+  - name: RPTB0
+    description: desc RPTB0.
+    byte_offset: 76
+    fieldset: RPTB0
+  - name: SNSEQCTL0
+    description: desc SNSEQCTL0.
+    byte_offset: 80
+    fieldset: SNSEQCTL0
+  - name: SNSEQCTLB0
+    description: desc SNSEQCTLB0.
+    byte_offset: 80
+    fieldset: SNSEQCTLB0
+  - name: DNSEQCTL0
+    description: desc DNSEQCTL0.
+    byte_offset: 84
+    fieldset: DNSEQCTL0
+  - name: DNSEQCTLB0
+    description: desc DNSEQCTLB0.
+    byte_offset: 84
+    fieldset: DNSEQCTLB0
+  - name: LLP0
+    description: desc LLP0.
+    byte_offset: 88
+    fieldset: LLP0
+  - name: CHCTL0
+    description: desc CHCTL0.
+    byte_offset: 92
+    fieldset: CHCTL0
+  - name: MONSAR0
+    description: desc MONSAR0.
+    byte_offset: 96
+    access: Read
+  - name: MONDAR0
+    description: desc MONDAR0.
+    byte_offset: 100
+    access: Read
+  - name: MONDTCTL0
+    description: desc MONDTCTL0.
+    byte_offset: 104
+    access: Read
+    fieldset: MONDTCTL0
+  - name: MONRPT0
+    description: desc MONRPT0.
+    byte_offset: 108
+    access: Read
+    fieldset: MONRPT0
+  - name: MONSNSEQCTL0
+    description: desc MONSNSEQCTL0.
+    byte_offset: 112
+    access: Read
+    fieldset: MONSNSEQCTL0
+  - name: MONDNSEQCTL0
+    description: desc MONDNSEQCTL0.
+    byte_offset: 116
+    access: Read
+    fieldset: MONDNSEQCTL0
+  - name: SAR1
+    description: desc SAR1.
+    byte_offset: 128
+  - name: DAR1
+    description: desc DAR1.
+    byte_offset: 132
+  - name: DTCTL1
+    description: desc DTCTL1.
+    byte_offset: 136
+    fieldset: DTCTL1
+  - name: RPT1
+    description: desc RPT1.
+    byte_offset: 140
+    fieldset: RPT1
+  - name: RPTB1
+    description: desc RPTB1.
+    byte_offset: 140
+    fieldset: RPTB1
+  - name: SNSEQCTL1
+    description: desc SNSEQCTL1.
+    byte_offset: 144
+    fieldset: SNSEQCTL1
+  - name: SNSEQCTLB1
+    description: desc SNSEQCTLB1.
+    byte_offset: 144
+    fieldset: SNSEQCTLB1
+  - name: DNSEQCTL1
+    description: desc DNSEQCTL1.
+    byte_offset: 148
+    fieldset: DNSEQCTL1
+  - name: DNSEQCTLB1
+    description: desc DNSEQCTLB1.
+    byte_offset: 148
+    fieldset: DNSEQCTLB1
+  - name: LLP1
+    description: desc LLP1.
+    byte_offset: 152
+    fieldset: LLP1
+  - name: CHCTL1
+    description: desc CHCTL1.
+    byte_offset: 156
+    fieldset: CHCTL1
+  - name: MONSAR1
+    description: desc MONSAR1.
+    byte_offset: 160
+    access: Read
+  - name: MONDAR1
+    description: desc MONDAR1.
+    byte_offset: 164
+    access: Read
+  - name: MONDTCTL1
+    description: desc MONDTCTL1.
+    byte_offset: 168
+    access: Read
+    fieldset: MONDTCTL1
+  - name: MONRPT1
+    description: desc MONRPT1.
+    byte_offset: 172
+    access: Read
+    fieldset: MONRPT1
+  - name: MONSNSEQCTL1
+    description: desc MONSNSEQCTL1.
+    byte_offset: 176
+    access: Read
+    fieldset: MONSNSEQCTL1
+  - name: MONDNSEQCTL1
+    description: desc MONDNSEQCTL1.
+    byte_offset: 180
+    access: Read
+    fieldset: MONDNSEQCTL1
+  - name: SAR2
+    description: desc SAR2.
+    byte_offset: 192
+  - name: DAR2
+    description: desc DAR2.
+    byte_offset: 196
+  - name: DTCTL2
+    description: desc DTCTL2.
+    byte_offset: 200
+    fieldset: DTCTL2
+  - name: RPT2
+    description: desc RPT2.
+    byte_offset: 204
+    fieldset: RPT2
+  - name: RPTB2
+    description: desc RPTB2.
+    byte_offset: 204
+    fieldset: RPTB2
+  - name: SNSEQCTL2
+    description: desc SNSEQCTL2.
+    byte_offset: 208
+    fieldset: SNSEQCTL2
+  - name: SNSEQCTLB2
+    description: desc SNSEQCTLB2.
+    byte_offset: 208
+    fieldset: SNSEQCTLB2
+  - name: DNSEQCTL2
+    description: desc DNSEQCTL2.
+    byte_offset: 212
+    fieldset: DNSEQCTL2
+  - name: DNSEQCTLB2
+    description: desc DNSEQCTLB2.
+    byte_offset: 212
+    fieldset: DNSEQCTLB2
+  - name: LLP2
+    description: desc LLP2.
+    byte_offset: 216
+    fieldset: LLP2
+  - name: CHCTL2
+    description: desc CHCTL2.
+    byte_offset: 220
+    fieldset: CHCTL2
+  - name: MONSAR2
+    description: desc MONSAR2.
+    byte_offset: 224
+    access: Read
+  - name: MONDAR2
+    description: desc MONDAR2.
+    byte_offset: 228
+    access: Read
+  - name: MONDTCTL2
+    description: desc MONDTCTL2.
+    byte_offset: 232
+    access: Read
+    fieldset: MONDTCTL2
+  - name: MONRPT2
+    description: desc MONRPT2.
+    byte_offset: 236
+    access: Read
+    fieldset: MONRPT2
+  - name: MONSNSEQCTL2
+    description: desc MONSNSEQCTL2.
+    byte_offset: 240
+    access: Read
+    fieldset: MONSNSEQCTL2
+  - name: MONDNSEQCTL2
+    description: desc MONDNSEQCTL2.
+    byte_offset: 244
+    access: Read
+    fieldset: MONDNSEQCTL2
+  - name: SAR3
+    description: desc SAR3.
+    byte_offset: 256
+  - name: DAR3
+    description: desc DAR3.
+    byte_offset: 260
+  - name: DTCTL3
+    description: desc DTCTL3.
+    byte_offset: 264
+    fieldset: DTCTL3
+  - name: RPT3
+    description: desc RPT3.
+    byte_offset: 268
+    fieldset: RPT3
+  - name: RPTB3
+    description: desc RPTB3.
+    byte_offset: 268
+    fieldset: RPTB3
+  - name: SNSEQCTL3
+    description: desc SNSEQCTL3.
+    byte_offset: 272
+    fieldset: SNSEQCTL3
+  - name: SNSEQCTLB3
+    description: desc SNSEQCTLB3.
+    byte_offset: 272
+    fieldset: SNSEQCTLB3
+  - name: DNSEQCTL3
+    description: desc DNSEQCTL3.
+    byte_offset: 276
+    fieldset: DNSEQCTL3
+  - name: DNSEQCTLB3
+    description: desc DNSEQCTLB3.
+    byte_offset: 276
+    fieldset: DNSEQCTLB3
+  - name: LLP3
+    description: desc LLP3.
+    byte_offset: 280
+    fieldset: LLP3
+  - name: CHCTL3
+    description: desc CHCTL3.
+    byte_offset: 284
+    fieldset: CHCTL3
+  - name: MONSAR3
+    description: desc MONSAR3.
+    byte_offset: 288
+    access: Read
+  - name: MONDAR3
+    description: desc MONDAR3.
+    byte_offset: 292
+    access: Read
+  - name: MONDTCTL3
+    description: desc MONDTCTL3.
+    byte_offset: 296
+    access: Read
+    fieldset: MONDTCTL3
+  - name: MONRPT3
+    description: desc MONRPT3.
+    byte_offset: 300
+    access: Read
+    fieldset: MONRPT3
+  - name: MONSNSEQCTL3
+    description: desc MONSNSEQCTL3.
+    byte_offset: 304
+    access: Read
+    fieldset: MONSNSEQCTL3
+  - name: MONDNSEQCTL3
+    description: desc MONDNSEQCTL3.
+    byte_offset: 308
+    access: Read
+    fieldset: MONDNSEQCTL3
+  - name: SAR4
+    description: desc SAR4.
+    byte_offset: 320
+  - name: DAR4
+    description: desc DAR4.
+    byte_offset: 324
+  - name: DTCTL4
+    description: desc DTCTL4.
+    byte_offset: 328
+    fieldset: DTCTL4
+  - name: RPT4
+    description: desc RPT4.
+    byte_offset: 332
+    fieldset: RPT4
+  - name: RPTB4
+    description: desc RPTB4.
+    byte_offset: 332
+    fieldset: RPTB4
+  - name: SNSEQCTL4
+    description: desc SNSEQCTL4.
+    byte_offset: 336
+    fieldset: SNSEQCTL4
+  - name: SNSEQCTLB4
+    description: desc SNSEQCTLB4.
+    byte_offset: 336
+    fieldset: SNSEQCTLB4
+  - name: DNSEQCTL4
+    description: desc DNSEQCTL4.
+    byte_offset: 340
+    fieldset: DNSEQCTL4
+  - name: DNSEQCTLB4
+    description: desc DNSEQCTLB4.
+    byte_offset: 340
+    fieldset: DNSEQCTLB4
+  - name: LLP4
+    description: desc LLP4.
+    byte_offset: 344
+    fieldset: LLP4
+  - name: CHCTL4
+    description: desc CHCTL4.
+    byte_offset: 348
+    fieldset: CHCTL4
+  - name: MONSAR4
+    description: desc MONSAR4.
+    byte_offset: 352
+    access: Read
+  - name: MONDAR4
+    description: desc MONDAR4.
+    byte_offset: 356
+    access: Read
+  - name: MONDTCTL4
+    description: desc MONDTCTL4.
+    byte_offset: 360
+    access: Read
+    fieldset: MONDTCTL4
+  - name: MONRPT4
+    description: desc MONRPT4.
+    byte_offset: 364
+    access: Read
+    fieldset: MONRPT4
+  - name: MONSNSEQCTL4
+    description: desc MONSNSEQCTL4.
+    byte_offset: 368
+    access: Read
+    fieldset: MONSNSEQCTL4
+  - name: MONDNSEQCTL4
+    description: desc MONDNSEQCTL4.
+    byte_offset: 372
+    access: Read
+    fieldset: MONDNSEQCTL4
+  - name: SAR5
+    description: desc SAR5.
+    byte_offset: 384
+  - name: DAR5
+    description: desc DAR5.
+    byte_offset: 388
+  - name: DTCTL5
+    description: desc DTCTL5.
+    byte_offset: 392
+    fieldset: DTCTL5
+  - name: RPT5
+    description: desc RPT5.
+    byte_offset: 396
+    fieldset: RPT5
+  - name: RPTB5
+    description: desc RPTB5.
+    byte_offset: 396
+    fieldset: RPTB5
+  - name: SNSEQCTL5
+    description: desc SNSEQCTL5.
+    byte_offset: 400
+    fieldset: SNSEQCTL5
+  - name: SNSEQCTLB5
+    description: desc SNSEQCTLB5.
+    byte_offset: 400
+    fieldset: SNSEQCTLB5
+  - name: DNSEQCTL5
+    description: desc DNSEQCTL5.
+    byte_offset: 404
+    fieldset: DNSEQCTL5
+  - name: DNSEQCTLB5
+    description: desc DNSEQCTLB5.
+    byte_offset: 404
+    fieldset: DNSEQCTLB5
+  - name: LLP5
+    description: desc LLP5.
+    byte_offset: 408
+    fieldset: LLP5
+  - name: CHCTL5
+    description: desc CHCTL5.
+    byte_offset: 412
+    fieldset: CHCTL5
+  - name: MONSAR5
+    description: desc MONSAR5.
+    byte_offset: 416
+    access: Read
+  - name: MONDAR5
+    description: desc MONDAR5.
+    byte_offset: 420
+    access: Read
+  - name: MONDTCTL5
+    description: desc MONDTCTL5.
+    byte_offset: 424
+    access: Read
+    fieldset: MONDTCTL5
+  - name: MONRPT5
+    description: desc MONRPT5.
+    byte_offset: 428
+    access: Read
+    fieldset: MONRPT5
+  - name: MONSNSEQCTL5
+    description: desc MONSNSEQCTL5.
+    byte_offset: 432
+    access: Read
+    fieldset: MONSNSEQCTL5
+  - name: MONDNSEQCTL5
+    description: desc MONDNSEQCTL5.
+    byte_offset: 436
+    access: Read
+    fieldset: MONDNSEQCTL5
+  - name: SAR6
+    description: desc SAR6.
+    byte_offset: 448
+  - name: DAR6
+    description: desc DAR6.
+    byte_offset: 452
+  - name: DTCTL6
+    description: desc DTCTL6.
+    byte_offset: 456
+    fieldset: DTCTL6
+  - name: RPT6
+    description: desc RPT6.
+    byte_offset: 460
+    fieldset: RPT6
+  - name: RPTB6
+    description: desc RPTB6.
+    byte_offset: 460
+    fieldset: RPTB6
+  - name: SNSEQCTL6
+    description: desc SNSEQCTL6.
+    byte_offset: 464
+    fieldset: SNSEQCTL6
+  - name: SNSEQCTLB6
+    description: desc SNSEQCTLB6.
+    byte_offset: 464
+    fieldset: SNSEQCTLB6
+  - name: DNSEQCTL6
+    description: desc DNSEQCTL6.
+    byte_offset: 468
+    fieldset: DNSEQCTL6
+  - name: DNSEQCTLB6
+    description: desc DNSEQCTLB6.
+    byte_offset: 468
+    fieldset: DNSEQCTLB6
+  - name: LLP6
+    description: desc LLP6.
+    byte_offset: 472
+    fieldset: LLP6
+  - name: CHCTL6
+    description: desc CHCTL6.
+    byte_offset: 476
+    fieldset: CHCTL6
+  - name: MONSAR6
+    description: desc MONSAR6.
+    byte_offset: 480
+    access: Read
+  - name: MONDAR6
+    description: desc MONDAR6.
+    byte_offset: 484
+    access: Read
+  - name: MONDTCTL6
+    description: desc MONDTCTL6.
+    byte_offset: 488
+    access: Read
+    fieldset: MONDTCTL6
+  - name: MONRPT6
+    description: desc MONRPT6.
+    byte_offset: 492
+    access: Read
+    fieldset: MONRPT6
+  - name: MONSNSEQCTL6
+    description: desc MONSNSEQCTL6.
+    byte_offset: 496
+    access: Read
+    fieldset: MONSNSEQCTL6
+  - name: MONDNSEQCTL6
+    description: desc MONDNSEQCTL6.
+    byte_offset: 500
+    access: Read
+    fieldset: MONDNSEQCTL6
+  - name: SAR7
+    description: desc SAR7.
+    byte_offset: 512
+  - name: DAR7
+    description: desc DAR7.
+    byte_offset: 516
+  - name: DTCTL7
+    description: desc DTCTL7.
+    byte_offset: 520
+    fieldset: DTCTL7
+  - name: RPT7
+    description: desc RPT7.
+    byte_offset: 524
+    fieldset: RPT7
+  - name: RPTB7
+    description: desc RPTB7.
+    byte_offset: 524
+    fieldset: RPTB7
+  - name: SNSEQCTL7
+    description: desc SNSEQCTL7.
+    byte_offset: 528
+    fieldset: SNSEQCTL7
+  - name: SNSEQCTLB7
+    description: desc SNSEQCTLB7.
+    byte_offset: 528
+    fieldset: SNSEQCTLB7
+  - name: DNSEQCTL7
+    description: desc DNSEQCTL7.
+    byte_offset: 532
+    fieldset: DNSEQCTL7
+  - name: DNSEQCTLB7
+    description: desc DNSEQCTLB7.
+    byte_offset: 532
+    fieldset: DNSEQCTLB7
+  - name: LLP7
+    description: desc LLP7.
+    byte_offset: 536
+    fieldset: LLP7
+  - name: CHCTL7
+    description: desc CHCTL7.
+    byte_offset: 540
+    fieldset: CHCTL7
+  - name: MONSAR7
+    description: desc MONSAR7.
+    byte_offset: 544
+    access: Read
+  - name: MONDAR7
+    description: desc MONDAR7.
+    byte_offset: 548
+    access: Read
+  - name: MONDTCTL7
+    description: desc MONDTCTL7.
+    byte_offset: 552
+    access: Read
+    fieldset: MONDTCTL7
+  - name: MONRPT7
+    description: desc MONRPT7.
+    byte_offset: 556
+    access: Read
+    fieldset: MONRPT7
+  - name: MONSNSEQCTL7
+    description: desc MONSNSEQCTL7.
+    byte_offset: 560
+    access: Read
+    fieldset: MONSNSEQCTL7
+  - name: MONDNSEQCTL7
+    description: desc MONDNSEQCTL7.
+    byte_offset: 564
+    access: Read
+    fieldset: MONDNSEQCTL7
+fieldset/CHCTL0:
+  description: desc CHCTL0.
+  fields:
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 0
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 2
+    bit_size: 2
+  - name: SRPTEN
+    description: desc SRPTEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DRPTEN
+    description: desc DRPTEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: SNSEQEN
+    description: desc SNSEQEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: DNSEQEN
+    description: desc DNSEQEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 8
+    bit_size: 2
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 10
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 11
+    bit_size: 1
+  - name: IE
+    description: desc IE.
+    bit_offset: 12
+    bit_size: 1
+  - name: HPROT
+    description: desc HPROT.
+    bit_offset: 14
+    bit_size: 2
+fieldset/CHCTL1:
+  description: desc CHCTL1.
+  fields:
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 0
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 2
+    bit_size: 2
+  - name: SRPTEN
+    description: desc SRPTEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DRPTEN
+    description: desc DRPTEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: SNSEQEN
+    description: desc SNSEQEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: DNSEQEN
+    description: desc DNSEQEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 8
+    bit_size: 2
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 10
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 11
+    bit_size: 1
+  - name: IE
+    description: desc IE.
+    bit_offset: 12
+    bit_size: 1
+  - name: HPROT
+    description: desc HPROT.
+    bit_offset: 14
+    bit_size: 2
+fieldset/CHCTL2:
+  description: desc CHCTL2.
+  fields:
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 0
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 2
+    bit_size: 2
+  - name: SRPTEN
+    description: desc SRPTEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DRPTEN
+    description: desc DRPTEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: SNSEQEN
+    description: desc SNSEQEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: DNSEQEN
+    description: desc DNSEQEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 8
+    bit_size: 2
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 10
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 11
+    bit_size: 1
+  - name: IE
+    description: desc IE.
+    bit_offset: 12
+    bit_size: 1
+  - name: HPROT
+    description: desc HPROT.
+    bit_offset: 14
+    bit_size: 2
+fieldset/CHCTL3:
+  description: desc CHCTL3.
+  fields:
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 0
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 2
+    bit_size: 2
+  - name: SRPTEN
+    description: desc SRPTEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DRPTEN
+    description: desc DRPTEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: SNSEQEN
+    description: desc SNSEQEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: DNSEQEN
+    description: desc DNSEQEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 8
+    bit_size: 2
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 10
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 11
+    bit_size: 1
+  - name: IE
+    description: desc IE.
+    bit_offset: 12
+    bit_size: 1
+  - name: HPROT
+    description: desc HPROT.
+    bit_offset: 14
+    bit_size: 2
+fieldset/CHCTL4:
+  description: desc CHCTL4.
+  fields:
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 0
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 2
+    bit_size: 2
+  - name: SRPTEN
+    description: desc SRPTEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DRPTEN
+    description: desc DRPTEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: SNSEQEN
+    description: desc SNSEQEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: DNSEQEN
+    description: desc DNSEQEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 8
+    bit_size: 2
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 10
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 11
+    bit_size: 1
+  - name: IE
+    description: desc IE.
+    bit_offset: 12
+    bit_size: 1
+  - name: HPROT
+    description: desc HPROT.
+    bit_offset: 14
+    bit_size: 2
+fieldset/CHCTL5:
+  description: desc CHCTL5.
+  fields:
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 0
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 2
+    bit_size: 2
+  - name: SRPTEN
+    description: desc SRPTEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DRPTEN
+    description: desc DRPTEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: SNSEQEN
+    description: desc SNSEQEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: DNSEQEN
+    description: desc DNSEQEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 8
+    bit_size: 2
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 10
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 11
+    bit_size: 1
+  - name: IE
+    description: desc IE.
+    bit_offset: 12
+    bit_size: 1
+  - name: HPROT
+    description: desc HPROT.
+    bit_offset: 14
+    bit_size: 2
+fieldset/CHCTL6:
+  description: desc CHCTL6.
+  fields:
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 0
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 2
+    bit_size: 2
+  - name: SRPTEN
+    description: desc SRPTEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DRPTEN
+    description: desc DRPTEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: SNSEQEN
+    description: desc SNSEQEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: DNSEQEN
+    description: desc DNSEQEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 8
+    bit_size: 2
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 10
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 11
+    bit_size: 1
+  - name: IE
+    description: desc IE.
+    bit_offset: 12
+    bit_size: 1
+  - name: HPROT
+    description: desc HPROT.
+    bit_offset: 14
+    bit_size: 2
+fieldset/CHCTL7:
+  description: desc CHCTL7.
+  fields:
+  - name: SINC
+    description: desc SINC.
+    bit_offset: 0
+    bit_size: 2
+  - name: DINC
+    description: desc DINC.
+    bit_offset: 2
+    bit_size: 2
+  - name: SRPTEN
+    description: desc SRPTEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: DRPTEN
+    description: desc DRPTEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: SNSEQEN
+    description: desc SNSEQEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: DNSEQEN
+    description: desc DNSEQEN.
+    bit_offset: 7
+    bit_size: 1
+  - name: HSIZE
+    description: desc HSIZE.
+    bit_offset: 8
+    bit_size: 2
+  - name: LLPEN
+    description: desc LLPEN.
+    bit_offset: 10
+    bit_size: 1
+  - name: LLPRUN
+    description: desc LLPRUN.
+    bit_offset: 11
+    bit_size: 1
+  - name: IE
+    description: desc IE.
+    bit_offset: 12
+    bit_size: 1
+  - name: HPROT
+    description: desc HPROT.
+    bit_offset: 14
+    bit_size: 2
+fieldset/CHEN:
+  description: desc CHEN.
+  fields:
+  - name: CHEN
+    description: desc CHEN.
+    bit_offset: 0
+    bit_size: 8
+fieldset/CHENCLR:
+  description: desc CHENCLR.
+  fields:
+  - name: CHENCLR
+    description: desc CHENCLR.
+    bit_offset: 0
+    bit_size: 8
+fieldset/CHSTAT:
+  description: desc CHSTAT.
+  fields:
+  - name: DMAACT
+    description: desc DMAACT.
+    bit_offset: 0
+    bit_size: 1
+  - name: RCFGACT
+    description: desc RCFGACT.
+    bit_offset: 1
+    bit_size: 1
+  - name: CHACT
+    description: desc CHACT.
+    bit_offset: 16
+    bit_size: 8
+fieldset/DNSEQCTL0:
+  description: desc DNSEQCTL0.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTL1:
+  description: desc DNSEQCTL1.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTL2:
+  description: desc DNSEQCTL2.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTL3:
+  description: desc DNSEQCTL3.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTL4:
+  description: desc DNSEQCTL4.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTL5:
+  description: desc DNSEQCTL5.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTL6:
+  description: desc DNSEQCTL6.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTL7:
+  description: desc DNSEQCTL7.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTLB0:
+  description: desc DNSEQCTLB0.
+  fields:
+  - name: DNSDIST
+    description: desc DNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNTB
+    description: desc DNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTLB1:
+  description: desc DNSEQCTLB1.
+  fields:
+  - name: DNSDIST
+    description: desc DNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNTB
+    description: desc DNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTLB2:
+  description: desc DNSEQCTLB2.
+  fields:
+  - name: DNSDIST
+    description: desc DNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNTB
+    description: desc DNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTLB3:
+  description: desc DNSEQCTLB3.
+  fields:
+  - name: DNSDIST
+    description: desc DNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNTB
+    description: desc DNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTLB4:
+  description: desc DNSEQCTLB4.
+  fields:
+  - name: DNSDIST
+    description: desc DNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNTB
+    description: desc DNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTLB5:
+  description: desc DNSEQCTLB5.
+  fields:
+  - name: DNSDIST
+    description: desc DNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNTB
+    description: desc DNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTLB6:
+  description: desc DNSEQCTLB6.
+  fields:
+  - name: DNSDIST
+    description: desc DNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNTB
+    description: desc DNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DNSEQCTLB7:
+  description: desc DNSEQCTLB7.
+  fields:
+  - name: DNSDIST
+    description: desc DNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNTB
+    description: desc DNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/DTCTL0:
+  description: desc DTCTL0.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/DTCTL1:
+  description: desc DTCTL1.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/DTCTL2:
+  description: desc DTCTL2.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/DTCTL3:
+  description: desc DTCTL3.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/DTCTL4:
+  description: desc DTCTL4.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/DTCTL5:
+  description: desc DTCTL5.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/DTCTL6:
+  description: desc DTCTL6.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/DTCTL7:
+  description: desc DTCTL7.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/EN:
+  description: desc EN.
+  fields:
+  - name: EN
+    description: desc EN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/INTCLR0:
+  description: desc INTCLR0.
+  fields:
+  - name: CLRTRNERR
+    description: desc CLRTRNERR.
+    bit_offset: 0
+    bit_size: 8
+  - name: CLRREQERR
+    description: desc CLRREQERR.
+    bit_offset: 16
+    bit_size: 8
+fieldset/INTCLR1:
+  description: desc INTCLR1.
+  fields:
+  - name: CLRTC
+    description: desc CLRTC.
+    bit_offset: 0
+    bit_size: 8
+  - name: CLRBTC
+    description: desc CLRBTC.
+    bit_offset: 16
+    bit_size: 8
+fieldset/INTMASK0:
+  description: desc INTMASK0.
+  fields:
+  - name: MSKTRNERR
+    description: desc MSKTRNERR.
+    bit_offset: 0
+    bit_size: 8
+  - name: MSKREQERR
+    description: desc MSKREQERR.
+    bit_offset: 16
+    bit_size: 8
+fieldset/INTMASK1:
+  description: desc INTMASK1.
+  fields:
+  - name: MSKTC
+    description: desc MSKTC.
+    bit_offset: 0
+    bit_size: 8
+  - name: MSKBTC
+    description: desc MSKBTC.
+    bit_offset: 16
+    bit_size: 8
+fieldset/INTSTAT0:
+  description: desc INTSTAT0.
+  fields:
+  - name: TRNERR
+    description: desc TRNERR.
+    bit_offset: 0
+    bit_size: 8
+  - name: REQERR
+    description: desc REQERR.
+    bit_offset: 16
+    bit_size: 8
+fieldset/INTSTAT1:
+  description: desc INTSTAT1.
+  fields:
+  - name: TC
+    description: desc TC.
+    bit_offset: 0
+    bit_size: 8
+  - name: BTC
+    description: desc BTC.
+    bit_offset: 16
+    bit_size: 8
+fieldset/LLP0:
+  description: desc LLP0.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 2
+    bit_size: 30
+fieldset/LLP1:
+  description: desc LLP1.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 2
+    bit_size: 30
+fieldset/LLP2:
+  description: desc LLP2.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 2
+    bit_size: 30
+fieldset/LLP3:
+  description: desc LLP3.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 2
+    bit_size: 30
+fieldset/LLP4:
+  description: desc LLP4.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 2
+    bit_size: 30
+fieldset/LLP5:
+  description: desc LLP5.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 2
+    bit_size: 30
+fieldset/LLP6:
+  description: desc LLP6.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 2
+    bit_size: 30
+fieldset/LLP7:
+  description: desc LLP7.
+  fields:
+  - name: LLP
+    description: desc LLP.
+    bit_offset: 2
+    bit_size: 30
+fieldset/MONDNSEQCTL0:
+  description: desc MONDNSEQCTL0.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONDNSEQCTL1:
+  description: desc MONDNSEQCTL1.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONDNSEQCTL2:
+  description: desc MONDNSEQCTL2.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONDNSEQCTL3:
+  description: desc MONDNSEQCTL3.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONDNSEQCTL4:
+  description: desc MONDNSEQCTL4.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONDNSEQCTL5:
+  description: desc MONDNSEQCTL5.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONDNSEQCTL6:
+  description: desc MONDNSEQCTL6.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONDNSEQCTL7:
+  description: desc MONDNSEQCTL7.
+  fields:
+  - name: DOFFSET
+    description: desc DOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: DNSCNT
+    description: desc DNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONDTCTL0:
+  description: desc MONDTCTL0.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/MONDTCTL1:
+  description: desc MONDTCTL1.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/MONDTCTL2:
+  description: desc MONDTCTL2.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/MONDTCTL3:
+  description: desc MONDTCTL3.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/MONDTCTL4:
+  description: desc MONDTCTL4.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/MONDTCTL5:
+  description: desc MONDTCTL5.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/MONDTCTL6:
+  description: desc MONDTCTL6.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/MONDTCTL7:
+  description: desc MONDTCTL7.
+  fields:
+  - name: BLKSIZE
+    description: desc BLKSIZE.
+    bit_offset: 0
+    bit_size: 10
+  - name: CNT
+    description: desc CNT.
+    bit_offset: 16
+    bit_size: 16
+fieldset/MONRPT0:
+  description: desc MONRPT0.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/MONRPT1:
+  description: desc MONRPT1.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/MONRPT2:
+  description: desc MONRPT2.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/MONRPT3:
+  description: desc MONRPT3.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/MONRPT4:
+  description: desc MONRPT4.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/MONRPT5:
+  description: desc MONRPT5.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/MONRPT6:
+  description: desc MONRPT6.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/MONRPT7:
+  description: desc MONRPT7.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/MONSNSEQCTL0:
+  description: desc MONSNSEQCTL0.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONSNSEQCTL1:
+  description: desc MONSNSEQCTL1.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONSNSEQCTL2:
+  description: desc MONSNSEQCTL2.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONSNSEQCTL3:
+  description: desc MONSNSEQCTL3.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONSNSEQCTL4:
+  description: desc MONSNSEQCTL4.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONSNSEQCTL5:
+  description: desc MONSNSEQCTL5.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONSNSEQCTL6:
+  description: desc MONSNSEQCTL6.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/MONSNSEQCTL7:
+  description: desc MONSNSEQCTL7.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/RCFGCTL:
+  description: desc RCFGCTL.
+  fields:
+  - name: RCFGEN
+    description: desc RCFGEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: RCFGLLP
+    description: desc RCFGLLP.
+    bit_offset: 1
+    bit_size: 1
+  - name: RCFGCHS
+    description: desc RCFGCHS.
+    bit_offset: 8
+    bit_size: 4
+  - name: SARMD
+    description: desc SARMD.
+    bit_offset: 16
+    bit_size: 2
+  - name: DARMD
+    description: desc DARMD.
+    bit_offset: 18
+    bit_size: 2
+  - name: CNTMD
+    description: desc CNTMD.
+    bit_offset: 20
+    bit_size: 2
+fieldset/REQSTAT:
+  description: desc REQSTAT.
+  fields:
+  - name: CHREQ
+    description: desc CHREQ.
+    bit_offset: 0
+    bit_size: 8
+  - name: RCFGREQ
+    description: desc RCFGREQ.
+    bit_offset: 15
+    bit_size: 1
+fieldset/RPT0:
+  description: desc RPT0.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPT1:
+  description: desc RPT1.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPT2:
+  description: desc RPT2.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPT3:
+  description: desc RPT3.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPT4:
+  description: desc RPT4.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPT5:
+  description: desc RPT5.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPT6:
+  description: desc RPT6.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPT7:
+  description: desc RPT7.
+  fields:
+  - name: SRPT
+    description: desc SRPT.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPT
+    description: desc DRPT.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPTB0:
+  description: desc RPTB0.
+  fields:
+  - name: SRPTB
+    description: desc SRPTB.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPTB
+    description: desc DRPTB.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPTB1:
+  description: desc RPTB1.
+  fields:
+  - name: SRPTB
+    description: desc SRPTB.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPTB
+    description: desc DRPTB.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPTB2:
+  description: desc RPTB2.
+  fields:
+  - name: SRPTB
+    description: desc SRPTB.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPTB
+    description: desc DRPTB.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPTB3:
+  description: desc RPTB3.
+  fields:
+  - name: SRPTB
+    description: desc SRPTB.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPTB
+    description: desc DRPTB.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPTB4:
+  description: desc RPTB4.
+  fields:
+  - name: SRPTB
+    description: desc SRPTB.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPTB
+    description: desc DRPTB.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPTB5:
+  description: desc RPTB5.
+  fields:
+  - name: SRPTB
+    description: desc SRPTB.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPTB
+    description: desc DRPTB.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPTB6:
+  description: desc RPTB6.
+  fields:
+  - name: SRPTB
+    description: desc SRPTB.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPTB
+    description: desc DRPTB.
+    bit_offset: 16
+    bit_size: 10
+fieldset/RPTB7:
+  description: desc RPTB7.
+  fields:
+  - name: SRPTB
+    description: desc SRPTB.
+    bit_offset: 0
+    bit_size: 10
+  - name: DRPTB
+    description: desc DRPTB.
+    bit_offset: 16
+    bit_size: 10
+fieldset/SNSEQCTL0:
+  description: desc SNSEQCTL0.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTL1:
+  description: desc SNSEQCTL1.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTL2:
+  description: desc SNSEQCTL2.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTL3:
+  description: desc SNSEQCTL3.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTL4:
+  description: desc SNSEQCTL4.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTL5:
+  description: desc SNSEQCTL5.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTL6:
+  description: desc SNSEQCTL6.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTL7:
+  description: desc SNSEQCTL7.
+  fields:
+  - name: SOFFSET
+    description: desc SOFFSET.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNT
+    description: desc SNSCNT.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTLB0:
+  description: desc SNSEQCTLB0.
+  fields:
+  - name: SNSDIST
+    description: desc SNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNTB
+    description: desc SNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTLB1:
+  description: desc SNSEQCTLB1.
+  fields:
+  - name: SNSDIST
+    description: desc SNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNTB
+    description: desc SNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTLB2:
+  description: desc SNSEQCTLB2.
+  fields:
+  - name: SNSDIST
+    description: desc SNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNTB
+    description: desc SNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTLB3:
+  description: desc SNSEQCTLB3.
+  fields:
+  - name: SNSDIST
+    description: desc SNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNTB
+    description: desc SNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTLB4:
+  description: desc SNSEQCTLB4.
+  fields:
+  - name: SNSDIST
+    description: desc SNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNTB
+    description: desc SNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTLB5:
+  description: desc SNSEQCTLB5.
+  fields:
+  - name: SNSDIST
+    description: desc SNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNTB
+    description: desc SNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTLB6:
+  description: desc SNSEQCTLB6.
+  fields:
+  - name: SNSDIST
+    description: desc SNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNTB
+    description: desc SNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SNSEQCTLB7:
+  description: desc SNSEQCTLB7.
+  fields:
+  - name: SNSDIST
+    description: desc SNSDIST.
+    bit_offset: 0
+    bit_size: 20
+  - name: SNSCNTB
+    description: desc SNSCNTB.
+    bit_offset: 20
+    bit_size: 12
+fieldset/SWREQ:
+  description: desc SWREQ.
+  fields:
+  - name: SWREQ
+    description: desc SWREQ.
+    bit_offset: 0
+    bit_size: 8
+  - name: SWRCFGREQ
+    description: desc SWRCFGREQ.
+    bit_offset: 15
+    bit_size: 1
+  - name: SWREQWP
+    description: desc SWREQWP.
+    bit_offset: 16
+    bit_size: 8
+  - name: SWRCFGWP
+    description: desc SWRCFGWP.
+    bit_offset: 24
+    bit_size: 8

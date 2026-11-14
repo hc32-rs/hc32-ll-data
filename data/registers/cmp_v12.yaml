@@ -1,0 +1,243 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/CMP2；覆盖系列：HC32A4A8, HC32F4A8。
+block/CMP:
+  description: desc CMP.
+  items:
+  - name: MDR
+    description: desc MDR.
+    byte_offset: 0
+    bit_size: 8
+    fieldset: MDR
+  - name: FIR
+    description: desc FIR.
+    byte_offset: 1
+    bit_size: 8
+    fieldset: FIR
+  - name: OCR
+    description: desc OCR.
+    byte_offset: 2
+    bit_size: 8
+    fieldset: OCR
+  - name: PMSR
+    description: desc PMSR.
+    byte_offset: 3
+    bit_size: 8
+    fieldset: PMSR
+  - name: BWSR
+    description: desc BWSR.
+    byte_offset: 4
+    bit_size: 16
+    fieldset: BWSR
+  - name: BWPR
+    description: desc BWPR.
+    byte_offset: 6
+    bit_size: 16
+    fieldset: BWPR
+fieldset/BWPR:
+  description: desc BWPR.
+  bit_size: 16
+  fields:
+  - name: CBWP0
+    description: desc CBWP0.
+    bit_offset: 0
+    bit_size: 1
+  - name: CBWP1
+    description: desc CBWP1.
+    bit_offset: 1
+    bit_size: 1
+  - name: CBWP2
+    description: desc CBWP2.
+    bit_offset: 2
+    bit_size: 1
+  - name: CBWP3
+    description: desc CBWP3.
+    bit_offset: 3
+    bit_size: 1
+  - name: CBWP4
+    description: desc CBWP4.
+    bit_offset: 4
+    bit_size: 1
+  - name: CBWP5
+    description: desc CBWP5.
+    bit_offset: 5
+    bit_size: 1
+  - name: CBWP6
+    description: desc CBWP6.
+    bit_offset: 6
+    bit_size: 1
+  - name: CBWP7
+    description: desc CBWP7.
+    bit_offset: 7
+    bit_size: 1
+  - name: CBWP8
+    description: desc CBWP8.
+    bit_offset: 8
+    bit_size: 1
+  - name: CBWP9
+    description: desc CBWP9.
+    bit_offset: 9
+    bit_size: 1
+  - name: CBWP10
+    description: desc CBWP10.
+    bit_offset: 10
+    bit_size: 1
+  - name: CBWP11
+    description: desc CBWP11.
+    bit_offset: 11
+    bit_size: 1
+  - name: CBWP12
+    description: desc CBWP12.
+    bit_offset: 12
+    bit_size: 1
+  - name: CBWP13
+    description: desc CBWP13.
+    bit_offset: 13
+    bit_size: 1
+  - name: CBWP14
+    description: desc CBWP14.
+    bit_offset: 14
+    bit_size: 1
+  - name: CBWP15
+    description: desc CBWP15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/BWSR:
+  description: desc BWSR.
+  bit_size: 16
+  fields:
+  - name: CBWS0
+    description: desc CBWS0.
+    bit_offset: 0
+    bit_size: 1
+  - name: CBWS1
+    description: desc CBWS1.
+    bit_offset: 1
+    bit_size: 1
+  - name: CBWS2
+    description: desc CBWS2.
+    bit_offset: 2
+    bit_size: 1
+  - name: CBWS3
+    description: desc CBWS3.
+    bit_offset: 3
+    bit_size: 1
+  - name: CBWS4
+    description: desc CBWS4.
+    bit_offset: 4
+    bit_size: 1
+  - name: CBWS5
+    description: desc CBWS5.
+    bit_offset: 5
+    bit_size: 1
+  - name: CBWS6
+    description: desc CBWS6.
+    bit_offset: 6
+    bit_size: 1
+  - name: CBWS7
+    description: desc CBWS7.
+    bit_offset: 7
+    bit_size: 1
+  - name: CBWS8
+    description: desc CBWS8.
+    bit_offset: 8
+    bit_size: 1
+  - name: CBWS9
+    description: desc CBWS9.
+    bit_offset: 9
+    bit_size: 1
+  - name: CBWS10
+    description: desc CBWS10.
+    bit_offset: 10
+    bit_size: 1
+  - name: CBWS11
+    description: desc CBWS11.
+    bit_offset: 11
+    bit_size: 1
+  - name: CBWS12
+    description: desc CBWS12.
+    bit_offset: 12
+    bit_size: 1
+  - name: CBWS13
+    description: desc CBWS13.
+    bit_offset: 13
+    bit_size: 1
+  - name: CBWS14
+    description: desc CBWS14.
+    bit_offset: 14
+    bit_size: 1
+  - name: CBWS15
+    description: desc CBWS15.
+    bit_offset: 15
+    bit_size: 1
+fieldset/FIR:
+  description: desc FIR.
+  bit_size: 8
+  fields:
+  - name: FCKS
+    description: desc FCKS.
+    bit_offset: 0
+    bit_size: 2
+  - name: EDGS
+    description: desc EDGS.
+    bit_offset: 4
+    bit_size: 2
+  - name: CIEN
+    description: desc CIEN.
+    bit_offset: 6
+    bit_size: 1
+fieldset/MDR:
+  description: desc MDR.
+  bit_size: 8
+  fields:
+  - name: CENA
+    description: desc CENA.
+    bit_offset: 0
+    bit_size: 1
+  - name: WDEN
+    description: desc WDEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: HYST
+    description: desc HYST.
+    bit_offset: 4
+    bit_size: 3
+  - name: CMON
+    description: desc CMON.
+    bit_offset: 7
+    bit_size: 1
+fieldset/OCR:
+  description: desc OCR.
+  bit_size: 8
+  fields:
+  - name: COEN
+    description: desc COEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: COPS
+    description: desc COPS.
+    bit_offset: 1
+    bit_size: 1
+  - name: CPOE
+    description: desc CPOE.
+    bit_offset: 2
+    bit_size: 1
+  - name: BWEN
+    description: desc BWEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: BWOL
+    description: desc BWOL.
+    bit_offset: 4
+    bit_size: 1
+fieldset/PMSR:
+  description: desc PMSR.
+  bit_size: 8
+  fields:
+  - name: RVSL
+    description: desc RVSL.
+    bit_offset: 0
+    bit_size: 4
+  - name: CVSL
+    description: desc CVSL.
+    bit_offset: 4
+    bit_size: 4

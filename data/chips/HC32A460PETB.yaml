@@ -1,0 +1,55 @@
+# HC32A460PETB（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
+name: HC32A460PETB
+family: HC32A460
+subfamily: cortex-m4
+packages:
+- name: HC32A460PETB
+  package: LQFP100
+include_memory: ../memory/HC32A460_F512S192.yaml
+memory_sizes:
+  FLASH: 512K
+  SRAM: 192K
+docs:
+- type: homepage
+  title: Homepage
+  name: ''
+  url: https://www.xhsc.com.cn/product/1255.html
+cores:
+- name: cortex-m4
+  arch: arm
+  peripherals: []
+  include_peripherals:
+  - ../family/HC32A460.yaml
+  include_interrupts: ../interrupts/HC32A460.yaml
+  include_dma_channels:
+    DMA1: ../dma/HC32A460_DMA1.yaml
+    DMA2: ../dma/HC32A460_DMA2.yaml
+_raw:
+  series: HC32A460
+  freq_mhz: '200'
+  flash_kb: '512'
+  sram_kb: '192'
+  package: LQFP100
+  pin_count: '100'
+  gpio: '83'
+  vdd_min: '1.8'
+  vdd_max: '3.6'
+  uart: '4'
+  spi: '4'
+  i2c: '3'
+  i2s: '4'
+  can: '4'
+  usb: '4'
+  adc: '2'
+  dac: ''
+  timer: 11;3
+  rtc: '1'
+  wdt: ''
+  touchkey: ''
+  lcd: ''
+  opa: '1'
+  cmp: '3'
+  other: 16位定时器=11;电机控制定时器=3|ADC 12bit|ADC 16ch|AES128|CRC|DCU=4|DMA=4|FLASH物理加密|KEYSCAN=1|OTP(B)=960|PVD|QSPI=1|SDIO=4|SHA256|TRNG
+  url: https://www.xhsc.com.cn/product/1255.html
+  source: DS
+  Part NO.: HC32A460PETB

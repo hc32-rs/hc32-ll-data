@@ -1,0 +1,68 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/MCANRAM；覆盖系列：HC32K116, HC32K118。
+block/MCANRAM:
+  description: desc MCANRAM.
+  items:
+  - name: CKCR
+    description: desc CKCR.
+    byte_offset: 0
+    fieldset: CKCR
+  - name: CKSR
+    description: desc CKSR.
+    byte_offset: 4
+    fieldset: CKSR
+  - name: EIEN
+    description: desc EIEN.
+    byte_offset: 8
+    fieldset: EIEN
+  - name: EIBIT0
+    description: desc EIBIT0.
+    byte_offset: 12
+  - name: EIBIT1
+    description: desc EIBIT1.
+    byte_offset: 16
+    fieldset: EIBIT1
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    byte_offset: 20
+    access: Read
+    fieldset: ECCERRADDR
+fieldset/CKCR:
+  description: desc CKCR.
+  fields:
+  - name: ECCMOD
+    description: desc ECCMOD.
+    bit_offset: 0
+    bit_size: 2
+fieldset/CKSR:
+  description: desc CKSR.
+  fields:
+  - name: RAM_1ERR
+    description: desc RAM_1ERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: RAM_2ERR
+    description: desc RAM_2ERR.
+    bit_offset: 1
+    bit_size: 1
+fieldset/ECCERRADDR:
+  description: desc ECCERRADDR.
+  fields:
+  - name: ECCERRADDR
+    description: desc ECCERRADDR.
+    bit_offset: 0
+    bit_size: 11
+fieldset/EIBIT1:
+  description: desc EIBIT1.
+  fields:
+  - name: EIBIT
+    description: desc EIBIT.
+    bit_offset: 0
+    bit_size: 7
+fieldset/EIEN:
+  description: desc EIEN.
+  fields:
+  - name: EIEN
+    description: desc EIEN.
+    bit_offset: 0
+    bit_size: 1

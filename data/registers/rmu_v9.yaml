@@ -1,0 +1,66 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/RMU；覆盖系列：HC32K116, HC32K118。
+block/RMU:
+  description: desc RMU.
+  items:
+  - name: RSTF0
+    description: desc RSTF0.
+    byte_offset: 0
+    bit_size: 16
+    fieldset: RSTF0
+fieldset/RSTF0:
+  description: desc RSTF0.
+  bit_size: 16
+  fields:
+  - name: PORF
+    description: desc PORF.
+    bit_offset: 0
+    bit_size: 1
+  - name: PINRF
+    description: desc PINRF.
+    bit_offset: 1
+    bit_size: 1
+  - name: LVD1RF
+    description: desc LVD1RF.
+    bit_offset: 2
+    bit_size: 1
+  - name: LVD2RF
+    description: desc LVD2RF.
+    bit_offset: 3
+    bit_size: 1
+  - name: WDRF
+    description: desc WDRF.
+    bit_offset: 5
+    bit_size: 1
+  - name: SWRF
+    description: desc SWRF.
+    bit_offset: 8
+    bit_size: 1
+  - name: CKFERF
+    description: desc CKFERF.
+    bit_offset: 9
+    bit_size: 1
+  - name: RAECRF
+    description: desc RAECRF.
+    bit_offset: 10
+    bit_size: 1
+  - name: FLECRF
+    description: desc FLECRF.
+    bit_offset: 11
+    bit_size: 1
+  - name: CPULKUPRF
+    description: desc CPULKUPRF.
+    bit_offset: 12
+    bit_size: 1
+  - name: XTALERF
+    description: desc XTALERF.
+    bit_offset: 13
+    bit_size: 1
+  - name: MULTIRF
+    description: desc MULTIRF.
+    bit_offset: 14
+    bit_size: 1
+  - name: CLRF
+    description: desc CLRF.
+    bit_offset: 15
+    bit_size: 1
