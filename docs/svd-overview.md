@@ -1,6 +1,6 @@
 # SVD 总览（27 个系列）
 
-每份 SVD 都与表中 SDK 内的一份 SVD 逐字节一致。设备名和 CPU 标签分别取 XML 顶层
+每份 SVD 对应表中 SDK 内的一份 SVD（内容一致；git 入库时行尾归一为 LF）。设备名和 CPU 标签分别取 XML 顶层
 `<name>` 与 `<cpu><name>`。外设数和派生数按顶层 peripheral 统计，中断数取 XML 中
 `<interrupt>` 节点数。生成数据时需展开 `derivedFrom`，并用设备头核对中断和内存映射。
 

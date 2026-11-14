@@ -3,7 +3,7 @@
 范围为工作区 `xh_ll_sdk/` 下 27 套 SDK。设备头在
 `drivers/cmsis/Device/*/*/Include/`，LL 头文件在
 `drivers/hc32_ll_driver/inc/`。27 份归档 SVD 与相应 SDK 内 IAR、GCC
-各一份 SVD 逐字节一致。按 SDK 的头文件清单重新枚举后，与
+各一份 SVD 内容一致（行尾归一为 LF）。按 SDK 的头文件清单重新枚举后，与
 [驱动矩阵](driver-matrix.json)一致。逐套设备头确认 7 个 Cortex-M0+
 和 20 个 Cortex-M4，F175 使用 `core_cm0plus.h`。
 
