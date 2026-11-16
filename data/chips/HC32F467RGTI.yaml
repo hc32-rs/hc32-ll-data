@@ -1,7 +1,6 @@
 # HC32F467RGTI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32F467RGTI
 family: HC32F467
-subfamily: cortex-m4
 packages:
 - name: HC32F467RGTI
   package: LQFP144

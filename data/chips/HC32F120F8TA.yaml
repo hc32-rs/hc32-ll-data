@@ -1,7 +1,6 @@
 # HC32F120F8TA（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32F120F8TA
 family: HC32F120
-subfamily: cortex-m0plus
 packages:
 - name: HC32F120F8TA
   package: LQFP32

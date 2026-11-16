@@ -1,7 +1,6 @@
 # HC32F155FCTH（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32F155FCTH
 family: HC32F155
-subfamily: cortex-m0plus
 packages:
 - name: HC32F155FCTH
   package: LQFP32

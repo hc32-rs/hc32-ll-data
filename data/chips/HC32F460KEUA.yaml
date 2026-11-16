@@ -1,7 +1,6 @@
 # HC32F460KEUA（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32F460KEUA
 family: HC32F460
-subfamily: cortex-m4
 packages:
 - name: HC32F460KEUA
   package: QFN60

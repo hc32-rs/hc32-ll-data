@@ -1,7 +1,6 @@
 # HC32F451KETB（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32F451KETB
 family: HC32F451
-subfamily: cortex-m4
 packages:
 - name: HC32F451KETB
   package: LQFP64

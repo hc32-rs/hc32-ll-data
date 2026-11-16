@@ -1,7 +1,6 @@
 # HC32A4A0SITI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32A4A0SITI
 family: HC32A4A0
-subfamily: cortex-m4
 packages:
 - name: HC32A4A0SITI
   package: LQFP176

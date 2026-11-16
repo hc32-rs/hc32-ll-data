@@ -1,7 +1,6 @@
 # HC32M441JATI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32M441JATI
 family: HC32M441
-subfamily: cortex-m4
 packages:
 - name: HC32M441JATI
   package: LQFP48

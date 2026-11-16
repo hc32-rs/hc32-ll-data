@@ -1,7 +1,6 @@
 # HC32M413FATI（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32M413FATI
 family: HC32M413
-subfamily: cortex-m4
 packages:
 - name: HC32M413FATI
   package: LQFP32

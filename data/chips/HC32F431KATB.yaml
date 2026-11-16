@@ -1,7 +1,6 @@
 # HC32F431KATB（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32F431KATB
 family: HC32F431
-subfamily: cortex-m4
 packages:
 - name: HC32F431KATB
   package: LQFP64

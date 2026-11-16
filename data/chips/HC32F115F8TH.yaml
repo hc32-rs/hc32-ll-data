@@ -1,7 +1,6 @@
 # HC32F115F8TH（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32F115F8TH
 family: HC32F115
-subfamily: cortex-m0plus
 packages:
 - name: HC32F115F8TH
   package: LQFP32

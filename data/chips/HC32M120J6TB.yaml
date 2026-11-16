@@ -1,7 +1,6 @@
 # HC32M120J6TB（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32M120J6TB
 family: HC32M120
-subfamily: cortex-m0plus
 packages:
 - name: HC32M120J6TB
   package: LQFP48

@@ -1,7 +1,6 @@
 # HC32K116KATJ（hc32-data-tools/csv_to_yaml.py 生成，数据来源见 _raw.source）
 name: HC32K116KATJ
 family: HC32K116
-subfamily: cortex-m0plus
 packages:
 - name: HC32K116KATJ
   package: LQFP64
