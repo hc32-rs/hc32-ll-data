@@ -1,10 +1,6 @@
-# 行尾策略：仓库内统一 LF（提交时自动归一），检出统一 CRLF（工作区所见全为 CRLF）。
-# 生成脚本输出 LF 也不会产生行尾 diff；Windows 工具链（Keil/EWARM 等）看到的均为 CRLF。
-* text=auto eol=crlf
+# 行尾策略：仓库内与检出统一 LF（跨平台，含 Windows）。
+# 生成脚本输出 LF；如有必须 CRLF 的 Windows 专用文件，按扩展名单独加 eol=crlf。
+* text=auto eol=lf
 
-# 例外：可执行脚本保持 LF（shebang 在 macOS/Linux 遇 CRLF 会失效）
-*.py text eol=lf
-*.sh text eol=lf
-
-# 本文件自身保持 LF
+# 本文件自身 LF
 .gitattributes text eol=lf
