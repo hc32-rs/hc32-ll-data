@@ -1,20 +1,117 @@
-# Flash、RAM 与 SRAM
+# Flash、RAM 与 SRAM 控制
 
-| 版本 | 系列 |
-|---|---|
-| `efm_v1/v2/v3` | 分别为 F115/F120、F155、M120 |
-| `efm_v4` | K116/K118，含数据闪存控制块 |
-| `efm_v5`、`sram_v1` | F175，EFM@0x40026400，SRAM 控制器@0x40024C00 |
-| `sram_v2` | K116/K118，SRAMC ECC 控制 |
-| `efm_v6/v7/v8/v9/v10` | 分别为 F431/M413、A460/F451/F452/F460、A448/F334/F336/F448、A472/F472、M441 |
-| `efm_v11/v12/v13/v14` | 分别为 A4A0/F4A0/F4A2、F467、A4A8/F4A8、M458 |
-| `sram_v3/v4/v5/v6` | 分别为 A448/A472/F448/F472、F334/F336、M441、A460/F451/F452/F460 |
-| `sram_v7/v8/v9` | 分别为 A4A0/F467/F4A0/F4A2、M458、A4A8/F4A8 |
+EFM 由基础编程/保护、映射或专有读保护扩展、ECC 错误记录到程序/数据 Flash 双窗口分档。
+功能维度不同的分支用后缀区分，不把文件发现顺序当成功能排序。
+SRAMC 按校验/等待控制、单 ECC 地址窗口、多 ECC 地址窗口分档；bank 与注错位仍逐布局保留。
+F175 的 SRAM 控制器使用 sram 名称，其 DFM 纳入本次；M458 的 DFM 保持排除。
 
-EFM 和 SRAM 控制器的版号描述寄存器块。内存容量应从各 SDK 的 `Source/GCC/linker/*.ld`
-或对应 IAR/MDK 脚本提取，区分全片脚本、bootloader 分区与 RAM 调试目标。
-M458 的设备头定义 DFM@0x40050000、EFM2@0x01001C50 和 DFLASH@0x40058000，
-三个地址分开建模。
+M458 的 DFM@0x40050000、EFM2@0x01001C50、DFLASH@0x40058000 是不同地址。
+EFM2 的 PN 窗口独立命名为 efm2，不因 M458 的 DFM 被排除而遗漏。
+外设版本描述控制器寄存器，容量和地址来自链接脚本，区分全片、bootloader 和 RAM 调试工程。
+
+[编号规则](../layout-versions.md) · [实例 CSV](../peripheral-versions.csv) · [SDK 核验](../sdk-verification.md)。
+
+<!-- peripheral-versions:begin -->
+## 版本与系列对照
+
+以下为待确认命名，当前来源仍使用旧文件名。系列名前缀 `HC32` 省略。
+
+### dfm：v1
+
+数据 Flash 控制（仅 F175 纳入）。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `dfm_ll_v1.rs` | [dfm_v1](../../data/registers/dfm_v1.yaml) | F175: DFM | 10 / 22 | 本档位对照基准；完整定义见来源 YAML |
+
+### efm：v1
+
+基础编程、擦除、状态与保护。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `efm_ll_v1.rs` | [efm_v6](../../data/registers/efm_v6.yaml) | F115/F120: EFM | 14 / 31 | 本档位对照基准；完整定义见来源 YAML |
+| `efm_ll_v1_1.rs` | [efm_v12](../../data/registers/efm_v12.yaml) | M120: EFM | 14 / 33 | 相对 efm_ll_v1：定义差异 FPMTEW/FPMTSW/FRMC |
+| `efm_ll_v1_2.rs` | [efm_v7](../../data/registers/efm_v7.yaml) | F155: EFM | 14 / 34 | 相对 efm_ll_v1：定义差异 FPMTEW/FPMTSW/FRMC/FSCLR/FSR 等 6 项 |
+
+### efm：v2
+
+编程/保护及映射或专有读保护扩展。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `efm_ll_v2.rs` | [efm_v2](../../data/registers/efm_v2.yaml) | A460/F451/F452/F460: EFM | 16 / 36 | 本档位对照基准；完整定义见来源 YAML |
+| `efm_ll_v2_1.rs` | [efm_v9](../../data/registers/efm_v9.yaml) | F431/M413: EFM | 16 / 38 | 相对 efm_ll_v2：增加 FCRCDOR/FOCDPRTFG/FPCROPFG/HRCCFGR；缺少 FSWP/MMF_REMCR0/MMF_REMCR1/MMF_REMPRT；定义差异 FPMTEW/FPMTSW/FRMC/FSCLR/FSR 等 8 项 |
+| `efm_ll_v2_2.rs` | [efm_v1](../../data/registers/efm_v1.yaml) | A448/F334/F336/F448: EFM | 19 / 75 | 相对 efm_ll_v2：增加 CHIPID/F0NWPRT/KEY1/KEY2/WLOCK；缺少 FPMTEW/FPMTSW；定义差异 FITE/FRMC/FSCLR/FSR/FSTP 等 11 项 |
+| `efm_ll_v2_3.rs` | [efm_v13](../../data/registers/efm_v13.yaml) | M441: EFM | 19 / 76 | 相对 efm_ll_v2：增加 F0NWPRT/KEY1/KEY2/PTNMFG/WLOCK；缺少 FPMTEW/FPMTSW；定义差异 FITE/FRMC/FSCLR/FSR/FSTP 等 11 项 |
+| `efm_ll_v2_4.rs` | [efm_v3](../../data/registers/efm_v3.yaml) | A472/F472: EFM | 20 / 114 | 相对 efm_ll_v2：增加 CHIPID/F0NWPRT/F1NWPRT/KEY1/KEY2 等 6 项；缺少 FPMTEW/FPMTSW；定义差异 FITE/FRMC/FSCLR/FSR/FSTP 等 8 项 |
+| `efm_ll_v2_5.rs` | [efm_v10](../../data/registers/efm_v10.yaml) | F467: EFM | 20 / 164 | 相对 efm_ll_v2：增加 F0NWPRT0/F0NWPRT1/F0NWPRT2/F0NWPRT3/KEY1 等 7 项；缺少 FPMTEW/FPMTSW/FSWP；定义差异 FITE/FRMC/FSCLR/FSR/FSTP 等 7 项 |
+| `efm_ll_v2_6.rs` | [efm_v4](../../data/registers/efm_v4.yaml) | A4A0/F4A0/F4A2: EFM | 26 / 305 | 相对 efm_ll_v2：增加 CHIPID/F0NWPRT0/F0NWPRT1/F0NWPRT2/F0NWPRT3 等 12 项；缺少 FPMTEW/FPMTSW；定义差异 FITE/FRMC/FSCLR/FSR/FSTP 等 8 项 |
+
+### efm：v3
+
+编程/保护及 ECC 错误记录。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `efm_ll_v3.rs` | [efm_v8](../../data/registers/efm_v8.yaml) | F175: EFM | 19 / 54 | 本档位对照基准；完整定义见来源 YAML |
+| `efm_ll_v3_1.rs` | [efm_v14](../../data/registers/efm_v14.yaml) | M458: EFM | 22 / 54 | 相对 efm_ll_v3：增加 ERI0/ERI1/ERI2/FAPRT/FCRCDOR 等 22 项；缺少 BYPASS/CR/ECCADR0/ECCADR1/ECCCR 等 19 项 |
+| `efm_ll_v3_2.rs` | [efm_v5](../../data/registers/efm_v5.yaml) | A4A8/F4A8: EFM | 50 / 354 | 相对 efm_ll_v3：增加 CHIPID/CHIPSEL/CKCR/CKPR/CKSR 等 50 项；缺少 BYPASS/CR/ECCADR0/ECCADR1/ECCCR 等 19 项 |
+
+### efm：v4
+
+程序/数据 Flash 双控制窗口及 ECC。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `efm_ll_v4.rs` | [efm_v11](../../data/registers/efm_v11.yaml) | K116/K118: EFM | 38 / 224 | 本档位对照基准；完整定义见来源 YAML |
+
+### efm2：v1
+
+独立 Flash PN 窗口。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `efm2_ll_v1.rs` | [efm_v15](../../data/registers/efm_v15.yaml) | M458: EFM2 | 4 / 0 | 本档位对照基准；完整定义见来源 YAML |
+
+### sram：v1
+
+SRAM 错误控制。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `sram_ll_v1.rs` | [sram_common](../../data/registers/sram_common.yaml) | F175: SRAM | 6 / 9 | 本档位对照基准；完整定义见来源 YAML |
+
+### sramc：v1
+
+SRAM 校验/等待控制，0 个 ECC 错误地址窗口；bank 与注错位分变体。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `sramc_ll_v1.rs` | [sramc_v2](../../data/registers/sramc_v2.yaml) | A460/F451/F452/F460: SRAMC | 5 / 20 | 本档位对照基准；完整定义见来源 YAML |
+| `sramc_ll_v1_1.rs` | [sramc_v4](../../data/registers/sramc_v4.yaml) | A4A0/F467/F4A0/F4A2: SRAMC | 5 / 26 | 相对 sramc_ll_v1：定义差异 CKCR/CKSR/WTCR |
+
+### sramc：v2
+
+SRAM 校验/等待控制，1 个 ECC 错误地址窗口；bank 与注错位分变体。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `sramc_ll_v2.rs` | [sramc_v7](../../data/registers/sramc_v7.yaml) | K116/K118: SRAMC | 7 / 9 | 本档位对照基准；完整定义见来源 YAML |
+| `sramc_ll_v2_1.rs` | [sramc_v8](../../data/registers/sramc_v8.yaml) | M441: SRAMC | 7 / 12 | 相对 sramc_ll_v2：增加 SRAM0_ECCERRADDR/SRAM0_EIBIT0/SRAM0_EIBIT1/SRAM0_EIEN；缺少 SRAM1_ECCERRADDR/SRAM1_EIBIT0/SRAM1_EIBIT1/SRAM1_EIEN；定义差异 CKCR/CKSR |
+
+### sramc：v3
+
+SRAM 校验/等待控制，2 个 ECC 错误地址窗口；bank 与注错位分变体；SRAM 校验/等待控制，3 个 ECC 错误地址窗口；bank 与注错位分变体；SRAM 校验/等待控制，7 个 ECC 错误地址窗口；bank 与注错位分变体。
+
+| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
+|---|---|---|---:|---|
+| `sramc_ll_v3.rs` | [sramc_v1](../../data/registers/sramc_v1.yaml) | A448/F448: SRAMC | 11 / 19 | 本档位对照基准；完整定义见来源 YAML |
+| `sramc_ll_v3_1.rs` | [sramc_v3](../../data/registers/sramc_v3.yaml) | A472/F472: SRAMC | 11 / 19 | 相对 sramc_ll_v3：定义差异 SRAM0_ECCERRADDR/SRAMB_ECCERRADDR |
+| `sramc_ll_v3_2.rs` | [sramc_v9](../../data/registers/sramc_v9.yaml) | M458: SRAMC | 13 / 26 | 相对 sramc_ll_v3：增加 SRAM1_ECCERRADDR/SRAM1_EIBIT0/SRAM1_EIBIT1/SRAM1_EIEN/SRAMH_ECCERRADDR 等 10 项；缺少 SRAM0_ECCERRADDR/SRAM0_EIBIT0/SRAM0_EIBIT1/SRAM0_EIEN/SRAMB_ECCERRADDR 等 8 项；定义差异 CKCR/CKSR |
+| `sramc_ll_v3_3.rs` | [sramc_v6](../../data/registers/sramc_v6.yaml) | F334/F336: SRAMC | 15 / 25 | 相对 sramc_ll_v3：增加 SRAMH_ECCERRADDR/SRAMH_EIBIT0/SRAMH_EIBIT1/SRAMH_EIEN；定义差异 CKCR/CKSR/SRAMB_ECCERRADDR/SRAMB_EIBIT0/SRAMB_EIBIT1 等 6 项 |
+| `sramc_ll_v3_4.rs` | [sramc_v5](../../data/registers/sramc_v5.yaml) | A4A8/F4A8: SRAMC | 36 / 61 | 相对 sramc_ll_v3：增加 CACHE_ECCERRADDR/CACHE_EIBIT0/CACHE_EIBIT1/CACHE_EIBIT2/CACHE_EIBIT3 等 29 项；缺少 SRAM0_ECCERRADDR/SRAM0_EIBIT0/SRAM0_EIBIT1/SRAM0_EIEN；定义差异 CKCR/CKSR/SRAMB_ECCERRADDR/SRAMB_EIBIT0/SRAMB_EIBIT1 等 6 项 |
+<!-- peripheral-versions:end -->
 
 ## GCC 链接脚本容量
 

@@ -3,7 +3,7 @@
 范围为工作区 `xh_ll_sdk/` 下 27 套 SDK。设备头在
 `drivers/cmsis/Device/*/*/Include/`，LL 头文件在
 `drivers/hc32_ll_driver/inc/`。27 份归档 SVD 与相应 SDK 内 IAR、GCC
-各一份 SVD 内容一致（行尾归一为 LF）。按 SDK 的头文件清单重新枚举后，与
+各一份 SVD 在初始归档时内容一致（行尾归一为 LF）；后续修订以 [CHANGELOG](../svd/CHANGELOG.md) 为准。按 SDK 的头文件清单重新枚举后，与
 [驱动矩阵](driver-matrix.json)一致。逐套设备头确认 7 个 Cortex-M0+
 和 20 个 Cortex-M4，F175 使用 `core_cm0plus.h`。
 
@@ -23,5 +23,6 @@
 | [CRC、RTC 与通信](explore/crypto-comm.md) | CRC、TRNG、RTC、CAN/MCAN 的实例与布局分组 |
 
 SVD 布局比较使用寄存器名、偏移、位域名和位位置，并解析外设级 `derivedFrom`。
-各组所列版号仍为生成数据时的候选，访问属性、复位值和可选位需要逐项复核。
+各组命名已统一为[待确认方案](layout-versions.md)。此次映射按完整现有生成布局保留变体，
+不将旧文档静态签名视为可直接合并的 IR；访问属性、复位值和可选位仍依来源核对。
 本次验证使用 SDK 文件，封装级引脚复用、完整料号容量和硬件运行行为仍需手册或实测。
