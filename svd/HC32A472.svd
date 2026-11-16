@@ -7990,7 +7990,7 @@
             </addressBlock>
             <interrupt>
                 <name>CTC</name>
-                <description>HRC frequency calibrate value overflow interrupt</description>
+                <description>CTC interrupt</description>
                 <value>173</value>
             </interrupt>
             <registers>
@@ -8928,48 +8928,43 @@
                 <usage>registers</usage>
             </addressBlock>
             <interrupt>
-                <name>DMA1_Error</name>
-                <description>DMA error interrupt</description>
-                <value>32</value>
-            </interrupt>
-            <interrupt>
                 <name>DMA1_TC0_BTC0</name>
-                <description>DMA1 Transmission Complete 0 or Block Transmission Complete 0 interrupt</description>
+                <description>DMA1_TC0_BTC0 interrupt</description>
                 <value>33</value>
             </interrupt>
             <interrupt>
                 <name>DMA1_TC1_BTC1</name>
-                <description>DMA1 Transmission Complete 1 or Block Transmission Complete 1 interrupt</description>
+                <description>DMA1_TC1_BTC1 interrupt</description>
                 <value>34</value>
             </interrupt>
             <interrupt>
                 <name>DMA1_TC2_BTC2</name>
-                <description>DMA1 Transmission Complete 2 or Block Transmission Complete 2 interrupt</description>
+                <description>DMA1_TC2_BTC2 interrupt</description>
                 <value>35</value>
             </interrupt>
             <interrupt>
                 <name>DMA1_TC3_BTC3</name>
-                <description>DMA1 Transmission Complete 3 or Block Transmission Complete 3 interrupt</description>
+                <description>DMA1_TC3_BTC3 interrupt</description>
                 <value>36</value>
             </interrupt>
             <interrupt>
                 <name>DMA1_TC4_BTC4</name>
-                <description>DMA1 Transmission Complete 4 or Block Transmission Complete 4 interrupt</description>
+                <description>DMA1_TC4_BTC4 interrupt</description>
                 <value>37</value>
             </interrupt>
             <interrupt>
                 <name>DMA1_TC5_BTC5</name>
-                <description>DMA1 Transmission Complete 5 or Block Transmission Complete 5 interrupt</description>
+                <description>DMA1_TC5_BTC5 interrupt</description>
                 <value>38</value>
             </interrupt>
             <interrupt>
                 <name>DMA1_TC6_BTC6</name>
-                <description>DMA1 Transmission Complete 6 or Block Transmission Complete 6 interrupt</description>
+                <description>DMA1_TC6_BTC6 interrupt</description>
                 <value>39</value>
             </interrupt>
             <interrupt>
                 <name>DMA1_TC7_BTC7</name>
-                <description>DMA1 Transmission Complete 7 or Block Transmission Complete 7 interrupt</description>
+                <description>DMA1_TC7_BTC7 interrupt</description>
                 <value>40</value>
             </interrupt>
             <registers>
@@ -12698,48 +12693,43 @@
                 <usage>registers</usage>
             </addressBlock>
             <interrupt>
-                <name>DMA2_Error</name>
-                <description>DMA error interrupt</description>
-                <value>47</value>
-            </interrupt>
-            <interrupt>
                 <name>DMA2_TC0_BTC0</name>
-                <description>DMA2 Transmission Complete 0 or Block Transmission Complete 0 interrupt</description>
+                <description>DMA2_TC0_BTC0 interrupt</description>
                 <value>48</value>
             </interrupt>
             <interrupt>
                 <name>DMA2_TC1_BTC1</name>
-                <description>DMA2 Transmission Complete 1 or Block Transmission Complete 1 interrupt</description>
+                <description>DMA2_TC1_BTC1 interrupt</description>
                 <value>49</value>
             </interrupt>
             <interrupt>
                 <name>DMA2_TC2_BTC2</name>
-                <description>DMA2 Transmission Complete 2 or Block Transmission Complete 2 interrupt</description>
+                <description>DMA2_TC2_BTC2 interrupt</description>
                 <value>50</value>
             </interrupt>
             <interrupt>
                 <name>DMA2_TC3_BTC3</name>
-                <description>DMA2 Transmission Complete 3 or Block Transmission Complete 3 interrupt</description>
+                <description>DMA2_TC3_BTC3 interrupt</description>
                 <value>51</value>
             </interrupt>
             <interrupt>
                 <name>DMA2_TC4_BTC4</name>
-                <description>DMA2 Transmission Complete 4 or Block Transmission Complete 4 interrupt</description>
+                <description>DMA2_TC4_BTC4 interrupt</description>
                 <value>52</value>
             </interrupt>
             <interrupt>
                 <name>DMA2_TC5_BTC5</name>
-                <description>DMA2 Transmission Complete 5 or Block Transmission Complete 5 interrupt</description>
+                <description>DMA2_TC5_BTC5 interrupt</description>
                 <value>53</value>
             </interrupt>
             <interrupt>
                 <name>DMA2_TC6_BTC6</name>
-                <description>DMA2 Transmission Complete 6 or Block Transmission Complete 6 interrupt</description>
+                <description>DMA2_TC6_BTC6 interrupt</description>
                 <value>54</value>
             </interrupt>
             <interrupt>
                 <name>DMA2_TC7_BTC7</name>
-                <description>DMA2 Transmission Complete 7 or Block Transmission Complete 7 interrupt</description>
+                <description>DMA2_TC7_BTC7 interrupt</description>
                 <value>55</value>
             </interrupt>
         </peripheral>
@@ -12754,13 +12744,8 @@
             </addressBlock>
             <interrupt>
                 <name>EFM_PEERR_RDCOL</name>
-                <description>EFM Program Erase error or Read Column interrupt</description>
+                <description>EFM_PEERR_RDCOL interrupt</description>
                 <value>41</value>
-            </interrupt>
-            <interrupt>
-                <name>EFM_OPEND</name>
-                <description>EFM Operation End interrupt</description>
-                <value>42</value>
             </interrupt>
             <registers>
                 <register>
@@ -13782,7 +13767,7 @@
             </addressBlock>
             <interrupt>
                 <name>EMB_GR0</name>
-                <description>EMB Group 0 interrupt</description>
+                <description>EMB_GR0 interrupt</description>
                 <value>152</value>
             </interrupt>
             <registers>
@@ -14513,7 +14498,7 @@
             </addressBlock>
             <interrupt>
                 <name>EMB_GR1</name>
-                <description>EMB Group 1 interrupt</description>
+                <description>EMB_GR1 interrupt</description>
                 <value>153</value>
             </interrupt>
         </peripheral>
@@ -14528,7 +14513,7 @@
             </addressBlock>
             <interrupt>
                 <name>EMB_GR2</name>
-                <description>EMB Group 2 interrupt</description>
+                <description>EMB_GR2 interrupt</description>
                 <value>154</value>
             </interrupt>
         </peripheral>
@@ -14543,7 +14528,7 @@
             </addressBlock>
             <interrupt>
                 <name>EMB_GR3</name>
-                <description>EMB Group 3 interrupt</description>
+                <description>EMB_GR3 interrupt</description>
                 <value>155</value>
             </interrupt>
         </peripheral>
@@ -14558,7 +14543,7 @@
             </addressBlock>
             <interrupt>
                 <name>EMB_GR4</name>
-                <description>EMB Group 4 interrupt</description>
+                <description>EMB_GR4 interrupt</description>
                 <value>156</value>
             </interrupt>
         </peripheral>
@@ -14573,7 +14558,7 @@
             </addressBlock>
             <interrupt>
                 <name>EMB_GR5</name>
-                <description>EMB Group 5 interrupt</description>
+                <description>EMB_GR5 interrupt</description>
                 <value>157</value>
             </interrupt>
         </peripheral>
@@ -14588,7 +14573,7 @@
             </addressBlock>
             <interrupt>
                 <name>EMB_GR6</name>
-                <description>EMB Group 6 interrupt</description>
+                <description>EMB_GR6 interrupt</description>
                 <value>158</value>
             </interrupt>
         </peripheral>
@@ -15814,22 +15799,22 @@
             </addressBlock>
             <interrupt>
                 <name>EVENT_PORT1</name>
-                <description>event port 1 interrupt</description>
+                <description>EVENT_PORT1 interrupt</description>
                 <value>144</value>
             </interrupt>
             <interrupt>
                 <name>EVENT_PORT2</name>
-                <description>event port 2 interrupt</description>
+                <description>EVENT_PORT2 interrupt</description>
                 <value>145</value>
             </interrupt>
             <interrupt>
                 <name>EVENT_PORT3</name>
-                <description>event port 3 interrupt</description>
+                <description>EVENT_PORT3 interrupt</description>
                 <value>146</value>
             </interrupt>
             <interrupt>
                 <name>EVENT_PORT4</name>
-                <description>event port 4 interrupt</description>
+                <description>EVENT_PORT4 interrupt</description>
                 <value>147</value>
             </interrupt>
             <registers>
@@ -35872,7 +35857,7 @@
             </addressBlock>
             <interrupt>
                 <name>MAU</name>
-                <description>MAU calculate complete interrupt</description>
+                <description>MAU interrupt</description>
                 <value>56</value>
             </interrupt>
             <registers>
@@ -38343,7 +38328,7 @@
             </addressBlock>
             <interrupt>
                 <name>OTS</name>
-                <description>Temperature measure complete interrupt</description>
+                <description>OTS interrupt</description>
                 <value>170</value>
             </interrupt>
             <registers>
@@ -41570,7 +41555,7 @@
             </addressBlock>
             <interrupt>
                 <name>QSPI</name>
-                <description>QSPI flash access error interrupt</description>
+                <description>QSPI interrupt</description>
                 <value>43</value>
             </interrupt>
             <registers>
@@ -44362,7 +44347,7 @@
             </addressBlock>
             <interrupt>
                 <name>SWDT</name>
-                <description>SWDT underflow or update error interrupt</description>
+                <description>SWDT interrupt</description>
                 <value>74</value>
             </interrupt>
             <registers>
@@ -45412,23 +45397,18 @@
             </addressBlock>
             <interrupt>
                 <name>TMR4_1_GCMP</name>
-                <description>Timer4 unit 1 compare match interrupt</description>
+                <description>TMR4_1_GCMP interrupt</description>
                 <value>124</value>
             </interrupt>
             <interrupt>
                 <name>TMR4_1_OVF_UDF</name>
-                <description>Timer4 unit 1 overflow or underflow interrupt</description>
+                <description>TMR4_1_OVF_UDF interrupt</description>
                 <value>125</value>
             </interrupt>
             <interrupt>
                 <name>TMR4_1_RELOAD</name>
-                <description>Timer4 unit 1 reload match interrupt</description>
+                <description>TMR4_1_RELOAD interrupt</description>
                 <value>126</value>
-            </interrupt>
-            <interrupt>
-                <name>TMR4_1_SCM</name>
-                <description>Timer4 unit 1 special compare match interrupt</description>
-                <value>127</value>
             </interrupt>
             <registers>
                 <register>
@@ -47971,22 +47951,17 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_1_GCMP</name>
-                <description>Timer6 unit 1 compare match interrupt</description>
+                <description>TMR6_1_GCMP interrupt</description>
                 <value>75</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_1_OVF_UDF</name>
-                <description>Timer6 unit 1 overflow or underflow interrupt</description>
+                <description>TMR6_1_OVF_UDF interrupt</description>
                 <value>76</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_1_GDTE</name>
-                <description>Timer6 unit 1 dead time error interrupt</description>
-                <value>77</value>
-            </interrupt>
-            <interrupt>
                 <name>TMR6_1_SCMP</name>
-                <description>Timer6 unit 1 special compare match interrupt</description>
+                <description>TMR6_1_SCMP interrupt</description>
                 <value>78</value>
             </interrupt>
             <registers>
@@ -50059,23 +50034,18 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_10_GCMP</name>
-                <description>Timer6 unit 10 compare match interrupt</description>
+                <description>TMR6_10_GCMP interrupt</description>
                 <value>120</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_10_OVF_UDF</name>
-                <description>Timer6 unit 10 overflow or underflow interrupt</description>
+                <description>TMR6_10_OVF_UDF interrupt</description>
                 <value>121</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_10_GDTE</name>
-                <description>Timer6 unit 10 dead time error interrupt</description>
-                <value>122</value>
-            </interrupt>
-            <interrupt>
                 <name>TMR6_1_SCMP</name>
-                <description>Timer6 unit 10 special compare match interrupt</description>
-                <value>123</value>
+                <description>TMR6_1_SCMP interrupt</description>
+                <value>78</value>
             </interrupt>
         </peripheral>
         <peripheral derivedFrom="TMR61">
@@ -50089,23 +50059,18 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_2_GCMP</name>
-                <description>Timer6 unit 2 compare match interrupt</description>
-                <value>82</value>
+                <description>TMR6_2_GCMP interrupt</description>
+                <value>81</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_2_OVF_UDF</name>
-                <description>Timer6 unit 2 overflow or underflow interrupt</description>
-                <value>83</value>
-            </interrupt>
-            <interrupt>
-                <name>TMR6_2_GDTE</name>
-                <description>Timer6 unit 2 dead time error interrupt</description>
-                <value>84</value>
+                <description>TMR6_2_OVF_UDF interrupt</description>
+                <value>82</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_2_SCMP</name>
-                <description>Timer6 unit 2 special compare match interrupt</description>
-                <value>85</value>
+                <description>TMR6_2_SCMP interrupt</description>
+                <value>84</value>
             </interrupt>
         </peripheral>
         <peripheral derivedFrom="TMR61">
@@ -50119,22 +50084,17 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_3_GCMP</name>
-                <description>Timer6 unit 3 compare match interrupt</description>
+                <description>TMR6_3_GCMP interrupt</description>
                 <value>87</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_3_OVF_UDF</name>
-                <description>Timer6 unit 3 overflow or underflow interrupt</description>
+                <description>TMR6_3_OVF_UDF interrupt</description>
                 <value>88</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_3_GDTE</name>
-                <description>Timer6 unit 3 dead time error interrupt</description>
-                <value>89</value>
-            </interrupt>
-            <interrupt>
                 <name>TMR6_3_SCMP</name>
-                <description>Timer6 unit 3 special compare match interrupt</description>
+                <description>TMR6_3_SCMP interrupt</description>
                 <value>90</value>
             </interrupt>
         </peripheral>
@@ -50149,22 +50109,17 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_4_GCMP</name>
-                <description>Timer6 unit 4 compare match interrupt</description>
+                <description>TMR6_4_GCMP interrupt</description>
                 <value>93</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_4_OVF_UDF</name>
-                <description>Timer6 unit 4 overflow or underflow interrupt</description>
+                <description>TMR6_4_OVF_UDF interrupt</description>
                 <value>94</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_4_GDTE</name>
-                <description>Timer6 unit 4 dead time error interrupt</description>
-                <value>95</value>
-            </interrupt>
-            <interrupt>
                 <name>TMR6_4_SCMP</name>
-                <description>Timer6 unit 4 special compare match interrupt</description>
+                <description>TMR6_4_SCMP interrupt</description>
                 <value>96</value>
             </interrupt>
         </peripheral>
@@ -50179,22 +50134,17 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_5_GCMP</name>
-                <description>Timer6 unit 5 compare match interrupt</description>
+                <description>TMR6_5_GCMP interrupt</description>
                 <value>99</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_5_OVF_UDF</name>
-                <description>Timer6 unit 5 overflow or underflow interrupt</description>
+                <description>TMR6_5_OVF_UDF interrupt</description>
                 <value>100</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_5_GDTE</name>
-                <description>Timer6 unit 5 dead time error interrupt</description>
-                <value>101</value>
-            </interrupt>
-            <interrupt>
                 <name>TMR6_5_SCMP</name>
-                <description>Timer6 unit 5 special compare match interrupt</description>
+                <description>TMR6_5_SCMP interrupt</description>
                 <value>102</value>
             </interrupt>
         </peripheral>
@@ -50209,22 +50159,17 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_6_GCMP</name>
-                <description>Timer6 unit 6 compare match interrupt</description>
+                <description>TMR6_6_GCMP interrupt</description>
                 <value>104</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_6_OVF_UDF</name>
-                <description>Timer6 unit 6 overflow or underflow interrupt</description>
+                <description>TMR6_6_OVF_UDF interrupt</description>
                 <value>105</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_6_GDTE</name>
-                <description>Timer6 unit 6 dead time error interrupt</description>
-                <value>106</value>
-            </interrupt>
-            <interrupt>
                 <name>TMR6_6_SCMP</name>
-                <description>Timer6 unit 6 special compare match interrupt</description>
+                <description>TMR6_6_SCMP interrupt</description>
                 <value>107</value>
             </interrupt>
         </peripheral>
@@ -50239,22 +50184,17 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_7_GCMP</name>
-                <description>Timer6 unit 7 compare match interrupt</description>
+                <description>TMR6_7_GCMP interrupt</description>
                 <value>108</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_7_OVF_UDF</name>
-                <description>Timer6 unit 7 overflow or underflow interrupt</description>
+                <description>TMR6_7_OVF_UDF interrupt</description>
                 <value>109</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_7_GDTE</name>
-                <description>Timer6 unit 7 dead time error interrupt</description>
-                <value>110</value>
-            </interrupt>
-            <interrupt>
                 <name>TMR6_7_SCMP</name>
-                <description>Timer6 unit 7 special compare match interrupt</description>
+                <description>TMR6_7_SCMP interrupt</description>
                 <value>111</value>
             </interrupt>
         </peripheral>
@@ -50269,22 +50209,17 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_8_GCMP</name>
-                <description>Timer6 unit 8 compare match interrupt</description>
+                <description>TMR6_8_GCMP interrupt</description>
                 <value>112</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_8_OVF_UDF</name>
-                <description>Timer6 unit 8 overflow or underflow interrupt</description>
+                <description>TMR6_8_OVF_UDF interrupt</description>
                 <value>113</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_8_GDTE</name>
-                <description>Timer6 unit 8 dead time error interrupt</description>
-                <value>114</value>
-            </interrupt>
-            <interrupt>
                 <name>TMR6_8_SCMP</name>
-                <description>Timer6 unit 8 special compare match interrupt</description>
+                <description>TMR6_8_SCMP interrupt</description>
                 <value>115</value>
             </interrupt>
         </peripheral>
@@ -50299,22 +50234,17 @@
             </addressBlock>
             <interrupt>
                 <name>TMR6_9_GCMP</name>
-                <description>Timer6 unit 9 compare match interrupt</description>
+                <description>TMR6_9_GCMP interrupt</description>
                 <value>116</value>
             </interrupt>
             <interrupt>
                 <name>TMR6_9_OVF_UDF</name>
-                <description>Timer6 unit 9 overflow or underflow interrupt</description>
+                <description>TMR6_9_OVF_UDF interrupt</description>
                 <value>117</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_9_GDTE</name>
-                <description>Timer6 unit 9 dead time error interrupt</description>
-                <value>118</value>
-            </interrupt>
-            <interrupt>
                 <name>TMR6_9_SCMP</name>
-                <description>Timer6 unit 9 special compare match interrupt</description>
+                <description>TMR6_9_SCMP interrupt</description>
                 <value>119</value>
             </interrupt>
         </peripheral>
@@ -50732,12 +50662,12 @@
             </addressBlock>
             <interrupt>
                 <name>TMRA_1_OVF_UDF</name>
-                <description>TimerA unit 1 overflow or underflow interrupt</description>
+                <description>TMRA_1_OVF_UDF interrupt</description>
                 <value>79</value>
             </interrupt>
             <interrupt>
                 <name>TMRA_1_CMP</name>
-                <description>TimerA unit 1 compare match interrupt</description>
+                <description>TMRA_1_CMP interrupt</description>
                 <value>80</value>
             </interrupt>
             <registers>
@@ -51948,13 +51878,13 @@
             </addressBlock>
             <interrupt>
                 <name>TMRA_2_OVF_UDF</name>
-                <description>TimerA unit 2 overflow or underflow interrupt</description>
+                <description>TMRA_2_OVF_UDF interrupt</description>
                 <value>85</value>
             </interrupt>
             <interrupt>
                 <name>TMRA_1_CMP</name>
-                <description>TimerA unit 2 compare match interrupt</description>
-                <value>86</value>
+                <description>TMRA_1_CMP interrupt</description>
+                <value>80</value>
             </interrupt>
             <registers>
                 <register>
@@ -53164,13 +53094,13 @@
             </addressBlock>
             <interrupt>
                 <name>TMRA_3_OVF_UDF</name>
-                <description>TimerA unit 3 overflow or underflow interrupt</description>
+                <description>TMRA_3_OVF_UDF interrupt</description>
                 <value>91</value>
             </interrupt>
             <interrupt>
                 <name>TMRA_2_CMP</name>
-                <description>TimerA unit 3 compare match interrupt</description>
-                <value>92</value>
+                <description>TMRA_2_CMP interrupt</description>
+                <value>86</value>
             </interrupt>
             <registers>
                 <register>
@@ -54380,13 +54310,13 @@
             </addressBlock>
             <interrupt>
                 <name>TMRA_4_OVF_UDF</name>
-                <description>TimerA unit 4 overflow or underflow interrupt</description>
+                <description>TMRA_4_OVF_UDF interrupt</description>
                 <value>97</value>
             </interrupt>
             <interrupt>
                 <name>TMRA_3_CMP</name>
-                <description>TimerA unit 4 compare match interrupt</description>
-                <value>98</value>
+                <description>TMRA_3_CMP interrupt</description>
+                <value>92</value>
             </interrupt>
             <registers>
                 <register>
@@ -55596,12 +55526,12 @@
             </addressBlock>
             <interrupt>
                 <name>TMRA_5_OVF_UDF</name>
-                <description>TimerA unit 5 overflow or underflow interrupt</description>
+                <description>TMRA_5_OVF_UDF interrupt</description>
                 <value>139</value>
             </interrupt>
             <interrupt>
                 <name>TMRA_5_CMP</name>
-                <description>TimerA unit 5 compare match interrupt</description>
+                <description>TMRA_5_CMP interrupt</description>
                 <value>140</value>
             </interrupt>
             <registers>
@@ -56812,12 +56742,12 @@
             </addressBlock>
             <interrupt>
                 <name>TMRA_6_OVF_UDF</name>
-                <description>TimerA unit 6 overflow or underflow interrupt</description>
+                <description>TMRA_6_OVF_UDF interrupt</description>
                 <value>141</value>
             </interrupt>
             <interrupt>
                 <name>TMRA_6_CMP</name>
-                <description>TimerA unit 6 compare match interrupt</description>
+                <description>TMRA_6_CMP interrupt</description>
                 <value>142</value>
             </interrupt>
             <registers>
@@ -58113,17 +58043,12 @@
             </addressBlock>
             <interrupt>
                 <name>USART1</name>
-                <description>USART unit 1 interrupt</description>
+                <description>USART1 interrupt</description>
                 <value>135</value>
             </interrupt>
             <interrupt>
-                <name>USART1_TC</name>
-                <description>USART unit 1 Transmission complete interrupt</description>
-                <value>178</value>
-            </interrupt>
-            <interrupt>
                 <name>USART1_WUPI</name>
-                <description>USART unit 1 RX weak-up interrupt</description>
+                <description>USART1_WUPI interrupt</description>
                 <value>167</value>
             </interrupt>
             <registers>
@@ -58550,13 +58475,8 @@
             </addressBlock>
             <interrupt>
                 <name>USART2</name>
-                <description>USART unit 2 interrupt</description>
+                <description>USART2 interrupt</description>
                 <value>136</value>
-            </interrupt>
-            <interrupt>
-                <name>USART2_TC</name>
-                <description>USART unit 2 Transmission complete interrupt</description>
-                <value>179</value>
             </interrupt>
             <registers>
                 <register>
@@ -58982,13 +58902,8 @@
             </addressBlock>
             <interrupt>
                 <name>USART3</name>
-                <description>USART unit 3 interrupt</description>
+                <description>USART3 interrupt</description>
                 <value>148</value>
-            </interrupt>
-            <interrupt>
-                <name>USART3_TC</name>
-                <description>USART unit 3 Transmission complete interrupt</description>
-                <value>180</value>
             </interrupt>
             <registers>
                 <register>
@@ -59516,13 +59431,8 @@
             </addressBlock>
             <interrupt>
                 <name>USART4</name>
-                <description>USART unit 4 interrupt</description>
+                <description>USART4 interrupt</description>
                 <value>149</value>
-            </interrupt>
-            <interrupt>
-                <name>USART4_TC</name>
-                <description>USART unit 4 Transmission complete interrupt</description>
-                <value>181</value>
             </interrupt>
             <registers>
                 <register>
@@ -59948,13 +59858,8 @@
             </addressBlock>
             <interrupt>
                 <name>USART5</name>
-                <description>USART unit 5 interrupt</description>
+                <description>USART5 interrupt</description>
                 <value>160</value>
-            </interrupt>
-            <interrupt>
-                <name>USART5_TC</name>
-                <description>USART unit 5 Transmission complete interrupt</description>
-                <value>182</value>
             </interrupt>
             <registers>
                 <register>
@@ -60380,13 +60285,8 @@
             </addressBlock>
             <interrupt>
                 <name>USART6</name>
-                <description>USART unit 6 interrupt</description>
+                <description>USART6 interrupt</description>
                 <value>161</value>
-            </interrupt>
-            <interrupt>
-                <name>USART6_TC</name>
-                <description>USART unit 6 Transmission complete interrupt</description>
-                <value>183</value>
             </interrupt>
             <registers>
                 <register>
@@ -68305,7 +68205,7 @@
             </addressBlock>
             <interrupt>
                 <name>WDT</name>
-                <description>WDT underflow or update error interrupt</description>
+                <description>WDT interrupt</description>
                 <value>172</value>
             </interrupt>
             <registers>

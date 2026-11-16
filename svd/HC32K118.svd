@@ -3348,7 +3348,7 @@
             </addressBlock>
             <interrupt>
                 <name>DMA</name>
-                <description>DMA Interrupt</description>
+                <description>DMA interrupt</description>
                 <value>4</value>
             </interrupt>
             <registers>
@@ -4154,7 +4154,7 @@
             </addressBlock>
             <interrupt>
                 <name>EFM</name>
-                <description>EFM Interrupt</description>
+                <description>EFM interrupt</description>
                 <value>5</value>
             </interrupt>
             <registers>
@@ -6131,7 +6131,7 @@
             </addressBlock>
             <interrupt>
                 <name>EMB</name>
-                <description>EBM interrupt</description>
+                <description>EMB interrupt</description>
                 <value>27</value>
             </interrupt>
             <registers>
@@ -29178,7 +29178,7 @@
             </addressBlock>
             <interrupt>
                 <name>TMR0</name>
-                <description>Timer0 interrupt</description>
+                <description>TMR0 interrupt</description>
                 <value>6</value>
             </interrupt>
             <registers>
@@ -29365,7 +29365,7 @@
             </addressBlock>
             <interrupt>
                 <name>TMR2</name>
-                <description>Timer2 interrupt</description>
+                <description>TMR2 interrupt</description>
                 <value>7</value>
             </interrupt>
             <registers>
@@ -29967,12 +29967,12 @@
             </addressBlock>
             <interrupt>
                 <name>TMR4_CMP_OVF_UDF_RELOAD</name>
-                <description>Timer4 compare overflow underflow reload interrput</description>
+                <description>TMR4_CMP_OVF_UDF_RELOAD interrupt</description>
                 <value>8</value>
             </interrupt>
             <interrupt>
                 <name>TMR4_SCMP</name>
-                <description>Timer4 special compare interrput</description>
+                <description>TMR4_SCMP interrupt</description>
                 <value>9</value>
             </interrupt>
             <registers>
@@ -32516,7 +32516,7 @@
             </addressBlock>
             <interrupt>
                 <name>TMRA</name>
-                <description>TimerA interrupt</description>
+                <description>TMRA interrupt</description>
                 <value>10</value>
             </interrupt>
             <registers>

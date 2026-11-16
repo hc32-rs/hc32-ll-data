@@ -6890,7 +6890,7 @@
             </addressBlock>
             <interrupt>
                 <name>EMB</name>
-                <description>EMB group 0/1/2/3 interrupt</description>
+                <description>EMB interrupt</description>
                 <value>45</value>
             </interrupt>
             <registers>
@@ -8036,7 +8036,7 @@
             </addressBlock>
             <interrupt>
                 <name>FCM</name>
-                <description>FCM clock measurement interrupt</description>
+                <description>FCM interrupt</description>
                 <value>67</value>
             </interrupt>
             <registers>
@@ -30031,24 +30031,9 @@
                 <usage>registers</usage>
             </addressBlock>
             <interrupt>
-                <name>USART1_RF_SE</name>
-                <description>USART1 receive full or send empty interrupt</description>
-                <value>51</value>
-            </interrupt>
-            <interrupt>
-                <name>USART1_Err_Tend_Lin_Timeout</name>
-                <description>USART1 error or transmission complete(TEDNI) or LIN weak-up or receive timrout interrupt</description>
-                <value>52</value>
-            </interrupt>
-            <interrupt>
                 <name>USART1_TCI</name>
-                <description>USART1 transmission complete(TCI) interrupt</description>
+                <description>USART1_TCI interrupt</description>
                 <value>53</value>
-            </interrupt>
-            <interrupt>
-                <name>USART1_WKUP</name>
-                <description>USART1 RX weak-up stop mode interrupt</description>
-                <value>69</value>
             </interrupt>
             <registers>
                 <register>
@@ -30758,18 +30743,8 @@
                 <usage>registers</usage>
             </addressBlock>
             <interrupt>
-                <name>USART2_RF_SE</name>
-                <description>USART2 receive full or send empty interrupt</description>
-                <value>54</value>
-            </interrupt>
-            <interrupt>
-                <name>USART2_Err_Tend_Lin_Timeout</name>
-                <description>USART2 error or transmission complete(TEDNI) or LIN weak-up or receive timrout interrupt</description>
-                <value>55</value>
-            </interrupt>
-            <interrupt>
                 <name>USART2_TCI</name>
-                <description>USART2 transmission complete(TCI) interrupt</description>
+                <description>USART2_TCI interrupt</description>
                 <value>56</value>
             </interrupt>
         </peripheral>
@@ -30784,18 +30759,8 @@
                 <usage>registers</usage>
             </addressBlock>
             <interrupt>
-                <name>USART3_RF_SE</name>
-                <description>USART3 receive full or send empty interrupt</description>
-                <value>57</value>
-            </interrupt>
-            <interrupt>
-                <name>USART3_Err_Tend_Lin_Timeout</name>
-                <description>USART3 error or transmission complete(TEDNI) or LIN weak-up or receive timrout interrupt</description>
-                <value>58</value>
-            </interrupt>
-            <interrupt>
                 <name>USART3_TCI</name>
-                <description>USART3 transmission complete(TCI) interrupt</description>
+                <description>USART3_TCI interrupt</description>
                 <value>59</value>
             </interrupt>
         </peripheral>
@@ -30810,18 +30775,8 @@
                 <usage>registers</usage>
             </addressBlock>
             <interrupt>
-                <name>USART4_RF_SE</name>
-                <description>USART4 receive full or send empty interrupt</description>
-                <value>60</value>
-            </interrupt>
-            <interrupt>
-                <name>USART4_Err_Tend_Lin_Timeout</name>
-                <description>USART4 error or transmission complete(TEDNI) or LIN weak-up or receive timrout interrupt</description>
-                <value>61</value>
-            </interrupt>
-            <interrupt>
                 <name>USART4_TCI</name>
-                <description>USART4 transmission complete(TCI) interrupt</description>
+                <description>USART4_TCI interrupt</description>
                 <value>62</value>
             </interrupt>
         </peripheral>
@@ -30837,7 +30792,7 @@
             </addressBlock>
             <interrupt>
                 <name>WDT</name>
-                <description>WDT underflow or refresh error interrupt</description>
+                <description>WDT interrupt</description>
                 <value>68</value>
             </interrupt>
             <registers>
