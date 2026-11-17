@@ -1,6 +1,6 @@
 # HC32 LL 外设 IP 分类
 
-[统一编号规则](layout-versions.md)、[实例 CSV](peripheral-versions.csv)和[显式映射](peripheral-version-map.json)共同描述待确认命名。
+[统一编号规则](layout-versions.md)、[实例 CSV](peripheral-versions.csv)和[显式映射](peripheral-version-map.json)共同描述当前命名。
 各专题保留系列差异与 SDK 依据，并从显式映射生成完整布局对照；本索引不再重复维护版本号。
 
 | 外设组 | 核对重点 |

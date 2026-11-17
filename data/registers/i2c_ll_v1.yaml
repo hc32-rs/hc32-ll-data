@@ -1,0 +1,138 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F175/I2C0；覆盖系列：HC32F175。
+block/I2C:
+  description: desc I2C.
+  items:
+  - name: BRREN
+    description: desc BRREN.
+    byte_offset: 0
+    fieldset: BRREN
+  - name: BRR
+    description: desc BRR.
+    byte_offset: 4
+    fieldset: BRR
+  - name: CR
+    description: desc CR.
+    byte_offset: 8
+    fieldset: CR
+  - name: DR
+    description: desc DR.
+    byte_offset: 12
+    fieldset: DR
+  - name: ADDR0
+    description: desc ADDR0.
+    byte_offset: 16
+    fieldset: ADDR0
+  - name: STAT
+    description: desc STAT.
+    byte_offset: 20
+    access: Read
+    fieldset: STAT
+  - name: ADDR1
+    description: desc ADDR1.
+    byte_offset: 32
+    fieldset: ADDR1
+  - name: ADDR2
+    description: desc ADDR2.
+    byte_offset: 36
+    fieldset: ADDR2
+  - name: MATCH
+    description: desc MATCH.
+    byte_offset: 40
+    access: Read
+    fieldset: MATCH
+fieldset/ADDR0:
+  description: desc ADDR0.
+  fields:
+  - name: GC
+    description: desc GC.
+    bit_offset: 0
+    bit_size: 1
+  - name: ADDR
+    description: desc ADDR.
+    bit_offset: 1
+    bit_size: 7
+fieldset/ADDR1:
+  description: desc ADDR1.
+  fields:
+  - name: ADDR
+    description: desc ADDR.
+    bit_offset: 0
+    bit_size: 8
+fieldset/ADDR2:
+  description: desc ADDR2.
+  fields:
+  - name: ADDR
+    description: desc ADDR.
+    bit_offset: 0
+    bit_size: 8
+fieldset/BRR:
+  description: desc BRR.
+  fields:
+  - name: BBR
+    description: desc BBR.
+    bit_offset: 0
+    bit_size: 8
+fieldset/BRREN:
+  description: desc BRREN.
+  fields:
+  - name: EN
+    description: desc EN.
+    bit_offset: 0
+    bit_size: 1
+fieldset/CR:
+  description: desc CR.
+  fields:
+  - name: FLT
+    description: desc FLT.
+    bit_offset: 0
+    bit_size: 1
+  - name: AA
+    description: desc AA.
+    bit_offset: 2
+    bit_size: 1
+  - name: SI
+    description: desc SI.
+    bit_offset: 3
+    bit_size: 1
+  - name: STO
+    description: desc STO.
+    bit_offset: 4
+    bit_size: 1
+  - name: STA
+    description: desc STA.
+    bit_offset: 5
+    bit_size: 1
+  - name: EN
+    description: desc EN.
+    bit_offset: 6
+    bit_size: 1
+fieldset/DR:
+  description: desc DR.
+  fields:
+  - name: DR
+    description: desc DR.
+    bit_offset: 0
+    bit_size: 8
+fieldset/MATCH:
+  description: desc MATCH.
+  fields:
+  - name: AD0F
+    description: desc AD0F.
+    bit_offset: 0
+    bit_size: 1
+  - name: AD1F
+    description: desc AD1F.
+    bit_offset: 1
+    bit_size: 1
+  - name: AD2F
+    description: desc AD2F.
+    bit_offset: 2
+    bit_size: 1
+fieldset/STAT:
+  description: desc STAT.
+  fields:
+  - name: STAT
+    description: desc STAT.
+    bit_offset: 0
+    bit_size: 8

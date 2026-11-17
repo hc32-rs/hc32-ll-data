@@ -1,0 +1,85 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F120/TMR0；覆盖系列：HC32F120, HC32M120。
+block/TMR0:
+  description: desc TMR0.
+  items:
+  - name: CNTAR
+    description: desc CNTAR.
+    byte_offset: 0
+    fieldset: CNTAR
+  - name: CMPAR
+    description: desc CMPAR.
+    byte_offset: 8
+    fieldset: CMPAR
+  - name: BCONR
+    description: desc BCONR.
+    byte_offset: 16
+    fieldset: BCONR
+  - name: STFLR
+    description: desc STFLR.
+    byte_offset: 20
+    fieldset: STFLR
+fieldset/BCONR:
+  description: desc BCONR.
+  fields:
+  - name: CSTA
+    description: desc CSTA.
+    bit_offset: 0
+    bit_size: 1
+  - name: CAPMDA
+    description: desc CAPMDA.
+    bit_offset: 1
+    bit_size: 1
+  - name: INTENA
+    description: desc INTENA.
+    bit_offset: 2
+    bit_size: 1
+  - name: CKDIVA
+    description: desc CKDIVA.
+    bit_offset: 4
+    bit_size: 4
+  - name: SYNSA
+    description: desc SYNSA.
+    bit_offset: 8
+    bit_size: 1
+  - name: SYNCLKA
+    description: desc SYNCLKA.
+    bit_offset: 9
+    bit_size: 1
+  - name: HSTAA
+    description: desc HSTAA.
+    bit_offset: 12
+    bit_size: 1
+  - name: HSTPA
+    description: desc HSTPA.
+    bit_offset: 13
+    bit_size: 1
+  - name: HCLEA
+    description: desc HCLEA.
+    bit_offset: 14
+    bit_size: 1
+  - name: HICPA
+    description: desc HICPA.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CMPAR:
+  description: desc CMPAR.
+  fields:
+  - name: CMPA
+    description: desc CMPA.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CNTAR:
+  description: desc CNTAR.
+  fields:
+  - name: CNTA
+    description: desc CNTA.
+    bit_offset: 0
+    bit_size: 16
+fieldset/STFLR:
+  description: desc STFLR.
+  fields:
+  - name: CMFA
+    description: desc CMFA.
+    bit_offset: 0
+    bit_size: 1

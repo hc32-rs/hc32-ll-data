@@ -1,0 +1,340 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32K116/TMR21；覆盖系列：HC32K116, HC32K118。
+block/TMR2:
+  description: desc TMR2.
+  items:
+  - name: CNTAR
+    description: desc CNTAR.
+    byte_offset: 0
+    fieldset: CNTAR
+  - name: CNTBR
+    description: desc CNTBR.
+    byte_offset: 4
+    fieldset: CNTBR
+  - name: CMPAR
+    description: desc CMPAR.
+    byte_offset: 8
+    fieldset: CMPAR
+  - name: CMPBR
+    description: desc CMPBR.
+    byte_offset: 12
+    fieldset: CMPBR
+  - name: BCONR
+    description: desc BCONR.
+    byte_offset: 16
+    fieldset: BCONR
+  - name: ICONR
+    description: desc ICONR.
+    byte_offset: 20
+    fieldset: ICONR
+  - name: PCONR
+    description: desc PCONR.
+    byte_offset: 24
+    fieldset: PCONR
+  - name: HCONR
+    description: desc HCONR.
+    byte_offset: 28
+    fieldset: HCONR
+  - name: STFLR
+    description: desc STFLR.
+    byte_offset: 32
+    fieldset: STFLR
+fieldset/BCONR:
+  description: desc BCONR.
+  fields:
+  - name: CSTA
+    description: desc CSTA.
+    bit_offset: 0
+    bit_size: 1
+  - name: CAPMDA
+    description: desc CAPMDA.
+    bit_offset: 1
+    bit_size: 1
+  - name: SYNSA
+    description: desc SYNSA.
+    bit_offset: 3
+    bit_size: 1
+  - name: CKDIVA
+    description: desc CKDIVA.
+    bit_offset: 4
+    bit_size: 4
+  - name: SYNCLKA
+    description: desc SYNCLKA.
+    bit_offset: 8
+    bit_size: 2
+  - name: ASYNCLKA
+    description: desc ASYNCLKA.
+    bit_offset: 10
+    bit_size: 2
+  - name: SYNCLKAT
+    description: desc SYNCLKAT.
+    bit_offset: 12
+    bit_size: 1
+  - name: CMPASTP
+    description: desc CMPASTP.
+    bit_offset: 15
+    bit_size: 1
+  - name: CSTB
+    description: desc CSTB.
+    bit_offset: 16
+    bit_size: 1
+  - name: CAPMDB
+    description: desc CAPMDB.
+    bit_offset: 17
+    bit_size: 1
+  - name: SYNSB
+    description: desc SYNSB.
+    bit_offset: 19
+    bit_size: 1
+  - name: CKDIVB
+    description: desc CKDIVB.
+    bit_offset: 20
+    bit_size: 4
+  - name: SYNCLKB
+    description: desc SYNCLKB.
+    bit_offset: 24
+    bit_size: 2
+  - name: ASYNCLKB
+    description: desc ASYNCLKB.
+    bit_offset: 26
+    bit_size: 2
+  - name: SYNCLKBT
+    description: desc SYNCLKBT.
+    bit_offset: 28
+    bit_size: 1
+  - name: CMPBSTP
+    description: desc CMPBSTP.
+    bit_offset: 31
+    bit_size: 1
+fieldset/CMPAR:
+  description: desc CMPAR.
+  fields:
+  - name: CMPA
+    description: desc CMPA.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CMPBR:
+  description: desc CMPBR.
+  fields:
+  - name: CMPB
+    description: desc CMPB.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CNTAR:
+  description: desc CNTAR.
+  fields:
+  - name: CNTA
+    description: desc CNTA.
+    bit_offset: 0
+    bit_size: 16
+fieldset/CNTBR:
+  description: desc CNTBR.
+  fields:
+  - name: CNTB
+    description: desc CNTB.
+    bit_offset: 0
+    bit_size: 16
+fieldset/HCONR:
+  description: desc HCONR.
+  fields:
+  - name: HSTAA0
+    description: desc HSTAA0.
+    bit_offset: 0
+    bit_size: 1
+  - name: HSTAA1
+    description: desc HSTAA1.
+    bit_offset: 1
+    bit_size: 1
+  - name: HSTAA2
+    description: desc HSTAA2.
+    bit_offset: 2
+    bit_size: 1
+  - name: HSTPA0
+    description: desc HSTPA0.
+    bit_offset: 4
+    bit_size: 1
+  - name: HSTPA1
+    description: desc HSTPA1.
+    bit_offset: 5
+    bit_size: 1
+  - name: HSTPA2
+    description: desc HSTPA2.
+    bit_offset: 6
+    bit_size: 1
+  - name: HCLEA0
+    description: desc HCLEA0.
+    bit_offset: 8
+    bit_size: 1
+  - name: HCLEA1
+    description: desc HCLEA1.
+    bit_offset: 9
+    bit_size: 1
+  - name: HCLEA2
+    description: desc HCLEA2.
+    bit_offset: 10
+    bit_size: 1
+  - name: HICPA0
+    description: desc HICPA0.
+    bit_offset: 12
+    bit_size: 1
+  - name: HICPA1
+    description: desc HICPA1.
+    bit_offset: 13
+    bit_size: 1
+  - name: HICPA2
+    description: desc HICPA2.
+    bit_offset: 14
+    bit_size: 1
+  - name: HSTAB0
+    description: desc HSTAB0.
+    bit_offset: 16
+    bit_size: 1
+  - name: HSTAB1
+    description: desc HSTAB1.
+    bit_offset: 17
+    bit_size: 1
+  - name: HSTAB2
+    description: desc HSTAB2.
+    bit_offset: 18
+    bit_size: 1
+  - name: HSTPB0
+    description: desc HSTPB0.
+    bit_offset: 20
+    bit_size: 1
+  - name: HSTPB1
+    description: desc HSTPB1.
+    bit_offset: 21
+    bit_size: 1
+  - name: HSTPB2
+    description: desc HSTPB2.
+    bit_offset: 22
+    bit_size: 1
+  - name: HCLEB0
+    description: desc HCLEB0.
+    bit_offset: 24
+    bit_size: 1
+  - name: HCLEB1
+    description: desc HCLEB1.
+    bit_offset: 25
+    bit_size: 1
+  - name: HCLEB2
+    description: desc HCLEB2.
+    bit_offset: 26
+    bit_size: 1
+  - name: HICPB0
+    description: desc HICPB0.
+    bit_offset: 28
+    bit_size: 1
+  - name: HICPB1
+    description: desc HICPB1.
+    bit_offset: 29
+    bit_size: 1
+  - name: HICPB2
+    description: desc HICPB2.
+    bit_offset: 30
+    bit_size: 1
+fieldset/ICONR:
+  description: desc ICONR.
+  fields:
+  - name: CMENA
+    description: desc CMENA.
+    bit_offset: 0
+    bit_size: 1
+  - name: OVENA
+    description: desc OVENA.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMENB
+    description: desc CMENB.
+    bit_offset: 16
+    bit_size: 1
+  - name: OVENB
+    description: desc OVENB.
+    bit_offset: 17
+    bit_size: 1
+fieldset/PCONR:
+  description: desc PCONR.
+  fields:
+  - name: STACA
+    description: desc STACA.
+    bit_offset: 0
+    bit_size: 2
+  - name: STPCA
+    description: desc STPCA.
+    bit_offset: 2
+    bit_size: 2
+  - name: CMPCA
+    description: desc CMPCA.
+    bit_offset: 4
+    bit_size: 2
+  - name: OUTENA
+    description: desc OUTENA.
+    bit_offset: 8
+    bit_size: 1
+  - name: NOFIENA
+    description: desc NOFIENA.
+    bit_offset: 12
+    bit_size: 1
+  - name: NOFICKA
+    description: desc NOFICKA.
+    bit_offset: 13
+    bit_size: 2
+  - name: STACB
+    description: desc STACB.
+    bit_offset: 16
+    bit_size: 2
+  - name: STPCB
+    description: desc STPCB.
+    bit_offset: 18
+    bit_size: 2
+  - name: CMPCB
+    description: desc CMPCB.
+    bit_offset: 20
+    bit_size: 2
+  - name: OUTENB
+    description: desc OUTENB.
+    bit_offset: 24
+    bit_size: 1
+  - name: NOFIENB
+    description: desc NOFIENB.
+    bit_offset: 28
+    bit_size: 1
+  - name: NOFICKB
+    description: desc NOFICKB.
+    bit_offset: 29
+    bit_size: 2
+fieldset/STFLR:
+  description: desc STFLR.
+  fields:
+  - name: CMFA
+    description: desc CMFA.
+    bit_offset: 0
+    bit_size: 1
+  - name: OVFA
+    description: desc OVFA.
+    bit_offset: 1
+    bit_size: 1
+  - name: ICPA
+    description: desc ICPA.
+    bit_offset: 2
+    bit_size: 1
+  - name: SYDA
+    description: desc SYDA.
+    bit_offset: 8
+    bit_size: 1
+  - name: CMFB
+    description: desc CMFB.
+    bit_offset: 16
+    bit_size: 1
+  - name: OVFB
+    description: desc OVFB.
+    bit_offset: 17
+    bit_size: 1
+  - name: ICPB
+    description: desc ICPB.
+    bit_offset: 18
+    bit_size: 1
+  - name: SYDB
+    description: desc SYDB.
+    bit_offset: 24
+    bit_size: 1

@@ -1,0 +1,84 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A8/FCM_COM；覆盖系列：HC32A4A8, HC32F4A8。
+block/FCM_COMMON:
+  description: desc FCM_COM.
+  items:
+  - name: STR
+    description: desc STR.
+    byte_offset: 12
+    fieldset: STR
+  - name: SR
+    description: desc SR.
+    byte_offset: 28
+    access: Read
+    fieldset: SR
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: ERRF1
+    description: desc ERRF1.
+    bit_offset: 0
+    bit_size: 1
+  - name: MENDF1
+    description: desc MENDF1.
+    bit_offset: 1
+    bit_size: 1
+  - name: OVF1
+    description: desc OVF1.
+    bit_offset: 2
+    bit_size: 1
+  - name: ERRF2
+    description: desc ERRF2.
+    bit_offset: 3
+    bit_size: 1
+  - name: MENDF2
+    description: desc MENDF2.
+    bit_offset: 4
+    bit_size: 1
+  - name: OVF2
+    description: desc OVF2.
+    bit_offset: 5
+    bit_size: 1
+  - name: ERRF3
+    description: desc ERRF3.
+    bit_offset: 6
+    bit_size: 1
+  - name: MENDF3
+    description: desc MENDF3.
+    bit_offset: 7
+    bit_size: 1
+  - name: OVF3
+    description: desc OVF3.
+    bit_offset: 8
+    bit_size: 1
+  - name: ERRF4
+    description: desc ERRF4.
+    bit_offset: 9
+    bit_size: 1
+  - name: MENDF4
+    description: desc MENDF4.
+    bit_offset: 10
+    bit_size: 1
+  - name: OVF4
+    description: desc OVF4.
+    bit_offset: 11
+    bit_size: 1
+fieldset/STR:
+  description: desc STR.
+  fields:
+  - name: START1
+    description: desc START1.
+    bit_offset: 0
+    bit_size: 1
+  - name: START2
+    description: desc START2.
+    bit_offset: 1
+    bit_size: 1
+  - name: START3
+    description: desc START3.
+    bit_offset: 2
+    bit_size: 1
+  - name: START4
+    description: desc START4.
+    bit_offset: 3
+    bit_size: 1

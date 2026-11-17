@@ -1,0 +1,173 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A4A0/I2S1；覆盖系列：HC32A4A0, HC32F467, HC32F4A0, HC32F4A2。
+block/I2S:
+  description: desc I2S.
+  items:
+  - name: CTRL
+    description: desc CTRL.
+    byte_offset: 0
+    fieldset: CTRL
+  - name: SR
+    description: desc SR.
+    byte_offset: 4
+    access: Read
+    fieldset: SR
+  - name: ER
+    description: desc ER.
+    byte_offset: 8
+    fieldset: ER
+  - name: CFGR
+    description: desc CFGR.
+    byte_offset: 12
+    fieldset: CFGR
+  - name: TXBUF
+    description: desc TXBUF.
+    byte_offset: 16
+    access: Write
+  - name: RXBUF
+    description: desc RXBUF.
+    byte_offset: 20
+    access: Read
+  - name: PR
+    description: desc PR.
+    byte_offset: 24
+    fieldset: PR
+fieldset/CFGR:
+  description: desc CFGR.
+  fields:
+  - name: I2SSTD
+    description: desc I2SSTD.
+    bit_offset: 0
+    bit_size: 2
+  - name: DATLEN
+    description: desc DATLEN.
+    bit_offset: 2
+    bit_size: 2
+  - name: CHLEN
+    description: desc CHLEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: PCMSYNC
+    description: desc PCMSYNC.
+    bit_offset: 5
+    bit_size: 1
+fieldset/CTRL:
+  description: desc CTRL.
+  fields:
+  - name: TXE
+    description: desc TXE.
+    bit_offset: 0
+    bit_size: 1
+  - name: TXIE
+    description: desc TXIE.
+    bit_offset: 1
+    bit_size: 1
+  - name: RXE
+    description: desc RXE.
+    bit_offset: 2
+    bit_size: 1
+  - name: RXIE
+    description: desc RXIE.
+    bit_offset: 3
+    bit_size: 1
+  - name: EIE
+    description: desc EIE.
+    bit_offset: 4
+    bit_size: 1
+  - name: WMS
+    description: desc WMS.
+    bit_offset: 5
+    bit_size: 1
+  - name: ODD
+    description: desc ODD.
+    bit_offset: 6
+    bit_size: 1
+  - name: MCKOE
+    description: desc MCKOE.
+    bit_offset: 7
+    bit_size: 1
+  - name: TXBIRQWL
+    description: desc TXBIRQWL.
+    bit_offset: 8
+    bit_size: 3
+  - name: RXBIRQWL
+    description: desc RXBIRQWL.
+    bit_offset: 12
+    bit_size: 3
+  - name: FIFOR
+    description: desc FIFOR.
+    bit_offset: 16
+    bit_size: 1
+  - name: I2SPLLSEL
+    description: desc I2SPLLSEL.
+    bit_offset: 18
+    bit_size: 1
+  - name: SDOE
+    description: desc SDOE.
+    bit_offset: 19
+    bit_size: 1
+  - name: LRCKOE
+    description: desc LRCKOE.
+    bit_offset: 20
+    bit_size: 1
+  - name: CKOE
+    description: desc CKOE.
+    bit_offset: 21
+    bit_size: 1
+  - name: DUPLEX
+    description: desc DUPLEX.
+    bit_offset: 22
+    bit_size: 1
+  - name: CLKSEL
+    description: desc CLKSEL.
+    bit_offset: 23
+    bit_size: 1
+  - name: SRST
+    description: desc SRST.
+    bit_offset: 27
+    bit_size: 1
+fieldset/ER:
+  description: desc ER.
+  fields:
+  - name: TXERR
+    description: desc TXERR.
+    bit_offset: 0
+    bit_size: 1
+  - name: RXERR
+    description: desc RXERR.
+    bit_offset: 1
+    bit_size: 1
+fieldset/PR:
+  description: desc PR.
+  fields:
+  - name: I2SDIV
+    description: desc I2SDIV.
+    bit_offset: 0
+    bit_size: 8
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: TXBA
+    description: desc TXBA.
+    bit_offset: 0
+    bit_size: 1
+  - name: RXBA
+    description: desc RXBA.
+    bit_offset: 1
+    bit_size: 1
+  - name: TXBE
+    description: desc TXBE.
+    bit_offset: 2
+    bit_size: 1
+  - name: TXBF
+    description: desc TXBF.
+    bit_offset: 3
+    bit_size: 1
+  - name: RXBE
+    description: desc RXBE.
+    bit_offset: 4
+    bit_size: 1
+  - name: RXBF
+    description: desc RXBF.
+    bit_offset: 5
+    bit_size: 1

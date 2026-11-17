@@ -1,0 +1,265 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32A472/EMB_CTL1；覆盖系列：HC32A472, HC32F472。
+block/EMB_CTL1:
+  description: desc EMB_CTL1.
+  items:
+  - name: EMB_CTL2
+    description: desc EMB_CTL2.
+    byte_offset: 4
+    fieldset: EMB_CTL2
+  - name: EMB_SOE
+    description: desc EMB_SOE.
+    byte_offset: 8
+    fieldset: EMB_SOE
+  - name: EMB_STAT
+    description: desc EMB_STAT.
+    byte_offset: 12
+    access: Read
+    fieldset: EMB_STAT
+  - name: EMB_STATCLR
+    description: desc EMB_STATCLR.
+    byte_offset: 16
+    access: Write
+    fieldset: EMB_STATCLR
+  - name: EMB_INTEN
+    description: desc EMB_INTEN.
+    byte_offset: 20
+    fieldset: EMB_INTEN
+  - name: EMB_RLSSEL
+    description: desc EMB_RLSSEL.
+    byte_offset: 24
+    fieldset: EMB_RLSSEL
+fieldset/EMB_CTL2:
+  description: desc EMB_CTL2.
+  fields:
+  - name: PWMLV0
+    description: desc PWMLV0.
+    bit_offset: 0
+    bit_size: 1
+  - name: PWMLV1
+    description: desc PWMLV1.
+    bit_offset: 1
+    bit_size: 1
+  - name: PWMLV2
+    description: desc PWMLV2.
+    bit_offset: 2
+    bit_size: 1
+  - name: NFSEL1
+    description: desc NFSEL1.
+    bit_offset: 16
+    bit_size: 2
+  - name: NFEN1
+    description: desc NFEN1.
+    bit_offset: 18
+    bit_size: 1
+  - name: NFSEL2
+    description: desc NFSEL2.
+    bit_offset: 19
+    bit_size: 2
+  - name: NFEN2
+    description: desc NFEN2.
+    bit_offset: 21
+    bit_size: 1
+  - name: NFSEL3
+    description: desc NFSEL3.
+    bit_offset: 22
+    bit_size: 2
+  - name: NFEN3
+    description: desc NFEN3.
+    bit_offset: 24
+    bit_size: 1
+  - name: NFSEL4
+    description: desc NFSEL4.
+    bit_offset: 25
+    bit_size: 2
+  - name: NFEN4
+    description: desc NFEN4.
+    bit_offset: 27
+    bit_size: 1
+  - name: NFSEL5
+    description: desc NFSEL5.
+    bit_offset: 28
+    bit_size: 2
+  - name: NFEN5
+    description: desc NFEN5.
+    bit_offset: 30
+    bit_size: 1
+fieldset/EMB_INTEN:
+  description: desc EMB_INTEN.
+  fields:
+  - name: PWMSINTEN
+    description: desc PWMSINTEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPINTEN
+    description: desc CMPINTEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: SYSINTEN
+    description: desc SYSINTEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: PORTININTEN1
+    description: desc PORTININTEN1.
+    bit_offset: 8
+    bit_size: 1
+  - name: PORTININTEN2
+    description: desc PORTININTEN2.
+    bit_offset: 9
+    bit_size: 1
+  - name: PORTININTEN3
+    description: desc PORTININTEN3.
+    bit_offset: 10
+    bit_size: 1
+  - name: PORTININTEN4
+    description: desc PORTININTEN4.
+    bit_offset: 11
+    bit_size: 1
+  - name: PORTININTEN5
+    description: desc PORTININTEN5.
+    bit_offset: 12
+    bit_size: 1
+fieldset/EMB_RLSSEL:
+  description: desc EMB_RLSSEL.
+  fields:
+  - name: PWMRSEL
+    description: desc PWMRSEL.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPRSEL
+    description: desc CMPRSEL.
+    bit_offset: 2
+    bit_size: 1
+  - name: SYSRSEL
+    description: desc SYSRSEL.
+    bit_offset: 3
+    bit_size: 1
+  - name: PORTINRSEL1
+    description: desc PORTINRSEL1.
+    bit_offset: 8
+    bit_size: 1
+  - name: PORTINRSEL2
+    description: desc PORTINRSEL2.
+    bit_offset: 9
+    bit_size: 1
+  - name: PORTINRSEL3
+    description: desc PORTINRSEL3.
+    bit_offset: 10
+    bit_size: 1
+  - name: PORTINRSEL4
+    description: desc PORTINRSEL4.
+    bit_offset: 11
+    bit_size: 1
+  - name: PORTINRSEL5
+    description: desc PORTINRSEL5.
+    bit_offset: 12
+    bit_size: 1
+fieldset/EMB_SOE:
+  description: desc EMB_SOE.
+  fields:
+  - name: SOE
+    description: desc SOE.
+    bit_offset: 0
+    bit_size: 1
+fieldset/EMB_STAT:
+  description: desc EMB_STAT.
+  fields:
+  - name: PWMSF
+    description: desc PWMSF.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPF
+    description: desc CMPF.
+    bit_offset: 2
+    bit_size: 1
+  - name: SYSF
+    description: desc SYSF.
+    bit_offset: 3
+    bit_size: 1
+  - name: PWMST
+    description: desc PWMST.
+    bit_offset: 5
+    bit_size: 1
+  - name: CMPST
+    description: desc CMPST.
+    bit_offset: 6
+    bit_size: 1
+  - name: SYSST
+    description: desc SYSST.
+    bit_offset: 7
+    bit_size: 1
+  - name: PORTINF1
+    description: desc PORTINF1.
+    bit_offset: 8
+    bit_size: 1
+  - name: PORTINF2
+    description: desc PORTINF2.
+    bit_offset: 9
+    bit_size: 1
+  - name: PORTINF3
+    description: desc PORTINF3.
+    bit_offset: 10
+    bit_size: 1
+  - name: PORTINF4
+    description: desc PORTINF4.
+    bit_offset: 11
+    bit_size: 1
+  - name: PORTINF5
+    description: desc PORTINF5.
+    bit_offset: 12
+    bit_size: 1
+  - name: PORTINST1
+    description: desc PORTINST1.
+    bit_offset: 14
+    bit_size: 1
+  - name: PORTINST2
+    description: desc PORTINST2.
+    bit_offset: 15
+    bit_size: 1
+  - name: PORTINST3
+    description: desc PORTINST3.
+    bit_offset: 16
+    bit_size: 1
+  - name: PORTINST4
+    description: desc PORTINST4.
+    bit_offset: 17
+    bit_size: 1
+  - name: PORTINST5
+    description: desc PORTINST5.
+    bit_offset: 18
+    bit_size: 1
+fieldset/EMB_STATCLR:
+  description: desc EMB_STATCLR.
+  fields:
+  - name: PWMSFCLR
+    description: desc PWMSFCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: CMPFCLR
+    description: desc CMPFCLR.
+    bit_offset: 2
+    bit_size: 1
+  - name: SYSFCLR
+    description: desc SYSFCLR.
+    bit_offset: 3
+    bit_size: 1
+  - name: PORTINFCLR1
+    description: desc PORTINFCLR1.
+    bit_offset: 8
+    bit_size: 1
+  - name: PORTINFCLR2
+    description: desc PORTINFCLR2.
+    bit_offset: 9
+    bit_size: 1
+  - name: PORTINFCLR3
+    description: desc PORTINFCLR3.
+    bit_offset: 10
+    bit_size: 1
+  - name: PORTINFCLR4
+    description: desc PORTINFCLR4.
+    bit_offset: 11
+    bit_size: 1
+  - name: PORTINFCLR5
+    description: desc PORTINFCLR5.
+    bit_offset: 12
+    bit_size: 1

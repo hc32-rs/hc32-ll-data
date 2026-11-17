@@ -6,7 +6,7 @@
   registers:
     kind: adc
     block: ADC
-    version: v20
+    version: ll_v4_4
   rcc:
     enable:
       register: FCG3
@@ -16,7 +16,7 @@
   registers:
     kind: adc
     block: ADC
-    version: v21
+    version: ll_v3_3
   rcc:
     enable:
       register: FCG3
@@ -26,7 +26,7 @@
   registers:
     kind: adc
     block: ADC
-    version: v22
+    version: ll_v3_4
   rcc:
     enable:
       register: FCG3
@@ -36,7 +36,7 @@
   registers:
     kind: aes
     block: AES
-    version: v1
+    version: ll_v2
   rcc:
     enable:
       register: FCG0
@@ -46,7 +46,7 @@
   registers:
     kind: aos
     block: AOS
-    version: v4
+    version: ll_v8_1
   rcc:
     enable:
       register: FCG0
@@ -56,7 +56,7 @@
   registers:
     kind: can
     block: CAN
-    version: v2
+    version: ll_v2
   rcc:
     enable:
       register: FCG1
@@ -66,7 +66,7 @@
   registers:
     kind: can
     block: CAN
-    version: v2
+    version: ll_v2
   rcc:
     enable:
       register: FCG1
@@ -76,19 +76,19 @@
   registers:
     kind: cmp
     block: CMP
-    version: v9
+    version: ll_v2_3
 - name: CMP2
   address: 0x4004A010
   registers:
     kind: cmp
     block: CMP
-    version: v10
+    version: ll_v2_4
 - name: CMP3
   address: 0x4004A000
   registers:
     kind: cmp
     block: CMP
-    version: v9
+    version: ll_v2_3
   rcc:
     enable:
       register: FCG3
@@ -98,13 +98,13 @@
   registers:
     kind: cmu
     block: CMU
-    version: v4
+    version: ll_v4_1
 - name: CRC
   address: 0x40008C00
   registers:
     kind: crc
     block: CRC
-    version: v3
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG0
@@ -114,7 +114,7 @@
   registers:
     kind: ctc
     block: CTC
-    version: v3
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -124,7 +124,7 @@
   registers:
     kind: dac
     block: DAC
-    version: v3
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG3
@@ -134,7 +134,7 @@
   registers:
     kind: dbgc
     block: DBGC
-    version: v4
+    version: ll_v3_1
 - name: DCU1
   address: 0x40056000
   registers:
@@ -220,7 +220,7 @@
   registers:
     kind: dma
     block: DMA
-    version: v4
+    version: ll_v2_7
   rcc:
     enable:
       register: FCG0
@@ -230,7 +230,7 @@
   registers:
     kind: dma
     block: DMA
-    version: v4
+    version: ll_v2_7
   rcc:
     enable:
       register: FCG0
@@ -260,49 +260,49 @@
   registers:
     kind: efm
     block: EFM
-    version: v10
+    version: ll_v2_5
 - name: EMB0
   address: 0x40017C00
   registers:
     kind: emb
     block: EMB
-    version: v13
+    version: ll_v2_1
 - name: EMB1
   address: 0x40017C00
   registers:
     kind: emb
     block: EMB
-    version: v13
+    version: ll_v2_1
 - name: EMB2
   address: 0x40017C00
   registers:
     kind: emb
     block: EMB
-    version: v13
+    version: ll_v2_1
 - name: EMB3
   address: 0x40017C00
   registers:
     kind: emb
     block: EMB
-    version: v13
+    version: ll_v2_1
 - name: EMB4
   address: 0x40017C80
   registers:
     kind: emb
     block: EMB
-    version: v14
+    version: ll_v2_2
 - name: EMB5
   address: 0x40017C80
   registers:
     kind: emb
     block: EMB
-    version: v14
+    version: ll_v2_2
 - name: EMB6
   address: 0x40017C80
   registers:
     kind: emb
     block: EMB
-    version: v14
+    version: ll_v2_2
 - name: ETH
   address: 0x40050000
   registers:
@@ -314,7 +314,7 @@
   registers:
     kind: fcm
     block: FCM
-    version: v1
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG0
@@ -364,7 +364,7 @@
   registers:
     kind: gpio
     block: GPIO
-    version: v12
+    version: ll_v2_11
 - name: HASH
   address: 0x40008400
   registers:
@@ -378,9 +378,9 @@
 - name: I2C1
   address: 0x4004E000
   registers:
-    kind: i
-    block: I
-    version: v2
+    kind: i2c
+    block: I2C
+    version: ll_v3_1
   rcc:
     enable:
       register: FCG1
@@ -388,9 +388,9 @@
 - name: I2C2
   address: 0x4004E000
   registers:
-    kind: i
-    block: I
-    version: v2
+    kind: i2c
+    block: I2C
+    version: ll_v3_1
   rcc:
     enable:
       register: FCG1
@@ -398,9 +398,9 @@
 - name: I2C3
   address: 0x4004E000
   registers:
-    kind: i
-    block: I
-    version: v2
+    kind: i2c
+    block: I2C
+    version: ll_v3_1
   rcc:
     enable:
       register: FCG1
@@ -408,9 +408,9 @@
 - name: I2S1
   address: 0x4001E000
   registers:
-    kind: i
-    block: I
-    version: v5
+    kind: i2s
+    block: I2S
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG1
@@ -418,9 +418,9 @@
 - name: I2S2
   address: 0x4001E000
   registers:
-    kind: i
-    block: I
-    version: v5
+    kind: i2s
+    block: I2S
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG1
@@ -428,9 +428,9 @@
 - name: I2S3
   address: 0x4001E000
   registers:
-    kind: i
-    block: I
-    version: v5
+    kind: i2s
+    block: I2S
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG1
@@ -438,9 +438,9 @@
 - name: I2S4
   address: 0x4001E000
   registers:
-    kind: i
-    block: I
-    version: v5
+    kind: i2s
+    block: I2S
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG1
@@ -450,13 +450,13 @@
   registers:
     kind: icg
     block: ICG
-    version: v1
+    version: ll_v1
 - name: INTC
   address: 0x40051000
   registers:
     kind: intc
     block: INTC
-    version: v4
+    version: ll_v3_1
 - name: KEYSCAN
   address: 0x40050C00
   registers:
@@ -504,13 +504,13 @@
   registers:
     kind: peric
     block: PERIC
-    version: v4
+    version: ll_v2_2
 - name: PWC
   address: 0x40048000
   registers:
     kind: pwc
     block: PWC
-    version: v11
+    version: ll_v4
 - name: QSPI
   address: 0x9C000000
   registers:
@@ -526,13 +526,13 @@
   registers:
     kind: rmu
     block: RMU
-    version: v4
+    version: ll_v2
 - name: RTC
   address: 0x4004C000
   registers:
     kind: rtc
     block: RTC
-    version: v3
+    version: ll_v2_2
 - name: SDIOC1
   address: 0x40070000
   registers:
@@ -568,7 +568,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v2
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG1
@@ -578,7 +578,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v2
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG1
@@ -588,7 +588,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v2
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG1
@@ -598,7 +598,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v2
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG1
@@ -608,7 +608,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v2
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG1
@@ -618,7 +618,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v2
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG1
@@ -628,19 +628,19 @@
   registers:
     kind: sramc
     block: SRAMC
-    version: v4
+    version: ll_v1_1
 - name: SWDT
   address: 0x40049400
   registers:
     kind: swdt
     block: SWDT
-    version: v1
+    version: ll_v1_1
 - name: TMR01
   address: 0x40024000
   registers:
-    kind: tmr
-    block: TMR
-    version: v7
+    kind: tmr0
+    block: TMR0
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG2
@@ -648,9 +648,9 @@
 - name: TMR02
   address: 0x40024000
   registers:
-    kind: tmr
-    block: TMR
-    version: v7
+    kind: tmr0
+    block: TMR0
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG2
@@ -658,9 +658,9 @@
 - name: TMR41
   address: 0x40038000
   registers:
-    kind: tmr
-    block: TMR
-    version: v18
+    kind: tmr4
+    block: TMR4
+    version: ll_v1_2
   rcc:
     enable:
       register: FCG2
@@ -668,9 +668,9 @@
 - name: TMR42
   address: 0x40038000
   registers:
-    kind: tmr
-    block: TMR
-    version: v18
+    kind: tmr4
+    block: TMR4
+    version: ll_v1_2
   rcc:
     enable:
       register: FCG2
@@ -678,9 +678,9 @@
 - name: TMR43
   address: 0x40038000
   registers:
-    kind: tmr
-    block: TMR
-    version: v18
+    kind: tmr4
+    block: TMR4
+    version: ll_v1_2
   rcc:
     enable:
       register: FCG2
@@ -726,7 +726,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v9
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG2
@@ -736,7 +736,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v9
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG2
@@ -746,7 +746,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v9
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG2
@@ -756,7 +756,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v9
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG2
@@ -766,7 +766,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v9
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG2
@@ -776,7 +776,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v9
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG2
@@ -786,7 +786,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v9
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG2
@@ -796,7 +796,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v9
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG2
@@ -806,7 +806,7 @@
   registers:
     kind: trng
     block: TRNG
-    version: v1
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -816,7 +816,7 @@
   registers:
     kind: usart
     block: USART
-    version: v10
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG3
@@ -826,7 +826,7 @@
   registers:
     kind: usart
     block: USART
-    version: v11
+    version: ll_v2_10
   rcc:
     enable:
       register: FCG3
@@ -836,7 +836,7 @@
   registers:
     kind: usart
     block: USART
-    version: v10
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG3
@@ -846,7 +846,7 @@
   registers:
     kind: usart
     block: USART
-    version: v12
+    version: ll_v2
   rcc:
     enable:
       register: FCG3
@@ -856,7 +856,7 @@
   registers:
     kind: usart
     block: USART
-    version: v12
+    version: ll_v2
   rcc:
     enable:
       register: FCG3
@@ -866,7 +866,7 @@
   registers:
     kind: usart
     block: USART
-    version: v13
+    version: ll_v2_11
   rcc:
     enable:
       register: FCG3
@@ -876,7 +876,7 @@
   registers:
     kind: usart
     block: USART
-    version: v14
+    version: ll_v2_3
   rcc:
     enable:
       register: FCG3
@@ -886,7 +886,7 @@
   registers:
     kind: usart
     block: USART
-    version: v10
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG3
@@ -916,4 +916,4 @@
   registers:
     kind: wdt
     block: WDT
-    version: common
+    version: ll_v1

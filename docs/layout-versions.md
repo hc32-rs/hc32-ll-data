@@ -1,7 +1,7 @@
 # 外设版本与布局命名（LL）
 
-本页及各专题中的名称为**待确认方案**。生成器与 `data/registers/` 尚未迁移，
-当前实际输入仍由 `data/csv/register_versions.csv` 引用。确认本阶段文档与 CSV 后，才修改生成链。
+本页及专题采用已确认并启用的名称。寄存器 YAML、系列引用、JSON、PAC 模块和元数据使用相同文件主干。
+`data/csv/register_versions.csv` 由脚本生成，`version` 包含 ddl/ll 命名空间；主块名也采用完整外设名。
 
 ## 统一规则
 
@@ -13,11 +13,11 @@
   同一旧 kind 下混入的 I2C/I2S、TMR0/2/4/6 按完整实例名恢复外设名。
   模式视图、共享窗口与 derivedFrom 实例保留明确对应，不能用行数推断物理外设数量。
 - 旧文档的概念分组不能直接替代生成 IR。仅比较寄存器数量或忽略位域差异的合并建议已删除。
-  `common` 也获得明确的基础版本，不再作为拟议版本名。
+  `common` 也获得明确的基础版本，不再作为纳入范围的版本名。
 
 ## 数据与维护
 
-[显式映射](peripheral-version-map.json)是本阶段唯一的编号来源。
+[显式映射](peripheral-version-map.json)是生成链唯一的编号来源。
 [实例对照 CSV](peripheral-versions.csv)及本页/专题的标记区由
 `hc32-data-tools/scripts/export_peripheral_versions.py` 生成。脚本不会自行分配或重排编号。
 从工作区运行：
@@ -30,8 +30,8 @@ python3 hc32-data-tools/scripts/export_peripheral_versions.py --check
 CSV 列固定为 `series,instance,kind,current_version,proposed_version,target_file,status,notes`。
 `kind/current_version` 是源数据的真实键，**不是双仓库合并后 PAC 的临时重映射版本**。
 完整目标外设名由 `target_file` 和 notes 中的 `target_kind` 给出。
-`proposed` 表示待确认，`excluded` 表示本次排除；排除项的新版本与目标文件名为空。
-CSV 为 UTF-8、LF，每行对应系列及 SVD 实例，按旧 kind、新版本、目标、系列、实例稳定排序。
+`active` 表示已启用，`excluded` 表示本次排除；排除项的新版本与目标文件名为空。
+CSV 为 UTF-8、LF，每行对应系列及 SVD 实例，按当前 kind、功能版本、目标、系列、实例稳定排序。
 
 映射记录来源 YAML 的 SHA-256 和确切系列/实例集合；来源变化、缺项、重复项、目标冲突或排除范围变化都会报错。
 专题列出的寄存器/字段数是当前 IR 的条目数，仅用于核对，不是复杂度评分，也不包括原始 SVD 中未保留的属性。
@@ -40,7 +40,7 @@ CSV 为 UTF-8、LF，每行对应系列及 SVD 实例，按旧 kind、新版本�
 复位值、设备头支持位、封装与硬件行为仍需读原始来源；命名表不会扩充或修复当前生成数据。
 
 修改分配时先核对 SVD、生成 IR 与专题列出的 SDK 证据，编辑显式映射，再重导出。
-确认后不应因加入新系列自动改变既有编号。SDK 只读，SVD 与审计 CSV 本阶段均不修改。
+确认后不应因加入新系列自动改变既有编号。SDK 和 SVD 保持只读；版本审计 CSV 仅由脚本重生成。旧标识仅保存在显式映射的 `legacy_source` 中用于迁移追溯。
 
 ## 本次排除
 
@@ -48,12 +48,12 @@ README 的 M4 扩展项：DCU、MAU、FMAC、HASH、SKE、USB、ETH、MDIO、NFC
 QSPI、SMC、DMC、MPU、KEYSCAN、OTS、VREF、HRPWM、HALL、PLA、TMR6、ERMU，以及 **M458 的 DFM**。
 USB 包括 USBFS/USBHS，TMR6/HRPWM 包括共享窗口。F175 的 DFM、M458 的 EFM2 不在此清单内。
 PERIC/PWC/AOS 等仍完整登记，即使包含排除外设的控制位；不裁剪寄存器。
-这些排除项在 CSV 和下表保留旧来源，第二阶段维持原命名，不擅自分档。
+这些排除项在 CSV 和下表保留旧来源，继续维持原命名，不擅自分档。
 
 <!-- peripheral-versions:begin -->
 ## 覆盖统计
 
-共 1916 个系列/实例映射：1507 个待确认、409 个排除。
+共 1916 个系列/实例映射：1507 个已分配、409 个排除。
 纳入 59 个目标外设名、378 个独立生成布局。
 
 | 外设 | 主档位 | 布局数 | 功能依据 |

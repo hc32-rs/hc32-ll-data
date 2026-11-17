@@ -18,7 +18,7 @@ F175 的 LVD 另有 LOCK，IWDT/WWDT 不沿用 DDL 编号。
 <!-- peripheral-versions:begin -->
 ## 版本与系列对照
 
-以下为待确认命名，当前来源仍使用旧文件名。系列名前缀 `HC32` 省略。
+以下名称与生成输入保持一致。系列名前缀 `HC32` 省略。
 
 ### iwdt：v1
 
@@ -26,7 +26,7 @@ F175 的 LVD 另有 LOCK，IWDT/WWDT 不沿用 DDL 编号。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `iwdt_ll_v1.rs` | [iwdt_common](../../data/registers/iwdt_common.yaml) | F175: IWDT | 5 / 12 | 本档位对照基准；完整定义见来源 YAML |
+| `iwdt_ll_v1.rs` | [iwdt_ll_v1](../../data/registers/iwdt_ll_v1.yaml) | F175: IWDT | 5 / 12 | 本档位对照基准；完整定义见来源 YAML |
 
 ### lvd：v1
 
@@ -34,7 +34,7 @@ F175 的 LVD 另有 LOCK，IWDT/WWDT 不沿用 DDL 编号。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `lvd_ll_v1.rs` | [lvd_common](../../data/registers/lvd_common.yaml) | F175: LVD | 3 / 13 | 本档位对照基准；完整定义见来源 YAML |
+| `lvd_ll_v1.rs` | [lvd_ll_v1](../../data/registers/lvd_ll_v1.yaml) | F175: LVD | 3 / 13 | 本档位对照基准；完整定义见来源 YAML |
 
 ### pwc：v1
 
@@ -42,9 +42,9 @@ F175 的 LVD 另有 LOCK，IWDT/WWDT 不沿用 DDL 编号。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `pwc_ll_v1.rs` | [pwc_v6](../../data/registers/pwc_v6.yaml) | F115/F120: PWC | 6 / 23 | 本档位对照基准；完整定义见来源 YAML |
-| `pwc_ll_v1_1.rs` | [pwc_v13](../../data/registers/pwc_v13.yaml) | M120: PWC | 6 / 24 | 相对 pwc_ll_v1：定义差异 PWRC |
-| `pwc_ll_v1_2.rs` | [pwc_v7](../../data/registers/pwc_v7.yaml) | F155: PWC | 7 / 27 | 相对 pwc_ll_v1：增加 PWRMON；定义差异 DBGC/PWRC/STPMCR |
+| `pwc_ll_v1.rs` | [pwc_ll_v1](../../data/registers/pwc_ll_v1.yaml) | F115/F120: PWC | 6 / 23 | 本档位对照基准；完整定义见来源 YAML |
+| `pwc_ll_v1_1.rs` | [pwc_ll_v1_1](../../data/registers/pwc_ll_v1_1.yaml) | M120: PWC | 6 / 24 | 相对 pwc_ll_v1：定义差异 PWRC |
+| `pwc_ll_v1_2.rs` | [pwc_ll_v1_2](../../data/registers/pwc_ll_v1_2.yaml) | F155: PWC | 7 / 27 | 相对 pwc_ll_v1：增加 PWRMON；定义差异 DBGC/PWRC/STPMCR |
 
 ### pwc：v2
 
@@ -52,9 +52,9 @@ F175 的 LVD 另有 LOCK，IWDT/WWDT 不沿用 DDL 编号。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `pwc_ll_v2.rs` | [pwc_v12](../../data/registers/pwc_v12.yaml) | K116/K118: PWC | 10 / 34 | 本档位对照基准；完整定义见来源 YAML |
-| `pwc_ll_v2_1.rs` | [pwc_v15](../../data/registers/pwc_v15.yaml) | M458: PWC | 11 / 39 | 相对 pwc_ll_v2：增加 PVDCR0/PVDCR1/PVDDSR/PVDFCR/PVDICR 等 6 项；缺少 LVD2CR/LVDCSR/PWRC/PWRMON/RAMCR；定义差异 DBGC/FPRC/LPMCSCR/LPMCSR/STPMCR |
-| `pwc_ll_v2_2.rs` | [pwc_v9](../../data/registers/pwc_v9.yaml) | F431/M413: PWC | 12 / 43 | 相对 pwc_ll_v2：增加 PVDCR0/PVDCR1/PVDDSR/PVDFCR/PVDICR 等 6 项；缺少 LVD2CR/LVDCSR/PWRC/PWRMON；定义差异 DBGC/FPRC/LPMCSCR/LPMCSR/RAMCR 等 6 项 |
+| `pwc_ll_v2.rs` | [pwc_ll_v2](../../data/registers/pwc_ll_v2.yaml) | K116/K118: PWC | 10 / 34 | 本档位对照基准；完整定义见来源 YAML |
+| `pwc_ll_v2_1.rs` | [pwc_ll_v2_1](../../data/registers/pwc_ll_v2_1.yaml) | M458: PWC | 11 / 39 | 相对 pwc_ll_v2：增加 PVDCR0/PVDCR1/PVDDSR/PVDFCR/PVDICR 等 6 项；缺少 LVD2CR/LVDCSR/PWRC/PWRMON/RAMCR；定义差异 DBGC/FPRC/LPMCSCR/LPMCSR/STPMCR |
+| `pwc_ll_v2_2.rs` | [pwc_ll_v2_2](../../data/registers/pwc_ll_v2_2.yaml) | F431/M413: PWC | 12 / 43 | 相对 pwc_ll_v2：增加 PVDCR0/PVDCR1/PVDDSR/PVDFCR/PVDICR 等 6 项；缺少 LVD2CR/LVDCSR/PWRC/PWRMON；定义差异 DBGC/FPRC/LPMCSCR/LPMCSR/RAMCR 等 6 项 |
 
 ### pwc：v3
 
@@ -62,12 +62,12 @@ F175 的 LVD 另有 LOCK，IWDT/WWDT 不沿用 DDL 编号。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `pwc_ll_v3.rs` | [pwc_v3](../../data/registers/pwc_v3.yaml) | A472/F472: PWC | 27 / 175 | 本档位对照基准；完整定义见来源 YAML |
-| `pwc_ll_v3_1.rs` | [pwc_v8](../../data/registers/pwc_v8.yaml) | F334/F336: PWC | 29 / 133 | 相对 pwc_ll_v3：增加 LPMCSCR/LPMCSR；定义差异 FCG0/FCG1/FCG2/FCG3/FPRC 等 9 项 |
-| `pwc_ll_v3_2.rs` | [pwc_v10](../../data/registers/pwc_v10.yaml) | F451: PWC | 29 / 151 | 相对 pwc_ll_v3：增加 MDSWCR/PWCMR/PWRC2/PWRC3/RAMOPM 等 6 项；缺少 PRAMLPC/PWRC4/PWRC5/PWRC6；定义差异 FCG0/FCG1/FCG2/FCG3/PDWKE0 等 20 项 |
-| `pwc_ll_v3_3.rs` | [pwc_v2](../../data/registers/pwc_v2.yaml) | A460/F452/F460: PWC | 29 / 152 | 相对 pwc_ll_v3：增加 MDSWCR/PWCMR/PWRC2/PWRC3/RAMOPM 等 6 项；缺少 PRAMLPC/PWRC4/PWRC5/PWRC6；定义差异 FCG0/FCG1/FCG2/FCG3/PDWKE0 等 20 项 |
-| `pwc_ll_v3_4.rs` | [pwc_v14](../../data/registers/pwc_v14.yaml) | M441: PWC | 30 / 131 | 相对 pwc_ll_v3：增加 PWRC2/PWRC3/RAMOPM；定义差异 FCG0/FCG1/FCG2/FCG3/FPRC 等 12 项 |
-| `pwc_ll_v3_5.rs` | [pwc_v1](../../data/registers/pwc_v1.yaml) | A448/F448: PWC | 30 / 142 | 相对 pwc_ll_v3：增加 PWRC2/PWRC3/RAMOPM；定义差异 FCG0/FCG1/FCG2/FCG3/FPRC 等 11 项 |
+| `pwc_ll_v3.rs` | [pwc_ll_v3](../../data/registers/pwc_ll_v3.yaml) | A472/F472: PWC | 27 / 175 | 本档位对照基准；完整定义见来源 YAML |
+| `pwc_ll_v3_1.rs` | [pwc_ll_v3_1](../../data/registers/pwc_ll_v3_1.yaml) | F334/F336: PWC | 29 / 133 | 相对 pwc_ll_v3：增加 LPMCSCR/LPMCSR；定义差异 FCG0/FCG1/FCG2/FCG3/FPRC 等 9 项 |
+| `pwc_ll_v3_2.rs` | [pwc_ll_v3_2](../../data/registers/pwc_ll_v3_2.yaml) | F451: PWC | 29 / 151 | 相对 pwc_ll_v3：增加 MDSWCR/PWCMR/PWRC2/PWRC3/RAMOPM 等 6 项；缺少 PRAMLPC/PWRC4/PWRC5/PWRC6；定义差异 FCG0/FCG1/FCG2/FCG3/PDWKE0 等 20 项 |
+| `pwc_ll_v3_3.rs` | [pwc_ll_v3_3](../../data/registers/pwc_ll_v3_3.yaml) | A460/F452/F460: PWC | 29 / 152 | 相对 pwc_ll_v3：增加 MDSWCR/PWCMR/PWRC2/PWRC3/RAMOPM 等 6 项；缺少 PRAMLPC/PWRC4/PWRC5/PWRC6；定义差异 FCG0/FCG1/FCG2/FCG3/PDWKE0 等 20 项 |
+| `pwc_ll_v3_4.rs` | [pwc_ll_v3_4](../../data/registers/pwc_ll_v3_4.yaml) | M441: PWC | 30 / 131 | 相对 pwc_ll_v3：增加 PWRC2/PWRC3/RAMOPM；定义差异 FCG0/FCG1/FCG2/FCG3/FPRC 等 12 项 |
+| `pwc_ll_v3_5.rs` | [pwc_ll_v3_5](../../data/registers/pwc_ll_v3_5.yaml) | A448/F448: PWC | 30 / 142 | 相对 pwc_ll_v3：增加 PWRC2/PWRC3/RAMOPM；定义差异 FCG0/FCG1/FCG2/FCG3/FPRC 等 11 项 |
 
 ### pwc：v4
 
@@ -75,9 +75,9 @@ F175 的 LVD 另有 LOCK，IWDT/WWDT 不沿用 DDL 编号。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `pwc_ll_v4.rs` | [pwc_v11](../../data/registers/pwc_v11.yaml) | F467: PWC | 160 / 214 | 本档位对照基准；完整定义见来源 YAML |
-| `pwc_ll_v4_1.rs` | [pwc_v4](../../data/registers/pwc_v4.yaml) | A4A0/F4A0/F4A2: PWC | 160 / 224 | 相对 pwc_ll_v4：定义差异 FCG1/FCG2/FCG3 |
-| `pwc_ll_v4_2.rs` | [pwc_v5](../../data/registers/pwc_v5.yaml) | A4A8/F4A8: PWC | 164 / 235 | 相对 pwc_ll_v4：增加 LPMCSCR/LPMCSR/VBATPORF/VBATPORFCLR；定义差异 FCG0/FCG1/FCG2/FCG3/PRAMLPC 等 6 项 |
+| `pwc_ll_v4.rs` | [pwc_ll_v4](../../data/registers/pwc_ll_v4.yaml) | F467: PWC | 160 / 214 | 本档位对照基准；完整定义见来源 YAML |
+| `pwc_ll_v4_1.rs` | [pwc_ll_v4_1](../../data/registers/pwc_ll_v4_1.yaml) | A4A0/F4A0/F4A2: PWC | 160 / 224 | 相对 pwc_ll_v4：定义差异 FCG1/FCG2/FCG3 |
+| `pwc_ll_v4_2.rs` | [pwc_ll_v4_2](../../data/registers/pwc_ll_v4_2.yaml) | A4A8/F4A8: PWC | 164 / 235 | 相对 pwc_ll_v4：增加 LPMCSCR/LPMCSR/VBATPORF/VBATPORFCLR；定义差异 FCG0/FCG1/FCG2/FCG3/PRAMLPC 等 6 项 |
 
 ### swdt：v1
 
@@ -85,8 +85,8 @@ SR/RR 基础看门狗；带 CR 的扩展布局使用后缀。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `swdt_ll_v1.rs` | [swdt_v2](../../data/registers/swdt_v2.yaml) | A460/F451/F452/F460: SWDT | 2 / 4 | 本档位对照基准；完整定义见来源 YAML |
-| `swdt_ll_v1_1.rs` | [swdt_v1](../../data/registers/swdt_v1.yaml) | A448/A472/A4A0/A4A8/F115/F120/F155/F334/F336/F431/F448/F467/F472/F4A0/F4A2/F4A8/K116/K118/M120/M413/M441/M458: SWDT | 3 / 9 | 相对 swdt_ll_v1：增加 CR |
+| `swdt_ll_v1.rs` | [swdt_ll_v1](../../data/registers/swdt_ll_v1.yaml) | A460/F451/F452/F460: SWDT | 2 / 4 | 本档位对照基准；完整定义见来源 YAML |
+| `swdt_ll_v1_1.rs` | [swdt_ll_v1_1](../../data/registers/swdt_ll_v1_1.yaml) | A448/A472/A4A0/A4A8/F115/F120/F155/F334/F336/F431/F448/F467/F472/F4A0/F4A2/F4A8/K116/K118/M120/M413/M441/M458: SWDT | 3 / 9 | 相对 swdt_ll_v1：增加 CR |
 
 ### wdt：v1
 
@@ -94,7 +94,7 @@ SR/RR 基础看门狗；带 CR 的扩展布局使用后缀。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `wdt_ll_v1.rs` | [wdt_common](../../data/registers/wdt_common.yaml) | A448/A460/A472/A4A0/A4A8/F334/F336/F431/F448/F451/F452/F460/F467/F472/F4A0/F4A2/F4A8/M413/M441/M458: WDT | 3 / 9 | 本档位对照基准；完整定义见来源 YAML |
+| `wdt_ll_v1.rs` | [wdt_ll_v1](../../data/registers/wdt_ll_v1.yaml) | A448/A460/A472/A4A0/A4A8/F334/F336/F431/F448/F451/F452/F460/F467/F472/F4A0/F4A2/F4A8/M413/M441/M458: WDT | 3 / 9 | 本档位对照基准；完整定义见来源 YAML |
 
 ### wwdt：v1
 
@@ -102,5 +102,5 @@ SR/RR 基础看门狗；带 CR 的扩展布局使用后缀。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `wwdt_ll_v1.rs` | [wwdt_common](../../data/registers/wwdt_common.yaml) | F175: WWDT | 3 / 6 | 本档位对照基准；完整定义见来源 YAML |
+| `wwdt_ll_v1.rs` | [wwdt_ll_v1](../../data/registers/wwdt_ll_v1.yaml) | F175: WWDT | 3 / 6 | 本档位对照基准；完整定义见来源 YAML |
 <!-- peripheral-versions:end -->

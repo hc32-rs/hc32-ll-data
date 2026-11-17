@@ -10,18 +10,18 @@ HC32F175 的设备头引用 Cortex-M0+ 内核头。它使用 LL 接口，多个�
 - [驱动矩阵](docs/driver-matrix.json)按 SDK 的 `drivers/hc32_ll_driver/inc/*.h` 生成。
   值为系列名与 SDK 修订号的拼接。LL 矩阵保留原 JSON 的 `ll_hc32_ll_*` 键格式。
 - [外设 IP 分类](docs/ip-classification.md)按外设组链接分类、寄存器布局和 SDK 核验依据。
-- [布局编号与功能档位](docs/layout-versions.md)记录独立编号规则、范围和待确认的目标布局。
-- [外设版本与 MCU 对照 CSV](docs/peripheral-versions.csv)逐行列出系列、实例、旧版本与拟议文件名。
+- [布局编号与功能档位](docs/layout-versions.md)记录独立编号规则、范围和已启用的目标布局。
+- [外设版本与 MCU 对照 CSV](docs/peripheral-versions.csv)逐行列出系列、实例、当前版本与目标文件名。
 - [显式版本映射](docs/peripheral-version-map.json)是文档表格与 CSV 的唯一编号来源。
 - [SDK 核验记录](docs/sdk-verification.md)列出逐组证据及待确认项。
 
 SDK 源码在工作区相邻的 `../xh_ll_sdk/`。设备头、驱动和例程用于核对 SVD 中的寄存器、
 中断、时钟门控与触发源。当前已有 SVD、审计 CSV、芯片/系列 YAML 与寄存器生成数据。
-外设新命名目前处于文档评审阶段，确认后才修改生成器并重生成 PAC。
+外设命名已接入生成链；文件名、主块及引用均以显式映射为准。
 
 ## 数据目录
 
-现有 YAML 用于生成 Rust PAC 并为 HAL 提供实例级数据；下表描述当前输入，尚未切换到拟议命名。
+现有 YAML 用于生成 Rust PAC 并为 HAL 提供实例级数据；下表描述当前输入，已采用统一命名。
 
 | 目录 | 用途 |
 |---|---|

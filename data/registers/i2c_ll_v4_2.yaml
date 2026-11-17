@@ -1,0 +1,494 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F334/I2C；覆盖系列：HC32F334, HC32F336。
+block/I2C:
+  description: desc I2C.
+  items:
+  - name: CR1
+    description: desc CR1.
+    byte_offset: 0
+    fieldset: CR1
+  - name: CR2
+    description: desc CR2.
+    byte_offset: 4
+    fieldset: CR2
+  - name: CR3
+    description: desc CR3.
+    byte_offset: 8
+    fieldset: CR3
+  - name: CR4
+    description: desc CR4.
+    byte_offset: 12
+    fieldset: CR4
+  - name: SLR0
+    description: desc SLR0.
+    byte_offset: 16
+    fieldset: SLR0
+  - name: SLR1
+    description: desc SLR1.
+    byte_offset: 20
+    fieldset: SLR1
+  - name: SLTR
+    description: desc SLTR.
+    byte_offset: 24
+    fieldset: SLTR
+  - name: SR
+    description: desc SR.
+    byte_offset: 28
+    fieldset: SR
+  - name: CLR
+    description: desc CLR.
+    byte_offset: 32
+    access: Write
+    fieldset: CLR
+  - name: DTR
+    description: desc DTR.
+    byte_offset: 36
+    bit_size: 8
+  - name: DRR
+    description: desc DRR.
+    byte_offset: 40
+    access: Read
+    bit_size: 8
+  - name: CCR
+    description: desc CCR.
+    byte_offset: 44
+    fieldset: CCR
+  - name: FLTR
+    description: desc FLTR.
+    byte_offset: 48
+    fieldset: FLTR
+  - name: FSTR
+    description: desc FSTR.
+    byte_offset: 52
+    fieldset: FSTR
+  - name: SLVADDR
+    description: desc SLVADDR.
+    byte_offset: 56
+    fieldset: SLVADDR
+fieldset/CCR:
+  description: desc CCR.
+  fields:
+  - name: SLOWW
+    description: desc SLOWW.
+    bit_offset: 0
+    bit_size: 8
+  - name: SHIGHW
+    description: desc SHIGHW.
+    bit_offset: 8
+    bit_size: 8
+  - name: CKDIV
+    description: desc CKDIV.
+    bit_offset: 16
+    bit_size: 3
+  - name: FMPLUSEN
+    description: desc FMPLUSEN.
+    bit_offset: 23
+    bit_size: 1
+fieldset/CLR:
+  description: desc CLR.
+  fields:
+  - name: STARTFCLR
+    description: desc STARTFCLR.
+    bit_offset: 0
+    bit_size: 1
+  - name: SLADDR0FCLR
+    description: desc SLADDR0FCLR.
+    bit_offset: 1
+    bit_size: 1
+  - name: SLADDR1FCLR
+    description: desc SLADDR1FCLR.
+    bit_offset: 2
+    bit_size: 1
+  - name: TENDFCLR
+    description: desc TENDFCLR.
+    bit_offset: 3
+    bit_size: 1
+  - name: STOPFCLR
+    description: desc STOPFCLR.
+    bit_offset: 4
+    bit_size: 1
+  - name: RFULLFCLR
+    description: desc RFULLFCLR.
+    bit_offset: 6
+    bit_size: 1
+  - name: ARLOFCLR
+    description: desc ARLOFCLR.
+    bit_offset: 9
+    bit_size: 1
+  - name: RFREQCLR
+    description: desc RFREQCLR.
+    bit_offset: 10
+    bit_size: 1
+  - name: NACKFCLR
+    description: desc NACKFCLR.
+    bit_offset: 12
+    bit_size: 1
+  - name: TMOUTFCLR
+    description: desc TMOUTFCLR.
+    bit_offset: 14
+    bit_size: 1
+  - name: GENCALLFCLR
+    description: desc GENCALLFCLR.
+    bit_offset: 20
+    bit_size: 1
+  - name: SMBDEFAULTFCLR
+    description: desc SMBDEFAULTFCLR.
+    bit_offset: 21
+    bit_size: 1
+  - name: SMBHOSTFCLR
+    description: desc SMBHOSTFCLR.
+    bit_offset: 22
+    bit_size: 1
+  - name: SMBALRTFCLR
+    description: desc SMBALRTFCLR.
+    bit_offset: 23
+    bit_size: 1
+fieldset/CR1:
+  description: desc CR1.
+  fields:
+  - name: PE
+    description: desc PE.
+    bit_offset: 0
+    bit_size: 1
+  - name: SMBUS
+    description: desc SMBUS.
+    bit_offset: 1
+    bit_size: 1
+  - name: SMBALRTEN
+    description: desc SMBALRTEN.
+    bit_offset: 2
+    bit_size: 1
+  - name: SMBDEFAULTEN
+    description: desc SMBDEFAULTEN.
+    bit_offset: 3
+    bit_size: 1
+  - name: SMBHOSTEN
+    description: desc SMBHOSTEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: GCEN
+    description: desc GCEN.
+    bit_offset: 6
+    bit_size: 1
+  - name: RESTART
+    description: desc RESTART.
+    bit_offset: 7
+    bit_size: 1
+  - name: START
+    description: desc START.
+    bit_offset: 8
+    bit_size: 1
+  - name: STOP
+    description: desc STOP.
+    bit_offset: 9
+    bit_size: 1
+  - name: ACK
+    description: desc ACK.
+    bit_offset: 10
+    bit_size: 1
+  - name: SWRST
+    description: desc SWRST.
+    bit_offset: 15
+    bit_size: 1
+fieldset/CR2:
+  description: desc CR2.
+  fields:
+  - name: STARTIE
+    description: desc STARTIE.
+    bit_offset: 0
+    bit_size: 1
+  - name: SLADDR0IE
+    description: desc SLADDR0IE.
+    bit_offset: 1
+    bit_size: 1
+  - name: SLADDR1IE
+    description: desc SLADDR1IE.
+    bit_offset: 2
+    bit_size: 1
+  - name: TENDIE
+    description: desc TENDIE.
+    bit_offset: 3
+    bit_size: 1
+  - name: STOPIE
+    description: desc STOPIE.
+    bit_offset: 4
+    bit_size: 1
+  - name: RFULLIE
+    description: desc RFULLIE.
+    bit_offset: 6
+    bit_size: 1
+  - name: TEMPTYIE
+    description: desc TEMPTYIE.
+    bit_offset: 7
+    bit_size: 1
+  - name: ARLOIE
+    description: desc ARLOIE.
+    bit_offset: 9
+    bit_size: 1
+  - name: RFREQIE
+    description: desc RFREQIE.
+    bit_offset: 11
+    bit_size: 1
+  - name: NACKIE
+    description: desc NACKIE.
+    bit_offset: 12
+    bit_size: 1
+  - name: TMOUTIE
+    description: desc TMOUTIE.
+    bit_offset: 14
+    bit_size: 1
+  - name: GENCALLIE
+    description: desc GENCALLIE.
+    bit_offset: 20
+    bit_size: 1
+  - name: SMBDEFAULTIE
+    description: desc SMBDEFAULTIE.
+    bit_offset: 21
+    bit_size: 1
+  - name: SMBHOSTIE
+    description: desc SMBHOSTIE.
+    bit_offset: 22
+    bit_size: 1
+  - name: SMBALRTIE
+    description: desc SMBALRTIE.
+    bit_offset: 23
+    bit_size: 1
+fieldset/CR3:
+  description: desc CR3.
+  fields:
+  - name: TMOUTEN
+    description: desc TMOUTEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: LTMOUT
+    description: desc LTMOUT.
+    bit_offset: 1
+    bit_size: 1
+  - name: HTMOUT
+    description: desc HTMOUT.
+    bit_offset: 2
+    bit_size: 1
+  - name: FACKEN
+    description: desc FACKEN.
+    bit_offset: 7
+    bit_size: 1
+fieldset/CR4:
+  description: desc CR4.
+  fields:
+  - name: BUSWAIT
+    description: desc BUSWAIT.
+    bit_offset: 10
+    bit_size: 1
+  - name: BUSFREE_CLREN
+    description: desc BUSFREE_CLREN.
+    bit_offset: 12
+    bit_size: 1
+  - name: SDADLY
+    description: desc SDADLY.
+    bit_offset: 16
+    bit_size: 4
+fieldset/FLTR:
+  description: desc FLTR.
+  fields:
+  - name: DNF
+    description: desc DNF.
+    bit_offset: 0
+    bit_size: 2
+  - name: DNFEN
+    description: desc DNFEN.
+    bit_offset: 4
+    bit_size: 1
+  - name: ANFEN
+    description: desc ANFEN.
+    bit_offset: 5
+    bit_size: 1
+fieldset/FSTR:
+  description: desc FSTR.
+  fields:
+  - name: FEN
+    description: desc FEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: TFFLUSH
+    description: desc TFFLUSH.
+    bit_offset: 1
+    bit_size: 1
+  - name: RFFLUSH
+    description: desc RFFLUSH.
+    bit_offset: 2
+    bit_size: 1
+  - name: NACKTFFLUSH
+    description: desc NACKTFFLUSH.
+    bit_offset: 3
+    bit_size: 1
+  - name: TFST
+    description: desc TFST.
+    bit_offset: 4
+    bit_size: 2
+  - name: RFST
+    description: desc RFST.
+    bit_offset: 6
+    bit_size: 2
+fieldset/SLR0:
+  description: desc SLR0.
+  fields:
+  - name: SLADDR0
+    description: desc SLADDR0.
+    bit_offset: 0
+    bit_size: 10
+  - name: SLADDR0EN
+    description: desc SLADDR0EN.
+    bit_offset: 12
+    bit_size: 1
+  - name: ADDRMOD0
+    description: desc ADDRMOD0.
+    bit_offset: 15
+    bit_size: 1
+  - name: MSLADDR0
+    description: desc MSLADDR0.
+    bit_offset: 16
+    bit_size: 10
+  - name: MASK0EN
+    description: desc MASK0EN.
+    bit_offset: 26
+    bit_size: 1
+fieldset/SLR1:
+  description: desc SLR1.
+  fields:
+  - name: SLADDR1
+    description: desc SLADDR1.
+    bit_offset: 0
+    bit_size: 10
+  - name: SLADDR1EN
+    description: desc SLADDR1EN.
+    bit_offset: 12
+    bit_size: 1
+  - name: ADDRMOD1
+    description: desc ADDRMOD1.
+    bit_offset: 15
+    bit_size: 1
+  - name: MSLADDR1
+    description: desc MSLADDR1.
+    bit_offset: 16
+    bit_size: 10
+  - name: MASK1EN
+    description: desc MASK1EN.
+    bit_offset: 26
+    bit_size: 1
+fieldset/SLTR:
+  description: desc SLTR.
+  fields:
+  - name: TOUTLOW
+    description: desc TOUTLOW.
+    bit_offset: 0
+    bit_size: 16
+  - name: TOUTHIGH
+    description: desc TOUTHIGH.
+    bit_offset: 16
+    bit_size: 16
+fieldset/SLVADDR:
+  description: desc SLVADDR.
+  fields:
+  - name: SLVADRR
+    description: desc SLVADRR.
+    bit_offset: 0
+    bit_size: 10
+fieldset/SR:
+  description: desc SR.
+  fields:
+  - name: STARTF
+    description: desc STARTF.
+    bit_offset: 0
+    bit_size: 1
+  - name: SLADDR0F
+    description: desc SLADDR0F.
+    bit_offset: 1
+    bit_size: 1
+  - name: SLADDR1F
+    description: desc SLADDR1F.
+    bit_offset: 2
+    bit_size: 1
+  - name: TENDF
+    description: desc TENDF.
+    bit_offset: 3
+    bit_size: 1
+  - name: STOPF
+    description: desc STOPF.
+    bit_offset: 4
+    bit_size: 1
+  - name: RFULLF
+    description: desc RFULLF.
+    bit_offset: 6
+    bit_size: 1
+  - name: TEMPTYF
+    description: desc TEMPTYF.
+    bit_offset: 7
+    bit_size: 1
+  - name: ARLOF
+    description: desc ARLOF.
+    bit_offset: 9
+    bit_size: 1
+  - name: ACKRF
+    description: desc ACKRF.
+    bit_offset: 10
+    bit_size: 1
+  - name: NACKF
+    description: desc NACKF.
+    bit_offset: 12
+    bit_size: 1
+  - name: TMOUTF
+    description: desc TMOUTF.
+    bit_offset: 14
+    bit_size: 1
+  - name: MSL
+    description: desc MSL.
+    bit_offset: 16
+    bit_size: 1
+  - name: BUSY
+    description: desc BUSY.
+    bit_offset: 17
+    bit_size: 1
+  - name: TRA
+    description: desc TRA.
+    bit_offset: 18
+    bit_size: 1
+  - name: GENCALLF
+    description: desc GENCALLF.
+    bit_offset: 20
+    bit_size: 1
+  - name: SMBDEFAULTF
+    description: desc SMBDEFAULTF.
+    bit_offset: 21
+    bit_size: 1
+  - name: SMBHOSTF
+    description: desc SMBHOSTF.
+    bit_offset: 22
+    bit_size: 1
+  - name: SMBALRTF
+    description: desc SMBALRTF.
+    bit_offset: 23
+    bit_size: 1
+  - name: TFEMPTY
+    description: desc TFEMPTY.
+    bit_offset: 24
+    bit_size: 1
+  - name: TFFULL
+    description: desc TFFULL.
+    bit_offset: 25
+    bit_size: 1
+  - name: RFEMPTY
+    description: desc RFEMPTY.
+    bit_offset: 26
+    bit_size: 1
+  - name: RFFULL
+    description: desc RFFULL.
+    bit_offset: 27
+    bit_size: 1
+  - name: TFST
+    description: desc TFST.
+    bit_offset: 28
+    bit_size: 2
+  - name: RFREQ
+    description: desc RFREQ.
+    bit_offset: 31
+    bit_size: 1

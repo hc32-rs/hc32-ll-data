@@ -19,7 +19,7 @@ FCM_COM 和 FCM1 同基址；共享窗口使用 fcm_common，不代表另一个�
 <!-- peripheral-versions:begin -->
 ## 版本与系列对照
 
-以下为待确认命名，当前来源仍使用旧文件名。系列名前缀 `HC32` 省略。
+以下名称与生成输入保持一致。系列名前缀 `HC32` 省略。
 
 ### cmu：v1
 
@@ -27,11 +27,11 @@ FCM_COM 和 FCM1 同基址；共享窗口使用 fcm_common，不代表另一个�
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `cmu_ll_v1.rs` | [cmu_v7](../../data/registers/cmu_v7.yaml) | F120: CMU | 13 / 39 | 本档位对照基准；完整定义见来源 YAML |
-| `cmu_ll_v1_1.rs` | [cmu_v12](../../data/registers/cmu_v12.yaml) | M120: CMU | 13 / 40 | 相对 cmu_ll_v1：定义差异 FCG |
-| `cmu_ll_v1_2.rs` | [cmu_v6](../../data/registers/cmu_v6.yaml) | F115: CMU | 16 / 45 | 相对 cmu_ll_v1：增加 XTAL32CFGR/XTAL32CR/XTAL32NFR；定义差异 FCG/OSCSTBSR |
-| `cmu_ll_v1_3.rs` | [cmu_v8](../../data/registers/cmu_v8.yaml) | F155: CMU | 16 / 47 | 相对 cmu_ll_v1：增加 XTAL32CFGR/XTAL32CR/XTAL32NFR；定义差异 FCG/OSCSTBSR |
-| `cmu_ll_v1_4.rs` | [cmu_v11](../../data/registers/cmu_v11.yaml) | K116/K118: CMU | 17 / 49 | 相对 cmu_ll_v1：增加 CANCKCFGR/XTAL32CFGR/XTAL32CR/XTAL32NFR；定义差异 FCG/OSCSTBSR/XTALCFGR |
+| `cmu_ll_v1.rs` | [cmu_ll_v1](../../data/registers/cmu_ll_v1.yaml) | F120: CMU | 13 / 39 | 本档位对照基准；完整定义见来源 YAML |
+| `cmu_ll_v1_1.rs` | [cmu_ll_v1_1](../../data/registers/cmu_ll_v1_1.yaml) | M120: CMU | 13 / 40 | 相对 cmu_ll_v1：定义差异 FCG |
+| `cmu_ll_v1_2.rs` | [cmu_ll_v1_2](../../data/registers/cmu_ll_v1_2.yaml) | F115: CMU | 16 / 45 | 相对 cmu_ll_v1：增加 XTAL32CFGR/XTAL32CR/XTAL32NFR；定义差异 FCG/OSCSTBSR |
+| `cmu_ll_v1_3.rs` | [cmu_ll_v1_3](../../data/registers/cmu_ll_v1_3.yaml) | F155: CMU | 16 / 47 | 相对 cmu_ll_v1：增加 XTAL32CFGR/XTAL32CR/XTAL32NFR；定义差异 FCG/OSCSTBSR |
+| `cmu_ll_v1_4.rs` | [cmu_ll_v1_4](../../data/registers/cmu_ll_v1_4.yaml) | K116/K118: CMU | 17 / 49 | 相对 cmu_ll_v1：增加 CANCKCFGR/XTAL32CFGR/XTAL32CR/XTAL32NFR；定义差异 FCG/OSCSTBSR/XTALCFGR |
 
 ### cmu：v2
 
@@ -39,8 +39,8 @@ FCM_COM 和 FCM1 同基址；共享窗口使用 fcm_common，不代表另一个�
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `cmu_ll_v2.rs` | [cmu_v10](../../data/registers/cmu_v10.yaml) | F431/M413: CMU | 16 / 58 | 本档位对照基准；完整定义见来源 YAML |
-| `cmu_ll_v2_1.rs` | [cmu_v14](../../data/registers/cmu_v14.yaml) | M458: CMU | 16 / 62 | 相对 cmu_ll_v2：定义差异 FCG/PLLCFGR/SCFGR |
+| `cmu_ll_v2.rs` | [cmu_ll_v2](../../data/registers/cmu_ll_v2.yaml) | F431/M413: CMU | 16 / 58 | 本档位对照基准；完整定义见来源 YAML |
+| `cmu_ll_v2_1.rs` | [cmu_ll_v2_1](../../data/registers/cmu_ll_v2_1.yaml) | M458: CMU | 16 / 62 | 相对 cmu_ll_v2：定义差异 FCG/PLLCFGR/SCFGR |
 
 ### cmu：v3
 
@@ -48,10 +48,10 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `cmu_ll_v3.rs` | [cmu_v13](../../data/registers/cmu_v13.yaml) | M441: CMU | 25 / 44 | 本档位对照基准；完整定义见来源 YAML |
-| `cmu_ll_v3_1.rs` | [cmu_v9](../../data/registers/cmu_v9.yaml) | F334/F336: CMU | 26 / 46 | 相对 cmu_ll_v3：增加 CANCKCFGR；定义差异 PLLHCFGR/XTALCFGR/XTALDIVR |
-| `cmu_ll_v3_2.rs` | [cmu_v1](../../data/registers/cmu_v1.yaml) | A448/F448: CMU | 26 / 47 | 相对 cmu_ll_v3：增加 CANCKCFGR；定义差异 SCFGR |
-| `cmu_ll_v3_3.rs` | [cmu_v3](../../data/registers/cmu_v3.yaml) | A472/F472: CMU | 27 / 49 | 相对 cmu_ll_v3：增加 CANCKCFGR/USBCKCFGR；定义差异 PLLHCFGR/SCFGR/XTALCFGR/XTALDIVR |
+| `cmu_ll_v3.rs` | [cmu_ll_v3](../../data/registers/cmu_ll_v3.yaml) | M441: CMU | 25 / 44 | 本档位对照基准；完整定义见来源 YAML |
+| `cmu_ll_v3_1.rs` | [cmu_ll_v3_1](../../data/registers/cmu_ll_v3_1.yaml) | F334/F336: CMU | 26 / 46 | 相对 cmu_ll_v3：增加 CANCKCFGR；定义差异 PLLHCFGR/XTALCFGR/XTALDIVR |
+| `cmu_ll_v3_2.rs` | [cmu_ll_v3_2](../../data/registers/cmu_ll_v3_2.yaml) | A448/F448: CMU | 26 / 47 | 相对 cmu_ll_v3：增加 CANCKCFGR；定义差异 SCFGR |
+| `cmu_ll_v3_3.rs` | [cmu_ll_v3_3](../../data/registers/cmu_ll_v3_3.yaml) | A472/F472: CMU | 27 / 49 | 相对 cmu_ll_v3：增加 CANCKCFGR/USBCKCFGR；定义差异 PLLHCFGR/SCFGR/XTALCFGR/XTALDIVR |
 
 ### cmu：v4
 
@@ -59,9 +59,9 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `cmu_ll_v4.rs` | [cmu_v2](../../data/registers/cmu_v2.yaml) | A460/F451/F452/F460: CMU | 27 / 55 | 本档位对照基准；完整定义见来源 YAML |
-| `cmu_ll_v4_1.rs` | [cmu_v4](../../data/registers/cmu_v4.yaml) | A4A0/F467/F4A0/F4A2: CMU | 29 / 57 | 相对 cmu_ll_v4：增加 CANCKCFGR/PLLACFGR/PLLACR/PLLHCFGR/PLLHCR 等 6 项；缺少 PLLCFGR/PLLCR/UPLLCFGR/UPLLCR；定义差异 CKSWR/HRCCR/HRCTRM/I2SCKSEL/LRCCR 等 23 项 |
-| `cmu_ll_v4_2.rs` | [cmu_v5](../../data/registers/cmu_v5.yaml) | A4A8/F4A8: CMU | 31 / 62 | 相对 cmu_ll_v4：增加 CANCKCFGR/PLLACFGR/PLLACR/PLLHCFGR/PLLHCR 等 8 项；缺少 PLLCFGR/PLLCR/UPLLCFGR/UPLLCR；定义差异 CKSWR/HRCCR/HRCTRM/I2SCKSEL/LRCCR 等 23 项 |
+| `cmu_ll_v4.rs` | [cmu_ll_v4](../../data/registers/cmu_ll_v4.yaml) | A460/F451/F452/F460: CMU | 27 / 55 | 本档位对照基准；完整定义见来源 YAML |
+| `cmu_ll_v4_1.rs` | [cmu_ll_v4_1](../../data/registers/cmu_ll_v4_1.yaml) | A4A0/F467/F4A0/F4A2: CMU | 29 / 57 | 相对 cmu_ll_v4：增加 CANCKCFGR/PLLACFGR/PLLACR/PLLHCFGR/PLLHCR 等 6 项；缺少 PLLCFGR/PLLCR/UPLLCFGR/UPLLCR；定义差异 CKSWR/HRCCR/HRCTRM/I2SCKSEL/LRCCR 等 23 项 |
+| `cmu_ll_v4_2.rs` | [cmu_ll_v4_2](../../data/registers/cmu_ll_v4_2.yaml) | A4A8/F4A8: CMU | 31 / 62 | 相对 cmu_ll_v4：增加 CANCKCFGR/PLLACFGR/PLLACR/PLLHCFGR/PLLHCR 等 8 项；缺少 PLLCFGR/PLLCR/UPLLCFGR/UPLLCR；定义差异 CKSWR/HRCCR/HRCTRM/I2SCKSEL/LRCCR 等 23 项 |
 
 ### csu：v1
 
@@ -69,7 +69,7 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `csu_ll_v1.rs` | [csu_common](../../data/registers/csu_common.yaml) | F175: CSU0, CSU1, CSU2 | 7 / 18 | 本档位对照基准；完整定义见来源 YAML |
+| `csu_ll_v1.rs` | [csu_ll_v1](../../data/registers/csu_ll_v1.yaml) | F175: CSU0, CSU1, CSU2 | 7 / 18 | 本档位对照基准；完整定义见来源 YAML |
 
 ### ctc：v1
 
@@ -77,10 +77,10 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `ctc_ll_v1.rs` | [ctc_v3](../../data/registers/ctc_v3.yaml) | A4A0/A4A8/F115/F120/F467/F4A0/F4A2/F4A8/M120: CTC | 3 / 11 | 本档位对照基准；完整定义见来源 YAML |
-| `ctc_ll_v1_1.rs` | [ctc_v1](../../data/registers/ctc_v1.yaml) | A448/F155/F334/F336/F448/M441: CTC | 4 / 13 | 相对 ctc_ll_v1：增加 CNT；定义差异 CR1 |
-| `ctc_ll_v1_2.rs` | [ctc_v4](../../data/registers/ctc_v4.yaml) | K116/K118: CTC | 4 / 13 | 相对 ctc_ll_v1：增加 CNT；定义差异 CR1 |
-| `ctc_ll_v1_3.rs` | [ctc_v2](../../data/registers/ctc_v2.yaml) | A472/F472: CTC | 4 / 14 | 相对 ctc_ll_v1：增加 CNT；定义差异 CR1 |
+| `ctc_ll_v1.rs` | [ctc_ll_v1](../../data/registers/ctc_ll_v1.yaml) | A4A0/A4A8/F115/F120/F467/F4A0/F4A2/F4A8/M120: CTC | 3 / 11 | 本档位对照基准；完整定义见来源 YAML |
+| `ctc_ll_v1_1.rs` | [ctc_ll_v1_1](../../data/registers/ctc_ll_v1_1.yaml) | A448/F155/F334/F336/F448/M441: CTC | 4 / 13 | 相对 ctc_ll_v1：增加 CNT；定义差异 CR1 |
+| `ctc_ll_v1_2.rs` | [ctc_ll_v1_2](../../data/registers/ctc_ll_v1_2.yaml) | K116/K118: CTC | 4 / 13 | 相对 ctc_ll_v1：增加 CNT；定义差异 CR1 |
+| `ctc_ll_v1_3.rs` | [ctc_ll_v1_3](../../data/registers/ctc_ll_v1_3.yaml) | A472/F472: CTC | 4 / 14 | 相对 ctc_ll_v1：增加 CNT；定义差异 CR1 |
 
 ### ctrim：v1
 
@@ -88,7 +88,7 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `ctrim_ll_v1.rs` | [ctrim_common](../../data/registers/ctrim_common.yaml) | F175: CTRIM | 10 / 33 | 本档位对照基准；完整定义见来源 YAML |
+| `ctrim_ll_v1.rs` | [ctrim_ll_v1](../../data/registers/ctrim_ll_v1.yaml) | F175: CTRIM | 10 / 33 | 本档位对照基准；完整定义见来源 YAML |
 
 ### fcm：v1
 
@@ -96,9 +96,9 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `fcm_ll_v1.rs` | [fcm_v2](../../data/registers/fcm_v2.yaml) | A4A8/F4A8: FCM1, FCM2, FCM3, FCM4 | 7 / 19 | 本档位对照基准；完整定义见来源 YAML |
-| `fcm_ll_v1_1.rs` | [fcm_v1](../../data/registers/fcm_v1.yaml) | A448/A460/A472/A4A0/F334/F336/F448/F451/F452/F460/F467/F472/F4A0/F4A2/M441: FCM | 9 / 23 | 相对 fcm_ll_v1：增加 SR/STR；定义差异 RIER |
-| `fcm_ll_v1_2.rs` | [fcm_v4](../../data/registers/fcm_v4.yaml) | F431/K116/K118/M413/M458: FCM | 9 / 23 | 相对 fcm_ll_v1：增加 SR/STR |
+| `fcm_ll_v1.rs` | [fcm_ll_v1](../../data/registers/fcm_ll_v1.yaml) | A4A8/F4A8: FCM1, FCM2, FCM3, FCM4 | 7 / 19 | 本档位对照基准；完整定义见来源 YAML |
+| `fcm_ll_v1_1.rs` | [fcm_ll_v1_1](../../data/registers/fcm_ll_v1_1.yaml) | A448/A460/A472/A4A0/F334/F336/F448/F451/F452/F460/F467/F472/F4A0/F4A2/M441: FCM | 9 / 23 | 相对 fcm_ll_v1：增加 SR/STR；定义差异 RIER |
+| `fcm_ll_v1_2.rs` | [fcm_ll_v1_2](../../data/registers/fcm_ll_v1_2.yaml) | F431/K116/K118/M413/M458: FCM | 9 / 23 | 相对 fcm_ll_v1：增加 SR/STR |
 
 ### fcm_common：v1
 
@@ -106,7 +106,7 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `fcm_common_ll_v1.rs` | [fcm_v3](../../data/registers/fcm_v3.yaml) | A4A8/F4A8: FCM_COM | 2 / 16 | 本档位对照基准；完整定义见来源 YAML |
+| `fcm_common_ll_v1.rs` | [fcm_common_ll_v1](../../data/registers/fcm_common_ll_v1.yaml) | A4A8/F4A8: FCM_COM | 2 / 16 | 本档位对照基准；完整定义见来源 YAML |
 
 ### icg：v1
 
@@ -114,17 +114,17 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `icg_ll_v1.rs` | [icg_v1](../../data/registers/icg_v1.yaml) | A448/A4A0/F448/F467/F4A0/F4A2/M441: ICG | 3 / 17 | 本档位对照基准；完整定义见来源 YAML |
-| `icg_ll_v1_1.rs` | [icg_v8](../../data/registers/icg_v8.yaml) | F334/F336: ICG | 3 / 18 | 相对 icg_ll_v1：定义差异 ICG3 |
-| `icg_ll_v1_2.rs` | [icg_v11](../../data/registers/icg_v11.yaml) | M458: ICG | 4 / 17 | 相对 icg_ll_v1：增加 ICG2/ICG4；缺少 ICG3；定义差异 ICG1 |
-| `icg_ll_v1_3.rs` | [icg_v3](../../data/registers/icg_v3.yaml) | A472/F472: ICG | 4 / 17 | 相对 icg_ll_v1：增加 ICG4 |
-| `icg_ll_v1_4.rs` | [icg_v9](../../data/registers/icg_v9.yaml) | F431/M413: ICG | 5 / 21 | 相对 icg_ll_v1：增加 ICG2/ICG4；定义差异 ICG1/ICG3 |
-| `icg_ll_v1_5.rs` | [icg_v4](../../data/registers/icg_v4.yaml) | A4A8/F4A8: ICG | 6 / 23 | 相对 icg_ll_v1：增加 ICG8A/ICG8B/ICG8C |
-| `icg_ll_v1_6.rs` | [icg_v7](../../data/registers/icg_v7.yaml) | F155: ICG | 7 / 15 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6；定义差异 ICG0/ICG1/ICG3 |
-| `icg_ll_v1_7.rs` | [icg_v6](../../data/registers/icg_v6.yaml) | F120: ICG | 7 / 19 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6；定义差异 ICG0/ICG1/ICG3 |
-| `icg_ll_v1_8.rs` | [icg_v5](../../data/registers/icg_v5.yaml) | F115: ICG | 7 / 20 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6；定义差异 ICG0/ICG1/ICG3 |
-| `icg_ll_v1_9.rs` | [icg_v10](../../data/registers/icg_v10.yaml) | M120: ICG | 8 / 19 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6/ICG7；定义差异 ICG0/ICG1/ICG3 |
-| `icg_ll_v1_10.rs` | [icg_v2](../../data/registers/icg_v2.yaml) | A460/F451/F452/F460: ICG | 8 / 21 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6/ICG7；定义差异 ICG1/ICG3 |
+| `icg_ll_v1.rs` | [icg_ll_v1](../../data/registers/icg_ll_v1.yaml) | A448/A4A0/F448/F467/F4A0/F4A2/M441: ICG | 3 / 17 | 本档位对照基准；完整定义见来源 YAML |
+| `icg_ll_v1_1.rs` | [icg_ll_v1_1](../../data/registers/icg_ll_v1_1.yaml) | F334/F336: ICG | 3 / 18 | 相对 icg_ll_v1：定义差异 ICG3 |
+| `icg_ll_v1_2.rs` | [icg_ll_v1_2](../../data/registers/icg_ll_v1_2.yaml) | M458: ICG | 4 / 17 | 相对 icg_ll_v1：增加 ICG2/ICG4；缺少 ICG3；定义差异 ICG1 |
+| `icg_ll_v1_3.rs` | [icg_ll_v1_3](../../data/registers/icg_ll_v1_3.yaml) | A472/F472: ICG | 4 / 17 | 相对 icg_ll_v1：增加 ICG4 |
+| `icg_ll_v1_4.rs` | [icg_ll_v1_4](../../data/registers/icg_ll_v1_4.yaml) | F431/M413: ICG | 5 / 21 | 相对 icg_ll_v1：增加 ICG2/ICG4；定义差异 ICG1/ICG3 |
+| `icg_ll_v1_5.rs` | [icg_ll_v1_5](../../data/registers/icg_ll_v1_5.yaml) | A4A8/F4A8: ICG | 6 / 23 | 相对 icg_ll_v1：增加 ICG8A/ICG8B/ICG8C |
+| `icg_ll_v1_6.rs` | [icg_ll_v1_6](../../data/registers/icg_ll_v1_6.yaml) | F155: ICG | 7 / 15 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6；定义差异 ICG0/ICG1/ICG3 |
+| `icg_ll_v1_7.rs` | [icg_ll_v1_7](../../data/registers/icg_ll_v1_7.yaml) | F120: ICG | 7 / 19 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6；定义差异 ICG0/ICG1/ICG3 |
+| `icg_ll_v1_8.rs` | [icg_ll_v1_8](../../data/registers/icg_ll_v1_8.yaml) | F115: ICG | 7 / 20 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6；定义差异 ICG0/ICG1/ICG3 |
+| `icg_ll_v1_9.rs` | [icg_ll_v1_9](../../data/registers/icg_ll_v1_9.yaml) | M120: ICG | 8 / 19 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6/ICG7；定义差异 ICG0/ICG1/ICG3 |
+| `icg_ll_v1_10.rs` | [icg_ll_v1_10](../../data/registers/icg_ll_v1_10.yaml) | A460/F451/F452/F460: ICG | 8 / 21 | 相对 icg_ll_v1：增加 ICG2/ICG4/ICG5/ICG6/ICG7；定义差异 ICG1/ICG3 |
 
 ### icga：v1
 
@@ -132,7 +132,7 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `icga_ll_v1.rs` | [icga_common](../../data/registers/icga_common.yaml) | K116/K118: ICGA | 15 / 270 | 本档位对照基准；完整定义见来源 YAML |
+| `icga_ll_v1.rs` | [icga_ll_v1](../../data/registers/icga_ll_v1.yaml) | K116/K118: ICGA | 15 / 270 | 本档位对照基准；完整定义见来源 YAML |
 
 ### icgb：v1
 
@@ -140,7 +140,7 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `icgb_ll_v1.rs` | [icgb_common](../../data/registers/icgb_common.yaml) | K116/K118: ICGB | 24 / 192 | 本档位对照基准；完整定义见来源 YAML |
+| `icgb_ll_v1.rs` | [icgb_ll_v1](../../data/registers/icgb_ll_v1.yaml) | K116/K118: ICGB | 24 / 192 | 本档位对照基准；完整定义见来源 YAML |
 
 ### peric：v1
 
@@ -148,12 +148,12 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `peric_ll_v1.rs` | [peric_v9](../../data/registers/peric_v9.yaml) | K116/K118: PERIC | 1 / 2 | 本档位对照基准；完整定义见来源 YAML |
-| `peric_ll_v1_1.rs` | [peric_v7](../../data/registers/peric_v7.yaml) | F431/M413: PERIC | 2 / 12 | 相对 peric_ll_v1：增加 USART1_NFC；定义差异 TMR_SYNENR |
-| `peric_ll_v1_2.rs` | [peric_v10](../../data/registers/peric_v10.yaml) | M441: PERIC | 2 / 16 | 相对 peric_ll_v1：增加 USART1_NFC；定义差异 TMR_SYNENR |
-| `peric_ll_v1_3.rs` | [peric_v6](../../data/registers/peric_v6.yaml) | F334/F336: PERIC | 2 / 22 | 相对 peric_ll_v1：增加 USART1_NFC；定义差异 TMR_SYNENR |
-| `peric_ll_v1_4.rs` | [peric_v11](../../data/registers/peric_v11.yaml) | M458: PERIC | 3 / 14 | 相对 peric_ll_v1：增加 SMC_ENAR/USART1_NFC；定义差异 TMR_SYNENR |
-| `peric_ll_v1_5.rs` | [peric_v1](../../data/registers/peric_v1.yaml) | A448/F448: PERIC | 3 / 17 | 相对 peric_ll_v1：增加 SMC_ENAR/USART1_NFC；定义差异 TMR_SYNENR |
+| `peric_ll_v1.rs` | [peric_ll_v1](../../data/registers/peric_ll_v1.yaml) | K116/K118: PERIC | 1 / 2 | 本档位对照基准；完整定义见来源 YAML |
+| `peric_ll_v1_1.rs` | [peric_ll_v1_1](../../data/registers/peric_ll_v1_1.yaml) | F431/M413: PERIC | 2 / 12 | 相对 peric_ll_v1：增加 USART1_NFC；定义差异 TMR_SYNENR |
+| `peric_ll_v1_2.rs` | [peric_ll_v1_2](../../data/registers/peric_ll_v1_2.yaml) | M441: PERIC | 2 / 16 | 相对 peric_ll_v1：增加 USART1_NFC；定义差异 TMR_SYNENR |
+| `peric_ll_v1_3.rs` | [peric_ll_v1_3](../../data/registers/peric_ll_v1_3.yaml) | F334/F336: PERIC | 2 / 22 | 相对 peric_ll_v1：增加 USART1_NFC；定义差异 TMR_SYNENR |
+| `peric_ll_v1_4.rs` | [peric_ll_v1_4](../../data/registers/peric_ll_v1_4.yaml) | M458: PERIC | 3 / 14 | 相对 peric_ll_v1：增加 SMC_ENAR/USART1_NFC；定义差异 TMR_SYNENR |
+| `peric_ll_v1_5.rs` | [peric_ll_v1_5](../../data/registers/peric_ll_v1_5.yaml) | A448/F448: PERIC | 3 / 17 | 相对 peric_ll_v1：增加 SMC_ENAR/USART1_NFC；定义差异 TMR_SYNENR |
 
 ### peric：v2
 
@@ -161,11 +161,11 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `peric_ll_v2.rs` | [peric_v2](../../data/registers/peric_v2.yaml) | A460/F451/F452/F460: PERIC | 2 / 4 | 本档位对照基准；完整定义见来源 YAML |
-| `peric_ll_v2_1.rs` | [peric_v3](../../data/registers/peric_v3.yaml) | A472/F472: PERIC | 4 / 14 | 相对 peric_ll_v2：增加 CAN_SYCTLREG/SMC_ENAR/USART1_NFC/USB_SYCTLREG；缺少 SDIOC_SYCTLREG/USBFS_SYCTLREG |
-| `peric_ll_v2_2.rs` | [peric_v4](../../data/registers/peric_v4.yaml) | A4A0/F467/F4A0: PERIC | 8 / 19 | 相对 peric_ll_v2：增加 DMC_ENAR/NFC_ENAR/NFC_STCR/NFC_STSR/SMC_ENAR 等 7 项；缺少 USBFS_SYCTLREG |
-| `peric_ll_v2_3.rs` | [peric_v8](../../data/registers/peric_v8.yaml) | F4A2: PERIC | 9 / 21 | 相对 peric_ll_v2：增加 CAN_SYCTLREG/DMC_ENAR/NFC_ENAR/NFC_STCR/NFC_STSR 等 8 项；缺少 USBFS_SYCTLREG |
-| `peric_ll_v2_4.rs` | [peric_v5](../../data/registers/peric_v5.yaml) | A4A8/F4A8: PERIC | 10 / 65 | 相对 peric_ll_v2：增加 CAN_SYCTLREG/ETH_MAC_IFCONFR/EXMC_ENAR/NFC_STCR/NFC_STSR 等 9 项；缺少 USBFS_SYCTLREG |
+| `peric_ll_v2.rs` | [peric_ll_v2](../../data/registers/peric_ll_v2.yaml) | A460/F451/F452/F460: PERIC | 2 / 4 | 本档位对照基准；完整定义见来源 YAML |
+| `peric_ll_v2_1.rs` | [peric_ll_v2_1](../../data/registers/peric_ll_v2_1.yaml) | A472/F472: PERIC | 4 / 14 | 相对 peric_ll_v2：增加 CAN_SYCTLREG/SMC_ENAR/USART1_NFC/USB_SYCTLREG；缺少 SDIOC_SYCTLREG/USBFS_SYCTLREG |
+| `peric_ll_v2_2.rs` | [peric_ll_v2_2](../../data/registers/peric_ll_v2_2.yaml) | A4A0/F467/F4A0: PERIC | 8 / 19 | 相对 peric_ll_v2：增加 DMC_ENAR/NFC_ENAR/NFC_STCR/NFC_STSR/SMC_ENAR 等 7 项；缺少 USBFS_SYCTLREG |
+| `peric_ll_v2_3.rs` | [peric_ll_v2_3](../../data/registers/peric_ll_v2_3.yaml) | F4A2: PERIC | 9 / 21 | 相对 peric_ll_v2：增加 CAN_SYCTLREG/DMC_ENAR/NFC_ENAR/NFC_STCR/NFC_STSR 等 8 项；缺少 USBFS_SYCTLREG |
+| `peric_ll_v2_4.rs` | [peric_ll_v2_4](../../data/registers/peric_ll_v2_4.yaml) | A4A8/F4A8: PERIC | 10 / 65 | 相对 peric_ll_v2：增加 CAN_SYCTLREG/ETH_MAC_IFCONFR/EXMC_ENAR/NFC_STCR/NFC_STSR 等 9 项；缺少 USBFS_SYCTLREG |
 
 ### rmu：v1
 
@@ -173,9 +173,9 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `rmu_ll_v1.rs` | [rmu_v6](../../data/registers/rmu_v6.yaml) | F115/F120/F155/M120: RMU | 1 / 10 | 本档位对照基准；完整定义见来源 YAML |
-| `rmu_ll_v1_1.rs` | [rmu_v9](../../data/registers/rmu_v9.yaml) | K116/K118: RMU | 1 / 13 | 相对 rmu_ll_v1：定义差异 RSTF0 |
-| `rmu_ll_v1_2.rs` | [rmu_v2](../../data/registers/rmu_v2.yaml) | A460/F451/F452/F460: RMU | 1 / 16 | 相对 rmu_ll_v1：定义差异 RSTF0 |
+| `rmu_ll_v1.rs` | [rmu_ll_v1](../../data/registers/rmu_ll_v1.yaml) | F115/F120/F155/M120: RMU | 1 / 10 | 本档位对照基准；完整定义见来源 YAML |
+| `rmu_ll_v1_1.rs` | [rmu_ll_v1_1](../../data/registers/rmu_ll_v1_1.yaml) | K116/K118: RMU | 1 / 13 | 相对 rmu_ll_v1：定义差异 RSTF0 |
+| `rmu_ll_v1_2.rs` | [rmu_ll_v1_2](../../data/registers/rmu_ll_v1_2.yaml) | A460/F451/F452/F460: RMU | 1 / 16 | 相对 rmu_ll_v1：定义差异 RSTF0 |
 
 ### rmu：v2
 
@@ -183,8 +183,8 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `rmu_ll_v2.rs` | [rmu_v4](../../data/registers/rmu_v4.yaml) | A4A0/F467/F4A0/F4A2: RMU | 2 / 18 | 本档位对照基准；完整定义见来源 YAML |
-| `rmu_ll_v2_1.rs` | [rmu_v8](../../data/registers/rmu_v8.yaml) | F431/M413: RMU | 2 / 38 | 相对 rmu_ll_v2：增加 FRST0；缺少 PRSTCR0；定义差异 RSTF0 |
+| `rmu_ll_v2.rs` | [rmu_ll_v2](../../data/registers/rmu_ll_v2.yaml) | A4A0/F467/F4A0/F4A2: RMU | 2 / 18 | 本档位对照基准；完整定义见来源 YAML |
+| `rmu_ll_v2_1.rs` | [rmu_ll_v2_1](../../data/registers/rmu_ll_v2_1.yaml) | F431/M413: RMU | 2 / 38 | 相对 rmu_ll_v2：增加 FRST0；缺少 PRSTCR0；定义差异 RSTF0 |
 
 ### rmu：v3
 
@@ -192,12 +192,12 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `rmu_ll_v3.rs` | [rmu_v11](../../data/registers/rmu_v11.yaml) | M458: RMU | 5 / 41 | 本档位对照基准；完整定义见来源 YAML |
-| `rmu_ll_v3_1.rs` | [rmu_v10](../../data/registers/rmu_v10.yaml) | M441: RMU | 6 / 49 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
-| `rmu_ll_v3_2.rs` | [rmu_v7](../../data/registers/rmu_v7.yaml) | F334/F336: RMU | 6 / 51 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
-| `rmu_ll_v3_3.rs` | [rmu_v1](../../data/registers/rmu_v1.yaml) | A448/F448: RMU | 6 / 54 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
-| `rmu_ll_v3_4.rs` | [rmu_v3](../../data/registers/rmu_v3.yaml) | A472/F472: RMU | 6 / 68 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
-| `rmu_ll_v3_5.rs` | [rmu_v5](../../data/registers/rmu_v5.yaml) | A4A8/F4A8: RMU | 6 / 118 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
+| `rmu_ll_v3.rs` | [rmu_ll_v3](../../data/registers/rmu_ll_v3.yaml) | M458: RMU | 5 / 41 | 本档位对照基准；完整定义见来源 YAML |
+| `rmu_ll_v3_1.rs` | [rmu_ll_v3_1](../../data/registers/rmu_ll_v3_1.yaml) | M441: RMU | 6 / 49 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
+| `rmu_ll_v3_2.rs` | [rmu_ll_v3_2](../../data/registers/rmu_ll_v3_2.yaml) | F334/F336: RMU | 6 / 51 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
+| `rmu_ll_v3_3.rs` | [rmu_ll_v3_3](../../data/registers/rmu_ll_v3_3.yaml) | A448/F448: RMU | 6 / 54 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
+| `rmu_ll_v3_4.rs` | [rmu_ll_v3_4](../../data/registers/rmu_ll_v3_4.yaml) | A472/F472: RMU | 6 / 68 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
+| `rmu_ll_v3_5.rs` | [rmu_ll_v3_5](../../data/registers/rmu_ll_v3_5.yaml) | A4A8/F4A8: RMU | 6 / 118 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
 
 ### sysctrl：v1
 
@@ -205,5 +205,5 @@ PLLH 与扩展输出/晶振分频控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `sysctrl_ll_v1.rs` | [sysctrl_common](../../data/registers/sysctrl_common.yaml) | F175: SYSCTRL | 25 / 205 | 本档位对照基准；完整定义见来源 YAML |
+| `sysctrl_ll_v1.rs` | [sysctrl_ll_v1](../../data/registers/sysctrl_ll_v1.yaml) | F175: SYSCTRL | 25 / 205 | 本档位对照基准；完整定义见来源 YAML |
 <!-- peripheral-versions:end -->

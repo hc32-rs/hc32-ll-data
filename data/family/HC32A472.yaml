@@ -6,7 +6,7 @@
   registers:
     kind: adc
     block: ADC
-    version: v6
+    version: ll_v4_7
   rcc:
     enable:
       register: FCG3
@@ -19,7 +19,7 @@
   registers:
     kind: adc
     block: ADC
-    version: v7
+    version: ll_v4_8
   rcc:
     enable:
       register: FCG3
@@ -32,7 +32,7 @@
   registers:
     kind: adc
     block: ADC
-    version: v8
+    version: ll_v3_9
   rcc:
     enable:
       register: FCG3
@@ -45,7 +45,7 @@
   registers:
     kind: aes
     block: AES
-    version: v1
+    version: ll_v2
   rcc:
     enable:
       register: FCG0
@@ -55,7 +55,7 @@
   registers:
     kind: aos
     block: AOS
-    version: v3
+    version: ll_v8
   rcc:
     enable:
       register: FCG0
@@ -65,7 +65,7 @@
   registers:
     kind: can
     block: CAN
-    version: v2
+    version: ll_v2
   rcc:
     enable:
       register: FCG1
@@ -78,7 +78,7 @@
   registers:
     kind: can
     block: CAN
-    version: v2
+    version: ll_v2
   rcc:
     enable:
       register: FCG1
@@ -91,7 +91,7 @@
   registers:
     kind: can
     block: CAN
-    version: v2
+    version: ll_v2
   rcc:
     enable:
       register: FCG1
@@ -104,7 +104,7 @@
   registers:
     kind: cmp
     block: CMP
-    version: v7
+    version: ll_v2_6
   interrupts:
   - signal: CMP1
     interrupt: CMP1
@@ -113,7 +113,7 @@
   registers:
     kind: cmp
     block: CMP
-    version: v8
+    version: ll_v2_7
   interrupts:
   - signal: CMP2
     interrupt: CMP2
@@ -122,7 +122,7 @@
   registers:
     kind: cmp
     block: CMP
-    version: v7
+    version: ll_v2_6
   interrupts:
   - signal: CMP3
     interrupt: CMP3
@@ -131,7 +131,7 @@
   registers:
     kind: cmp
     block: CMP
-    version: v8
+    version: ll_v2_7
   interrupts:
   - signal: CMP4
     interrupt: CMP4
@@ -140,7 +140,7 @@
   registers:
     kind: cmu
     block: CMU
-    version: v3
+    version: ll_v3_3
   interrupts:
   - signal: CMU_XTAL_STOP
     interrupt: CMU_XTAL_STOP
@@ -151,7 +151,7 @@
   registers:
     kind: crc
     block: CRC
-    version: v3
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG0
@@ -161,7 +161,7 @@
   registers:
     kind: ctc
     block: CTC
-    version: v2
+    version: ll_v1_3
   rcc:
     enable:
       register: FCG0
@@ -174,7 +174,7 @@
   registers:
     kind: dac
     block: DAC
-    version: v2
+    version: ll_v1
   rcc:
     enable:
       register: FCG3
@@ -184,7 +184,7 @@
   registers:
     kind: dac
     block: DAC
-    version: v2
+    version: ll_v1
   rcc:
     enable:
       register: FCG3
@@ -194,7 +194,7 @@
   registers:
     kind: dac
     block: DAC
-    version: v2
+    version: ll_v1
   rcc:
     enable:
       register: FCG3
@@ -204,7 +204,7 @@
   registers:
     kind: dac
     block: DAC
-    version: v2
+    version: ll_v1
   rcc:
     enable:
       register: FCG3
@@ -214,7 +214,7 @@
   registers:
     kind: dbgc
     block: DBGC
-    version: v3
+    version: ll_v3_4
 - name: DCU1
   address: 0x40056000
   registers:
@@ -259,7 +259,7 @@
   registers:
     kind: dma
     block: DMA
-    version: v3
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG0
@@ -288,7 +288,7 @@
   registers:
     kind: dma
     block: DMA
-    version: v3
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG0
@@ -317,7 +317,7 @@
   registers:
     kind: efm
     block: EFM
-    version: v3
+    version: ll_v2_4
   interrupts:
   - signal: EFM_PEERR_RDCOL
     interrupt: EFM_PEERR_RDCOL
@@ -328,7 +328,7 @@
   registers:
     kind: emb
     block: EMB
-    version: v4
+    version: ll_v2_9
   interrupts:
   - signal: EMB_GR0
     interrupt: EMB_GR0
@@ -337,7 +337,7 @@
   registers:
     kind: emb
     block: EMB
-    version: v4
+    version: ll_v2_9
   interrupts:
   - signal: EMB_GR1
     interrupt: EMB_GR1
@@ -346,7 +346,7 @@
   registers:
     kind: emb
     block: EMB
-    version: v4
+    version: ll_v2_9
   interrupts:
   - signal: EMB_GR2
     interrupt: EMB_GR2
@@ -355,7 +355,7 @@
   registers:
     kind: emb
     block: EMB
-    version: v4
+    version: ll_v2_9
   interrupts:
   - signal: EMB_GR3
     interrupt: EMB_GR3
@@ -364,7 +364,7 @@
   registers:
     kind: emb
     block: EMB
-    version: v4
+    version: ll_v2_9
   interrupts:
   - signal: EMB_GR4
     interrupt: EMB_GR4
@@ -373,7 +373,7 @@
   registers:
     kind: emb
     block: EMB
-    version: v4
+    version: ll_v2_9
   interrupts:
   - signal: EMB_GR5
     interrupt: EMB_GR5
@@ -382,22 +382,22 @@
   registers:
     kind: emb
     block: EMB
-    version: v4
+    version: ll_v2_9
   interrupts:
   - signal: EMB_GR6
     interrupt: EMB_GR6
 - name: EMB_CTL1
   address: 0x0
   registers:
-    kind: emb
-    block: EMB
-    version: v5
+    kind: emb_ctl1
+    block: EMB_CTL1
+    version: ll_v1
 - name: FCM
   address: 0x40048400
   registers:
     kind: fcm
     block: FCM
-    version: v1
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG0
@@ -459,7 +459,7 @@
   registers:
     kind: gpio
     block: GPIO
-    version: v3
+    version: ll_v2_10
   interrupts:
   - signal: EVENT_PORT1
     interrupt: EVENT_PORT1
@@ -485,9 +485,9 @@
 - name: I2C1
   address: 0x4003B400
   registers:
-    kind: i
-    block: I
-    version: v4
+    kind: i2c
+    block: I2C
+    version: ll_v4_5
   rcc:
     enable:
       register: FCG1
@@ -498,9 +498,9 @@
 - name: I2C2
   address: 0x4003B400
   registers:
-    kind: i
-    block: I
-    version: v4
+    kind: i2c
+    block: I2C
+    version: ll_v4_5
   rcc:
     enable:
       register: FCG1
@@ -511,9 +511,9 @@
 - name: I2C3
   address: 0x4003B400
   registers:
-    kind: i
-    block: I
-    version: v4
+    kind: i2c
+    block: I2C
+    version: ll_v4_5
   rcc:
     enable:
       register: FCG1
@@ -526,13 +526,13 @@
   registers:
     kind: icg
     block: ICG
-    version: v3
+    version: ll_v1_3
 - name: INTC
   address: 0x40051000
   registers:
     kind: intc
     block: INTC
-    version: v3
+    version: ll_v2_6
   interrupts:
   - signal: GLOBAL0_SWINT0
     interrupt: GLOBAL0_SWINT0
@@ -654,7 +654,7 @@
   registers:
     kind: peric
     block: PERIC
-    version: v3
+    version: ll_v2_1
 - name: PLA
   address: 0x4004FC00
   registers:
@@ -673,7 +673,7 @@
   registers:
     kind: pwc
     block: PWC
-    version: v3
+    version: ll_v3
   interrupts:
   - signal: PWC_WKTM
     interrupt: PWC_WKTM
@@ -699,13 +699,13 @@
   registers:
     kind: rmu
     block: RMU
-    version: v3
+    version: ll_v3_4
 - name: RTC
   address: 0x4004C000
   registers:
     kind: rtc
     block: RTC
-    version: v1
+    version: ll_v1
   interrupts:
   - signal: RTC
     interrupt: RTC
@@ -724,7 +724,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v1
+    version: ll_v2_3
   rcc:
     enable:
       register: FCG1
@@ -737,7 +737,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v1
+    version: ll_v2_3
   rcc:
     enable:
       register: FCG1
@@ -750,7 +750,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v1
+    version: ll_v2_3
   rcc:
     enable:
       register: FCG1
@@ -763,7 +763,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v1
+    version: ll_v2_3
   rcc:
     enable:
       register: FCG1
@@ -776,22 +776,22 @@
   registers:
     kind: sramc
     block: SRAMC
-    version: v3
+    version: ll_v3_1
 - name: SWDT
   address: 0x40049400
   registers:
     kind: swdt
     block: SWDT
-    version: v1
+    version: ll_v1_1
   interrupts:
   - signal: SWDT
     interrupt: SWDT
 - name: TMR01
   address: 0x40024000
   registers:
-    kind: tmr
-    block: TMR
-    version: v12
+    kind: tmr0
+    block: TMR0
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG2
@@ -802,9 +802,9 @@
 - name: TMR02
   address: 0x40024000
   registers:
-    kind: tmr
-    block: TMR
-    version: v12
+    kind: tmr0
+    block: TMR0
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG2
@@ -815,9 +815,9 @@
 - name: TMR21
   address: 0x40024800
   registers:
-    kind: tmr
-    block: TMR
-    version: v13
+    kind: tmr2
+    block: TMR2
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG2
@@ -830,9 +830,9 @@
 - name: TMR22
   address: 0x40024800
   registers:
-    kind: tmr
-    block: TMR
-    version: v13
+    kind: tmr2
+    block: TMR2
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG2
@@ -845,9 +845,9 @@
 - name: TMR23
   address: 0x40024800
   registers:
-    kind: tmr
-    block: TMR
-    version: v13
+    kind: tmr2
+    block: TMR2
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG2
@@ -860,9 +860,9 @@
 - name: TMR24
   address: 0x40024800
   registers:
-    kind: tmr
-    block: TMR
-    version: v13
+    kind: tmr2
+    block: TMR2
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG2
@@ -875,9 +875,9 @@
 - name: TMR4
   address: 0x40038000
   registers:
-    kind: tmr
-    block: TMR
-    version: v14
+    kind: tmr4
+    block: TMR4
+    version: ll_v1_4
   rcc:
     enable:
       register: FCG2
@@ -1092,7 +1092,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v3
+    version: ll_v2
   rcc:
     enable:
       register: FCG2
@@ -1107,7 +1107,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v4
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG2
@@ -1122,7 +1122,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v5
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG2
@@ -1137,7 +1137,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v6
+    version: ll_v2_3
   rcc:
     enable:
       register: FCG2
@@ -1152,7 +1152,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v7
+    version: ll_v2_4
   rcc:
     enable:
       register: FCG2
@@ -1167,7 +1167,7 @@
   registers:
     kind: tmra
     block: TMRA
-    version: v8
+    version: ll_v2_5
   rcc:
     enable:
       register: FCG2
@@ -1182,7 +1182,7 @@
   registers:
     kind: trng
     block: TRNG
-    version: v1
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -1195,7 +1195,7 @@
   registers:
     kind: usart
     block: USART
-    version: v4
+    version: ll_v2_5
   rcc:
     enable:
       register: FCG3
@@ -1212,7 +1212,7 @@
   registers:
     kind: usart
     block: USART
-    version: v5
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG3
@@ -1227,7 +1227,7 @@
   registers:
     kind: usart
     block: USART
-    version: v6
+    version: ll_v2_12
   rcc:
     enable:
       register: FCG3
@@ -1242,7 +1242,7 @@
   registers:
     kind: usart
     block: USART
-    version: v7
+    version: ll_v2_7
   rcc:
     enable:
       register: FCG3
@@ -1257,7 +1257,7 @@
   registers:
     kind: usart
     block: USART
-    version: v8
+    version: ll_v2_8
   rcc:
     enable:
       register: FCG3
@@ -1272,7 +1272,7 @@
   registers:
     kind: usart
     block: USART
-    version: v9
+    version: ll_v2_13
   rcc:
     enable:
       register: FCG3
@@ -1310,7 +1310,7 @@
   registers:
     kind: wdt
     block: WDT
-    version: common
+    version: ll_v1
   interrupts:
   - signal: WDT
     interrupt: WDT

@@ -19,7 +19,7 @@ M4 向量采用[设备头向量分组](gpio-int.md)，不从布局版本推断 I
 <!-- peripheral-versions:begin -->
 ## 版本与系列对照
 
-以下为待确认命名，当前来源仍使用旧文件名。系列名前缀 `HC32` 省略。
+以下名称与生成输入保持一致。系列名前缀 `HC32` 省略。
 
 ### dma：v1
 
@@ -27,9 +27,9 @@ M4 向量采用[设备头向量分组](gpio-int.md)，不从布局版本推断 I
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `dma_ll_v1.rs` | [dma_v10](../../data/registers/dma_v10.yaml) | M120: DMA | 18 / 41 | 本档位对照基准；完整定义见来源 YAML |
-| `dma_ll_v1_1.rs` | [dma_v6](../../data/registers/dma_v6.yaml) | F155: DMA | 20 / 45 | 相对 dma_ll_v1：增加 BASE1_LLP/BASE2_LLP；定义差异 CH0CTL1/CH1CTL1/CHENCLR |
-| `dma_ll_v1_2.rs` | [dma_v9](../../data/registers/dma_v9.yaml) | K116/K118: DMA | 28 / 71 | 相对 dma_ll_v1：增加 BASE1_LLP/BASE2_LLP/CH2CTL0/CH2CTL1/CH3CTL0 等 10 项；定义差异 CH0CTL1/CH1CTL1/CHEN/CHENCLR/CHSTAT 等 11 项 |
+| `dma_ll_v1.rs` | [dma_ll_v1](../../data/registers/dma_ll_v1.yaml) | M120: DMA | 18 / 41 | 本档位对照基准；完整定义见来源 YAML |
+| `dma_ll_v1_1.rs` | [dma_ll_v1_1](../../data/registers/dma_ll_v1_1.yaml) | F155: DMA | 20 / 45 | 相对 dma_ll_v1：增加 BASE1_LLP/BASE2_LLP；定义差异 CH0CTL1/CH1CTL1/CHENCLR |
+| `dma_ll_v1_2.rs` | [dma_ll_v1_2](../../data/registers/dma_ll_v1_2.yaml) | K116/K118: DMA | 28 / 71 | 相对 dma_ll_v1：增加 BASE1_LLP/BASE2_LLP/CH2CTL0/CH2CTL1/CH3CTL0 等 10 项；定义差异 CH0CTL1/CH1CTL1/CHEN/CHENCLR/CHSTAT 等 11 项 |
 
 ### dma：v2
 
@@ -37,15 +37,15 @@ M4 向量采用[设备头向量分组](gpio-int.md)，不从布局版本推断 I
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `dma_ll_v2.rs` | [dma_v2](../../data/registers/dma_v2.yaml) | A460/F451/F452/F460: DMA1, DMA2 | 80 / 161 | 本档位对照基准；完整定义见来源 YAML |
-| `dma_ll_v2_1.rs` | [dma_v12](../../data/registers/dma_v12.yaml) | M458: DMA | 47 / 96 | 相对 dma_ll_v2：增加 CHENCLR；缺少 CHCTL2/CHCTL3/DAR2/DAR3/DNSEQCTL2 等 34 项；定义差异 CHEN/CHSTAT/INTCLR0/INTCLR1/INTMASK0 等 10 项 |
-| `dma_ll_v2_2.rs` | [dma_v8](../../data/registers/dma_v8.yaml) | F431/M413: DMA | 81 / 162 | 相对 dma_ll_v2：增加 CHENCLR；定义差异 INTCLR0/INTCLR1/SWREQ |
-| `dma_ll_v2_3.rs` | [dma_v11](../../data/registers/dma_v11.yaml) | M441: DMA1, DMA2 | 115 / 228 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHENCLR/DAR4/DAR5 等 35 项；定义差异 CHEN/CHSTAT/INTCLR0/INTCLR1/INTMASK0 等 9 项 |
-| `dma_ll_v2_4.rs` | [dma_v7](../../data/registers/dma_v7.yaml) | F334/F336: DMA | 149 / 294 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHEN/CHSTAT/INTCLR0/INTCLR1/INTMASK0 等 9 项 |
-| `dma_ll_v2_5.rs` | [dma_v1](../../data/registers/dma_v1.yaml) | A448/F448: DMA1, DMA2 | 115 / 234 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHENCLR/DAR4/DAR5 等 35 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 13 项 |
-| `dma_ll_v2_6.rs` | [dma_v3](../../data/registers/dma_v3.yaml) | A472/F472: DMA1, DMA2 | 149 / 302 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 14 项 |
-| `dma_ll_v2_7.rs` | [dma_v4](../../data/registers/dma_v4.yaml) | A4A0/F467/F4A0/F4A2: DMA1, DMA2 | 149 / 302 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 13 项 |
-| `dma_ll_v2_8.rs` | [dma_v5](../../data/registers/dma_v5.yaml) | A4A8/F4A8: DMA1, DMA2 | 149 / 302 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 13 项 |
+| `dma_ll_v2.rs` | [dma_ll_v2](../../data/registers/dma_ll_v2.yaml) | A460/F451/F452/F460: DMA1, DMA2 | 80 / 161 | 本档位对照基准；完整定义见来源 YAML |
+| `dma_ll_v2_1.rs` | [dma_ll_v2_1](../../data/registers/dma_ll_v2_1.yaml) | M458: DMA | 47 / 96 | 相对 dma_ll_v2：增加 CHENCLR；缺少 CHCTL2/CHCTL3/DAR2/DAR3/DNSEQCTL2 等 34 项；定义差异 CHEN/CHSTAT/INTCLR0/INTCLR1/INTMASK0 等 10 项 |
+| `dma_ll_v2_2.rs` | [dma_ll_v2_2](../../data/registers/dma_ll_v2_2.yaml) | F431/M413: DMA | 81 / 162 | 相对 dma_ll_v2：增加 CHENCLR；定义差异 INTCLR0/INTCLR1/SWREQ |
+| `dma_ll_v2_3.rs` | [dma_ll_v2_3](../../data/registers/dma_ll_v2_3.yaml) | M441: DMA1, DMA2 | 115 / 228 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHENCLR/DAR4/DAR5 等 35 项；定义差异 CHEN/CHSTAT/INTCLR0/INTCLR1/INTMASK0 等 9 项 |
+| `dma_ll_v2_4.rs` | [dma_ll_v2_4](../../data/registers/dma_ll_v2_4.yaml) | F334/F336: DMA | 149 / 294 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHEN/CHSTAT/INTCLR0/INTCLR1/INTMASK0 等 9 项 |
+| `dma_ll_v2_5.rs` | [dma_ll_v2_5](../../data/registers/dma_ll_v2_5.yaml) | A448/F448: DMA1, DMA2 | 115 / 234 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHENCLR/DAR4/DAR5 等 35 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 13 项 |
+| `dma_ll_v2_6.rs` | [dma_ll_v2_6](../../data/registers/dma_ll_v2_6.yaml) | A472/F472: DMA1, DMA2 | 149 / 302 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 14 项 |
+| `dma_ll_v2_7.rs` | [dma_ll_v2_7](../../data/registers/dma_ll_v2_7.yaml) | A4A0/F467/F4A0/F4A2: DMA1, DMA2 | 149 / 302 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 13 项 |
+| `dma_ll_v2_8.rs` | [dma_ll_v2_8](../../data/registers/dma_ll_v2_8.yaml) | A4A8/F4A8: DMA1, DMA2 | 149 / 302 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 13 项 |
 
 ### dmac：v1
 
@@ -53,5 +53,5 @@ M4 向量采用[设备头向量分组](gpio-int.md)，不从布局版本推断 I
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `dmac_ll_v1.rs` | [dmac_common](../../data/registers/dmac_common.yaml) | F175: DMAC | 17 / 79 | 本档位对照基准；完整定义见来源 YAML |
+| `dmac_ll_v1.rs` | [dmac_ll_v1](../../data/registers/dmac_ll_v1.yaml) | F175: DMAC | 17 / 79 | 本档位对照基准；完整定义见来源 YAML |
 <!-- peripheral-versions:end -->

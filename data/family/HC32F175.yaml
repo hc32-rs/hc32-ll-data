@@ -6,7 +6,7 @@
   registers:
     kind: adc
     block: ADC
-    version: v17
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -16,7 +16,7 @@
   registers:
     kind: atim
     block: ATIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG1
@@ -26,31 +26,31 @@
   registers:
     kind: crc
     block: CRC
-    version: v5
+    version: ll_v1
 - name: CSU0
   address: 0x40025100
   registers:
     kind: csu
     block: CSU
-    version: common
+    version: ll_v1
 - name: CSU1
   address: 0x40025100
   registers:
     kind: csu
     block: CSU
-    version: common
+    version: ll_v1
 - name: CSU2
   address: 0x40025100
   registers:
     kind: csu
     block: CSU
-    version: common
+    version: ll_v1
 - name: CTRIM
   address: 0x40000000
   registers:
     kind: ctrim
     block: CTRIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -60,7 +60,7 @@
   registers:
     kind: dbgc
     block: DBGC
-    version: v9
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -70,37 +70,37 @@
   registers:
     kind: dfm
     block: DFM
-    version: v1
+    version: ll_v1
 - name: DMAC
   address: 0x40024800
   registers:
     kind: dmac
     block: DMAC
-    version: common
+    version: ll_v1
 - name: EFM
   address: 0x40026400
   registers:
     kind: efm
     block: EFM
-    version: v8
+    version: ll_v3
 - name: EXTI
   address: 0x40024000
   registers:
     kind: exti
     block: EXTI
-    version: common
+    version: ll_v1
 - name: GPIO
   address: 0x40020000
   registers:
     kind: gpio
     block: GPIO
-    version: v9
+    version: ll_v1
 - name: GTIM0
   address: 0x40005800
   registers:
     kind: gtim
     block: GTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -110,7 +110,7 @@
   registers:
     kind: gtim
     block: GTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -120,7 +120,7 @@
   registers:
     kind: gtim
     block: GTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -130,7 +130,7 @@
   registers:
     kind: gtim
     block: GTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -140,7 +140,7 @@
   registers:
     kind: gtim
     block: GTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -150,7 +150,7 @@
   registers:
     kind: gtim
     block: GTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -160,7 +160,7 @@
   registers:
     kind: gtim
     block: GTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG1
@@ -170,7 +170,7 @@
   registers:
     kind: gtim
     block: GTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG1
@@ -180,7 +180,7 @@
   registers:
     kind: gtim
     block: GTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG1
@@ -188,9 +188,9 @@
 - name: I2C0
   address: 0x40004800
   registers:
-    kind: i
-    block: I
-    version: v12
+    kind: i2c
+    block: I2C
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -198,9 +198,9 @@
 - name: I2C1
   address: 0x40004800
   registers:
-    kind: i
-    block: I
-    version: v12
+    kind: i2c
+    block: I2C
+    version: ll_v1
   rcc:
     enable:
       register: FCG1
@@ -210,7 +210,7 @@
   registers:
     kind: iwdt
     block: IWDT
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -220,7 +220,7 @@
   registers:
     kind: lptim
     block: LPTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -230,7 +230,7 @@
   registers:
     kind: lptim
     block: LPTIM
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG1
@@ -240,7 +240,7 @@
   registers:
     kind: lpuart
     block: LPUART
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -250,7 +250,7 @@
   registers:
     kind: lpuart
     block: LPUART
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG1
@@ -260,7 +260,7 @@
   registers:
     kind: lvd
     block: LVD
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -270,7 +270,7 @@
   registers:
     kind: rtc
     block: RTC
-    version: v6
+    version: ll_v2
   rcc:
     enable:
       register: FCG0
@@ -280,7 +280,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v5
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -290,7 +290,7 @@
   registers:
     kind: spi
     block: SPI
-    version: v5
+    version: ll_v1
   rcc:
     enable:
       register: FCG1
@@ -300,19 +300,19 @@
   registers:
     kind: sram
     block: SRAM
-    version: common
+    version: ll_v1
 - name: SYSCTRL
   address: 0x40025000
   registers:
     kind: sysctrl
     block: SYSCTRL
-    version: common
+    version: ll_v1
 - name: USART0
   address: 0x40002400
   registers:
     kind: usart
     block: USART
-    version: v26
+    version: ll_v2_15
   rcc:
     enable:
       register: FCG0
@@ -322,7 +322,7 @@
   registers:
     kind: usart
     block: USART
-    version: v26
+    version: ll_v2_15
   rcc:
     enable:
       register: FCG0
@@ -332,7 +332,7 @@
   registers:
     kind: usart
     block: USART
-    version: v26
+    version: ll_v2_15
   rcc:
     enable:
       register: FCG0
@@ -342,7 +342,7 @@
   registers:
     kind: usart
     block: USART
-    version: v26
+    version: ll_v2_15
   rcc:
     enable:
       register: FCG1
@@ -352,7 +352,7 @@
   registers:
     kind: usart
     block: USART
-    version: v26
+    version: ll_v2_15
   rcc:
     enable:
       register: FCG1
@@ -362,7 +362,7 @@
   registers:
     kind: usart
     block: USART
-    version: v26
+    version: ll_v2_15
   rcc:
     enable:
       register: FCG1
@@ -372,7 +372,7 @@
   registers:
     kind: wwdt
     block: WWDT
-    version: common
+    version: ll_v1
   rcc:
     enable:
       register: FCG0

@@ -1,0 +1,39 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32F431/CMP_COMMON；覆盖系列：HC32F431, HC32M413。
+block/CMP_COMMON:
+  description: desc CMP_COMMON.
+  items:
+  - name: DADR
+    description: desc DADR.
+    byte_offset: 12
+    bit_size: 16
+    fieldset: DADR
+  - name: DACR
+    description: desc DACR.
+    byte_offset: 14
+    bit_size: 16
+    fieldset: DACR
+fieldset/DACR:
+  description: desc DACR.
+  bit_size: 16
+  fields:
+  - name: DAEN
+    description: desc DAEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: DA2POE
+    description: desc DA2POE.
+    bit_offset: 3
+    bit_size: 1
+  - name: REFSEL
+    description: desc REFSEL.
+    bit_offset: 6
+    bit_size: 2
+fieldset/DADR:
+  description: desc DADR.
+  bit_size: 16
+  fields:
+  - name: DADR
+    description: desc DADR.
+    bit_offset: 0
+    bit_size: 12
