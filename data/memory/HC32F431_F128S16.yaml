@@ -1,5 +1,7 @@
 # HC32F431 Flash 128K / SRAM 16K 的内存布局（型号：HC32F431FATB, HC32F431JATB, HC32F431KATB…）。
-# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+# 主 SRAM 16K + 独立保留区来自 SDK 链接脚本/RM 内存映射表
+#（见 data/csv/memory.csv sram_kb/extra_regions/notes）；DS 标称
+# SRAM 16K 可能并入保留区（如 68K=主区 64K+RAMB 4K）。
 memory:
 - name: FLASH
   kind: flash

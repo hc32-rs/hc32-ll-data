@@ -1,5 +1,7 @@
 # HC32M413 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
 # 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# MODE 拆分定时器（TIMx/ATIMx）用 views 挂 SVD 视图（同基址寄存器布局
+# 叠影，工作模式由控制寄存器 MD 位运行时选择），地址/门控/中断在物理实例；
 # 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
 - name: ADC
   address: 0x40030000
@@ -34,7 +36,7 @@
   - signal: CMP1
     interrupt: CMP1
 - name: CMP2
-  address: 0x4004A000
+  address: 0x4004A100
   registers:
     kind: cmp
     block: CMP
@@ -43,7 +45,7 @@
   - signal: CMP2
     interrupt: CMP2
 - name: CMP3
-  address: 0x4004A000
+  address: 0x4004A400
   registers:
     kind: cmp
     block: CMP
@@ -65,7 +67,7 @@
     version: ll_v2
   interrupts:
   - signal: XTAL_STOP
-    interrupt: XTAL_STOP
+    interrupt: XTAL
 - name: CRC
   address: 0x40050400
   registers:
@@ -122,9 +124,9 @@
     version: ll_v2_1
   interrupts:
   - signal: PEERR_RDCOL
-    interrupt: PEERR_RDCOL
+    interrupt: EFM_PEERR_RDCOL
   - signal: OPTEND
-    interrupt: OPTEND
+    interrupt: EFM_OPTEND
 - name: EMB0
   address: 0x40017C00
   registers:
@@ -135,7 +137,7 @@
   - signal: EMB_GR0
     interrupt: EMB_GR0
 - name: EMB1
-  address: 0x40017C00
+  address: 0x40017C20
   registers:
     kind: emb
     block: EMB
@@ -202,55 +204,55 @@
     version: ll_v2_4
   interrupts:
   - signal: GLOBAL0_SWINT0
-    interrupt: GLOBAL0_SWINT0
+    interrupt: INT000
   - signal: GLOBAL1_SWINT1
-    interrupt: GLOBAL1_SWINT1
+    interrupt: INT001
   - signal: GLOBAL2_SWINT2
-    interrupt: GLOBAL2_SWINT2
+    interrupt: INT002
   - signal: GLOBAL3_SWINT3
-    interrupt: GLOBAL3_SWINT3
+    interrupt: INT003
   - signal: GLOBAL4_SWINT4
-    interrupt: GLOBAL4_SWINT4
+    interrupt: INT004
   - signal: GLOBAL5_SWINT5
-    interrupt: GLOBAL5_SWINT5
+    interrupt: INT005
   - signal: GLOBAL6_SWINT6
-    interrupt: GLOBAL6_SWINT6
+    interrupt: INT006
   - signal: GLOBAL7_SWINT7
-    interrupt: GLOBAL7_SWINT7
+    interrupt: INT007
   - signal: GLOBAL8_SWINT8
-    interrupt: GLOBAL8_SWINT8
+    interrupt: INT008
   - signal: GLOBAL9_SWINT9
-    interrupt: GLOBAL9_SWINT9
+    interrupt: INT009
   - signal: GLOBAL10_SWINT10
-    interrupt: GLOBAL10_SWINT10
+    interrupt: INT010
   - signal: GLOBAL11_SWINT11
-    interrupt: GLOBAL11_SWINT11
+    interrupt: INT011
   - signal: GLOBAL12_SWINT12
-    interrupt: GLOBAL12_SWINT12
+    interrupt: INT012
   - signal: GLOBAL13_SWINT13
-    interrupt: GLOBAL13_SWINT13
+    interrupt: INT013
   - signal: GLOBAL14_SWINT14
-    interrupt: GLOBAL14_SWINT14
+    interrupt: INT014
   - signal: GLOBAL15_SWINT15
-    interrupt: GLOBAL15_SWINT15
+    interrupt: INT015
   - signal: EXTINT0_SWINT16
-    interrupt: EXTINT0_SWINT16
+    interrupt: EXTINT_PORT_EIRQ0
   - signal: EXTINT1_SWINT17
-    interrupt: EXTINT1_SWINT17
+    interrupt: EXTINT_PORT_EIRQ1
   - signal: EXTINT2_SWINT18
-    interrupt: EXTINT2_SWINT18
+    interrupt: EXTINT_PORT_EIRQ2
   - signal: EXTINT3_SWINT19
-    interrupt: EXTINT3_SWINT19
+    interrupt: EXTINT_PORT_EIRQ3
   - signal: EXTINT4_SWINT20
-    interrupt: EXTINT4_SWINT20
+    interrupt: EXTINT_PORT_EIRQ4
   - signal: EXTINT5_SWINT21
-    interrupt: EXTINT5_SWINT21
+    interrupt: EXTINT_PORT_EIRQ5
   - signal: EXTINT6_SWINT22
-    interrupt: EXTINT6_SWINT22
+    interrupt: EXTINT_PORT_EIRQ6
   - signal: EXTINT7_SWINT23
-    interrupt: EXTINT7_SWINT23
+    interrupt: EXTINT_PORT_EIRQ7
   - signal: FPU_ERR
-    interrupt: FPU_ERR
+    interrupt: FPU
 - name: MAU
   address: 0x40054800
   registers:
@@ -323,7 +325,7 @@
   - signal: TMR0_1
     interrupt: TMR0_1
 - name: TMR02
-  address: 0x40024000
+  address: 0x40024400
   registers:
     kind: tmr0
     block: TMR0
@@ -368,7 +370,7 @@
   - signal: TMRA_1_CMP
     interrupt: TMRA_1_CMP
 - name: TMRA2
-  address: 0x40015000
+  address: 0x40015400
   registers:
     kind: tmra
     block: TMRA
@@ -383,7 +385,7 @@
   - signal: TMRA_2_CMP
     interrupt: TMRA_2_CMP
 - name: TMRA3
-  address: 0x40015000
+  address: 0x40015800
   registers:
     kind: tmra
     block: TMRA
@@ -398,7 +400,7 @@
   - signal: TMRA_3_CMP
     interrupt: TMRA_3_CMP
 - name: TMRA4
-  address: 0x40015000
+  address: 0x40015C00
   registers:
     kind: tmra
     block: TMRA
@@ -454,7 +456,7 @@
   - signal: USART2
     interrupt: USART2
 - name: USART3
-  address: 0x4001D400
+  address: 0x40021000
   registers:
     kind: usart
     block: USART
@@ -467,7 +469,7 @@
   - signal: USART3
     interrupt: USART3
 - name: USART4
-  address: 0x4001D400
+  address: 0x40021400
   registers:
     kind: usart
     block: USART

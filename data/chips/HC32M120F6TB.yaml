@@ -18,6 +18,13 @@ cores:
   include_interrupts: ../interrupts/HC32M120.yaml
   include_dma_channels:
     DMA: ../dma/HC32M120_DMA.yaml
+  dma_channels:
+  - name: DMA_CH0
+    dma: DMA
+    channel: 0
+  - name: DMA_CH1
+    dma: DMA
+    channel: 1
 _raw:
   series: HC32M120
   freq_mhz: '48'

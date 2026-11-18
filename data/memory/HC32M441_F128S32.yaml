@@ -1,5 +1,7 @@
 # HC32M441 Flash 128K / SRAM 32K 的内存布局（型号：HC32M441JATI, HC32M441KATI…）。
-# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+# 主 SRAM 32K + 独立保留区来自 SDK 链接脚本/RM 内存映射表
+#（见 data/csv/memory.csv sram_kb/extra_regions/notes）；DS 标称
+# SRAM 32K 可能并入保留区（如 68K=主区 64K+RAMB 4K）。
 memory:
 - name: FLASH
   kind: flash
@@ -11,7 +13,7 @@ memory:
     execute: true
 - name: SRAM
   kind: ram
-  address: 0x1FFF8000
+  address: 0x1FFFC000
   size: 32K
   access:
     read: true

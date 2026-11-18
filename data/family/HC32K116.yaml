@@ -1,5 +1,7 @@
 # HC32K116 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
 # 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# MODE 拆分定时器（TIMx/ATIMx）用 views 挂 SVD 视图（同基址寄存器布局
+# 叠影，工作模式由控制寄存器 MD 位运行时选择），地址/门控/中断在物理实例；
 # 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
 - name: ADC
   address: 0x4000B800
@@ -45,7 +47,7 @@
     version: ll_v1_4
   interrupts:
   - signal: FCM_CMU
-    interrupt: FCM_CMU
+    interrupt: FCM_XTAL
 - name: CRC
   address: 0x40015400
   registers:
@@ -131,13 +133,13 @@
     version: ll_v1_6
   interrupts:
   - signal: EXTINT0_1
-    interrupt: EXTINT0_1
+    interrupt: EXTINT00_EXTINT01
   - signal: EXTINT2_3
-    interrupt: EXTINT2_3
+    interrupt: EXTINT02_EXTINT03
   - signal: EXTINT4_5
-    interrupt: EXTINT4_5
+    interrupt: EXTINT04_EXTINT05
   - signal: EXTINT6_7
-    interrupt: EXTINT6_7
+    interrupt: EXTINT06_EXTINT07
 - name: I2C
   address: 0x40004800
   registers:
@@ -150,9 +152,9 @@
       field: CMU_FCG_I2C
   interrupts:
   - signal: I2C_RXFULL_TXEMPTY
-    interrupt: I2C_RXFULL_TXEMPTY
+    interrupt: I2C_RXI_TXI
   - signal: I2C_IDLE_ERROR
-    interrupt: I2C_IDLE_ERROR
+    interrupt: I2C_TEI_EEI
 - name: ICGA
   address: 0x1000A00
   registers:
@@ -202,9 +204,6 @@
     kind: pwc
     block: PWC
     version: ll_v2
-  interrupts:
-  - signal: LVD
-    interrupt: LVD
 - name: RMU
   address: 0x40014100
   registers:
@@ -233,11 +232,11 @@
       field: CMU_FCG_SPI1
   interrupts:
   - signal: SPI1_RXFULL_TXEMPTY
-    interrupt: SPI1_RXFULL_TXEMPTY
+    interrupt: SPI1_SPRI_SPTI_SPTEND
   - signal: SPI1_IDLE_ERROR
-    interrupt: SPI1_IDLE_ERROR
+    interrupt: SPI1_SPII_SPEI
 - name: SPI2
-  address: 0x40003800
+  address: 0x40003C00
   registers:
     kind: spi
     block: SPI
@@ -248,9 +247,9 @@
       field: CMU_FCG_SPI2
   interrupts:
   - signal: SPI2_RXFULL_TXEMPTY
-    interrupt: SPI2_RXFULL_TXEMPTY
+    interrupt: SPI2_SPRI_SPTI_SPTEND
   - signal: SPI2_IDLE_ERROR
-    interrupt: SPI2_IDLE_ERROR
+    interrupt: SPI2_SPII_SPEI
 - name: SRAMC
   address: 0x40010C00
   registers:
@@ -290,7 +289,7 @@
   - signal: TMR2
     interrupt: TMR2
 - name: TMR22
-  address: 0x40005C00
+  address: 0x40006000
   registers:
     kind: tmr2
     block: TMR2
@@ -339,11 +338,11 @@
       field: CMU_FCG_USART1
   interrupts:
   - signal: USART1_WKUP_RXFULL_TXEMPT
-    interrupt: USART1_WKUP_RXFULL_TXEMPT
+    interrupt: USART1_WKUP_RI_TI
   - signal: USART1_ERR_TXEND_TXCMPL_RTO
-    interrupt: USART1_ERR_TXEND_TXCMPL_RTO
+    interrupt: USART1_EI_TEDNI_TCI_RTO
 - name: USART2
-  address: 0x40001800
+  address: 0x40001C00
   registers:
     kind: usart
     block: USART
@@ -354,9 +353,9 @@
       field: CMU_FCG_USART2
   interrupts:
   - signal: USART2_WKUP_RXFULL_TXEMPT
-    interrupt: USART2_WKUP_RXFULL_TXEMPT
+    interrupt: USART2_RI_TI
   - signal: USART2_ERR_TXEND_TXCMPL_RTO
-    interrupt: USART2_ERR_TXEND_TXCMPL_RTO
+    interrupt: USART2_EI_TEDNI_TCI_RTO
 - name: USART3
   address: 0x40002000
   registers:
@@ -369,11 +368,11 @@
       field: CMU_FCG_USART3
   interrupts:
   - signal: USART3_WKUP_RXFULL_TXEMPT
-    interrupt: USART3_WKUP_RXFULL_TXEMPT
+    interrupt: USART3_RI_TI
   - signal: USART3_ERR_TXEND_TXCMPL_RTO
-    interrupt: USART3_ERR_TXEND_TXCMPL_RTO
+    interrupt: USART3_EI_TEDNI_TCI_RTO_BRKWKP
 - name: USART4
-  address: 0x40002000
+  address: 0x40002400
   registers:
     kind: usart
     block: USART
@@ -384,6 +383,6 @@
       field: CMU_FCG_USART4
   interrupts:
   - signal: USART4_WKUP_RXFULL_TXEMPT
-    interrupt: USART4_WKUP_RXFULL_TXEMPT
+    interrupt: USART4_RI_TI
   - signal: USART4_ERR_TXEND_TXCMPL_RTO
-    interrupt: USART4_ERR_TXEND_TXCMPL_RTO
+    interrupt: USART4_EI_TEDNI_TCI_RTO_BRKWKP

@@ -1,5 +1,7 @@
 # HC32M120 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
 # 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# MODE 拆分定时器（TIMx/ATIMx）用 views 挂 SVD 视图（同基址寄存器布局
+# 叠影，工作模式由控制寄存器 MD 位运行时选择），地址/门控/中断在物理实例；
 # 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
 - name: ADC
   address: 0x4000B800
@@ -204,7 +206,7 @@
       register: FCG0
       field: CMU_FCG_TMRB1
 - name: TMRB2
-  address: 0x40007800
+  address: 0x40007C00
   registers:
     kind: tmrb
     block: TMRB
@@ -214,7 +216,7 @@
       register: FCG0
       field: CMU_FCG_TMRB2
 - name: TMRB3
-  address: 0x40007800
+  address: 0x40008000
   registers:
     kind: tmrb
     block: TMRB
@@ -224,7 +226,7 @@
       register: FCG0
       field: CMU_FCG_TMRB3
 - name: TMRB4
-  address: 0x40007800
+  address: 0x40008400
   registers:
     kind: tmrb
     block: TMRB
@@ -244,7 +246,7 @@
       register: FCG0
       field: CMU_FCG_UART1
 - name: USART2
-  address: 0x40001800
+  address: 0x40001C00
   registers:
     kind: usart
     block: USART
@@ -254,7 +256,7 @@
       register: FCG0
       field: CMU_FCG_UART2
 - name: USART3
-  address: 0x40001800
+  address: 0x40002000
   registers:
     kind: usart
     block: USART

@@ -50043,9 +50043,9 @@
                 <value>121</value>
             </interrupt>
             <interrupt>
-                <name>TMR6_1_SCMP</name>
-                <description>TMR6_1_SCMP interrupt</description>
-                <value>78</value>
+                <name>TMR6_10_SCMP</name>
+                <description>TMR6_10_SCMP interrupt</description>
+                <value>123</value>
             </interrupt>
         </peripheral>
         <peripheral derivedFrom="TMR61">

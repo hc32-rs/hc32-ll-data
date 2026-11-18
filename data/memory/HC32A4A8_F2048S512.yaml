@@ -1,5 +1,7 @@
 # HC32A4A8 Flash 2048K / SRAM 512K 的内存布局（型号：HC32A4A8PITI, HC32A4A8PITJ, HC32A4A8RITI, HC32A4A8RITJ…）。
-# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+# 主 SRAM 512K + 独立保留区来自 SDK 链接脚本/RM 内存映射表
+#（见 data/csv/memory.csv sram_kb/extra_regions/notes）；DS 标称
+# SRAM 512K 可能并入保留区（如 68K=主区 64K+RAMB 4K）。
 memory:
 - name: FLASH
   kind: flash
@@ -13,6 +15,14 @@ memory:
   kind: ram
   address: 0x1FFE0000
   size: 512K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: RAMB
+  kind: ram
+  address: 0x200F0000
+  size: 4K
   access:
     read: true
     write: true

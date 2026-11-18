@@ -1,5 +1,7 @@
 # HC32M458 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
 # 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# MODE 拆分定时器（TIMx/ATIMx）用 views 挂 SVD 视图（同基址寄存器布局
+# 叠影，工作模式由控制寄存器 MD 位运行时选择），地址/门控/中断在物理实例；
 # 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
 - name: ADC1
   address: 0x40040000
@@ -13,13 +15,13 @@
       field: CMU_FCG_ADC1
   interrupts:
   - signal: ADC1_EOCA
-    interrupt: ADC1_EOCA
+    interrupt: ADC1_ECOA
   - signal: ADC1_EOCB
-    interrupt: ADC1_EOCB
+    interrupt: ADC1_ECOB
   - signal: ADC1_EOCC
-    interrupt: ADC1_EOCC
+    interrupt: ADC1_ECOC
   - signal: ADC1_AWD01
-    interrupt: ADC1_AWD01
+    interrupt: ADC1_CMP
 - name: ADC2
   address: 0x40040400
   registers:
@@ -32,13 +34,13 @@
       field: CMU_FCG_ADC2
   interrupts:
   - signal: ADC2_EOCA
-    interrupt: ADC2_EOCA
+    interrupt: ADC2_ECOA
   - signal: ADC2_EOCB
-    interrupt: ADC2_EOCB
+    interrupt: ADC2_ECOB
   - signal: ADC2_EOCC
-    interrupt: ADC2_EOCC
+    interrupt: ADC2_ECOC
   - signal: ADC2_AWD01
-    interrupt: ADC2_AWD01
+    interrupt: ADC2_CMP
 - name: AOS
   address: 0x40010800
   registers:
@@ -59,7 +61,7 @@
   - signal: CMP1
     interrupt: CMP1
 - name: CMP2
-  address: 0x40038800
+  address: 0x40038900
   registers:
     kind: cmp
     block: CMP
@@ -75,7 +77,7 @@
     version: ll_v2_1
   interrupts:
   - signal: XTAL_STOP_SWINT10
-    interrupt: XTAL_STOP_SWINT10
+    interrupt: XTAL
 - name: CRC
   address: 0x40050400
   registers:
@@ -100,7 +102,7 @@
     version: v2
   interrupts:
   - signal: DFM_SWINT18
-    interrupt: DFM_SWINT18
+    interrupt: DFM
 - name: DMA
   address: 0x40053000
   registers:
@@ -113,11 +115,11 @@
       field: CMU_FCG_DMA
   interrupts:
   - signal: DMA_TC0_BC0_SWINT14
-    interrupt: DMA_TC0_BC0_SWINT14
+    interrupt: DMA_TC0_BTC0
   - signal: DMA_TC1_BTC1_SWINT15
-    interrupt: DMA_TC1_BTC1_SWINT15
+    interrupt: DMA_TC1_BTC1
   - signal: DMA_ERR_SWINT16
-    interrupt: DMA_ERR_SWINT16
+    interrupt: DMA_ERR
 - name: EFM
   address: 0x40010400
   registers:
@@ -126,7 +128,7 @@
     version: ll_v3
   interrupts:
   - signal: EFM_SWINT17
-    interrupt: EFM_SWINT17
+    interrupt: EFM
 - name: EFM2
   address: 0x1001C50
   registers:
@@ -143,7 +145,7 @@
   - signal: EMB
     interrupt: EMB
 - name: EMB1
-  address: 0x40017C00
+  address: 0x40017C20
   registers:
     kind: emb
     block: EMB
@@ -155,7 +157,7 @@
     block: EMB
     version: ll_v3
 - name: EMB3
-  address: 0x40017C40
+  address: 0x40017C60
   registers:
     kind: emb
     block: EMB
@@ -191,9 +193,9 @@
       field: CMU_FCG_I2C
   interrupts:
   - signal: I2C_RF_SE
-    interrupt: I2C_RF_SE
+    interrupt: I2C_TX_RX
   - signal: I2C_TC_Err
-    interrupt: I2C_TC_Err
+    interrupt: I2C_TE_EE
 - name: ICG
   address: 0x80000
   registers:
@@ -208,23 +210,23 @@
     version: ll_v1
   interrupts:
   - signal: EXTINT0_SWINT0
-    interrupt: EXTINT0_SWINT0
+    interrupt: EXTINT_PORT_EIRQ0
   - signal: EXTINT1_SWINT1
-    interrupt: EXTINT1_SWINT1
+    interrupt: EXTINT_PORT_EIRQ1
   - signal: EXTINT2_SWINT2
-    interrupt: EXTINT2_SWINT2
+    interrupt: EXTINT_PORT_EIRQ2
   - signal: EXTINT3_SWINT3
-    interrupt: EXTINT3_SWINT3
+    interrupt: EXTINT_PORT_EIRQ3
   - signal: EXTINT4_SWINT4
-    interrupt: EXTINT4_SWINT4
+    interrupt: EXTINT_PORT_EIRQ4
   - signal: EXTINT5_SWINT5
-    interrupt: EXTINT5_SWINT5
+    interrupt: EXTINT_PORT_EIRQ5
   - signal: EXTINT6_SWINT6
-    interrupt: EXTINT6_SWINT6
+    interrupt: EXTINT_PORT_EIRQ6
   - signal: EXTINT7_SWINT7
-    interrupt: EXTINT7_SWINT7
+    interrupt: EXTINT_PORT_EIRQ7
   - signal: FPU_SWINT19
-    interrupt: FPU_SWINT19
+    interrupt: FPU
 - name: MAU
   address: 0x40054800
   registers:
@@ -237,7 +239,7 @@
       field: CMU_FCG_MAU
   interrupts:
   - signal: MAU_SWINT20
-    interrupt: MAU_SWINT20
+    interrupt: MAU
 - name: PERIC
   address: 0x40055400
   registers:
@@ -252,9 +254,9 @@
     version: ll_v2_1
   interrupts:
   - signal: LVD1_SWINT12
-    interrupt: LVD1_SWINT12
+    interrupt: LVD1
   - signal: LVD2_SWINT13
-    interrupt: LVD2_SWINT13
+    interrupt: LVD2
 - name: RMU
   address: 0x40054500
   registers:
@@ -273,11 +275,11 @@
       field: CMU_FCG_SPI1
   interrupts:
   - signal: SPI1_RF_SE
-    interrupt: SPI1_RF_SE
+    interrupt: SPI1_TX_RX
   - signal: SPI1_Idle_Err
-    interrupt: SPI1_Idle_Err
+    interrupt: SPI1_IDLE_ERR
 - name: SPI2
-  address: 0x4001C000
+  address: 0x4001C400
   registers:
     kind: spi
     block: SPI
@@ -288,9 +290,9 @@
       field: CMU_FCG_SPI2
   interrupts:
   - signal: SPI2_RF_SE
-    interrupt: SPI2_RF_SE
+    interrupt: SPI2_TX_RX
   - signal: SPI2_Idle_Err
-    interrupt: SPI2_Idle_Err
+    interrupt: SPI2_IDLE_ERR
 - name: SRAMC
   address: 0x40050800
   registers:
@@ -305,7 +307,7 @@
     version: ll_v1_1
   interrupts:
   - signal: SWDT_SWINT11
-    interrupt: SWDT_SWINT11
+    interrupt: SWDT
 - name: TMR01
   address: 0x40024000
   registers:
@@ -318,9 +320,9 @@
       field: CMU_FCG_TMR0_1
   interrupts:
   - signal: TMR0_1_SWINT8
-    interrupt: TMR0_1_SWINT8
+    interrupt: TMR0_1
 - name: TMR02
-  address: 0x40024000
+  address: 0x40024400
   registers:
     kind: tmr0
     block: TMR0
@@ -331,7 +333,7 @@
       field: CMU_FCG_TMR0_2
   interrupts:
   - signal: TMR0_2_SWINT9
-    interrupt: TMR0_2_SWINT9
+    interrupt: TMR0_2
 - name: TMR41
   address: 0x40038000
   registers:
@@ -344,15 +346,15 @@
       field: CMU_FCG_TMR4_1
   interrupts:
   - signal: TMR41_OVF_SWINT21
-    interrupt: TMR41_OVF_SWINT21
+    interrupt: TMR4_1_OVF
   - signal: TMR41_UDF_SWINT22
-    interrupt: TMR41_UDF_SWINT22
+    interrupt: TMR4_1_UDF
   - signal: TMR41_RELOAD_SWINT23
-    interrupt: TMR41_RELOAD_SWINT23
+    interrupt: TMR4_1_RELOAD
   - signal: TMR41_GCM_SWINT24
-    interrupt: TMR41_GCM_SWINT24
+    interrupt: TMR4_1_GCMP
   - signal: TMR41_SCM_SWINT25
-    interrupt: TMR41_SCM_SWINT25
+    interrupt: TMR4_1_SCMP
 - name: TMR42
   address: 0x40038400
   registers:
@@ -365,15 +367,15 @@
       field: CMU_FCG_TMR4_2
   interrupts:
   - signal: TMR42_OVF
-    interrupt: TMR42_OVF
+    interrupt: TMR4_2_OVF
   - signal: TMR42_UDF
-    interrupt: TMR42_UDF
+    interrupt: TMR4_2_UDF
   - signal: TMR42_RELOAD
-    interrupt: TMR42_RELOAD
+    interrupt: TMR4_2_RELOAD
   - signal: TMR42_GCM
-    interrupt: TMR42_GCM
+    interrupt: TMR4_2_GCMP
   - signal: TMR42_SCM
-    interrupt: TMR42_SCM
+    interrupt: TMR4_2_SCMP
 - name: TMRA1
   address: 0x4003A000
   registers:
@@ -386,13 +388,13 @@
       field: CMU_FCG_TMRA_1
   interrupts:
   - signal: TMRA1_OVF_SWINT26
-    interrupt: TMRA1_OVF_SWINT26
+    interrupt: TMRA_1_OVF
   - signal: TMRA1_UDF_SWINT27
-    interrupt: TMRA1_UDF_SWINT27
+    interrupt: TMRA_1_UDF
   - signal: TMRA1_CMP_SWINT28
-    interrupt: TMRA1_CMP_SWINT28
+    interrupt: TMRA_1_CMP
 - name: TMRA2
-  address: 0x4003A000
+  address: 0x4003A400
   registers:
     kind: tmra
     block: TMRA
@@ -403,13 +405,13 @@
       field: CMU_FCG_TMRA_2
   interrupts:
   - signal: TMRA2_OVF_SWINT29
-    interrupt: TMRA2_OVF_SWINT29
+    interrupt: TMRA_2_OVF
   - signal: TMRA2_UDF_SWINT30
-    interrupt: TMRA2_UDF_SWINT30
+    interrupt: TMRA_2_UDF
   - signal: TMRA2_CMP_SWINT31
-    interrupt: TMRA2_CMP_SWINT31
+    interrupt: TMRA_2_CMP
 - name: TMRA3
-  address: 0x4003A000
+  address: 0x4003A800
   registers:
     kind: tmra
     block: TMRA
@@ -420,13 +422,13 @@
       field: CMU_FCG_TMRA_3
   interrupts:
   - signal: TMRA3_OVF
-    interrupt: TMRA3_OVF
+    interrupt: TMRA_3_OVF
   - signal: TMRA3_UDF
-    interrupt: TMRA3_UDF
+    interrupt: TMRA_3_UDF
   - signal: TMRA3_CMP
-    interrupt: TMRA3_CMP
+    interrupt: TMRA_3_CMP
 - name: TMRA4
-  address: 0x4003A000
+  address: 0x4003AC00
   registers:
     kind: tmra
     block: TMRA
@@ -437,13 +439,13 @@
       field: CMU_FCG_TMRA_4
   interrupts:
   - signal: TMRA4_OVF
-    interrupt: TMRA4_OVF
+    interrupt: TMRA_4_OVF
   - signal: TMRA4_UDF
-    interrupt: TMRA4_UDF
+    interrupt: TMRA_4_UDF
   - signal: TMRA4_CMP
-    interrupt: TMRA4_CMP
+    interrupt: TMRA_4_CMP
 - name: TMRA5
-  address: 0x4003A000
+  address: 0x40026000
   registers:
     kind: tmra
     block: TMRA
@@ -454,11 +456,11 @@
       field: CMU_FCG_TMRA_5
   interrupts:
   - signal: TMRA5_OVF
-    interrupt: TMRA5_OVF
+    interrupt: TMRA_5_OVF
   - signal: TMRA5_UDF
-    interrupt: TMRA5_UDF
+    interrupt: TMRA_5_UDF
   - signal: TMRA5_CMP
-    interrupt: TMRA5_CMP
+    interrupt: TMRA_5_CMP
 - name: TRNG
   address: 0x40042000
   registers:
@@ -486,7 +488,7 @@
   - signal: USART1_TCI
     interrupt: USART1_TCI
 - name: USART2
-  address: 0x4001CC00
+  address: 0x4001D000
   registers:
     kind: usart
     block: USART
@@ -499,7 +501,7 @@
   - signal: USART2_TCI
     interrupt: USART2_TCI
 - name: USART3
-  address: 0x4001CC00
+  address: 0x40020C00
   registers:
     kind: usart
     block: USART
@@ -512,7 +514,7 @@
   - signal: USART3_TCI
     interrupt: USART3_TCI
 - name: USART4
-  address: 0x4001CC00
+  address: 0x40021000
   registers:
     kind: usart
     block: USART

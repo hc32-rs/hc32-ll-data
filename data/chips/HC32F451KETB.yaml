@@ -7,7 +7,7 @@ packages:
 include_memory: ../memory/HC32F451_F512S192.yaml
 memory_sizes:
   FLASH: 512K
-  SRAM: 192K
+  SRAM: 188K
 docs:
 - type: homepage
   title: Homepage
@@ -23,6 +23,31 @@ cores:
   include_dma_channels:
     DMA1: ../dma/HC32F451_DMA1.yaml
     DMA2: ../dma/HC32F451_DMA2.yaml
+  dma_channels:
+  - name: DMA1_CH0
+    dma: DMA1
+    channel: 0
+  - name: DMA1_CH1
+    dma: DMA1
+    channel: 1
+  - name: DMA1_CH2
+    dma: DMA1
+    channel: 2
+  - name: DMA1_CH3
+    dma: DMA1
+    channel: 3
+  - name: DMA2_CH0
+    dma: DMA2
+    channel: 0
+  - name: DMA2_CH1
+    dma: DMA2
+    channel: 1
+  - name: DMA2_CH2
+    dma: DMA2
+    channel: 2
+  - name: DMA2_CH3
+    dma: DMA2
+    channel: 3
 _raw:
   series: HC32F451
   freq_mhz: '200'

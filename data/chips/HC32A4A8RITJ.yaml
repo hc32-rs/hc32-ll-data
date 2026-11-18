@@ -23,6 +23,55 @@ cores:
   include_dma_channels:
     DMA1: ../dma/HC32A4A8_DMA1.yaml
     DMA2: ../dma/HC32A4A8_DMA2.yaml
+  dma_channels:
+  - name: DMA1_CH0
+    dma: DMA1
+    channel: 0
+  - name: DMA1_CH1
+    dma: DMA1
+    channel: 1
+  - name: DMA1_CH2
+    dma: DMA1
+    channel: 2
+  - name: DMA1_CH3
+    dma: DMA1
+    channel: 3
+  - name: DMA1_CH4
+    dma: DMA1
+    channel: 4
+  - name: DMA1_CH5
+    dma: DMA1
+    channel: 5
+  - name: DMA1_CH6
+    dma: DMA1
+    channel: 6
+  - name: DMA1_CH7
+    dma: DMA1
+    channel: 7
+  - name: DMA2_CH0
+    dma: DMA2
+    channel: 0
+  - name: DMA2_CH1
+    dma: DMA2
+    channel: 1
+  - name: DMA2_CH2
+    dma: DMA2
+    channel: 2
+  - name: DMA2_CH3
+    dma: DMA2
+    channel: 3
+  - name: DMA2_CH4
+    dma: DMA2
+    channel: 4
+  - name: DMA2_CH5
+    dma: DMA2
+    channel: 5
+  - name: DMA2_CH6
+    dma: DMA2
+    channel: 6
+  - name: DMA2_CH7
+    dma: DMA2
+    channel: 7
 _raw:
   series: HC32A4A8
   freq_mhz: '200'

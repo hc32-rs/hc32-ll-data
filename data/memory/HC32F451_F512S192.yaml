@@ -1,5 +1,7 @@
 # HC32F451 Flash 512K / SRAM 192K 的内存布局（型号：HC32F451FEUB, HC32F451JEUB, HC32F451KETB…）。
-# 基址来自设备头/链接脚本（见 data/csv/memory.csv notes）。
+# 主 SRAM 188K + 独立保留区来自 SDK 链接脚本/RM 内存映射表
+#（见 data/csv/memory.csv sram_kb/extra_regions/notes）；DS 标称
+# SRAM 192K 可能并入保留区（如 68K=主区 64K+RAMB 4K）。
 memory:
 - name: FLASH
   kind: flash
@@ -12,7 +14,15 @@ memory:
 - name: SRAM
   kind: ram
   address: 0x1FFF8000
-  size: 192K
+  size: 188K
+  access:
+    read: true
+    write: true
+    execute: true
+- name: RET_RAM
+  kind: ram
+  address: 0x200F0000
+  size: 4K
   access:
     read: true
     write: true

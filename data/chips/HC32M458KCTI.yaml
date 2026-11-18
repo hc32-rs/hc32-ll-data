@@ -22,6 +22,13 @@ cores:
   include_interrupts: ../interrupts/HC32M458.yaml
   include_dma_channels:
     DMA: ../dma/HC32M458_DMA.yaml
+  dma_channels:
+  - name: DMA_CH0
+    dma: DMA
+    channel: 0
+  - name: DMA_CH1
+    dma: DMA
+    channel: 1
 _raw:
   series: HC32M458
   freq_mhz: '200'

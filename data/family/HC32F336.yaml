@@ -1,5 +1,7 @@
 # HC32F336 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
 # 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# MODE 拆分定时器（TIMx/ATIMx）用 views 挂 SVD 视图（同基址寄存器布局
+# 叠影，工作模式由控制寄存器 MD 位运行时选择），地址/门控/中断在物理实例；
 # 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
 - name: ADC1
   address: 0x40040000
@@ -60,7 +62,7 @@
   - signal: CMP1
     interrupt: CMP1
 - name: CMP2
-  address: 0x40038400
+  address: 0x40038500
   registers:
     kind: cmp
     block: CMP
@@ -69,7 +71,7 @@
   - signal: CMP2
     interrupt: CMP2
 - name: CMP3
-  address: 0x40038400
+  address: 0x4003B000
   registers:
     kind: cmp
     block: CMP
@@ -89,7 +91,7 @@
     version: ll_v3_1
   interrupts:
   - signal: XTAL_STOP
-    interrupt: XTAL_STOP
+    interrupt: XTAL
 - name: CRC
   address: 0x40008C00
   registers:
@@ -124,7 +126,7 @@
       register: FCG3
       field: PWC_FCG3_DAC1
 - name: DAC2
-  address: 0x40041000
+  address: 0x40041400
   registers:
     kind: dac
     block: DAC
@@ -174,9 +176,9 @@
     version: ll_v2_2
   interrupts:
   - signal: PEERR_RDCOL
-    interrupt: PEERR_RDCOL
+    interrupt: EFM_PEERR_RDCOL
   - signal: OPEND
-    interrupt: OPEND
+    interrupt: EFM_OPTEND
 - name: EMB0
   address: 0x40038600
   registers:
@@ -187,7 +189,7 @@
   - signal: EMB_GR0
     interrupt: EMB_GR0
 - name: EMB1
-  address: 0x40038600
+  address: 0x40038620
   registers:
     kind: emb
     block: EMB
@@ -196,7 +198,7 @@
   - signal: EMB_GR1
     interrupt: EMB_GR1
 - name: EMB2
-  address: 0x40038600
+  address: 0x40038640
   registers:
     kind: emb
     block: EMB
@@ -205,7 +207,7 @@
   - signal: EMB_GR2
     interrupt: EMB_GR2
 - name: EMB3
-  address: 0x40038600
+  address: 0x40038660
   registers:
     kind: emb
     block: EMB
@@ -214,7 +216,7 @@
   - signal: EMB_GR3
     interrupt: EMB_GR3
 - name: EMB4
-  address: 0x40038600
+  address: 0x40038680
   registers:
     kind: emb
     block: EMB
@@ -223,7 +225,7 @@
   - signal: EMB_GR4
     interrupt: EMB_GR4
 - name: EMB5
-  address: 0x40038600
+  address: 0x400386A0
   registers:
     kind: emb
     block: EMB
@@ -241,7 +243,7 @@
   - signal: EMB_GR6
     interrupt: EMB_GR6
 - name: EMB7
-  address: 0x400386C0
+  address: 0x400386E0
   registers:
     kind: emb
     block: EMB
@@ -250,7 +252,7 @@
   - signal: EMB_GR7
     interrupt: EMB_GR7
 - name: EMB8
-  address: 0x400386C0
+  address: 0x40038700
   registers:
     kind: emb
     block: EMB
@@ -298,15 +300,15 @@
       field: PWC_FCG2_HRPWM_1
   interrupts:
   - signal: HRPWM1_GCMP
-    interrupt: HRPWM1_GCMP
+    interrupt: HRPWM_1_GCMP
   - signal: HRPWM1_OVF_UDF
-    interrupt: HRPWM1_OVF_UDF
+    interrupt: HRPWM_1_OVF_UDF
   - signal: HRPWM1_SCM
-    interrupt: HRPWM1_SCM
+    interrupt: HRPWM_1_SCMP
   - signal: HRPWM1_GCAP
-    interrupt: HRPWM1_GCAP
+    interrupt: HRPWM_1_GCAP
   - signal: HRPWM_IRQ
-    interrupt: HRPWM_IRQ
+    interrupt: HRPWM
 - name: HRPWM2
   address: 0x4003C400
   registers:
@@ -319,15 +321,15 @@
       field: PWC_FCG2_HRPWM_2
   interrupts:
   - signal: HRPWM2_GCMP
-    interrupt: HRPWM2_GCMP
+    interrupt: HRPWM_2_GCMP
   - signal: HRPWM2_OVF_UDF
-    interrupt: HRPWM2_OVF_UDF
+    interrupt: HRPWM_2_OVF_UDF
   - signal: HRPWM2_SCM
-    interrupt: HRPWM2_SCM
+    interrupt: HRPWM_2_SCMP
   - signal: HRPWM2_GCAP
-    interrupt: HRPWM2_GCAP
+    interrupt: HRPWM_2_GCAP
 - name: HRPWM3
-  address: 0x4003C400
+  address: 0x4003C800
   registers:
     kind: hrpwm
     block: HRPWM
@@ -338,15 +340,15 @@
       field: PWC_FCG2_HRPWM_3
   interrupts:
   - signal: HRPWM3_GCMP
-    interrupt: HRPWM3_GCMP
+    interrupt: HRPWM_3_GCMP
   - signal: HRPWM3_OVF_UDF
-    interrupt: HRPWM3_OVF_UDF
+    interrupt: HRPWM_3_OVF_UDF
   - signal: HRPWM3_SCM
-    interrupt: HRPWM3_SCM
+    interrupt: HRPWM_3_SCMP
   - signal: HRPWM3_GCAP
-    interrupt: HRPWM3_GCAP
+    interrupt: HRPWM_3_GCAP
 - name: HRPWM4
-  address: 0x4003C400
+  address: 0x4003CC00
   registers:
     kind: hrpwm
     block: HRPWM
@@ -357,15 +359,15 @@
       field: PWC_FCG2_HRPWM_4
   interrupts:
   - signal: HRPWM4_GCMP
-    interrupt: HRPWM4_GCMP
+    interrupt: HRPWM_4_GCMP
   - signal: HRPWM4_OVF_UDF
-    interrupt: HRPWM4_OVF_UDF
+    interrupt: HRPWM_4_OVF_UDF
   - signal: HRPWM4_SCM
-    interrupt: HRPWM4_SCM
+    interrupt: HRPWM_4_SCMP
   - signal: HRPWM4_GCAP
-    interrupt: HRPWM4_GCAP
+    interrupt: HRPWM_4_GCAP
 - name: HRPWM5
-  address: 0x4003C400
+  address: 0x4003D000
   registers:
     kind: hrpwm
     block: HRPWM
@@ -376,15 +378,15 @@
       field: PWC_FCG2_HRPWM_5
   interrupts:
   - signal: HRPWM5_GCMP
-    interrupt: HRPWM5_GCMP
+    interrupt: HRPWM_5_GCMP
   - signal: HRPWM5_OVF_UDF
-    interrupt: HRPWM5_OVF_UDF
+    interrupt: HRPWM_5_OVF_UDF
   - signal: HRPWM5_SCM
-    interrupt: HRPWM5_SCM
+    interrupt: HRPWM_5_SCMP
   - signal: HRPWM5_GCAP
-    interrupt: HRPWM5_GCAP
+    interrupt: HRPWM_5_GCAP
 - name: HRPWM6
-  address: 0x4003C400
+  address: 0x4003D400
   registers:
     kind: hrpwm
     block: HRPWM
@@ -395,13 +397,13 @@
       field: PWC_FCG2_HRPWM_6
   interrupts:
   - signal: HRPWM6_GCMP
-    interrupt: HRPWM6_GCMP
+    interrupt: HRPWM_6_GCMP
   - signal: HRPWM6_OVF_UDF
-    interrupt: HRPWM6_OVF_UDF
+    interrupt: HRPWM_6_OVF_UDF
   - signal: HRPWM6_SCM
-    interrupt: HRPWM6_SCM
+    interrupt: HRPWM_6_SCMP
   - signal: HRPWM6_GCAP
-    interrupt: HRPWM6_GCAP
+    interrupt: HRPWM_6_GCAP
 - name: HRPWM_COMMON
   address: 0x4003C2F0
   registers:
@@ -448,11 +450,11 @@
       field: PWC_FCG1_MCAN1
   interrupts:
   - signal: CAN1_INT0
-    interrupt: CAN1_INT0
+    interrupt: MCAN1_INT0
   - signal: CAN1_INT1
-    interrupt: CAN1_INT1
+    interrupt: MCAN1_INT1
 - name: MCAN2
-  address: 0x40071000
+  address: 0x40071400
   registers:
     kind: mcan
     block: MCAN
@@ -463,9 +465,9 @@
       field: PWC_FCG1_MCAN2
   interrupts:
   - signal: CAN2_INT0
-    interrupt: CAN2_INT0
+    interrupt: MCAN2_INT0
   - signal: CAN2_INT1
-    interrupt: CAN2_INT1
+    interrupt: MCAN2_INT1
 - name: MCANRAM
   address: 0x40073800
   registers:
@@ -474,7 +476,7 @@
     version: ll_v1_1
   interrupts:
   - signal: CANRAM_ECCER
-    interrupt: CANRAM_ECCER
+    interrupt: MCANRAM_ECCER
 - name: MPU
   address: 0x40050000
   registers:
@@ -497,9 +499,6 @@
     enable:
       register: FCG0
       field: PWC_FCG0_PLA
-  interrupts:
-  - signal: PLAINT
-    interrupt: PLAINT
 - name: PWC
   address: 0x40048000
   registers:
@@ -566,7 +565,7 @@
   - signal: TMR0_1
     interrupt: TMR0_1
 - name: TMR02
-  address: 0x40024000
+  address: 0x40024400
   registers:
     kind: tmr0
     block: TMR0
@@ -590,13 +589,13 @@
       field: PWC_FCG2_TMR4
   interrupts:
   - signal: GCMP
-    interrupt: GCMP
+    interrupt: TMR4_GCMP
   - signal: OVF_UDF
-    interrupt: OVF_UDF
+    interrupt: TMR4_OVF_UDF
   - signal: RELOAD
-    interrupt: RELOAD
+    interrupt: TMR4_RELOAD
   - signal: SCM
-    interrupt: SCM
+    interrupt: TMR4_SCMP
 - name: TMR61
   address: 0x40039000
   registers:
@@ -617,7 +616,7 @@
   - signal: TMR6_1_SCMP
     interrupt: TMR6_1_SCMP
 - name: TMR62
-  address: 0x40039000
+  address: 0x40039400
   registers:
     kind: tmr
     block: TMR
@@ -636,7 +635,7 @@
   - signal: TMR6_2_SCMP
     interrupt: TMR6_2_SCMP
 - name: TMR63
-  address: 0x40039000
+  address: 0x40039800
   registers:
     kind: tmr
     block: TMR
@@ -655,7 +654,7 @@
   - signal: TMR6_3_SCMP
     interrupt: TMR6_3_SCMP
 - name: TMR64
-  address: 0x40039000
+  address: 0x40039C00
   registers:
     kind: tmr
     block: TMR
@@ -710,7 +709,7 @@
   - signal: TMRA_2_CMP
     interrupt: TMRA_2_CMP
 - name: TMRA3
-  address: 0x4003A400
+  address: 0x4003A800
   registers:
     kind: tmra
     block: TMRA
@@ -725,7 +724,7 @@
   - signal: TMRA_3_CMP
     interrupt: TMRA_3_CMP
 - name: TMRA4
-  address: 0x4003A400
+  address: 0x4003AC00
   registers:
     kind: tmra
     block: TMRA
@@ -740,7 +739,7 @@
   - signal: TMRA_4_CMP
     interrupt: TMRA_4_CMP
 - name: TMRA5
-  address: 0x4003A400
+  address: 0x40026000
   registers:
     kind: tmra
     block: TMRA
@@ -781,7 +780,7 @@
   - signal: USART2
     interrupt: USART2
 - name: USART3
-  address: 0x4001D000
+  address: 0x4001D400
   registers:
     kind: usart
     block: USART
@@ -794,7 +793,7 @@
   - signal: USART3
     interrupt: USART3
 - name: USART4
-  address: 0x4001D000
+  address: 0x4001D800
   registers:
     kind: usart
     block: USART

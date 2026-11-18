@@ -1,5 +1,7 @@
 # HC32F472 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
 # 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# MODE 拆分定时器（TIMx/ATIMx）用 views 挂 SVD 视图（同基址寄存器布局
+# 叠影，工作模式由控制寄存器 MD 位运行时选择），地址/门控/中断在物理实例；
 # 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
 - name: ADC1
   address: 0x40040000
@@ -13,7 +15,7 @@
       field: PWC_FCG3_ADC1
   interrupts:
   - signal: ADC_1
-    interrupt: ADC_1
+    interrupt: ADC1
 - name: ADC2
   address: 0x40040400
   registers:
@@ -26,7 +28,7 @@
       field: PWC_FCG3_ADC2
   interrupts:
   - signal: ADC_2
-    interrupt: ADC_2
+    interrupt: ADC2
 - name: ADC3
   address: 0x40040800
   registers:
@@ -39,7 +41,7 @@
       field: PWC_FCG3_ADC3
   interrupts:
   - signal: ADC_3
-    interrupt: ADC_3
+    interrupt: ADC3
 - name: AES
   address: 0x40008000
   registers:
@@ -72,9 +74,9 @@
       field: PWC_FCG1_CAN1
   interrupts:
   - signal: CAN_1
-    interrupt: CAN_1
+    interrupt: CAN1_INT
 - name: CAN2
-  address: 0x40078000
+  address: 0x40071400
   registers:
     kind: can
     block: CAN
@@ -85,9 +87,9 @@
       field: PWC_FCG1_CAN2
   interrupts:
   - signal: CAN_2
-    interrupt: CAN_2
+    interrupt: CAN2_INT
 - name: CAN3
-  address: 0x40078000
+  address: 0x40071000
   registers:
     kind: can
     block: CAN
@@ -98,7 +100,7 @@
       field: PWC_FCG1_CAN3
   interrupts:
   - signal: CAN_3
-    interrupt: CAN_3
+    interrupt: CAN3_INT
 - name: CMP1
   address: 0x40038400
   registers:
@@ -118,7 +120,7 @@
   - signal: CMP2
     interrupt: CMP2
 - name: CMP3
-  address: 0x40038400
+  address: 0x4003B000
   registers:
     kind: cmp
     block: CMP
@@ -127,7 +129,7 @@
   - signal: CMP3
     interrupt: CMP3
 - name: CMP4
-  address: 0x40038500
+  address: 0x4003B100
   registers:
     kind: cmp
     block: CMP
@@ -143,9 +145,9 @@
     version: ll_v3_3
   interrupts:
   - signal: CMU_XTAL_STOP
-    interrupt: CMU_XTAL_STOP
+    interrupt: XTAL
   - signal: CMU_FCM
-    interrupt: CMU_FCM
+    interrupt: FCM
 - name: CRC
   address: 0x40008C00
   registers:
@@ -180,7 +182,7 @@
       register: FCG3
       field: PWC_FCG3_DAC1
 - name: DAC2
-  address: 0x40041000
+  address: 0x40041400
   registers:
     kind: dac
     block: DAC
@@ -190,7 +192,7 @@
       register: FCG3
       field: PWC_FCG3_DAC2
 - name: DAC3
-  address: 0x40041000
+  address: 0x40041800
   registers:
     kind: dac
     block: DAC
@@ -200,7 +202,7 @@
       register: FCG3
       field: PWC_FCG3_DAC3
 - name: DAC4
-  address: 0x40041000
+  address: 0x40041C00
   registers:
     kind: dac
     block: DAC
@@ -227,9 +229,9 @@
       field: PWC_FCG0_DCU1
   interrupts:
   - signal: DCU_1
-    interrupt: DCU_1
+    interrupt: DCU1
 - name: DCU2
-  address: 0x40056000
+  address: 0x40056400
   registers:
     kind: dcu
     block: DCU
@@ -240,9 +242,9 @@
       field: PWC_FCG0_DCU2
   interrupts:
   - signal: DUC_2
-    interrupt: DUC_2
+    interrupt: DCU2
 - name: DCU3
-  address: 0x40056000
+  address: 0x40056800
   registers:
     kind: dcu
     block: DCU
@@ -253,7 +255,7 @@
       field: PWC_FCG0_DCU3
   interrupts:
   - signal: DCU_3
-    interrupt: DCU_3
+    interrupt: DCU3
 - name: DMA1
   address: 0x40053000
   registers:
@@ -282,7 +284,7 @@
   - signal: DMA1_TC7_BTC7
     interrupt: DMA1_TC7_BTC7
 - name: DMA2
-  address: 0x40053000
+  address: 0x40053400
   registers:
     kind: dma
     block: DMA
@@ -327,7 +329,7 @@
   - signal: EMB_GR0
     interrupt: EMB_GR0
 - name: EMB1
-  address: 0x40017C00
+  address: 0x40017C20
   registers:
     kind: emb
     block: EMB
@@ -336,7 +338,7 @@
   - signal: EMB_GR1
     interrupt: EMB_GR1
 - name: EMB2
-  address: 0x40017C00
+  address: 0x40017C40
   registers:
     kind: emb
     block: EMB
@@ -345,7 +347,7 @@
   - signal: EMB_GR2
     interrupt: EMB_GR2
 - name: EMB3
-  address: 0x40017C00
+  address: 0x40017C60
   registers:
     kind: emb
     block: EMB
@@ -354,7 +356,7 @@
   - signal: EMB_GR3
     interrupt: EMB_GR3
 - name: EMB4
-  address: 0x40017C00
+  address: 0x40017C80
   registers:
     kind: emb
     block: EMB
@@ -363,7 +365,7 @@
   - signal: EMB_GR4
     interrupt: EMB_GR4
 - name: EMB5
-  address: 0x40017C00
+  address: 0x40017CA0
   registers:
     kind: emb
     block: EMB
@@ -372,7 +374,7 @@
   - signal: EMB_GR5
     interrupt: EMB_GR5
 - name: EMB6
-  address: 0x40017C00
+  address: 0x40017CC0
   registers:
     kind: emb
     block: EMB
@@ -408,9 +410,9 @@
       field: PWC_FCG1_FMAC1
   interrupts:
   - signal: FMAC_1
-    interrupt: FMAC_1
+    interrupt: FMAC1_FIR
 - name: FMAC2
-  address: 0x40058000
+  address: 0x40058400
   registers:
     kind: fmac
     block: FMAC
@@ -421,9 +423,9 @@
       field: PWC_FCG1_FMAC2
   interrupts:
   - signal: FMAC_2
-    interrupt: FMAC_2
+    interrupt: FMAC2_FIR
 - name: FMAC3
-  address: 0x40058000
+  address: 0x40058800
   registers:
     kind: fmac
     block: FMAC
@@ -434,9 +436,9 @@
       field: PWC_FCG1_FMAC3
   interrupts:
   - signal: FMAC_3
-    interrupt: FMAC_3
+    interrupt: FMAC3_FIR
 - name: FMAC4
-  address: 0x40058000
+  address: 0x40058C00
   registers:
     kind: fmac
     block: FMAC
@@ -447,7 +449,7 @@
       field: PWC_FCG1_FMAC4
   interrupts:
   - signal: FMAC_4
-    interrupt: FMAC_4
+    interrupt: FMAC4_FIR
 - name: GPIO
   address: 0x40053800
   registers:
@@ -475,7 +477,7 @@
       field: PWC_FCG0_HASH
   interrupts:
   - signal: CPM
-    interrupt: CPM
+    interrupt: HASH
 - name: I2C1
   address: 0x4003B400
   registers:
@@ -488,9 +490,9 @@
       field: PWC_FCG1_I2C1
   interrupts:
   - signal: I2C_1
-    interrupt: I2C_1
+    interrupt: I2C1
 - name: I2C2
-  address: 0x4003B400
+  address: 0x4003B800
   registers:
     kind: i2c
     block: I2C
@@ -501,9 +503,9 @@
       field: PWC_FCG1_I2C2
   interrupts:
   - signal: I2C_2
-    interrupt: I2C_2
+    interrupt: I2C2
 - name: I2C3
-  address: 0x4003B400
+  address: 0x4003BC00
   registers:
     kind: i2c
     block: I2C
@@ -514,7 +516,7 @@
       field: PWC_FCG1_I2C3
   interrupts:
   - signal: I2C_3
-    interrupt: I2C_3
+    interrupt: I2C3
 - name: ICG
   address: 0x400
   registers:
@@ -529,69 +531,69 @@
     version: ll_v2_6
   interrupts:
   - signal: GLOBAL0_SWINT0
-    interrupt: GLOBAL0_SWINT0
+    interrupt: INT000
   - signal: GLOBAL1_SWINT1
-    interrupt: GLOBAL1_SWINT1
+    interrupt: INT001
   - signal: GLOBAL2_SWINT2
-    interrupt: GLOBAL2_SWINT2
+    interrupt: INT002
   - signal: GLOBAL3_SWINT3
-    interrupt: GLOBAL3_SWINT3
+    interrupt: INT003
   - signal: GLOBAL4_SWINT4
-    interrupt: GLOBAL4_SWINT4
+    interrupt: INT004
   - signal: GLOBAL5_SWINT5
-    interrupt: GLOBAL5_SWINT5
+    interrupt: INT005
   - signal: GLOBAL6_SWINT6
-    interrupt: GLOBAL6_SWINT6
+    interrupt: INT006
   - signal: GLOBAL7_SWINT7
-    interrupt: GLOBAL7_SWINT7
+    interrupt: INT007
   - signal: GLOBAL8_SWINT8
-    interrupt: GLOBAL8_SWINT8
+    interrupt: INT008
   - signal: GLOBAL9_SWINT9
-    interrupt: GLOBAL9_SWINT9
+    interrupt: INT009
   - signal: GLOBAL10_SWINT10
-    interrupt: GLOBAL10_SWINT10
+    interrupt: INT010
   - signal: GLOBAL11_SWINT11
-    interrupt: GLOBAL11_SWINT11
+    interrupt: INT011
   - signal: GLOBAL12_SWINT12
-    interrupt: GLOBAL12_SWINT12
+    interrupt: INT012
   - signal: GLOBAL13_SWINT13
-    interrupt: GLOBAL13_SWINT13
+    interrupt: INT013
   - signal: GLOBAL14_SWINT14
-    interrupt: GLOBAL14_SWINT14
+    interrupt: INT014
   - signal: GLOBAL15_SWINT15
-    interrupt: GLOBAL15_SWINT15
+    interrupt: INT015
   - signal: GLOBAL16_EXINT0
-    interrupt: GLOBAL16_EXINT0
+    interrupt: EXTINT_PORT_EIRQ0
   - signal: GLOBAL17_EXINT1
-    interrupt: GLOBAL17_EXINT1
+    interrupt: EXTINT_PORT_EIRQ1
   - signal: GLOBAL18_EXINT2
-    interrupt: GLOBAL18_EXINT2
+    interrupt: EXTINT_PORT_EIRQ2
   - signal: GLOBAL19_EXINT3
-    interrupt: GLOBAL19_EXINT3
+    interrupt: EXTINT_PORT_EIRQ3
   - signal: GLOBAL20_EXINT4
-    interrupt: GLOBAL20_EXINT4
+    interrupt: EXTINT_PORT_EIRQ4
   - signal: GLOBAL21_EXINT5
-    interrupt: GLOBAL21_EXINT5
+    interrupt: EXTINT_PORT_EIRQ5
   - signal: GLOBAL22_EXINT6
-    interrupt: GLOBAL22_EXINT6
+    interrupt: EXTINT_PORT_EIRQ6
   - signal: GLOBAL23_EXINT7
-    interrupt: GLOBAL23_EXINT7
+    interrupt: EXTINT_PORT_EIRQ7
   - signal: GLOBAL24_EXINT8
-    interrupt: GLOBAL24_EXINT8
+    interrupt: EXTINT_PORT_EIRQ8
   - signal: GLOBAL25_EXINT9
-    interrupt: GLOBAL25_EXINT9
+    interrupt: EXTINT_PORT_EIRQ9
   - signal: GLOBAL26_EXINT10
-    interrupt: GLOBAL26_EXINT10
+    interrupt: EXTINT_PORT_EIRQ10
   - signal: GLOBAL27_EXINT11
-    interrupt: GLOBAL27_EXINT11
+    interrupt: EXTINT_PORT_EIRQ11
   - signal: GLOBAL28_EXINT12
-    interrupt: GLOBAL28_EXINT12
+    interrupt: EXTINT_PORT_EIRQ12
   - signal: GLOBAL29_EXINT13
-    interrupt: GLOBAL29_EXINT13
+    interrupt: EXTINT_PORT_EIRQ13
   - signal: GLOBAL30_EXINT14
-    interrupt: GLOBAL30_EXINT14
+    interrupt: EXTINT_PORT_EIRQ14
   - signal: GLOBAL31_EXINT15
-    interrupt: GLOBAL31_EXINT15
+    interrupt: EXTINT_PORT_EIRQ15
 - name: KEYSCAN
   address: 0x40050C00
   registers:
@@ -659,9 +661,6 @@
     enable:
       register: FCG0
       field: PWC_FCG0_PLA
-  interrupts:
-  - signal: PLA
-    interrupt: PLA
 - name: PWC
   address: 0x40048000
   registers:
@@ -670,11 +669,11 @@
     version: ll_v3
   interrupts:
   - signal: PWC_WKTM
-    interrupt: PWC_WKTM
+    interrupt: WKTM
   - signal: PWC_PVD1
-    interrupt: PWC_PVD1
+    interrupt: LVD1
   - signal: PWC_PVD2
-    interrupt: PWC_PVD2
+    interrupt: LVD2
 - name: QSPI
   address: 0x9C000000
   registers:
@@ -725,9 +724,9 @@
       field: PWC_FCG1_SPI1
   interrupts:
   - signal: SPI_1
-    interrupt: SPI_1
+    interrupt: SPI1
 - name: SPI2
-  address: 0x4001C000
+  address: 0x4001C400
   registers:
     kind: spi
     block: SPI
@@ -738,9 +737,9 @@
       field: PWC_FCG1_SPI2
   interrupts:
   - signal: SPI_2
-    interrupt: SPI_2
+    interrupt: SPI2
 - name: SPI3
-  address: 0x4001C000
+  address: 0x40020000
   registers:
     kind: spi
     block: SPI
@@ -751,9 +750,9 @@
       field: PWC_FCG1_SPI3
   interrupts:
   - signal: SPI_3
-    interrupt: SPI_3
+    interrupt: SPI3
 - name: SPI4
-  address: 0x4001C000
+  address: 0x40020400
   registers:
     kind: spi
     block: SPI
@@ -764,7 +763,7 @@
       field: PWC_FCG1_SPI4
   interrupts:
   - signal: SPI_4
-    interrupt: SPI_4
+    interrupt: SPI4
 - name: SRAMC
   address: 0x40050800
   registers:
@@ -792,9 +791,9 @@
       field: PWC_FCG2_TMR0_1
   interrupts:
   - signal: TMR0_1
-    interrupt: TMR0_1
+    interrupt: TMR0_1_CMP
 - name: TMR02
-  address: 0x40024000
+  address: 0x40024400
   registers:
     kind: tmr0
     block: TMR0
@@ -805,7 +804,7 @@
       field: PWC_FCG2_TMR0_2
   interrupts:
   - signal: TMR0_2
-    interrupt: TMR0_2
+    interrupt: TMR0_2_CMP
 - name: TMR21
   address: 0x40024800
   registers:
@@ -818,11 +817,11 @@
       field: PWC_FCG2_TMR2_1
   interrupts:
   - signal: TMR2_1
-    interrupt: TMR2_1
+    interrupt: TMR2_1_CMP
   - signal: TMR2_1
-    interrupt: TMR2_1
+    interrupt: TMR2_1_OVF
 - name: TMR22
-  address: 0x40024800
+  address: 0x40024C00
   registers:
     kind: tmr2
     block: TMR2
@@ -833,11 +832,11 @@
       field: PWC_FCG2_TMR2_2
   interrupts:
   - signal: TMR2_2
-    interrupt: TMR2_2
+    interrupt: TMR2_2_CMP
   - signal: TMR2_2
-    interrupt: TMR2_2
+    interrupt: TMR2_2_OVF
 - name: TMR23
-  address: 0x40024800
+  address: 0x40025000
   registers:
     kind: tmr2
     block: TMR2
@@ -848,11 +847,11 @@
       field: PWC_FCG2_TMR2_3
   interrupts:
   - signal: TMR2_3
-    interrupt: TMR2_3
+    interrupt: TMR2_3_CMP
   - signal: TMR2_3
-    interrupt: TMR2_3
+    interrupt: TMR2_3_OVF
 - name: TMR24
-  address: 0x40024800
+  address: 0x40025400
   registers:
     kind: tmr2
     block: TMR2
@@ -863,9 +862,9 @@
       field: PWC_FCG2_TMR2_4
   interrupts:
   - signal: TMR2_4
-    interrupt: TMR2_4
+    interrupt: TMR2_4_CMP
   - signal: TMR2_4
-    interrupt: TMR2_4
+    interrupt: TMR2_4_OVF
 - name: TMR4
   address: 0x40038000
   registers:
@@ -901,7 +900,7 @@
   - signal: TMR6_1_SCMP
     interrupt: TMR6_1_SCMP
 - name: TMR610
-  address: 0x4003C000
+  address: 0x4003E400
   registers:
     kind: tmr
     block: TMR
@@ -915,10 +914,10 @@
     interrupt: TMR6_10_GCMP
   - signal: TMR6_10_OVF_UDF
     interrupt: TMR6_10_OVF_UDF
-  - signal: TMR6_1_SCMP
-    interrupt: TMR6_1_SCMP
+  - signal: TMR6_10_SCMP
+    interrupt: TMR6_10_SCMP
 - name: TMR62
-  address: 0x4003C000
+  address: 0x4003C400
   registers:
     kind: tmr
     block: TMR
@@ -935,7 +934,7 @@
   - signal: TMR6_2_SCMP
     interrupt: TMR6_2_SCMP
 - name: TMR63
-  address: 0x4003C000
+  address: 0x4003C800
   registers:
     kind: tmr
     block: TMR
@@ -952,7 +951,7 @@
   - signal: TMR6_3_SCMP
     interrupt: TMR6_3_SCMP
 - name: TMR64
-  address: 0x4003C000
+  address: 0x4003CC00
   registers:
     kind: tmr
     block: TMR
@@ -969,7 +968,7 @@
   - signal: TMR6_4_SCMP
     interrupt: TMR6_4_SCMP
 - name: TMR65
-  address: 0x4003C000
+  address: 0x4003D000
   registers:
     kind: tmr
     block: TMR
@@ -986,7 +985,7 @@
   - signal: TMR6_5_SCMP
     interrupt: TMR6_5_SCMP
 - name: TMR66
-  address: 0x4003C000
+  address: 0x4003D400
   registers:
     kind: tmr
     block: TMR
@@ -1003,7 +1002,7 @@
   - signal: TMR6_6_SCMP
     interrupt: TMR6_6_SCMP
 - name: TMR67
-  address: 0x4003C000
+  address: 0x4003D800
   registers:
     kind: tmr
     block: TMR
@@ -1020,7 +1019,7 @@
   - signal: TMR6_7_SCMP
     interrupt: TMR6_7_SCMP
 - name: TMR68
-  address: 0x4003C000
+  address: 0x4003DC00
   registers:
     kind: tmr
     block: TMR
@@ -1037,7 +1036,7 @@
   - signal: TMR6_8_SCMP
     interrupt: TMR6_8_SCMP
 - name: TMR69
-  address: 0x4003C000
+  address: 0x4003E000
   registers:
     kind: tmr
     block: TMR
@@ -1161,7 +1160,7 @@
       field: PWC_FCG0_TRNG
   interrupts:
   - signal: CPM
-    interrupt: CPM
+    interrupt: TRNG
 - name: USART1
   address: 0x4001CC00
   registers:
@@ -1254,7 +1253,7 @@
       field: PWC_FCG1_USBFS
   interrupts:
   - signal: USBFS
-    interrupt: USBFS
+    interrupt: USBFS_GLB
 - name: VREF
   address: 0x4004F800
   registers:

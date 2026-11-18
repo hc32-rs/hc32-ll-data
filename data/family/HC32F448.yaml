@@ -1,5 +1,7 @@
 # HC32F448 系列外设实例（hc32-data-tools/csv_to_yaml.py 生成）。
 # 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
+# MODE 拆分定时器（TIMx/ATIMx）用 views 挂 SVD 视图（同基址寄存器布局
+# 叠影，工作模式由控制寄存器 MD 位运行时选择），地址/门控/中断在物理实例；
 # 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
 - name: ADC1
   address: 0x40040000
@@ -128,7 +130,7 @@
       register: FCG0
       field: PWC_FCG0_DCU1
 - name: DCU2
-  address: 0x40056000
+  address: 0x40056400
   registers:
     kind: dcu
     block: DCU
@@ -138,7 +140,7 @@
       register: FCG0
       field: PWC_FCG0_DCU2
 - name: DCU3
-  address: 0x40056000
+  address: 0x40056800
   registers:
     kind: dcu
     block: DCU
@@ -148,7 +150,7 @@
       register: FCG0
       field: PWC_FCG0_DCU3
 - name: DCU4
-  address: 0x40056000
+  address: 0x40056C00
   registers:
     kind: dcu
     block: DCU
@@ -168,7 +170,7 @@
       register: FCG0
       field: PWC_FCG0_DMA1
 - name: DMA2
-  address: 0x40053000
+  address: 0x40053400
   registers:
     kind: dma
     block: DMA
@@ -196,13 +198,13 @@
     block: EMB
     version: ll_v2_6
 - name: EMB2
-  address: 0x40017C20
+  address: 0x40017C40
   registers:
     kind: emb
     block: EMB
     version: ll_v2_6
 - name: EMB3
-  address: 0x40017C20
+  address: 0x40017C60
   registers:
     kind: emb
     block: EMB
@@ -244,7 +246,7 @@
       register: FCG1
       field: PWC_FCG1_I2C1
 - name: I2C2
-  address: 0x4003B400
+  address: 0x4003B800
   registers:
     kind: i2c
     block: I2C
@@ -282,7 +284,7 @@
       register: FCG1
       field: PWC_FCG1_MCAN1
 - name: MCAN2
-  address: 0x40029000
+  address: 0x40029400
   registers:
     kind: mcan
     block: MCAN
@@ -352,7 +354,7 @@
       register: FCG1
       field: PWC_FCG1_SPI1
 - name: SPI2
-  address: 0x4001C000
+  address: 0x4001C400
   registers:
     kind: spi
     block: SPI
@@ -362,7 +364,7 @@
       register: FCG1
       field: PWC_FCG1_SPI2
 - name: SPI3
-  address: 0x4001C000
+  address: 0x40020000
   registers:
     kind: spi
     block: SPI
@@ -394,7 +396,7 @@
       register: FCG2
       field: PWC_FCG2_TMR0_1
 - name: TMR02
-  address: 0x40024000
+  address: 0x40024400
   registers:
     kind: tmr0
     block: TMR0
@@ -444,7 +446,7 @@
       register: FCG2
       field: PWC_FCG2_TMR6_1
 - name: TMR62
-  address: 0x4003C000
+  address: 0x4003C400
   registers:
     kind: tmr
     block: TMR
@@ -470,7 +472,7 @@
       register: FCG2
       field: PWC_FCG2_TMRA_1
 - name: TMRA2
-  address: 0x4003A000
+  address: 0x4003A400
   registers:
     kind: tmra
     block: TMRA
@@ -480,7 +482,7 @@
       register: FCG2
       field: PWC_FCG2_TMRA_2
 - name: TMRA3
-  address: 0x4003A000
+  address: 0x4003A800
   registers:
     kind: tmra
     block: TMRA
@@ -490,7 +492,7 @@
       register: FCG2
       field: PWC_FCG2_TMRA_3
 - name: TMRA4
-  address: 0x4003A000
+  address: 0x4003AC00
   registers:
     kind: tmra
     block: TMRA
@@ -500,7 +502,7 @@
       register: FCG2
       field: PWC_FCG2_TMRA_4
 - name: TMRA5
-  address: 0x4003A000
+  address: 0x40026000
   registers:
     kind: tmra
     block: TMRA
@@ -530,7 +532,7 @@
       register: FCG3
       field: PWC_FCG3_USART1
 - name: USART2
-  address: 0x4001CC00
+  address: 0x4001D000
   registers:
     kind: usart
     block: USART
@@ -550,7 +552,7 @@
       register: FCG3
       field: PWC_FCG3_USART3
 - name: USART4
-  address: 0x4001CC00
+  address: 0x40020C00
   registers:
     kind: usart
     block: USART
@@ -560,7 +562,7 @@
       register: FCG3
       field: PWC_FCG3_USART4
 - name: USART5
-  address: 0x4001CC00
+  address: 0x40021000
   registers:
     kind: usart
     block: USART
@@ -570,7 +572,7 @@
       register: FCG3
       field: PWC_FCG3_USART5
 - name: USART6
-  address: 0x4001D400
+  address: 0x40021400
   registers:
     kind: usart
     block: USART
