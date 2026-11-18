@@ -397,30 +397,30 @@ HC32A472,SWINT29,29,
 HC32A472,SWINT30,30,
 HC32A472,SWINT31,31,
 HC32A472,DMA1_ERR,32,
-HC32A472,DMA1_TC0_BTC0,33,DMA1 Transmission Complete 0 or Block Transmission Complete 0 interrupt
-HC32A472,DMA1_TC1_BTC1,34,DMA1 Transmission Complete 1 or Block Transmission Complete 1 interrupt
-HC32A472,DMA1_TC2_BTC2,35,DMA1 Transmission Complete 2 or Block Transmission Complete 2 interrupt
-HC32A472,DMA1_TC3_BTC3,36,DMA1 Transmission Complete 3 or Block Transmission Complete 3 interrupt
-HC32A472,DMA1_TC4_BTC4,37,DMA1 Transmission Complete 4 or Block Transmission Complete 4 interrupt
-HC32A472,DMA1_TC5_BTC5,38,DMA1 Transmission Complete 5 or Block Transmission Complete 5 interrupt
-HC32A472,DMA1_TC6_BTC6,39,DMA1 Transmission Complete 6 or Block Transmission Complete 6 interrupt
-HC32A472,DMA1_TC7_BTC7,40,DMA1 Transmission Complete 7 or Block Transmission Complete 7 interrupt
-HC32A472,EFM_PEERR_RDCOL,41,EFM Program Erase error or Read Column interrupt
+HC32A472,DMA1_TC0_BTC0,33,DMA1_TC0_BTC0 interrupt
+HC32A472,DMA1_TC1_BTC1,34,DMA1_TC1_BTC1 interrupt
+HC32A472,DMA1_TC2_BTC2,35,DMA1_TC2_BTC2 interrupt
+HC32A472,DMA1_TC3_BTC3,36,DMA1_TC3_BTC3 interrupt
+HC32A472,DMA1_TC4_BTC4,37,DMA1_TC4_BTC4 interrupt
+HC32A472,DMA1_TC5_BTC5,38,DMA1_TC5_BTC5 interrupt
+HC32A472,DMA1_TC6_BTC6,39,DMA1_TC6_BTC6 interrupt
+HC32A472,DMA1_TC7_BTC7,40,DMA1_TC7_BTC7 interrupt
+HC32A472,EFM_PEERR_RDCOL,41,EFM_PEERR_RDCOL interrupt
 HC32A472,EFM_OPTEND,42,
-HC32A472,QSPI,43,QSPI flash access error interrupt
+HC32A472,QSPI,43,QSPI interrupt
 HC32A472,DCU1,44,
 HC32A472,DCU2,45,
 HC32A472,DCU3,46,
 HC32A472,DMA2_ERR,47,
-HC32A472,DMA2_TC0_BTC0,48,DMA2 Transmission Complete 0 or Block Transmission Complete 0 interrupt
-HC32A472,DMA2_TC1_BTC1,49,DMA2 Transmission Complete 1 or Block Transmission Complete 1 interrupt
-HC32A472,DMA2_TC2_BTC2,50,DMA2 Transmission Complete 2 or Block Transmission Complete 2 interrupt
-HC32A472,DMA2_TC3_BTC3,51,DMA2 Transmission Complete 3 or Block Transmission Complete 3 interrupt
-HC32A472,DMA2_TC4_BTC4,52,DMA2 Transmission Complete 4 or Block Transmission Complete 4 interrupt
-HC32A472,DMA2_TC5_BTC5,53,DMA2 Transmission Complete 5 or Block Transmission Complete 5 interrupt
-HC32A472,DMA2_TC6_BTC6,54,DMA2 Transmission Complete 6 or Block Transmission Complete 6 interrupt
-HC32A472,DMA2_TC7_BTC7,55,DMA2 Transmission Complete 7 or Block Transmission Complete 7 interrupt
-HC32A472,MAU,56,MAU calculate complete interrupt
+HC32A472,DMA2_TC0_BTC0,48,DMA2_TC0_BTC0 interrupt
+HC32A472,DMA2_TC1_BTC1,49,DMA2_TC1_BTC1 interrupt
+HC32A472,DMA2_TC2_BTC2,50,DMA2_TC2_BTC2 interrupt
+HC32A472,DMA2_TC3_BTC3,51,DMA2_TC3_BTC3 interrupt
+HC32A472,DMA2_TC4_BTC4,52,DMA2_TC4_BTC4 interrupt
+HC32A472,DMA2_TC5_BTC5,53,DMA2_TC5_BTC5 interrupt
+HC32A472,DMA2_TC6_BTC6,54,DMA2_TC6_BTC6 interrupt
+HC32A472,DMA2_TC7_BTC7,55,DMA2_TC7_BTC7 interrupt
+HC32A472,MAU,56,MAU interrupt
 HC32A472,FMAC1_FIR,57,
 HC32A472,FMAC2_FIR,58,
 HC32A472,FMAC3_FIR,59,
@@ -438,58 +438,58 @@ HC32A472,TMR2_4_OVF,70,
 HC32A472,RTC,71,RTC interrupt
 HC32A472,XTAL,72,
 HC32A472,WKTM,73,
-HC32A472,SWDT,74,SWDT underflow or update error interrupt
-HC32A472,TMR6_1_GCMP,75,Timer6 unit 1 compare match interrupt
-HC32A472,TMR6_1_OVF_UDF,76,Timer6 unit 1 overflow or underflow interrupt
+HC32A472,SWDT,74,SWDT interrupt
+HC32A472,TMR6_1_GCMP,75,TMR6_1_GCMP interrupt
+HC32A472,TMR6_1_OVF_UDF,76,TMR6_1_OVF_UDF interrupt
 HC32A472,TMR6_1_DTE,77,
-HC32A472,TMR6_1_SCMP,78,Timer6 unit 10 special compare match interrupt
-HC32A472,TMRA_1_OVF_UDF,79,TimerA unit 1 overflow or underflow interrupt
-HC32A472,TMRA_1_CMP,80,TimerA unit 2 compare match interrupt
-HC32A472,TMR6_2_GCMP,81,Timer6 unit 2 compare match interrupt
-HC32A472,TMR6_2_OVF_UDF,82,Timer6 unit 2 overflow or underflow interrupt
+HC32A472,TMR6_1_SCMP,78,TMR6_1_SCMP interrupt
+HC32A472,TMRA_1_OVF_UDF,79,TMRA_1_OVF_UDF interrupt
+HC32A472,TMRA_1_CMP,80,TMRA_1_CMP interrupt
+HC32A472,TMR6_2_GCMP,81,TMR6_2_GCMP interrupt
+HC32A472,TMR6_2_OVF_UDF,82,TMR6_2_OVF_UDF interrupt
 HC32A472,TMR6_2_DTE,83,
-HC32A472,TMR6_2_SCMP,84,Timer6 unit 2 special compare match interrupt
-HC32A472,TMRA_2_OVF_UDF,85,TimerA unit 2 overflow or underflow interrupt
-HC32A472,TMRA_2_CMP,86,TimerA unit 3 compare match interrupt
-HC32A472,TMR6_3_GCMP,87,Timer6 unit 3 compare match interrupt
-HC32A472,TMR6_3_OVF_UDF,88,Timer6 unit 3 overflow or underflow interrupt
+HC32A472,TMR6_2_SCMP,84,TMR6_2_SCMP interrupt
+HC32A472,TMRA_2_OVF_UDF,85,TMRA_2_OVF_UDF interrupt
+HC32A472,TMRA_2_CMP,86,TMRA_2_CMP interrupt
+HC32A472,TMR6_3_GCMP,87,TMR6_3_GCMP interrupt
+HC32A472,TMR6_3_OVF_UDF,88,TMR6_3_OVF_UDF interrupt
 HC32A472,TMR6_3_DTE,89,
-HC32A472,TMR6_3_SCMP,90,Timer6 unit 3 special compare match interrupt
-HC32A472,TMRA_3_OVF_UDF,91,TimerA unit 3 overflow or underflow interrupt
-HC32A472,TMRA_3_CMP,92,TimerA unit 4 compare match interrupt
-HC32A472,TMR6_4_GCMP,93,Timer6 unit 4 compare match interrupt
-HC32A472,TMR6_4_OVF_UDF,94,Timer6 unit 4 overflow or underflow interrupt
+HC32A472,TMR6_3_SCMP,90,TMR6_3_SCMP interrupt
+HC32A472,TMRA_3_OVF_UDF,91,TMRA_3_OVF_UDF interrupt
+HC32A472,TMRA_3_CMP,92,TMRA_3_CMP interrupt
+HC32A472,TMR6_4_GCMP,93,TMR6_4_GCMP interrupt
+HC32A472,TMR6_4_OVF_UDF,94,TMR6_4_OVF_UDF interrupt
 HC32A472,TMR6_4_DTE,95,
-HC32A472,TMR6_4_SCMP,96,Timer6 unit 4 special compare match interrupt
-HC32A472,TMRA_4_OVF_UDF,97,TimerA unit 4 overflow or underflow interrupt
+HC32A472,TMR6_4_SCMP,96,TMR6_4_SCMP interrupt
+HC32A472,TMRA_4_OVF_UDF,97,TMRA_4_OVF_UDF interrupt
 HC32A472,TMRA_4_CMP,98,
-HC32A472,TMR6_5_GCMP,99,Timer6 unit 5 compare match interrupt
-HC32A472,TMR6_5_OVF_UDF,100,Timer6 unit 5 overflow or underflow interrupt
+HC32A472,TMR6_5_GCMP,99,TMR6_5_GCMP interrupt
+HC32A472,TMR6_5_OVF_UDF,100,TMR6_5_OVF_UDF interrupt
 HC32A472,TMR6_5_DTE,101,
-HC32A472,TMR6_5_SCMP,102,Timer6 unit 5 special compare match interrupt
-HC32A472,TMR6_6_GCMP,104,Timer6 unit 6 compare match interrupt
-HC32A472,TMR6_6_OVF_UDF,105,Timer6 unit 6 overflow or underflow interrupt
+HC32A472,TMR6_5_SCMP,102,TMR6_5_SCMP interrupt
+HC32A472,TMR6_6_GCMP,104,TMR6_6_GCMP interrupt
+HC32A472,TMR6_6_OVF_UDF,105,TMR6_6_OVF_UDF interrupt
 HC32A472,TMR6_6_DTE,106,
-HC32A472,TMR6_6_SCMP,107,Timer6 unit 6 special compare match interrupt
-HC32A472,TMR6_7_GCMP,108,Timer6 unit 7 compare match interrupt
-HC32A472,TMR6_7_OVF_UDF,109,Timer6 unit 7 overflow or underflow interrupt
+HC32A472,TMR6_6_SCMP,107,TMR6_6_SCMP interrupt
+HC32A472,TMR6_7_GCMP,108,TMR6_7_GCMP interrupt
+HC32A472,TMR6_7_OVF_UDF,109,TMR6_7_OVF_UDF interrupt
 HC32A472,TMR6_7_DTE,110,
-HC32A472,TMR6_7_SCMP,111,Timer6 unit 7 special compare match interrupt
-HC32A472,TMR6_8_GCMP,112,Timer6 unit 8 compare match interrupt
-HC32A472,TMR6_8_OVF_UDF,113,Timer6 unit 8 overflow or underflow interrupt
+HC32A472,TMR6_7_SCMP,111,TMR6_7_SCMP interrupt
+HC32A472,TMR6_8_GCMP,112,TMR6_8_GCMP interrupt
+HC32A472,TMR6_8_OVF_UDF,113,TMR6_8_OVF_UDF interrupt
 HC32A472,TMR6_8_DTE,114,
-HC32A472,TMR6_8_SCMP,115,Timer6 unit 8 special compare match interrupt
-HC32A472,TMR6_9_GCMP,116,Timer6 unit 9 compare match interrupt
-HC32A472,TMR6_9_OVF_UDF,117,Timer6 unit 9 overflow or underflow interrupt
+HC32A472,TMR6_8_SCMP,115,TMR6_8_SCMP interrupt
+HC32A472,TMR6_9_GCMP,116,TMR6_9_GCMP interrupt
+HC32A472,TMR6_9_OVF_UDF,117,TMR6_9_OVF_UDF interrupt
 HC32A472,TMR6_9_DTE,118,
-HC32A472,TMR6_9_SCMP,119,Timer6 unit 9 special compare match interrupt
-HC32A472,TMR6_10_GCMP,120,Timer6 unit 10 compare match interrupt
-HC32A472,TMR6_10_OVF_UDF,121,Timer6 unit 10 overflow or underflow interrupt
+HC32A472,TMR6_9_SCMP,119,TMR6_9_SCMP interrupt
+HC32A472,TMR6_10_GCMP,120,TMR6_10_GCMP interrupt
+HC32A472,TMR6_10_OVF_UDF,121,TMR6_10_OVF_UDF interrupt
 HC32A472,TMR6_10_DTE,122,
 HC32A472,TMR6_10_SCMP,123,
-HC32A472,TMR4_1_GCMP,124,Timer4 unit 1 compare match interrupt
-HC32A472,TMR4_1_OVF_UDF,125,Timer4 unit 1 overflow or underflow interrupt
-HC32A472,TMR4_1_RELOAD,126,Timer4 unit 1 reload match interrupt
+HC32A472,TMR4_1_GCMP,124,TMR4_1_GCMP interrupt
+HC32A472,TMR4_1_OVF_UDF,125,TMR4_1_OVF_UDF interrupt
+HC32A472,TMR4_1_RELOAD,126,TMR4_1_RELOAD interrupt
 HC32A472,TMR4_1_SCMP,127,
 HC32A472,CMP1,128,CMP1 interrupt
 HC32A472,CMP2,129,CMP2 interrupt
@@ -498,44 +498,44 @@ HC32A472,CMP4,131,CMP4 interrupt
 HC32A472,CAN1_INT,132,
 HC32A472,CAN2_INT,133,
 HC32A472,CAN3_INT,134,
-HC32A472,USART1,135,USART unit 1 interrupt
-HC32A472,USART2,136,USART unit 2 interrupt
+HC32A472,USART1,135,USART1 interrupt
+HC32A472,USART2,136,USART2 interrupt
 HC32A472,SPI1,137,
 HC32A472,SPI2,138,
-HC32A472,TMRA_5_OVF_UDF,139,TimerA unit 5 overflow or underflow interrupt
-HC32A472,TMRA_5_CMP,140,TimerA unit 5 compare match interrupt
-HC32A472,TMRA_6_OVF_UDF,141,TimerA unit 6 overflow or underflow interrupt
-HC32A472,TMRA_6_CMP,142,TimerA unit 6 compare match interrupt
+HC32A472,TMRA_5_OVF_UDF,139,TMRA_5_OVF_UDF interrupt
+HC32A472,TMRA_5_CMP,140,TMRA_5_CMP interrupt
+HC32A472,TMRA_6_OVF_UDF,141,TMRA_6_OVF_UDF interrupt
+HC32A472,TMRA_6_CMP,142,TMRA_6_CMP interrupt
 HC32A472,USBFS_GLB,143,
-HC32A472,EVENT_PORT1,144,event port 1 interrupt
-HC32A472,EVENT_PORT2,145,event port 2 interrupt
-HC32A472,EVENT_PORT3,146,event port 3 interrupt
-HC32A472,EVENT_PORT4,147,event port 4 interrupt
-HC32A472,USART3,148,USART unit 3 interrupt
-HC32A472,USART4,149,USART unit 4 interrupt
+HC32A472,EVENT_PORT1,144,EVENT_PORT1 interrupt
+HC32A472,EVENT_PORT2,145,EVENT_PORT2 interrupt
+HC32A472,EVENT_PORT3,146,EVENT_PORT3 interrupt
+HC32A472,EVENT_PORT4,147,EVENT_PORT4 interrupt
+HC32A472,USART3,148,USART3 interrupt
+HC32A472,USART4,149,USART4 interrupt
 HC32A472,SPI3,150,
 HC32A472,SPI4,151,
-HC32A472,EMB_GR0,152,EMB Group 0 interrupt
-HC32A472,EMB_GR1,153,EMB Group 1 interrupt
-HC32A472,EMB_GR2,154,EMB Group 2 interrupt
-HC32A472,EMB_GR3,155,EMB Group 3 interrupt
-HC32A472,EMB_GR4,156,EMB Group 4 interrupt
-HC32A472,EMB_GR5,157,EMB Group 5 interrupt
-HC32A472,EMB_GR6,158,EMB Group 6 interrupt
+HC32A472,EMB_GR0,152,EMB_GR0 interrupt
+HC32A472,EMB_GR1,153,EMB_GR1 interrupt
+HC32A472,EMB_GR2,154,EMB_GR2 interrupt
+HC32A472,EMB_GR3,155,EMB_GR3 interrupt
+HC32A472,EMB_GR4,156,EMB_GR4 interrupt
+HC32A472,EMB_GR5,157,EMB_GR5 interrupt
+HC32A472,EMB_GR6,158,EMB_GR6 interrupt
 HC32A472,HASH,159,
-HC32A472,USART5,160,USART unit 5 interrupt
-HC32A472,USART6,161,USART unit 6 interrupt
+HC32A472,USART5,160,USART5 interrupt
+HC32A472,USART6,161,USART6 interrupt
 HC32A472,MDIO,162,MDIO interrupt
 HC32A472,I2C1,164,
 HC32A472,I2C2,165,
 HC32A472,I2C3,166,
-HC32A472,USART1_WUPI,167,USART unit 1 RX weak-up interrupt
+HC32A472,USART1_WUPI,167,USART1_WUPI interrupt
 HC32A472,LVD1,168,
 HC32A472,LVD2,169,
-HC32A472,OTS,170,Temperature measure complete interrupt
+HC32A472,OTS,170,OTS interrupt
 HC32A472,FCM,171,
-HC32A472,WDT,172,WDT underflow or update error interrupt
-HC32A472,CTC,173,HRC frequency calibrate value overflow interrupt
+HC32A472,WDT,172,WDT interrupt
+HC32A472,CTC,173,CTC interrupt
 HC32A472,ADC1,174,
 HC32A472,ADC2,175,
 HC32A472,ADC3,176,
@@ -963,42 +963,6 @@ HC32F155,INT028,28,共享中断向量，经 INTC INT_SEL/INT_VSSEL 选择外设�
 HC32F155,INT029,29,共享中断向量，经 INTC INT_SEL/INT_VSSEL 选择外设中断源
 HC32F155,INT030,30,共享中断向量，经 INTC INT_SEL/INT_VSSEL 选择外设中断源
 HC32F155,INT031,31,共享中断向量，经 INTC INT_SEL/INT_VSSEL 选择外设中断源
-HC32F175,NMI,-14,Non Maskable
-HC32F175,HardFault,-13,Hard Fault
-HC32F175,SVC,-5,SV Call
-HC32F175,PendSV,-2,Pend SV
-HC32F175,SysTick,-1,System Tick
-HC32F175,WWDT,0,
-HC32F175,IWDT,1,
-HC32F175,LVD,2,
-HC32F175,INPUT0_3,3,
-HC32F175,INPUT4_7,4,
-HC32F175,INPUT8_11,5,
-HC32F175,INPUT12_15,6,
-HC32F175,DMAC,7,
-HC32F175,ATIM3,8,
-HC32F175,USART0,9,
-HC32F175,USART1,10,
-HC32F175,LPUART0,11,
-HC32F175,LPUART1,12,
-HC32F175,SPI0,13,
-HC32F175,SPI1,14,
-HC32F175,I2C0,15,
-HC32F175,I2C1,16,
-HC32F175,GTIM0_1,17,
-HC32F175,GTIM2_3,18,
-HC32F175,GTIM4_5,19,
-HC32F175,GTIM6_7_8,20,
-HC32F175,LPTIM0_1,21,
-HC32F175,USART2,22,
-HC32F175,USART3,23,
-HC32F175,ADC,24,
-HC32F175,USART4,25,
-HC32F175,USART5,26,
-HC32F175,WKUPIO,27,
-HC32F175,RTC,28,
-HC32F175,EFM_DFM,30,
-HC32F175,CTRIM,31,
 HC32F334,NMI,-14,Non Maskable
 HC32F334,HardFault,-13,Hard Fault
 HC32F334,MemManageFault,-12,MemManage Fault
@@ -1073,47 +1037,47 @@ HC32F334,SWINT29,29,
 HC32F334,SWINT30,30,
 HC32F334,SWINT31,31,
 HC32F334,DMA_ERR,32,
-HC32F334,DMA_TC0_BTC0,33,DMA Transmission Complete 0 or Block Transmission Complete 0 interrupt
-HC32F334,DMA_TC1_BTC1,34,DMA Transmission Complete 1 or Block Transmission Complete 1 interrupt
-HC32F334,DMA_TC2_BTC2,35,DMA Transmission Complete 2 or Block Transmission Complete 2 interrupt
-HC32F334,DMA_TC3_BTC3,36,DMA Transmission Complete 3 or Block Transmission Complete 3 interrupt
-HC32F334,DMA_TC4_BTC4,37,DMA Transmission Complete 4 or Block Transmission Complete 4 interrupt
-HC32F334,DMA_TC5_BTC5,38,DMA Transmission Complete 5 or Block Transmission Complete 5 interrupt
-HC32F334,DMA_TC6_BTC6,39,DMA Transmission Complete 6 or Block Transmission Complete 6 interrupt
-HC32F334,DMA_TC7_BTC7,40,DMA Transmission Complete 7 or Block Transmission Complete 7 interrupt
+HC32F334,DMA_TC0_BTC0,33,DMA_TC0_BTC0 interrupt
+HC32F334,DMA_TC1_BTC1,34,DMA_TC1_BTC1 interrupt
+HC32F334,DMA_TC2_BTC2,35,DMA_TC2_BTC2 interrupt
+HC32F334,DMA_TC3_BTC3,36,DMA_TC3_BTC3 interrupt
+HC32F334,DMA_TC4_BTC4,37,DMA_TC4_BTC4 interrupt
+HC32F334,DMA_TC5_BTC5,38,DMA_TC5_BTC5 interrupt
+HC32F334,DMA_TC6_BTC6,39,DMA_TC6_BTC6 interrupt
+HC32F334,DMA_TC7_BTC7,40,DMA_TC7_BTC7 interrupt
 HC32F334,EFM_PEERR_RDCOL,41,
 HC32F334,EFM_OPTEND,42,
-HC32F334,FPU_ERR,43,FPU error interrupt
-HC32F334,TMR0_1,44,Timer0 unit 1 interrupt
-HC32F334,TMR0_2,45,Timer0 unit 2 interrupt
+HC32F334,FPU_ERR,43,FPU_ERR interrupt
+HC32F334,TMR0_1,44,TMR0_1 interrupt
+HC32F334,TMR0_2,45,TMR0_2 interrupt
 HC32F334,RTC,46,RTC interrupt
 HC32F334,XTAL,47,
-HC32F334,WKTM,48,WKTM compare matched interrupt
-HC32F334,SWDT,49,SWDT underflow or update error interrupt
-HC32F334,TMR6_1_GCMP,50,Timer6 unit 1 compare matched interrupt
-HC32F334,TMR6_1_OVF_UDF,51,Timer6 unit 1 overflow or underflow interrupt
-HC32F334,TMR6_1_DTE,52,Timer6 unit 1 dead time error interrupt
-HC32F334,TMR6_1_SCMP,53,Timer6 unit 1 special compare matched interrupt
-HC32F334,TMRA_1_OVF_UDF,54,TimerA unit 1 overflow or underflow interrupt
-HC32F334,TMRA_1_CMP,55,TimerA unit 1 compare matched interrupt
-HC32F334,TMR6_2_GCMP,56,Timer 6 unit 2 compare matched interrupt
-HC32F334,TMR6_2_OVF_UDF,57,Timer 6 unit 2 overflow or underflow interrupt
-HC32F334,TMR6_2_DTE,58,Timer 6 unit 2 dead time error interrupt
-HC32F334,TMR6_2_SCMP,59,Timer 6 unit 2 special compare matched interrupt
-HC32F334,TMRA_2_OVF_UDF,60,TimerA unit 2 overflow or underflow interrupt
-HC32F334,TMRA_2_CMP,61,TimerA unit 2 compare matched interrupt
-HC32F334,TMR6_3_GCMP,62,TMR6 unit 3 compare matched interrupt
-HC32F334,TMR6_3_OVF_UDF,63,TMR6 unit 3 overflow or underflow interrupt
-HC32F334,TMR6_3_DTE,64,TMR6 unit 3 dead time error interrupt
-HC32F334,TMR6_3_SCMP,65,TMR6 unit 3 special compare matched interrupt
-HC32F334,TMRA_3_OVF_UDF,66,TimerA unit 3 overflow or underflow interrupt
-HC32F334,TMRA_3_CMP,67,TimerA unit 3 compare matched interrupt
-HC32F334,TMR6_4_GCMP,68,TMR6 unit 4 compare matched interrupt
-HC32F334,TMR6_4_OVF_UDF,69,TMR6 unit 4 overflow or underflow interrupt
-HC32F334,TMR6_4_DTE,70,TMR6 unit 4 dead time error interrupt
-HC32F334,TMR6_4_SCMP,71,TMR6 unit 4 special compare matched interrupt
-HC32F334,TMRA_4_OVF_UDF,72,TimerA unit 4 overflow or underflow interrupt
-HC32F334,TMRA_4_CMP,73,TimerA unit 4 compare matched interrupt
+HC32F334,WKTM,48,WKTM interrupt
+HC32F334,SWDT,49,SWDT interrupt
+HC32F334,TMR6_1_GCMP,50,TMR6_1_GCMP interrupt
+HC32F334,TMR6_1_OVF_UDF,51,TMR6_1_OVF_UDF interrupt
+HC32F334,TMR6_1_DTE,52,TMR6_1_DTE interrupt
+HC32F334,TMR6_1_SCMP,53,TMR6_1_SCMP interrupt
+HC32F334,TMRA_1_OVF_UDF,54,TMRA_1_OVF_UDF interrupt
+HC32F334,TMRA_1_CMP,55,TMRA_1_CMP interrupt
+HC32F334,TMR6_2_GCMP,56,TMR6_2_GCMP interrupt
+HC32F334,TMR6_2_OVF_UDF,57,TMR6_2_OVF_UDF interrupt
+HC32F334,TMR6_2_DTE,58,TMR6_2_DTE interrupt
+HC32F334,TMR6_2_SCMP,59,TMR6_2_SCMP interrupt
+HC32F334,TMRA_2_OVF_UDF,60,TMRA_2_OVF_UDF interrupt
+HC32F334,TMRA_2_CMP,61,TMRA_2_CMP interrupt
+HC32F334,TMR6_3_GCMP,62,TMR6_3_GCMP interrupt
+HC32F334,TMR6_3_OVF_UDF,63,TMR6_3_OVF_UDF interrupt
+HC32F334,TMR6_3_DTE,64,TMR6_3_DTE interrupt
+HC32F334,TMR6_3_SCMP,65,TMR6_3_SCMP interrupt
+HC32F334,TMRA_3_OVF_UDF,66,TMRA_3_OVF_UDF interrupt
+HC32F334,TMRA_3_CMP,67,TMRA_3_CMP interrupt
+HC32F334,TMR6_4_GCMP,68,TMR6_4_GCMP interrupt
+HC32F334,TMR6_4_OVF_UDF,69,TMR6_4_OVF_UDF interrupt
+HC32F334,TMR6_4_DTE,70,TMR6_4_DTE interrupt
+HC32F334,TMR6_4_SCMP,71,TMR6_4_SCMP interrupt
+HC32F334,TMRA_4_OVF_UDF,72,TMRA_4_OVF_UDF interrupt
+HC32F334,TMRA_4_CMP,73,TMRA_4_CMP interrupt
 HC32F334,HRPWM_1_GCMP,74,
 HC32F334,HRPWM_1_OVF_UDF,75,
 HC32F334,HRPWM_1_SCMP,76,
@@ -1123,10 +1087,10 @@ HC32F334,HRPWM_2_OVF_UDF,79,
 HC32F334,HRPWM_2_SCMP,80,
 HC32F334,HRPWM_2_GCAP,81,
 HC32F334,HRPWM,82,
-HC32F334,EMB_GR0,83,EMB Group0 interrupt
-HC32F334,EMB_GR1,84,EMB Group1 interrupt
-HC32F334,EMB_GR2,85,EMB Group2 interrupt
-HC32F334,EMB_GR3,86,EMB Group3 interrupt
+HC32F334,EMB_GR0,83,EMB_GR0 interrupt
+HC32F334,EMB_GR1,84,EMB_GR1 interrupt
+HC32F334,EMB_GR2,85,EMB_GR2 interrupt
+HC32F334,EMB_GR3,86,EMB_GR3 interrupt
 HC32F334,HRPWM_3_GCMP,87,
 HC32F334,HRPWM_3_OVF_UDF,88,
 HC32F334,HRPWM_3_SCMP,89,
@@ -1135,11 +1099,11 @@ HC32F334,HRPWM_4_GCMP,91,
 HC32F334,HRPWM_4_OVF_UDF,92,
 HC32F334,HRPWM_4_SCMP,93,
 HC32F334,HRPWM_4_GCAP,94,
-HC32F334,EMB_GR4,95,EMB Group4 interrupt
-HC32F334,EMB_GR5,96,EMB Group5 interrupt
-HC32F334,EMB_GR6,97,EMB Group6 interrupt
-HC32F334,EMB_GR7,98,EMB Group7 interrupt
-HC32F334,EMB_GR8,99,EMB Group8 interrupt
+HC32F334,EMB_GR4,95,EMB_GR4 interrupt
+HC32F334,EMB_GR5,96,EMB_GR5 interrupt
+HC32F334,EMB_GR6,97,EMB_GR6 interrupt
+HC32F334,EMB_GR7,98,EMB_GR7 interrupt
+HC32F334,EMB_GR8,99,EMB_GR8 interrupt
 HC32F334,HRPWM_5_GCMP,100,
 HC32F334,HRPWM_5_OVF_UDF,101,
 HC32F334,HRPWM_5_SCMP,102,
@@ -1161,30 +1125,30 @@ HC32F334,CMP1,117,CMP1 interrupt
 HC32F334,CMP2,118,CMP2 interrupt
 HC32F334,CMP3,119,CMP3 interrupt
 HC32F334,I2C,120,I2C interrupt
-HC32F334,USART1,121,USART unit 1 interrupt
+HC32F334,USART1,121,USART1 interrupt
 HC32F334,USART1_TCI,122,
 HC32F334,SPI,123,SPI interrupt
-HC32F334,TMRA_5_OVF_UDF,124,TimerA unit 5 overflow or underflow interrupt
-HC32F334,TMRA_5_CMP,125,TimerA unit 5 compare matched interrupt
-HC32F334,EVENT_PORT1,126,event port 1 interrupt
-HC32F334,EVENT_PORT2,127,event port 2 interrupt
-HC32F334,EVENT_PORT3,128,event port 3 interrupt
-HC32F334,EVENT_PORT4,129,event port 4 interrupt
-HC32F334,USART2,130,USART unit 2 interrupt
+HC32F334,TMRA_5_OVF_UDF,124,TMRA_5_OVF_UDF interrupt
+HC32F334,TMRA_5_CMP,125,TMRA_5_CMP interrupt
+HC32F334,EVENT_PORT1,126,EVENT_PORT1 interrupt
+HC32F334,EVENT_PORT2,127,EVENT_PORT2 interrupt
+HC32F334,EVENT_PORT3,128,EVENT_PORT3 interrupt
+HC32F334,EVENT_PORT4,129,EVENT_PORT4 interrupt
+HC32F334,USART2,130,USART2 interrupt
 HC32F334,USART2_TCI,131,
-HC32F334,USART3,132,USART unit 3 interrupt
+HC32F334,USART3,132,USART3 interrupt
 HC32F334,USART3_TCI,133,
-HC32F334,USART4,134,USART unit 4 interrupt
+HC32F334,USART4,134,USART4 interrupt
 HC32F334,USART4_TCI,135,
 HC32F334,USART1_WUPI,137,
 HC32F334,LVD1,138,
 HC32F334,LVD2,139,
-HC32F334,FCM,140,Frequency measurement interrupt
-HC32F334,WDT,141,WDT underflow or update error interrupt
-HC32F334,CTC,142,CTC error interrupt
-HC32F334,ADC1,143,ADC unit 1 interrupt
-HC32F334,ADC2,144,ADC unit 2 interrupt
-HC32F334,ADC3,145,ADC unit 3 interrupt
+HC32F334,FCM,140,FCM interrupt
+HC32F334,WDT,141,WDT interrupt
+HC32F334,CTC,142,CTC interrupt
+HC32F334,ADC1,143,ADC1 interrupt
+HC32F334,ADC2,144,ADC2 interrupt
+HC32F334,ADC3,145,ADC3 interrupt
 HC32F336,NMI,-14,Non Maskable
 HC32F336,HardFault,-13,Hard Fault
 HC32F336,MemManageFault,-12,MemManage Fault
@@ -1259,47 +1223,47 @@ HC32F336,SWINT29,29,
 HC32F336,SWINT30,30,
 HC32F336,SWINT31,31,
 HC32F336,DMA_ERR,32,
-HC32F336,DMA_TC0_BTC0,33,DMA Transmission Complete 0 or Block Transmission Complete 0 interrupt
-HC32F336,DMA_TC1_BTC1,34,DMA Transmission Complete 1 or Block Transmission Complete 1 interrupt
-HC32F336,DMA_TC2_BTC2,35,DMA Transmission Complete 2 or Block Transmission Complete 2 interrupt
-HC32F336,DMA_TC3_BTC3,36,DMA Transmission Complete 3 or Block Transmission Complete 3 interrupt
-HC32F336,DMA_TC4_BTC4,37,DMA Transmission Complete 4 or Block Transmission Complete 4 interrupt
-HC32F336,DMA_TC5_BTC5,38,DMA Transmission Complete 5 or Block Transmission Complete 5 interrupt
-HC32F336,DMA_TC6_BTC6,39,DMA Transmission Complete 6 or Block Transmission Complete 6 interrupt
-HC32F336,DMA_TC7_BTC7,40,DMA Transmission Complete 7 or Block Transmission Complete 7 interrupt
+HC32F336,DMA_TC0_BTC0,33,DMA_TC0_BTC0 interrupt
+HC32F336,DMA_TC1_BTC1,34,DMA_TC1_BTC1 interrupt
+HC32F336,DMA_TC2_BTC2,35,DMA_TC2_BTC2 interrupt
+HC32F336,DMA_TC3_BTC3,36,DMA_TC3_BTC3 interrupt
+HC32F336,DMA_TC4_BTC4,37,DMA_TC4_BTC4 interrupt
+HC32F336,DMA_TC5_BTC5,38,DMA_TC5_BTC5 interrupt
+HC32F336,DMA_TC6_BTC6,39,DMA_TC6_BTC6 interrupt
+HC32F336,DMA_TC7_BTC7,40,DMA_TC7_BTC7 interrupt
 HC32F336,EFM_PEERR_RDCOL,41,
 HC32F336,EFM_OPTEND,42,
-HC32F336,FPU_ERR,43,FPU error interrupt
-HC32F336,TMR0_1,44,Timer0 unit 1 interrupt
-HC32F336,TMR0_2,45,Timer0 unit 2 interrupt
+HC32F336,FPU_ERR,43,FPU_ERR interrupt
+HC32F336,TMR0_1,44,TMR0_1 interrupt
+HC32F336,TMR0_2,45,TMR0_2 interrupt
 HC32F336,RTC,46,RTC interrupt
 HC32F336,XTAL,47,
-HC32F336,WKTM,48,WKTM compare matched interrupt
-HC32F336,SWDT,49,SWDT underflow or update error interrupt
-HC32F336,TMR6_1_GCMP,50,Timer6 unit 1 compare matched interrupt
-HC32F336,TMR6_1_OVF_UDF,51,Timer6 unit 1 overflow or underflow interrupt
-HC32F336,TMR6_1_DTE,52,Timer6 unit 1 dead time error interrupt
-HC32F336,TMR6_1_SCMP,53,Timer6 unit 1 special compare matched interrupt
-HC32F336,TMRA_1_OVF_UDF,54,TimerA unit 1 overflow or underflow interrupt
-HC32F336,TMRA_1_CMP,55,TimerA unit 1 compare matched interrupt
-HC32F336,TMR6_2_GCMP,56,Timer 6 unit 2 compare matched interrupt
-HC32F336,TMR6_2_OVF_UDF,57,Timer 6 unit 2 overflow or underflow interrupt
-HC32F336,TMR6_2_DTE,58,Timer 6 unit 2 dead time error interrupt
-HC32F336,TMR6_2_SCMP,59,Timer 6 unit 2 special compare matched interrupt
-HC32F336,TMRA_2_OVF_UDF,60,TimerA unit 2 overflow or underflow interrupt
-HC32F336,TMRA_2_CMP,61,TimerA unit 2 compare matched interrupt
-HC32F336,TMR6_3_GCMP,62,TMR6 unit 3 compare matched interrupt
-HC32F336,TMR6_3_OVF_UDF,63,TMR6 unit 3 overflow or underflow interrupt
-HC32F336,TMR6_3_DTE,64,TMR6 unit 3 dead time error interrupt
-HC32F336,TMR6_3_SCMP,65,TMR6 unit 3 special compare matched interrupt
-HC32F336,TMRA_3_OVF_UDF,66,TimerA unit 3 overflow or underflow interrupt
-HC32F336,TMRA_3_CMP,67,TimerA unit 3 compare matched interrupt
-HC32F336,TMR6_4_GCMP,68,TMR6 unit 4 compare matched interrupt
-HC32F336,TMR6_4_OVF_UDF,69,TMR6 unit 4 overflow or underflow interrupt
-HC32F336,TMR6_4_DTE,70,TMR6 unit 4 dead time error interrupt
-HC32F336,TMR6_4_SCMP,71,TMR6 unit 4 special compare matched interrupt
-HC32F336,TMRA_4_OVF_UDF,72,TimerA unit 4 overflow or underflow interrupt
-HC32F336,TMRA_4_CMP,73,TimerA unit 4 compare matched interrupt
+HC32F336,WKTM,48,WKTM interrupt
+HC32F336,SWDT,49,SWDT interrupt
+HC32F336,TMR6_1_GCMP,50,TMR6_1_GCMP interrupt
+HC32F336,TMR6_1_OVF_UDF,51,TMR6_1_OVF_UDF interrupt
+HC32F336,TMR6_1_DTE,52,TMR6_1_DTE interrupt
+HC32F336,TMR6_1_SCMP,53,TMR6_1_SCMP interrupt
+HC32F336,TMRA_1_OVF_UDF,54,TMRA_1_OVF_UDF interrupt
+HC32F336,TMRA_1_CMP,55,TMRA_1_CMP interrupt
+HC32F336,TMR6_2_GCMP,56,TMR6_2_GCMP interrupt
+HC32F336,TMR6_2_OVF_UDF,57,TMR6_2_OVF_UDF interrupt
+HC32F336,TMR6_2_DTE,58,TMR6_2_DTE interrupt
+HC32F336,TMR6_2_SCMP,59,TMR6_2_SCMP interrupt
+HC32F336,TMRA_2_OVF_UDF,60,TMRA_2_OVF_UDF interrupt
+HC32F336,TMRA_2_CMP,61,TMRA_2_CMP interrupt
+HC32F336,TMR6_3_GCMP,62,TMR6_3_GCMP interrupt
+HC32F336,TMR6_3_OVF_UDF,63,TMR6_3_OVF_UDF interrupt
+HC32F336,TMR6_3_DTE,64,TMR6_3_DTE interrupt
+HC32F336,TMR6_3_SCMP,65,TMR6_3_SCMP interrupt
+HC32F336,TMRA_3_OVF_UDF,66,TMRA_3_OVF_UDF interrupt
+HC32F336,TMRA_3_CMP,67,TMRA_3_CMP interrupt
+HC32F336,TMR6_4_GCMP,68,TMR6_4_GCMP interrupt
+HC32F336,TMR6_4_OVF_UDF,69,TMR6_4_OVF_UDF interrupt
+HC32F336,TMR6_4_DTE,70,TMR6_4_DTE interrupt
+HC32F336,TMR6_4_SCMP,71,TMR6_4_SCMP interrupt
+HC32F336,TMRA_4_OVF_UDF,72,TMRA_4_OVF_UDF interrupt
+HC32F336,TMRA_4_CMP,73,TMRA_4_CMP interrupt
 HC32F336,HRPWM_1_GCMP,74,
 HC32F336,HRPWM_1_OVF_UDF,75,
 HC32F336,HRPWM_1_SCMP,76,
@@ -1309,10 +1273,10 @@ HC32F336,HRPWM_2_OVF_UDF,79,
 HC32F336,HRPWM_2_SCMP,80,
 HC32F336,HRPWM_2_GCAP,81,
 HC32F336,HRPWM,82,
-HC32F336,EMB_GR0,83,EMB Group0 interrupt
-HC32F336,EMB_GR1,84,EMB Group1 interrupt
-HC32F336,EMB_GR2,85,EMB Group2 interrupt
-HC32F336,EMB_GR3,86,EMB Group3 interrupt
+HC32F336,EMB_GR0,83,EMB_GR0 interrupt
+HC32F336,EMB_GR1,84,EMB_GR1 interrupt
+HC32F336,EMB_GR2,85,EMB_GR2 interrupt
+HC32F336,EMB_GR3,86,EMB_GR3 interrupt
 HC32F336,HRPWM_3_GCMP,87,
 HC32F336,HRPWM_3_OVF_UDF,88,
 HC32F336,HRPWM_3_SCMP,89,
@@ -1321,11 +1285,11 @@ HC32F336,HRPWM_4_GCMP,91,
 HC32F336,HRPWM_4_OVF_UDF,92,
 HC32F336,HRPWM_4_SCMP,93,
 HC32F336,HRPWM_4_GCAP,94,
-HC32F336,EMB_GR4,95,EMB Group4 interrupt
-HC32F336,EMB_GR5,96,EMB Group5 interrupt
-HC32F336,EMB_GR6,97,EMB Group6 interrupt
-HC32F336,EMB_GR7,98,EMB Group7 interrupt
-HC32F336,EMB_GR8,99,EMB Group8 interrupt
+HC32F336,EMB_GR4,95,EMB_GR4 interrupt
+HC32F336,EMB_GR5,96,EMB_GR5 interrupt
+HC32F336,EMB_GR6,97,EMB_GR6 interrupt
+HC32F336,EMB_GR7,98,EMB_GR7 interrupt
+HC32F336,EMB_GR8,99,EMB_GR8 interrupt
 HC32F336,HRPWM_5_GCMP,100,
 HC32F336,HRPWM_5_OVF_UDF,101,
 HC32F336,HRPWM_5_SCMP,102,
@@ -1347,30 +1311,30 @@ HC32F336,CMP1,117,CMP1 interrupt
 HC32F336,CMP2,118,CMP2 interrupt
 HC32F336,CMP3,119,CMP3 interrupt
 HC32F336,I2C,120,I2C interrupt
-HC32F336,USART1,121,USART unit 1 interrupt
+HC32F336,USART1,121,USART1 interrupt
 HC32F336,USART1_TCI,122,
 HC32F336,SPI,123,SPI interrupt
-HC32F336,TMRA_5_OVF_UDF,124,TimerA unit 5 overflow or underflow interrupt
-HC32F336,TMRA_5_CMP,125,TimerA unit 5 compare matched interrupt
-HC32F336,EVENT_PORT1,126,event port 1 interrupt
-HC32F336,EVENT_PORT2,127,event port 2 interrupt
-HC32F336,EVENT_PORT3,128,event port 3 interrupt
-HC32F336,EVENT_PORT4,129,event port 4 interrupt
-HC32F336,USART2,130,USART unit 2 interrupt
+HC32F336,TMRA_5_OVF_UDF,124,TMRA_5_OVF_UDF interrupt
+HC32F336,TMRA_5_CMP,125,TMRA_5_CMP interrupt
+HC32F336,EVENT_PORT1,126,EVENT_PORT1 interrupt
+HC32F336,EVENT_PORT2,127,EVENT_PORT2 interrupt
+HC32F336,EVENT_PORT3,128,EVENT_PORT3 interrupt
+HC32F336,EVENT_PORT4,129,EVENT_PORT4 interrupt
+HC32F336,USART2,130,USART2 interrupt
 HC32F336,USART2_TCI,131,
-HC32F336,USART3,132,USART unit 3 interrupt
+HC32F336,USART3,132,USART3 interrupt
 HC32F336,USART3_TCI,133,
-HC32F336,USART4,134,USART unit 4 interrupt
+HC32F336,USART4,134,USART4 interrupt
 HC32F336,USART4_TCI,135,
 HC32F336,USART1_WUPI,137,
 HC32F336,LVD1,138,
 HC32F336,LVD2,139,
-HC32F336,FCM,140,Frequency measurement interrupt
-HC32F336,WDT,141,WDT underflow or update error interrupt
-HC32F336,CTC,142,CTC error interrupt
-HC32F336,ADC1,143,ADC unit 1 interrupt
-HC32F336,ADC2,144,ADC unit 2 interrupt
-HC32F336,ADC3,145,ADC unit 3 interrupt
+HC32F336,FCM,140,FCM interrupt
+HC32F336,WDT,141,WDT interrupt
+HC32F336,CTC,142,CTC interrupt
+HC32F336,ADC1,143,ADC1 interrupt
+HC32F336,ADC2,144,ADC2 interrupt
+HC32F336,ADC3,145,ADC3 interrupt
 HC32F431,NMI,-14,Non Maskable
 HC32F431,HardFault,-13,Hard Fault
 HC32F431,MemManageFault,-12,MemManage Fault
@@ -1405,43 +1369,43 @@ HC32F431,EXTINT_PORT_EIRQ5,21,
 HC32F431,EXTINT_PORT_EIRQ6,22,
 HC32F431,EXTINT_PORT_EIRQ7,23,
 HC32F431,DMA_ERR,24,
-HC32F431,DMA_TC0_BTC0,25,DMA Transmission Complete 0 or Block Transmission Complete 0 interrupt
-HC32F431,DMA_TC1_BTC1,26,DMA Transmission Complete 1 or Block Transmission Complete 1 interrupt
-HC32F431,DMA_TC2_BTC2,27,DMA Transmission Complete 2 or Block Transmission Complete 2 interrupt
-HC32F431,DMA_TC3_BTC3,28,DMA Transmission Complete 3 or Block Transmission Complete 3 interrupt
+HC32F431,DMA_TC0_BTC0,25,DMA_TC0_BTC0 interrupt
+HC32F431,DMA_TC1_BTC1,26,DMA_TC1_BTC1 interrupt
+HC32F431,DMA_TC2_BTC2,27,DMA_TC2_BTC2 interrupt
+HC32F431,DMA_TC3_BTC3,28,DMA_TC3_BTC3 interrupt
 HC32F431,EFM_PEERR_RDCOL,29,
 HC32F431,EFM_OPTEND,30,
 HC32F431,DCU,31,DCU interrupt
 HC32F431,FPU,32,
 HC32F431,MAU,33,MAU interrupt
-HC32F431,TMR0_1,34,Timer0 unit 1 interrupt
-HC32F431,TMR0_2,35,Timer0 unit 2 interrupt
+HC32F431,TMR0_1,34,TMR0_1 interrupt
+HC32F431,TMR0_2,35,TMR0_2 interrupt
 HC32F431,XTAL,36,
-HC32F431,SWDT,37,SWDT underflow or refresh error interrupt
-HC32F431,TMRA_1_OVF_UDF,38,TimerA unit 1 overflow or underflow interrupt
-HC32F431,TMRA_1_CMP,39,TimerA unit 1 compare matched interrupt
-HC32F431,TMRA_2_OVF_UDF,40,TimerA unit 2 overflow or underflow interrupt
-HC32F431,TMRA_2_CMP,41,TimerA unit 2 compare matched interrupt
-HC32F431,TMRA_3_OVF_UDF,42,TimerA unit 3 overflow or underflow interrupt
-HC32F431,TMRA_3_CMP,43,TimerA unit 3 compare matched interrupt
-HC32F431,TMRA_4_OVF_UDF,44,TimerA unit 4 overflow or underflow interrupt
-HC32F431,TMRA_4_CMP,45,TimerA unit 4 compare matched interrupt
-HC32F431,EMB_GR0,46,EMB Group0 interrupt
-HC32F431,EMB_GR1,47,EMB Group1 interrupt
-HC32F431,TMR4_GCMP,48,Timer4 compare matched interrupt
-HC32F431,TMR4_OVF_UDF,49,Timer4 overflow or underflow interrupt
-HC32F431,TMR4_RELOAD,50,Timer4 reload matched interrupt
+HC32F431,SWDT,37,SWDT interrupt
+HC32F431,TMRA_1_OVF_UDF,38,TMRA_1_OVF_UDF interrupt
+HC32F431,TMRA_1_CMP,39,TMRA_1_CMP interrupt
+HC32F431,TMRA_2_OVF_UDF,40,TMRA_2_OVF_UDF interrupt
+HC32F431,TMRA_2_CMP,41,TMRA_2_CMP interrupt
+HC32F431,TMRA_3_OVF_UDF,42,TMRA_3_OVF_UDF interrupt
+HC32F431,TMRA_3_CMP,43,TMRA_3_CMP interrupt
+HC32F431,TMRA_4_OVF_UDF,44,TMRA_4_OVF_UDF interrupt
+HC32F431,TMRA_4_CMP,45,TMRA_4_CMP interrupt
+HC32F431,EMB_GR0,46,EMB_GR0 interrupt
+HC32F431,EMB_GR1,47,EMB_GR1 interrupt
+HC32F431,TMR4_GCMP,48,TMR4_GCMP interrupt
+HC32F431,TMR4_OVF_UDF,49,TMR4_OVF_UDF interrupt
+HC32F431,TMR4_RELOAD,50,TMR4_RELOAD interrupt
 HC32F431,TMR4_SCMP,51,
-HC32F431,USART1,52,USART unit 1 interrupt
+HC32F431,USART1,52,USART1 interrupt
 HC32F431,USART1_TCI,53,
 HC32F431,SPI,54,SPI interrupt
-HC32F431,TMRA_5_OVF_UDF,55,TimerA unit 5 overflow or underflow interrupt
-HC32F431,TMRA_5_CMP,56,TimerA unit 5 compare matched interrupt
-HC32F431,USART2,57,USART unit 2 interrupt
+HC32F431,TMRA_5_OVF_UDF,55,TMRA_5_OVF_UDF interrupt
+HC32F431,TMRA_5_CMP,56,TMRA_5_CMP interrupt
+HC32F431,USART2,57,USART2 interrupt
 HC32F431,USART2_TCI,58,
-HC32F431,USART3,59,USART unit 3 interrupt
+HC32F431,USART3,59,USART3 interrupt
 HC32F431,USART3_TCI,60,
-HC32F431,USART4,61,USART unit 4 interrupt
+HC32F431,USART4,61,USART4 interrupt
 HC32F431,USART4_TCI,62,
 HC32F431,HALL,63,HALL interrupt
 HC32F431,CMP1,64,CMP1 interrupt
@@ -1449,10 +1413,10 @@ HC32F431,CMP2,65,CMP2 interrupt
 HC32F431,CMP3,66,CMP3 interrupt
 HC32F431,I2C,67,I2C interrupt
 HC32F431,USART1_WUPI,68,
-HC32F431,LVD1,69,Low voltage detect unit 1 interrupt
-HC32F431,LVD2,70,Low voltage detect unit 2 interrupt
-HC32F431,FCM,71,Frequency measurement interrupt
-HC32F431,WDT,72,WDT underflow or refresh error interrupt
+HC32F431,LVD1,69,LVD1 interrupt
+HC32F431,LVD2,70,LVD2 interrupt
+HC32F431,FCM,71,FCM interrupt
+HC32F431,WDT,72,WDT interrupt
 HC32F431,ADC,73,ADC interrupt
 HC32F448,NMI,-14,Non Maskable
 HC32F448,HardFault,-13,Hard Fault
@@ -2311,30 +2275,30 @@ HC32F472,SWINT29,29,
 HC32F472,SWINT30,30,
 HC32F472,SWINT31,31,
 HC32F472,DMA1_ERR,32,
-HC32F472,DMA1_TC0_BTC0,33,DMA1 Transmission Complete 0 or Block Transmission Complete 0 interrupt
-HC32F472,DMA1_TC1_BTC1,34,DMA1 Transmission Complete 1 or Block Transmission Complete 1 interrupt
-HC32F472,DMA1_TC2_BTC2,35,DMA1 Transmission Complete 2 or Block Transmission Complete 2 interrupt
-HC32F472,DMA1_TC3_BTC3,36,DMA1 Transmission Complete 3 or Block Transmission Complete 3 interrupt
-HC32F472,DMA1_TC4_BTC4,37,DMA1 Transmission Complete 4 or Block Transmission Complete 4 interrupt
-HC32F472,DMA1_TC5_BTC5,38,DMA1 Transmission Complete 5 or Block Transmission Complete 5 interrupt
-HC32F472,DMA1_TC6_BTC6,39,DMA1 Transmission Complete 6 or Block Transmission Complete 6 interrupt
-HC32F472,DMA1_TC7_BTC7,40,DMA1 Transmission Complete 7 or Block Transmission Complete 7 interrupt
-HC32F472,EFM_PEERR_RDCOL,41,EFM Program Erase error or Read Column interrupt
+HC32F472,DMA1_TC0_BTC0,33,DMA1_TC0_BTC0 interrupt
+HC32F472,DMA1_TC1_BTC1,34,DMA1_TC1_BTC1 interrupt
+HC32F472,DMA1_TC2_BTC2,35,DMA1_TC2_BTC2 interrupt
+HC32F472,DMA1_TC3_BTC3,36,DMA1_TC3_BTC3 interrupt
+HC32F472,DMA1_TC4_BTC4,37,DMA1_TC4_BTC4 interrupt
+HC32F472,DMA1_TC5_BTC5,38,DMA1_TC5_BTC5 interrupt
+HC32F472,DMA1_TC6_BTC6,39,DMA1_TC6_BTC6 interrupt
+HC32F472,DMA1_TC7_BTC7,40,DMA1_TC7_BTC7 interrupt
+HC32F472,EFM_PEERR_RDCOL,41,EFM_PEERR_RDCOL interrupt
 HC32F472,EFM_OPTEND,42,
-HC32F472,QSPI,43,QSPI flash access error interrupt
+HC32F472,QSPI,43,QSPI interrupt
 HC32F472,DCU1,44,
 HC32F472,DCU2,45,
 HC32F472,DCU3,46,
 HC32F472,DMA2_ERR,47,
-HC32F472,DMA2_TC0_BTC0,48,DMA2 Transmission Complete 0 or Block Transmission Complete 0 interrupt
-HC32F472,DMA2_TC1_BTC1,49,DMA2 Transmission Complete 1 or Block Transmission Complete 1 interrupt
-HC32F472,DMA2_TC2_BTC2,50,DMA2 Transmission Complete 2 or Block Transmission Complete 2 interrupt
-HC32F472,DMA2_TC3_BTC3,51,DMA2 Transmission Complete 3 or Block Transmission Complete 3 interrupt
-HC32F472,DMA2_TC4_BTC4,52,DMA2 Transmission Complete 4 or Block Transmission Complete 4 interrupt
-HC32F472,DMA2_TC5_BTC5,53,DMA2 Transmission Complete 5 or Block Transmission Complete 5 interrupt
-HC32F472,DMA2_TC6_BTC6,54,DMA2 Transmission Complete 6 or Block Transmission Complete 6 interrupt
-HC32F472,DMA2_TC7_BTC7,55,DMA2 Transmission Complete 7 or Block Transmission Complete 7 interrupt
-HC32F472,MAU,56,MAU calculate complete interrupt
+HC32F472,DMA2_TC0_BTC0,48,DMA2_TC0_BTC0 interrupt
+HC32F472,DMA2_TC1_BTC1,49,DMA2_TC1_BTC1 interrupt
+HC32F472,DMA2_TC2_BTC2,50,DMA2_TC2_BTC2 interrupt
+HC32F472,DMA2_TC3_BTC3,51,DMA2_TC3_BTC3 interrupt
+HC32F472,DMA2_TC4_BTC4,52,DMA2_TC4_BTC4 interrupt
+HC32F472,DMA2_TC5_BTC5,53,DMA2_TC5_BTC5 interrupt
+HC32F472,DMA2_TC6_BTC6,54,DMA2_TC6_BTC6 interrupt
+HC32F472,DMA2_TC7_BTC7,55,DMA2_TC7_BTC7 interrupt
+HC32F472,MAU,56,MAU interrupt
 HC32F472,FMAC1_FIR,57,
 HC32F472,FMAC2_FIR,58,
 HC32F472,FMAC3_FIR,59,
@@ -2352,58 +2316,58 @@ HC32F472,TMR2_4_OVF,70,
 HC32F472,RTC,71,RTC interrupt
 HC32F472,XTAL,72,
 HC32F472,WKTM,73,
-HC32F472,SWDT,74,SWDT underflow or update error interrupt
-HC32F472,TMR6_1_GCMP,75,Timer6 unit 1 compare match interrupt
-HC32F472,TMR6_1_OVF_UDF,76,Timer6 unit 1 overflow or underflow interrupt
+HC32F472,SWDT,74,SWDT interrupt
+HC32F472,TMR6_1_GCMP,75,TMR6_1_GCMP interrupt
+HC32F472,TMR6_1_OVF_UDF,76,TMR6_1_OVF_UDF interrupt
 HC32F472,TMR6_1_DTE,77,
-HC32F472,TMR6_1_SCMP,78,Timer6 unit 10 special compare match interrupt
-HC32F472,TMRA_1_OVF_UDF,79,TimerA unit 1 overflow or underflow interrupt
-HC32F472,TMRA_1_CMP,80,TimerA unit 2 compare match interrupt
-HC32F472,TMR6_2_GCMP,81,Timer6 unit 2 compare match interrupt
-HC32F472,TMR6_2_OVF_UDF,82,Timer6 unit 2 overflow or underflow interrupt
+HC32F472,TMR6_1_SCMP,78,TMR6_1_SCMP interrupt
+HC32F472,TMRA_1_OVF_UDF,79,TMRA_1_OVF_UDF interrupt
+HC32F472,TMRA_1_CMP,80,TMRA_1_CMP interrupt
+HC32F472,TMR6_2_GCMP,81,TMR6_2_GCMP interrupt
+HC32F472,TMR6_2_OVF_UDF,82,TMR6_2_OVF_UDF interrupt
 HC32F472,TMR6_2_DTE,83,
-HC32F472,TMR6_2_SCMP,84,Timer6 unit 2 special compare match interrupt
-HC32F472,TMRA_2_OVF_UDF,85,TimerA unit 2 overflow or underflow interrupt
-HC32F472,TMRA_2_CMP,86,TimerA unit 3 compare match interrupt
-HC32F472,TMR6_3_GCMP,87,Timer6 unit 3 compare match interrupt
-HC32F472,TMR6_3_OVF_UDF,88,Timer6 unit 3 overflow or underflow interrupt
+HC32F472,TMR6_2_SCMP,84,TMR6_2_SCMP interrupt
+HC32F472,TMRA_2_OVF_UDF,85,TMRA_2_OVF_UDF interrupt
+HC32F472,TMRA_2_CMP,86,TMRA_2_CMP interrupt
+HC32F472,TMR6_3_GCMP,87,TMR6_3_GCMP interrupt
+HC32F472,TMR6_3_OVF_UDF,88,TMR6_3_OVF_UDF interrupt
 HC32F472,TMR6_3_DTE,89,
-HC32F472,TMR6_3_SCMP,90,Timer6 unit 3 special compare match interrupt
-HC32F472,TMRA_3_OVF_UDF,91,TimerA unit 3 overflow or underflow interrupt
-HC32F472,TMRA_3_CMP,92,TimerA unit 4 compare match interrupt
-HC32F472,TMR6_4_GCMP,93,Timer6 unit 4 compare match interrupt
-HC32F472,TMR6_4_OVF_UDF,94,Timer6 unit 4 overflow or underflow interrupt
+HC32F472,TMR6_3_SCMP,90,TMR6_3_SCMP interrupt
+HC32F472,TMRA_3_OVF_UDF,91,TMRA_3_OVF_UDF interrupt
+HC32F472,TMRA_3_CMP,92,TMRA_3_CMP interrupt
+HC32F472,TMR6_4_GCMP,93,TMR6_4_GCMP interrupt
+HC32F472,TMR6_4_OVF_UDF,94,TMR6_4_OVF_UDF interrupt
 HC32F472,TMR6_4_DTE,95,
-HC32F472,TMR6_4_SCMP,96,Timer6 unit 4 special compare match interrupt
-HC32F472,TMRA_4_OVF_UDF,97,TimerA unit 4 overflow or underflow interrupt
+HC32F472,TMR6_4_SCMP,96,TMR6_4_SCMP interrupt
+HC32F472,TMRA_4_OVF_UDF,97,TMRA_4_OVF_UDF interrupt
 HC32F472,TMRA_4_CMP,98,
-HC32F472,TMR6_5_GCMP,99,Timer6 unit 5 compare match interrupt
-HC32F472,TMR6_5_OVF_UDF,100,Timer6 unit 5 overflow or underflow interrupt
+HC32F472,TMR6_5_GCMP,99,TMR6_5_GCMP interrupt
+HC32F472,TMR6_5_OVF_UDF,100,TMR6_5_OVF_UDF interrupt
 HC32F472,TMR6_5_DTE,101,
-HC32F472,TMR6_5_SCMP,102,Timer6 unit 5 special compare match interrupt
-HC32F472,TMR6_6_GCMP,104,Timer6 unit 6 compare match interrupt
-HC32F472,TMR6_6_OVF_UDF,105,Timer6 unit 6 overflow or underflow interrupt
+HC32F472,TMR6_5_SCMP,102,TMR6_5_SCMP interrupt
+HC32F472,TMR6_6_GCMP,104,TMR6_6_GCMP interrupt
+HC32F472,TMR6_6_OVF_UDF,105,TMR6_6_OVF_UDF interrupt
 HC32F472,TMR6_6_DTE,106,
-HC32F472,TMR6_6_SCMP,107,Timer6 unit 6 special compare match interrupt
-HC32F472,TMR6_7_GCMP,108,Timer6 unit 7 compare match interrupt
-HC32F472,TMR6_7_OVF_UDF,109,Timer6 unit 7 overflow or underflow interrupt
+HC32F472,TMR6_6_SCMP,107,TMR6_6_SCMP interrupt
+HC32F472,TMR6_7_GCMP,108,TMR6_7_GCMP interrupt
+HC32F472,TMR6_7_OVF_UDF,109,TMR6_7_OVF_UDF interrupt
 HC32F472,TMR6_7_DTE,110,
-HC32F472,TMR6_7_SCMP,111,Timer6 unit 7 special compare match interrupt
-HC32F472,TMR6_8_GCMP,112,Timer6 unit 8 compare match interrupt
-HC32F472,TMR6_8_OVF_UDF,113,Timer6 unit 8 overflow or underflow interrupt
+HC32F472,TMR6_7_SCMP,111,TMR6_7_SCMP interrupt
+HC32F472,TMR6_8_GCMP,112,TMR6_8_GCMP interrupt
+HC32F472,TMR6_8_OVF_UDF,113,TMR6_8_OVF_UDF interrupt
 HC32F472,TMR6_8_DTE,114,
-HC32F472,TMR6_8_SCMP,115,Timer6 unit 8 special compare match interrupt
-HC32F472,TMR6_9_GCMP,116,Timer6 unit 9 compare match interrupt
-HC32F472,TMR6_9_OVF_UDF,117,Timer6 unit 9 overflow or underflow interrupt
+HC32F472,TMR6_8_SCMP,115,TMR6_8_SCMP interrupt
+HC32F472,TMR6_9_GCMP,116,TMR6_9_GCMP interrupt
+HC32F472,TMR6_9_OVF_UDF,117,TMR6_9_OVF_UDF interrupt
 HC32F472,TMR6_9_DTE,118,
-HC32F472,TMR6_9_SCMP,119,Timer6 unit 9 special compare match interrupt
-HC32F472,TMR6_10_GCMP,120,Timer6 unit 10 compare match interrupt
-HC32F472,TMR6_10_OVF_UDF,121,Timer6 unit 10 overflow or underflow interrupt
+HC32F472,TMR6_9_SCMP,119,TMR6_9_SCMP interrupt
+HC32F472,TMR6_10_GCMP,120,TMR6_10_GCMP interrupt
+HC32F472,TMR6_10_OVF_UDF,121,TMR6_10_OVF_UDF interrupt
 HC32F472,TMR6_10_DTE,122,
 HC32F472,TMR6_10_SCMP,123,
-HC32F472,TMR4_1_GCMP,124,Timer4 unit 1 compare match interrupt
-HC32F472,TMR4_1_OVF_UDF,125,Timer4 unit 1 overflow or underflow interrupt
-HC32F472,TMR4_1_RELOAD,126,Timer4 unit 1 reload match interrupt
+HC32F472,TMR4_1_GCMP,124,TMR4_1_GCMP interrupt
+HC32F472,TMR4_1_OVF_UDF,125,TMR4_1_OVF_UDF interrupt
+HC32F472,TMR4_1_RELOAD,126,TMR4_1_RELOAD interrupt
 HC32F472,TMR4_1_SCMP,127,
 HC32F472,CMP1,128,CMP1 interrupt
 HC32F472,CMP2,129,CMP2 interrupt
@@ -2412,44 +2376,44 @@ HC32F472,CMP4,131,CMP4 interrupt
 HC32F472,CAN1_INT,132,
 HC32F472,CAN2_INT,133,
 HC32F472,CAN3_INT,134,
-HC32F472,USART1,135,USART unit 1 interrupt
-HC32F472,USART2,136,USART unit 2 interrupt
+HC32F472,USART1,135,USART1 interrupt
+HC32F472,USART2,136,USART2 interrupt
 HC32F472,SPI1,137,
 HC32F472,SPI2,138,
-HC32F472,TMRA_5_OVF_UDF,139,TimerA unit 5 overflow or underflow interrupt
-HC32F472,TMRA_5_CMP,140,TimerA unit 5 compare match interrupt
-HC32F472,TMRA_6_OVF_UDF,141,TimerA unit 6 overflow or underflow interrupt
-HC32F472,TMRA_6_CMP,142,TimerA unit 6 compare match interrupt
+HC32F472,TMRA_5_OVF_UDF,139,TMRA_5_OVF_UDF interrupt
+HC32F472,TMRA_5_CMP,140,TMRA_5_CMP interrupt
+HC32F472,TMRA_6_OVF_UDF,141,TMRA_6_OVF_UDF interrupt
+HC32F472,TMRA_6_CMP,142,TMRA_6_CMP interrupt
 HC32F472,USBFS_GLB,143,
-HC32F472,EVENT_PORT1,144,event port 1 interrupt
-HC32F472,EVENT_PORT2,145,event port 2 interrupt
-HC32F472,EVENT_PORT3,146,event port 3 interrupt
-HC32F472,EVENT_PORT4,147,event port 4 interrupt
-HC32F472,USART3,148,USART unit 3 interrupt
-HC32F472,USART4,149,USART unit 4 interrupt
+HC32F472,EVENT_PORT1,144,EVENT_PORT1 interrupt
+HC32F472,EVENT_PORT2,145,EVENT_PORT2 interrupt
+HC32F472,EVENT_PORT3,146,EVENT_PORT3 interrupt
+HC32F472,EVENT_PORT4,147,EVENT_PORT4 interrupt
+HC32F472,USART3,148,USART3 interrupt
+HC32F472,USART4,149,USART4 interrupt
 HC32F472,SPI3,150,
 HC32F472,SPI4,151,
-HC32F472,EMB_GR0,152,EMB Group 0 interrupt
-HC32F472,EMB_GR1,153,EMB Group 1 interrupt
-HC32F472,EMB_GR2,154,EMB Group 2 interrupt
-HC32F472,EMB_GR3,155,EMB Group 3 interrupt
-HC32F472,EMB_GR4,156,EMB Group 4 interrupt
-HC32F472,EMB_GR5,157,EMB Group 5 interrupt
-HC32F472,EMB_GR6,158,EMB Group 6 interrupt
+HC32F472,EMB_GR0,152,EMB_GR0 interrupt
+HC32F472,EMB_GR1,153,EMB_GR1 interrupt
+HC32F472,EMB_GR2,154,EMB_GR2 interrupt
+HC32F472,EMB_GR3,155,EMB_GR3 interrupt
+HC32F472,EMB_GR4,156,EMB_GR4 interrupt
+HC32F472,EMB_GR5,157,EMB_GR5 interrupt
+HC32F472,EMB_GR6,158,EMB_GR6 interrupt
 HC32F472,HASH,159,
-HC32F472,USART5,160,USART unit 5 interrupt
-HC32F472,USART6,161,USART unit 6 interrupt
+HC32F472,USART5,160,USART5 interrupt
+HC32F472,USART6,161,USART6 interrupt
 HC32F472,MDIO,162,MDIO interrupt
 HC32F472,I2C1,164,
 HC32F472,I2C2,165,
 HC32F472,I2C3,166,
-HC32F472,USART1_WUPI,167,USART unit 1 RX weak-up interrupt
+HC32F472,USART1_WUPI,167,USART1_WUPI interrupt
 HC32F472,LVD1,168,
 HC32F472,LVD2,169,
-HC32F472,OTS,170,Temperature measure complete interrupt
+HC32F472,OTS,170,OTS interrupt
 HC32F472,FCM,171,
-HC32F472,WDT,172,WDT underflow or update error interrupt
-HC32F472,CTC,173,HRC frequency calibrate value overflow interrupt
+HC32F472,WDT,172,WDT interrupt
+HC32F472,CTC,173,CTC interrupt
 HC32F472,ADC1,174,
 HC32F472,ADC2,175,
 HC32F472,ADC3,176,
@@ -2928,13 +2892,13 @@ HC32K116,EXTINT00_EXTINT01,0,
 HC32K116,EXTINT02_EXTINT03,1,
 HC32K116,EXTINT04_EXTINT05,2,
 HC32K116,EXTINT06_EXTINT07,3,
-HC32K116,DMA,4,DMA Interrupt
-HC32K116,EFM,5,EFM Interrupt
-HC32K116,TMR0,6,Timer0 interrupt
-HC32K116,TMR2,7,Timer2 interrupt
-HC32K116,TMR4_CMP_OVF_UDF_RELOAD,8,Timer4 compare overflow underflow reload interrput
-HC32K116,TMR4_SCMP,9,Timer4 special compare interrput
-HC32K116,TMRA,10,TimerA interrupt
+HC32K116,DMA,4,DMA interrupt
+HC32K116,EFM,5,EFM interrupt
+HC32K116,TMR0,6,TMR0 interrupt
+HC32K116,TMR2,7,TMR2 interrupt
+HC32K116,TMR4_CMP_OVF_UDF_RELOAD,8,TMR4_CMP_OVF_UDF_RELOAD interrupt
+HC32K116,TMR4_SCMP,9,TMR4_SCMP interrupt
+HC32K116,TMRA,10,TMRA interrupt
 HC32K116,USART1_WKUP_RI_TI,11,
 HC32K116,USART1_EI_TEDNI_TCI_RTO,12,
 HC32K116,USART2_RI_TI,13,
@@ -2951,7 +2915,7 @@ HC32K116,I2C_RXI_TXI,23,
 HC32K116,I2C_TEI_EEI,24,
 HC32K116,MCAN,25,MCAN interrupt
 HC32K116,FCM_XTAL,26,
-HC32K116,EMB,27,EBM interrupt
+HC32K116,EMB,27,EMB interrupt
 HC32K116,CMP,29,CMP interrupt
 HC32K116,ADC,30,ADC interrupt
 HC32K116,EVENTPORT_RTC_CTC_SWDT,31,
@@ -2964,13 +2928,13 @@ HC32K118,EXTINT00_EXTINT01,0,
 HC32K118,EXTINT02_EXTINT03,1,
 HC32K118,EXTINT04_EXTINT05,2,
 HC32K118,EXTINT06_EXTINT07,3,
-HC32K118,DMA,4,DMA Interrupt
-HC32K118,EFM,5,EFM Interrupt
-HC32K118,TMR0,6,Timer0 interrupt
-HC32K118,TMR2,7,Timer2 interrupt
-HC32K118,TMR4_CMP_OVF_UDF_RELOAD,8,Timer4 compare overflow underflow reload interrput
-HC32K118,TMR4_SCMP,9,Timer4 special compare interrput
-HC32K118,TMRA,10,TimerA interrupt
+HC32K118,DMA,4,DMA interrupt
+HC32K118,EFM,5,EFM interrupt
+HC32K118,TMR0,6,TMR0 interrupt
+HC32K118,TMR2,7,TMR2 interrupt
+HC32K118,TMR4_CMP_OVF_UDF_RELOAD,8,TMR4_CMP_OVF_UDF_RELOAD interrupt
+HC32K118,TMR4_SCMP,9,TMR4_SCMP interrupt
+HC32K118,TMRA,10,TMRA interrupt
 HC32K118,USART1_WKUP_RI_TI,11,
 HC32K118,USART1_EI_TEDNI_TCI_RTO,12,
 HC32K118,USART2_RI_TI,13,
@@ -2987,7 +2951,7 @@ HC32K118,I2C_RXI_TXI,23,
 HC32K118,I2C_TEI_EEI,24,
 HC32K118,MCAN,25,MCAN interrupt
 HC32K118,FCM_XTAL,26,
-HC32K118,EMB,27,EBM interrupt
+HC32K118,EMB,27,EMB interrupt
 HC32K118,CMP,29,CMP interrupt
 HC32K118,ADC,30,ADC interrupt
 HC32K118,EVENTPORT_RTC_CTC_SWDT,31,
@@ -3062,43 +3026,43 @@ HC32M413,EXTINT_PORT_EIRQ5,21,
 HC32M413,EXTINT_PORT_EIRQ6,22,
 HC32M413,EXTINT_PORT_EIRQ7,23,
 HC32M413,DMA_ERR,24,
-HC32M413,DMA_TC0_BTC0,25,DMA Transmission Complete 0 or Block Transmission Complete 0 interrupt
-HC32M413,DMA_TC1_BTC1,26,DMA Transmission Complete 1 or Block Transmission Complete 1 interrupt
-HC32M413,DMA_TC2_BTC2,27,DMA Transmission Complete 2 or Block Transmission Complete 2 interrupt
-HC32M413,DMA_TC3_BTC3,28,DMA Transmission Complete 3 or Block Transmission Complete 3 interrupt
+HC32M413,DMA_TC0_BTC0,25,DMA_TC0_BTC0 interrupt
+HC32M413,DMA_TC1_BTC1,26,DMA_TC1_BTC1 interrupt
+HC32M413,DMA_TC2_BTC2,27,DMA_TC2_BTC2 interrupt
+HC32M413,DMA_TC3_BTC3,28,DMA_TC3_BTC3 interrupt
 HC32M413,EFM_PEERR_RDCOL,29,
 HC32M413,EFM_OPTEND,30,
 HC32M413,DCU,31,DCU interrupt
 HC32M413,FPU,32,
 HC32M413,MAU,33,MAU interrupt
-HC32M413,TMR0_1,34,Timer0 unit 1 interrupt
-HC32M413,TMR0_2,35,Timer0 unit 2 interrupt
+HC32M413,TMR0_1,34,TMR0_1 interrupt
+HC32M413,TMR0_2,35,TMR0_2 interrupt
 HC32M413,XTAL,36,
-HC32M413,SWDT,37,SWDT underflow or refresh error interrupt
-HC32M413,TMRA_1_OVF_UDF,38,TimerA unit 1 overflow or underflow interrupt
-HC32M413,TMRA_1_CMP,39,TimerA unit 1 compare matched interrupt
-HC32M413,TMRA_2_OVF_UDF,40,TimerA unit 2 overflow or underflow interrupt
-HC32M413,TMRA_2_CMP,41,TimerA unit 2 compare matched interrupt
-HC32M413,TMRA_3_OVF_UDF,42,TimerA unit 3 overflow or underflow interrupt
-HC32M413,TMRA_3_CMP,43,TimerA unit 3 compare matched interrupt
-HC32M413,TMRA_4_OVF_UDF,44,TimerA unit 4 overflow or underflow interrupt
-HC32M413,TMRA_4_CMP,45,TimerA unit 4 compare matched interrupt
-HC32M413,EMB_GR0,46,EMB Group0 interrupt
-HC32M413,EMB_GR1,47,EMB Group1 interrupt
-HC32M413,TMR4_GCMP,48,Timer4 compare matched interrupt
-HC32M413,TMR4_OVF_UDF,49,Timer4 overflow or underflow interrupt
-HC32M413,TMR4_RELOAD,50,Timer4 reload matched interrupt
+HC32M413,SWDT,37,SWDT interrupt
+HC32M413,TMRA_1_OVF_UDF,38,TMRA_1_OVF_UDF interrupt
+HC32M413,TMRA_1_CMP,39,TMRA_1_CMP interrupt
+HC32M413,TMRA_2_OVF_UDF,40,TMRA_2_OVF_UDF interrupt
+HC32M413,TMRA_2_CMP,41,TMRA_2_CMP interrupt
+HC32M413,TMRA_3_OVF_UDF,42,TMRA_3_OVF_UDF interrupt
+HC32M413,TMRA_3_CMP,43,TMRA_3_CMP interrupt
+HC32M413,TMRA_4_OVF_UDF,44,TMRA_4_OVF_UDF interrupt
+HC32M413,TMRA_4_CMP,45,TMRA_4_CMP interrupt
+HC32M413,EMB_GR0,46,EMB_GR0 interrupt
+HC32M413,EMB_GR1,47,EMB_GR1 interrupt
+HC32M413,TMR4_GCMP,48,TMR4_GCMP interrupt
+HC32M413,TMR4_OVF_UDF,49,TMR4_OVF_UDF interrupt
+HC32M413,TMR4_RELOAD,50,TMR4_RELOAD interrupt
 HC32M413,TMR4_SCMP,51,
-HC32M413,USART1,52,USART unit 1 interrupt
+HC32M413,USART1,52,USART1 interrupt
 HC32M413,USART1_TCI,53,
 HC32M413,SPI,54,SPI interrupt
-HC32M413,TMRA_5_OVF_UDF,55,TimerA unit 5 overflow or underflow interrupt
-HC32M413,TMRA_5_CMP,56,TimerA unit 5 compare matched interrupt
-HC32M413,USART2,57,USART unit 2 interrupt
+HC32M413,TMRA_5_OVF_UDF,55,TMRA_5_OVF_UDF interrupt
+HC32M413,TMRA_5_CMP,56,TMRA_5_CMP interrupt
+HC32M413,USART2,57,USART2 interrupt
 HC32M413,USART2_TCI,58,
-HC32M413,USART3,59,USART unit 3 interrupt
+HC32M413,USART3,59,USART3 interrupt
 HC32M413,USART3_TCI,60,
-HC32M413,USART4,61,USART unit 4 interrupt
+HC32M413,USART4,61,USART4 interrupt
 HC32M413,USART4_TCI,62,
 HC32M413,HALL,63,HALL interrupt
 HC32M413,CMP1,64,CMP1 interrupt
@@ -3106,10 +3070,10 @@ HC32M413,CMP2,65,CMP2 interrupt
 HC32M413,CMP3,66,CMP3 interrupt
 HC32M413,I2C,67,I2C interrupt
 HC32M413,USART1_WUPI,68,
-HC32M413,LVD1,69,Low voltage detect unit 1 interrupt
-HC32M413,LVD2,70,Low voltage detect unit 2 interrupt
-HC32M413,FCM,71,Frequency measurement interrupt
-HC32M413,WDT,72,WDT underflow or refresh error interrupt
+HC32M413,LVD1,69,LVD1 interrupt
+HC32M413,LVD2,70,LVD2 interrupt
+HC32M413,FCM,71,FCM interrupt
+HC32M413,WDT,72,WDT interrupt
 HC32M413,ADC,73,ADC interrupt
 HC32M441,NMI,-14,Non Maskable
 HC32M441,HardFault,-13,Hard Fault
@@ -3362,7 +3326,7 @@ HC32M458,TMRA_4_UDF,41,
 HC32M458,TMRA_4_CMP,42,
 HC32M458,CMP1,43,CMP1 interrupt
 HC32M458,CMP2,44,CMP2 interrupt
-HC32M458,EMB,45,EMB group 0/1/2/3 interrupt
+HC32M458,EMB,45,EMB interrupt
 HC32M458,I2C_TX_RX,46,
 HC32M458,I2C_TE_EE,47,
 HC32M458,TMRA_5_OVF,48,
@@ -3370,22 +3334,22 @@ HC32M458,TMRA_5_UDF,49,
 HC32M458,TMRA_5_CMP,50,
 HC32M458,USART1_TX_RX,51,
 HC32M458,USART1_EI_TE_RTO_BW,52,
-HC32M458,USART1_TCI,53,USART1 transmission complete(TCI) interrupt
+HC32M458,USART1_TCI,53,USART1_TCI interrupt
 HC32M458,USART2_TX_RX,54,
 HC32M458,USART2_EI_TE_RTO_BW,55,
-HC32M458,USART2_TCI,56,USART2 transmission complete(TCI) interrupt
+HC32M458,USART2_TCI,56,USART2_TCI interrupt
 HC32M458,USART3_TX_RX,57,
 HC32M458,USART3_EI_TE_RTO_BW,58,
-HC32M458,USART3_TCI,59,USART3 transmission complete(TCI) interrupt
+HC32M458,USART3_TCI,59,USART3_TCI interrupt
 HC32M458,USART4_TX_RX,60,
 HC32M458,USART4_EI_TE_RTO_BW,61,
-HC32M458,USART4_TCI,62,USART4 transmission complete(TCI) interrupt
+HC32M458,USART4_TCI,62,USART4_TCI interrupt
 HC32M458,SPI1_TX_RX,63,
 HC32M458,SPI1_IDLE_ERR,64,
 HC32M458,SPI2_TX_RX,65,
 HC32M458,SPI2_IDLE_ERR,66,
-HC32M458,FCM,67,FCM clock measurement interrupt
-HC32M458,WDT,68,WDT underflow or refresh error interrupt
+HC32M458,FCM,67,FCM interrupt
+HC32M458,WDT,68,WDT interrupt
 HC32M458,USART1_WUPI,69,
 HC32M458,ADC1_ECOA,70,
 HC32M458,ADC1_ECOB,71,

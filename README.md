@@ -1,8 +1,12 @@
 # hc32-ll-data
 
-小华半导体 HC32 LL 驱动系列的寄存器数据与外设分类资料。覆盖 **27 个系列**，
-包括 7 个 Cortex-M0+ 系列和 20 个 Cortex-M4 系列。
-HC32F175 的设备头引用 Cortex-M0+ 内核头。它使用 LL 接口，多个外设沿用旧式寄存器布局。
+小华半导体 HC32 LL 驱动系列的寄存器数据与外设分类资料。覆盖 **26 个系列**，
+包括 6 个 Cortex-M0+ 系列和 20 个 Cortex-M4 系列。
+
+> **HC32F175 暂不支持**：其外设 IP 为多代缝合（旧式寄存器布局、无 AOS/EVT_SRC、
+> DMAC 用固定请求编号），与 LL 主线差异大，暂不做支持。提取与生成链跳过该系列
+> （见 `hc32-data-tools/scripts/support_scope.py`）；SVD 归档与 SDK 核验记录保留，
+> 恢复支持时删除该声明并复核 `peripheral-version-map.json` 后重跑全链。
 
 ## 资料
 
@@ -39,4 +43,4 @@ SDK 源码在工作区相邻的 `../xh_ll_sdk/`。设备头、驱动和例程用
 NFC、SDIOC、DVP、QSPI、SMC、DMC、MPU、KEYSCAN、OTS、VREF、HRPWM、HALL、PLA、
 TMR6、ERMU 及 M458 的 DFM 仍待单独分类。这里的 MPU 指 SDK 配置的片上总线存储保护单元。
 各驱动的 SDK 分布见矩阵。这些项目本次不做功能分档，CSV 标记为 excluded；
-F175 的 DFM 不在排除范围内。
+M458 的 DFM 属其中（F175 已整体暂停支持，不参与本清单）。

@@ -1,8 +1,10 @@
-# LL 侧 CSV 提取说明（tools/extract_ll_csv.py 自动生成）
+# LL 侧 CSV 提取说明（hc32-data-tools/extract_ll_csv.py 自动生成）
 
 来源：`xh_ll_sdk/` 下 27 个 SDK 目录（设备头、hc32_ll_driver、SVD、DS/RM PDF）。
-输出：本目录 5 个 CSV，列头见 `tools/CSV_SCHEMA.md`。可重复运行：
-`python3 tools/extract_ll_csv.py [--sdk-root X] [--out Y] [--series ...]`
+HC32F175 已暂停支持（IP 多代缝合，见 hc32-data-tools/scripts/support_scope.py），
+默认跳过，本目录各表不含其行；`--series HC32F175` 可强制单独重提。
+输出：本目录 5 个 CSV，列头见 `hc32-data-tools/CSV_SCHEMA.md`。可重复运行：
+`python3 hc32-data-tools/extract_ll_csv.py [--sdk-root X] [--out Y] [--series ...]`
 
 ## 各系列行数统计
 
@@ -16,7 +18,6 @@
 | HC32F115 | 2 | 37 | 0 | 29 | 29 | 20 |  |
 | HC32F120 | 1 | 37 | 0 | 28 | 28 | 19 |  |
 | HC32F155 | 8 | 37 | 65 | 33 | 33 | 23 |  |
-| HC32F175 | 4 | 36 | 22 | 42 | 42 | 31 |  |
 | HC32F334 | 8 | 186 | 252 | 66 | 66 | 38 |  |
 | HC32F336 | 2 | 186 | 252 | 66 | 66 | 38 |  |
 | HC32F431 | 3 | 83 | 116 | 39 | 39 | 22 |  |
@@ -55,9 +56,10 @@
   `*_COLERR`、软件中断 `*_SWI_IRQ`；DMA 自身 TC/BTC 事件按 RM 可作触发源，保留；
 - 通道数取自 `hc32_ll_aos.h` 的 `AOS_DMA<x>_<n>` 宏（每单元 4 或 8 通道），
   DMA 实例名取自 SVD；F115/F120 无 DMA 外设，dma 行数为 0。
-- 例外（F175，旧式外设集）：无 AOS/EVT_SRC，DMAC 用固定请求编号——
-  `DMA_<信号>_REQ = (0xNN << DMAC_CONFA0_TRISEL_POS)`（0x40~0x55），写入各通道
-  CONFA0.TRISEL 选择请求源，4 个通道（CH0~3）仍为自由路由，channel 填 `0-3`。
+- 例外（已暂停支持的 F175，旧式外设集，仅作 SDK 语义记录）：无 AOS/EVT_SRC，
+  DMAC 用固定请求编号——`DMA_<信号>_REQ = (0xNN << DMAC_CONFA0_TRISEL_POS)`
+  （0x40~0x55），写入各通道 CONFA0.TRISEL 选择请求源，4 个通道（CH0~3）仍为
+  自由路由。
 
 ## 其它假设与说明
 
@@ -94,4 +96,4 @@
 
 ## 生成时间
 
-2026-11-14 02:02:33
+2026-11-17 12:17:28

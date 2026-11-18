@@ -19,44 +19,36 @@ INTC 从固定向量、部分可路由槽到 144 槽分档；同档位图和 EIR
 
 ### dbgc：v1
 
-停止模式调试控制。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `dbgc_ll_v1.rs` | [dbgc_ll_v1](../../data/registers/dbgc_ll_v1.yaml) | F175: DBGC | 1 / 17 | 本档位对照基准；完整定义见来源 YAML |
-
-### dbgc：v2
-
 MCU 调试状态和停止控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `dbgc_ll_v2.rs` | [dbgc_ll_v2](../../data/registers/dbgc_ll_v2.yaml) | K116/K118: DBGC | 2 / 11 | 本档位对照基准；完整定义见来源 YAML |
-| `dbgc_ll_v2_1.rs` | [dbgc_ll_v2_1](../../data/registers/dbgc_ll_v2_1.yaml) | F115/F155: DBGC | 2 / 14 | 相对 dbgc_ll_v2：定义差异 MCUSTPCTL |
-| `dbgc_ll_v2_2.rs` | [dbgc_ll_v2_2](../../data/registers/dbgc_ll_v2_2.yaml) | F120: DBGC | 2 / 15 | 相对 dbgc_ll_v2：定义差异 MCUSTPCTL |
-| `dbgc_ll_v2_3.rs` | [dbgc_ll_v2_3](../../data/registers/dbgc_ll_v2_3.yaml) | M120: DBGC | 2 / 16 | 相对 dbgc_ll_v2：定义差异 MCUSTPCTL |
+| `dbgc_ll_v1.rs` | [dbgc_ll_v1](../../data/registers/dbgc_ll_v1.yaml) | K116/K118: DBGC | 2 / 11 | 本档位对照基准；完整定义见来源 YAML |
+| `dbgc_ll_v1_1.rs` | [dbgc_ll_v1_1](../../data/registers/dbgc_ll_v1_1.yaml) | F115/F155: DBGC | 2 / 14 | 相对 dbgc_ll_v1：定义差异 MCUSTPCTL |
+| `dbgc_ll_v1_2.rs` | [dbgc_ll_v1_2](../../data/registers/dbgc_ll_v1_2.yaml) | F120: DBGC | 2 / 15 | 相对 dbgc_ll_v1：定义差异 MCUSTPCTL |
+| `dbgc_ll_v1_3.rs` | [dbgc_ll_v1_3](../../data/registers/dbgc_ll_v1_3.yaml) | M120: DBGC | 2 / 16 | 相对 dbgc_ll_v1：定义差异 MCUSTPCTL |
 
-### dbgc：v3
+### dbgc：v2
 
 运行/停止调试与跟踪控制。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `dbgc_ll_v3.rs` | [dbgc_ll_v3](../../data/registers/dbgc_ll_v3.yaml) | A460/F451/F452/F460: DBGC | 3 / 21 | 本档位对照基准；完整定义见来源 YAML |
-| `dbgc_ll_v3_1.rs` | [dbgc_ll_v3_1](../../data/registers/dbgc_ll_v3_1.yaml) | A4A0/F467/F4A0/F4A2: DBGC | 4 / 36 | 相对 dbgc_ll_v3：增加 MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
-| `dbgc_ll_v3_2.rs` | [dbgc_ll_v3_2](../../data/registers/dbgc_ll_v3_2.yaml) | A448/F448/M441: DBGC | 5 / 19 | 相对 dbgc_ll_v3：增加 CHIPID/MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
-| `dbgc_ll_v3_3.rs` | [dbgc_ll_v3_3](../../data/registers/dbgc_ll_v3_3.yaml) | F334/F336: DBGC | 5 / 25 | 相对 dbgc_ll_v3：增加 CHIPID/MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
-| `dbgc_ll_v3_4.rs` | [dbgc_ll_v3_4](../../data/registers/dbgc_ll_v3_4.yaml) | A472/F472: DBGC | 5 / 30 | 相对 dbgc_ll_v3：增加 CHIPID/MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
-| `dbgc_ll_v3_5.rs` | [dbgc_ll_v3_5](../../data/registers/dbgc_ll_v3_5.yaml) | A4A8/F4A8: DBGC | 5 / 42 | 相对 dbgc_ll_v3：增加 CHIPID/MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
+| `dbgc_ll_v2.rs` | [dbgc_ll_v2](../../data/registers/dbgc_ll_v2.yaml) | A460/F451/F452/F460: DBGC | 3 / 21 | 本档位对照基准；完整定义见来源 YAML |
+| `dbgc_ll_v2_1.rs` | [dbgc_ll_v2_1](../../data/registers/dbgc_ll_v2_1.yaml) | A4A0/F467/F4A0/F4A2: DBGC | 4 / 36 | 相对 dbgc_ll_v2：增加 MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
+| `dbgc_ll_v2_2.rs` | [dbgc_ll_v2_2](../../data/registers/dbgc_ll_v2_2.yaml) | A448/F448/M441: DBGC | 5 / 19 | 相对 dbgc_ll_v2：增加 CHIPID/MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
+| `dbgc_ll_v2_3.rs` | [dbgc_ll_v2_3](../../data/registers/dbgc_ll_v2_3.yaml) | F334/F336: DBGC | 5 / 25 | 相对 dbgc_ll_v2：增加 CHIPID/MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
+| `dbgc_ll_v2_4.rs` | [dbgc_ll_v2_4](../../data/registers/dbgc_ll_v2_4.yaml) | A472/F472: DBGC | 5 / 30 | 相对 dbgc_ll_v2：增加 CHIPID/MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
+| `dbgc_ll_v2_5.rs` | [dbgc_ll_v2_5](../../data/registers/dbgc_ll_v2_5.yaml) | A4A8/F4A8: DBGC | 5 / 42 | 相对 dbgc_ll_v2：增加 CHIPID/MCUDBGCSTAT/MCUSTPCTL2；缺少 MCUDBGSTAT；定义差异 MCUSTPCTL |
 
-### dbgc：v4
+### dbgc：v3
 
 Flash CRC 调试控制；是否含 MCU 状态按变体保留。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `dbgc_ll_v4.rs` | [dbgc_ll_v4](../../data/registers/dbgc_ll_v4.yaml) | F431/M413: DBGC | 5 / 9 | 本档位对照基准；完整定义见来源 YAML |
-| `dbgc_ll_v4_1.rs` | [dbgc_ll_v4_1](../../data/registers/dbgc_ll_v4_1.yaml) | M458: DBGC | 7 / 25 | 相对 dbgc_ll_v4：增加 MCUDBGCSTAT/MCUSTPCTL |
+| `dbgc_ll_v3.rs` | [dbgc_ll_v3](../../data/registers/dbgc_ll_v3.yaml) | F431/M413: DBGC | 5 / 9 | 本档位对照基准；完整定义见来源 YAML |
+| `dbgc_ll_v3_1.rs` | [dbgc_ll_v3_1](../../data/registers/dbgc_ll_v3_1.yaml) | M458: DBGC | 7 / 25 | 相对 dbgc_ll_v3：增加 MCUDBGCSTAT/MCUSTPCTL |
 
 ### dbgc_t：v1
 
@@ -67,42 +59,26 @@ Flash CRC 调试控制；是否含 MCU 状态按变体保留。
 | `dbgc_t_ll_v1.rs` | [dbgc_t_ll_v1](../../data/registers/dbgc_t_ll_v1.yaml) | F155/M120: DBGC_T | 7 / 12 | 本档位对照基准；完整定义见来源 YAML |
 | `dbgc_t_ll_v1_1.rs` | [dbgc_t_ll_v1_1](../../data/registers/dbgc_t_ll_v1_1.yaml) | K116/K118: DBGC_T | 8 / 17 | 相对 dbgc_t_ll_v1：增加 CHIPID/TARGETID；缺少 RESV0；定义差异 MCUSTAT |
 
-### exti：v1
-
-外部中断控制。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `exti_ll_v1.rs` | [exti_ll_v1](../../data/registers/exti_ll_v1.yaml) | F175: EXTI | 15 / 29 | 本档位对照基准；完整定义见来源 YAML |
-
 ### gpio：v1
-
-旧式 AFR 端口控制。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `gpio_ll_v1.rs` | [gpio_ll_v1](../../data/registers/gpio_ll_v1.yaml) | F175: GPIO | 165 / 1119 | 本档位对照基准；完整定义见来源 YAML |
-
-### gpio：v2
 
 端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `gpio_ll_v2.rs` | [gpio_ll_v2](../../data/registers/gpio_ll_v2.yaml) | F120: GPIO | 110 / 695 | 本档位对照基准；完整定义见来源 YAML |
-| `gpio_ll_v2_1.rs` | [gpio_ll_v2_1](../../data/registers/gpio_ll_v2_1.yaml) | F115: GPIO | 110 / 983 | 相对 gpio_ll_v2：定义差异 PIDR0/PIDR12/PIDR13/PIDR14/PIDR3 等 54 项 |
-| `gpio_ll_v2_2.rs` | [gpio_ll_v2_2](../../data/registers/gpio_ll_v2_2.yaml) | M120: GPIO | 114 / 763 | 相对 gpio_ll_v2：增加 PCR130/PCR140/PCR74/PCR75；定义差异 PIDR13/PIDR14/PIDR7/PODR13/PODR14 等 18 项 |
-| `gpio_ll_v2_3.rs` | [gpio_ll_v2_3](../../data/registers/gpio_ll_v2_3.yaml) | F155: GPIO | 128 / 1239 | 相对 gpio_ll_v2：增加 PCR02/PCR03/PCR04/PCR05/PCR06 等 18 项；定义差异 PCR00/PCR01/PCR10/PCR11/PCR12 等 94 项 |
-| `gpio_ll_v2_4.rs` | [gpio_ll_v2_4](../../data/registers/gpio_ll_v2_4.yaml) | M458: GPIO | 137 / 1097 | 相对 gpio_ll_v2：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 134 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 107 项；定义差异 PCCR/PSPCR/PWPR |
-| `gpio_ll_v2_5.rs` | [gpio_ll_v2_5](../../data/registers/gpio_ll_v2_5.yaml) | F334/F336: GPIO | 138 / 1289 | 相对 gpio_ll_v2：增加 HRPWM/PCRA0/PCRA1/PCRA10/PCRA11 等 135 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 107 项；定义差异 PCCR/PSPCR/PWPR |
-| `gpio_ll_v2_6.rs` | [gpio_ll_v2_6](../../data/registers/gpio_ll_v2_6.yaml) | K116/K118: GPIO | 150 / 1358 | 相对 gpio_ll_v2：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 146 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
-| `gpio_ll_v2_7.rs` | [gpio_ll_v2_7](../../data/registers/gpio_ll_v2_7.yaml) | A448/F448/M441: GPIO | 173 / 1586 | 相对 gpio_ll_v2：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 170 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 107 项；定义差异 PCCR/PSPCR/PWPR |
-| `gpio_ll_v2_8.rs` | [gpio_ll_v2_8](../../data/registers/gpio_ll_v2_8.yaml) | F431/M413: GPIO | 180 / 1216 | 相对 gpio_ll_v2：增加 PCR02/PCR32/PCR33/PCR36/PCR37 等 118 项；缺少 PCR12/PCR120/PCR121/PCR122/PCR123 等 48 项；定义差异 PCCR/PCR00/PCR01/PCR10/PCR11 等 50 项 |
-| `gpio_ll_v2_9.rs` | [gpio_ll_v2_9](../../data/registers/gpio_ll_v2_9.yaml) | A460/F451/F452/F460: GPIO | 206 / 1500 | 相对 gpio_ll_v2：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 202 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
-| `gpio_ll_v2_10.rs` | [gpio_ll_v2_10](../../data/registers/gpio_ll_v2_10.yaml) | A472/F472: GPIO | 217 / 1916 | 相对 gpio_ll_v2：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 214 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 107 项；定义差异 PCCR/PSPCR/PWPR |
-| `gpio_ll_v2_11.rs` | [gpio_ll_v2_11](../../data/registers/gpio_ll_v2_11.yaml) | F467: GPIO | 290 / 2210 | 相对 gpio_ll_v2：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 286 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
-| `gpio_ll_v2_12.rs` | [gpio_ll_v2_12](../../data/registers/gpio_ll_v2_12.yaml) | A4A0/F4A0/F4A2: GPIO | 342 / 2704 | 相对 gpio_ll_v2：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 338 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
-| `gpio_ll_v2_13.rs` | [gpio_ll_v2_13](../../data/registers/gpio_ll_v2_13.yaml) | A4A8/F4A8: GPIO | 342 / 2716 | 相对 gpio_ll_v2：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 338 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
+| `gpio_ll_v1.rs` | [gpio_ll_v1](../../data/registers/gpio_ll_v1.yaml) | F120: GPIO | 110 / 695 | 本档位对照基准；完整定义见来源 YAML |
+| `gpio_ll_v1_1.rs` | [gpio_ll_v1_1](../../data/registers/gpio_ll_v1_1.yaml) | F115: GPIO | 110 / 983 | 相对 gpio_ll_v1：定义差异 PIDR0/PIDR12/PIDR13/PIDR14/PIDR3 等 54 项 |
+| `gpio_ll_v1_2.rs` | [gpio_ll_v1_2](../../data/registers/gpio_ll_v1_2.yaml) | M120: GPIO | 114 / 763 | 相对 gpio_ll_v1：增加 PCR130/PCR140/PCR74/PCR75；定义差异 PIDR13/PIDR14/PIDR7/PODR13/PODR14 等 18 项 |
+| `gpio_ll_v1_3.rs` | [gpio_ll_v1_3](../../data/registers/gpio_ll_v1_3.yaml) | F155: GPIO | 128 / 1239 | 相对 gpio_ll_v1：增加 PCR02/PCR03/PCR04/PCR05/PCR06 等 18 项；定义差异 PCR00/PCR01/PCR10/PCR11/PCR12 等 94 项 |
+| `gpio_ll_v1_4.rs` | [gpio_ll_v1_4](../../data/registers/gpio_ll_v1_4.yaml) | M458: GPIO | 137 / 1097 | 相对 gpio_ll_v1：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 134 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 107 项；定义差异 PCCR/PSPCR/PWPR |
+| `gpio_ll_v1_5.rs` | [gpio_ll_v1_5](../../data/registers/gpio_ll_v1_5.yaml) | F334/F336: GPIO | 138 / 1289 | 相对 gpio_ll_v1：增加 HRPWM/PCRA0/PCRA1/PCRA10/PCRA11 等 135 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 107 项；定义差异 PCCR/PSPCR/PWPR |
+| `gpio_ll_v1_6.rs` | [gpio_ll_v1_6](../../data/registers/gpio_ll_v1_6.yaml) | K116/K118: GPIO | 150 / 1358 | 相对 gpio_ll_v1：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 146 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
+| `gpio_ll_v1_7.rs` | [gpio_ll_v1_7](../../data/registers/gpio_ll_v1_7.yaml) | A448/F448/M441: GPIO | 173 / 1586 | 相对 gpio_ll_v1：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 170 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 107 项；定义差异 PCCR/PSPCR/PWPR |
+| `gpio_ll_v1_8.rs` | [gpio_ll_v1_8](../../data/registers/gpio_ll_v1_8.yaml) | F431/M413: GPIO | 180 / 1216 | 相对 gpio_ll_v1：增加 PCR02/PCR32/PCR33/PCR36/PCR37 等 118 项；缺少 PCR12/PCR120/PCR121/PCR122/PCR123 等 48 项；定义差异 PCCR/PCR00/PCR01/PCR10/PCR11 等 50 项 |
+| `gpio_ll_v1_9.rs` | [gpio_ll_v1_9](../../data/registers/gpio_ll_v1_9.yaml) | A460/F451/F452/F460: GPIO | 206 / 1500 | 相对 gpio_ll_v1：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 202 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
+| `gpio_ll_v1_10.rs` | [gpio_ll_v1_10](../../data/registers/gpio_ll_v1_10.yaml) | A472/F472: GPIO | 217 / 1916 | 相对 gpio_ll_v1：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 214 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 107 项；定义差异 PCCR/PSPCR/PWPR |
+| `gpio_ll_v1_11.rs` | [gpio_ll_v1_11](../../data/registers/gpio_ll_v1_11.yaml) | F467: GPIO | 290 / 2210 | 相对 gpio_ll_v1：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 286 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
+| `gpio_ll_v1_12.rs` | [gpio_ll_v1_12](../../data/registers/gpio_ll_v1_12.yaml) | A4A0/F4A0/F4A2: GPIO | 342 / 2704 | 相对 gpio_ll_v1：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 338 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
+| `gpio_ll_v1_13.rs` | [gpio_ll_v1_13](../../data/registers/gpio_ll_v1_13.yaml) | A4A8/F4A8: GPIO | 342 / 2716 | 相对 gpio_ll_v1：增加 PCRA0/PCRA1/PCRA10/PCRA11/PCRA12 等 338 项；缺少 PCR00/PCR01/PCR10/PCR11/PCR12 等 106 项；定义差异 PCCR/PINAER/PSPCR/PWPR |
 
 ### intc：v1
 

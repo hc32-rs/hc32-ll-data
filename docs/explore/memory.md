@@ -16,14 +16,6 @@ EFM2 的 PN 窗口独立命名为 efm2，不因 M458 的 DFM 被排除而遗漏�
 
 以下名称与生成输入保持一致。系列名前缀 `HC32` 省略。
 
-### dfm：v1
-
-数据 Flash 控制（仅 F175 纳入）。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `dfm_ll_v1.rs` | [dfm_ll_v1](../../data/registers/dfm_ll_v1.yaml) | F175: DFM | 10 / 22 | 本档位对照基准；完整定义见来源 YAML |
-
 ### efm：v1
 
 基础编程、擦除、状态与保护。
@@ -54,9 +46,8 @@ EFM2 的 PN 窗口独立命名为 efm2，不因 M458 的 DFM 被排除而遗漏�
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `efm_ll_v3.rs` | [efm_ll_v3](../../data/registers/efm_ll_v3.yaml) | F175: EFM | 19 / 54 | 本档位对照基准；完整定义见来源 YAML |
-| `efm_ll_v3_1.rs` | [efm_ll_v3_1](../../data/registers/efm_ll_v3_1.yaml) | M458: EFM | 22 / 54 | 相对 efm_ll_v3：增加 ERI0/ERI1/ERI2/FAPRT/FCRCDOR 等 22 项；缺少 BYPASS/CR/ECCADR0/ECCADR1/ECCCR 等 19 项 |
-| `efm_ll_v3_2.rs` | [efm_ll_v3_2](../../data/registers/efm_ll_v3_2.yaml) | A4A8/F4A8: EFM | 50 / 354 | 相对 efm_ll_v3：增加 CHIPID/CHIPSEL/CKCR/CKPR/CKSR 等 50 项；缺少 BYPASS/CR/ECCADR0/ECCADR1/ECCCR 等 19 项 |
+| `efm_ll_v3.rs` | [efm_ll_v3](../../data/registers/efm_ll_v3.yaml) | M458: EFM | 22 / 54 | 本档位对照基准；完整定义见来源 YAML |
+| `efm_ll_v3_1.rs` | [efm_ll_v3_1](../../data/registers/efm_ll_v3_1.yaml) | A4A8/F4A8: EFM | 50 / 354 | 相对 efm_ll_v3：增加 CHIPID/CHIPSEL/CKCR/CKPR/CKSR 等 40 项；缺少 ERI0/ERI1/ERI2/FCRCDOR/FEC 等 12 项；定义差异 FITE/FRMC/FSCLR/FSR/FSTP 等 8 项 |
 
 ### efm：v4
 
@@ -73,14 +64,6 @@ EFM2 的 PN 窗口独立命名为 efm2，不因 M458 的 DFM 被排除而遗漏�
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
 | `efm2_ll_v1.rs` | [efm2_ll_v1](../../data/registers/efm2_ll_v1.yaml) | M458: EFM2 | 4 / 0 | 本档位对照基准；完整定义见来源 YAML |
-
-### sram：v1
-
-SRAM 错误控制。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `sram_ll_v1.rs` | [sram_ll_v1](../../data/registers/sram_ll_v1.yaml) | F175: SRAM | 6 / 9 | 本档位对照基准；完整定义见来源 YAML |
 
 ### sramc：v1
 

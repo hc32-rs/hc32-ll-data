@@ -1,5 +1,5 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32A460/I2C1；覆盖系列：HC32A460, HC32A4A0, HC32F451, HC32F452, HC32F460, HC32F467, HC32F4A0, HC32F4A2。
+# 布局代表：HC32A448/I2C1；覆盖系列：HC32A448, HC32F448, HC32M441。
 block/I2C:
   description: desc I2C.
   items:
@@ -43,15 +43,12 @@ block/I2C:
   - name: DTR
     description: desc DTR.
     byte_offset: 36
-    access: Write
     bit_size: 8
-    fieldset: DTR
   - name: DRR
     description: desc DRR.
     byte_offset: 40
     access: Read
     bit_size: 8
-    fieldset: DRR
   - name: CCR
     description: desc CCR.
     byte_offset: 44
@@ -60,17 +57,25 @@ block/I2C:
     description: desc FLTR.
     byte_offset: 48
     fieldset: FLTR
+  - name: FSTR
+    description: desc FSTR.
+    byte_offset: 52
+    fieldset: FSTR
+  - name: SLVADDR
+    description: desc SLVADDR.
+    byte_offset: 56
+    fieldset: SLVADDR
 fieldset/CCR:
   description: desc CCR.
   fields:
   - name: SLOWW
     description: desc SLOWW.
     bit_offset: 0
-    bit_size: 5
+    bit_size: 8
   - name: SHIGHW
     description: desc SHIGHW.
     bit_offset: 8
-    bit_size: 5
+    bit_size: 8
   - name: CKDIV
     description: desc CKDIV.
     bit_offset: 16
@@ -102,13 +107,13 @@ fieldset/CLR:
     description: desc RFULLFCLR.
     bit_offset: 6
     bit_size: 1
-  - name: TEMPTYFCLR
-    description: desc TEMPTYFCLR.
-    bit_offset: 7
-    bit_size: 1
   - name: ARLOFCLR
     description: desc ARLOFCLR.
     bit_offset: 9
+    bit_size: 1
+  - name: RFREQCLR
+    description: desc RFREQCLR.
+    bit_offset: 10
     bit_size: 1
   - name: NACKFCLR
     description: desc NACKFCLR.
@@ -216,6 +221,10 @@ fieldset/CR2:
     description: desc ARLOIE.
     bit_offset: 9
     bit_size: 1
+  - name: RFREQIE
+    description: desc RFREQIE.
+    bit_offset: 11
+    bit_size: 1
   - name: NACKIE
     description: desc NACKIE.
     bit_offset: 12
@@ -266,22 +275,14 @@ fieldset/CR4:
     description: desc BUSWAIT.
     bit_offset: 10
     bit_size: 1
-fieldset/DRR:
-  description: desc DRR.
-  bit_size: 8
-  fields:
-  - name: DR
-    description: desc DR.
-    bit_offset: 0
-    bit_size: 8
-fieldset/DTR:
-  description: desc DTR.
-  bit_size: 8
-  fields:
-  - name: DT
-    description: desc DT.
-    bit_offset: 0
-    bit_size: 8
+  - name: BUSFREE_CLREN
+    description: desc BUSFREE_CLREN.
+    bit_offset: 12
+    bit_size: 1
+  - name: SDADLY
+    description: desc SDADLY.
+    bit_offset: 16
+    bit_size: 4
 fieldset/FLTR:
   description: desc FLTR.
   fields:
@@ -297,6 +298,33 @@ fieldset/FLTR:
     description: desc ANFEN.
     bit_offset: 5
     bit_size: 1
+fieldset/FSTR:
+  description: desc FSTR.
+  fields:
+  - name: FEN
+    description: desc FEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: TFFLUSH
+    description: desc TFFLUSH.
+    bit_offset: 1
+    bit_size: 1
+  - name: RFFLUSH
+    description: desc RFFLUSH.
+    bit_offset: 2
+    bit_size: 1
+  - name: NACKTFFLUSH
+    description: desc NACKTFFLUSH.
+    bit_offset: 3
+    bit_size: 1
+  - name: TFST
+    description: desc TFST.
+    bit_offset: 4
+    bit_size: 2
+  - name: RFST
+    description: desc RFST.
+    bit_offset: 6
+    bit_size: 2
 fieldset/SLR0:
   description: desc SLR0.
   fields:
@@ -311,6 +339,14 @@ fieldset/SLR0:
   - name: ADDRMOD0
     description: desc ADDRMOD0.
     bit_offset: 15
+    bit_size: 1
+  - name: MSLADDR0
+    description: desc MSLADDR0.
+    bit_offset: 16
+    bit_size: 10
+  - name: MASK0EN
+    description: desc MASK0EN.
+    bit_offset: 26
     bit_size: 1
 fieldset/SLR1:
   description: desc SLR1.
@@ -327,6 +363,14 @@ fieldset/SLR1:
     description: desc ADDRMOD1.
     bit_offset: 15
     bit_size: 1
+  - name: MSLADDR1
+    description: desc MSLADDR1.
+    bit_offset: 16
+    bit_size: 10
+  - name: MASK1EN
+    description: desc MASK1EN.
+    bit_offset: 26
+    bit_size: 1
 fieldset/SLTR:
   description: desc SLTR.
   fields:
@@ -338,6 +382,13 @@ fieldset/SLTR:
     description: desc TOUTHIGH.
     bit_offset: 16
     bit_size: 16
+fieldset/SLVADDR:
+  description: desc SLVADDR.
+  fields:
+  - name: SLVADRR
+    description: desc SLVADRR.
+    bit_offset: 0
+    bit_size: 10
 fieldset/SR:
   description: desc SR.
   fields:
@@ -412,4 +463,28 @@ fieldset/SR:
   - name: SMBALRTF
     description: desc SMBALRTF.
     bit_offset: 23
+    bit_size: 1
+  - name: TFEMPTY
+    description: desc TFEMPTY.
+    bit_offset: 24
+    bit_size: 1
+  - name: TFFULL
+    description: desc TFFULL.
+    bit_offset: 25
+    bit_size: 1
+  - name: RFEMPTY
+    description: desc RFEMPTY.
+    bit_offset: 26
+    bit_size: 1
+  - name: RFFULL
+    description: desc RFFULL.
+    bit_offset: 27
+    bit_size: 1
+  - name: TFST
+    description: desc TFST.
+    bit_offset: 28
+    bit_size: 2
+  - name: RFREQ
+    description: desc RFREQ.
+    bit_offset: 31
     bit_size: 1

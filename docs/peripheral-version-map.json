@@ -5,31 +5,12 @@
   "layouts": [
     {
       "source": "adc_ll_v1",
-      "source_sha256": "880578c553c2c31eb878f3985e14387c41d19b026b3672125e9dcb1c2cde8f90",
+      "source_sha256": "45feb134f3508f51c169ebd6a5f5ff5aa7ebe5f5724d7a9e64d38069703c0177",
       "kind": "adc",
       "version": "v1",
       "status": "active",
       "topic": "analog",
       "tier": 1,
-      "rationale": "旧式 SQR/JQR 四 rank 序列、无内嵌 BGR",
-      "register_count": 26,
-      "field_count": 81,
-      "instances": {
-        "HC32F175": [
-          "ADC"
-        ]
-      },
-      "legacy_source": "adc_v17",
-      "block": "ADC"
-    },
-    {
-      "source": "adc_ll_v2",
-      "source_sha256": "45feb134f3508f51c169ebd6a5f5ff5aa7ebe5f5724d7a9e64d38069703c0177",
-      "kind": "adc",
-      "version": "v2",
-      "status": "active",
-      "topic": "analog",
-      "tier": 2,
       "rationale": "SeqA/SeqB、统一采样时间；通道数及 OPACR 分变体",
       "register_count": 32,
       "field_count": 34,
@@ -42,16 +23,19 @@
         ]
       },
       "legacy_source": "adc_v15",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v2"
+      ]
     },
     {
-      "source": "adc_ll_v2_1",
+      "source": "adc_ll_v1_1",
       "source_sha256": "60f857fd52d8406c7216517f3945748775ef6a5e921a0dedb775eaac82cac246",
       "kind": "adc",
-      "version": "v2_1",
+      "version": "v1_1",
       "status": "active",
       "topic": "analog",
-      "tier": 2,
+      "tier": 1,
       "rationale": "SeqA/SeqB、统一采样时间；通道数及 OPACR 分变体",
       "register_count": 33,
       "field_count": 36,
@@ -61,16 +45,19 @@
         ]
       },
       "legacy_source": "adc_v24",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v2_1"
+      ]
     },
     {
-      "source": "adc_ll_v2_2",
+      "source": "adc_ll_v1_2",
       "source_sha256": "c4f39bbad88563a8285ce2b2588dd3202b0b7f1d2b28b501d9648f4b5129e25b",
       "kind": "adc",
-      "version": "v2_2",
+      "version": "v1_2",
       "status": "active",
       "topic": "analog",
-      "tier": 2,
+      "tier": 1,
       "rationale": "SeqA/SeqB、统一采样时间；通道数及 OPACR 分变体",
       "register_count": 34,
       "field_count": 34,
@@ -80,16 +67,19 @@
         ]
       },
       "legacy_source": "adc_v16",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v2_2"
+      ]
     },
     {
-      "source": "adc_ll_v2_3",
+      "source": "adc_ll_v1_3",
       "source_sha256": "1f1b7fef08d5544c9ea95e36e2879a46646bb2b8cb154245a09ba4b2c5094cb5",
       "kind": "adc",
-      "version": "v2_3",
+      "version": "v1_3",
       "status": "active",
       "topic": "analog",
-      "tier": 2,
+      "tier": 1,
       "rationale": "SeqA/SeqB、统一采样时间；通道数及 OPACR 分变体",
       "register_count": 36,
       "field_count": 34,
@@ -102,16 +92,19 @@
         ]
       },
       "legacy_source": "adc_v23",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v2_3"
+      ]
     },
     {
-      "source": "adc_ll_v3",
+      "source": "adc_ll_v2",
       "source_sha256": "82821e3d684f9376ad552d7b941bd9b99d6dc3e9bffa212b0ca40111d0210d8d",
       "kind": "adc",
-      "version": "v3",
+      "version": "v2",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 35,
       "field_count": 33,
@@ -130,16 +123,19 @@
         ]
       },
       "legacy_source": "adc_v5",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3"
+      ]
     },
     {
-      "source": "adc_ll_v3_1",
+      "source": "adc_ll_v2_1",
       "source_sha256": "89c34c481d47c22851c4fc95cde18a18e871043e1e52ee93e4895b33c10ccc69",
       "kind": "adc",
-      "version": "v3_1",
+      "version": "v2_1",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 39,
       "field_count": 48,
@@ -155,16 +151,19 @@
         ]
       },
       "legacy_source": "adc_v2",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3_1"
+      ]
     },
     {
-      "source": "adc_ll_v3_2",
+      "source": "adc_ll_v2_2",
       "source_sha256": "95c4a6c998265ff6cd2b6c8e15e687a131e3b9958c21ad1ccf5903e3e0a0f4ba",
       "kind": "adc",
-      "version": "v3_2",
+      "version": "v2_2",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 48,
       "field_count": 52,
@@ -186,16 +185,19 @@
         ]
       },
       "legacy_source": "adc_v3",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3_2"
+      ]
     },
     {
-      "source": "adc_ll_v3_3",
+      "source": "adc_ll_v2_3",
       "source_sha256": "796dc58e6259465d5751336980f69338d6f1d8da8aa68551fa07a7f3529f49bf",
       "kind": "adc",
-      "version": "v3_3",
+      "version": "v2_3",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 56,
       "field_count": 54,
@@ -205,16 +207,19 @@
         ]
       },
       "legacy_source": "adc_v21",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3_3"
+      ]
     },
     {
-      "source": "adc_ll_v3_4",
+      "source": "adc_ll_v2_4",
       "source_sha256": "09506c79e43801857656198f013fb68eefe4d723984dfe9969b71dd55323a751",
       "kind": "adc",
-      "version": "v3_4",
+      "version": "v2_4",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 56,
       "field_count": 54,
@@ -224,16 +229,19 @@
         ]
       },
       "legacy_source": "adc_v22",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3_4"
+      ]
     },
     {
-      "source": "adc_ll_v3_5",
+      "source": "adc_ll_v2_5",
       "source_sha256": "c93f870cf7d6bd0f9b3c6c2008212a8f542eab0fb453520de095091ef101569d",
       "kind": "adc",
-      "version": "v3_5",
+      "version": "v2_5",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 57,
       "field_count": 56,
@@ -246,16 +254,19 @@
         ]
       },
       "legacy_source": "adc_v18",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3_5"
+      ]
     },
     {
-      "source": "adc_ll_v3_6",
+      "source": "adc_ll_v2_6",
       "source_sha256": "db2da6ada775ce7da9f723bdfdf2942de7afa0751027ebb6ad8b1bff84c7b222",
       "kind": "adc",
-      "version": "v3_6",
+      "version": "v2_6",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 58,
       "field_count": 59,
@@ -277,16 +288,19 @@
         ]
       },
       "legacy_source": "adc_v1",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3_6"
+      ]
     },
     {
-      "source": "adc_ll_v3_7",
+      "source": "adc_ll_v2_7",
       "source_sha256": "2c5ecfb013fcd5afc54c37b8429099f95d3cf2b25e53de0dd14c4e28b9f8fd76",
       "kind": "adc",
-      "version": "v3_7",
+      "version": "v2_7",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 61,
       "field_count": 54,
@@ -302,16 +316,19 @@
         ]
       },
       "legacy_source": "adc_v11",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3_7"
+      ]
     },
     {
-      "source": "adc_ll_v3_8",
+      "source": "adc_ll_v2_8",
       "source_sha256": "5d99ae8eb404fd577ca095f97ed49f95f2e7e505c55715c739b7b1f511e8ab97",
       "kind": "adc",
-      "version": "v3_8",
+      "version": "v2_8",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 62,
       "field_count": 56,
@@ -324,16 +341,19 @@
         ]
       },
       "legacy_source": "adc_v14",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3_8"
+      ]
     },
     {
-      "source": "adc_ll_v3_9",
+      "source": "adc_ll_v2_9",
       "source_sha256": "f2aeae1e7325db7eb0f9463190ed1d101b1ab9dc958b2c454247057c8ffbe061",
       "kind": "adc",
-      "version": "v3_9",
+      "version": "v2_9",
       "status": "active",
       "topic": "analog",
-      "tier": 3,
+      "tier": 2,
       "rationale": "逐通道采样与多结果，平均/同步/看门狗位域按实例保留",
       "register_count": 66,
       "field_count": 56,
@@ -346,16 +366,19 @@
         ]
       },
       "legacy_source": "adc_v8",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v3_9"
+      ]
     },
     {
-      "source": "adc_ll_v4",
+      "source": "adc_ll_v3",
       "source_sha256": "dd7b1b6e9eea8821848b92f173b8c8a8e2c2332227c77780a25e05a68f229386",
       "kind": "adc",
-      "version": "v4",
+      "version": "v3",
       "status": "active",
       "topic": "analog",
-      "tier": 4,
+      "tier": 3,
       "rationale": "逐通道采样，扩展增益/采样保持或运放控制；同档不同分支",
       "register_count": 54,
       "field_count": 50,
@@ -368,16 +391,19 @@
         ]
       },
       "legacy_source": "adc_v19",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v4"
+      ]
     },
     {
-      "source": "adc_ll_v4_1",
+      "source": "adc_ll_v3_1",
       "source_sha256": "47fe57fd61e847c820c9c5d2ed855340c5dfda29f8241dde4141cd1d86b1fdb7",
       "kind": "adc",
-      "version": "v4_1",
+      "version": "v3_1",
       "status": "active",
       "topic": "analog",
-      "tier": 4,
+      "tier": 3,
       "rationale": "逐通道采样，扩展增益/采样保持或运放控制；同档不同分支",
       "register_count": 57,
       "field_count": 47,
@@ -396,16 +422,19 @@
         ]
       },
       "legacy_source": "adc_v4",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v4_1"
+      ]
     },
     {
-      "source": "adc_ll_v4_2",
+      "source": "adc_ll_v3_2",
       "source_sha256": "c7ec7aa7173c208dd51e993cba80e8528589459b96220f5ad6a3118029e2ebcb",
       "kind": "adc",
-      "version": "v4_2",
+      "version": "v3_2",
       "status": "active",
       "topic": "analog",
-      "tier": 4,
+      "tier": 3,
       "rationale": "逐通道采样，扩展增益/采样保持或运放控制；同档不同分支",
       "register_count": 59,
       "field_count": 57,
@@ -421,16 +450,19 @@
         ]
       },
       "legacy_source": "adc_v10",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v4_2"
+      ]
     },
     {
-      "source": "adc_ll_v4_3",
+      "source": "adc_ll_v3_3",
       "source_sha256": "f1f98cf5eb10fb6dd79259f5fed0a00a8df09cf7ea832e2e3944b257c023cbf4",
       "kind": "adc",
-      "version": "v4_3",
+      "version": "v3_3",
       "status": "active",
       "topic": "analog",
-      "tier": 4,
+      "tier": 3,
       "rationale": "逐通道采样，扩展增益/采样保持或运放控制；同档不同分支",
       "register_count": 60,
       "field_count": 59,
@@ -443,16 +475,19 @@
         ]
       },
       "legacy_source": "adc_v13",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v4_3"
+      ]
     },
     {
-      "source": "adc_ll_v4_4",
+      "source": "adc_ll_v3_4",
       "source_sha256": "c6736d79adc3e1583aef8fc44c07a5a93bd9151f07f5e545a8c38cfb0ae958ce",
       "kind": "adc",
-      "version": "v4_4",
+      "version": "v3_4",
       "status": "active",
       "topic": "analog",
-      "tier": 4,
+      "tier": 3,
       "rationale": "逐通道采样，扩展增益/采样保持或运放控制；同档不同分支",
       "register_count": 61,
       "field_count": 64,
@@ -462,16 +497,19 @@
         ]
       },
       "legacy_source": "adc_v20",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v4_4"
+      ]
     },
     {
-      "source": "adc_ll_v4_5",
+      "source": "adc_ll_v3_5",
       "source_sha256": "7e3179c679af2c760313d44eb7c4219b9780aa3a0dc3bd79fd6c93d61a1d4f03",
       "kind": "adc",
-      "version": "v4_5",
+      "version": "v3_5",
       "status": "active",
       "topic": "analog",
-      "tier": 4,
+      "tier": 3,
       "rationale": "逐通道采样，扩展增益/采样保持或运放控制；同档不同分支",
       "register_count": 63,
       "field_count": 66,
@@ -487,16 +525,19 @@
         ]
       },
       "legacy_source": "adc_v9",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v4_5"
+      ]
     },
     {
-      "source": "adc_ll_v4_6",
+      "source": "adc_ll_v3_6",
       "source_sha256": "9ec7964d5759904b60083c8af8e922e0a6d3c28557522f7d129c591bc79e0f51",
       "kind": "adc",
-      "version": "v4_6",
+      "version": "v3_6",
       "status": "active",
       "topic": "analog",
-      "tier": 4,
+      "tier": 3,
       "rationale": "逐通道采样，扩展增益/采样保持或运放控制；同档不同分支",
       "register_count": 64,
       "field_count": 68,
@@ -509,16 +550,19 @@
         ]
       },
       "legacy_source": "adc_v12",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v4_6"
+      ]
     },
     {
-      "source": "adc_ll_v4_7",
+      "source": "adc_ll_v3_7",
       "source_sha256": "b4f5b300775e8bbde7ba545bfb5eee96e267c2f8f2bfe2de7f46350136367986",
       "kind": "adc",
-      "version": "v4_7",
+      "version": "v3_7",
       "status": "active",
       "topic": "analog",
-      "tier": 4,
+      "tier": 3,
       "rationale": "逐通道采样，扩展增益/采样保持或运放控制；同档不同分支",
       "register_count": 67,
       "field_count": 59,
@@ -531,16 +575,19 @@
         ]
       },
       "legacy_source": "adc_v6",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v4_7"
+      ]
     },
     {
-      "source": "adc_ll_v4_8",
+      "source": "adc_ll_v3_8",
       "source_sha256": "0f9d4bed96ddad82caa0dc2a05d72394deafafebb3c59f2e82e521bdaec5529c",
       "kind": "adc",
-      "version": "v4_8",
+      "version": "v3_8",
       "status": "active",
       "topic": "analog",
-      "tier": 4,
+      "tier": 3,
       "rationale": "逐通道采样，扩展增益/采样保持或运放控制；同档不同分支",
       "register_count": 67,
       "field_count": 59,
@@ -553,16 +600,19 @@
         ]
       },
       "legacy_source": "adc_v7",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v4_8"
+      ]
     },
     {
-      "source": "adc_ll_v5",
+      "source": "adc_ll_v4",
       "source_sha256": "3b5a60cd4a7d0056683511a550cec2a7874057f76b98586cdf71239cd7115055",
       "kind": "adc",
-      "version": "v5",
+      "version": "v4",
       "status": "active",
       "topic": "analog",
-      "tier": 5,
+      "tier": 4,
       "rationale": "逐通道采样、SeqC/差分结果 DIR；OPACR 按实例保留",
       "register_count": 53,
       "field_count": 81,
@@ -572,16 +622,19 @@
         ]
       },
       "legacy_source": "adc_v26",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v5"
+      ]
     },
     {
-      "source": "adc_ll_v5_1",
+      "source": "adc_ll_v4_1",
       "source_sha256": "9836bbcb27042627b85fcc97c5e379926f342e3e3f15bb017e54b86f36c655c5",
       "kind": "adc",
-      "version": "v5_1",
+      "version": "v4_1",
       "status": "active",
       "topic": "analog",
-      "tier": 5,
+      "tier": 4,
       "rationale": "逐通道采样、SeqC/差分结果 DIR；OPACR 按实例保留",
       "register_count": 75,
       "field_count": 97,
@@ -591,7 +644,10 @@
         ]
       },
       "legacy_source": "adc_v25",
-      "block": "ADC"
+      "block": "ADC",
+      "renamed_from": [
+        "adc_ll_v5_1"
+      ]
     },
     {
       "source": "aes_ll_v1",
@@ -946,25 +1002,6 @@
       },
       "legacy_source": "aos_v5",
       "block": "AOS"
-    },
-    {
-      "source": "atim_ll_v1",
-      "source_sha256": "3cd1ac13e24dea6bc5de16c380b56e6d1b99d617ab91c83c1a4508638a0a0070",
-      "kind": "atim",
-      "version": "v1",
-      "status": "active",
-      "topic": "timer-adv",
-      "tier": 1,
-      "rationale": "完整单块高级定时器，多模式及四通道控制",
-      "register_count": 27,
-      "field_count": 184,
-      "instances": {
-        "HC32F175": [
-          "ATIM3"
-        ]
-      },
-      "legacy_source": "atim_common",
-      "block": "ATIM"
     },
     {
       "source": "can_ll_v1",
@@ -1838,31 +1875,12 @@
     },
     {
       "source": "crc_ll_v1",
-      "source_sha256": "c6ef9126ad5735ffb25494ef3dfa071c7b9ab83544b6dacb6680459a7a25a311",
+      "source_sha256": "96e188b94741adc02ddd3520ec14f155c224351c275ba43e25b369ef46d23a72",
       "kind": "crc",
       "version": "v1",
       "status": "active",
       "topic": "crypto-comm",
       "tier": 1,
-      "rationale": "旧式单数据窗口",
-      "register_count": 3,
-      "field_count": 4,
-      "instances": {
-        "HC32F175": [
-          "CRC"
-        ]
-      },
-      "legacy_source": "crc_v5",
-      "block": "CRC"
-    },
-    {
-      "source": "crc_ll_v2",
-      "source_sha256": "96e188b94741adc02ddd3520ec14f155c224351c275ba43e25b369ef46d23a72",
-      "kind": "crc",
-      "version": "v2",
-      "status": "active",
-      "topic": "crypto-comm",
-      "tier": 2,
       "rationale": "数据输入窗口阵列；双结果/FLG 按能力分档与变体",
       "register_count": 34,
       "field_count": 2,
@@ -1890,16 +1908,19 @@
         ]
       },
       "legacy_source": "crc_v1",
-      "block": "CRC"
+      "block": "CRC",
+      "renamed_from": [
+        "crc_ll_v2"
+      ]
     },
     {
-      "source": "crc_ll_v2_1",
+      "source": "crc_ll_v1_1",
       "source_sha256": "facca692347e879724dd7746c8d0ebadb81a858dac0991d259aea6fde77f6871",
       "kind": "crc",
-      "version": "v2_1",
+      "version": "v1_1",
       "status": "active",
       "topic": "crypto-comm",
-      "tier": 2,
+      "tier": 1,
       "rationale": "数据输入窗口阵列；双结果/FLG 按能力分档与变体",
       "register_count": 34,
       "field_count": 2,
@@ -1936,16 +1957,19 @@
         ]
       },
       "legacy_source": "crc_v3",
-      "block": "CRC"
+      "block": "CRC",
+      "renamed_from": [
+        "crc_ll_v2_1"
+      ]
     },
     {
-      "source": "crc_ll_v2_2",
+      "source": "crc_ll_v1_2",
       "source_sha256": "904bf5728eb6a5fd0a316e47c3e80c583a13266cfdd058fbd29ecdd15ee14828",
       "kind": "crc",
-      "version": "v2_2",
+      "version": "v1_2",
       "status": "active",
       "topic": "crypto-comm",
-      "tier": 2,
+      "tier": 1,
       "rationale": "数据输入窗口阵列；双结果/FLG 按能力分档与变体",
       "register_count": 35,
       "field_count": 7,
@@ -1964,16 +1988,19 @@
         ]
       },
       "legacy_source": "crc_v2",
-      "block": "CRC"
+      "block": "CRC",
+      "renamed_from": [
+        "crc_ll_v2_2"
+      ]
     },
     {
-      "source": "crc_ll_v3",
+      "source": "crc_ll_v2",
       "source_sha256": "dafd899b67bf5e8eb9f20802a72c54cf82e124a523892a50f37f88271011cdb7",
       "kind": "crc",
-      "version": "v3",
+      "version": "v2",
       "status": "active",
       "topic": "crypto-comm",
-      "tier": 3,
+      "tier": 2,
       "rationale": "数据输入窗口阵列；双结果/FLG 按能力分档与变体",
       "register_count": 35,
       "field_count": 3,
@@ -1995,28 +2022,10 @@
         ]
       },
       "legacy_source": "crc_v4",
-      "block": "CRC"
-    },
-    {
-      "source": "csu_ll_v1",
-      "source_sha256": "10105f44a823f764ef98c4b5fb91b1a916cb8bcfa7d3fa82321674d96ee4fb35",
-      "kind": "csu",
-      "version": "v1",
-      "status": "active",
-      "topic": "clock-reset",
-      "tier": 1,
-      "rationale": "时钟切换控制",
-      "register_count": 7,
-      "field_count": 18,
-      "instances": {
-        "HC32F175": [
-          "CSU0",
-          "CSU1",
-          "CSU2"
-        ]
-      },
-      "legacy_source": "csu_common",
-      "block": "CSU"
+      "block": "CRC",
+      "renamed_from": [
+        "crc_ll_v3"
+      ]
     },
     {
       "source": "ctc_ll_v1",
@@ -2140,25 +2149,6 @@
       "block": "CTC"
     },
     {
-      "source": "ctrim_ll_v1",
-      "source_sha256": "b19690312b99588cdb0c6f47e243366b07cec631e9d6542a83ab55daff12744a",
-      "kind": "ctrim",
-      "version": "v1",
-      "status": "active",
-      "topic": "clock-reset",
-      "tier": 1,
-      "rationale": "计数/捕获时钟校准；FLIM 位宽、校准源与控制位分变体",
-      "register_count": 10,
-      "field_count": 33,
-      "instances": {
-        "HC32F175": [
-          "CTRIM"
-        ]
-      },
-      "legacy_source": "ctrim_common",
-      "block": "CTRIM"
-    },
-    {
       "source": "dac_ll_v1",
       "source_sha256": "8c6603206048890fd193fca7e0b4ea019d6d9969b0591b477dd38cd813d4ed85",
       "kind": "dac",
@@ -2276,31 +2266,12 @@
     },
     {
       "source": "dbgc_ll_v1",
-      "source_sha256": "46ef67e8519e6efb8324c730053c12fd37e55341f2c421bcd22d552f94136963",
+      "source_sha256": "0619c511fb3a93f2204f8882cc5e9da1060078306d6f69b465caa50b74e7d64c",
       "kind": "dbgc",
       "version": "v1",
       "status": "active",
       "topic": "gpio-int",
       "tier": 1,
-      "rationale": "停止模式调试控制",
-      "register_count": 1,
-      "field_count": 17,
-      "instances": {
-        "HC32F175": [
-          "DBGC"
-        ]
-      },
-      "legacy_source": "dbgc_v9",
-      "block": "DBGC"
-    },
-    {
-      "source": "dbgc_ll_v2",
-      "source_sha256": "0619c511fb3a93f2204f8882cc5e9da1060078306d6f69b465caa50b74e7d64c",
-      "kind": "dbgc",
-      "version": "v2",
-      "status": "active",
-      "topic": "gpio-int",
-      "tier": 2,
       "rationale": "MCU 调试状态和停止控制",
       "register_count": 2,
       "field_count": 11,
@@ -2313,16 +2284,19 @@
         ]
       },
       "legacy_source": "dbgc_v12",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v2"
+      ]
     },
     {
-      "source": "dbgc_ll_v2_1",
+      "source": "dbgc_ll_v1_1",
       "source_sha256": "87eebc6c73af5f1cce742b7bead530aaec58d9b9a737e2c700728b782b6e152f",
       "kind": "dbgc",
-      "version": "v2_1",
+      "version": "v1_1",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "MCU 调试状态和停止控制",
       "register_count": 2,
       "field_count": 14,
@@ -2335,16 +2309,19 @@
         ]
       },
       "legacy_source": "dbgc_v6",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v2_1"
+      ]
     },
     {
-      "source": "dbgc_ll_v2_2",
+      "source": "dbgc_ll_v1_2",
       "source_sha256": "c3060d061ce041edd2795613684f3c86ecca70fc65cbbf1caa666917a675a933",
       "kind": "dbgc",
-      "version": "v2_2",
+      "version": "v1_2",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "MCU 调试状态和停止控制",
       "register_count": 2,
       "field_count": 15,
@@ -2354,16 +2331,19 @@
         ]
       },
       "legacy_source": "dbgc_v7",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v2_2"
+      ]
     },
     {
-      "source": "dbgc_ll_v2_3",
+      "source": "dbgc_ll_v1_3",
       "source_sha256": "cd4b43481014b42b3a93ae896fa1a7e4f55de551b15589aceb7b41bd45640f58",
       "kind": "dbgc",
-      "version": "v2_3",
+      "version": "v1_3",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "MCU 调试状态和停止控制",
       "register_count": 2,
       "field_count": 16,
@@ -2373,16 +2353,19 @@
         ]
       },
       "legacy_source": "dbgc_v14",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v2_3"
+      ]
     },
     {
-      "source": "dbgc_ll_v3",
+      "source": "dbgc_ll_v2",
       "source_sha256": "c12b6e10ac6971a1b8c9882370d506230a91f41676d2345d9d308a97e16fbd9f",
       "kind": "dbgc",
-      "version": "v3",
+      "version": "v2",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 3,
+      "tier": 2,
       "rationale": "运行/停止调试与跟踪控制",
       "register_count": 3,
       "field_count": 21,
@@ -2401,16 +2384,19 @@
         ]
       },
       "legacy_source": "dbgc_v2",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v3"
+      ]
     },
     {
-      "source": "dbgc_ll_v3_1",
+      "source": "dbgc_ll_v2_1",
       "source_sha256": "2f455ba99b4b235da1da190debe9c744dabdb68eef63f4f92dddc94501888b63",
       "kind": "dbgc",
-      "version": "v3_1",
+      "version": "v2_1",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 3,
+      "tier": 2,
       "rationale": "运行/停止调试与跟踪控制",
       "register_count": 4,
       "field_count": 36,
@@ -2429,16 +2415,19 @@
         ]
       },
       "legacy_source": "dbgc_v4",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v3_1"
+      ]
     },
     {
-      "source": "dbgc_ll_v3_2",
+      "source": "dbgc_ll_v2_2",
       "source_sha256": "6e3a48d70872cd1e1fc26879cec373721763da9ecbab3ba979f13ec6cb19d718",
       "kind": "dbgc",
-      "version": "v3_2",
+      "version": "v2_2",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 3,
+      "tier": 2,
       "rationale": "运行/停止调试与跟踪控制",
       "register_count": 5,
       "field_count": 19,
@@ -2454,16 +2443,19 @@
         ]
       },
       "legacy_source": "dbgc_v1",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v3_2"
+      ]
     },
     {
-      "source": "dbgc_ll_v3_3",
+      "source": "dbgc_ll_v2_3",
       "source_sha256": "3b2fcf96b36ce01146a058d628f935df27052fc509c93e1c0bd383e4de84270a",
       "kind": "dbgc",
-      "version": "v3_3",
+      "version": "v2_3",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 3,
+      "tier": 2,
       "rationale": "运行/停止调试与跟踪控制",
       "register_count": 5,
       "field_count": 25,
@@ -2476,16 +2468,19 @@
         ]
       },
       "legacy_source": "dbgc_v10",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v3_3"
+      ]
     },
     {
-      "source": "dbgc_ll_v3_4",
+      "source": "dbgc_ll_v2_4",
       "source_sha256": "459389deaa79a0fbc24b9fcd6c309ab3c35922870647bb2aa646dcfe39599533",
       "kind": "dbgc",
-      "version": "v3_4",
+      "version": "v2_4",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 3,
+      "tier": 2,
       "rationale": "运行/停止调试与跟踪控制",
       "register_count": 5,
       "field_count": 30,
@@ -2498,16 +2493,19 @@
         ]
       },
       "legacy_source": "dbgc_v3",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v3_4"
+      ]
     },
     {
-      "source": "dbgc_ll_v3_5",
+      "source": "dbgc_ll_v2_5",
       "source_sha256": "e48d4736651c583e125a54c1d2d3e573a2759c751cbb3ee0b847fb3864681e80",
       "kind": "dbgc",
-      "version": "v3_5",
+      "version": "v2_5",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 3,
+      "tier": 2,
       "rationale": "运行/停止调试与跟踪控制",
       "register_count": 5,
       "field_count": 42,
@@ -2520,16 +2518,19 @@
         ]
       },
       "legacy_source": "dbgc_v5",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v3_5"
+      ]
     },
     {
-      "source": "dbgc_ll_v4",
+      "source": "dbgc_ll_v3",
       "source_sha256": "fc9a6b6c5c92aff09f3752c9667b90b7f2c14a1e2400fd677363e0cec7697871",
       "kind": "dbgc",
-      "version": "v4",
+      "version": "v3",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 4,
+      "tier": 3,
       "rationale": "Flash CRC 调试控制；是否含 MCU 状态按变体保留",
       "register_count": 5,
       "field_count": 9,
@@ -2542,16 +2543,19 @@
         ]
       },
       "legacy_source": "dbgc_v11",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v4"
+      ]
     },
     {
-      "source": "dbgc_ll_v4_1",
+      "source": "dbgc_ll_v3_1",
       "source_sha256": "30b4e27b21093b0fbb62198735d18480be227227d5701024e9b31a2f7d5665f6",
       "kind": "dbgc",
-      "version": "v4_1",
+      "version": "v3_1",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 4,
+      "tier": 3,
       "rationale": "Flash CRC 调试控制；是否含 MCU 状态按变体保留",
       "register_count": 7,
       "field_count": 25,
@@ -2561,7 +2565,10 @@
         ]
       },
       "legacy_source": "dbgc_v15",
-      "block": "DBGC"
+      "block": "DBGC",
+      "renamed_from": [
+        "dbgc_ll_v4_1"
+      ]
     },
     {
       "source": "dbgc_t_ll_v1",
@@ -2606,25 +2613,6 @@
       },
       "legacy_source": "dbgc_v13",
       "block": "DBGC_T"
-    },
-    {
-      "source": "dfm_ll_v1",
-      "source_sha256": "3cec2dd1ba8c358af2054ca7b9ea267dd1094d75b7bca354569ff2ea0ea38597",
-      "kind": "dfm",
-      "version": "v1",
-      "status": "active",
-      "topic": "memory",
-      "tier": 1,
-      "rationale": "数据 Flash 控制（仅 F175 纳入）",
-      "register_count": 10,
-      "field_count": 22,
-      "instances": {
-        "HC32F175": [
-          "DFM"
-        ]
-      },
-      "legacy_source": "dfm_v1",
-      "block": "DFM"
     },
     {
       "source": "dma_ll_v1",
@@ -2906,25 +2894,6 @@
       "block": "DMA"
     },
     {
-      "source": "dmac_ll_v1",
-      "source_sha256": "6fa92651dd1485f097364c097e8714a7f736fce3d9e6e1afe8833377ceff254a",
-      "kind": "dmac",
-      "version": "v1",
-      "status": "active",
-      "topic": "dma",
-      "tier": 1,
-      "rationale": "旧式 CONF/CONFA DMA；4 个源地址窗口，触发位与字段方言分变体",
-      "register_count": 17,
-      "field_count": 79,
-      "instances": {
-        "HC32F175": [
-          "DMAC"
-        ]
-      },
-      "legacy_source": "dmac_common",
-      "block": "DMAC"
-    },
-    {
       "source": "efm_ll_v1",
       "source_sha256": "357fd83c3fd5dfc2b403bfefe8e3814bd0fe9469ccbde4814d9f51da6c2e833d",
       "kind": "efm",
@@ -3149,28 +3118,9 @@
     },
     {
       "source": "efm_ll_v3",
-      "source_sha256": "ff4f5380a2a5ad7bb117549c42e3cd5e6ad0154f1c8934174fd3f56dbc3a6e97",
-      "kind": "efm",
-      "version": "v3",
-      "status": "active",
-      "topic": "memory",
-      "tier": 3,
-      "rationale": "编程/保护及 ECC 错误记录",
-      "register_count": 19,
-      "field_count": 54,
-      "instances": {
-        "HC32F175": [
-          "EFM"
-        ]
-      },
-      "legacy_source": "efm_v8",
-      "block": "EFM"
-    },
-    {
-      "source": "efm_ll_v3_1",
       "source_sha256": "fa35311f80b6ae9844c9756ff32ebc406596323e6125ab677f384b7f768159bb",
       "kind": "efm",
-      "version": "v3_1",
+      "version": "v3",
       "status": "active",
       "topic": "memory",
       "tier": 3,
@@ -3183,13 +3133,16 @@
         ]
       },
       "legacy_source": "efm_v14",
-      "block": "EFM"
+      "block": "EFM",
+      "renamed_from": [
+        "efm_ll_v3_1"
+      ]
     },
     {
-      "source": "efm_ll_v3_2",
+      "source": "efm_ll_v3_1",
       "source_sha256": "ad51032fe5478e45766bc009f86daa71eaeb322b7ee8b5994d318cd401bd3d0d",
       "kind": "efm",
-      "version": "v3_2",
+      "version": "v3_1",
       "status": "active",
       "topic": "memory",
       "tier": 3,
@@ -3205,7 +3158,10 @@
         ]
       },
       "legacy_source": "efm_v5",
-      "block": "EFM"
+      "block": "EFM",
+      "renamed_from": [
+        "efm_ll_v3_2"
+      ]
     },
     {
       "source": "efm_ll_v4",
@@ -3726,25 +3682,6 @@
       "block": "EMB_CTL1"
     },
     {
-      "source": "exti_ll_v1",
-      "source_sha256": "bac6ec3f7ffea2e68a4063ef8b8bcda7d464fce3463e4beb2c3bfdb97fb82f53",
-      "kind": "exti",
-      "version": "v1",
-      "status": "active",
-      "topic": "gpio-int",
-      "tier": 1,
-      "rationale": "外部中断控制",
-      "register_count": 15,
-      "field_count": 29,
-      "instances": {
-        "HC32F175": [
-          "EXTI"
-        ]
-      },
-      "legacy_source": "exti_common",
-      "block": "EXTI"
-    },
-    {
       "source": "fcm_ll_v1",
       "source_sha256": "cb1749f9401cd75f37dc42488342ac2c4e8373fb34dcf7668f974456f7bd6744",
       "kind": "fcm",
@@ -3888,31 +3825,12 @@
     },
     {
       "source": "gpio_ll_v1",
-      "source_sha256": "afb978c726739ec4a1e60cc374392fc2c6757210ac229c571e32a875dd79fbbb",
+      "source_sha256": "557eb901912da16de4c5770c2f8ac70bc6205fc0ab868c388ade2f4df66c0750",
       "kind": "gpio",
       "version": "v1",
       "status": "active",
       "topic": "gpio-int",
       "tier": 1,
-      "rationale": "旧式 AFR 端口控制",
-      "register_count": 165,
-      "field_count": 1119,
-      "instances": {
-        "HC32F175": [
-          "GPIO"
-        ]
-      },
-      "legacy_source": "gpio_v9",
-      "block": "GPIO"
-    },
-    {
-      "source": "gpio_ll_v2",
-      "source_sha256": "557eb901912da16de4c5770c2f8ac70bc6205fc0ab868c388ade2f4df66c0750",
-      "kind": "gpio",
-      "version": "v2",
-      "status": "active",
-      "topic": "gpio-int",
-      "tier": 2,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 110,
       "field_count": 695,
@@ -3922,16 +3840,19 @@
         ]
       },
       "legacy_source": "gpio_v7",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2"
+      ]
     },
     {
-      "source": "gpio_ll_v2_1",
+      "source": "gpio_ll_v1_1",
       "source_sha256": "28dba147fc762a9e01b3fc7c88dc9a7d0780279d71aa3c1deef00058f18ab4ca",
       "kind": "gpio",
-      "version": "v2_1",
+      "version": "v1_1",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 110,
       "field_count": 983,
@@ -3941,16 +3862,19 @@
         ]
       },
       "legacy_source": "gpio_v6",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_1"
+      ]
     },
     {
-      "source": "gpio_ll_v2_2",
+      "source": "gpio_ll_v1_2",
       "source_sha256": "7fa795cb87294069f4f7ea6c4ef7e72aee26289e90262818289990a54012b6d6",
       "kind": "gpio",
-      "version": "v2_2",
+      "version": "v1_2",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 114,
       "field_count": 763,
@@ -3960,16 +3884,19 @@
         ]
       },
       "legacy_source": "gpio_v14",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_2"
+      ]
     },
     {
-      "source": "gpio_ll_v2_3",
+      "source": "gpio_ll_v1_3",
       "source_sha256": "1250711f50fbb1cbb8e72df6db8ab750a770413ae264744cb0887952550effee",
       "kind": "gpio",
-      "version": "v2_3",
+      "version": "v1_3",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 128,
       "field_count": 1239,
@@ -3979,16 +3906,19 @@
         ]
       },
       "legacy_source": "gpio_v8",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_3"
+      ]
     },
     {
-      "source": "gpio_ll_v2_4",
+      "source": "gpio_ll_v1_4",
       "source_sha256": "12c26e28d0324119700e4caf7665b948645243d4d11588b65e8df9a6d96b3827",
       "kind": "gpio",
-      "version": "v2_4",
+      "version": "v1_4",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 137,
       "field_count": 1097,
@@ -3998,16 +3928,19 @@
         ]
       },
       "legacy_source": "gpio_v15",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_4"
+      ]
     },
     {
-      "source": "gpio_ll_v2_5",
+      "source": "gpio_ll_v1_5",
       "source_sha256": "d0a1a0222a867c0fcea9f88347109b1ff9fa8fe7d05eb818e22d60cee0fd8cea",
       "kind": "gpio",
-      "version": "v2_5",
+      "version": "v1_5",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 138,
       "field_count": 1289,
@@ -4020,16 +3953,19 @@
         ]
       },
       "legacy_source": "gpio_v10",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_5"
+      ]
     },
     {
-      "source": "gpio_ll_v2_6",
+      "source": "gpio_ll_v1_6",
       "source_sha256": "f099ebbe339359c1cd01100dc1f8b6d1ec44b4e43726da01bb75366cc6c5c585",
       "kind": "gpio",
-      "version": "v2_6",
+      "version": "v1_6",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 150,
       "field_count": 1358,
@@ -4042,16 +3978,19 @@
         ]
       },
       "legacy_source": "gpio_v13",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_6"
+      ]
     },
     {
-      "source": "gpio_ll_v2_7",
+      "source": "gpio_ll_v1_7",
       "source_sha256": "3af30ce0c431924c28f4129025e69e6bc5b58aa7597ec099b727db154df57962",
       "kind": "gpio",
-      "version": "v2_7",
+      "version": "v1_7",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 173,
       "field_count": 1586,
@@ -4067,16 +4006,19 @@
         ]
       },
       "legacy_source": "gpio_v1",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_7"
+      ]
     },
     {
-      "source": "gpio_ll_v2_8",
+      "source": "gpio_ll_v1_8",
       "source_sha256": "eb6e8f7b32f980e6f5daf44d536d13bad1bc67345497aa46f86c3c3720f2169b",
       "kind": "gpio",
-      "version": "v2_8",
+      "version": "v1_8",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 180,
       "field_count": 1216,
@@ -4089,16 +4031,19 @@
         ]
       },
       "legacy_source": "gpio_v11",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_8"
+      ]
     },
     {
-      "source": "gpio_ll_v2_9",
+      "source": "gpio_ll_v1_9",
       "source_sha256": "dfc5c85361e1c149268ff53b68861a87ccb9e19556324e1fc3af4525bf422a69",
       "kind": "gpio",
-      "version": "v2_9",
+      "version": "v1_9",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 206,
       "field_count": 1500,
@@ -4117,16 +4062,19 @@
         ]
       },
       "legacy_source": "gpio_v2",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_9"
+      ]
     },
     {
-      "source": "gpio_ll_v2_10",
+      "source": "gpio_ll_v1_10",
       "source_sha256": "ecbb581662579ace3b71817c8ef4e4645f6cd2dfd1843b228c4f7e7fea72bd61",
       "kind": "gpio",
-      "version": "v2_10",
+      "version": "v1_10",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 217,
       "field_count": 1916,
@@ -4139,16 +4087,19 @@
         ]
       },
       "legacy_source": "gpio_v3",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_10"
+      ]
     },
     {
-      "source": "gpio_ll_v2_11",
+      "source": "gpio_ll_v1_11",
       "source_sha256": "bcdf0b56c73d5145e31ede457d078803ecb4813273fe08ef45de60a8da45e074",
       "kind": "gpio",
-      "version": "v2_11",
+      "version": "v1_11",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 290,
       "field_count": 2210,
@@ -4158,16 +4109,19 @@
         ]
       },
       "legacy_source": "gpio_v12",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_11"
+      ]
     },
     {
-      "source": "gpio_ll_v2_12",
+      "source": "gpio_ll_v1_12",
       "source_sha256": "73c9a96387c8a7aa852e2e9256f8220aa710f40cf65caeec236b57243a170f57",
       "kind": "gpio",
-      "version": "v2_12",
+      "version": "v1_12",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 342,
       "field_count": 2704,
@@ -4183,16 +4137,19 @@
         ]
       },
       "legacy_source": "gpio_v4",
-      "block": "GPIO"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_12"
+      ]
     },
     {
-      "source": "gpio_ll_v2_13",
+      "source": "gpio_ll_v1_13",
       "source_sha256": "e3d2fdbb41407ef253ade89ea00de338046b7b60f613cef7137cec7a11fdda3a",
       "kind": "gpio",
-      "version": "v2_13",
+      "version": "v1_13",
       "status": "active",
       "topic": "gpio-int",
-      "tier": 2,
+      "tier": 1,
       "rationale": "端口保护与复用；字节端口和 PCR/PFSR 为同档不同分支",
       "register_count": 342,
       "field_count": 2716,
@@ -4205,63 +4162,19 @@
         ]
       },
       "legacy_source": "gpio_v5",
-      "block": "GPIO"
-    },
-    {
-      "source": "gtim_ll_v1",
-      "source_sha256": "fa971ba8004f16c4b5f051a0b28705594ad882c873eb5a5e832fb3020101f973",
-      "kind": "gtim",
-      "version": "v1",
-      "status": "active",
-      "topic": "timer-gen",
-      "tier": 1,
-      "rationale": "通用捕获/比较定时器；IER 与控制字段分变体",
-      "register_count": 16,
-      "field_count": 96,
-      "instances": {
-        "HC32F175": [
-          "GTIM0",
-          "GTIM1",
-          "GTIM2",
-          "GTIM3",
-          "GTIM4",
-          "GTIM5",
-          "GTIM6",
-          "GTIM7",
-          "GTIM8"
-        ]
-      },
-      "legacy_source": "gtim_common",
-      "block": "GTIM"
+      "block": "GPIO",
+      "renamed_from": [
+        "gpio_ll_v2_13"
+      ]
     },
     {
       "source": "i2c_ll_v1",
-      "source_sha256": "e20edff8148f71f2257bd6758a9c91d64bdc57db5d9d4993d3637ca571b6edf7",
+      "source_sha256": "124daa229528b8b175b187dd6141f99943dbea75ae81dd64506d3d3fcec21d35",
       "kind": "i2c",
       "version": "v1",
       "status": "active",
       "topic": "spi-i2c-i2s",
       "tier": 1,
-      "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
-      "register_count": 9,
-      "field_count": 17,
-      "instances": {
-        "HC32F175": [
-          "I2C0",
-          "I2C1"
-        ]
-      },
-      "legacy_source": "i_v12",
-      "block": "I2C"
-    },
-    {
-      "source": "i2c_ll_v2",
-      "source_sha256": "124daa229528b8b175b187dd6141f99943dbea75ae81dd64506d3d3fcec21d35",
-      "kind": "i2c",
-      "version": "v2",
-      "status": "active",
-      "topic": "spi-i2c-i2s",
-      "tier": 2,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 11,
       "field_count": 67,
@@ -4271,16 +4184,19 @@
         ]
       },
       "legacy_source": "i_v11",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v2"
+      ]
     },
     {
-      "source": "i2c_ll_v2_1",
+      "source": "i2c_ll_v1_1",
       "source_sha256": "86d95ab0e4e4eb55a67d5de405486b9f0813a0b5bfb0d5f921d3bd2b0cdd2028",
       "kind": "i2c",
-      "version": "v2_1",
+      "version": "v1_1",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 2,
+      "tier": 1,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 11,
       "field_count": 69,
@@ -4290,16 +4206,19 @@
         ]
       },
       "legacy_source": "i_v9",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v2_1"
+      ]
     },
     {
-      "source": "i2c_ll_v2_2",
+      "source": "i2c_ll_v1_2",
       "source_sha256": "c78ec81d5d7de422a019c6eaa63f0f46fdbc2dc34b09b4ce3ef56e0780721933",
       "kind": "i2c",
-      "version": "v2_2",
+      "version": "v1_2",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 2,
+      "tier": 1,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 11,
       "field_count": 70,
@@ -4312,16 +4231,19 @@
         ]
       },
       "legacy_source": "i_v10",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v2_2"
+      ]
     },
     {
-      "source": "i2c_ll_v3",
+      "source": "i2c_ll_v2",
       "source_sha256": "53f0613244f07440b5e79ed5c121561b0af927253a5de87de6927e98f7a1eeb5",
       "kind": "i2c",
-      "version": "v3",
+      "version": "v2",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 3,
+      "tier": 2,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 13,
       "field_count": 77,
@@ -4334,16 +4256,19 @@
         ]
       },
       "legacy_source": "i_v15",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v3"
+      ]
     },
     {
-      "source": "i2c_ll_v3_1",
+      "source": "i2c_ll_v2_1",
       "source_sha256": "8f8985a059f31ea12fb57c1618bfcae25a9064dfb3745c05d0026680a35f2e30",
       "kind": "i2c",
-      "version": "v3_1",
+      "version": "v2_1",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 3,
+      "tier": 2,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 13,
       "field_count": 78,
@@ -4399,16 +4324,19 @@
         ]
       },
       "legacy_source": "i_v2",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v3_1"
+      ]
     },
     {
-      "source": "i2c_ll_v4",
+      "source": "i2c_ll_v3",
       "source_sha256": "d2a359e9805512d664889a6dd9bf634a61209df1ee0e0d6bd68de080078f0341",
       "kind": "i2c",
-      "version": "v4",
+      "version": "v3",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 4,
+      "tier": 3,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 15,
       "field_count": 95,
@@ -4431,16 +4359,19 @@
         ]
       },
       "legacy_source": "i_v6",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v4"
+      ]
     },
     {
-      "source": "i2c_ll_v4_1",
+      "source": "i2c_ll_v3_1",
       "source_sha256": "9a861a07e722cf2d0ba772fbfc192131dd384ac67d5a54882a8d50b4c13a63ab",
       "kind": "i2c",
-      "version": "v4_1",
+      "version": "v3_1",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 4,
+      "tier": 3,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 15,
       "field_count": 96,
@@ -4459,16 +4390,19 @@
         ]
       },
       "legacy_source": "i_v1",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v4_1"
+      ]
     },
     {
-      "source": "i2c_ll_v4_2",
+      "source": "i2c_ll_v3_2",
       "source_sha256": "116d981f84bbfdee2c23c44f2f231aebe13a97290a47edf04b91460d11d15827",
       "kind": "i2c",
-      "version": "v4_2",
+      "version": "v3_2",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 4,
+      "tier": 3,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 15,
       "field_count": 97,
@@ -4481,16 +4415,19 @@
         ]
       },
       "legacy_source": "i_v13",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v4_2"
+      ]
     },
     {
-      "source": "i2c_ll_v4_3",
+      "source": "i2c_ll_v3_3",
       "source_sha256": "063cd462e35285e0264091762a236c5e94077ee393a76599a6b6865c2fe8e5b0",
       "kind": "i2c",
-      "version": "v4_3",
+      "version": "v3_3",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 4,
+      "tier": 3,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 15,
       "field_count": 97,
@@ -4503,16 +4440,19 @@
         ]
       },
       "legacy_source": "i_v14",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v4_3"
+      ]
     },
     {
-      "source": "i2c_ll_v4_4",
+      "source": "i2c_ll_v3_4",
       "source_sha256": "746d996a0abd87e2a7d05a749a0fd7f0eb3c9afe804b26657ba2761a5b61ff68",
       "kind": "i2c",
-      "version": "v4_4",
+      "version": "v3_4",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 4,
+      "tier": 3,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 15,
       "field_count": 97,
@@ -4522,16 +4462,19 @@
         ]
       },
       "legacy_source": "i_v16",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v4_4"
+      ]
     },
     {
-      "source": "i2c_ll_v4_5",
+      "source": "i2c_ll_v3_5",
       "source_sha256": "a69b025eaba55adfa704f69743157b14693ebdf8d64fc4a69957a78b3a0df397",
       "kind": "i2c",
-      "version": "v4_5",
+      "version": "v3_5",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 4,
+      "tier": 3,
       "rationale": "旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展",
       "register_count": 15,
       "field_count": 97,
@@ -4548,7 +4491,10 @@
         ]
       },
       "legacy_source": "i_v4",
-      "block": "I2C"
+      "block": "I2C",
+      "renamed_from": [
+        "i2c_ll_v4_5"
+      ]
     },
     {
       "source": "i2s_ll_v1",
@@ -5255,84 +5201,6 @@
       },
       "legacy_source": "intc_v5",
       "block": "INTC"
-    },
-    {
-      "source": "iwdt_ll_v1",
-      "source_sha256": "c6fd452de6425608310e3552487c3bdaf5e71b7e52c6fbb5244b832511276ba8",
-      "kind": "iwdt",
-      "version": "v1",
-      "status": "active",
-      "topic": "power-wdt",
-      "tier": 1,
-      "rationale": "同档控制；窗口偏移、锁定、阈值/滤波或字段方言分变体",
-      "register_count": 5,
-      "field_count": 12,
-      "instances": {
-        "HC32F175": [
-          "IWDT"
-        ]
-      },
-      "legacy_source": "iwdt_common",
-      "block": "IWDT"
-    },
-    {
-      "source": "lptim_ll_v1",
-      "source_sha256": "65984f639cec604e76a93be96d605bcb720eb39c663f6cc7ac9d53c48d877ded",
-      "kind": "lptim",
-      "version": "v1",
-      "status": "active",
-      "topic": "timer-gen",
-      "tier": 1,
-      "rationale": "低功耗计数；CMP 比较为扩展，偏移及控制字段分变体",
-      "register_count": 7,
-      "field_count": 18,
-      "instances": {
-        "HC32F175": [
-          "LPTIM0",
-          "LPTIM1"
-        ]
-      },
-      "legacy_source": "lptim_common",
-      "block": "LPTIM"
-    },
-    {
-      "source": "lpuart_ll_v1",
-      "source_sha256": "ae75c3d7bea6b626c3a6487d8354c099f31404faaf97d04a4c206c9081463e36",
-      "kind": "lpuart",
-      "version": "v1",
-      "status": "active",
-      "topic": "serial",
-      "tier": 1,
-      "rationale": "低功耗串口，SCNT/BSEL/MODU 与 SDECON 控制",
-      "register_count": 10,
-      "field_count": 42,
-      "instances": {
-        "HC32F175": [
-          "LPUART0",
-          "LPUART1"
-        ]
-      },
-      "legacy_source": "lpuart_common",
-      "block": "LPUART"
-    },
-    {
-      "source": "lvd_ll_v1",
-      "source_sha256": "f6b8f670bd873d3e1b45f998e835835ad149c0fd8cb97b651a0089dbd9cf752c",
-      "kind": "lvd",
-      "version": "v1",
-      "status": "active",
-      "topic": "power-wdt",
-      "tier": 1,
-      "rationale": "同档控制；窗口偏移、锁定、阈值/滤波或字段方言分变体",
-      "register_count": 3,
-      "field_count": 13,
-      "instances": {
-        "HC32F175": [
-          "LVD"
-        ]
-      },
-      "legacy_source": "lvd_common",
-      "block": "LVD"
     },
     {
       "source": "mcan_ll_v1",
@@ -6409,28 +6277,9 @@
     },
     {
       "source": "rtc_ll_v2",
-      "source_sha256": "a2e6335a37fac76b0a6a139f54046513bbdd151584f9be15ce375909774b5d12",
-      "kind": "rtc",
-      "version": "v2",
-      "status": "active",
-      "topic": "crypto-comm",
-      "tier": 2,
-      "rationale": "日历/闹钟与时间捕获；TPCR 与 TSTR/WUTR 为同档不同分支",
-      "register_count": 21,
-      "field_count": 82,
-      "instances": {
-        "HC32F175": [
-          "RTC"
-        ]
-      },
-      "legacy_source": "rtc_v6",
-      "block": "RTC"
-    },
-    {
-      "source": "rtc_ll_v2_1",
       "source_sha256": "c6e8cf964ef6d9e26fa913d2f62ca98d4fb329084230c8ff1b60e25e446ca503",
       "kind": "rtc",
-      "version": "v2_1",
+      "version": "v2",
       "status": "active",
       "topic": "crypto-comm",
       "tier": 2,
@@ -6446,13 +6295,16 @@
         ]
       },
       "legacy_source": "rtc_v4",
-      "block": "RTC"
+      "block": "RTC",
+      "renamed_from": [
+        "rtc_ll_v2_1"
+      ]
     },
     {
-      "source": "rtc_ll_v2_2",
+      "source": "rtc_ll_v2_1",
       "source_sha256": "d72db67759a255314a881d640f538ad04769aba1c1be0ff6c6cbc91c70f894f8",
       "kind": "rtc",
-      "version": "v2_2",
+      "version": "v2_1",
       "status": "active",
       "topic": "crypto-comm",
       "tier": 2,
@@ -6474,36 +6326,19 @@
         ]
       },
       "legacy_source": "rtc_v3",
-      "block": "RTC"
+      "block": "RTC",
+      "renamed_from": [
+        "rtc_ll_v2_2"
+      ]
     },
     {
       "source": "spi_ll_v1",
-      "source_sha256": "bae403b847ae03519ff9fe7fb0b7103af03ec98351b6406c3ec4902bc9dd7df0",
+      "source_sha256": "6c0dd4b6f63dd762634c171ad4ecd629829c8f9f368f085b743764d2fef267dd",
       "kind": "spi",
       "version": "v1",
       "status": "active",
       "topic": "spi-i2c-i2s",
       "tier": 1,
-      "rationale": "旧式 CR0/CR1、HDOE/SSI",
-      "register_count": 7,
-      "field_count": 41,
-      "instances": {
-        "HC32F175": [
-          "SPI0",
-          "SPI1"
-        ]
-      },
-      "legacy_source": "spi_v5",
-      "block": "SPI"
-    },
-    {
-      "source": "spi_ll_v2",
-      "source_sha256": "6c0dd4b6f63dd762634c171ad4ecd629829c8f9f368f085b743764d2fef267dd",
-      "kind": "spi",
-      "version": "v2",
-      "status": "active",
-      "topic": "spi-i2c-i2s",
-      "tier": 2,
       "rationale": "CFG1/CFG2 配置架构；CR/CR1、分频和接收控制分变体",
       "register_count": 5,
       "field_count": 28,
@@ -6522,16 +6357,19 @@
         ]
       },
       "legacy_source": "spi_v4",
-      "block": "SPI"
+      "block": "SPI",
+      "renamed_from": [
+        "spi_ll_v2"
+      ]
     },
     {
-      "source": "spi_ll_v2_1",
+      "source": "spi_ll_v1_1",
       "source_sha256": "e5d77f430056bbd8a88240f773dcc2ed81851fef47f7f84ff383b5870dc47175",
       "kind": "spi",
-      "version": "v2_1",
+      "version": "v1_1",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 2,
+      "tier": 1,
       "rationale": "CFG1/CFG2 配置架构；CR/CR1、分频和接收控制分变体",
       "register_count": 5,
       "field_count": 34,
@@ -6546,16 +6384,19 @@
         ]
       },
       "legacy_source": "spi_v7",
-      "block": "SPI"
+      "block": "SPI",
+      "renamed_from": [
+        "spi_ll_v2_1"
+      ]
     },
     {
-      "source": "spi_ll_v2_2",
+      "source": "spi_ll_v1_2",
       "source_sha256": "1c6791902a65173f546e5a217eeba95c893aba031f4a654def326916dfa3c357",
       "kind": "spi",
-      "version": "v2_2",
+      "version": "v1_2",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 2,
+      "tier": 1,
       "rationale": "CFG1/CFG2 配置架构；CR/CR1、分频和接收控制分变体",
       "register_count": 5,
       "field_count": 40,
@@ -6618,16 +6459,19 @@
         ]
       },
       "legacy_source": "spi_v2",
-      "block": "SPI"
+      "block": "SPI",
+      "renamed_from": [
+        "spi_ll_v2_2"
+      ]
     },
     {
-      "source": "spi_ll_v2_3",
+      "source": "spi_ll_v1_3",
       "source_sha256": "ee5096841c0fa1d4164893bd9f35824c9130f9f96643aeb338c023c754dac6e3",
       "kind": "spi",
-      "version": "v2_3",
+      "version": "v1_3",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 2,
+      "tier": 1,
       "rationale": "CFG1/CFG2 配置架构；CR/CR1、分频和接收控制分变体",
       "register_count": 5,
       "field_count": 42,
@@ -6661,16 +6505,19 @@
         ]
       },
       "legacy_source": "spi_v1",
-      "block": "SPI"
+      "block": "SPI",
+      "renamed_from": [
+        "spi_ll_v2_3"
+      ]
     },
     {
-      "source": "spi_ll_v2_4",
+      "source": "spi_ll_v1_4",
       "source_sha256": "9c61a6d8a0f8913272c041997d3dafd0c31117ba64c9907044ad5b96428e7b3b",
       "kind": "spi",
-      "version": "v2_4",
+      "version": "v1_4",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 2,
+      "tier": 1,
       "rationale": "CFG1/CFG2 配置架构；CR/CR1、分频和接收控制分变体",
       "register_count": 5,
       "field_count": 43,
@@ -6693,16 +6540,19 @@
         ]
       },
       "legacy_source": "spi_v3",
-      "block": "SPI"
+      "block": "SPI",
+      "renamed_from": [
+        "spi_ll_v2_4"
+      ]
     },
     {
-      "source": "spi_ll_v2_5",
+      "source": "spi_ll_v1_5",
       "source_sha256": "078985a7bb8d14d3db71854ebcfc30e1569e7566d6f6142a964b961998d05318",
       "kind": "spi",
-      "version": "v2_5",
+      "version": "v1_5",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 2,
+      "tier": 1,
       "rationale": "CFG1/CFG2 配置架构；CR/CR1、分频和接收控制分变体",
       "register_count": 5,
       "field_count": 43,
@@ -6721,16 +6571,19 @@
         ]
       },
       "legacy_source": "spi_v6",
-      "block": "SPI"
+      "block": "SPI",
+      "renamed_from": [
+        "spi_ll_v2_5"
+      ]
     },
     {
-      "source": "spi_ll_v2_6",
+      "source": "spi_ll_v1_6",
       "source_sha256": "c3bee6a0128c33ea0fe8960690d599e96af0d959ba66d2b6157720dc311fe437",
       "kind": "spi",
-      "version": "v2_6",
+      "version": "v1_6",
       "status": "active",
       "topic": "spi-i2c-i2s",
-      "tier": 2,
+      "tier": 1,
       "rationale": "CFG1/CFG2 配置架构；CR/CR1、分频和接收控制分变体",
       "register_count": 5,
       "field_count": 44,
@@ -6741,26 +6594,10 @@
         ]
       },
       "legacy_source": "spi_v8",
-      "block": "SPI"
-    },
-    {
-      "source": "sram_ll_v1",
-      "source_sha256": "5c6f80cc82c587670a1ac80681b4ac2afcdcfc2372b8e89e00e024d9b4d5cb53",
-      "kind": "sram",
-      "version": "v1",
-      "status": "active",
-      "topic": "memory",
-      "tier": 1,
-      "rationale": "SRAM 错误控制",
-      "register_count": 6,
-      "field_count": 9,
-      "instances": {
-        "HC32F175": [
-          "SRAM"
-        ]
-      },
-      "legacy_source": "sram_common",
-      "block": "SRAM"
+      "block": "SPI",
+      "renamed_from": [
+        "spi_ll_v2_6"
+      ]
     },
     {
       "source": "sramc_ll_v1",
@@ -7075,25 +6912,6 @@
       },
       "legacy_source": "swdt_v1",
       "block": "SWDT"
-    },
-    {
-      "source": "sysctrl_ll_v1",
-      "source_sha256": "91f05121db3377358742dd56bd68812928cdc184f19a09b77574e3a28be7a484",
-      "kind": "sysctrl",
-      "version": "v1",
-      "status": "active",
-      "topic": "clock-reset",
-      "tier": 1,
-      "rationale": "旧式系统时钟与外设门控",
-      "register_count": 25,
-      "field_count": 205,
-      "instances": {
-        "HC32F175": [
-          "SYSCTRL"
-        ]
-      },
-      "legacy_source": "sysctrl_common",
-      "block": "SYSCTRL"
     },
     {
       "source": "tmr0_ll_v1",
@@ -8914,30 +8732,6 @@
       "block": "USART"
     },
     {
-      "source": "usart_ll_v2_15",
-      "source_sha256": "ed88f317e677186ca91334f389ed4e658e1277230719986c41e9a0ec57d5067e",
-      "kind": "usart",
-      "version": "v2_15",
-      "status": "active",
-      "topic": "serial",
-      "tier": 2,
-      "rationale": "旧式 CR1 起始布局，TOR/ADDR/IR；与现代复合功能串口同档不同分支",
-      "register_count": 14,
-      "field_count": 78,
-      "instances": {
-        "HC32F175": [
-          "USART0",
-          "USART1",
-          "USART2",
-          "USART3",
-          "USART4",
-          "USART5"
-        ]
-      },
-      "legacy_source": "usart_v26",
-      "block": "USART"
-    },
-    {
       "source": "usart_ll_v3",
       "source_sha256": "7b1c666aaff0ff432da78336c41b37730c2a5461dcece2267ce1436966ac1a3f",
       "kind": "usart",
@@ -9398,25 +9192,6 @@
       },
       "legacy_source": "wdt_common",
       "block": "WDT"
-    },
-    {
-      "source": "wwdt_ll_v1",
-      "source_sha256": "bf722d6a667e5dca876ad65955c61a66d62919724677fc3039977239ab3784a9",
-      "kind": "wwdt",
-      "version": "v1",
-      "status": "active",
-      "topic": "power-wdt",
-      "tier": 1,
-      "rationale": "同档控制；窗口偏移、锁定、阈值/滤波或字段方言分变体",
-      "register_count": 3,
-      "field_count": 6,
-      "instances": {
-        "HC32F175": [
-          "WWDT"
-        ]
-      },
-      "legacy_source": "wwdt_common",
-      "block": "WWDT"
     },
     {
       "source": "dcu_v1",

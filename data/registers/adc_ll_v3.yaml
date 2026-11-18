@@ -1,7 +1,7 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32A460/ADC2；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+# 布局代表：HC32F431/ADC；覆盖系列：HC32F431, HC32M413。
 block/ADC:
-  description: desc ADC2.
+  description: desc ADC.
   items:
   - name: STR
     description: desc STR.
@@ -18,11 +18,11 @@ block/ADC:
     byte_offset: 4
     bit_size: 16
     fieldset: CR1
-  - name: TRGSR
-    description: desc TRGSR.
-    byte_offset: 10
+  - name: CR2
+    description: desc CR2.
+    byte_offset: 6
     bit_size: 16
-    fieldset: TRGSR
+    fieldset: CR2
   - name: CHSELRA
     description: desc CHSELRA.
     byte_offset: 12
@@ -35,6 +35,10 @@ block/ADC:
     description: desc AVCHSELR.
     byte_offset: 20
     fieldset: AVCHSELR
+  - name: TRGSR
+    description: desc TRGSR.
+    byte_offset: 28
+    fieldset: TRGSR
   - name: SSTR0
     description: desc SSTR0.
     byte_offset: 32
@@ -71,31 +75,55 @@ block/ADC:
     description: desc SSTR8.
     byte_offset: 40
     bit_size: 8
-  - name: CHMUXR0
-    description: desc CHMUXR0.
-    byte_offset: 56
-    bit_size: 16
-    fieldset: CHMUXR0
-  - name: CHMUXR1
-    description: desc CHMUXR1.
-    byte_offset: 58
-    bit_size: 16
-    fieldset: CHMUXR1
-  - name: CHMUXR2
-    description: desc CHMUXR2.
-    byte_offset: 60
-    bit_size: 16
-    fieldset: CHMUXR2
+  - name: SSTR9
+    description: desc SSTR9.
+    byte_offset: 41
+    bit_size: 8
+  - name: SSTR10
+    description: desc SSTR10.
+    byte_offset: 42
+    bit_size: 8
+  - name: SSTR11
+    description: desc SSTR11.
+    byte_offset: 43
+    bit_size: 8
+  - name: SSTR12
+    description: desc SSTR12.
+    byte_offset: 44
+    bit_size: 8
+  - name: SSTR13
+    description: desc SSTR13.
+    byte_offset: 45
+    bit_size: 8
+  - name: SSTR14
+    description: desc SSTR14.
+    byte_offset: 46
+    bit_size: 8
+  - name: SSTR15
+    description: desc SSTR15.
+    byte_offset: 47
+    bit_size: 8
+  - name: CHSELRC
+    description: desc CHSELRC.
+    byte_offset: 64
+    fieldset: CHSELRC
   - name: ISR
     description: desc ISR.
-    byte_offset: 70
+    byte_offset: 68
+    access: Read
     bit_size: 8
     fieldset: ISR
   - name: ICR
     description: desc ICR.
-    byte_offset: 71
+    byte_offset: 69
     bit_size: 8
     fieldset: ICR
+  - name: ISCLRR
+    description: desc ISCLRR.
+    byte_offset: 70
+    access: Write
+    bit_size: 8
+    fieldset: ISCLRR
   - name: DR0
     description: desc DR0.
     byte_offset: 80
@@ -141,130 +169,195 @@ block/ADC:
     byte_offset: 96
     access: Read
     bit_size: 16
+  - name: DR9
+    description: desc DR9.
+    byte_offset: 98
+    access: Read
+    bit_size: 16
+  - name: DR10
+    description: desc DR10.
+    byte_offset: 100
+    access: Read
+    bit_size: 16
+  - name: DR11
+    description: desc DR11.
+    byte_offset: 102
+    access: Read
+    bit_size: 16
+  - name: DR12
+    description: desc DR12.
+    byte_offset: 104
+    access: Read
+    bit_size: 16
+  - name: DR13
+    description: desc DR13.
+    byte_offset: 106
+    access: Read
+    bit_size: 16
+  - name: DR14
+    description: desc DR14.
+    byte_offset: 108
+    access: Read
+    bit_size: 16
+  - name: DR15
+    description: desc DR15.
+    byte_offset: 110
+    access: Read
+    bit_size: 16
   - name: AWDCR
     description: desc AWDCR.
     byte_offset: 160
     bit_size: 16
     fieldset: AWDCR
-  - name: AWDDR0
-    description: desc AWDDR0.
-    byte_offset: 164
-    bit_size: 16
-  - name: AWDDR1
-    description: desc AWDDR1.
-    byte_offset: 166
-    bit_size: 16
-  - name: AWDCHSR
-    description: desc AWDCHSR.
-    byte_offset: 172
-    fieldset: AWDCHSR
   - name: AWDSR
     description: desc AWDSR.
-    byte_offset: 176
+    byte_offset: 162
+    access: Read
+    bit_size: 8
     fieldset: AWDSR
+  - name: AWDSCLRR
+    description: desc AWDSCLRR.
+    byte_offset: 163
+    bit_size: 8
+    fieldset: AWDSCLRR
+  - name: AWD0DR0
+    description: desc AWD0DR0.
+    byte_offset: 164
+    bit_size: 16
+  - name: AWD0DR1
+    description: desc AWD0DR1.
+    byte_offset: 166
+    bit_size: 16
+  - name: AWD0CHSR
+    description: desc AWD0CHSR.
+    byte_offset: 168
+    bit_size: 8
+    fieldset: AWD0CHSR
+  - name: AWD1DR0
+    description: desc AWD1DR0.
+    byte_offset: 172
+    bit_size: 16
+  - name: AWD1DR1
+    description: desc AWD1DR1.
+    byte_offset: 174
+    bit_size: 16
+  - name: AWD1CHSR
+    description: desc AWD1CHSR.
+    byte_offset: 176
+    bit_size: 8
+    fieldset: AWD1CHSR
+  - name: OPACR
+    description: desc OPACR.
+    byte_offset: 192
+    fieldset: OPACR
 fieldset/AVCHSELR:
   description: desc AVCHSELR.
   fields:
   - name: AVCHSEL
     description: desc AVCHSEL.
     bit_offset: 0
-    bit_size: 9
-fieldset/AWDCHSR:
-  description: desc AWDCHSR.
+    bit_size: 16
+fieldset/AWD0CHSR:
+  description: desc AWD0CHSR.
+  bit_size: 8
   fields:
   - name: AWDCH
     description: desc AWDCH.
     bit_offset: 0
-    bit_size: 9
+    bit_size: 5
+fieldset/AWD1CHSR:
+  description: desc AWD1CHSR.
+  bit_size: 8
+  fields:
+  - name: AWDCH
+    description: desc AWDCH.
+    bit_offset: 0
+    bit_size: 5
 fieldset/AWDCR:
   description: desc AWDCR.
   bit_size: 16
   fields:
-  - name: AWDEN
-    description: desc AWDEN.
+  - name: AWD0EN
+    description: desc AWD0EN.
     bit_offset: 0
     bit_size: 1
-  - name: AWDMD
-    description: desc AWDMD.
+  - name: AWD0IEN
+    description: desc AWD0IEN.
+    bit_offset: 1
+    bit_size: 1
+  - name: AWD0MD
+    description: desc AWD0MD.
+    bit_offset: 2
+    bit_size: 1
+  - name: AWD1EN
+    description: desc AWD1EN.
     bit_offset: 4
     bit_size: 1
-  - name: AWDSS
-    description: desc AWDSS.
+  - name: AWD1IEN
+    description: desc AWD1IEN.
+    bit_offset: 5
+    bit_size: 1
+  - name: AWD1MD
+    description: desc AWD1MD.
     bit_offset: 6
-    bit_size: 2
-  - name: AWDIEN
-    description: desc AWDIEN.
+    bit_size: 1
+  - name: AWDCM
+    description: desc AWDCM.
     bit_offset: 8
+    bit_size: 2
+fieldset/AWDSCLRR:
+  description: desc AWDSCLRR.
+  bit_size: 8
+  fields:
+  - name: CLRAWD0F
+    description: desc CLRAWD0F.
+    bit_offset: 0
+    bit_size: 1
+  - name: CLRAWD1F
+    description: desc CLRAWD1F.
+    bit_offset: 1
+    bit_size: 1
+  - name: CLRAWDCMF
+    description: desc CLRAWDCMF.
+    bit_offset: 4
     bit_size: 1
 fieldset/AWDSR:
   description: desc AWDSR.
+  bit_size: 8
   fields:
-  - name: AWDF
-    description: desc AWDF.
+  - name: AWD0F
+    description: desc AWD0F.
     bit_offset: 0
-    bit_size: 9
-fieldset/CHMUXR0:
-  description: desc CHMUXR0.
-  bit_size: 16
-  fields:
-  - name: CH00MUX
-    description: desc CH00MUX.
-    bit_offset: 0
-    bit_size: 4
-  - name: CH01MUX
-    description: desc CH01MUX.
+    bit_size: 1
+  - name: AWD1F
+    description: desc AWD1F.
+    bit_offset: 1
+    bit_size: 1
+  - name: AWDCMF
+    description: desc AWDCMF.
     bit_offset: 4
-    bit_size: 4
-  - name: CH02MUX
-    description: desc CH02MUX.
-    bit_offset: 8
-    bit_size: 4
-  - name: CH03MUX
-    description: desc CH03MUX.
-    bit_offset: 12
-    bit_size: 4
-fieldset/CHMUXR1:
-  description: desc CHMUXR1.
-  bit_size: 16
-  fields:
-  - name: CH04MUX
-    description: desc CH04MUX.
-    bit_offset: 0
-    bit_size: 4
-  - name: CH05MUX
-    description: desc CH05MUX.
-    bit_offset: 4
-    bit_size: 4
-  - name: CH06MUX
-    description: desc CH06MUX.
-    bit_offset: 8
-    bit_size: 4
-  - name: CH07MUX
-    description: desc CH07MUX.
-    bit_offset: 12
-    bit_size: 4
-fieldset/CHMUXR2:
-  description: desc CHMUXR2.
-  bit_size: 16
-  fields:
-  - name: CH08MUX
-    description: desc CH08MUX.
-    bit_offset: 0
-    bit_size: 4
+    bit_size: 1
 fieldset/CHSELRA:
   description: desc CHSELRA.
   fields:
   - name: CHSELA
     description: desc CHSELA.
     bit_offset: 0
-    bit_size: 9
+    bit_size: 16
 fieldset/CHSELRB:
   description: desc CHSELRB.
   fields:
   - name: CHSELB
     description: desc CHSELB.
     bit_offset: 0
-    bit_size: 9
+    bit_size: 16
+fieldset/CHSELRC:
+  description: desc CHSELRC.
+  fields:
+  - name: CHSELC
+    description: desc CHSELC.
+    bit_offset: 0
+    bit_size: 16
 fieldset/CR0:
   description: desc CR0.
   bit_size: 16
@@ -272,11 +365,7 @@ fieldset/CR0:
   - name: MS
     description: desc MS.
     bit_offset: 0
-    bit_size: 2
-  - name: ACCSEL
-    description: desc ACCSEL.
-    bit_offset: 4
-    bit_size: 2
+    bit_size: 3
   - name: CLREN
     description: desc CLREN.
     bit_offset: 6
@@ -297,6 +386,22 @@ fieldset/CR1:
     description: desc RSCHSEL.
     bit_offset: 2
     bit_size: 1
+  - name: SREF
+    description: desc SREF.
+    bit_offset: 6
+    bit_size: 2
+fieldset/CR2:
+  description: desc CR2.
+  bit_size: 16
+  fields:
+  - name: OVSS
+    description: desc OVSS.
+    bit_offset: 8
+    bit_size: 4
+  - name: OVSMOD
+    description: desc OVSMOD.
+    bit_offset: 12
+    bit_size: 1
 fieldset/ICR:
   description: desc ICR.
   bit_size: 8
@@ -308,6 +413,34 @@ fieldset/ICR:
   - name: EOCBIEN
     description: desc EOCBIEN.
     bit_offset: 1
+    bit_size: 1
+  - name: EOCCIEN
+    description: desc EOCCIEN.
+    bit_offset: 2
+    bit_size: 1
+fieldset/ISCLRR:
+  description: desc ISCLRR.
+  bit_size: 8
+  fields:
+  - name: CLREOCAF
+    description: desc CLREOCAF.
+    bit_offset: 0
+    bit_size: 1
+  - name: CLREOCBF
+    description: desc CLREOCBF.
+    bit_offset: 1
+    bit_size: 1
+  - name: CLREOCCF
+    description: desc CLREOCCF.
+    bit_offset: 2
+    bit_size: 1
+  - name: CLRSASTPDF
+    description: desc CLRSASTPDF.
+    bit_offset: 4
+    bit_size: 1
+  - name: CLRSBSTPDF
+    description: desc CLRSBSTPDF.
+    bit_offset: 5
     bit_size: 1
 fieldset/ISR:
   description: desc ISR.
@@ -321,6 +454,33 @@ fieldset/ISR:
     description: desc EOCBF.
     bit_offset: 1
     bit_size: 1
+  - name: EOCCF
+    description: desc EOCCF.
+    bit_offset: 2
+    bit_size: 1
+  - name: SASTPDF
+    description: desc SASTPDF.
+    bit_offset: 4
+    bit_size: 1
+  - name: SBSTPDF
+    description: desc SBSTPDF.
+    bit_offset: 5
+    bit_size: 1
+fieldset/OPACR:
+  description: desc OPACR.
+  fields:
+  - name: OPA1EN
+    description: desc OPA1EN.
+    bit_offset: 0
+    bit_size: 1
+  - name: OPA2EN
+    description: desc OPA2EN.
+    bit_offset: 1
+    bit_size: 1
+  - name: OPA3EN
+    description: desc OPA3EN.
+    bit_offset: 2
+    bit_size: 1
 fieldset/STR:
   description: desc STR.
   bit_size: 8
@@ -331,7 +491,6 @@ fieldset/STR:
     bit_size: 1
 fieldset/TRGSR:
   description: desc TRGSR.
-  bit_size: 16
   fields:
   - name: TRGSELA
     description: desc TRGSELA.
@@ -348,4 +507,12 @@ fieldset/TRGSR:
   - name: TRGENB
     description: desc TRGENB.
     bit_offset: 15
+    bit_size: 1
+  - name: TRGSELC
+    description: desc TRGSELC.
+    bit_offset: 16
+    bit_size: 3
+  - name: TRGENC
+    description: desc TRGENC.
+    bit_offset: 23
     bit_size: 1

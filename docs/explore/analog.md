@@ -26,64 +26,56 @@ A448 的 ADC1_IRQn=128、CMP1_IRQn=89。IRQn_Type 与 en_event_src_t 分别提�
 
 ### adc：v1
 
-旧式 SQR/JQR 四 rank 序列、无内嵌 BGR。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `adc_ll_v1.rs` | [adc_ll_v1](../../data/registers/adc_ll_v1.yaml) | F175: ADC | 26 / 81 | 本档位对照基准；完整定义见来源 YAML |
-
-### adc：v2
-
 SeqA/SeqB、统一采样时间；通道数及 OPACR 分变体。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `adc_ll_v2.rs` | [adc_ll_v2](../../data/registers/adc_ll_v2.yaml) | F115/F120: ADC | 32 / 34 | 本档位对照基准；完整定义见来源 YAML |
-| `adc_ll_v2_1.rs` | [adc_ll_v2_1](../../data/registers/adc_ll_v2_1.yaml) | M120: ADC | 33 / 36 | 相对 adc_ll_v2：增加 OPACR |
-| `adc_ll_v2_2.rs` | [adc_ll_v2_2](../../data/registers/adc_ll_v2_2.yaml) | F155: ADC | 34 / 34 | 相对 adc_ll_v2：增加 DR12/DR13；定义差异 CHSELRA/CHSELRB |
-| `adc_ll_v2_3.rs` | [adc_ll_v2_3](../../data/registers/adc_ll_v2_3.yaml) | K116/K118: ADC | 36 / 34 | 相对 adc_ll_v2：增加 DR12/DR13/DR14/DR15；定义差异 CHSELRA/CHSELRB |
+| `adc_ll_v1.rs` | [adc_ll_v1](../../data/registers/adc_ll_v1.yaml) | F115/F120: ADC | 32 / 34 | 本档位对照基准；完整定义见来源 YAML |
+| `adc_ll_v1_1.rs` | [adc_ll_v1_1](../../data/registers/adc_ll_v1_1.yaml) | M120: ADC | 33 / 36 | 相对 adc_ll_v1：增加 OPACR |
+| `adc_ll_v1_2.rs` | [adc_ll_v1_2](../../data/registers/adc_ll_v1_2.yaml) | F155: ADC | 34 / 34 | 相对 adc_ll_v1：增加 DR12/DR13；定义差异 CHSELRA/CHSELRB |
+| `adc_ll_v1_3.rs` | [adc_ll_v1_3](../../data/registers/adc_ll_v1_3.yaml) | K116/K118: ADC | 36 / 34 | 相对 adc_ll_v1：增加 DR12/DR13/DR14/DR15；定义差异 CHSELRA/CHSELRB |
 
-### adc：v3
+### adc：v2
 
 逐通道采样与多结果，平均/同步/看门狗位域按实例保留。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `adc_ll_v3.rs` | [adc_ll_v3](../../data/registers/adc_ll_v3.yaml) | A460/F451/F452/F460: ADC2 | 35 / 33 | 本档位对照基准；完整定义见来源 YAML |
-| `adc_ll_v3_1.rs` | [adc_ll_v3_1](../../data/registers/adc_ll_v3_1.yaml) | A448/F448/M441: ADC2 | 39 / 48 | 相对 adc_ll_v3：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 10 项；缺少 AWDCHSR/AWDDR0/AWDDR1/CHMUXR2/DR8 等 6 项；定义差异 AVCHSELR/AWDCR/AWDSR/CHSELRA/CHSELRB 等 9 项 |
-| `adc_ll_v3_2.rs` | [adc_ll_v3_2](../../data/registers/adc_ll_v3_2.yaml) | A448/F334/F336/F448/M441: ADC3 | 48 / 52 | 相对 adc_ll_v3：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 16 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 10 项 |
-| `adc_ll_v3_3.rs` | [adc_ll_v3_3](../../data/registers/adc_ll_v3_3.yaml) | F467: ADC2 | 56 / 54 | 相对 adc_ll_v3：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 24 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 9 项 |
-| `adc_ll_v3_4.rs` | [adc_ll_v3_4](../../data/registers/adc_ll_v3_4.yaml) | F467: ADC3 | 56 / 54 | 相对 adc_ll_v3：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 24 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 9 项 |
-| `adc_ll_v3_5.rs` | [adc_ll_v3_5](../../data/registers/adc_ll_v3_5.yaml) | F334/F336: ADC2 | 57 / 56 | 相对 adc_ll_v3：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 25 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 10 项 |
-| `adc_ll_v3_6.rs` | [adc_ll_v3_6](../../data/registers/adc_ll_v3_6.yaml) | A448/F334/F336/F448/M441: ADC1 | 58 / 59 | 相对 adc_ll_v3：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 26 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 10 项 |
-| `adc_ll_v3_7.rs` | [adc_ll_v3_7](../../data/registers/adc_ll_v3_7.yaml) | A4A0/F4A0/F4A2: ADC3 | 61 / 54 | 相对 adc_ll_v3：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 29 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 9 项 |
-| `adc_ll_v3_8.rs` | [adc_ll_v3_8](../../data/registers/adc_ll_v3_8.yaml) | A4A8/F4A8: ADC3 | 62 / 56 | 相对 adc_ll_v3：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 30 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 10 项 |
-| `adc_ll_v3_9.rs` | [adc_ll_v3_9](../../data/registers/adc_ll_v3_9.yaml) | A472/F472: ADC3 | 66 / 56 | 相对 adc_ll_v3：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 34 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 9 项 |
+| `adc_ll_v2.rs` | [adc_ll_v2](../../data/registers/adc_ll_v2.yaml) | A460/F451/F452/F460: ADC2 | 35 / 33 | 本档位对照基准；完整定义见来源 YAML |
+| `adc_ll_v2_1.rs` | [adc_ll_v2_1](../../data/registers/adc_ll_v2_1.yaml) | A448/F448/M441: ADC2 | 39 / 48 | 相对 adc_ll_v2：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 10 项；缺少 AWDCHSR/AWDDR0/AWDDR1/CHMUXR2/DR8 等 6 项；定义差异 AVCHSELR/AWDCR/AWDSR/CHSELRA/CHSELRB 等 9 项 |
+| `adc_ll_v2_2.rs` | [adc_ll_v2_2](../../data/registers/adc_ll_v2_2.yaml) | A448/F334/F336/F448/M441: ADC3 | 48 / 52 | 相对 adc_ll_v2：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 16 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 10 项 |
+| `adc_ll_v2_3.rs` | [adc_ll_v2_3](../../data/registers/adc_ll_v2_3.yaml) | F467: ADC2 | 56 / 54 | 相对 adc_ll_v2：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 24 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 9 项 |
+| `adc_ll_v2_4.rs` | [adc_ll_v2_4](../../data/registers/adc_ll_v2_4.yaml) | F467: ADC3 | 56 / 54 | 相对 adc_ll_v2：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 24 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 9 项 |
+| `adc_ll_v2_5.rs` | [adc_ll_v2_5](../../data/registers/adc_ll_v2_5.yaml) | F334/F336: ADC2 | 57 / 56 | 相对 adc_ll_v2：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 25 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 10 项 |
+| `adc_ll_v2_6.rs` | [adc_ll_v2_6](../../data/registers/adc_ll_v2_6.yaml) | A448/F334/F336/F448/M441: ADC1 | 58 / 59 | 相对 adc_ll_v2：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 26 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 10 项 |
+| `adc_ll_v2_7.rs` | [adc_ll_v2_7](../../data/registers/adc_ll_v2_7.yaml) | A4A0/F4A0/F4A2: ADC3 | 61 / 54 | 相对 adc_ll_v2：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 29 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 9 项 |
+| `adc_ll_v2_8.rs` | [adc_ll_v2_8](../../data/registers/adc_ll_v2_8.yaml) | A4A8/F4A8: ADC3 | 62 / 56 | 相对 adc_ll_v2：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 30 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 10 项 |
+| `adc_ll_v2_9.rs` | [adc_ll_v2_9](../../data/registers/adc_ll_v2_9.yaml) | A472/F472: ADC3 | 66 / 56 | 相对 adc_ll_v2：增加 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 34 项；缺少 AWDCHSR/AWDDR0/AWDDR1；定义差异 AVCHSELR/AWDCR/AWDSR/CHMUXR2/CHSELRA 等 9 项 |
 
-### adc：v4
+### adc：v3
 
 逐通道采样，扩展增益/采样保持或运放控制；同档不同分支。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `adc_ll_v4.rs` | [adc_ll_v4](../../data/registers/adc_ll_v4.yaml) | F431/M413: ADC | 54 / 50 | 本档位对照基准；完整定义见来源 YAML |
-| `adc_ll_v4_1.rs` | [adc_ll_v4_1](../../data/registers/adc_ll_v4_1.yaml) | A460/F451/F452/F460: ADC1 | 57 / 47 | 相对 adc_ll_v4：增加 AWDCHSR/AWDDR0/AWDDR1/CHMUXR0/CHMUXR1 等 14 项；缺少 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 11 项；定义差异 AVCHSELR/AWDCR/AWDSR/CHSELRA/CHSELRB 等 10 项 |
-| `adc_ll_v4_2.rs` | [adc_ll_v4_2](../../data/registers/adc_ll_v4_2.yaml) | A4A0/F4A0/F4A2: ADC2 | 59 / 57 | 相对 adc_ll_v4：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 8 项；缺少 CHSELRC/CR2/OPACR；定义差异 AWDSCLRR/CR0/CR1/ICR/ISCLRR 等 7 项 |
-| `adc_ll_v4_3.rs` | [adc_ll_v4_3](../../data/registers/adc_ll_v4_3.yaml) | A4A8/F4A8: ADC2 | 60 / 59 | 相对 adc_ll_v4：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 8 项；缺少 CHSELRC/OPACR；定义差异 CR0/CR1/ICR/ISCLRR/ISR 等 6 项 |
-| `adc_ll_v4_4.rs` | [adc_ll_v4_4](../../data/registers/adc_ll_v4_4.yaml) | F467: ADC1 | 61 / 64 | 相对 adc_ll_v4：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 10 项；缺少 CHSELRC/CR2/OPACR；定义差异 AWDSCLRR/CR0/CR1/ICR/ISCLRR 等 7 项 |
-| `adc_ll_v4_5.rs` | [adc_ll_v4_5](../../data/registers/adc_ll_v4_5.yaml) | A4A0/F4A0/F4A2: ADC1 | 63 / 66 | 相对 adc_ll_v4：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 12 项；缺少 CHSELRC/CR2/OPACR；定义差异 AWDSCLRR/CR0/CR1/ICR/ISCLRR 等 7 项 |
-| `adc_ll_v4_6.rs` | [adc_ll_v4_6](../../data/registers/adc_ll_v4_6.yaml) | A4A8/F4A8: ADC1 | 64 / 68 | 相对 adc_ll_v4：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 12 项；缺少 CHSELRC/OPACR；定义差异 CR0/CR1/ICR/ISCLRR/ISR 等 6 项 |
-| `adc_ll_v4_7.rs` | [adc_ll_v4_7](../../data/registers/adc_ll_v4_7.yaml) | A472/F472: ADC1 | 67 / 59 | 相对 adc_ll_v4：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/DR16 等 16 项；缺少 CHSELRC/CR2/OPACR；定义差异 AVCHSELR/CHSELRA/CHSELRB/CR0/CR1 等 9 项 |
-| `adc_ll_v4_8.rs` | [adc_ll_v4_8](../../data/registers/adc_ll_v4_8.yaml) | A472/F472: ADC2 | 67 / 59 | 相对 adc_ll_v4：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/DR16 等 16 项；缺少 CHSELRC/CR2/OPACR；定义差异 AVCHSELR/CHSELRA/CHSELRB/CR0/CR1 等 9 项 |
+| `adc_ll_v3.rs` | [adc_ll_v3](../../data/registers/adc_ll_v3.yaml) | F431/M413: ADC | 54 / 50 | 本档位对照基准；完整定义见来源 YAML |
+| `adc_ll_v3_1.rs` | [adc_ll_v3_1](../../data/registers/adc_ll_v3_1.yaml) | A460/F451/F452/F460: ADC1 | 57 / 47 | 相对 adc_ll_v3：增加 AWDCHSR/AWDDR0/AWDDR1/CHMUXR0/CHMUXR1 等 14 项；缺少 AWD0CHSR/AWD0DR0/AWD0DR1/AWD1CHSR/AWD1DR0 等 11 项；定义差异 AVCHSELR/AWDCR/AWDSR/CHSELRA/CHSELRB 等 10 项 |
+| `adc_ll_v3_2.rs` | [adc_ll_v3_2](../../data/registers/adc_ll_v3_2.yaml) | A4A0/F4A0/F4A2: ADC2 | 59 / 57 | 相对 adc_ll_v3：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 8 项；缺少 CHSELRC/CR2/OPACR；定义差异 AWDSCLRR/CR0/CR1/ICR/ISCLRR 等 7 项 |
+| `adc_ll_v3_3.rs` | [adc_ll_v3_3](../../data/registers/adc_ll_v3_3.yaml) | A4A8/F4A8: ADC2 | 60 / 59 | 相对 adc_ll_v3：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 8 项；缺少 CHSELRC/OPACR；定义差异 CR0/CR1/ICR/ISCLRR/ISR 等 6 项 |
+| `adc_ll_v3_4.rs` | [adc_ll_v3_4](../../data/registers/adc_ll_v3_4.yaml) | F467: ADC1 | 61 / 64 | 相对 adc_ll_v3：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 10 项；缺少 CHSELRC/CR2/OPACR；定义差异 AWDSCLRR/CR0/CR1/ICR/ISCLRR 等 7 项 |
+| `adc_ll_v3_5.rs` | [adc_ll_v3_5](../../data/registers/adc_ll_v3_5.yaml) | A4A0/F4A0/F4A2: ADC1 | 63 / 66 | 相对 adc_ll_v3：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 12 项；缺少 CHSELRC/CR2/OPACR；定义差异 AWDSCLRR/CR0/CR1/ICR/ISCLRR 等 7 项 |
+| `adc_ll_v3_6.rs` | [adc_ll_v3_6](../../data/registers/adc_ll_v3_6.yaml) | A4A8/F4A8: ADC1 | 64 / 68 | 相对 adc_ll_v3：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/EXCHSELR 等 12 项；缺少 CHSELRC/OPACR；定义差异 CR0/CR1/ICR/ISCLRR/ISR 等 6 项 |
+| `adc_ll_v3_7.rs` | [adc_ll_v3_7](../../data/registers/adc_ll_v3_7.yaml) | A472/F472: ADC1 | 67 / 59 | 相对 adc_ll_v3：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/DR16 等 16 项；缺少 CHSELRC/CR2/OPACR；定义差异 AVCHSELR/CHSELRA/CHSELRB/CR0/CR1 等 9 项 |
+| `adc_ll_v3_8.rs` | [adc_ll_v3_8](../../data/registers/adc_ll_v3_8.yaml) | A472/F472: ADC2 | 67 / 59 | 相对 adc_ll_v3：增加 CHMUXR0/CHMUXR1/CHMUXR2/CHMUXR3/DR16 等 16 项；缺少 CHSELRC/CR2/OPACR；定义差异 AVCHSELR/CHSELRA/CHSELRB/CR0/CR1 等 9 项 |
 
-### adc：v5
+### adc：v4
 
 逐通道采样、SeqC/差分结果 DIR；OPACR 按实例保留。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `adc_ll_v5.rs` | [adc_ll_v5](../../data/registers/adc_ll_v5.yaml) | M458: ADC2 | 53 / 81 | 本档位对照基准；完整定义见来源 YAML |
-| `adc_ll_v5_1.rs` | [adc_ll_v5_1](../../data/registers/adc_ll_v5_1.yaml) | M458: ADC1 | 75 / 97 | 相对 adc_ll_v5：增加 DIR10/DIR11/DIR12/DIR13/DIR14 等 23 项；缺少 ADC_EXCHSELR；定义差异 AVCHSELR/CHSELRA/CHSELRB/CHSELRC |
+| `adc_ll_v4.rs` | [adc_ll_v4](../../data/registers/adc_ll_v4.yaml) | M458: ADC2 | 53 / 81 | 本档位对照基准；完整定义见来源 YAML |
+| `adc_ll_v4_1.rs` | [adc_ll_v4_1](../../data/registers/adc_ll_v4_1.yaml) | M458: ADC1 | 75 / 97 | 相对 adc_ll_v4：增加 DIR10/DIR11/DIR12/DIR13/DIR14 等 23 项；缺少 ADC_EXCHSELR；定义差异 AVCHSELR/CHSELRA/CHSELRB/CHSELRC |
 
 ### cmp：v1
 

@@ -18,14 +18,6 @@ A4A8/F4A8、F334/F336 的扩展及各实例的 RTO/SC/LIN 组合独立保留。
 
 以下名称与生成输入保持一致。系列名前缀 `HC32` 省略。
 
-### lpuart：v1
-
-低功耗串口，SCNT/BSEL/MODU 与 SDECON 控制。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `lpuart_ll_v1.rs` | [lpuart_ll_v1](../../data/registers/lpuart_ll_v1.yaml) | F175: LPUART0, LPUART1 | 10 / 42 | 本档位对照基准；完整定义见来源 YAML |
-
 ### usart：v1
 
 基础串口与流控；LINEN、半双工等按实例保留。
@@ -37,7 +29,7 @@ A4A8/F4A8、F334/F336 的扩展及各实例的 RTO/SC/LIN 组合独立保留。
 
 ### usart：v2
 
-复合功能串口：SmartCard、LIN/LBMC 或接收超时，同档不同分支；旧式 CR1 起始布局，TOR/ADDR/IR；与现代复合功能串口同档不同分支。
+复合功能串口：SmartCard、LIN/LBMC 或接收超时，同档不同分支。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
@@ -56,7 +48,6 @@ A4A8/F4A8、F334/F336 的扩展及各实例的 RTO/SC/LIN 组合独立保留。
 | `usart_ll_v2_12.rs` | [usart_ll_v2_12](../../data/registers/usart_ll_v2_12.yaml) | A472/F472: USART3 | 9 / 59 | 相对 usart_ll_v2：增加 LBMC；定义差异 CR1/CR2/CR3/PR/SR |
 | `usart_ll_v2_13.rs` | [usart_ll_v2_13](../../data/registers/usart_ll_v2_13.yaml) | A472/F472: USART6 | 9 / 59 | 相对 usart_ll_v2：增加 LBMC；定义差异 CR1/CR2/CR3/PR/SR |
 | `usart_ll_v2_14.rs` | [usart_ll_v2_14](../../data/registers/usart_ll_v2_14.yaml) | A448/F448: USART3, USART6 | 9 / 60 | 相对 usart_ll_v2：增加 LBMC；定义差异 CR1/CR2/CR3/PR/SR |
-| `usart_ll_v2_15.rs` | [usart_ll_v2_15](../../data/registers/usart_ll_v2_15.yaml) | F175: USART0, USART1, USART2, USART3, USART4, USART5 | 14 / 78 | 相对 usart_ll_v2：增加 ADDMR/ADDR/BDR/ICR/IER 等 7 项；缺少 PR；定义差异 BRR/CR1/CR2/CR3/RDR 等 7 项 |
 
 ### usart：v3
 

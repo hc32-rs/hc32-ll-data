@@ -1,5 +1,8 @@
 # LL SDK 核验
 
+> 2026-11 起 HC32F175 暂停支持（IP 多代缝合，见仓库 README）；下文涉及 F175 的
+> 内容仅作 SDK/SVD 归档记录，不再参与提取与生成链。
+
 范围为工作区 `xh_ll_sdk/` 下 27 套 SDK。设备头在
 `drivers/cmsis/Device/*/*/Include/`，LL 头文件在
 `drivers/hc32_ll_driver/inc/`。27 份归档 SVD 与相应 SDK 内 IAR、GCC

@@ -1,0 +1,83 @@
+# 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
+# 布局代表：HC32M120/DBGC；覆盖系列：HC32M120。
+block/DBGC:
+  description: desc DBGC.
+  items:
+  - name: MCUDBGSTAT
+    description: desc MCUDBGSTAT.
+    byte_offset: 0
+    fieldset: MCUDBGSTAT
+  - name: MCUSTPCTL
+    description: desc MCUSTPCTL.
+    byte_offset: 4
+    fieldset: MCUSTPCTL
+fieldset/MCUDBGSTAT:
+  description: desc MCUDBGSTAT.
+  fields:
+  - name: CDBGPWRUPREQ
+    description: desc CDBGPWRUPREQ.
+    bit_offset: 0
+    bit_size: 1
+  - name: CDBGPWRUPACK
+    description: desc CDBGPWRUPACK.
+    bit_offset: 1
+    bit_size: 1
+fieldset/MCUSTPCTL:
+  description: desc MCUSTPCTL.
+  fields:
+  - name: SWDTSTP
+    description: desc SWDTSTP.
+    bit_offset: 0
+    bit_size: 1
+  - name: RTCSTP
+    description: desc RTCSTP.
+    bit_offset: 2
+    bit_size: 1
+  - name: TMR01STP
+    description: desc TMR01STP.
+    bit_offset: 14
+    bit_size: 1
+  - name: TMR21STP
+    description: desc TMR21STP.
+    bit_offset: 17
+    bit_size: 1
+  - name: TMR41STP
+    description: desc TMR41STP.
+    bit_offset: 20
+    bit_size: 1
+  - name: TMRA1STP
+    description: desc TMRA1STP.
+    bit_offset: 23
+    bit_size: 1
+  - name: TMRB1STP
+    description: desc TMRB1STP.
+    bit_offset: 24
+    bit_size: 1
+  - name: TMRB2STP
+    description: desc TMRB2STP.
+    bit_offset: 25
+    bit_size: 1
+  - name: TMRB3STP
+    description: desc TMRB3STP.
+    bit_offset: 26
+    bit_size: 1
+  - name: TMRB4STP
+    description: desc TMRB4STP.
+    bit_offset: 27
+    bit_size: 1
+  - name: TMRB5STP
+    description: desc TMRB5STP.
+    bit_offset: 28
+    bit_size: 1
+  - name: TMRB6STP
+    description: desc TMRB6STP.
+    bit_offset: 29
+    bit_size: 1
+  - name: TMRB7STP
+    description: desc TMRB7STP.
+    bit_offset: 30
+    bit_size: 1
+  - name: TMRB8STP
+    description: desc TMRB8STP.
+    bit_offset: 31
+    bit_size: 1

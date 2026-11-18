@@ -23,22 +23,6 @@ F175 的 GTIM0–8 与 LPTIM0/1 独立登记，不续用 DDL 的编号。
 
 以下名称与生成输入保持一致。系列名前缀 `HC32` 省略。
 
-### gtim：v1
-
-通用捕获/比较定时器；IER 与控制字段分变体。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `gtim_ll_v1.rs` | [gtim_ll_v1](../../data/registers/gtim_ll_v1.yaml) | F175: GTIM0, GTIM1, GTIM2, GTIM3, GTIM4, GTIM5, GTIM6, GTIM7, GTIM8 | 16 / 96 | 本档位对照基准；完整定义见来源 YAML |
-
-### lptim：v1
-
-低功耗计数；CMP 比较为扩展，偏移及控制字段分变体。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `lptim_ll_v1.rs` | [lptim_ll_v1](../../data/registers/lptim_ll_v1.yaml) | F175: LPTIM0, LPTIM1 | 7 / 18 | 本档位对照基准；完整定义见来源 YAML |
-
 ### tmr0：v1
 
 单 A 计数通道。

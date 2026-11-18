@@ -25,7 +25,9 @@ I2S 使用独立 i2s 名称，CTRL/SR/ER/CFGR/TXBUF/RXBUF/PR 的位域差异各�
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `i2c_ll_v1.rs` | [i2c_ll_v1](../../data/registers/i2c_ll_v1.yaml) | F175: I2C0, I2C1 | 9 / 17 | 本档位对照基准；完整定义见来源 YAML |
+| `i2c_ll_v1.rs` | [i2c_ll_v1](../../data/registers/i2c_ll_v1.yaml) | F155: I2C | 11 / 67 | 本档位对照基准；完整定义见来源 YAML |
+| `i2c_ll_v1_1.rs` | [i2c_ll_v1_1](../../data/registers/i2c_ll_v1_1.yaml) | F115: I2C | 11 / 69 | 相对 i2c_ll_v1：定义差异 DRR/DTR |
+| `i2c_ll_v1_2.rs` | [i2c_ll_v1_2](../../data/registers/i2c_ll_v1_2.yaml) | F120/M120: I2C | 11 / 70 | 相对 i2c_ll_v1：定义差异 DRR/DTR/FLTR |
 
 ### i2c：v2
 
@@ -33,9 +35,8 @@ I2S 使用独立 i2s 名称，CTRL/SR/ER/CFGR/TXBUF/RXBUF/PR 的位域差异各�
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `i2c_ll_v2.rs` | [i2c_ll_v2](../../data/registers/i2c_ll_v2.yaml) | F155: I2C | 11 / 67 | 本档位对照基准；完整定义见来源 YAML |
-| `i2c_ll_v2_1.rs` | [i2c_ll_v2_1](../../data/registers/i2c_ll_v2_1.yaml) | F115: I2C | 11 / 69 | 相对 i2c_ll_v2：定义差异 DRR/DTR |
-| `i2c_ll_v2_2.rs` | [i2c_ll_v2_2](../../data/registers/i2c_ll_v2_2.yaml) | F120/M120: I2C | 11 / 70 | 相对 i2c_ll_v2：定义差异 DRR/DTR/FLTR |
+| `i2c_ll_v2.rs` | [i2c_ll_v2](../../data/registers/i2c_ll_v2.yaml) | K116/K118: I2C | 13 / 77 | 本档位对照基准；完整定义见来源 YAML |
+| `i2c_ll_v2_1.rs` | [i2c_ll_v2_1](../../data/registers/i2c_ll_v2_1.yaml) | A460/F451/F452/F460/F467: I2C1, I2C2, I2C3；A4A0/F4A0/F4A2: I2C1, I2C2, I2C3, I2C4, I2C5, I2C6 | 13 / 78 | 相对 i2c_ll_v2：定义差异 CLR/CR4/DRR/DTR/SLTR |
 
 ### i2c：v3
 
@@ -43,21 +44,12 @@ I2S 使用独立 i2s 名称，CTRL/SR/ER/CFGR/TXBUF/RXBUF/PR 的位域差异各�
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `i2c_ll_v3.rs` | [i2c_ll_v3](../../data/registers/i2c_ll_v3.yaml) | K116/K118: I2C | 13 / 77 | 本档位对照基准；完整定义见来源 YAML |
-| `i2c_ll_v3_1.rs` | [i2c_ll_v3_1](../../data/registers/i2c_ll_v3_1.yaml) | A460/F451/F452/F460/F467: I2C1, I2C2, I2C3；A4A0/F4A0/F4A2: I2C1, I2C2, I2C3, I2C4, I2C5, I2C6 | 13 / 78 | 相对 i2c_ll_v3：定义差异 CLR/CR4/DRR/DTR/SLTR |
-
-### i2c：v4
-
-旧式地址匹配 → CR 配置/滤波 → 超时 SLTR → FSTR/从地址扩展。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `i2c_ll_v4.rs` | [i2c_ll_v4](../../data/registers/i2c_ll_v4.yaml) | A4A8/F4A8: I2C1, I2C2, I2C3, I2C4, I2C5, I2C6 | 15 / 95 | 本档位对照基准；完整定义见来源 YAML |
-| `i2c_ll_v4_1.rs` | [i2c_ll_v4_1](../../data/registers/i2c_ll_v4_1.yaml) | A448/F448/M441: I2C1, I2C2 | 15 / 96 | 相对 i2c_ll_v4：定义差异 CR4/SLR0/SLR1 |
-| `i2c_ll_v4_2.rs` | [i2c_ll_v4_2](../../data/registers/i2c_ll_v4_2.yaml) | F334/F336: I2C | 15 / 97 | 相对 i2c_ll_v4：定义差异 CCR/CR4/SLR0/SLR1 |
-| `i2c_ll_v4_3.rs` | [i2c_ll_v4_3](../../data/registers/i2c_ll_v4_3.yaml) | F431/M413: I2C | 15 / 97 | 相对 i2c_ll_v4：定义差异 CR4/SLR0/SLR1 |
-| `i2c_ll_v4_4.rs` | [i2c_ll_v4_4](../../data/registers/i2c_ll_v4_4.yaml) | M458: I2C | 15 / 97 | 相对 i2c_ll_v4：增加 SLVADRR；缺少 SLVADDR；定义差异 CR4/SLR0/SLR1 |
-| `i2c_ll_v4_5.rs` | [i2c_ll_v4_5](../../data/registers/i2c_ll_v4_5.yaml) | A472/F472: I2C1, I2C2, I2C3 | 15 / 97 | 相对 i2c_ll_v4：定义差异 CCR/CR4/SLR0/SLR1 |
+| `i2c_ll_v3.rs` | [i2c_ll_v3](../../data/registers/i2c_ll_v3.yaml) | A4A8/F4A8: I2C1, I2C2, I2C3, I2C4, I2C5, I2C6 | 15 / 95 | 本档位对照基准；完整定义见来源 YAML |
+| `i2c_ll_v3_1.rs` | [i2c_ll_v3_1](../../data/registers/i2c_ll_v3_1.yaml) | A448/F448/M441: I2C1, I2C2 | 15 / 96 | 相对 i2c_ll_v3：定义差异 CR4/SLR0/SLR1 |
+| `i2c_ll_v3_2.rs` | [i2c_ll_v3_2](../../data/registers/i2c_ll_v3_2.yaml) | F334/F336: I2C | 15 / 97 | 相对 i2c_ll_v3：定义差异 CCR/CR4/SLR0/SLR1 |
+| `i2c_ll_v3_3.rs` | [i2c_ll_v3_3](../../data/registers/i2c_ll_v3_3.yaml) | F431/M413: I2C | 15 / 97 | 相对 i2c_ll_v3：定义差异 CR4/SLR0/SLR1 |
+| `i2c_ll_v3_4.rs` | [i2c_ll_v3_4](../../data/registers/i2c_ll_v3_4.yaml) | M458: I2C | 15 / 97 | 相对 i2c_ll_v3：增加 SLVADRR；缺少 SLVADDR；定义差异 CR4/SLR0/SLR1 |
+| `i2c_ll_v3_5.rs` | [i2c_ll_v3_5](../../data/registers/i2c_ll_v3_5.yaml) | A472/F472: I2C1, I2C2, I2C3 | 15 / 97 | 相对 i2c_ll_v3：定义差异 CCR/CR4/SLR0/SLR1 |
 
 ### i2s：v1
 
@@ -72,23 +64,15 @@ I2S 使用独立 i2s 名称，CTRL/SR/ER/CFGR/TXBUF/RXBUF/PR 的位域差异各�
 
 ### spi：v1
 
-旧式 CR0/CR1、HDOE/SSI。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `spi_ll_v1.rs` | [spi_ll_v1](../../data/registers/spi_ll_v1.yaml) | F175: SPI0, SPI1 | 7 / 41 | 本档位对照基准；完整定义见来源 YAML |
-
-### spi：v2
-
 CFG1/CFG2 配置架构；CR/CR1、分频和接收控制分变体。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `spi_ll_v2.rs` | [spi_ll_v2](../../data/registers/spi_ll_v2.yaml) | F115/F120/F155/M120: SPI | 5 / 28 | 本档位对照基准；完整定义见来源 YAML |
-| `spi_ll_v2_1.rs` | [spi_ll_v2_1](../../data/registers/spi_ll_v2_1.yaml) | K116/K118: SPI1, SPI2 | 5 / 34 | 相对 spi_ll_v2：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/SR |
-| `spi_ll_v2_2.rs` | [spi_ll_v2_2](../../data/registers/spi_ll_v2_2.yaml) | A460/F451/F452/F460: SPI1, SPI2, SPI3, SPI4；A4A0/F467/F4A0/F4A2: SPI1, SPI2, SPI3, SPI4, SPI5, SPI6 | 5 / 40 | 相对 spi_ll_v2：定义差异 CFG1/CFG2/CR1/DR |
-| `spi_ll_v2_3.rs` | [spi_ll_v2_3](../../data/registers/spi_ll_v2_3.yaml) | A448/F448/M441: SPI1, SPI2, SPI3；A472/F472: SPI1, SPI2, SPI3, SPI4 | 5 / 42 | 相对 spi_ll_v2：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/DR |
-| `spi_ll_v2_4.rs` | [spi_ll_v2_4](../../data/registers/spi_ll_v2_4.yaml) | A4A8/F4A8: SPI1, SPI2, SPI3, SPI4, SPI5, SPI6 | 5 / 43 | 相对 spi_ll_v2：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/DR/SR |
-| `spi_ll_v2_5.rs` | [spi_ll_v2_5](../../data/registers/spi_ll_v2_5.yaml) | F334/F336/F431/M413: SPI | 5 / 43 | 相对 spi_ll_v2：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/DR/SR |
-| `spi_ll_v2_6.rs` | [spi_ll_v2_6](../../data/registers/spi_ll_v2_6.yaml) | M458: SPI1, SPI2 | 5 / 44 | 相对 spi_ll_v2：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/DR/SR |
+| `spi_ll_v1.rs` | [spi_ll_v1](../../data/registers/spi_ll_v1.yaml) | F115/F120/F155/M120: SPI | 5 / 28 | 本档位对照基准；完整定义见来源 YAML |
+| `spi_ll_v1_1.rs` | [spi_ll_v1_1](../../data/registers/spi_ll_v1_1.yaml) | K116/K118: SPI1, SPI2 | 5 / 34 | 相对 spi_ll_v1：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/SR |
+| `spi_ll_v1_2.rs` | [spi_ll_v1_2](../../data/registers/spi_ll_v1_2.yaml) | A460/F451/F452/F460: SPI1, SPI2, SPI3, SPI4；A4A0/F467/F4A0/F4A2: SPI1, SPI2, SPI3, SPI4, SPI5, SPI6 | 5 / 40 | 相对 spi_ll_v1：定义差异 CFG1/CFG2/CR1/DR |
+| `spi_ll_v1_3.rs` | [spi_ll_v1_3](../../data/registers/spi_ll_v1_3.yaml) | A448/F448/M441: SPI1, SPI2, SPI3；A472/F472: SPI1, SPI2, SPI3, SPI4 | 5 / 42 | 相对 spi_ll_v1：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/DR |
+| `spi_ll_v1_4.rs` | [spi_ll_v1_4](../../data/registers/spi_ll_v1_4.yaml) | A4A8/F4A8: SPI1, SPI2, SPI3, SPI4, SPI5, SPI6 | 5 / 43 | 相对 spi_ll_v1：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/DR/SR |
+| `spi_ll_v1_5.rs` | [spi_ll_v1_5](../../data/registers/spi_ll_v1_5.yaml) | F334/F336/F431/M413: SPI | 5 / 43 | 相对 spi_ll_v1：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/DR/SR |
+| `spi_ll_v1_6.rs` | [spi_ll_v1_6](../../data/registers/spi_ll_v1_6.yaml) | M458: SPI1, SPI2 | 5 / 44 | 相对 spi_ll_v1：增加 CR；缺少 CR1；定义差异 CFG1/CFG2/DR/SR |
 <!-- peripheral-versions:end -->

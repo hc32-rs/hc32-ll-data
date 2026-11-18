@@ -33,7 +33,7 @@
   "dma": 602,
   "peripherals": 98,
   "svd_peripherals": 98,
-  "svd_interrupts": 183,
+  "svd_interrupts": 163,
   "fcg_matched": 70,
   "dma_note": "LL 无 DMA_SRC_* 宏；EVT_SRC_* 经 AOS DMAx_TRGSELy 路由，任意请求可路由任意通道，channel 填 RM 通道范围；trigger_id 为 EVT_SRC_* 枚举数值（十进制，即写 AOS->DMAx_TRGSELy 的 9 位事件编号）",
   "warnings": []
@@ -104,19 +104,6 @@
   "warnings": []
  },
  {
-  "series": "HC32F175",
-  "sdk": "HC32F175_DDL_Rev1.00",
-  "chips": 4,
-  "interrupts": 36,
-  "dma": 22,
-  "peripherals": 42,
-  "svd_peripherals": 42,
-  "svd_interrupts": 0,
-  "fcg_matched": 31,
-  "dma_note": "F175 风格：DMA_<信号>_REQ 固定 TRISEL 编号（0x40~0x55），写入通道 CONFA0.TRISEL 选择请求，通道 0~3 自由路由；trigger_id 为去移位后的原始请求编号",
-  "warnings": []
- },
- {
   "series": "HC32F334",
   "sdk": "HC32F334_DDL_Rev1.1.1",
   "chips": 8,
@@ -124,7 +111,7 @@
   "dma": 252,
   "peripherals": 66,
   "svd_peripherals": 66,
-  "svd_interrupts": 146,
+  "svd_interrupts": 106,
   "fcg_matched": 38,
   "dma_note": "LL 无 DMA_SRC_* 宏；EVT_SRC_* 经 AOS DMAx_TRGSELy 路由，任意请求可路由任意通道，channel 填 RM 通道范围；trigger_id 为 EVT_SRC_* 枚举数值（十进制，即写 AOS->DMAx_TRGSELy 的 9 位事件编号）",
   "warnings": []
@@ -137,7 +124,7 @@
   "dma": 252,
   "peripherals": 66,
   "svd_peripherals": 66,
-  "svd_interrupts": 146,
+  "svd_interrupts": 106,
   "fcg_matched": 38,
   "dma_note": "LL 无 DMA_SRC_* 宏；EVT_SRC_* 经 AOS DMAx_TRGSELy 路由，任意请求可路由任意通道，channel 填 RM 通道范围；trigger_id 为 EVT_SRC_* 枚举数值（十进制，即写 AOS->DMAx_TRGSELy 的 9 位事件编号）",
   "warnings": []
@@ -150,7 +137,7 @@
   "dma": 116,
   "peripherals": 39,
   "svd_peripherals": 39,
-  "svd_interrupts": 74,
+  "svd_interrupts": 67,
   "fcg_matched": 22,
   "dma_note": "LL 无 DMA_SRC_* 宏；EVT_SRC_* 经 AOS DMAx_TRGSELy 路由，任意请求可路由任意通道，channel 填 RM 通道范围；trigger_id 为 EVT_SRC_* 枚举数值（十进制，即写 AOS->DMAx_TRGSELy 的 9 位事件编号）",
   "warnings": []
@@ -228,7 +215,7 @@
   "dma": 602,
   "peripherals": 98,
   "svd_peripherals": 98,
-  "svd_interrupts": 183,
+  "svd_interrupts": 163,
   "fcg_matched": 70,
   "dma_note": "LL 无 DMA_SRC_* 宏；EVT_SRC_* 经 AOS DMAx_TRGSELy 路由，任意请求可路由任意通道，channel 填 RM 通道范围；trigger_id 为 EVT_SRC_* 枚举数值（十进制，即写 AOS->DMAx_TRGSELy 的 9 位事件编号）",
   "warnings": []
@@ -319,7 +306,7 @@
   "dma": 116,
   "peripherals": 39,
   "svd_peripherals": 39,
-  "svd_interrupts": 74,
+  "svd_interrupts": 67,
   "fcg_matched": 22,
   "dma_note": "LL 无 DMA_SRC_* 宏；EVT_SRC_* 经 AOS DMAx_TRGSELy 路由，任意请求可路由任意通道，channel 填 RM 通道范围；trigger_id 为 EVT_SRC_* 枚举数值（十进制，即写 AOS->DMAx_TRGSELy 的 9 位事件编号）",
   "warnings": []
@@ -345,7 +332,7 @@
   "dma": 136,
   "peripherals": 44,
   "svd_peripherals": 44,
-  "svd_interrupts": 79,
+  "svd_interrupts": 70,
   "fcg_matched": 24,
   "dma_note": "LL 无 DMA_SRC_* 宏；EVT_SRC_* 经 AOS DMAx_TRGSELy 路由，任意请求可路由任意通道，channel 填 RM 通道范围；trigger_id 为 EVT_SRC_* 枚举数值（十进制，即写 AOS->DMAx_TRGSELy 的 9 位事件编号）",
   "warnings": []

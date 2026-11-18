@@ -1,80 +1,63 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32F175/DBGC；覆盖系列：HC32F175。
+# 布局代表：HC32K116/DBGC；覆盖系列：HC32K116, HC32K118。
 block/DBGC:
   description: desc DBGC.
   items:
-  - name: STOP
-    description: desc STOP.
+  - name: MCUDBGSTAT
+    description: desc MCUDBGSTAT.
     byte_offset: 0
-    fieldset: STOP
-fieldset/STOP:
-  description: desc STOP.
+    fieldset: MCUDBGSTAT
+  - name: MCUSTPCTL
+    description: desc MCUSTPCTL.
+    byte_offset: 4
+    fieldset: MCUSTPCTL
+fieldset/MCUDBGSTAT:
+  description: desc MCUDBGSTAT.
   fields:
-  - name: IWDTSTP
-    description: desc IWDTSTP.
+  - name: CDBGPWRUPREQ
+    description: desc CDBGPWRUPREQ.
     bit_offset: 0
     bit_size: 1
-  - name: WWDTSTP
-    description: desc WWDTSTP.
+  - name: CDBGPWRUPACK
+    description: desc CDBGPWRUPACK.
     bit_offset: 1
+    bit_size: 1
+fieldset/MCUSTPCTL:
+  description: desc MCUSTPCTL.
+  fields:
+  - name: SWDTSTP
+    description: desc SWDTSTP.
+    bit_offset: 0
     bit_size: 1
   - name: RTCSTP
     description: desc RTCSTP.
     bit_offset: 2
     bit_size: 1
-  - name: LVDSTP
-    description: desc LVDSTP.
+  - name: LVD1STP
+    description: desc LVD1STP.
     bit_offset: 3
     bit_size: 1
-  - name: CTRIMSTP
-    description: desc CTRIMSTP.
+  - name: LVD2STP
+    description: desc LVD2STP.
     bit_offset: 4
     bit_size: 1
-  - name: LPTIM0STP
-    description: desc LPTIM0STP.
-    bit_offset: 5
-    bit_size: 1
-  - name: LPTIM1STP
-    description: desc LPTIM1STP.
-    bit_offset: 6
-    bit_size: 1
-  - name: GTIM0STP
-    description: desc GTIM0STP.
-    bit_offset: 7
-    bit_size: 1
-  - name: GTIM1STP
-    description: desc GTIM1STP.
-    bit_offset: 8
-    bit_size: 1
-  - name: GTIM2STP
-    description: desc GTIM2STP.
-    bit_offset: 9
-    bit_size: 1
-  - name: GTIM3STP
-    description: desc GTIM3STP.
-    bit_offset: 10
-    bit_size: 1
-  - name: GTIM4STP
-    description: desc GTIM4STP.
-    bit_offset: 11
-    bit_size: 1
-  - name: GTIM5STP
-    description: desc GTIM5STP.
-    bit_offset: 12
-    bit_size: 1
-  - name: GTIM6STP
-    description: desc GTIM6STP.
-    bit_offset: 13
-    bit_size: 1
-  - name: GTIM7STP
-    description: desc GTIM7STP.
+  - name: TMR01STP
+    description: desc TMR01STP.
     bit_offset: 14
     bit_size: 1
-  - name: GTIM8STP
-    description: desc GTIM8STP.
-    bit_offset: 15
+  - name: TMR21STP
+    description: desc TMR21STP.
+    bit_offset: 17
     bit_size: 1
-  - name: ATIM3STP
-    description: desc ATIM3STP.
-    bit_offset: 16
+  - name: TMR22STP
+    description: desc TMR22STP.
+    bit_offset: 18
+    bit_size: 1
+  - name: TMR41STP
+    description: desc TMR41STP.
+    bit_offset: 20
+    bit_size: 1
+  - name: TMRA1STP
+    description: desc TMRA1STP.
+    bit_offset: 23
     bit_size: 1

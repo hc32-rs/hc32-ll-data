@@ -6,7 +6,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v4_1
+    version: ll_v3_1
   rcc:
     enable:
       register: FCG3
@@ -16,7 +16,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v3
+    version: ll_v2
   rcc:
     enable:
       register: FCG3
@@ -86,7 +86,7 @@
   registers:
     kind: crc
     block: CRC
-    version: ll_v2_2
+    version: ll_v1_2
   rcc:
     enable:
       register: FCG0
@@ -96,7 +96,7 @@
   registers:
     kind: dbgc
     block: DBGC
-    version: ll_v3
+    version: ll_v2
 - name: DCU1
   address: 0x40052000
   registers:
@@ -202,7 +202,7 @@
   registers:
     kind: gpio
     block: GPIO
-    version: ll_v2_9
+    version: ll_v1_9
 - name: HASH
   address: 0x40008400
   registers:
@@ -218,7 +218,7 @@
   registers:
     kind: i2c
     block: I2C
-    version: ll_v3_1
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG1
@@ -228,7 +228,7 @@
   registers:
     kind: i2c
     block: I2C
-    version: ll_v3_1
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG1
@@ -238,7 +238,7 @@
   registers:
     kind: i2c
     block: I2C
-    version: ll_v3_1
+    version: ll_v2_1
   rcc:
     enable:
       register: FCG1
@@ -376,7 +376,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_2
+    version: ll_v1_2
   rcc:
     enable:
       register: FCG1
@@ -386,7 +386,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_2
+    version: ll_v1_2
   rcc:
     enable:
       register: FCG1
@@ -396,7 +396,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_2
+    version: ll_v1_2
   rcc:
     enable:
       register: FCG1
@@ -406,7 +406,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_2
+    version: ll_v1_2
   rcc:
     enable:
       register: FCG1

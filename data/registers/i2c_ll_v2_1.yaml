@@ -1,5 +1,5 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32F115/I2C；覆盖系列：HC32F115。
+# 布局代表：HC32A460/I2C1；覆盖系列：HC32A460, HC32A4A0, HC32F451, HC32F452, HC32F460, HC32F467, HC32F4A0, HC32F4A2。
 block/I2C:
   description: desc I2C.
   items:
@@ -11,6 +11,10 @@ block/I2C:
     description: desc CR2.
     byte_offset: 4
     fieldset: CR2
+  - name: CR3
+    description: desc CR3.
+    byte_offset: 8
+    fieldset: CR3
   - name: CR4
     description: desc CR4.
     byte_offset: 12
@@ -23,6 +27,10 @@ block/I2C:
     description: desc SLR1.
     byte_offset: 20
     fieldset: SLR1
+  - name: SLTR
+    description: desc SLTR.
+    byte_offset: 24
+    fieldset: SLTR
   - name: SR
     description: desc SR.
     byte_offset: 28
@@ -35,11 +43,13 @@ block/I2C:
   - name: DTR
     description: desc DTR.
     byte_offset: 36
+    access: Write
     bit_size: 8
     fieldset: DTR
   - name: DRR
     description: desc DRR.
     byte_offset: 40
+    access: Read
     bit_size: 8
     fieldset: DRR
   - name: CCR
@@ -104,6 +114,10 @@ fieldset/CLR:
     description: desc NACKFCLR.
     bit_offset: 12
     bit_size: 1
+  - name: TMOUTFCLR
+    description: desc TMOUTFCLR.
+    bit_offset: 14
+    bit_size: 1
   - name: GENCALLFCLR
     description: desc GENCALLFCLR.
     bit_offset: 20
@@ -142,10 +156,6 @@ fieldset/CR1:
   - name: SMBHOSTEN
     description: desc SMBHOSTEN.
     bit_offset: 4
-    bit_size: 1
-  - name: FACKEN
-    description: desc FACKEN.
-    bit_offset: 5
     bit_size: 1
   - name: GCEN
     description: desc GCEN.
@@ -210,6 +220,10 @@ fieldset/CR2:
     description: desc NACKIE.
     bit_offset: 12
     bit_size: 1
+  - name: TMOUTIE
+    description: desc TMOUTIE.
+    bit_offset: 14
+    bit_size: 1
   - name: GENCALLIE
     description: desc GENCALLIE.
     bit_offset: 20
@@ -225,6 +239,25 @@ fieldset/CR2:
   - name: SMBALRTIE
     description: desc SMBALRTIE.
     bit_offset: 23
+    bit_size: 1
+fieldset/CR3:
+  description: desc CR3.
+  fields:
+  - name: TMOUTEN
+    description: desc TMOUTEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: LTMOUT
+    description: desc LTMOUT.
+    bit_offset: 1
+    bit_size: 1
+  - name: HTMOUT
+    description: desc HTMOUT.
+    bit_offset: 2
+    bit_size: 1
+  - name: FACKEN
+    description: desc FACKEN.
+    bit_offset: 7
     bit_size: 1
 fieldset/CR4:
   description: desc CR4.
@@ -260,6 +293,10 @@ fieldset/FLTR:
     description: desc DNFEN.
     bit_offset: 4
     bit_size: 1
+  - name: ANFEN
+    description: desc ANFEN.
+    bit_offset: 5
+    bit_size: 1
 fieldset/SLR0:
   description: desc SLR0.
   fields:
@@ -290,6 +327,17 @@ fieldset/SLR1:
     description: desc ADDRMOD1.
     bit_offset: 15
     bit_size: 1
+fieldset/SLTR:
+  description: desc SLTR.
+  fields:
+  - name: TOUTLOW
+    description: desc TOUTLOW.
+    bit_offset: 0
+    bit_size: 16
+  - name: TOUTHIGH
+    description: desc TOUTHIGH.
+    bit_offset: 16
+    bit_size: 16
 fieldset/SR:
   description: desc SR.
   fields:
@@ -332,6 +380,10 @@ fieldset/SR:
   - name: NACKF
     description: desc NACKF.
     bit_offset: 12
+    bit_size: 1
+  - name: TMOUTF
+    description: desc TMOUTF.
+    bit_offset: 14
     bit_size: 1
   - name: MSL
     description: desc MSL.

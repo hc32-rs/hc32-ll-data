@@ -1,7 +1,7 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32A4A0/ADC3；覆盖系列：HC32A4A0, HC32F4A0, HC32F4A2。
+# 布局代表：HC32A472/ADC1；覆盖系列：HC32A472, HC32F472。
 block/ADC:
-  description: desc ADC3.
+  description: desc ADC1.
   items:
   - name: STR
     description: desc STR.
@@ -35,11 +35,6 @@ block/ADC:
     description: desc AVCHSELR.
     byte_offset: 20
     fieldset: AVCHSELR
-  - name: EXCHSELR
-    description: desc EXCHSELR.
-    byte_offset: 24
-    bit_size: 8
-    fieldset: EXCHSELR
   - name: SSTR0
     description: desc SSTR0.
     byte_offset: 32
@@ -142,9 +137,13 @@ block/ADC:
   - name: ISCLRR
     description: desc ISCLRR.
     byte_offset: 70
-    access: Write
     bit_size: 8
     fieldset: ISCLRR
+  - name: SYNCCR
+    description: desc SYNCCR.
+    byte_offset: 76
+    bit_size: 16
+    fieldset: SYNCCR
   - name: DR0
     description: desc DR0.
     byte_offset: 80
@@ -245,6 +244,26 @@ block/ADC:
     byte_offset: 118
     access: Read
     bit_size: 16
+  - name: DR20
+    description: desc DR20.
+    byte_offset: 120
+    access: Read
+    bit_size: 16
+  - name: DR21
+    description: desc DR21.
+    byte_offset: 122
+    access: Read
+    bit_size: 16
+  - name: DR22
+    description: desc DR22.
+    byte_offset: 124
+    access: Read
+    bit_size: 16
+  - name: DR23
+    description: desc DR23.
+    byte_offset: 126
+    access: Read
+    bit_size: 16
   - name: AWDCR
     description: desc AWDCR.
     byte_offset: 160
@@ -259,7 +278,6 @@ block/ADC:
   - name: AWDSCLRR
     description: desc AWDSCLRR.
     byte_offset: 163
-    access: Write
     bit_size: 8
     fieldset: AWDSCLRR
   - name: AWD0DR0
@@ -288,13 +306,23 @@ block/ADC:
     byte_offset: 176
     bit_size: 8
     fieldset: AWD1CHSR
+  - name: PGACR
+    description: desc PGACR.
+    byte_offset: 192
+    bit_size: 8
+    fieldset: PGACR
+  - name: PGAVSSENR
+    description: desc PGAVSSENR.
+    byte_offset: 196
+    bit_size: 8
+    fieldset: PGAVSSENR
 fieldset/AVCHSELR:
   description: desc AVCHSELR.
   fields:
   - name: AVCHSEL
     description: desc AVCHSEL.
     bit_offset: 0
-    bit_size: 20
+    bit_size: 24
 fieldset/AWD0CHSR:
   description: desc AWD0CHSR.
   bit_size: 8
@@ -461,14 +489,14 @@ fieldset/CHSELRA:
   - name: CHSELA
     description: desc CHSELA.
     bit_offset: 0
-    bit_size: 20
+    bit_size: 24
 fieldset/CHSELRB:
   description: desc CHSELRB.
   fields:
   - name: CHSELB
     description: desc CHSELB.
     bit_offset: 0
-    bit_size: 20
+    bit_size: 24
 fieldset/CR0:
   description: desc CR0.
   bit_size: 16
@@ -500,14 +528,6 @@ fieldset/CR1:
   - name: RSCHSEL
     description: desc RSCHSEL.
     bit_offset: 2
-    bit_size: 1
-fieldset/EXCHSELR:
-  description: desc EXCHSELR.
-  bit_size: 8
-  fields:
-  - name: EXCHSEL
-    description: desc EXCHSEL.
-    bit_offset: 0
     bit_size: 1
 fieldset/ICR:
   description: desc ICR.
@@ -553,6 +573,26 @@ fieldset/ISR:
     description: desc SASTPDF.
     bit_offset: 4
     bit_size: 1
+fieldset/PGACR:
+  description: desc PGACR.
+  bit_size: 8
+  fields:
+  - name: PGACTL
+    description: desc PGACTL.
+    bit_offset: 0
+    bit_size: 4
+  - name: PGAGAIN
+    description: desc PGAGAIN.
+    bit_offset: 4
+    bit_size: 4
+fieldset/PGAVSSENR:
+  description: desc PGAVSSENR.
+  bit_size: 8
+  fields:
+  - name: PGAVSSEN
+    description: desc PGAVSSEN.
+    bit_offset: 0
+    bit_size: 1
 fieldset/STR:
   description: desc STR.
   bit_size: 8
@@ -561,6 +601,22 @@ fieldset/STR:
     description: desc STRT.
     bit_offset: 0
     bit_size: 1
+fieldset/SYNCCR:
+  description: desc SYNCCR.
+  bit_size: 16
+  fields:
+  - name: SYNCEN
+    description: desc SYNCEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: SYNCMD
+    description: desc SYNCMD.
+    bit_offset: 4
+    bit_size: 3
+  - name: SYNCDLY
+    description: desc SYNCDLY.
+    bit_offset: 8
+    bit_size: 8
 fieldset/TRGSR:
   description: desc TRGSR.
   bit_size: 16

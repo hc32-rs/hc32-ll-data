@@ -46,12 +46,4 @@ M4 向量采用[设备头向量分组](gpio-int.md)，不从布局版本推断 I
 | `dma_ll_v2_6.rs` | [dma_ll_v2_6](../../data/registers/dma_ll_v2_6.yaml) | A472/F472: DMA1, DMA2 | 149 / 302 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 14 项 |
 | `dma_ll_v2_7.rs` | [dma_ll_v2_7](../../data/registers/dma_ll_v2_7.yaml) | A4A0/F467/F4A0/F4A2: DMA1, DMA2 | 149 / 302 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 13 项 |
 | `dma_ll_v2_8.rs` | [dma_ll_v2_8](../../data/registers/dma_ll_v2_8.yaml) | A4A8/F4A8: DMA1, DMA2 | 149 / 302 | 相对 dma_ll_v2：增加 CHCTL4/CHCTL5/CHCTL6/CHCTL7/CHENCLR 等 69 项；定义差异 CHCTL0/CHCTL1/CHCTL2/CHCTL3/CHEN 等 13 项 |
-
-### dmac：v1
-
-旧式 CONF/CONFA DMA；4 个源地址窗口，触发位与字段方言分变体。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `dmac_ll_v1.rs` | [dmac_ll_v1](../../data/registers/dmac_ll_v1.yaml) | F175: DMAC | 17 / 79 | 本档位对照基准；完整定义见来源 YAML |
 <!-- peripheral-versions:end -->

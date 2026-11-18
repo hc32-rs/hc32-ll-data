@@ -61,11 +61,13 @@ AES 密钥长度控制扩展。
 
 ### crc：v1
 
-旧式单数据窗口。
+数据输入窗口阵列；双结果/FLG 按能力分档与变体。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `crc_ll_v1.rs` | [crc_ll_v1](../../data/registers/crc_ll_v1.yaml) | F175: CRC | 3 / 4 | 本档位对照基准；完整定义见来源 YAML |
+| `crc_ll_v1.rs` | [crc_ll_v1](../../data/registers/crc_ll_v1.yaml) | A448/F334/F336/F448/K116/K118/M441: CRC | 34 / 2 | 本档位对照基准；完整定义见来源 YAML |
+| `crc_ll_v1_1.rs` | [crc_ll_v1_1](../../data/registers/crc_ll_v1_1.yaml) | A472/A4A0/F115/F120/F155/F467/F472/F4A0/F4A2/M120: CRC | 34 / 2 | 相对 crc_ll_v1：定义差异 DAT0/DAT1/DAT10/DAT11/DAT12 等 32 项 |
+| `crc_ll_v1_2.rs` | [crc_ll_v1_2](../../data/registers/crc_ll_v1_2.yaml) | A460/F451/F452/F460: CRC | 35 / 7 | 相对 crc_ll_v1：增加 FLG；定义差异 CR/DAT0/DAT1/DAT10/DAT11 等 34 项 |
 
 ### crc：v2
 
@@ -73,17 +75,7 @@ AES 密钥长度控制扩展。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `crc_ll_v2.rs` | [crc_ll_v2](../../data/registers/crc_ll_v2.yaml) | A448/F334/F336/F448/K116/K118/M441: CRC | 34 / 2 | 本档位对照基准；完整定义见来源 YAML |
-| `crc_ll_v2_1.rs` | [crc_ll_v2_1](../../data/registers/crc_ll_v2_1.yaml) | A472/A4A0/F115/F120/F155/F467/F472/F4A0/F4A2/M120: CRC | 34 / 2 | 相对 crc_ll_v2：定义差异 DAT0/DAT1/DAT10/DAT11/DAT12 等 32 项 |
-| `crc_ll_v2_2.rs` | [crc_ll_v2_2](../../data/registers/crc_ll_v2_2.yaml) | A460/F451/F452/F460: CRC | 35 / 7 | 相对 crc_ll_v2：增加 FLG；定义差异 CR/DAT0/DAT1/DAT10/DAT11 等 34 项 |
-
-### crc：v3
-
-数据输入窗口阵列；双结果/FLG 按能力分档与变体。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `crc_ll_v3.rs` | [crc_ll_v3](../../data/registers/crc_ll_v3.yaml) | A4A8/F431/F4A8/M413/M458: CRC | 35 / 3 | 本档位对照基准；完整定义见来源 YAML |
+| `crc_ll_v2.rs` | [crc_ll_v2](../../data/registers/crc_ll_v2.yaml) | A4A8/F431/F4A8/M413/M458: CRC | 35 / 3 | 本档位对照基准；完整定义见来源 YAML |
 
 ### mcan：v1
 
@@ -129,9 +121,8 @@ RTC 日历/闹钟与误差补偿，FCLR 分变体。
 
 | 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
 |---|---|---|---:|---|
-| `rtc_ll_v2.rs` | [rtc_ll_v2](../../data/registers/rtc_ll_v2.yaml) | F175: RTC | 21 / 82 | 本档位对照基准；完整定义见来源 YAML |
-| `rtc_ll_v2_1.rs` | [rtc_ll_v2_1](../../data/registers/rtc_ll_v2_1.yaml) | A4A8/F4A8: RTC | 24 / 58 | 相对 rtc_ll_v2：增加 ALMHOUR/ALMMIN/ALMWEEK/CR3/DAYTP 等 14 项；缺少 ALMA/ALMB/COMPEN/HCOMP/ICR 等 11 项；定义差异 CR0/CR1/CR2/DAY/HOUR 等 10 项 |
-| `rtc_ll_v2_2.rs` | [rtc_ll_v2_2](../../data/registers/rtc_ll_v2_2.yaml) | A4A0/F467/F4A0/F4A2: RTC | 24 / 59 | 相对 rtc_ll_v2：增加 ALMHOUR/ALMMIN/ALMWEEK/CR3/DAYTP 等 14 项；缺少 ALMA/ALMB/COMPEN/HCOMP/ICR 等 11 项；定义差异 CR0/CR1/CR2/DAY/HOUR 等 10 项 |
+| `rtc_ll_v2.rs` | [rtc_ll_v2](../../data/registers/rtc_ll_v2.yaml) | A4A8/F4A8: RTC | 24 / 58 | 本档位对照基准；完整定义见来源 YAML |
+| `rtc_ll_v2_1.rs` | [rtc_ll_v2_1](../../data/registers/rtc_ll_v2_1.yaml) | A4A0/F467/F4A0/F4A2: RTC | 24 / 59 | 相对 rtc_ll_v2：定义差异 CR3/DAYTP/ERRCRL/HOURTP/MINTP 等 7 项 |
 
 ### trng：v1
 

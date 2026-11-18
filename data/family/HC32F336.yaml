@@ -6,7 +6,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v3_6
+    version: ll_v2_6
   rcc:
     enable:
       register: FCG3
@@ -19,7 +19,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v3_5
+    version: ll_v2_5
   rcc:
     enable:
       register: FCG3
@@ -32,7 +32,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v3_2
+    version: ll_v2_2
   rcc:
     enable:
       register: FCG3
@@ -95,7 +95,7 @@
   registers:
     kind: crc
     block: CRC
-    version: ll_v2
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -138,7 +138,7 @@
   registers:
     kind: dbgc
     block: DBGC
-    version: ll_v3_3
+    version: ll_v2_3
 - name: DMA
   address: 0x40053000
   registers:
@@ -150,8 +150,6 @@
       register: FCG0
       field: PWC_FCG0_DMA
   interrupts:
-  - signal: DMA_Error
-    interrupt: DMA_Error
   - signal: DMA_TC0_BTC0
     interrupt: DMA_TC0_BTC0
   - signal: DMA_TC1_BTC1
@@ -278,7 +276,7 @@
   registers:
     kind: gpio
     block: GPIO
-    version: ll_v2_5
+    version: ll_v1_5
   interrupts:
   - signal: EVENT_PORT1
     interrupt: EVENT_PORT1
@@ -415,7 +413,7 @@
   registers:
     kind: i2c
     block: I2C
-    version: ll_v4_2
+    version: ll_v3_2
   rcc:
     enable:
       register: FCG1
@@ -436,72 +434,8 @@
     block: INTC
     version: ll_v2_7
   interrupts:
-  - signal: GLOBAL0_SWINT0
-    interrupt: GLOBAL0_SWINT0
-  - signal: GLOBAL1_SWINT1
-    interrupt: GLOBAL1_SWINT1
-  - signal: GLOBAL2_SWINT2
-    interrupt: GLOBAL2_SWINT2
-  - signal: GLOBAL3_SWINT3
-    interrupt: GLOBAL3_SWINT3
-  - signal: GLOBAL4_SWINT4
-    interrupt: GLOBAL4_SWINT4
-  - signal: GLOBAL5_SWINT5
-    interrupt: GLOBAL5_SWINT5
-  - signal: GLOBAL6_SWINT6
-    interrupt: GLOBAL6_SWINT6
-  - signal: GLOBAL7_SWINT7
-    interrupt: GLOBAL7_SWINT7
-  - signal: GLOBAL8_SWINT8
-    interrupt: GLOBAL8_SWINT8
-  - signal: GLOBAL9_SWINT9
-    interrupt: GLOBAL9_SWINT9
-  - signal: GLOBAL10_SWINT10
-    interrupt: GLOBAL10_SWINT10
-  - signal: GLOBAL11_SWINT11
-    interrupt: GLOBAL11_SWINT11
-  - signal: GLOBAL12_SWINT12
-    interrupt: GLOBAL12_SWINT12
-  - signal: GLOBAL13_SWINT13
-    interrupt: GLOBAL13_SWINT13
-  - signal: GLOBAL14_SWINT14
-    interrupt: GLOBAL14_SWINT14
-  - signal: GLOBAL15_SWINT15
-    interrupt: GLOBAL15_SWINT15
   - signal: FPU_ERR
     interrupt: FPU_ERR
-  - signal: GLOBAL16_EXINT0
-    interrupt: GLOBAL16_EXINT0
-  - signal: GLOBAL17_EXINT1
-    interrupt: GLOBAL17_EXINT1
-  - signal: GLOBAL18_EXINT2
-    interrupt: GLOBAL18_EXINT2
-  - signal: GLOBAL19_EXINT3
-    interrupt: GLOBAL19_EXINT3
-  - signal: GLOBAL20_EXINT4
-    interrupt: GLOBAL20_EXINT4
-  - signal: GLOBAL21_EXINT5
-    interrupt: GLOBAL21_EXINT5
-  - signal: GLOBAL22_EXINT6
-    interrupt: GLOBAL22_EXINT6
-  - signal: GLOBAL23_EXINT7
-    interrupt: GLOBAL23_EXINT7
-  - signal: GLOBAL24_EXINT8
-    interrupt: GLOBAL24_EXINT8
-  - signal: GLOBAL25_EXINT9
-    interrupt: GLOBAL25_EXINT9
-  - signal: GLOBAL26_EXINT10
-    interrupt: GLOBAL26_EXINT10
-  - signal: GLOBAL27_EXINT11
-    interrupt: GLOBAL27_EXINT11
-  - signal: GLOBAL28_EXINT12
-    interrupt: GLOBAL28_EXINT12
-  - signal: GLOBAL29_EXINT13
-    interrupt: GLOBAL29_EXINT13
-  - signal: GLOBAL30_EXINT14
-    interrupt: GLOBAL30_EXINT14
-  - signal: GLOBAL31_EXINT15
-    interrupt: GLOBAL31_EXINT15
 - name: MCAN1
   address: 0x40071000
   registers:
@@ -575,10 +509,6 @@
   interrupts:
   - signal: WKTM
     interrupt: WKTM
-  - signal: PVD1
-    interrupt: PVD1
-  - signal: PVD2
-    interrupt: PVD2
 - name: RMU
   address: 0x4004CCE0
   registers:
@@ -599,7 +529,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_5
+    version: ll_v1_5
   rcc:
     enable:
       register: FCG1
@@ -837,10 +767,6 @@
   interrupts:
   - signal: USART1
     interrupt: USART1
-  - signal: USART1_TC
-    interrupt: USART1_TC
-  - signal: USART1_WKUP
-    interrupt: USART1_WKUP
 - name: USART2
   address: 0x4001D000
   registers:
@@ -854,8 +780,6 @@
   interrupts:
   - signal: USART2
     interrupt: USART2
-  - signal: USART2_TC
-    interrupt: USART2_TC
 - name: USART3
   address: 0x4001D000
   registers:
@@ -869,8 +793,6 @@
   interrupts:
   - signal: USART3
     interrupt: USART3
-  - signal: USART3_TC
-    interrupt: USART3_TC
 - name: USART4
   address: 0x4001D000
   registers:
@@ -884,8 +806,6 @@
   interrupts:
   - signal: USART4
     interrupt: USART4
-  - signal: USART4_TC
-    interrupt: USART4_TC
 - name: WDT
   address: 0x40049000
   registers:

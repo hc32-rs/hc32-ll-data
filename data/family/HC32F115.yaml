@@ -6,7 +6,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v2
+    version: ll_v1
   rcc:
     enable:
       register: FCG0
@@ -32,7 +32,7 @@
   registers:
     kind: crc
     block: CRC
-    version: ll_v2_1
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG0
@@ -52,7 +52,7 @@
   registers:
     kind: dbgc
     block: DBGC
-    version: ll_v2_1
+    version: ll_v1_1
 - name: EFM
   address: 0x40000800
   registers:
@@ -64,13 +64,13 @@
   registers:
     kind: gpio
     block: GPIO
-    version: ll_v2_1
+    version: ll_v1_1
 - name: I2C
   address: 0x40004800
   registers:
     kind: i2c
     block: I2C
-    version: ll_v2_1
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG0
@@ -114,7 +114,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2
+    version: ll_v1
   rcc:
     enable:
       register: FCG0

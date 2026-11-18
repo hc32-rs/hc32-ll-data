@@ -1,5 +1,5 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32A4A8/RTC；覆盖系列：HC32A4A8, HC32F4A8。
+# 布局代表：HC32A4A0/RTC；覆盖系列：HC32A4A0, HC32F467, HC32F4A0, HC32F4A2。
 block/RTC:
   description: desc RTC.
   items:
@@ -82,6 +82,7 @@ block/RTC:
     description: desc ERRCRL.
     byte_offset: 60
     bit_size: 8
+    fieldset: ERRCRL
   - name: TPCR0
     description: desc TPCR0.
     byte_offset: 64
@@ -100,31 +101,26 @@ block/RTC:
   - name: SECTP
     description: desc SECTP.
     byte_offset: 76
-    access: Read
     bit_size: 8
     fieldset: SECTP
   - name: MINTP
     description: desc MINTP.
     byte_offset: 80
-    access: Read
     bit_size: 8
     fieldset: MINTP
   - name: HOURTP
     description: desc HOURTP.
     byte_offset: 84
-    access: Read
     bit_size: 8
     fieldset: HOURTP
   - name: DAYTP
     description: desc DAYTP.
     byte_offset: 88
-    access: Read
     bit_size: 8
     fieldset: DAYTP
   - name: MONTP
     description: desc MONTP.
     byte_offset: 92
-    access: Read
     bit_size: 8
     fieldset: MONTP
 fieldset/ALMHOUR:
@@ -233,8 +229,8 @@ fieldset/CR3:
     bit_size: 1
   - name: RCKSEL
     description: desc RCKSEL.
-    bit_offset: 6
-    bit_size: 2
+    bit_offset: 7
+    bit_size: 1
 fieldset/DAY:
   description: desc DAY.
   bit_size: 8
@@ -271,6 +267,14 @@ fieldset/ERRCRH:
     description: desc COMPEN.
     bit_offset: 7
     bit_size: 1
+fieldset/ERRCRL:
+  description: desc ERRCRL.
+  bit_size: 8
+  fields:
+  - name: COMP
+    description: desc COMP.
+    bit_offset: 0
+    bit_size: 8
 fieldset/HOUR:
   description: desc HOUR.
   bit_size: 8

@@ -6,7 +6,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v5_1
+    version: ll_v4_1
   rcc:
     enable:
       register: FCG0
@@ -25,7 +25,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v5
+    version: ll_v4
   rcc:
     enable:
       register: FCG0
@@ -81,7 +81,7 @@
   registers:
     kind: crc
     block: CRC
-    version: ll_v3
+    version: ll_v2
   rcc:
     enable:
       register: FCG0
@@ -91,7 +91,7 @@
   registers:
     kind: dbgc
     block: DBGC
-    version: ll_v4_1
+    version: ll_v3_1
 - name: DFM
   address: 0x40050000
   registers:
@@ -123,7 +123,7 @@
   registers:
     kind: efm
     block: EFM
-    version: ll_v3_1
+    version: ll_v3
   interrupts:
   - signal: EFM_SWINT17
     interrupt: EFM_SWINT17
@@ -178,13 +178,13 @@
   registers:
     kind: gpio
     block: GPIO
-    version: ll_v2_4
+    version: ll_v1_4
 - name: I2C
   address: 0x4003B400
   registers:
     kind: i2c
     block: I2C
-    version: ll_v4_4
+    version: ll_v3_4
   rcc:
     enable:
       register: FCG0
@@ -266,7 +266,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_6
+    version: ll_v1_6
   rcc:
     enable:
       register: FCG0
@@ -281,7 +281,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_6
+    version: ll_v1_6
   rcc:
     enable:
       register: FCG0
@@ -483,14 +483,8 @@
       register: FCG0
       field: CMU_FCG_USART1
   interrupts:
-  - signal: USART1_RF_SE
-    interrupt: USART1_RF_SE
-  - signal: USART1_Err_Tend_Lin_Timeout
-    interrupt: USART1_Err_Tend_Lin_Timeout
   - signal: USART1_TCI
     interrupt: USART1_TCI
-  - signal: USART1_WKUP
-    interrupt: USART1_WKUP
 - name: USART2
   address: 0x4001CC00
   registers:
@@ -502,10 +496,6 @@
       register: FCG0
       field: CMU_FCG_USART2
   interrupts:
-  - signal: USART2_RF_SE
-    interrupt: USART2_RF_SE
-  - signal: USART2_Err_Tend_Lin_Timeout
-    interrupt: USART2_Err_Tend_Lin_Timeout
   - signal: USART2_TCI
     interrupt: USART2_TCI
 - name: USART3
@@ -519,10 +509,6 @@
       register: FCG0
       field: CMU_FCG_USART3
   interrupts:
-  - signal: USART3_RF_SE
-    interrupt: USART3_RF_SE
-  - signal: USART3_Err_Tend_Lin_Timeout
-    interrupt: USART3_Err_Tend_Lin_Timeout
   - signal: USART3_TCI
     interrupt: USART3_TCI
 - name: USART4
@@ -536,10 +522,6 @@
       register: FCG0
       field: CMU_FCG_USART4
   interrupts:
-  - signal: USART4_RF_SE
-    interrupt: USART4_RF_SE
-  - signal: USART4_Err_Tend_Lin_Timeout
-    interrupt: USART4_Err_Tend_Lin_Timeout
   - signal: USART4_TCI
     interrupt: USART4_TCI
 - name: WDT

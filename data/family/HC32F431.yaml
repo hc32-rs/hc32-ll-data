@@ -6,7 +6,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v4
+    version: ll_v3
   rcc:
     enable:
       register: FCG0
@@ -71,7 +71,7 @@
   registers:
     kind: crc
     block: CRC
-    version: ll_v3
+    version: ll_v2
   rcc:
     enable:
       register: FCG0
@@ -81,7 +81,7 @@
   registers:
     kind: dbgc
     block: DBGC
-    version: ll_v4
+    version: ll_v3
 - name: DCU
   address: 0x40052000
   registers:
@@ -106,8 +106,6 @@
       register: FCG0
       field: CMU_FCG_DMA
   interrupts:
-  - signal: DMA_Error
-    interrupt: DMA_Error
   - signal: DMA_TC0_BTC0
     interrupt: DMA_TC0_BTC0
   - signal: DMA_TC1_BTC1
@@ -163,7 +161,7 @@
   registers:
     kind: gpio
     block: GPIO
-    version: ll_v2_8
+    version: ll_v1_8
 - name: HALL
   address: 0x4001E800
   registers:
@@ -182,7 +180,7 @@
   registers:
     kind: i2c
     block: I2C
-    version: ll_v4_3
+    version: ll_v3_3
   rcc:
     enable:
       register: FCG0
@@ -294,7 +292,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_5
+    version: ll_v1_5
   rcc:
     enable:
       register: FCG0
@@ -354,8 +352,6 @@
     interrupt: TMR4_OVF_UDF
   - signal: TMR4_RELOAD
     interrupt: TMR4_RELOAD
-  - signal: TMR4_SCM
-    interrupt: TMR4_SCM
 - name: TMRA1
   address: 0x40015000
   registers:
@@ -444,10 +440,6 @@
   interrupts:
   - signal: USART1
     interrupt: USART1
-  - signal: USART1_TC
-    interrupt: USART1_TC
-  - signal: USART1_WKUP
-    interrupt: USART1_WKUP
 - name: USART2
   address: 0x4001D400
   registers:
@@ -461,8 +453,6 @@
   interrupts:
   - signal: USART2
     interrupt: USART2
-  - signal: USART2_TC
-    interrupt: USART2_TC
 - name: USART3
   address: 0x4001D400
   registers:
@@ -476,8 +466,6 @@
   interrupts:
   - signal: USART3
     interrupt: USART3
-  - signal: USART3_TC
-    interrupt: USART3_TC
 - name: USART4
   address: 0x4001D400
   registers:
@@ -491,8 +479,6 @@
   interrupts:
   - signal: USART4
     interrupt: USART4
-  - signal: USART4_TC
-    interrupt: USART4_TC
 - name: WDT
   address: 0x40049000
   registers:

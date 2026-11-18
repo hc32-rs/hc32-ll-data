@@ -63,14 +63,6 @@ PLLH 与扩展输出/晶振分频控制。
 | `cmu_ll_v4_1.rs` | [cmu_ll_v4_1](../../data/registers/cmu_ll_v4_1.yaml) | A4A0/F467/F4A0/F4A2: CMU | 29 / 57 | 相对 cmu_ll_v4：增加 CANCKCFGR/PLLACFGR/PLLACR/PLLHCFGR/PLLHCR 等 6 项；缺少 PLLCFGR/PLLCR/UPLLCFGR/UPLLCR；定义差异 CKSWR/HRCCR/HRCTRM/I2SCKSEL/LRCCR 等 23 项 |
 | `cmu_ll_v4_2.rs` | [cmu_ll_v4_2](../../data/registers/cmu_ll_v4_2.yaml) | A4A8/F4A8: CMU | 31 / 62 | 相对 cmu_ll_v4：增加 CANCKCFGR/PLLACFGR/PLLACR/PLLHCFGR/PLLHCR 等 8 项；缺少 PLLCFGR/PLLCR/UPLLCFGR/UPLLCR；定义差异 CKSWR/HRCCR/HRCTRM/I2SCKSEL/LRCCR 等 23 项 |
 
-### csu：v1
-
-时钟切换控制。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `csu_ll_v1.rs` | [csu_ll_v1](../../data/registers/csu_ll_v1.yaml) | F175: CSU0, CSU1, CSU2 | 7 / 18 | 本档位对照基准；完整定义见来源 YAML |
-
 ### ctc：v1
 
 时钟跟踪控制；可用位与 SDK 宏差异按系列保留。
@@ -81,14 +73,6 @@ PLLH 与扩展输出/晶振分频控制。
 | `ctc_ll_v1_1.rs` | [ctc_ll_v1_1](../../data/registers/ctc_ll_v1_1.yaml) | A448/F155/F334/F336/F448/M441: CTC | 4 / 13 | 相对 ctc_ll_v1：增加 CNT；定义差异 CR1 |
 | `ctc_ll_v1_2.rs` | [ctc_ll_v1_2](../../data/registers/ctc_ll_v1_2.yaml) | K116/K118: CTC | 4 / 13 | 相对 ctc_ll_v1：增加 CNT；定义差异 CR1 |
 | `ctc_ll_v1_3.rs` | [ctc_ll_v1_3](../../data/registers/ctc_ll_v1_3.yaml) | A472/F472: CTC | 4 / 14 | 相对 ctc_ll_v1：增加 CNT；定义差异 CR1 |
-
-### ctrim：v1
-
-计数/捕获时钟校准；FLIM 位宽、校准源与控制位分变体。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `ctrim_ll_v1.rs` | [ctrim_ll_v1](../../data/registers/ctrim_ll_v1.yaml) | F175: CTRIM | 10 / 33 | 本档位对照基准；完整定义见来源 YAML |
 
 ### fcm：v1
 
@@ -198,12 +182,4 @@ PLLH 与扩展输出/晶振分频控制。
 | `rmu_ll_v3_3.rs` | [rmu_ll_v3_3](../../data/registers/rmu_ll_v3_3.yaml) | A448/F448: RMU | 6 / 54 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
 | `rmu_ll_v3_4.rs` | [rmu_ll_v3_4](../../data/registers/rmu_ll_v3_4.yaml) | A472/F472: RMU | 6 / 68 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
 | `rmu_ll_v3_5.rs` | [rmu_ll_v3_5](../../data/registers/rmu_ll_v3_5.yaml) | A4A8/F4A8: RMU | 6 / 118 | 相对 rmu_ll_v3：增加 PRSTCR0；定义差异 FRST0/FRST1/FRST2/FRST3/RSTF0 |
-
-### sysctrl：v1
-
-旧式系统时钟与外设门控。
-
-| 目标文件 | 当前来源 | 系列：实例 | 寄存器 / 字段条目 | 变体差异提示 |
-|---|---|---|---:|---|
-| `sysctrl_ll_v1.rs` | [sysctrl_ll_v1](../../data/registers/sysctrl_ll_v1.yaml) | F175: SYSCTRL | 25 / 205 | 本档位对照基准；完整定义见来源 YAML |
 <!-- peripheral-versions:end -->

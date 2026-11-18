@@ -1,7 +1,7 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32F467/ADC3；覆盖系列：HC32F467。
+# 布局代表：HC32F467/ADC1；覆盖系列：HC32F467。
 block/ADC:
-  description: desc ADC3.
+  description: desc ADC1.
   items:
   - name: STR
     description: desc STR.
@@ -40,6 +40,11 @@ block/ADC:
     byte_offset: 24
     bit_size: 8
     fieldset: EXCHSELR
+  - name: SHCR
+    description: desc SHCR.
+    byte_offset: 26
+    bit_size: 16
+    fieldset: SHCR
   - name: SSTR0
     description: desc SSTR0.
     byte_offset: 32
@@ -138,9 +143,13 @@ block/ADC:
   - name: ISCLRR
     description: desc ISCLRR.
     byte_offset: 70
-    access: Write
     bit_size: 8
     fieldset: ISCLRR
+  - name: SYNCCR
+    description: desc SYNCCR.
+    byte_offset: 76
+    bit_size: 16
+    fieldset: SYNCCR
   - name: DR0
     description: desc DR0.
     byte_offset: 80
@@ -264,6 +273,21 @@ block/ADC:
     byte_offset: 176
     bit_size: 8
     fieldset: AWD1CHSR
+  - name: PGACR1
+    description: desc PGACR1.
+    byte_offset: 192
+    bit_size: 8
+    fieldset: PGACR1
+  - name: PGACR2
+    description: desc PGACR2.
+    byte_offset: 193
+    bit_size: 8
+    fieldset: PGACR2
+  - name: PGAVSSENR
+    description: desc PGAVSSENR.
+    byte_offset: 196
+    bit_size: 8
+    fieldset: PGAVSSENR
 fieldset/AVCHSELR:
   description: desc AVCHSELR.
   fields:
@@ -529,6 +553,50 @@ fieldset/ISR:
     description: desc SASTPDF.
     bit_offset: 4
     bit_size: 1
+fieldset/PGACR1:
+  description: desc PGACR1.
+  bit_size: 8
+  fields:
+  - name: PGACTL
+    description: desc PGACTL.
+    bit_offset: 0
+    bit_size: 4
+  - name: PGAGAIN
+    description: desc PGAGAIN.
+    bit_offset: 4
+    bit_size: 4
+fieldset/PGACR2:
+  description: desc PGACR2.
+  bit_size: 8
+  fields:
+  - name: PGACTL
+    description: desc PGACTL.
+    bit_offset: 0
+    bit_size: 4
+  - name: PGAGAIN
+    description: desc PGAGAIN.
+    bit_offset: 4
+    bit_size: 4
+fieldset/PGAVSSENR:
+  description: desc PGAVSSENR.
+  bit_size: 8
+  fields:
+  - name: PGAVSSEN
+    description: desc PGAVSSEN.
+    bit_offset: 0
+    bit_size: 3
+fieldset/SHCR:
+  description: desc SHCR.
+  bit_size: 16
+  fields:
+  - name: SHSST
+    description: desc SHSST.
+    bit_offset: 0
+    bit_size: 8
+  - name: SHSEL
+    description: desc SHSEL.
+    bit_offset: 8
+    bit_size: 3
 fieldset/STR:
   description: desc STR.
   bit_size: 8
@@ -537,6 +605,22 @@ fieldset/STR:
     description: desc STRT.
     bit_offset: 0
     bit_size: 1
+fieldset/SYNCCR:
+  description: desc SYNCCR.
+  bit_size: 16
+  fields:
+  - name: SYNCEN
+    description: desc SYNCEN.
+    bit_offset: 0
+    bit_size: 1
+  - name: SYNCMD
+    description: desc SYNCMD.
+    bit_offset: 4
+    bit_size: 3
+  - name: SYNCDLY
+    description: desc SYNCDLY.
+    bit_offset: 8
+    bit_size: 8
 fieldset/TRGSR:
   description: desc TRGSR.
   bit_size: 16

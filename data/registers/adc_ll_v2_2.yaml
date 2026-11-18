@@ -1,7 +1,7 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32F155/ADC；覆盖系列：HC32F155。
+# 布局代表：HC32A448/ADC3；覆盖系列：HC32A448, HC32F334, HC32F336, HC32F448, HC32M441。
 block/ADC:
-  description: desc ADC.
+  description: desc ADC3.
   items:
   - name: STR
     description: desc STR.
@@ -18,6 +18,11 @@ block/ADC:
     byte_offset: 4
     bit_size: 16
     fieldset: CR1
+  - name: CR2
+    description: desc CR2.
+    byte_offset: 6
+    bit_size: 16
+    fieldset: CR2
   - name: TRGSR
     description: desc TRGSR.
     byte_offset: 10
@@ -31,15 +36,78 @@ block/ADC:
     description: desc CHSELRB.
     byte_offset: 16
     fieldset: CHSELRB
+  - name: AVCHSELR
+    description: desc AVCHSELR.
+    byte_offset: 20
+    fieldset: AVCHSELR
   - name: EXCHSELR
     description: desc EXCHSELR.
     byte_offset: 24
     bit_size: 8
     fieldset: EXCHSELR
-  - name: SSTR
-    description: desc SSTR.
+  - name: SSTR0
+    description: desc SSTR0.
     byte_offset: 32
     bit_size: 8
+  - name: SSTR1
+    description: desc SSTR1.
+    byte_offset: 33
+    bit_size: 8
+  - name: SSTR2
+    description: desc SSTR2.
+    byte_offset: 34
+    bit_size: 8
+  - name: SSTR3
+    description: desc SSTR3.
+    byte_offset: 35
+    bit_size: 8
+  - name: SSTR4
+    description: desc SSTR4.
+    byte_offset: 36
+    bit_size: 8
+  - name: SSTR5
+    description: desc SSTR5.
+    byte_offset: 37
+    bit_size: 8
+  - name: SSTR6
+    description: desc SSTR6.
+    byte_offset: 38
+    bit_size: 8
+  - name: SSTR7
+    description: desc SSTR7.
+    byte_offset: 39
+    bit_size: 8
+  - name: SSTR8
+    description: desc SSTR8.
+    byte_offset: 40
+    bit_size: 8
+  - name: SSTR9
+    description: desc SSTR9.
+    byte_offset: 41
+    bit_size: 8
+  - name: SSTR10
+    description: desc SSTR10.
+    byte_offset: 42
+    bit_size: 8
+  - name: SSTR11
+    description: desc SSTR11.
+    byte_offset: 43
+    bit_size: 8
+  - name: CHMUXR0
+    description: desc CHMUXR0.
+    byte_offset: 56
+    bit_size: 16
+    fieldset: CHMUXR0
+  - name: CHMUXR1
+    description: desc CHMUXR1.
+    byte_offset: 58
+    bit_size: 16
+    fieldset: CHMUXR1
+  - name: CHMUXR2
+    description: desc CHMUXR2.
+    byte_offset: 60
+    bit_size: 16
+    fieldset: CHMUXR2
   - name: ISR
     description: desc ISR.
     byte_offset: 68
@@ -117,16 +185,6 @@ block/ADC:
     byte_offset: 102
     access: Read
     bit_size: 16
-  - name: DR12
-    description: desc DR12.
-    byte_offset: 104
-    access: Read
-    bit_size: 16
-  - name: DR13
-    description: desc DR13.
-    byte_offset: 106
-    access: Read
-    bit_size: 16
   - name: AWDCR
     description: desc AWDCR.
     byte_offset: 160
@@ -170,6 +228,13 @@ block/ADC:
     byte_offset: 176
     bit_size: 8
     fieldset: AWD1CHSR
+fieldset/AVCHSELR:
+  description: desc AVCHSELR.
+  fields:
+  - name: AVCHSEL
+    description: desc AVCHSEL.
+    bit_offset: 0
+    bit_size: 12
 fieldset/AWD0CHSR:
   description: desc AWD0CHSR.
   bit_size: 8
@@ -250,20 +315,80 @@ fieldset/AWDSR:
     description: desc AWDCMF.
     bit_offset: 4
     bit_size: 1
+fieldset/CHMUXR0:
+  description: desc CHMUXR0.
+  bit_size: 16
+  fields:
+  - name: CH00MUX
+    description: desc CH00MUX.
+    bit_offset: 0
+    bit_size: 4
+  - name: CH01MUX
+    description: desc CH01MUX.
+    bit_offset: 4
+    bit_size: 4
+  - name: CH02MUX
+    description: desc CH02MUX.
+    bit_offset: 8
+    bit_size: 4
+  - name: CH03MUX
+    description: desc CH03MUX.
+    bit_offset: 12
+    bit_size: 4
+fieldset/CHMUXR1:
+  description: desc CHMUXR1.
+  bit_size: 16
+  fields:
+  - name: CH04MUX
+    description: desc CH04MUX.
+    bit_offset: 0
+    bit_size: 4
+  - name: CH05MUX
+    description: desc CH05MUX.
+    bit_offset: 4
+    bit_size: 4
+  - name: CH06MUX
+    description: desc CH06MUX.
+    bit_offset: 8
+    bit_size: 4
+  - name: CH07MUX
+    description: desc CH07MUX.
+    bit_offset: 12
+    bit_size: 4
+fieldset/CHMUXR2:
+  description: desc CHMUXR2.
+  bit_size: 16
+  fields:
+  - name: CH08MUX
+    description: desc CH08MUX.
+    bit_offset: 0
+    bit_size: 4
+  - name: CH09MUX
+    description: desc CH09MUX.
+    bit_offset: 4
+    bit_size: 4
+  - name: CH10MUX
+    description: desc CH10MUX.
+    bit_offset: 8
+    bit_size: 4
+  - name: CH11MUX
+    description: desc CH11MUX.
+    bit_offset: 12
+    bit_size: 4
 fieldset/CHSELRA:
   description: desc CHSELRA.
   fields:
   - name: CHSELA
     description: desc CHSELA.
     bit_offset: 0
-    bit_size: 14
+    bit_size: 12
 fieldset/CHSELRB:
   description: desc CHSELRB.
   fields:
   - name: CHSELB
     description: desc CHSELB.
     bit_offset: 0
-    bit_size: 14
+    bit_size: 12
 fieldset/CR0:
   description: desc CR0.
   bit_size: 16
@@ -271,7 +396,7 @@ fieldset/CR0:
   - name: MS
     description: desc MS.
     bit_offset: 0
-    bit_size: 2
+    bit_size: 3
   - name: ACCSEL
     description: desc ACCSEL.
     bit_offset: 4
@@ -284,6 +409,10 @@ fieldset/CR0:
     description: desc DFMT.
     bit_offset: 7
     bit_size: 1
+  - name: AVCNT
+    description: desc AVCNT.
+    bit_offset: 8
+    bit_size: 3
 fieldset/CR1:
   description: desc CR1.
   bit_size: 16
@@ -291,6 +420,18 @@ fieldset/CR1:
   - name: RSCHSEL
     description: desc RSCHSEL.
     bit_offset: 2
+    bit_size: 1
+fieldset/CR2:
+  description: desc CR2.
+  bit_size: 16
+  fields:
+  - name: OVSS
+    description: desc OVSS.
+    bit_offset: 8
+    bit_size: 4
+  - name: OVSMOD
+    description: desc OVSMOD.
+    bit_offset: 12
     bit_size: 1
 fieldset/EXCHSELR:
   description: desc EXCHSELR.
@@ -324,6 +465,10 @@ fieldset/ISCLRR:
     description: desc CLREOCBF.
     bit_offset: 1
     bit_size: 1
+  - name: CLRSASTPDF
+    description: desc CLRSASTPDF.
+    bit_offset: 4
+    bit_size: 1
 fieldset/ISR:
   description: desc ISR.
   bit_size: 8
@@ -335,6 +480,10 @@ fieldset/ISR:
   - name: EOCBF
     description: desc EOCBF.
     bit_offset: 1
+    bit_size: 1
+  - name: SASTPDF
+    description: desc SASTPDF.
+    bit_offset: 4
     bit_size: 1
 fieldset/STR:
   description: desc STR.

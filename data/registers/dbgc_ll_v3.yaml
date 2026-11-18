@@ -1,110 +1,70 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32A460/DBGC；覆盖系列：HC32A460, HC32F451, HC32F452, HC32F460。
+# 布局代表：HC32F431/DBGC；覆盖系列：HC32F431, HC32M413。
 block/DBGC:
   description: desc DBGC.
   items:
-  - name: MCUDBGSTAT
-    description: desc MCUDBGSTAT.
-    byte_offset: 28
-    fieldset: MCUDBGSTAT
-  - name: MCUSTPCTL
-    description: desc MCUSTPCTL.
-    byte_offset: 32
-    fieldset: MCUSTPCTL
-  - name: MCUTRACECTL
-    description: desc MCUTRACECTL.
-    byte_offset: 36
-    fieldset: MCUTRACECTL
-fieldset/MCUDBGSTAT:
-  description: desc MCUDBGSTAT.
+  - name: FMCCTL
+    description: desc FMCCTL.
+    byte_offset: 24
+    fieldset: FMCCTL
+  - name: FCRCCR0
+    description: desc FCRCCR0.
+    byte_offset: 48
+    fieldset: FCRCCR0
+  - name: FCRCCR1
+    description: desc FCRCCR1.
+    byte_offset: 52
+    fieldset: FCRCCR1
+  - name: FCRCDOR
+    description: desc FCRCDOR.
+    byte_offset: 56
+    access: Read
+  - name: FCRCREF
+    description: desc FCRCREF.
+    byte_offset: 60
+    access: Read
+fieldset/FCRCCR0:
+  description: desc FCRCCR0.
   fields:
-  - name: CDBGPWRUPREQ
-    description: desc CDBGPWRUPREQ.
+  - name: FCRCREQ
+    description: desc FCRCREQ.
     bit_offset: 0
     bit_size: 1
-  - name: CDBGPWRUPACK
-    description: desc CDBGPWRUPACK.
+  - name: FCRCACK
+    description: desc FCRCACK.
     bit_offset: 1
     bit_size: 1
-fieldset/MCUSTPCTL:
-  description: desc MCUSTPCTL.
-  fields:
-  - name: SWDTSTP
-    description: desc SWDTSTP.
-    bit_offset: 0
-    bit_size: 1
-  - name: WDTSTP
-    description: desc WDTSTP.
-    bit_offset: 1
-    bit_size: 1
-  - name: RTCSTP
-    description: desc RTCSTP.
+  - name: FCRCERR
+    description: desc FCRCERR.
     bit_offset: 2
     bit_size: 1
-  - name: TMR01STP
-    description: desc TMR01STP.
-    bit_offset: 14
+  - name: FCRCDORCLR
+    description: desc FCRCDORCLR.
+    bit_offset: 7
     bit_size: 1
-  - name: TMR02STP
-    description: desc TMR02STP.
-    bit_offset: 15
-    bit_size: 1
-  - name: TMR41STP
-    description: desc TMR41STP.
-    bit_offset: 20
-    bit_size: 1
-  - name: TMR42STP
-    description: desc TMR42STP.
-    bit_offset: 21
-    bit_size: 1
-  - name: TMR43STP
-    description: desc TMR43STP.
-    bit_offset: 22
-    bit_size: 1
-  - name: TM61STP
-    description: desc TM61STP.
-    bit_offset: 23
-    bit_size: 1
-  - name: TM62STP
-    description: desc TM62STP.
-    bit_offset: 24
-    bit_size: 1
-  - name: TMR63STP
-    description: desc TMR63STP.
-    bit_offset: 25
-    bit_size: 1
-  - name: TMRA1STP
-    description: desc TMRA1STP.
-    bit_offset: 26
-    bit_size: 1
-  - name: TMRA2STP
-    description: desc TMRA2STP.
-    bit_offset: 27
-    bit_size: 1
-  - name: TMRA3STP
-    description: desc TMRA3STP.
-    bit_offset: 28
-    bit_size: 1
-  - name: TMRA4STP
-    description: desc TMRA4STP.
-    bit_offset: 29
-    bit_size: 1
-  - name: TMRA5STP
-    description: desc TMRA5STP.
-    bit_offset: 30
-    bit_size: 1
-  - name: TMRA6STP
-    description: desc TMRA6STP.
-    bit_offset: 31
-    bit_size: 1
-fieldset/MCUTRACECTL:
-  description: desc MCUTRACECTL.
+fieldset/FCRCCR1:
+  description: desc FCRCCR1.
   fields:
-  - name: TRACEMODE
-    description: desc TRACEMODE.
+  - name: FCRCSR
+    description: desc FCRCSR.
     bit_offset: 0
-    bit_size: 2
-  - name: TRACEIOEN
-    description: desc TRACEIOEN.
-    bit_offset: 2
+    bit_size: 16
+  - name: FCRCER
+    description: desc FCRCER.
+    bit_offset: 16
+    bit_size: 16
+fieldset/FMCCTL:
+  description: desc FMCCTL.
+  fields:
+  - name: PCROPERSREQ
+    description: desc PCROPERSREQ.
+    bit_offset: 16
+    bit_size: 1
+  - name: PCROPERSACK
+    description: desc PCROPERSACK.
+    bit_offset: 17
+    bit_size: 1
+  - name: PCROPERSERR
+    description: desc PCROPERSERR.
+    bit_offset: 18
     bit_size: 1

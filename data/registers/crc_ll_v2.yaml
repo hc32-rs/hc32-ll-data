@@ -1,5 +1,5 @@
 # 由 chiptool extract-all 生成（hc32-data-tools/chiptool_registers.py）。
-# 布局代表：HC32A448/CRC；覆盖系列：HC32A448, HC32F334, HC32F336, HC32F448, HC32K116, HC32K118, HC32M441。
+# 布局代表：HC32A4A8/CRC；覆盖系列：HC32A4A8, HC32F431, HC32F4A8, HC32M413, HC32M458。
 block/CRC:
   description: desc CRC.
   items:
@@ -7,9 +7,12 @@ block/CRC:
     description: desc CR.
     byte_offset: 0
     fieldset: CR
-  - name: RESLT
-    description: desc RESLT.
+  - name: RESLT1
+    description: desc RESLT1.
     byte_offset: 4
+  - name: RESLT2
+    description: desc RESLT2.
+    byte_offset: 8
   - name: DAT0
     description: desc DAT0.
     byte_offset: 128
@@ -149,3 +152,7 @@ fieldset/CR:
     description: desc FLAG.
     bit_offset: 1
     bit_size: 1
+  - name: SELECT
+    description: desc SELECT.
+    bit_offset: 2
+    bit_size: 3

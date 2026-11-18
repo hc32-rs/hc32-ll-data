@@ -6,7 +6,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v4_7
+    version: ll_v3_7
   rcc:
     enable:
       register: FCG3
@@ -19,7 +19,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v4_8
+    version: ll_v3_8
   rcc:
     enable:
       register: FCG3
@@ -32,7 +32,7 @@
   registers:
     kind: adc
     block: ADC
-    version: ll_v3_9
+    version: ll_v2_9
   rcc:
     enable:
       register: FCG3
@@ -151,7 +151,7 @@
   registers:
     kind: crc
     block: CRC
-    version: ll_v2_1
+    version: ll_v1_1
   rcc:
     enable:
       register: FCG0
@@ -214,7 +214,7 @@
   registers:
     kind: dbgc
     block: DBGC
-    version: ll_v3_4
+    version: ll_v2_4
 - name: DCU1
   address: 0x40056000
   registers:
@@ -265,8 +265,6 @@
       register: FCG0
       field: PWC_FCG0_DMA1
   interrupts:
-  - signal: DMA1_Error
-    interrupt: DMA1_Error
   - signal: DMA1_TC0_BTC0
     interrupt: DMA1_TC0_BTC0
   - signal: DMA1_TC1_BTC1
@@ -294,8 +292,6 @@
       register: FCG0
       field: PWC_FCG0_DMA2
   interrupts:
-  - signal: DMA2_Error
-    interrupt: DMA2_Error
   - signal: DMA2_TC0_BTC0
     interrupt: DMA2_TC0_BTC0
   - signal: DMA2_TC1_BTC1
@@ -321,8 +317,6 @@
   interrupts:
   - signal: EFM_PEERR_RDCOL
     interrupt: EFM_PEERR_RDCOL
-  - signal: EFM_OPEND
-    interrupt: EFM_OPEND
 - name: EMB0
   address: 0x40017C00
   registers:
@@ -459,7 +453,7 @@
   registers:
     kind: gpio
     block: GPIO
-    version: ll_v2_10
+    version: ll_v1_10
   interrupts:
   - signal: EVENT_PORT1
     interrupt: EVENT_PORT1
@@ -487,7 +481,7 @@
   registers:
     kind: i2c
     block: I2C
-    version: ll_v4_5
+    version: ll_v3_5
   rcc:
     enable:
       register: FCG1
@@ -500,7 +494,7 @@
   registers:
     kind: i2c
     block: I2C
-    version: ll_v4_5
+    version: ll_v3_5
   rcc:
     enable:
       register: FCG1
@@ -513,7 +507,7 @@
   registers:
     kind: i2c
     block: I2C
-    version: ll_v4_5
+    version: ll_v3_5
   rcc:
     enable:
       register: FCG1
@@ -724,7 +718,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_3
+    version: ll_v1_3
   rcc:
     enable:
       register: FCG1
@@ -737,7 +731,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_3
+    version: ll_v1_3
   rcc:
     enable:
       register: FCG1
@@ -750,7 +744,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_3
+    version: ll_v1_3
   rcc:
     enable:
       register: FCG1
@@ -763,7 +757,7 @@
   registers:
     kind: spi
     block: SPI
-    version: ll_v2_3
+    version: ll_v1_3
   rcc:
     enable:
       register: FCG1
@@ -889,8 +883,6 @@
     interrupt: TMR4_1_OVF_UDF
   - signal: TMR4_1_RELOAD
     interrupt: TMR4_1_RELOAD
-  - signal: TMR4_1_SCM
-    interrupt: TMR4_1_SCM
 - name: TMR61
   address: 0x4003C000
   registers:
@@ -906,8 +898,6 @@
     interrupt: TMR6_1_GCMP
   - signal: TMR6_1_OVF_UDF
     interrupt: TMR6_1_OVF_UDF
-  - signal: TMR6_1_GDTE
-    interrupt: TMR6_1_GDTE
   - signal: TMR6_1_SCMP
     interrupt: TMR6_1_SCMP
 - name: TMR610
@@ -925,8 +915,6 @@
     interrupt: TMR6_10_GCMP
   - signal: TMR6_10_OVF_UDF
     interrupt: TMR6_10_OVF_UDF
-  - signal: TMR6_10_GDTE
-    interrupt: TMR6_10_GDTE
   - signal: TMR6_1_SCMP
     interrupt: TMR6_1_SCMP
 - name: TMR62
@@ -944,8 +932,6 @@
     interrupt: TMR6_2_GCMP
   - signal: TMR6_2_OVF_UDF
     interrupt: TMR6_2_OVF_UDF
-  - signal: TMR6_2_GDTE
-    interrupt: TMR6_2_GDTE
   - signal: TMR6_2_SCMP
     interrupt: TMR6_2_SCMP
 - name: TMR63
@@ -963,8 +949,6 @@
     interrupt: TMR6_3_GCMP
   - signal: TMR6_3_OVF_UDF
     interrupt: TMR6_3_OVF_UDF
-  - signal: TMR6_3_GDTE
-    interrupt: TMR6_3_GDTE
   - signal: TMR6_3_SCMP
     interrupt: TMR6_3_SCMP
 - name: TMR64
@@ -982,8 +966,6 @@
     interrupt: TMR6_4_GCMP
   - signal: TMR6_4_OVF_UDF
     interrupt: TMR6_4_OVF_UDF
-  - signal: TMR6_4_GDTE
-    interrupt: TMR6_4_GDTE
   - signal: TMR6_4_SCMP
     interrupt: TMR6_4_SCMP
 - name: TMR65
@@ -1001,8 +983,6 @@
     interrupt: TMR6_5_GCMP
   - signal: TMR6_5_OVF_UDF
     interrupt: TMR6_5_OVF_UDF
-  - signal: TMR6_5_GDTE
-    interrupt: TMR6_5_GDTE
   - signal: TMR6_5_SCMP
     interrupt: TMR6_5_SCMP
 - name: TMR66
@@ -1020,8 +1000,6 @@
     interrupt: TMR6_6_GCMP
   - signal: TMR6_6_OVF_UDF
     interrupt: TMR6_6_OVF_UDF
-  - signal: TMR6_6_GDTE
-    interrupt: TMR6_6_GDTE
   - signal: TMR6_6_SCMP
     interrupt: TMR6_6_SCMP
 - name: TMR67
@@ -1039,8 +1017,6 @@
     interrupt: TMR6_7_GCMP
   - signal: TMR6_7_OVF_UDF
     interrupt: TMR6_7_OVF_UDF
-  - signal: TMR6_7_GDTE
-    interrupt: TMR6_7_GDTE
   - signal: TMR6_7_SCMP
     interrupt: TMR6_7_SCMP
 - name: TMR68
@@ -1058,8 +1034,6 @@
     interrupt: TMR6_8_GCMP
   - signal: TMR6_8_OVF_UDF
     interrupt: TMR6_8_OVF_UDF
-  - signal: TMR6_8_GDTE
-    interrupt: TMR6_8_GDTE
   - signal: TMR6_8_SCMP
     interrupt: TMR6_8_SCMP
 - name: TMR69
@@ -1077,8 +1051,6 @@
     interrupt: TMR6_9_GCMP
   - signal: TMR6_9_OVF_UDF
     interrupt: TMR6_9_OVF_UDF
-  - signal: TMR6_9_GDTE
-    interrupt: TMR6_9_GDTE
   - signal: TMR6_9_SCMP
     interrupt: TMR6_9_SCMP
 - name: TMR6_COMMON
@@ -1203,8 +1175,6 @@
   interrupts:
   - signal: USART1
     interrupt: USART1
-  - signal: USART1_TC
-    interrupt: USART1_TC
   - signal: USART1_WUPI
     interrupt: USART1_WUPI
 - name: USART2
@@ -1220,8 +1190,6 @@
   interrupts:
   - signal: USART2
     interrupt: USART2
-  - signal: USART2_TC
-    interrupt: USART2_TC
 - name: USART3
   address: 0x4001D400
   registers:
@@ -1235,8 +1203,6 @@
   interrupts:
   - signal: USART3
     interrupt: USART3
-  - signal: USART3_TC
-    interrupt: USART3_TC
 - name: USART4
   address: 0x40020C00
   registers:
@@ -1250,8 +1216,6 @@
   interrupts:
   - signal: USART4
     interrupt: USART4
-  - signal: USART4_TC
-    interrupt: USART4_TC
 - name: USART5
   address: 0x40021000
   registers:
@@ -1265,8 +1229,6 @@
   interrupts:
   - signal: USART5
     interrupt: USART5
-  - signal: USART5_TC
-    interrupt: USART5_TC
 - name: USART6
   address: 0x40021400
   registers:
@@ -1280,8 +1242,6 @@
   interrupts:
   - signal: USART6
     interrupt: USART6
-  - signal: USART6_TC
-    interrupt: USART6_TC
 - name: USBFS
   address: 0x40080000
   registers:
