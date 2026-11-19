@@ -30,8 +30,9 @@ SDK 源码在工作区相邻的 `../xh_ll_sdk/`。设备头、驱动和例程用
 | 目录 | 用途 |
 |---|---|
 | `data/chips/` | 型号、封装、内存与系列引用 |
-| `data/family/` | 系列共享外设 |
-| `data/peripherals/` | 外设实例、时钟门控、引脚功能和 DMA 请求 |
+| `data/family/` | 系列共享外设实例、门控和中断引用。F460 的已核对实例附带时钟信息。 |
+| `data/csv/` | 提取与生成用的审计 CSV |
+| `data/pins/` | 型号级引脚复用路由。当前覆盖 F460 JCTA/PCTB 的 UART/SPI，经封装过滤后分别有 539 和 1,048 条。 |
 | `data/registers/` | 按 `<kind>_<version>.yaml` 命名的寄存器块 |
 | `data/interrupts/` | 中断向量 |
 | `data/dma/` | DMA 通道与请求映射 |

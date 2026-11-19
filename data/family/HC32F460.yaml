@@ -2,7 +2,7 @@
 # 地址来自 SVD；时钟门控来自设备头 FCG/PWC 位定义；
 # MODE 拆分定时器（TIMx/ATIMx）用 views 挂 SVD 视图（同基址寄存器布局
 # 叠影，工作模式由控制寄存器 MD 位运行时选择），地址/门控/中断在物理实例；
-# 引脚复用（pins）暂缺，待从数据手册 GPIO 章节补齐。
+# 已登记型号的引脚复用由 chips YAML 的 include_pins 引用型号级 data/pins/。
 - name: ADC1
   address: 0x40040000
   registers:
