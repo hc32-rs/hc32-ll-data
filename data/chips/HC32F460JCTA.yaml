@@ -20,6 +20,8 @@ cores:
   include_peripherals:
   - ../family/HC32F460.yaml
   include_interrupts: ../interrupts/HC32F460.yaml
+  include_pins:
+  - ../pins/HC32F460_HC32F460JCTA.yaml
   include_dma_channels:
     DMA1: ../dma/HC32F460_DMA1.yaml
     DMA2: ../dma/HC32F460_DMA2.yaml

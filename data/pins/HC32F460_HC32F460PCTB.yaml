@@ -1,0 +1,3163 @@
+# HC32F460 HC32F460PCTB（LQFP100）引脚路由（csv_to_yaml.py 生成）。
+# 来源：DS 表 2-1/2-2 引脚功能表（pin-mux-probe）× 表 2-1
+# 封装管脚列（pin-probe）逐封装交集；1048 条，func=FSEL 编码。
+SPI1:
+  pins:
+  - pin: PC0
+    signal: MOSI
+    func: 40
+  - pin: PC0
+    signal: MISO
+    func: 41
+  - pin: PC0
+    signal: SS0
+    func: 42
+  - pin: PC0
+    signal: SCK
+    func: 43
+  - pin: PC1
+    signal: MOSI
+    func: 40
+  - pin: PC1
+    signal: MISO
+    func: 41
+  - pin: PC1
+    signal: SS0
+    func: 42
+  - pin: PC1
+    signal: SCK
+    func: 43
+  - pin: PC2
+    signal: MOSI
+    func: 40
+  - pin: PC2
+    signal: MISO
+    func: 41
+  - pin: PC2
+    signal: SS0
+    func: 42
+  - pin: PC2
+    signal: SCK
+    func: 43
+  - pin: PC3
+    signal: MOSI
+    func: 40
+  - pin: PC3
+    signal: MISO
+    func: 41
+  - pin: PC3
+    signal: SS0
+    func: 42
+  - pin: PC3
+    signal: SCK
+    func: 43
+  - pin: PA0
+    signal: SS1
+    func: 7
+  - pin: PA0
+    signal: MOSI
+    func: 40
+  - pin: PA0
+    signal: MISO
+    func: 41
+  - pin: PA0
+    signal: SS0
+    func: 42
+  - pin: PA0
+    signal: SCK
+    func: 43
+  - pin: PA1
+    signal: SS2
+    func: 7
+  - pin: PA1
+    signal: MOSI
+    func: 40
+  - pin: PA1
+    signal: MISO
+    func: 41
+  - pin: PA1
+    signal: SS0
+    func: 42
+  - pin: PA1
+    signal: SCK
+    func: 43
+  - pin: PA2
+    signal: SS3
+    func: 7
+  - pin: PA2
+    signal: MOSI
+    func: 40
+  - pin: PA2
+    signal: MISO
+    func: 41
+  - pin: PA2
+    signal: SS0
+    func: 42
+  - pin: PA2
+    signal: SCK
+    func: 43
+  - pin: PA3
+    signal: MOSI
+    func: 40
+  - pin: PA3
+    signal: MISO
+    func: 41
+  - pin: PA3
+    signal: SS0
+    func: 42
+  - pin: PA3
+    signal: SCK
+    func: 43
+  - pin: PA4
+    signal: MOSI
+    func: 40
+  - pin: PA4
+    signal: MISO
+    func: 41
+  - pin: PA4
+    signal: SS0
+    func: 42
+  - pin: PA4
+    signal: SCK
+    func: 43
+  - pin: PA5
+    signal: MOSI
+    func: 40
+  - pin: PA5
+    signal: MISO
+    func: 41
+  - pin: PA5
+    signal: SS0
+    func: 42
+  - pin: PA5
+    signal: SCK
+    func: 43
+  - pin: PA6
+    signal: MOSI
+    func: 40
+  - pin: PA6
+    signal: MISO
+    func: 41
+  - pin: PA6
+    signal: SS0
+    func: 42
+  - pin: PA6
+    signal: SCK
+    func: 43
+  - pin: PA7
+    signal: MOSI
+    func: 40
+  - pin: PA7
+    signal: MISO
+    func: 41
+  - pin: PA7
+    signal: SS0
+    func: 42
+  - pin: PA7
+    signal: SCK
+    func: 43
+  - pin: PC4
+    signal: MOSI
+    func: 40
+  - pin: PC4
+    signal: MISO
+    func: 41
+  - pin: PC4
+    signal: SS0
+    func: 42
+  - pin: PC4
+    signal: SCK
+    func: 43
+  - pin: PC5
+    signal: MOSI
+    func: 40
+  - pin: PC5
+    signal: MISO
+    func: 41
+  - pin: PC5
+    signal: SS0
+    func: 42
+  - pin: PC5
+    signal: SCK
+    func: 43
+  - pin: PB0
+    signal: MOSI
+    func: 40
+  - pin: PB0
+    signal: MISO
+    func: 41
+  - pin: PB0
+    signal: SS0
+    func: 42
+  - pin: PB0
+    signal: SCK
+    func: 43
+  - pin: PB1
+    signal: MOSI
+    func: 40
+  - pin: PB1
+    signal: MISO
+    func: 41
+  - pin: PB1
+    signal: SS0
+    func: 42
+  - pin: PB1
+    signal: SCK
+    func: 43
+  - pin: PB2
+    signal: MOSI
+    func: 40
+  - pin: PB2
+    signal: MISO
+    func: 41
+  - pin: PB2
+    signal: SS0
+    func: 42
+  - pin: PB2
+    signal: SCK
+    func: 43
+  - pin: PE12
+    signal: SS1
+    func: 7
+  - pin: PE13
+    signal: SS2
+    func: 7
+  - pin: PE14
+    signal: SS3
+    func: 7
+  - pin: PC9
+    signal: MOSI
+    func: 40
+  - pin: PC9
+    signal: MISO
+    func: 41
+  - pin: PC9
+    signal: SS0
+    func: 42
+  - pin: PC9
+    signal: SCK
+    func: 43
+  - pin: PA8
+    signal: MOSI
+    func: 40
+  - pin: PA8
+    signal: MISO
+    func: 41
+  - pin: PA8
+    signal: SS0
+    func: 42
+  - pin: PA8
+    signal: SCK
+    func: 43
+  - pin: PA9
+    signal: MOSI
+    func: 40
+  - pin: PA9
+    signal: MISO
+    func: 41
+  - pin: PA9
+    signal: SS0
+    func: 42
+  - pin: PA9
+    signal: SCK
+    func: 43
+  - pin: PA10
+    signal: MOSI
+    func: 40
+  - pin: PA10
+    signal: MISO
+    func: 41
+  - pin: PA10
+    signal: SS0
+    func: 42
+  - pin: PA10
+    signal: SCK
+    func: 43
+  - pin: PA11
+    signal: MOSI
+    func: 40
+  - pin: PA11
+    signal: MISO
+    func: 41
+  - pin: PA11
+    signal: SS0
+    func: 42
+  - pin: PA11
+    signal: SCK
+    func: 43
+  - pin: PA12
+    signal: MOSI
+    func: 40
+  - pin: PA12
+    signal: MISO
+    func: 41
+  - pin: PA12
+    signal: SS0
+    func: 42
+  - pin: PA12
+    signal: SCK
+    func: 43
+  - pin: PA13
+    signal: MOSI
+    func: 40
+  - pin: PA13
+    signal: MISO
+    func: 41
+  - pin: PA13
+    signal: SS0
+    func: 42
+  - pin: PA13
+    signal: SCK
+    func: 43
+  - pin: PA14
+    signal: MOSI
+    func: 40
+  - pin: PA14
+    signal: MISO
+    func: 41
+  - pin: PA14
+    signal: SS0
+    func: 42
+  - pin: PA14
+    signal: SCK
+    func: 43
+  - pin: PA15
+    signal: MOSI
+    func: 40
+  - pin: PA15
+    signal: MISO
+    func: 41
+  - pin: PA15
+    signal: SS0
+    func: 42
+  - pin: PA15
+    signal: SCK
+    func: 43
+  - pin: PC10
+    signal: MOSI
+    func: 40
+  - pin: PC10
+    signal: MISO
+    func: 41
+  - pin: PC10
+    signal: SS0
+    func: 42
+  - pin: PC10
+    signal: SCK
+    func: 43
+  - pin: PC11
+    signal: MOSI
+    func: 40
+  - pin: PC11
+    signal: MISO
+    func: 41
+  - pin: PC11
+    signal: SS0
+    func: 42
+  - pin: PC11
+    signal: SCK
+    func: 43
+  - pin: PC12
+    signal: MOSI
+    func: 40
+  - pin: PC12
+    signal: MISO
+    func: 41
+  - pin: PC12
+    signal: SS0
+    func: 42
+  - pin: PC12
+    signal: SCK
+    func: 43
+  - pin: PD0
+    signal: MOSI
+    func: 40
+  - pin: PD0
+    signal: MISO
+    func: 41
+  - pin: PD0
+    signal: SS0
+    func: 42
+  - pin: PD0
+    signal: SCK
+    func: 43
+  - pin: PD1
+    signal: MOSI
+    func: 40
+  - pin: PD1
+    signal: MISO
+    func: 41
+  - pin: PD1
+    signal: SS0
+    func: 42
+  - pin: PD1
+    signal: SCK
+    func: 43
+  - pin: PD2
+    signal: MOSI
+    func: 40
+  - pin: PD2
+    signal: MISO
+    func: 41
+  - pin: PD2
+    signal: SS0
+    func: 42
+  - pin: PD2
+    signal: SCK
+    func: 43
+SPI2:
+  pins:
+  - pin: PC0
+    signal: MOSI
+    func: 44
+  - pin: PC0
+    signal: MISO
+    func: 45
+  - pin: PC0
+    signal: SS0
+    func: 46
+  - pin: PC0
+    signal: SCK
+    func: 47
+  - pin: PC1
+    signal: MOSI
+    func: 44
+  - pin: PC1
+    signal: MISO
+    func: 45
+  - pin: PC1
+    signal: SS0
+    func: 46
+  - pin: PC1
+    signal: SCK
+    func: 47
+  - pin: PC2
+    signal: MOSI
+    func: 44
+  - pin: PC2
+    signal: MISO
+    func: 45
+  - pin: PC2
+    signal: SS0
+    func: 46
+  - pin: PC2
+    signal: SCK
+    func: 47
+  - pin: PC3
+    signal: MOSI
+    func: 44
+  - pin: PC3
+    signal: MISO
+    func: 45
+  - pin: PC3
+    signal: SS0
+    func: 46
+  - pin: PC3
+    signal: SCK
+    func: 47
+  - pin: PA0
+    signal: MOSI
+    func: 44
+  - pin: PA0
+    signal: MISO
+    func: 45
+  - pin: PA0
+    signal: SS0
+    func: 46
+  - pin: PA0
+    signal: SCK
+    func: 47
+  - pin: PA1
+    signal: MOSI
+    func: 44
+  - pin: PA1
+    signal: MISO
+    func: 45
+  - pin: PA1
+    signal: SS0
+    func: 46
+  - pin: PA1
+    signal: SCK
+    func: 47
+  - pin: PA2
+    signal: MOSI
+    func: 44
+  - pin: PA2
+    signal: MISO
+    func: 45
+  - pin: PA2
+    signal: SS0
+    func: 46
+  - pin: PA2
+    signal: SCK
+    func: 47
+  - pin: PA3
+    signal: MOSI
+    func: 44
+  - pin: PA3
+    signal: MISO
+    func: 45
+  - pin: PA3
+    signal: SS0
+    func: 46
+  - pin: PA3
+    signal: SCK
+    func: 47
+  - pin: PA4
+    signal: MOSI
+    func: 44
+  - pin: PA4
+    signal: MISO
+    func: 45
+  - pin: PA4
+    signal: SS0
+    func: 46
+  - pin: PA4
+    signal: SCK
+    func: 47
+  - pin: PA5
+    signal: MOSI
+    func: 44
+  - pin: PA5
+    signal: MISO
+    func: 45
+  - pin: PA5
+    signal: SS0
+    func: 46
+  - pin: PA5
+    signal: SCK
+    func: 47
+  - pin: PA6
+    signal: MOSI
+    func: 44
+  - pin: PA6
+    signal: MISO
+    func: 45
+  - pin: PA6
+    signal: SS0
+    func: 46
+  - pin: PA6
+    signal: SCK
+    func: 47
+  - pin: PA7
+    signal: MOSI
+    func: 44
+  - pin: PA7
+    signal: MISO
+    func: 45
+  - pin: PA7
+    signal: SS0
+    func: 46
+  - pin: PA7
+    signal: SCK
+    func: 47
+  - pin: PC4
+    signal: MOSI
+    func: 44
+  - pin: PC4
+    signal: MISO
+    func: 45
+  - pin: PC4
+    signal: SS0
+    func: 46
+  - pin: PC4
+    signal: SCK
+    func: 47
+  - pin: PC5
+    signal: MOSI
+    func: 44
+  - pin: PC5
+    signal: MISO
+    func: 45
+  - pin: PC5
+    signal: SS0
+    func: 46
+  - pin: PC5
+    signal: SCK
+    func: 47
+  - pin: PB0
+    signal: MOSI
+    func: 44
+  - pin: PB0
+    signal: MISO
+    func: 45
+  - pin: PB0
+    signal: SS0
+    func: 46
+  - pin: PB0
+    signal: SCK
+    func: 47
+  - pin: PB1
+    signal: MOSI
+    func: 44
+  - pin: PB1
+    signal: MISO
+    func: 45
+  - pin: PB1
+    signal: SS0
+    func: 46
+  - pin: PB1
+    signal: SCK
+    func: 47
+  - pin: PB2
+    signal: MOSI
+    func: 44
+  - pin: PB2
+    signal: MISO
+    func: 45
+  - pin: PB2
+    signal: SS0
+    func: 46
+  - pin: PB2
+    signal: SCK
+    func: 47
+  - pin: PC9
+    signal: MOSI
+    func: 44
+  - pin: PC9
+    signal: MISO
+    func: 45
+  - pin: PC9
+    signal: SS0
+    func: 46
+  - pin: PC9
+    signal: SCK
+    func: 47
+  - pin: PA8
+    signal: MOSI
+    func: 44
+  - pin: PA8
+    signal: MISO
+    func: 45
+  - pin: PA8
+    signal: SS0
+    func: 46
+  - pin: PA8
+    signal: SCK
+    func: 47
+  - pin: PA9
+    signal: MOSI
+    func: 44
+  - pin: PA9
+    signal: MISO
+    func: 45
+  - pin: PA9
+    signal: SS0
+    func: 46
+  - pin: PA9
+    signal: SCK
+    func: 47
+  - pin: PA10
+    signal: MOSI
+    func: 44
+  - pin: PA10
+    signal: MISO
+    func: 45
+  - pin: PA10
+    signal: SS0
+    func: 46
+  - pin: PA10
+    signal: SCK
+    func: 47
+  - pin: PA11
+    signal: MOSI
+    func: 44
+  - pin: PA11
+    signal: MISO
+    func: 45
+  - pin: PA11
+    signal: SS0
+    func: 46
+  - pin: PA11
+    signal: SCK
+    func: 47
+  - pin: PA12
+    signal: MOSI
+    func: 44
+  - pin: PA12
+    signal: MISO
+    func: 45
+  - pin: PA12
+    signal: SS0
+    func: 46
+  - pin: PA12
+    signal: SCK
+    func: 47
+  - pin: PA13
+    signal: SS1
+    func: 7
+  - pin: PA13
+    signal: MOSI
+    func: 44
+  - pin: PA13
+    signal: MISO
+    func: 45
+  - pin: PA13
+    signal: SS0
+    func: 46
+  - pin: PA13
+    signal: SCK
+    func: 47
+  - pin: PA14
+    signal: SS2
+    func: 7
+  - pin: PA14
+    signal: MOSI
+    func: 44
+  - pin: PA14
+    signal: MISO
+    func: 45
+  - pin: PA14
+    signal: SS0
+    func: 46
+  - pin: PA14
+    signal: SCK
+    func: 47
+  - pin: PA15
+    signal: SS3
+    func: 7
+  - pin: PA15
+    signal: MOSI
+    func: 44
+  - pin: PA15
+    signal: MISO
+    func: 45
+  - pin: PA15
+    signal: SS0
+    func: 46
+  - pin: PA15
+    signal: SCK
+    func: 47
+  - pin: PC10
+    signal: MOSI
+    func: 44
+  - pin: PC10
+    signal: MISO
+    func: 45
+  - pin: PC10
+    signal: SS0
+    func: 46
+  - pin: PC10
+    signal: SCK
+    func: 47
+  - pin: PC11
+    signal: MOSI
+    func: 44
+  - pin: PC11
+    signal: MISO
+    func: 45
+  - pin: PC11
+    signal: SS0
+    func: 46
+  - pin: PC11
+    signal: SCK
+    func: 47
+  - pin: PC12
+    signal: MOSI
+    func: 44
+  - pin: PC12
+    signal: MISO
+    func: 45
+  - pin: PC12
+    signal: SS0
+    func: 46
+  - pin: PC12
+    signal: SCK
+    func: 47
+  - pin: PD0
+    signal: MOSI
+    func: 44
+  - pin: PD0
+    signal: MISO
+    func: 45
+  - pin: PD0
+    signal: SS0
+    func: 46
+  - pin: PD0
+    signal: SCK
+    func: 47
+  - pin: PD1
+    signal: MOSI
+    func: 44
+  - pin: PD1
+    signal: MISO
+    func: 45
+  - pin: PD1
+    signal: SS0
+    func: 46
+  - pin: PD1
+    signal: SCK
+    func: 47
+  - pin: PD2
+    signal: MOSI
+    func: 44
+  - pin: PD2
+    signal: MISO
+    func: 45
+  - pin: PD2
+    signal: SS0
+    func: 46
+  - pin: PD2
+    signal: SCK
+    func: 47
+  - pin: PB9
+    signal: SS1
+    func: 7
+  - pin: PE0
+    signal: SS2
+    func: 7
+  - pin: PE1
+    signal: SS3
+    func: 7
+SPI3:
+  pins:
+  - pin: PE2
+    signal: MOSI
+    func: 40
+  - pin: PE2
+    signal: MISO
+    func: 41
+  - pin: PE2
+    signal: SS0
+    func: 42
+  - pin: PE2
+    signal: SCK
+    func: 43
+  - pin: PE3
+    signal: MOSI
+    func: 40
+  - pin: PE3
+    signal: MISO
+    func: 41
+  - pin: PE3
+    signal: SS0
+    func: 42
+  - pin: PE3
+    signal: SCK
+    func: 43
+  - pin: PE4
+    signal: MOSI
+    func: 40
+  - pin: PE4
+    signal: MISO
+    func: 41
+  - pin: PE4
+    signal: SS0
+    func: 42
+  - pin: PE4
+    signal: SCK
+    func: 43
+  - pin: PE5
+    signal: MOSI
+    func: 40
+  - pin: PE5
+    signal: MISO
+    func: 41
+  - pin: PE5
+    signal: SS0
+    func: 42
+  - pin: PE5
+    signal: SCK
+    func: 43
+  - pin: PE6
+    signal: MOSI
+    func: 40
+  - pin: PE6
+    signal: MISO
+    func: 41
+  - pin: PE6
+    signal: SS0
+    func: 42
+  - pin: PE6
+    signal: SCK
+    func: 43
+  - pin: PH2
+    signal: MOSI
+    func: 40
+  - pin: PH2
+    signal: MISO
+    func: 41
+  - pin: PH2
+    signal: SS0
+    func: 42
+  - pin: PH2
+    signal: SCK
+    func: 43
+  - pin: PC13
+    signal: MOSI
+    func: 40
+  - pin: PC13
+    signal: MISO
+    func: 41
+  - pin: PC13
+    signal: SS0
+    func: 42
+  - pin: PC13
+    signal: SCK
+    func: 43
+  - pin: PE12
+    signal: MOSI
+    func: 40
+  - pin: PE12
+    signal: MISO
+    func: 41
+  - pin: PE12
+    signal: SS0
+    func: 42
+  - pin: PE12
+    signal: SCK
+    func: 43
+  - pin: PE13
+    signal: MOSI
+    func: 40
+  - pin: PE13
+    signal: MISO
+    func: 41
+  - pin: PE13
+    signal: SS0
+    func: 42
+  - pin: PE13
+    signal: SCK
+    func: 43
+  - pin: PE14
+    signal: MOSI
+    func: 40
+  - pin: PE14
+    signal: MISO
+    func: 41
+  - pin: PE14
+    signal: SS0
+    func: 42
+  - pin: PE14
+    signal: SCK
+    func: 43
+  - pin: PE15
+    signal: MOSI
+    func: 40
+  - pin: PE15
+    signal: MISO
+    func: 41
+  - pin: PE15
+    signal: SS0
+    func: 42
+  - pin: PE15
+    signal: SCK
+    func: 43
+  - pin: PB10
+    signal: MOSI
+    func: 40
+  - pin: PB10
+    signal: MISO
+    func: 41
+  - pin: PB10
+    signal: SS0
+    func: 42
+  - pin: PB10
+    signal: SCK
+    func: 43
+  - pin: PB12
+    signal: MOSI
+    func: 40
+  - pin: PB12
+    signal: MISO
+    func: 41
+  - pin: PB12
+    signal: SS0
+    func: 42
+  - pin: PB12
+    signal: SCK
+    func: 43
+  - pin: PB13
+    signal: MOSI
+    func: 40
+  - pin: PB13
+    signal: MISO
+    func: 41
+  - pin: PB13
+    signal: SS0
+    func: 42
+  - pin: PB13
+    signal: SCK
+    func: 43
+  - pin: PB14
+    signal: MOSI
+    func: 40
+  - pin: PB14
+    signal: MISO
+    func: 41
+  - pin: PB14
+    signal: SS0
+    func: 42
+  - pin: PB14
+    signal: SCK
+    func: 43
+  - pin: PB15
+    signal: MOSI
+    func: 40
+  - pin: PB15
+    signal: MISO
+    func: 41
+  - pin: PB15
+    signal: SS0
+    func: 42
+  - pin: PB15
+    signal: SCK
+    func: 43
+  - pin: PD8
+    signal: MOSI
+    func: 40
+  - pin: PD8
+    signal: MISO
+    func: 41
+  - pin: PD8
+    signal: SS0
+    func: 42
+  - pin: PD8
+    signal: SCK
+    func: 43
+  - pin: PD9
+    signal: MOSI
+    func: 40
+  - pin: PD9
+    signal: MISO
+    func: 41
+  - pin: PD9
+    signal: SS0
+    func: 42
+  - pin: PD9
+    signal: SCK
+    func: 43
+  - pin: PD10
+    signal: MOSI
+    func: 40
+  - pin: PD10
+    signal: MISO
+    func: 41
+  - pin: PD10
+    signal: SS0
+    func: 42
+  - pin: PD10
+    signal: SCK
+    func: 43
+  - pin: PD11
+    signal: MOSI
+    func: 40
+  - pin: PD11
+    signal: MISO
+    func: 41
+  - pin: PD11
+    signal: SS0
+    func: 42
+  - pin: PD11
+    signal: SCK
+    func: 43
+  - pin: PC6
+    signal: MOSI
+    func: 40
+  - pin: PC6
+    signal: MISO
+    func: 41
+  - pin: PC6
+    signal: SS0
+    func: 42
+  - pin: PC6
+    signal: SCK
+    func: 43
+  - pin: PC7
+    signal: MOSI
+    func: 40
+  - pin: PC7
+    signal: MISO
+    func: 41
+  - pin: PC7
+    signal: SS0
+    func: 42
+  - pin: PC7
+    signal: SCK
+    func: 43
+  - pin: PC8
+    signal: MOSI
+    func: 40
+  - pin: PC8
+    signal: MISO
+    func: 41
+  - pin: PC8
+    signal: SS0
+    func: 42
+  - pin: PC8
+    signal: SCK
+    func: 43
+  - pin: PB3
+    signal: MOSI
+    func: 40
+  - pin: PB3
+    signal: MISO
+    func: 41
+  - pin: PB3
+    signal: SS0
+    func: 42
+  - pin: PB3
+    signal: SCK
+    func: 43
+  - pin: PB4
+    signal: MOSI
+    func: 40
+  - pin: PB4
+    signal: MISO
+    func: 41
+  - pin: PB4
+    signal: SS0
+    func: 42
+  - pin: PB4
+    signal: SCK
+    func: 43
+  - pin: PB5
+    signal: MOSI
+    func: 40
+  - pin: PB5
+    signal: MISO
+    func: 41
+  - pin: PB5
+    signal: SS0
+    func: 42
+  - pin: PB5
+    signal: SCK
+    func: 43
+  - pin: PB6
+    signal: MOSI
+    func: 40
+  - pin: PB6
+    signal: MISO
+    func: 41
+  - pin: PB6
+    signal: SS0
+    func: 42
+  - pin: PB6
+    signal: SCK
+    func: 43
+  - pin: PB7
+    signal: MOSI
+    func: 40
+  - pin: PB7
+    signal: MISO
+    func: 41
+  - pin: PB7
+    signal: SS0
+    func: 42
+  - pin: PB7
+    signal: SCK
+    func: 43
+  - pin: PB8
+    signal: MOSI
+    func: 40
+  - pin: PB8
+    signal: MISO
+    func: 41
+  - pin: PB8
+    signal: SS0
+    func: 42
+  - pin: PB8
+    signal: SCK
+    func: 43
+  - pin: PB9
+    signal: MOSI
+    func: 40
+  - pin: PB9
+    signal: MISO
+    func: 41
+  - pin: PB9
+    signal: SS0
+    func: 42
+  - pin: PB9
+    signal: SCK
+    func: 43
+  - pin: PE0
+    signal: MOSI
+    func: 40
+  - pin: PE0
+    signal: MISO
+    func: 41
+  - pin: PE0
+    signal: SS0
+    func: 42
+  - pin: PE0
+    signal: SCK
+    func: 43
+  - pin: PE1
+    signal: MOSI
+    func: 40
+  - pin: PE1
+    signal: MISO
+    func: 41
+  - pin: PE1
+    signal: SS0
+    func: 42
+  - pin: PE1
+    signal: SCK
+    func: 43
+SPI4:
+  pins:
+  - pin: PE2
+    signal: MOSI
+    func: 44
+  - pin: PE2
+    signal: MISO
+    func: 45
+  - pin: PE2
+    signal: SS0
+    func: 46
+  - pin: PE2
+    signal: SCK
+    func: 47
+  - pin: PE3
+    signal: MOSI
+    func: 44
+  - pin: PE3
+    signal: MISO
+    func: 45
+  - pin: PE3
+    signal: SS0
+    func: 46
+  - pin: PE3
+    signal: SCK
+    func: 47
+  - pin: PE4
+    signal: MOSI
+    func: 44
+  - pin: PE4
+    signal: MISO
+    func: 45
+  - pin: PE4
+    signal: SS0
+    func: 46
+  - pin: PE4
+    signal: SCK
+    func: 47
+  - pin: PE5
+    signal: MOSI
+    func: 44
+  - pin: PE5
+    signal: MISO
+    func: 45
+  - pin: PE5
+    signal: SS0
+    func: 46
+  - pin: PE5
+    signal: SCK
+    func: 47
+  - pin: PE6
+    signal: MOSI
+    func: 44
+  - pin: PE6
+    signal: MISO
+    func: 45
+  - pin: PE6
+    signal: SS0
+    func: 46
+  - pin: PE6
+    signal: SCK
+    func: 47
+  - pin: PH2
+    signal: MOSI
+    func: 44
+  - pin: PH2
+    signal: MISO
+    func: 45
+  - pin: PH2
+    signal: SS0
+    func: 46
+  - pin: PH2
+    signal: SCK
+    func: 47
+  - pin: PC13
+    signal: MOSI
+    func: 44
+  - pin: PC13
+    signal: MISO
+    func: 45
+  - pin: PC13
+    signal: SS0
+    func: 46
+  - pin: PC13
+    signal: SCK
+    func: 47
+  - pin: PE12
+    signal: MOSI
+    func: 44
+  - pin: PE12
+    signal: MISO
+    func: 45
+  - pin: PE12
+    signal: SS0
+    func: 46
+  - pin: PE12
+    signal: SCK
+    func: 47
+  - pin: PE13
+    signal: MOSI
+    func: 44
+  - pin: PE13
+    signal: MISO
+    func: 45
+  - pin: PE13
+    signal: SS0
+    func: 46
+  - pin: PE13
+    signal: SCK
+    func: 47
+  - pin: PE14
+    signal: MOSI
+    func: 44
+  - pin: PE14
+    signal: MISO
+    func: 45
+  - pin: PE14
+    signal: SS0
+    func: 46
+  - pin: PE14
+    signal: SCK
+    func: 47
+  - pin: PE15
+    signal: MOSI
+    func: 44
+  - pin: PE15
+    signal: MISO
+    func: 45
+  - pin: PE15
+    signal: SS0
+    func: 46
+  - pin: PE15
+    signal: SCK
+    func: 47
+  - pin: PB10
+    signal: MOSI
+    func: 44
+  - pin: PB10
+    signal: MISO
+    func: 45
+  - pin: PB10
+    signal: SS0
+    func: 46
+  - pin: PB10
+    signal: SCK
+    func: 47
+  - pin: PB12
+    signal: MOSI
+    func: 44
+  - pin: PB12
+    signal: MISO
+    func: 45
+  - pin: PB12
+    signal: SS0
+    func: 46
+  - pin: PB12
+    signal: SCK
+    func: 47
+  - pin: PB13
+    signal: MOSI
+    func: 44
+  - pin: PB13
+    signal: MISO
+    func: 45
+  - pin: PB13
+    signal: SS0
+    func: 46
+  - pin: PB13
+    signal: SCK
+    func: 47
+  - pin: PB14
+    signal: MOSI
+    func: 44
+  - pin: PB14
+    signal: MISO
+    func: 45
+  - pin: PB14
+    signal: SS0
+    func: 46
+  - pin: PB14
+    signal: SCK
+    func: 47
+  - pin: PB15
+    signal: MOSI
+    func: 44
+  - pin: PB15
+    signal: MISO
+    func: 45
+  - pin: PB15
+    signal: SS0
+    func: 46
+  - pin: PB15
+    signal: SCK
+    func: 47
+  - pin: PD8
+    signal: MOSI
+    func: 44
+  - pin: PD8
+    signal: MISO
+    func: 45
+  - pin: PD8
+    signal: SS0
+    func: 46
+  - pin: PD8
+    signal: SCK
+    func: 47
+  - pin: PD9
+    signal: MOSI
+    func: 44
+  - pin: PD9
+    signal: MISO
+    func: 45
+  - pin: PD9
+    signal: SS0
+    func: 46
+  - pin: PD9
+    signal: SCK
+    func: 47
+  - pin: PD10
+    signal: MOSI
+    func: 44
+  - pin: PD10
+    signal: MISO
+    func: 45
+  - pin: PD10
+    signal: SS0
+    func: 46
+  - pin: PD10
+    signal: SCK
+    func: 47
+  - pin: PD11
+    signal: MOSI
+    func: 44
+  - pin: PD11
+    signal: MISO
+    func: 45
+  - pin: PD11
+    signal: SS0
+    func: 46
+  - pin: PD11
+    signal: SCK
+    func: 47
+  - pin: PC6
+    signal: MOSI
+    func: 44
+  - pin: PC6
+    signal: MISO
+    func: 45
+  - pin: PC6
+    signal: SS0
+    func: 46
+  - pin: PC6
+    signal: SCK
+    func: 47
+  - pin: PC7
+    signal: MOSI
+    func: 44
+  - pin: PC7
+    signal: MISO
+    func: 45
+  - pin: PC7
+    signal: SS0
+    func: 46
+  - pin: PC7
+    signal: SCK
+    func: 47
+  - pin: PC8
+    signal: MOSI
+    func: 44
+  - pin: PC8
+    signal: MISO
+    func: 45
+  - pin: PC8
+    signal: SS0
+    func: 46
+  - pin: PC8
+    signal: SCK
+    func: 47
+  - pin: PB3
+    signal: MOSI
+    func: 44
+  - pin: PB3
+    signal: MISO
+    func: 45
+  - pin: PB3
+    signal: SS0
+    func: 46
+  - pin: PB3
+    signal: SCK
+    func: 47
+  - pin: PB4
+    signal: MOSI
+    func: 44
+  - pin: PB4
+    signal: MISO
+    func: 45
+  - pin: PB4
+    signal: SS0
+    func: 46
+  - pin: PB4
+    signal: SCK
+    func: 47
+  - pin: PB5
+    signal: MOSI
+    func: 44
+  - pin: PB5
+    signal: MISO
+    func: 45
+  - pin: PB5
+    signal: SS0
+    func: 46
+  - pin: PB5
+    signal: SCK
+    func: 47
+  - pin: PB6
+    signal: MOSI
+    func: 44
+  - pin: PB6
+    signal: MISO
+    func: 45
+  - pin: PB6
+    signal: SS0
+    func: 46
+  - pin: PB6
+    signal: SCK
+    func: 47
+  - pin: PB7
+    signal: MOSI
+    func: 44
+  - pin: PB7
+    signal: MISO
+    func: 45
+  - pin: PB7
+    signal: SS0
+    func: 46
+  - pin: PB7
+    signal: SCK
+    func: 47
+  - pin: PB8
+    signal: MOSI
+    func: 44
+  - pin: PB8
+    signal: MISO
+    func: 45
+  - pin: PB8
+    signal: SS0
+    func: 46
+  - pin: PB8
+    signal: SCK
+    func: 47
+  - pin: PB9
+    signal: MOSI
+    func: 44
+  - pin: PB9
+    signal: MISO
+    func: 45
+  - pin: PB9
+    signal: SS0
+    func: 46
+  - pin: PB9
+    signal: SCK
+    func: 47
+  - pin: PE0
+    signal: MOSI
+    func: 44
+  - pin: PE0
+    signal: MISO
+    func: 45
+  - pin: PE0
+    signal: SS0
+    func: 46
+  - pin: PE0
+    signal: SCK
+    func: 47
+  - pin: PE1
+    signal: MOSI
+    func: 44
+  - pin: PE1
+    signal: MISO
+    func: 45
+  - pin: PE1
+    signal: SS0
+    func: 46
+  - pin: PE1
+    signal: SCK
+    func: 47
+USART1:
+  pins:
+  - pin: PC0
+    signal: TX
+    func: 32
+  - pin: PC0
+    signal: RX
+    func: 33
+  - pin: PC0
+    signal: RTS
+    func: 34
+  - pin: PC0
+    signal: CTS
+    func: 35
+  - pin: PC1
+    signal: TX
+    func: 32
+  - pin: PC1
+    signal: RX
+    func: 33
+  - pin: PC1
+    signal: RTS
+    func: 34
+  - pin: PC1
+    signal: CTS
+    func: 35
+  - pin: PC2
+    signal: TX
+    func: 32
+  - pin: PC2
+    signal: RX
+    func: 33
+  - pin: PC2
+    signal: RTS
+    func: 34
+  - pin: PC2
+    signal: CTS
+    func: 35
+  - pin: PC3
+    signal: TX
+    func: 32
+  - pin: PC3
+    signal: RX
+    func: 33
+  - pin: PC3
+    signal: RTS
+    func: 34
+  - pin: PC3
+    signal: CTS
+    func: 35
+  - pin: PA0
+    signal: TX
+    func: 32
+  - pin: PA0
+    signal: RX
+    func: 33
+  - pin: PA0
+    signal: RTS
+    func: 34
+  - pin: PA0
+    signal: CTS
+    func: 35
+  - pin: PA1
+    signal: TX
+    func: 32
+  - pin: PA1
+    signal: RX
+    func: 33
+  - pin: PA1
+    signal: RTS
+    func: 34
+  - pin: PA1
+    signal: CTS
+    func: 35
+  - pin: PA2
+    signal: TX
+    func: 32
+  - pin: PA2
+    signal: RX
+    func: 33
+  - pin: PA2
+    signal: RTS
+    func: 34
+  - pin: PA2
+    signal: CTS
+    func: 35
+  - pin: PA3
+    signal: TX
+    func: 32
+  - pin: PA3
+    signal: RX
+    func: 33
+  - pin: PA3
+    signal: RTS
+    func: 34
+  - pin: PA3
+    signal: CTS
+    func: 35
+  - pin: PA4
+    signal: TX
+    func: 32
+  - pin: PA4
+    signal: RX
+    func: 33
+  - pin: PA4
+    signal: RTS
+    func: 34
+  - pin: PA4
+    signal: CTS
+    func: 35
+  - pin: PA5
+    signal: TX
+    func: 32
+  - pin: PA5
+    signal: RX
+    func: 33
+  - pin: PA5
+    signal: RTS
+    func: 34
+  - pin: PA5
+    signal: CTS
+    func: 35
+  - pin: PA6
+    signal: TX
+    func: 32
+  - pin: PA6
+    signal: RX
+    func: 33
+  - pin: PA6
+    signal: RTS
+    func: 34
+  - pin: PA6
+    signal: CTS
+    func: 35
+  - pin: PA7
+    signal: TX
+    func: 32
+  - pin: PA7
+    signal: RX
+    func: 33
+  - pin: PA7
+    signal: RTS
+    func: 34
+  - pin: PA7
+    signal: CTS
+    func: 35
+  - pin: PC4
+    signal: CK
+    func: 7
+  - pin: PC4
+    signal: TX
+    func: 32
+  - pin: PC4
+    signal: RX
+    func: 33
+  - pin: PC4
+    signal: RTS
+    func: 34
+  - pin: PC4
+    signal: CTS
+    func: 35
+  - pin: PC5
+    signal: TX
+    func: 32
+  - pin: PC5
+    signal: RX
+    func: 33
+  - pin: PC5
+    signal: RTS
+    func: 34
+  - pin: PC5
+    signal: CTS
+    func: 35
+  - pin: PB0
+    signal: TX
+    func: 32
+  - pin: PB0
+    signal: RX
+    func: 33
+  - pin: PB0
+    signal: RTS
+    func: 34
+  - pin: PB0
+    signal: CTS
+    func: 35
+  - pin: PB1
+    signal: TX
+    func: 32
+  - pin: PB1
+    signal: RX
+    func: 33
+  - pin: PB1
+    signal: RTS
+    func: 34
+  - pin: PB1
+    signal: CTS
+    func: 35
+  - pin: PB2
+    signal: TX
+    func: 32
+  - pin: PB2
+    signal: RX
+    func: 33
+  - pin: PB2
+    signal: RTS
+    func: 34
+  - pin: PB2
+    signal: CTS
+    func: 35
+  - pin: PE7
+    signal: CK
+    func: 7
+  - pin: PC9
+    signal: TX
+    func: 32
+  - pin: PC9
+    signal: RX
+    func: 33
+  - pin: PC9
+    signal: RTS
+    func: 34
+  - pin: PC9
+    signal: CTS
+    func: 35
+  - pin: PA8
+    signal: CK
+    func: 7
+  - pin: PA8
+    signal: TX
+    func: 32
+  - pin: PA8
+    signal: RX
+    func: 33
+  - pin: PA8
+    signal: RTS
+    func: 34
+  - pin: PA8
+    signal: CTS
+    func: 35
+  - pin: PA9
+    signal: TX
+    func: 32
+  - pin: PA9
+    signal: RX
+    func: 33
+  - pin: PA9
+    signal: RTS
+    func: 34
+  - pin: PA9
+    signal: CTS
+    func: 35
+  - pin: PA10
+    signal: TX
+    func: 32
+  - pin: PA10
+    signal: RX
+    func: 33
+  - pin: PA10
+    signal: RTS
+    func: 34
+  - pin: PA10
+    signal: CTS
+    func: 35
+  - pin: PA11
+    signal: TX
+    func: 32
+  - pin: PA11
+    signal: RX
+    func: 33
+  - pin: PA11
+    signal: RTS
+    func: 34
+  - pin: PA11
+    signal: CTS
+    func: 35
+  - pin: PA12
+    signal: TX
+    func: 32
+  - pin: PA12
+    signal: RX
+    func: 33
+  - pin: PA12
+    signal: RTS
+    func: 34
+  - pin: PA12
+    signal: CTS
+    func: 35
+  - pin: PA13
+    signal: TX
+    func: 32
+  - pin: PA13
+    signal: RX
+    func: 33
+  - pin: PA13
+    signal: RTS
+    func: 34
+  - pin: PA13
+    signal: CTS
+    func: 35
+  - pin: PA14
+    signal: TX
+    func: 32
+  - pin: PA14
+    signal: RX
+    func: 33
+  - pin: PA14
+    signal: RTS
+    func: 34
+  - pin: PA14
+    signal: CTS
+    func: 35
+  - pin: PA15
+    signal: TX
+    func: 32
+  - pin: PA15
+    signal: RX
+    func: 33
+  - pin: PA15
+    signal: RTS
+    func: 34
+  - pin: PA15
+    signal: CTS
+    func: 35
+  - pin: PC10
+    signal: TX
+    func: 32
+  - pin: PC10
+    signal: RX
+    func: 33
+  - pin: PC10
+    signal: RTS
+    func: 34
+  - pin: PC10
+    signal: CTS
+    func: 35
+  - pin: PC11
+    signal: TX
+    func: 32
+  - pin: PC11
+    signal: RX
+    func: 33
+  - pin: PC11
+    signal: RTS
+    func: 34
+  - pin: PC11
+    signal: CTS
+    func: 35
+  - pin: PC12
+    signal: TX
+    func: 32
+  - pin: PC12
+    signal: RX
+    func: 33
+  - pin: PC12
+    signal: RTS
+    func: 34
+  - pin: PC12
+    signal: CTS
+    func: 35
+  - pin: PD0
+    signal: TX
+    func: 32
+  - pin: PD0
+    signal: RX
+    func: 33
+  - pin: PD0
+    signal: RTS
+    func: 34
+  - pin: PD0
+    signal: CTS
+    func: 35
+  - pin: PD1
+    signal: TX
+    func: 32
+  - pin: PD1
+    signal: RX
+    func: 33
+  - pin: PD1
+    signal: RTS
+    func: 34
+  - pin: PD1
+    signal: CTS
+    func: 35
+  - pin: PD2
+    signal: TX
+    func: 32
+  - pin: PD2
+    signal: RX
+    func: 33
+  - pin: PD2
+    signal: RTS
+    func: 34
+  - pin: PD2
+    signal: CTS
+    func: 35
+USART2:
+  pins:
+  - pin: PC0
+    signal: TX
+    func: 36
+  - pin: PC0
+    signal: RX
+    func: 37
+  - pin: PC0
+    signal: RTS
+    func: 38
+  - pin: PC0
+    signal: CTS
+    func: 39
+  - pin: PC1
+    signal: TX
+    func: 36
+  - pin: PC1
+    signal: RX
+    func: 37
+  - pin: PC1
+    signal: RTS
+    func: 38
+  - pin: PC1
+    signal: CTS
+    func: 39
+  - pin: PC2
+    signal: TX
+    func: 36
+  - pin: PC2
+    signal: RX
+    func: 37
+  - pin: PC2
+    signal: RTS
+    func: 38
+  - pin: PC2
+    signal: CTS
+    func: 39
+  - pin: PC3
+    signal: TX
+    func: 36
+  - pin: PC3
+    signal: RX
+    func: 37
+  - pin: PC3
+    signal: RTS
+    func: 38
+  - pin: PC3
+    signal: CTS
+    func: 39
+  - pin: PA0
+    signal: TX
+    func: 36
+  - pin: PA0
+    signal: RX
+    func: 37
+  - pin: PA0
+    signal: RTS
+    func: 38
+  - pin: PA0
+    signal: CTS
+    func: 39
+  - pin: PA1
+    signal: TX
+    func: 36
+  - pin: PA1
+    signal: RX
+    func: 37
+  - pin: PA1
+    signal: RTS
+    func: 38
+  - pin: PA1
+    signal: CTS
+    func: 39
+  - pin: PA2
+    signal: TX
+    func: 36
+  - pin: PA2
+    signal: RX
+    func: 37
+  - pin: PA2
+    signal: RTS
+    func: 38
+  - pin: PA2
+    signal: CTS
+    func: 39
+  - pin: PA3
+    signal: TX
+    func: 36
+  - pin: PA3
+    signal: RX
+    func: 37
+  - pin: PA3
+    signal: RTS
+    func: 38
+  - pin: PA3
+    signal: CTS
+    func: 39
+  - pin: PA4
+    signal: CK
+    func: 7
+  - pin: PA4
+    signal: TX
+    func: 36
+  - pin: PA4
+    signal: RX
+    func: 37
+  - pin: PA4
+    signal: RTS
+    func: 38
+  - pin: PA4
+    signal: CTS
+    func: 39
+  - pin: PA5
+    signal: TX
+    func: 36
+  - pin: PA5
+    signal: RX
+    func: 37
+  - pin: PA5
+    signal: RTS
+    func: 38
+  - pin: PA5
+    signal: CTS
+    func: 39
+  - pin: PA6
+    signal: TX
+    func: 36
+  - pin: PA6
+    signal: RX
+    func: 37
+  - pin: PA6
+    signal: RTS
+    func: 38
+  - pin: PA6
+    signal: CTS
+    func: 39
+  - pin: PA7
+    signal: TX
+    func: 36
+  - pin: PA7
+    signal: RX
+    func: 37
+  - pin: PA7
+    signal: RTS
+    func: 38
+  - pin: PA7
+    signal: CTS
+    func: 39
+  - pin: PC4
+    signal: TX
+    func: 36
+  - pin: PC4
+    signal: RX
+    func: 37
+  - pin: PC4
+    signal: RTS
+    func: 38
+  - pin: PC4
+    signal: CTS
+    func: 39
+  - pin: PC5
+    signal: TX
+    func: 36
+  - pin: PC5
+    signal: RX
+    func: 37
+  - pin: PC5
+    signal: RTS
+    func: 38
+  - pin: PC5
+    signal: CTS
+    func: 39
+  - pin: PB0
+    signal: TX
+    func: 36
+  - pin: PB0
+    signal: RX
+    func: 37
+  - pin: PB0
+    signal: RTS
+    func: 38
+  - pin: PB0
+    signal: CTS
+    func: 39
+  - pin: PB1
+    signal: TX
+    func: 36
+  - pin: PB1
+    signal: RX
+    func: 37
+  - pin: PB1
+    signal: RTS
+    func: 38
+  - pin: PB1
+    signal: CTS
+    func: 39
+  - pin: PB2
+    signal: TX
+    func: 36
+  - pin: PB2
+    signal: RX
+    func: 37
+  - pin: PB2
+    signal: RTS
+    func: 38
+  - pin: PB2
+    signal: CTS
+    func: 39
+  - pin: PC9
+    signal: TX
+    func: 36
+  - pin: PC9
+    signal: RX
+    func: 37
+  - pin: PC9
+    signal: RTS
+    func: 38
+  - pin: PC9
+    signal: CTS
+    func: 39
+  - pin: PA8
+    signal: TX
+    func: 36
+  - pin: PA8
+    signal: RX
+    func: 37
+  - pin: PA8
+    signal: RTS
+    func: 38
+  - pin: PA8
+    signal: CTS
+    func: 39
+  - pin: PA9
+    signal: TX
+    func: 36
+  - pin: PA9
+    signal: RX
+    func: 37
+  - pin: PA9
+    signal: RTS
+    func: 38
+  - pin: PA9
+    signal: CTS
+    func: 39
+  - pin: PA10
+    signal: TX
+    func: 36
+  - pin: PA10
+    signal: RX
+    func: 37
+  - pin: PA10
+    signal: RTS
+    func: 38
+  - pin: PA10
+    signal: CTS
+    func: 39
+  - pin: PA11
+    signal: TX
+    func: 36
+  - pin: PA11
+    signal: RX
+    func: 37
+  - pin: PA11
+    signal: RTS
+    func: 38
+  - pin: PA11
+    signal: CTS
+    func: 39
+  - pin: PA12
+    signal: TX
+    func: 36
+  - pin: PA12
+    signal: RX
+    func: 37
+  - pin: PA12
+    signal: RTS
+    func: 38
+  - pin: PA12
+    signal: CTS
+    func: 39
+  - pin: PA13
+    signal: TX
+    func: 36
+  - pin: PA13
+    signal: RX
+    func: 37
+  - pin: PA13
+    signal: RTS
+    func: 38
+  - pin: PA13
+    signal: CTS
+    func: 39
+  - pin: PA14
+    signal: TX
+    func: 36
+  - pin: PA14
+    signal: RX
+    func: 37
+  - pin: PA14
+    signal: RTS
+    func: 38
+  - pin: PA14
+    signal: CTS
+    func: 39
+  - pin: PA15
+    signal: TX
+    func: 36
+  - pin: PA15
+    signal: RX
+    func: 37
+  - pin: PA15
+    signal: RTS
+    func: 38
+  - pin: PA15
+    signal: CTS
+    func: 39
+  - pin: PC10
+    signal: TX
+    func: 36
+  - pin: PC10
+    signal: RX
+    func: 37
+  - pin: PC10
+    signal: RTS
+    func: 38
+  - pin: PC10
+    signal: CTS
+    func: 39
+  - pin: PC11
+    signal: TX
+    func: 36
+  - pin: PC11
+    signal: RX
+    func: 37
+  - pin: PC11
+    signal: RTS
+    func: 38
+  - pin: PC11
+    signal: CTS
+    func: 39
+  - pin: PC12
+    signal: TX
+    func: 36
+  - pin: PC12
+    signal: RX
+    func: 37
+  - pin: PC12
+    signal: RTS
+    func: 38
+  - pin: PC12
+    signal: CTS
+    func: 39
+  - pin: PD0
+    signal: TX
+    func: 36
+  - pin: PD0
+    signal: RX
+    func: 37
+  - pin: PD0
+    signal: RTS
+    func: 38
+  - pin: PD0
+    signal: CTS
+    func: 39
+  - pin: PD1
+    signal: TX
+    func: 36
+  - pin: PD1
+    signal: RX
+    func: 37
+  - pin: PD1
+    signal: RTS
+    func: 38
+  - pin: PD1
+    signal: CTS
+    func: 39
+  - pin: PD2
+    signal: TX
+    func: 36
+  - pin: PD2
+    signal: RX
+    func: 37
+  - pin: PD2
+    signal: RTS
+    func: 38
+  - pin: PD2
+    signal: CTS
+    func: 39
+  - pin: PD6
+    signal: CK
+    func: 7
+  - pin: PD7
+    signal: CK
+    func: 7
+USART3:
+  pins:
+  - pin: PE2
+    signal: CK
+    func: 7
+  - pin: PE2
+    signal: TX
+    func: 32
+  - pin: PE2
+    signal: RX
+    func: 33
+  - pin: PE2
+    signal: RTS
+    func: 34
+  - pin: PE2
+    signal: CTS
+    func: 35
+  - pin: PE3
+    signal: TX
+    func: 32
+  - pin: PE3
+    signal: RX
+    func: 33
+  - pin: PE3
+    signal: RTS
+    func: 34
+  - pin: PE3
+    signal: CTS
+    func: 35
+  - pin: PE4
+    signal: TX
+    func: 32
+  - pin: PE4
+    signal: RX
+    func: 33
+  - pin: PE4
+    signal: RTS
+    func: 34
+  - pin: PE4
+    signal: CTS
+    func: 35
+  - pin: PE5
+    signal: TX
+    func: 32
+  - pin: PE5
+    signal: RX
+    func: 33
+  - pin: PE5
+    signal: RTS
+    func: 34
+  - pin: PE5
+    signal: CTS
+    func: 35
+  - pin: PE6
+    signal: TX
+    func: 32
+  - pin: PE6
+    signal: RX
+    func: 33
+  - pin: PE6
+    signal: RTS
+    func: 34
+  - pin: PE6
+    signal: CTS
+    func: 35
+  - pin: PH2
+    signal: TX
+    func: 32
+  - pin: PH2
+    signal: RX
+    func: 33
+  - pin: PH2
+    signal: RTS
+    func: 34
+  - pin: PH2
+    signal: CTS
+    func: 35
+  - pin: PC13
+    signal: TX
+    func: 32
+  - pin: PC13
+    signal: RX
+    func: 33
+  - pin: PC13
+    signal: RTS
+    func: 34
+  - pin: PC13
+    signal: CTS
+    func: 35
+  - pin: PE12
+    signal: TX
+    func: 32
+  - pin: PE12
+    signal: RX
+    func: 33
+  - pin: PE12
+    signal: RTS
+    func: 34
+  - pin: PE12
+    signal: CTS
+    func: 35
+  - pin: PE13
+    signal: TX
+    func: 32
+  - pin: PE13
+    signal: RX
+    func: 33
+  - pin: PE13
+    signal: RTS
+    func: 34
+  - pin: PE13
+    signal: CTS
+    func: 35
+  - pin: PE14
+    signal: TX
+    func: 32
+  - pin: PE14
+    signal: RX
+    func: 33
+  - pin: PE14
+    signal: RTS
+    func: 34
+  - pin: PE14
+    signal: CTS
+    func: 35
+  - pin: PE15
+    signal: TX
+    func: 32
+  - pin: PE15
+    signal: RX
+    func: 33
+  - pin: PE15
+    signal: RTS
+    func: 34
+  - pin: PE15
+    signal: CTS
+    func: 35
+  - pin: PB10
+    signal: TX
+    func: 32
+  - pin: PB10
+    signal: RX
+    func: 33
+  - pin: PB10
+    signal: RTS
+    func: 34
+  - pin: PB10
+    signal: CTS
+    func: 35
+  - pin: PB12
+    signal: TX
+    func: 32
+  - pin: PB12
+    signal: RX
+    func: 33
+  - pin: PB12
+    signal: RTS
+    func: 34
+  - pin: PB12
+    signal: CTS
+    func: 35
+  - pin: PB13
+    signal: TX
+    func: 32
+  - pin: PB13
+    signal: RX
+    func: 33
+  - pin: PB13
+    signal: RTS
+    func: 34
+  - pin: PB13
+    signal: CTS
+    func: 35
+  - pin: PB14
+    signal: TX
+    func: 32
+  - pin: PB14
+    signal: RX
+    func: 33
+  - pin: PB14
+    signal: RTS
+    func: 34
+  - pin: PB14
+    signal: CTS
+    func: 35
+  - pin: PB15
+    signal: CK
+    func: 7
+  - pin: PB15
+    signal: TX
+    func: 32
+  - pin: PB15
+    signal: RX
+    func: 33
+  - pin: PB15
+    signal: RTS
+    func: 34
+  - pin: PB15
+    signal: CTS
+    func: 35
+  - pin: PD8
+    signal: TX
+    func: 32
+  - pin: PD8
+    signal: RX
+    func: 33
+  - pin: PD8
+    signal: RTS
+    func: 34
+  - pin: PD8
+    signal: CTS
+    func: 35
+  - pin: PD9
+    signal: TX
+    func: 32
+  - pin: PD9
+    signal: RX
+    func: 33
+  - pin: PD9
+    signal: RTS
+    func: 34
+  - pin: PD9
+    signal: CTS
+    func: 35
+  - pin: PD10
+    signal: TX
+    func: 32
+  - pin: PD10
+    signal: RX
+    func: 33
+  - pin: PD10
+    signal: RTS
+    func: 34
+  - pin: PD10
+    signal: CTS
+    func: 35
+  - pin: PD11
+    signal: TX
+    func: 32
+  - pin: PD11
+    signal: RX
+    func: 33
+  - pin: PD11
+    signal: RTS
+    func: 34
+  - pin: PD11
+    signal: CTS
+    func: 35
+  - pin: PC6
+    signal: TX
+    func: 32
+  - pin: PC6
+    signal: RX
+    func: 33
+  - pin: PC6
+    signal: RTS
+    func: 34
+  - pin: PC6
+    signal: CTS
+    func: 35
+  - pin: PC7
+    signal: TX
+    func: 32
+  - pin: PC7
+    signal: RX
+    func: 33
+  - pin: PC7
+    signal: RTS
+    func: 34
+  - pin: PC7
+    signal: CTS
+    func: 35
+  - pin: PC8
+    signal: CK
+    func: 7
+  - pin: PC8
+    signal: TX
+    func: 32
+  - pin: PC8
+    signal: RX
+    func: 33
+  - pin: PC8
+    signal: RTS
+    func: 34
+  - pin: PC8
+    signal: CTS
+    func: 35
+  - pin: PB3
+    signal: TX
+    func: 32
+  - pin: PB3
+    signal: RX
+    func: 33
+  - pin: PB3
+    signal: RTS
+    func: 34
+  - pin: PB3
+    signal: CTS
+    func: 35
+  - pin: PB4
+    signal: TX
+    func: 32
+  - pin: PB4
+    signal: RX
+    func: 33
+  - pin: PB4
+    signal: RTS
+    func: 34
+  - pin: PB4
+    signal: CTS
+    func: 35
+  - pin: PB5
+    signal: TX
+    func: 32
+  - pin: PB5
+    signal: RX
+    func: 33
+  - pin: PB5
+    signal: RTS
+    func: 34
+  - pin: PB5
+    signal: CTS
+    func: 35
+  - pin: PB6
+    signal: TX
+    func: 32
+  - pin: PB6
+    signal: RX
+    func: 33
+  - pin: PB6
+    signal: RTS
+    func: 34
+  - pin: PB6
+    signal: CTS
+    func: 35
+  - pin: PB7
+    signal: TX
+    func: 32
+  - pin: PB7
+    signal: RX
+    func: 33
+  - pin: PB7
+    signal: RTS
+    func: 34
+  - pin: PB7
+    signal: CTS
+    func: 35
+  - pin: PB8
+    signal: TX
+    func: 32
+  - pin: PB8
+    signal: RX
+    func: 33
+  - pin: PB8
+    signal: RTS
+    func: 34
+  - pin: PB8
+    signal: CTS
+    func: 35
+  - pin: PB9
+    signal: TX
+    func: 32
+  - pin: PB9
+    signal: RX
+    func: 33
+  - pin: PB9
+    signal: RTS
+    func: 34
+  - pin: PB9
+    signal: CTS
+    func: 35
+  - pin: PE0
+    signal: TX
+    func: 32
+  - pin: PE0
+    signal: RX
+    func: 33
+  - pin: PE0
+    signal: RTS
+    func: 34
+  - pin: PE0
+    signal: CTS
+    func: 35
+  - pin: PE1
+    signal: TX
+    func: 32
+  - pin: PE1
+    signal: RX
+    func: 33
+  - pin: PE1
+    signal: RTS
+    func: 34
+  - pin: PE1
+    signal: CTS
+    func: 35
+USART4:
+  pins:
+  - pin: PE2
+    signal: TX
+    func: 36
+  - pin: PE2
+    signal: RX
+    func: 37
+  - pin: PE2
+    signal: RTS
+    func: 38
+  - pin: PE2
+    signal: CTS
+    func: 39
+  - pin: PE3
+    signal: CK
+    func: 7
+  - pin: PE3
+    signal: TX
+    func: 36
+  - pin: PE3
+    signal: RX
+    func: 37
+  - pin: PE3
+    signal: RTS
+    func: 38
+  - pin: PE3
+    signal: CTS
+    func: 39
+  - pin: PE4
+    signal: TX
+    func: 36
+  - pin: PE4
+    signal: RX
+    func: 37
+  - pin: PE4
+    signal: RTS
+    func: 38
+  - pin: PE4
+    signal: CTS
+    func: 39
+  - pin: PE5
+    signal: TX
+    func: 36
+  - pin: PE5
+    signal: RX
+    func: 37
+  - pin: PE5
+    signal: RTS
+    func: 38
+  - pin: PE5
+    signal: CTS
+    func: 39
+  - pin: PE6
+    signal: TX
+    func: 36
+  - pin: PE6
+    signal: RX
+    func: 37
+  - pin: PE6
+    signal: RTS
+    func: 38
+  - pin: PE6
+    signal: CTS
+    func: 39
+  - pin: PH2
+    signal: TX
+    func: 36
+  - pin: PH2
+    signal: RX
+    func: 37
+  - pin: PH2
+    signal: RTS
+    func: 38
+  - pin: PH2
+    signal: CTS
+    func: 39
+  - pin: PC13
+    signal: TX
+    func: 36
+  - pin: PC13
+    signal: RX
+    func: 37
+  - pin: PC13
+    signal: RTS
+    func: 38
+  - pin: PC13
+    signal: CTS
+    func: 39
+  - pin: PB0
+    signal: CK
+    func: 7
+  - pin: PE12
+    signal: TX
+    func: 36
+  - pin: PE12
+    signal: RX
+    func: 37
+  - pin: PE12
+    signal: RTS
+    func: 38
+  - pin: PE12
+    signal: CTS
+    func: 39
+  - pin: PE13
+    signal: TX
+    func: 36
+  - pin: PE13
+    signal: RX
+    func: 37
+  - pin: PE13
+    signal: RTS
+    func: 38
+  - pin: PE13
+    signal: CTS
+    func: 39
+  - pin: PE14
+    signal: TX
+    func: 36
+  - pin: PE14
+    signal: RX
+    func: 37
+  - pin: PE14
+    signal: RTS
+    func: 38
+  - pin: PE14
+    signal: CTS
+    func: 39
+  - pin: PE15
+    signal: CK
+    func: 7
+  - pin: PE15
+    signal: TX
+    func: 36
+  - pin: PE15
+    signal: RX
+    func: 37
+  - pin: PE15
+    signal: RTS
+    func: 38
+  - pin: PE15
+    signal: CTS
+    func: 39
+  - pin: PB10
+    signal: TX
+    func: 36
+  - pin: PB10
+    signal: RX
+    func: 37
+  - pin: PB10
+    signal: RTS
+    func: 38
+  - pin: PB10
+    signal: CTS
+    func: 39
+  - pin: PB12
+    signal: TX
+    func: 36
+  - pin: PB12
+    signal: RX
+    func: 37
+  - pin: PB12
+    signal: RTS
+    func: 38
+  - pin: PB12
+    signal: CTS
+    func: 39
+  - pin: PB13
+    signal: TX
+    func: 36
+  - pin: PB13
+    signal: RX
+    func: 37
+  - pin: PB13
+    signal: RTS
+    func: 38
+  - pin: PB13
+    signal: CTS
+    func: 39
+  - pin: PB14
+    signal: TX
+    func: 36
+  - pin: PB14
+    signal: RX
+    func: 37
+  - pin: PB14
+    signal: RTS
+    func: 38
+  - pin: PB14
+    signal: CTS
+    func: 39
+  - pin: PB15
+    signal: TX
+    func: 36
+  - pin: PB15
+    signal: RX
+    func: 37
+  - pin: PB15
+    signal: RTS
+    func: 38
+  - pin: PB15
+    signal: CTS
+    func: 39
+  - pin: PD8
+    signal: TX
+    func: 36
+  - pin: PD8
+    signal: RX
+    func: 37
+  - pin: PD8
+    signal: RTS
+    func: 38
+  - pin: PD8
+    signal: CTS
+    func: 39
+  - pin: PD9
+    signal: TX
+    func: 36
+  - pin: PD9
+    signal: RX
+    func: 37
+  - pin: PD9
+    signal: RTS
+    func: 38
+  - pin: PD9
+    signal: CTS
+    func: 39
+  - pin: PD10
+    signal: TX
+    func: 36
+  - pin: PD10
+    signal: RX
+    func: 37
+  - pin: PD10
+    signal: RTS
+    func: 38
+  - pin: PD10
+    signal: CTS
+    func: 39
+  - pin: PD11
+    signal: TX
+    func: 36
+  - pin: PD11
+    signal: RX
+    func: 37
+  - pin: PD11
+    signal: RTS
+    func: 38
+  - pin: PD11
+    signal: CTS
+    func: 39
+  - pin: PC6
+    signal: TX
+    func: 36
+  - pin: PC6
+    signal: RX
+    func: 37
+  - pin: PC6
+    signal: RTS
+    func: 38
+  - pin: PC6
+    signal: CTS
+    func: 39
+  - pin: PC7
+    signal: TX
+    func: 36
+  - pin: PC7
+    signal: RX
+    func: 37
+  - pin: PC7
+    signal: RTS
+    func: 38
+  - pin: PC7
+    signal: CTS
+    func: 39
+  - pin: PC8
+    signal: TX
+    func: 36
+  - pin: PC8
+    signal: RX
+    func: 37
+  - pin: PC8
+    signal: RTS
+    func: 38
+  - pin: PC8
+    signal: CTS
+    func: 39
+  - pin: PB3
+    signal: TX
+    func: 36
+  - pin: PB3
+    signal: RX
+    func: 37
+  - pin: PB3
+    signal: RTS
+    func: 38
+  - pin: PB3
+    signal: CTS
+    func: 39
+  - pin: PB4
+    signal: TX
+    func: 36
+  - pin: PB4
+    signal: RX
+    func: 37
+  - pin: PB4
+    signal: RTS
+    func: 38
+  - pin: PB4
+    signal: CTS
+    func: 39
+  - pin: PB5
+    signal: TX
+    func: 36
+  - pin: PB5
+    signal: RX
+    func: 37
+  - pin: PB5
+    signal: RTS
+    func: 38
+  - pin: PB5
+    signal: CTS
+    func: 39
+  - pin: PB6
+    signal: TX
+    func: 36
+  - pin: PB6
+    signal: RX
+    func: 37
+  - pin: PB6
+    signal: RTS
+    func: 38
+  - pin: PB6
+    signal: CTS
+    func: 39
+  - pin: PB7
+    signal: TX
+    func: 36
+  - pin: PB7
+    signal: RX
+    func: 37
+  - pin: PB7
+    signal: RTS
+    func: 38
+  - pin: PB7
+    signal: CTS
+    func: 39
+  - pin: PB8
+    signal: TX
+    func: 36
+  - pin: PB8
+    signal: RX
+    func: 37
+  - pin: PB8
+    signal: RTS
+    func: 38
+  - pin: PB8
+    signal: CTS
+    func: 39
+  - pin: PB9
+    signal: TX
+    func: 36
+  - pin: PB9
+    signal: RX
+    func: 37
+  - pin: PB9
+    signal: RTS
+    func: 38
+  - pin: PB9
+    signal: CTS
+    func: 39
+  - pin: PE0
+    signal: TX
+    func: 36
+  - pin: PE0
+    signal: RX
+    func: 37
+  - pin: PE0
+    signal: RTS
+    func: 38
+  - pin: PE0
+    signal: CTS
+    func: 39
+  - pin: PE1
+    signal: TX
+    func: 36
+  - pin: PE1
+    signal: RX
+    func: 37
+  - pin: PE1
+    signal: RTS
+    func: 38
+  - pin: PE1
+    signal: CTS
+    func: 39

@@ -13,6 +13,7 @@
     enable:
       register: FCG3
       field: PWC_FCG3_ADC1
+    polarity: low
 - name: ADC2
   address: 0x40040400
   registers:
@@ -23,6 +24,7 @@
     enable:
       register: FCG3
       field: PWC_FCG3_ADC2
+    polarity: low
 - name: AES
   address: 0x40008000
   registers:
@@ -33,6 +35,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_AES
+    polarity: low
 - name: AOS
   address: 0x40010800
   registers:
@@ -43,6 +46,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_AOS
+    polarity: low
 - name: CAN
   address: 0x40070400
   registers:
@@ -53,6 +57,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_CAN
+    polarity: low
 - name: CMP1
   address: 0x4004A000
   registers:
@@ -93,6 +98,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_CRC
+    polarity: low
 - name: DBGC
   address: 0xE0042000
   registers:
@@ -109,6 +115,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_DCU1
+    polarity: low
 - name: DCU2
   address: 0x40052400
   registers:
@@ -119,6 +126,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_DCU2
+    polarity: low
 - name: DCU3
   address: 0x40052800
   registers:
@@ -129,6 +137,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_DCU3
+    polarity: low
 - name: DCU4
   address: 0x40052C00
   registers:
@@ -139,6 +148,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_DCU4
+    polarity: low
 - name: DMA1
   address: 0x40053000
   registers:
@@ -149,6 +159,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_DMA1
+    polarity: low
 - name: DMA2
   address: 0x40053400
   registers:
@@ -159,6 +170,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_DMA2
+    polarity: low
 - name: EFM
   address: 0x40010400
   registers:
@@ -199,6 +211,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_FCM
+    polarity: low
 - name: GPIO
   address: 0x40053800
   registers:
@@ -215,6 +228,7 @@
     enable:
       register: FCG0
       field: PWC_FCG0_HASH
+    polarity: low
 - name: I2C1
   address: 0x4004E000
   registers:
@@ -225,6 +239,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_I2C1
+    polarity: low
 - name: I2C2
   address: 0x4004E400
   registers:
@@ -235,6 +250,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_I2C2
+    polarity: low
 - name: I2C3
   address: 0x4004E800
   registers:
@@ -245,6 +261,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_I2C3
+    polarity: low
 - name: I2S1
   address: 0x4001E000
   registers:
@@ -255,6 +272,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_I2S1
+    polarity: low
 - name: I2S2
   address: 0x4001E400
   registers:
@@ -265,6 +283,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_I2S2
+    polarity: low
 - name: I2S3
   address: 0x40022000
   registers:
@@ -275,6 +294,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_I2S3
+    polarity: low
 - name: I2S4
   address: 0x40022400
   registers:
@@ -285,6 +305,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_I2S4
+    polarity: low
 - name: ICG
   address: 0x400
   registers:
@@ -319,6 +340,7 @@
     enable:
       register: FCG3
       field: PWC_FCG3_OTS
+    polarity: low
 - name: PERIC
   address: 0x40055400
   registers:
@@ -341,6 +363,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_QSPI
+    polarity: low
 - name: RMU
   address: 0x400540C0
   registers:
@@ -363,6 +386,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_SDIOC1
+    polarity: low
 - name: SDIOC2
   address: 0x40070000
   registers:
@@ -373,6 +397,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_SDIOC2
+    polarity: low
 - name: SPI1
   address: 0x4001C000
   registers:
@@ -383,6 +408,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_SPI1
+    polarity: low
 - name: SPI2
   address: 0x4001C400
   registers:
@@ -393,6 +419,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_SPI2
+    polarity: low
 - name: SPI3
   address: 0x40020000
   registers:
@@ -403,6 +430,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_SPI3
+    polarity: low
 - name: SPI4
   address: 0x40020400
   registers:
@@ -413,6 +441,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_SPI4
+    polarity: low
 - name: SRAMC
   address: 0x40050800
   registers:
@@ -435,6 +464,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMER0_1
+    polarity: low
 - name: TMR02
   address: 0x40024400
   registers:
@@ -445,6 +475,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMER0_2
+    polarity: low
 - name: TMR41
   address: 0x40017000
   registers:
@@ -455,6 +486,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMER4_1
+    polarity: low
 - name: TMR42
   address: 0x40024800
   registers:
@@ -465,6 +497,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMER4_2
+    polarity: low
 - name: TMR43
   address: 0x40024C00
   registers:
@@ -475,6 +508,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMER4_3
+    polarity: low
 - name: TMR4_ECER
   address: 0x40055408
   registers:
@@ -491,6 +525,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMER6_1
+    polarity: low
 - name: TMR62
   address: 0x40018400
   registers:
@@ -501,6 +536,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMER6_2
+    polarity: low
 - name: TMR63
   address: 0x40018800
   registers:
@@ -511,6 +547,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMER6_3
+    polarity: low
 - name: TMR6_COMMON
   address: 0x40018300
   registers:
@@ -527,6 +564,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMERA_1
+    polarity: low
 - name: TMRA2
   address: 0x40015400
   registers:
@@ -537,6 +575,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMERA_2
+    polarity: low
 - name: TMRA3
   address: 0x40015800
   registers:
@@ -547,6 +586,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMERA_3
+    polarity: low
 - name: TMRA4
   address: 0x40015C00
   registers:
@@ -557,6 +597,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMERA_4
+    polarity: low
 - name: TMRA5
   address: 0x40016000
   registers:
@@ -567,6 +608,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMERA_5
+    polarity: low
 - name: TMRA6
   address: 0x40016400
   registers:
@@ -577,6 +619,7 @@
     enable:
       register: FCG2
       field: PWC_FCG2_TIMERA_6
+    polarity: low
 - name: TRNG
   address: 0x40041000
   registers:
@@ -587,46 +630,67 @@
     enable:
       register: FCG0
       field: PWC_FCG0_TRNG
+    polarity: low
 - name: USART1
   address: 0x4001D000
   registers:
     kind: usart
     block: USART
     version: ll_v2_1
+  kernel_clock:
+    type: fixed
+    name: pclk1
   rcc:
     enable:
       register: FCG1
       field: PWC_FCG1_USART1
+    polarity: low
+    bus: apb1
 - name: USART2
   address: 0x4001D400
   registers:
     kind: usart
     block: USART
     version: ll_v2_1
+  kernel_clock:
+    type: fixed
+    name: pclk1
   rcc:
     enable:
       register: FCG1
       field: PWC_FCG1_USART2
+    polarity: low
+    bus: apb1
 - name: USART3
   address: 0x40021000
   registers:
     kind: usart
     block: USART
     version: ll_v2_1
+  kernel_clock:
+    type: fixed
+    name: pclk1
   rcc:
     enable:
       register: FCG1
       field: PWC_FCG1_USART3
+    polarity: low
+    bus: apb2
 - name: USART4
   address: 0x40021400
   registers:
     kind: usart
     block: USART
     version: ll_v2_1
+  kernel_clock:
+    type: fixed
+    name: pclk1
   rcc:
     enable:
       register: FCG1
       field: PWC_FCG1_USART4
+    polarity: low
+    bus: apb2
 - name: USBFS
   address: 0x400C0000
   registers:
@@ -637,6 +701,7 @@
     enable:
       register: FCG1
       field: PWC_FCG1_USBFS
+    polarity: low
 - name: WDT
   address: 0x40049000
   registers:
